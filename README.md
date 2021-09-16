@@ -1,4 +1,6 @@
-# futuresuper.com.au
+# Future Super Website
+
+## New version being released in October 2021
 
 The [Future Super website](https://www.futuresuper.com.au/), built with [Astro](https://astro.build/).
 
