@@ -1,11 +1,16 @@
 ---
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
-const {title, image, description, hideHeader=false} = Astro.props;
+const {title, image, description, hideHeader=false, hideTitle=false, hideDescription=false} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
-const pageDescription = description ? description : "Build the future you want to see. Your super has the power to combat climate change, let’s put it to work.";
+const pageDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
 ---
+
+<style lang="scss">
+  @use "../styles/" as *;
+</style>
+
 <html lang="en">
   <head>
     <title>{pageTitle}</title>
@@ -26,10 +31,12 @@ const pageDescription = description ? description : "Build the future you want t
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
   </head>
   <body>
-    {!hideHeader &&
-      <Header proptest="hey" />
-    }
-    <slot />
-    <Footer />
+    {!hideHeader && <Header />}
+    <main>
+      { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
+      { !hideDescription && <h3>{pageDescription}</h3>}
+      <slot />
+    </main>
+    <!-- <Footer /> -->
   </body>
 </html>

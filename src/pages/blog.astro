@@ -1,5 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogPostPreview from '../components/BlogPostPreview.svelte';
+
+let allPosts = Astro.fetchContent('./posts/*.md');
+// console.log(allPosts[0]);
+// allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
 <style lang="scss">
@@ -10,5 +15,5 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   title="Blog"
   description="What’s new at Future Super."
 >
-
+  {allPosts.map(post => <BlogPostPreview post={post} />)}
 </BaseLayout>
