@@ -1,0 +1,118 @@
+@use "colours" as *;
+
+$line-height-xs: 115%;
+$line-height-125: 125%;
+$line-height-sm: 140%;
+$line-height-lg: 170%;
+
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+// Medium is default: 1rem // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-24: 1.5rem; // 24px
+$font-size-xl: 1.75rem; // 28px
+$font-size-32: 2rem; // 32px
+$font-size-40: 2.5rem; // 40px
+$font-size-48: 3rem; // 48px
+
+$transition-text-hover: all 125ms ease-in-out;
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../fonts/JetBrainsMonoVariable-subset.woff2") format("woff2");
+  font-weight: 1 999;
+  font-display: swap;
+}
+
+$sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$mono: monospace;
+
+body {
+  font-family: $sans-serif;
+  color: $black;
+}
+
+// Extra loud, shouty bits
+.heading-zero {
+  text-transform: uppercase;
+  line-height: 98%;
+  text-align: center;
+  color: $black;
+  font-size: 3rem; // Fallback
+  font-size: min(max(2rem, 7vw), 6rem); // Min, Variable, Max
+}
+
+h1 {
+  font-weight: 900;
+  line-height: $line-height-xs;
+  margin-bottom: 1.8rem;
+  font-size: 2.8rem; // Fallback
+  font-size: clamp(
+    2rem,
+    14vw,
+    5rem
+  ); // Min, Variable (including space for scrollbar), Max
+  letter-spacing: -0.09rem; // Fallback
+  overflow-wrap: break-word; // Backup in case string is too large for container
+}
+
+h2 {
+  font-weight: 900;
+  line-height: $line-height-xs;
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem; // Fallback
+  font-size: min(max(1.5rem, 4vw), 5rem); // Min, Variable, Max
+  letter-spacing: -0.04rem;
+}
+
+h3,
+.heading-three {
+  font-weight: 700;
+  line-height: $line-height-xs;
+  margin-bottom: 1rem;
+  font-size: 1rem; // Fallback
+  font-size: min(max(1rem, 3vw), 1.8rem); // Min, Variable, Max
+}
+
+h4 {
+  line-height: $line-height-xs;
+}
+
+h5,
+.heading-five {
+  font-size: $font-size-sm;
+  line-height: $line-height-xs;
+}
+
+p {
+  margin-bottom: 1rem;
+  a {
+    color: inherit;
+    transition: $transition-text-hover;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.disclaimer {
+  color: $black;
+  font-size: 0.75rem;
+  line-height: $line-height-sm;
+
+  a:hover {
+    color: $black;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+---
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.svelte';
+const {title, image, description, hideHeader=false} = Astro.props;
+const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
+const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
+const pageDescription = description ? description : "Build the future you want to see. Your super has the power to combat climate change, let’s put it to work.";
+---
+<html lang="en">
+  <head>
+    <title>{pageTitle}</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" shrink-to-fit="no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={pageImage} />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content={pageTitle} />
+    <meta property="twitter:description" content={pageDescription} />
+    <meta property="twitter:image" content={pageImage} />
+    <meta name="twitter:card" content="summary_large_image"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.futuresuper.com.au/images/favicon/favicon-32.png">
+    <link rel="apple-touch-icon" href="https://www.futuresuper.com.au/images/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
+  </head>
+  <body>
+    {!hideHeader &&
+      <Header proptest="hey" />
+    }
+    <slot />
+    <Footer />
+  </body>
+</html>
