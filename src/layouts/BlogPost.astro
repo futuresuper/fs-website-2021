@@ -1,0 +1,26 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+const {content} = Astro.props;
+---
+
+<style lang="scss">
+  @use "../styles/" as *;
+</style>
+
+<BaseLayout
+  title={content.title}
+  description={content.description}
+  hideDescription="true"
+>
+  <p>Author: {content.author}</p>
+  {content.tags &&
+    <div>
+      <p>tags:</p>
+      <ol>
+        {content.tags.map(t => <li>{t}</li>)}
+      </ol>
+    </div>
+  }
+  <hr />
+  <slot />
+</BaseLayout>

@@ -1,19 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import BlogPostPreview from '../components/BlogPostPreview.svelte';
+import BlogList from '$/layouts/BlogList.astro'
 
-let allPosts = Astro.fetchContent('./posts/*.md');
-// console.log(allPosts[0]);
-// allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+let allPosts = Astro.fetchContent('$/pages/blog/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
-
-<BaseLayout
+<BlogList
   title="Blog"
   description="What’s new at Future Super."
->
-  {allPosts.map(post => <BlogPostPreview post={post} />)}
-</BaseLayout>
+  posts={allPosts}
+/>
