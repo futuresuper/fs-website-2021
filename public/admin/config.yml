@@ -82,7 +82,7 @@ collections:
         }
   - name: "careers"
     label: "Careers"
-    folder: "src/pages/careers"
+    folder: "src/pages/career"
     create: true
     slug: "{{slug}}-{{year}}{{month}}{{day}}"
     fields:
