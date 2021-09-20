@@ -22,6 +22,7 @@ collections:
           name: "draft",
           widget: "boolean",
           hint: "If this is turned on, it won't appear on the site when you publish",
+          required: false,
         }
       - { label: "Image", name: "image", widget: "image" }
       - {
