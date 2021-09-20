@@ -8,6 +8,8 @@ media_library:
     cloud_name: future-super
     api_key: 749866111487797 # Public Key
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "posts"
     label: "Posts"
@@ -17,13 +19,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - {
-          label: "Draft",
-          name: "draft",
-          widget: "boolean",
-          hint: "If this is turned on, it won't appear on the site when you publish",
-          required: false,
-        }
       - { label: "Image", name: "image", widget: "image" }
       - {
           label: "Tags",
