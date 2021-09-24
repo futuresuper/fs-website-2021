@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-layout: $/layouts/BaseLayout.astro
+layout: $/layouts/LegalPage.astro
 description: We will always respect your privacy. Read our privacy policy to find out more.
 alsoSee:
   - Terms and Conditions

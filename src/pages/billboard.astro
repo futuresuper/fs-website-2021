@@ -1,50 +1,14 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import Billboard from '../components/page/Billboard.astro'
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
-
 <BaseLayout
   title="Billboard"
   description="We're Out Billboard at Tempe Station"
   image="https://res.cloudinary.com/future-super/image/upload/c_scale,w_1200,f_auto,q_auto/v1623370119/BillboardTempe.jpg"
   hideHeader
+  hideTitle
+  hideDescription
 >
-  <div class="billboard">
-    <div class="container">
-      <h1 id="title-sender">Your name is in there somewhere… Can you find it?</h1>
-      <h1 id="title-shared">
-        Your friend's name is in there somewhere… Can you find it?
-      </h1>
-    </div>
-
-    <img
-      class="billboard-image"
-      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_1200,f_auto,q_auto/v1623370119/BillboardTempe.jpg"
-    />
-  </div>
-
-  <div id="share" class="letter-send">
-    <div class="container">
-      <p>Share the billboard with your personal link:</p>
-      <div class="share-container">
-        <div id="personal-url" class="share-link">
-          www.futuresuper.com.au/billboard
-        </div>
-        <button class="primary" onclick="handleCopy()">COPY LINK</button>
-      </div>
-      <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
-        We’ll let you know when someone joins Future Super from this link so you
-        can see the difference you make.
-      </p>
-    </div>
-  </div>
-  <div id="join" class="letter-send">
-    <div class="container">
-      <p>Not a Future Super member yet?</p>
-      <button class="primary join">JOIN NOW</button>
-    </div>
-  </div>
+  <Billboard client:load />
 </BaseLayout>

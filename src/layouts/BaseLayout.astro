@@ -1,7 +1,7 @@
 ---
 import Header from '$/components/Header.svelte';
 import Footer from '$/components/Footer.svelte';
-const {title, image, description, hideHeader=false, hideTitle=false, hideDescription=false} = Astro.props;
+const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
 const pageDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
@@ -9,6 +9,36 @@ const pageDescription = description ? description : "Your super has the power to
 
 <style lang="scss">
   @use "../styles/" as *;
+
+  .behind-header {
+    height: 124px;
+    background-color: $black;
+  }
+
+  .page-header {
+    background-color: $black;
+    color: $white;
+    padding-bottom: 40px;
+  }
+
+  .page-title-and-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1 {
+      max-width: 50%;
+    }
+
+    h3 {
+      max-width: 30%;
+      text-align: right;
+    }
+  }
+
+  main {
+    width: 100%;
+  }
 </style>
 
 <html lang="en">
@@ -33,10 +63,20 @@ const pageDescription = description ? description : "Your super has the power to
   <body>
     {!hideHeader && <Header />}
     <main>
-      { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
-      { !hideDescription && <h3>{pageDescription}</h3>}
-      <slot />
+      {!hideHeader && <div class="behind-header" />}
+
+      <div class="container page-header">
+        <div class="page-title-and-description">
+          { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
+          { !hideDescription && <h3>{pageDescription}</h3>}
+        </div>
+        { intro && <p>{intro}</p>}
+      </div>
+
+      <div class={!noContainer ? "container" : ""}>
+        <slot />
+      </div>
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </body>
 </html>
