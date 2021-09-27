@@ -13,6 +13,13 @@
 <div class="io-container">
   <div class="black-strip" />
   <div class="container investment-options">
+    <div />
+    <div />
+    <div class="renewables-call-out">
+      <Thermometer colour={green} />
+      <h5>Highest climate solutions target allocation</h5>
+    </div>
+
     <!-- Balanced Index -->
     <div class="option">
       <div>
@@ -52,6 +59,7 @@
     </div>
 
     <!-- Renewables Plus Growth -->
+
     <div class="option">
       <div>
         <div class="icons">
@@ -102,6 +110,18 @@
     width: 100%;
   }
 
+  .renewables-call-out {
+    color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h5 {
+      margin-left: 20px;
+      font-size: 16px;
+    }
+  }
+
   .io-container {
     background-color: $black100;
   }
@@ -110,9 +130,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    margin-top: -300px;
 
     .option {
-      margin-top: -260px;
       background-color: $white;
       border-radius: 32px;
       padding: 20px;
@@ -157,11 +177,8 @@
     .investment-options {
       display: grid;
       grid-template-columns: 100%;
-
-      .option {
-        &:not(:first-child) {
-          margin-top: 20px;
-        }
+      .renewables-call-out {
+        display: none;
       }
     }
   }

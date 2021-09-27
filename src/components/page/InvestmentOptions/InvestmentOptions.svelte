@@ -2,4 +2,6 @@
   import Summary from "./Summary.svelte";
 </script>
 
-<Summary />
+<div>
+  <Summary />
+</div>
