@@ -66,76 +66,80 @@
 
 <footer class="container">
   <div class="footer-container">
-    <div class="logo-col">
-      <a href="/">
-        <div class="logo">
-          <Logo colour="black" size="54" />
+    <div class="menu">
+      <div class="logo-col">
+        <a href="/">
+          <div class="logo">
+            <Logo colour="black" size="54" />
+          </div>
+        </a>
+        <BCorpLogo />
+      </div>
+
+      {#each pages as page}
+        <div class="pageGroup">
+          <h5>{page.heading}</h5>
+          {#each page.subPages as subPage}
+            <a href={subPage[1]}>{subPage[0]}</a>
+          {/each}
         </div>
-      </a>
-      <BCorpLogo />
+      {/each}
     </div>
-
-    {#each pages as page}
-      <div class="pageGroup">
-        <h5>{page.heading}</h5>
-        {#each page.subPages as subPage}
-          <a href={subPage[1]}>{subPage[0]}</a>
-        {/each}
-      </div>
-    {/each}
-
-    <div class="flags">
-      <img
-        src="/images/aboriginal-flag.png"
-        alt="Aboriginal Flag"
-        loading="lazy"
-      />
-      <img
-        src="/images/tsi-flag.png"
-        alt="Torres Strait Islander Flag"
-        loading="lazy"
-      />
-    </div>
-
-    <div class="footer-text">
-      <p class="acknowledgement">
-        Future Super acknowledges the Traditional Custodians of the lands on
-        which we operate and pay our respects to Elders, past, present and
-        emerging. We recognise the enduring relationship Aboriginal and/or
-        Torres Strait Islander peoples have with Country and that sovereignty
-        was never ceded.
-      </p>
-      <p class="acknowledgement">
-        We stand for a future that promotes justice for Aboriginal and/or Torres
-        Strait Islander peoples and profoundly respects and acknowledges their
-        respective perspectives, culture, language and history.
-      </p>
-      <div class="horizontal-space-between">
-        <a class="learn-more" href="/reconciliation">Learn More</a>
-        {#if custodianVisible}
-          <p transition:fade class="bold">{custodian}</p>
-        {/if}
+    <div class="acknowledgement-and-legals">
+      <div class="flags">
+        <img
+          src="/images/aboriginal-flag.png"
+          alt="Aboriginal Flag"
+          loading="lazy"
+        />
+        <img
+          src="/images/tsi-flag.png"
+          alt="Torres Strait Islander Flag"
+          loading="lazy"
+        />
       </div>
 
-      <p class="disc">
-        Information provided is of a general nature only and we have not taken
-        your personal financial objectives, situation or needs into account. We
-        recommend you seek financial advice when considering if Future Super is
-        right for your objectives and needs. When considering returns, past
-        performance is not indicative of future performance.
-      </p>
-      <div class="horizontal-space-between">
-        <p class="disc legal-links">
-          <a href="/fund-information">Fund Information</a>
-          &nbsp;&nbsp;•&nbsp;&nbsp;
-          <a href="/terms-and-conditions">Terms & Conditions</a>
-          &nbsp;&nbsp;•&nbsp;&nbsp;
-          <a href="/privacy-policy">Privacy Policy</a>
+      <div class="footer-text">
+        <p class="acknowledgement">
+          Future Super acknowledges the Traditional Custodians of the lands on
+          which we operate and pay our respects to Elders, past, present and
+          emerging. We recognise the enduring relationship Aboriginal and/or
+          Torres Strait Islander peoples have with Country and that sovereignty
+          was never ceded.
         </p>
+        <p class="acknowledgement">
+          We stand for a future that promotes justice for Aboriginal and/or
+          Torres Strait Islander peoples and profoundly respects and
+          acknowledges their respective perspectives, culture, language and
+          history.
+        </p>
+        <div class="horizontal-space-between">
+          <a class="learn-more" href="/reconciliation">Learn More</a>
+          {#if custodianVisible}
+            <p transition:fade class="bold">{custodian}</p>
+          {/if}
+        </div>
+
         <p class="disc">
-          <span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277 &nbsp;&nbsp;
-          <span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010
+          Information provided is of a general nature only and we have not taken
+          your personal financial objectives, situation or needs into account.
+          We recommend you seek financial advice when considering if Future
+          Super is right for your objectives and needs. When considering
+          returns, past performance is not indicative of future performance.
         </p>
+        <div class="horizontal-space-between legal-stuff">
+          <p class="disc legal-links">
+            <a href="/fund-information">Fund Information</a>
+            <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <a href="/terms-and-conditions">Terms & Conditions</a>
+            <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </p>
+          <div class="disc">
+            <p><span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277 &nbsp;&nbsp;</p>
+            <p><span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -153,7 +157,10 @@
     background-color: $black;
     color: $white;
     border-radius: 32px;
-    padding: 50px 20px;
+    padding: 50px 20px 20px 20px;
+  }
+
+  .menu {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
@@ -198,6 +205,12 @@
     }
   }
 
+  .acknowledgement-and-legals {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+
   .flags {
     display: flex;
     flex-direction: column;
@@ -230,6 +243,9 @@
 
   .disc {
     font-size: 12px;
+    p {
+      display: inline-block;
+    }
   }
 
   .legal-links {
@@ -239,6 +255,71 @@
       &:hover {
         color: $white;
         text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    .menu {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .logo-col {
+      grid-row: span 2;
+    }
+
+    .legal-stuff {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .menu,
+    .acknowledgement-and-legals {
+      grid-template-columns: 30% 1fr;
+    }
+
+    .menu {
+      margin-bottom: 30px;
+    }
+
+    .logo-col {
+      grid-row: span 5;
+    }
+
+    .pageGroup {
+      margin-bottom: 0px;
+
+      h5 {
+        margin-bottom: 10px;
+      }
+
+      a {
+        margin-bottom: 8px;
+      }
+    }
+
+    .footer-text {
+      grid-column: span 1;
+    }
+
+    .dot {
+      display: none;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 6px;
+      }
+    }
+
+    .disc {
+      margin-bottom: 12px;
+      p {
+        display: block;
+        margin-bottom: 6px;
       }
     }
   }
