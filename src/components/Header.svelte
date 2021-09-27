@@ -1,5 +1,5 @@
 <script>
-  import Logo from "$/components/Logo.svelte";
+  import Logo from "$/components/images/Logo.svelte";
 
   const menu = {
     whyUs: [
@@ -18,9 +18,11 @@
 <header class="container">
   <div class="sticky-header">
     <div class="left">
-      <div class="logo">
-        <Logo colour="white" size="54" />
-      </div>
+      <a href="/">
+        <div class="logo">
+          <Logo colour="white" size="54" />
+        </div>
+      </a>
       <div class="menu-head">Why us?</div>
       <div class="menu-head">Resources</div>
     </div>

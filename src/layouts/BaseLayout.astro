@@ -1,6 +1,6 @@
 ---
 import Header from '$/components/Header.svelte';
-import Footer from '$/components/Footer.svelte';
+import Footer from '../components/Footer.svelte';
 const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
@@ -77,6 +77,6 @@ const pageDescription = description ? description : "Your super has the power to
         <slot />
       </div>
     </main>
-    <Footer />
+    <Footer client:visible />
   </body>
 </html>
