@@ -146,7 +146,7 @@
 </footer>
 
 <style lang="scss">
-  @use "../styles/" as *;
+  @use "../../styles/" as *;
 
   footer {
     margin-top: 200px;

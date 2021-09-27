@@ -1,6 +1,6 @@
 ---
-import Header from '$/components/Header.svelte';
-import Footer from '../components/Footer.svelte';
+import Header from '../components/ui/Header.svelte';
+import Footer from '../components/ui/Footer.svelte';
 const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
@@ -38,6 +38,21 @@ const pageDescription = description ? description : "Your super has the power to
 
   main {
     width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .page-title-and-description {
+      flex-direction: column;
+
+      h1 {
+        max-width: 100%;
+      }
+
+      h3 {
+        max-width: 100%;
+        text-align: left;
+      }
+    }
   }
 </style>
 

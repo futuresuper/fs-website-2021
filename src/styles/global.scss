@@ -28,6 +28,9 @@ button {
     background-color: $black;
     color: $white;
   }
+  &.full-width {
+    width: 100%;
+  }
 }
 
 button.secondary {

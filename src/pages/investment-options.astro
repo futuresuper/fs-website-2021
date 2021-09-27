@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import InvestmentOptions from '$/components/page/InvestmentOptions/InvestmentOptions.svelte'
 ---
 
 <style lang="scss">
@@ -9,6 +10,8 @@ import BaseLayout from '$/layouts/BaseLayout.astro'
 <BaseLayout
   title="Investment Options"
   description="Future Super has three investment options to choose from."
+  hideDescription
+  noContainer
 >
-
+  <InvestmentOptions />
 </BaseLayout>

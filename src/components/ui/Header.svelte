@@ -23,23 +23,23 @@
           <Logo colour="white" size="54" />
         </div>
       </a>
-      <div class="menu-head">Why us?</div>
-      <div class="menu-head">Resources</div>
+      <div class="menu-head hide-on-mobile">Why us?</div>
+      <div class="menu-head hide-on-mobile">Resources</div>
     </div>
     <div class="right">
-      <button class="secondary">Login</button>
+      <button class="secondary hide-on-mobile">Login</button>
       <button>Join now</button>
     </div>
   </div>
 </header>
 
 <style lang="scss">
-  @use "../styles/" as *;
+  @use "../../styles/" as *;
 
   header {
     color: $white;
     width: 100%;
-    position: fixed;
+    position: absolute; // fixed;
   }
 
   .sticky-header {
@@ -78,5 +78,11 @@
 
   .menu-head {
     margin-left: 30px;
+  }
+
+  @media (max-width: 800px) {
+    .hide-on-mobile {
+      display: none;
+    }
   }
 </style>
