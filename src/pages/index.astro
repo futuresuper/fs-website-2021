@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
-import NetlifyCmsScript from '$/components/scripts/NetlifyCmsScript.astro'
 import Home from '$/components/page/Home.svelte'
 ---
 
@@ -13,5 +12,5 @@ import Home from '$/components/page/Home.svelte'
   hideDescription
 >
   <Home />
-  <NetlifyCmsScript />
+  <script src="/admin/netlifyCmsScript.js" />
 </BaseLayout>
