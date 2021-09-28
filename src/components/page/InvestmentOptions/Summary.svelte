@@ -42,8 +42,9 @@
           <div class="icon">
             <Leaf colour={blue} />
           </div>
-
-          <Plus colour={blue} />
+          <div class="plus">
+            <Plus colour={blue} />
+          </div>
           <div class="icon">
             <NoFossilFuels colour={blue} />
           </div>
@@ -66,19 +67,21 @@
           <div class="icon">
             <World colour={green} />
           </div>
-
-          <Plus colour={green} />
+          <div class="plus">
+            <Plus colour={green} />
+          </div>
           <div class="icon">
             <Leaf colour={green} />
           </div>
-
-          <Plus colour={green} />
+          <div class="plus">
+            <Plus colour={green} />
+          </div>
           <div class="icon">
             <NoFossilFuels colour={green} />
           </div>
         </div>
         <h5 class="green">Most Renewables Investments</h5>
-        <h3>Renewables<br /><span class="green">+ Growth</span></h3>
+        <h3>Renewables<br /><span class="green">Plus Growth</span></h3>
         <p>
           Zero fossil fuels. Targets 20% allocation to climate change solutions.
         </p>
@@ -159,9 +162,17 @@
     width: 96px;
   }
 
+  .plus {
+    width: 28px;
+  }
+
   @media (max-width: 1160px) {
     .icon {
       width: 48px;
+    }
+
+    .plus {
+      width: 14px;
     }
   }
 
@@ -172,6 +183,10 @@
 
     .icon {
       width: 96px;
+    }
+
+    .plus {
+      width: 28px;
     }
 
     .investment-options {

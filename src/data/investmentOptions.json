@@ -1,0 +1,79 @@
+[
+  {
+    "label": "Balanced Index",
+    "impact": 1.2,
+    "highlightInvestments": [],
+    "fee": {
+      "perAnnumPercentage": 0.885,
+      "perYearPrice": 60
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 70,
+      "defensive": 30
+    }
+  },
+  {
+    "label": "Balanced Impact",
+    "impact": -1.72,
+    "highlightInvestments": [
+      {
+        "label": "Vision Fund International",
+        "definition": "Micro-finance products that promote financial inclusion in rural areas, particularly for people living in poverty"
+      },
+      {
+        "label": "IIG Solar Asset Fund",
+        "definition": "An unlisted portfolio of up to $180m in Australian solar infrastructure"
+      }
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.501,
+      "perYearPrice": 60
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 65,
+      "defensive": 35
+    }
+  },
+  {
+    "label": "Renewables Plus Growth",
+    "impact": -1.65,
+    "highlightInvestments": [
+      {
+        "label": "Juice Capital Energy",
+        "definition": "Finances and develops solar energy projects"
+      },
+      {
+        "label": "Infradebt Ethical Fund",
+        "definition": "Provides loans to renewable energy and social infrastructure projects in Australia"
+      },
+      {
+        "label": "Green Squares Energy",
+        "definition": "Organises leases, loans, and rentals of solar energy"
+      }
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.501,
+      "perYearPrice": 60
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 75,
+      "defensive": 25
+    }
+  },
+  {
+    "label": "Balanced Growth Pension",
+    "fee": {
+      "perAnnumPercentage": 0.882,
+      "perYearPrice": 60
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 70,
+      "defensive": 30
+    },
+    "inceptionDate": "July 2015"
+  }
+]

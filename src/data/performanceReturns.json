@@ -1,0 +1,62 @@
+{
+  "dateAsAt": "2021-08-31",
+  "table": [
+    {
+      "rowHeading": "5 Years",
+      "balancedIndex": "-",
+      "balancedImpact": "7.65%",
+      "renewablesPlusGrowth": "-",
+      "balancedGrowthPension": "9.63%"
+    },
+    {
+      "rowHeading": "3 Years",
+      "balancedIndex": "-",
+      "balancedImpact": "8.47%",
+      "renewablesPlusGrowth": "9.62%",
+      "balancedGrowthPension": "11.58%"
+    },
+    {
+      "rowHeading": "1 Year",
+      "balancedIndex": "15.51%",
+      "balancedImpact": "13.57%",
+      "renewablesPlusGrowth": "15.04%",
+      "balancedGrowthPension": "19.22%"
+    },
+    {
+      "rowHeading": "6 Months",
+      "balancedIndex": "13.99%",
+      "balancedImpact": "11.97%",
+      "renewablesPlusGrowth": "12.99%",
+      "balancedGrowthPension": "16.54%"
+    },
+    {
+      "rowHeading": "3 Months",
+      "balancedIndex": "8.28%",
+      "balancedImpact": "7.01%",
+      "renewablesPlusGrowth": "7.67%",
+      "balancedGrowthPension": "9.30%"
+    },
+    {
+      "rowHeading": "1 Month",
+      "balancedIndex": "3.14%",
+      "balancedImpact": "2.76%",
+      "renewablesPlusGrowth": "3.02%",
+      "balancedGrowthPension": "3.65%"
+    },
+    {
+      "rowHeading": "Since inception",
+      "rowSubHeading": "Relative to launch date",
+      "balancedIndex": "12.10%",
+      "balancedImpact": "7.77%",
+      "renewablesPlusGrowth": "9.93%",
+      "balancedGrowthPension": "9.61%"
+    },
+    {
+      "rowHeading": "Launch date",
+      "balancedIndex": "16 Nov 2018",
+      "balancedImpact": "1 Sep 2014",
+      "renewablesPlusGrowth": "1 May 2018",
+      "balancedGrowthPension": "15 July 2015"
+    }
+  ]
+}
