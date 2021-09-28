@@ -394,7 +394,7 @@
 
   @media (max-width: 440px) {
     .no-switching-fee {
-      width: 320px;
+      width: 100%;
 
       .text-in-middle {
         max-width: 140px;
