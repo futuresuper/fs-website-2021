@@ -1,11 +1,5 @@
 <div class="container no-switching-fee">
-  <svg
-    width="640"
-    height="642"
-    viewBox="0 0 640 642"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="0 0 640 642" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M252.045 26.4441L241.228 16.0084L244.198 28.3405L239.355 29.5331L235.193 12.0487L241.645 10.4982L252.761 20.8625L249.803 8.54227L254.574 7.34961L258.772 24.7983L252.045 26.4441Z"
       fill="black"
@@ -357,6 +351,7 @@
   @use "../../../styles/" as *;
 
   .no-switching-fee {
+    width: 600px;
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -379,5 +374,39 @@
   }
   svg {
     animation: spin 60s linear infinite;
+  }
+
+  @media (max-width: 600px) {
+    .no-switching-fee {
+      width: 400px;
+
+      .text-in-middle {
+        max-width: 220px;
+        h2 {
+          margin-bottom: 8px;
+        }
+        p {
+          line-height: 125%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 440px) {
+    .no-switching-fee {
+      width: 320px;
+
+      .text-in-middle {
+        max-width: 140px;
+        h2 {
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        p {
+          line-height: 110%;
+          font-size: 12px;
+        }
+      }
+    }
   }
 </style>

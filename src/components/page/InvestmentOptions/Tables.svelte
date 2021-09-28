@@ -97,7 +97,9 @@
     {#each options as option}
       <div class="highlight-investments">
         {#each option.highlightInvestments as inv}
-          <p>{inv.label}</p>
+          <p class="tooltip">
+            {inv.label}<span class="tooltip-text">{inv.definition}</span>
+          </p>
         {/each}
       </div>
     {/each}
@@ -127,12 +129,20 @@
     <div class="row-head">
       <h4 class="tooltip">
         Investment objectives
-        <span class="tooltip-text">You're a natural!</span>
+        <span class="tooltip-text">
+          How much we aim for your money to grow each year
+        </span>
       </h4>
     </div>
     {#each options as option}
       <div>
-        <p class="number">CPI + {option.investmentObjective}%</p>
+        <p class="number tooltip">
+          CPI + {option.investmentObjective}%
+          <span class="tooltip-text">
+            CPI (which stands for 'Consumer Price Index') is how much the price
+            of stuff changes each year
+          </span>
+        </p>
         <p class="number-desc">
           Per annum over rolling ten-year periods (after fees and taxes)
         </p>
@@ -141,7 +151,13 @@
   </div>
   <div class="table-row">
     <div class="row-head">
-      <h4>Asset allocation</h4>
+      <h4 class="tooltip">
+        Asset allocation
+        <span class="tooltip-text">
+          How we balance risk and reward in order to achieve investment
+          objectives
+        </span>
+      </h4>
     </div>
     {#each options as option}
       <div>
@@ -288,6 +304,19 @@
 
     .intro-text {
       max-width: 100%;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .number {
+      font-size: 10px;
+    }
+    .table-row {
+      .highlight-investments {
+        p {
+          font-size: 10px;
+        }
+      }
     }
   }
 </style>
