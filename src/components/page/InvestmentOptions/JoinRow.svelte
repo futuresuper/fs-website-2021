@@ -35,4 +35,15 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  @media (max-width: 600px) {
+    button {
+      font-size: 10px;
+      padding: 4px;
+    }
+
+    .join-row {
+      grid-gap: 10px;
+    }
+  }
 </style>

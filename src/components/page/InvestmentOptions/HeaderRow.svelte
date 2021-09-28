@@ -97,14 +97,28 @@
   @media (max-width: 760px) {
     .header-row {
       grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      text-align: center;
+
+      h4 {
+        font-size: 12px;
+      }
+    }
+
+    .icons {
+      justify-content: center;
     }
 
     .plus {
-      width: 14px;
+      width: 6px;
     }
   }
 
   @media (max-width: 600px) {
+    .header-row {
+      grid-gap: 10px;
+    }
+
     .icons {
       align-items: center;
     }

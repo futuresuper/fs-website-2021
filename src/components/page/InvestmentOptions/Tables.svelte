@@ -31,38 +31,48 @@
   <div class="intro-text">
     <h2>Let's break things down</h2>
     <p>
-      Don’t speak finance? Hover over anything with a dotted underline to see a
-      normal human explanation.
+      Don’t speak finance? Hover over anything with a
+      <span class="tooltip">
+        dotted underline
+        <span class="tooltip-text">You're a natural!</span>
+      </span>
+      to see a normal human explanation.
     </p>
   </div>
   <HeaderRow title="Impact talk" />
   <div class="table-row">
     <h4>Zero fossil fuels</h4>
-    <Tick />
-    <Tick />
-    <Tick />
+    <div class="tick"><Tick /></div>
+    <div class="tick"><Tick /></div>
+    <div class="tick"><Tick /></div>
   </div>
   <div class="table-row">
     <h4>Ethically screened</h4>
-    <Tick />
-    <Tick />
-    <Tick />
+    <div class="tick"><Tick /></div>
+    <div class="tick"><Tick /></div>
+    <div class="tick"><Tick /></div>
   </div>
   <div class="table-row">
     <h4>Invests for impact</h4>
     <div />
-    <Tick />
-    <Tick />
+    <div class="tick"><Tick /></div>
+    <div class="tick"><Tick /></div>
   </div>
   <div class="table-row">
     <h4>Targets 20% investment in climate change solutions</h4>
     <div />
     <div />
-    <Tick />
+    <div class="tick"><Tick /></div>
   </div>
   <div class="table-row">
     <div class="row-head">
-      <h4>Emissions</h4>
+      <h4 class="tooltip">
+        Emissions
+        <span class="tooltip-text">
+          How much greenhouse gas is emitted by investing in this option. If
+          negative, it means it abates more carbon than it emits
+        </span>
+      </h4>
       <p class="head-desc">
         Based on a balance of $30,000 as at 31st of December, 2020.
       </p>
@@ -135,8 +145,13 @@
     </div>
     {#each options as option}
       <div>
-        <p class="number">{option.assetAllocation.growth}% Growth</p>
-        <p class="number">{option.assetAllocation.defensive}% Defensive</p>
+        <p class="number">
+          {option.assetAllocation.growth}% <span class="allocDesc">Growth</span>
+        </p>
+        <p class="number">
+          {option.assetAllocation.defensive}%
+          <span class="allocDesc">Defensive</span>
+        </p>
       </div>
     {/each}
   </div>
@@ -246,14 +261,26 @@
   }
 
   @media (max-width: 760px) {
-    .table-row,
-    .header-row {
+    .table-row {
       grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+
+    .number {
+      &:last-of-type {
+        margin-top: 20px;
+      }
+    }
+
+    .allocDesc {
+      font-size: 10px;
     }
   }
 
   @media (max-width: 600px) {
     .table-row {
+      grid-gap: 10px;
+
       .number-desc {
         font-size: 10px;
       }
