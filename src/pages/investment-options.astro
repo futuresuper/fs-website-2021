@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
 import InvestmentOptions from '../components/page/InvestmentOptions/InvestmentOptions.svelte'
+import pages from '../data/pages.json'
+
+const relatedPages = [
+  pages.HOW_WE_INVEST,
+  pages.EVERYTHING_WE_INVEST_IN
+]
 ---
 
 <style lang="scss">
@@ -12,6 +18,7 @@ import InvestmentOptions from '../components/page/InvestmentOptions/InvestmentOp
   description="Future Super has three investment options to choose from."
   hideDescription
   noContainer
+  relatedPages={relatedPages}
 >
   <InvestmentOptions />
 </BaseLayout>

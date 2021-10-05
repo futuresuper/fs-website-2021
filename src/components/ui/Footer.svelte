@@ -149,7 +149,7 @@
   @use "../../styles/" as *;
 
   footer {
-    margin-top: 200px;
+    margin-top: 80px;
   }
 
   .footer-container {

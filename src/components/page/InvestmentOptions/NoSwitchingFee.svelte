@@ -17,7 +17,7 @@
   @use "../../../styles/" as *;
 
   .no-switching-fee {
-    width: 600px;
+    max-width: 600px;
     margin-top: 80px;
     display: flex;
     align-items: center;

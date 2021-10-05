@@ -1,0 +1,35 @@
+{
+  "HOME": ["Home", "/"],
+  "INVESTMENT_OPTIONS": ["Investment Options", "/investment-options/"],
+  "PERFORMANCE_AND_RETURNS": [
+    "Performance and Returns",
+    "/performance-and-returns/"
+  ],
+  "HOW_WE_INVEST": ["How We Invest", "/how-we-invest/"],
+  "CONTACT_US": ["Contact Us", "/contact-us/"],
+  "SUPPORT_AND_FAQS": ["Support and FAQs", "/support-and-faqs/"],
+  "DOCUMENTS_AND_FORMS": ["Documents and Forms", "/documents-and-forms/"],
+  "EMPLOYERS": ["Employers", "/employers/"],
+  "EVERYTHING_WE_INVEST_IN": [
+    "Everything We Invest In",
+    "/everything-we-invest-in/"
+  ],
+  "UNIT_PRICES": ["Unit Prices", "/unit-prices/"],
+  "ABOUT_US": ["About Us", "/about-us/"],
+  "PENSION_FUND": ["Pension Fund", "/pension-fund/"],
+  "WORK_WITH_US": ["Work With Us", "/work-with-us/"],
+  "FUND_INFORMATION": ["Fund Information", "/fund-information/"],
+  "BABY_BUMP": ["Baby Bump", "/baby-bump/"],
+  "CARBON_TRANSPARENCY": ["Carbon Transparency", "/carbon-transparency/"],
+  "PRIVACY_POLICY": ["Privacy Policy", "/privacy-policy/"],
+  "BLOG": ["Blog", "/blog/"],
+  "TERMS_AND_CONDITIONS": ["Terms and Conditions", "/terms-and-conditions/"],
+  "EMPLOYER_NOTICE_OF_PAYMENT": [
+    "Employer Notice of Payment",
+    "/employer-notice-of-payment/"
+  ],
+  "RECONCILIATION": ["Reconciliation", "/reconciliation/"],
+  "BILLBOARD": ["Billboard", "/billboard/"],
+  "DAILY_AUS": ["Daily Aus", "/daily-aus/"],
+  "MEMBER_PRIVACY_POLICY": ["Member Privacy Policy", "/member-privacy-policy/"]
+}

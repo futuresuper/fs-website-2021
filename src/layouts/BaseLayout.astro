@@ -1,7 +1,8 @@
 ---
 import Header from '../components/ui/Header.svelte';
 import Footer from '../components/ui/Footer.svelte';
-const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false} = Astro.props;
+import RelatedPages from '../components/ui/RelatedPages.svelte';
+const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false, relatedPages} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
 const pageDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
@@ -91,6 +92,8 @@ const pageDescription = description ? description : "Your super has the power to
       <div class={!noContainer ? "container" : ""}>
         <slot />
       </div>
+
+      {relatedPages && <RelatedPages relatedPages={relatedPages} />}
     </main>
     <Footer client:visible />
   </body>
