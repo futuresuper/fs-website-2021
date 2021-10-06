@@ -2,6 +2,8 @@
   import returns from "$/data/performanceReturns.json";
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinRow from "./InvestmentOptions/JoinRow.svelte";
+  import RelatedFaqs from "../ui/RelatedFaqs.svelte";
+  export let faqs = [];
 </script>
 
 <div class="container tables">
@@ -29,6 +31,9 @@
     the Fund are not guaranteed. Past performance is not a reliable indicator of
     future performance.
   </p>
+</div>
+<div class="container">
+  <RelatedFaqs {faqs} />
 </div>
 
 <style lang="scss">

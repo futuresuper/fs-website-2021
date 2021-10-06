@@ -21,8 +21,7 @@
   @use "../../styles/" as *;
 
   aside {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 60px 0;
   }
 
   .related {

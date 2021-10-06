@@ -11,6 +11,14 @@ const relatedPages = [
 ]
 
 const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY")
+
+let faqs = Astro.fetchContent('$/pages/faqs/*.md');
+let performanceFaqs = [];
+faqs.map(f => {
+  if (f.category === "Investments and returns") {
+    performanceFaqs.push(f);
+  }
+})
 ---
 
 <BaseLayout
@@ -20,5 +28,5 @@ const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY")
   noContainer
   relatedPages={relatedPages}
 >
-  <PerformanceAndReturns />
+  <PerformanceAndReturns client:load faqs={performanceFaqs} />
 </BaseLayout>
