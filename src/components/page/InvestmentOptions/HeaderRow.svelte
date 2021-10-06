@@ -3,16 +3,26 @@
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
   import Plus from "../../images/Plus.svelte";
+  import Scales from "../../images/Scales.svelte";
 
   const green = "#3dfa52";
   const blue = "#0A5AFF";
   const black = "#212121";
+  const pink = "#FF27C3";
 
   export let title = "";
+  export let includePension = false;
+
+  const firstColSpan = includePension ? 2 : 3;
 </script>
 
-<div class="header-row">
-  <h3>{title}</h3>
+<div class="header-row {includePension ? 'pension' : ''}">
+  <h3
+    class={includePension ? "pension" : ""}
+    style="grid-column: span {firstColSpan};"
+  >
+    {title}
+  </h3>
 
   <div class="option-label">
     <div class="icons">
@@ -58,6 +68,17 @@
     </div>
     <h4>Renewables Plus Growth</h4>
   </div>
+
+  {#if includePension}
+    <div class="option-label">
+      <div class="icons">
+        <div class="icon">
+          <Scales colour={pink} />
+        </div>
+      </div>
+      <h4>Balanced Growth Pension</h4>
+    </div>
+  {/if}
 </div>
 
 <style lang="scss">
@@ -68,11 +89,10 @@
     grid-gap: 20px;
     grid-template-columns: repeat(6, 1fr);
     padding: 20px;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 60px;
     h3 {
       margin: 0 0 0 -20px;
-      grid-column: span 3;
     }
     h4 {
       margin: 0;
@@ -105,6 +125,14 @@
       }
     }
 
+    .header-row.pension {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    h3.pension {
+      display: none;
+    }
+
     .icons {
       justify-content: center;
     }
@@ -117,6 +145,10 @@
   @media (max-width: 600px) {
     .header-row {
       grid-gap: 10px;
+
+      h4 {
+        font-size: 9px;
+      }
     }
 
     .icons {

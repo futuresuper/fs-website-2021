@@ -2,10 +2,22 @@
 import Header from '../components/ui/Header.svelte';
 import Footer from '../components/ui/Footer.svelte';
 import RelatedPages from '../components/ui/RelatedPages.svelte';
-const {title, image, description, intro, hideHeader=false, hideTitle=false, hideDescription=false, noContainer=false, relatedPages} = Astro.props;
+const {
+  title,
+  image,
+  description,
+  pageDescription,
+  intro,
+  hideHeader=false,
+  hideTitle=false,
+  hideDescription=false,
+  noContainer=false,
+  relatedPages,
+  pageHeadBackgroundColour
+} = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
-const pageDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
+const seoDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
 ---
 
 <style lang="scss">
@@ -19,7 +31,10 @@ const pageDescription = description ? description : "Your super has the power to
   .page-header {
     background-color: $black;
     color: $white;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
   }
 
   .page-title-and-description {
@@ -63,13 +78,13 @@ const pageDescription = description ? description : "Your super has the power to
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" shrink-to-fit="no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content={pageDescription} />
+    <meta name="description" content={seoDescription} />
     <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={pageDescription} />
+    <meta property="og:description" content={seoDescription} />
     <meta property="og:image" content={pageImage} />
     <meta property="og:type" content="website" />
     <meta property="twitter:title" content={pageTitle} />
-    <meta property="twitter:description" content={pageDescription} />
+    <meta property="twitter:description" content={seoDescription} />
     <meta property="twitter:image" content={pageImage} />
     <meta name="twitter:card" content="summary_large_image"/>
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.futuresuper.com.au/images/favicon/favicon-32.png">
@@ -78,15 +93,17 @@ const pageDescription = description ? description : "Your super has the power to
   </head>
   <body>
     {!hideHeader && <Header />}
-    <main>
+    <main >
       {!hideHeader && <div class="behind-header" />}
 
-      <div class="container page-header">
-        <div class="page-title-and-description">
-          { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
-          { !hideDescription && <h3>{pageDescription}</h3>}
+      <div style={pageHeadBackgroundColour ? 'background-color:' + pageHeadBackgroundColour : ''}>
+        <div class="container page-header" >
+          <div class="page-title-and-description">
+            { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
+            { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
+          </div>
+          { intro && <p>{intro}</p>}
         </div>
-        { intro && <p>{intro}</p>}
       </div>
 
       <div class={!noContainer ? "container" : ""}>

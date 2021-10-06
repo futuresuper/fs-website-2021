@@ -1,14 +1,24 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
----
+import PerformanceAndReturns from '../components/page/PerformanceAndReturns.svelte'
+import returns from "$/data/performanceReturns.json";
+import moment from "moment";
 
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
+import pages from '../data/pages.json'
+const relatedPages = [
+  pages.HOW_WE_INVEST,
+  pages.EVERYTHING_WE_INVEST_IN
+]
+
+const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY")
+---
 
 <BaseLayout
   title="Performance and Returns"
   description="See the competitive performance of our funds over the short, medium and long term."
+  pageDescription={desc}
+  noContainer
+  relatedPages={relatedPages}
 >
-
+  <PerformanceAndReturns />
 </BaseLayout>

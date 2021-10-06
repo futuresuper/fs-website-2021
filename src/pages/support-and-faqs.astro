@@ -1,5 +1,15 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
+import BaseLayout from '$/layouts/BaseLayout.astro';
+import Faqs from '../components/page/SupportAndFaqs/SupportAndFaqs.svelte';
+let faqs = Astro.fetchContent('$/pages/faqs/*.md');
+const black100 = "#f5f5f5";
+
+import pages from '../data/pages.json';
+const relatedPages = [
+  pages.CONTACT_US,
+  pages.DOCUMENTS_AND_FORMS,
+  pages.HOW_WE_INVEST
+];
 ---
 
 <style lang="scss">
@@ -9,6 +19,9 @@ import BaseLayout from '$/layouts/BaseLayout.astro'
 <BaseLayout
   title="Support and FAQs"
   description="Find answers to common questions here."
+  noContainer={true}
+  pageHeadBackgroundColour={black100}
+  relatedPages={relatedPages}
 >
-
+  <Faqs client:load faqs={faqs} />
 </BaseLayout>

@@ -3,7 +3,7 @@
 </script>
 
 <aside class="container related">
-  <h2>Other useful information</h2>
+  <h2>Also see</h2>
   <div />
   <div>
     <div class="line" />
