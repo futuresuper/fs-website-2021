@@ -13,7 +13,8 @@ const {
   hideDescription=false,
   noContainer=false,
   relatedPages,
-  pageHeadBackgroundColour
+  pageHeadBackgroundColour,
+  customHeader
 } = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
@@ -98,11 +99,14 @@ const seoDescription = description ? description : "Your super has the power to 
 
       <div style={pageHeadBackgroundColour ? 'background-color:' + pageHeadBackgroundColour : ''}>
         <div class="container page-header" >
-          <div class="page-title-and-description">
-            { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
-            { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
-          </div>
-          { intro && <p>{intro}</p>}
+          {!customHeader &&
+            <div class="page-title-and-description">
+              { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
+              { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
+            </div>
+          }
+          { intro && !customHeader && <p>{intro}</p>}
+          <slot name="customHeader" />
         </div>
       </div>
 

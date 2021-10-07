@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import PageHeader from '../components/page/HowWeInvest/PageHeader.svelte'
 ---
 
 <style lang="scss">
@@ -9,6 +10,7 @@ import BaseLayout from '$/layouts/BaseLayout.astro'
 <BaseLayout
   title="How We Invest"
   description="A better way to invest super for your future."
+  customHeader={true}
 >
-
+  <PageHeader slot="customHeader" />
 </BaseLayout>
