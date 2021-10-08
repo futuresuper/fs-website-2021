@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Fossil fuels",
+    "linkingVerb": "are",
+    "criteria": [
+      {
+        "question": "Does the company have direct fossil fuel reserves or mines and extracts fossil fuels?",
+        "examples": ["BHP Billiton", "Woodside Petroleum (fracking)"]
+      },
+      {
+        "question": "Does the company own or operate fossil fuel power generators?",
+        "examples": ["Origin Energy", "AGL (burning)"]
+      },
+      {
+        "question": "Does the company provide specific and significant services to the fossil fuel industry including engineering, financing, transport, or logistics?",
+        "examples": [
+          "Westpac",
+          "Commonwealth Bank",
+          "NAB",
+          "ANZ (financing), Aurizon (rail transport)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gambling",
+    "linkingVerb": "is",
+    "criteria": [
+      {
+        "question": "Does the company own casinos or manufacture gaming products?",
+        "examples": [
+          "Woolworths",
+          "Aristocrat Leisure (ownership of poker machines and casinos)"
+        ]
+      },
+      {
+        "question": "Does the company provide significant and specific services to the gambling industry? (eg. distribution and payment services)",
+        "examples": [
+          "Fidelity National Information Services (payment services)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Weapons",
+    "linkingVerb": "are",
+    "criteria": [
+      {
+        "question": "Does the company manufacture, produce, or engineer weapons or armaments?",
+        "examples": ["General Dynamics", "Lockheed Martin", "Northrop Grumman"]
+      },
+      {
+        "question": "Does the company provide specific and significant services to military and armaments manufacturing?",
+        "examples": ["SpeedCast (satellite communications)"]
+      }
+    ]
+  },
+  {
+    "name": "Tobacco",
+    "linkingVerb": "is",
+    "criteria": [
+      {
+        "question": "Does the company produce or manufacture tobacco or tobacco products?",
+        "examples": ["Marlborough"]
+      },
+      {
+        "question": "Does the company provide significant services (including retail sale) to the tobacco industry?",
+        "examples": ["Amcor (packaging)"]
+      }
+    ]
+  },
+  {
+    "name": "Uranium mining and nuclear energy",
+    "linkingVerb": "are",
+    "criteria": [
+      {
+        "question": "Does the company mine uranium?",
+        "examples": ["Paladin Energy"]
+      },
+      {
+        "question": "Does the company produce nuclear energy or provide specific and significant services to the nuclear energy industry?",
+        "examples": ["Electricite de France S.A."]
+      }
+    ]
+  }
+]

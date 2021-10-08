@@ -13,13 +13,18 @@ section {
   margin: 60px 0;
 }
 
-button {
-  display: flex;
+button,
+.button {
+  font-family: $heading;
+  line-height: $line-height-sm;
+  text-align: center;
+  display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: $green;
   color: $black;
+  text-decoration: none;
   border: 2px solid $green;
   border-radius: 100px;
   padding: 8px 32px;
@@ -29,6 +34,7 @@ button {
     color: $white;
   }
   &.full-width {
+    display: flex;
     width: 100%;
   }
 }
