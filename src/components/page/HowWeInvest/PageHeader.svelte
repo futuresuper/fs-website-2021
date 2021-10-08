@@ -1,5 +1,6 @@
 <script>
   import SwitchShakeCircle from "../../images/SwitchShakeCircle.svelte";
+  const green = "#3DFA52";
 </script>
 
 <div class="page-header-container">
@@ -26,7 +27,7 @@
     </div>
   </div>
   <div class="switch-circle">
-    <SwitchShakeCircle />
+    <SwitchShakeCircle colour={green} />
   </div>
 </div>
 

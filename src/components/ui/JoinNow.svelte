@@ -1,30 +1,12 @@
 <script>
-  import lottie from "lottie-web";
-  const clientSide = !import.meta.env.SSR;
-
-  if (clientSide) {
-    lottie.loadAnimation({
-      container: document.getElementById("animation"),
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      path: "/animations/fstest.json",
-    });
-  }
+  import CircleAroundText from "../ui/CircleAroundText.svelte";
+  import SwitchShakeCircle from "../images/SwitchShakeCircle.svelte";
 </script>
 
-<div class="animation-container">
-  <div id="animation" />
-</div>
-
-<style lang="scss">
-  @use "../../styles/" as *;
-
-  .animation-container {
-    width: 100%;
-  }
-
-  #animation {
-    width: 100%;
-  }
-</style>
+<CircleAroundText
+  heading="Join now for climate conscious&nbsp;super"
+  buttonText="Join Now"
+  buttonUrl="https://join.futuresuper.com.au/"
+>
+  <SwitchShakeCircle />
+</CircleAroundText>
