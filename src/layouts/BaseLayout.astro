@@ -1,5 +1,5 @@
 ---
-import Header from '../components/ui/Header.svelte';
+import Header from '../components/ui/Header/Header.svelte';
 import Footer from '../components/ui/Footer.svelte';
 import RelatedPages from '../components/ui/RelatedPages.svelte';
 const {
@@ -93,7 +93,7 @@ const seoDescription = description ? description : "Your super has the power to 
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
   </head>
   <body>
-    {!hideHeader && <Header />}
+    {!hideHeader && <Header client:load />}
     <main >
       {!hideHeader && <div class="behind-header" />}
 
