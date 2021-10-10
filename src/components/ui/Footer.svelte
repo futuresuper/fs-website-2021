@@ -3,89 +3,104 @@
   import BCorpLogo from "$/components/images/BCorpLogo.svelte";
   import custodians from "$/data/custodians.json";
   import { fade } from "svelte/transition";
+  import pages from "../../data/pages.json";
+  import SocialFacebook from "../images/SocialFacebook.svelte";
+  import SocialInsta from "../images/SocialInsta.svelte";
+  import SocialLinkedIn from "../images/SocialLinkedIn.svelte";
 
-  let currentlyShowing = 0;
-  let custodian = custodians[currentlyShowing];
-  let custodianVisible = false;
-
-  setInterval(() => {
-    custodianVisible = false;
-    setTimeout(() => {
-      currentlyShowing =
-        currentlyShowing === custodians.length - 1 ? 0 : currentlyShowing + 1;
-      custodian = custodians[currentlyShowing];
-      custodianVisible = true;
-    }, 1000);
-  }, 3000);
-
-  const pages = [
+  const menu = [
     {
       heading: "Why us",
       subPages: [
-        ["How we invest", "/how-we-invest"],
-        ["Investment options", "/investment-options"],
-        ["Pension fund", "/pension-fund"],
-        ["Performance and returns", "/performance-and-returns"],
-        ["Unit prices", "/unit-prices"],
+        pages.HOW_WE_INVEST,
+        pages.INVESTMENT_OPTIONS,
+        pages.PENSION_FUND,
+        pages.PERFORMANCE_AND_RETURNS,
+        pages.UNIT_PRICES,
       ],
     },
     {
       heading: "Resources",
       subPages: [
-        ["Support And FAQs", "/support-and-faqs"],
-        ["Blog", "/blog"],
-        ["Documents and forms", "/documents-and-forms"],
-        ["Empoyers", "/employers"],
+        pages.SUPPORT_AND_FAQS,
+        pages.BLOG,
+        pages.DOCUMENTS_AND_FORMS,
+        pages.EMPLOYERS,
       ],
     },
     {
       heading: "Company",
-      subPages: [
-        ["Contact us", "/contact-us"],
-        ["About us", "/about-us"],
-        ["Careers", "/work-with-us"],
-      ],
+      subPages: [pages.CONTACT_US, pages.ABOUT_US, pages.WORK_WITH_US],
     },
     {
       heading: "Members",
-      subPages: [
-        ["Login", "https://my.futuresuper.com.au/"],
-        ["Sign up", "https://join.futuresuper.com.au/"],
-      ],
-    },
-    {
-      heading: "Social",
-      subPages: [
-        ["Instagram", "https://www.instagram.com/future_super/"],
-        ["Twitter", "https://twitter.com/myfuturesuper/"],
-        ["Facebook", "https://www.facebook.com/myfuturesuper/"],
-      ],
+      subPages: [pages.LOGIN, pages.JOIN],
     },
   ];
 </script>
 
-<footer class="container">
+<footer>
   <div class="footer-container">
-    <div class="menu">
-      <div class="logo-col">
-        <a href="/">
-          <div class="logo">
-            <Logo colour="black" size="54" />
-          </div>
+    <div class="horizontal-space-between">
+      <Logo colour="white" size="54" />
+      <div class="social-icons">
+        <a href="https://www.instagram.com/future_super/"><SocialInsta /></a>
+        <a href="https://www.facebook.com/myfuturesuper/"><SocialFacebook /></a>
+        <a href="https://www.linkedin.com/company/future-super">
+          <SocialLinkedIn />
         </a>
-        <BCorpLogo />
       </div>
-
-      {#each pages as page}
+    </div>
+    <div class="menu">
+      {#each menu as page}
         <div class="pageGroup">
           <h5>{page.heading}</h5>
+          <hr />
           {#each page.subPages as subPage}
             <a href={subPage[1]}>{subPage[0]}</a>
           {/each}
         </div>
       {/each}
     </div>
-    <div class="acknowledgement-and-legals">
+    <div class="horizontal-space-between">
+      <p class="disclaimer">
+        Information provided is of a general nature only and we have not taken
+        your personal financial objectives, situation or needs into account. We
+        recommend you seek financial advice when considering if Future Super is
+        right for your objectives and needs. When considering returns, past
+        performance is not indicative of future performance.
+      </p>
+      <BCorpLogo />
+    </div>
+
+    <div class="horizontal-space-between legal-stuff">
+      <p class="disc legal-links">
+        <a href="/fund-information">Fund Information</a>
+        <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+        <a href="/terms-and-conditions">Terms & Conditions</a>
+        <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </p>
+      <div class="disc abn">
+        <p>
+          <span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277
+          <span class="dot">&nbsp;&nbsp;</span>
+        </p>
+        <p><span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010</p>
+      </div>
+    </div>
+
+    <!-- svelte-ignore a11y-distracting-elements -->
+    <marquee>
+      {#each custodians as custodian}
+        {custodian + " "}
+      {/each}
+      {#each custodians as custodian}
+        {custodian + " "}
+      {/each}
+    </marquee>
+
+    <div class="acknowledgement">
       <div class="flags">
         <img
           src="/images/aboriginal-flag.png"
@@ -98,49 +113,34 @@
           loading="lazy"
         />
       </div>
-
       <div class="footer-text">
-        <p class="acknowledgement">
+        <p class="disc fs-acknowledgement">
           Future Super acknowledges the Traditional Custodians of the lands on
           which we operate and pay our respects to Elders, past, present and
           emerging. We recognise the enduring relationship Aboriginal and/or
           Torres Strait Islander peoples have with Country and that sovereignty
-          was never ceded.
+          was never ceded. We stand for a future that promotes justice for
+          Aboriginal and/or Torres Strait Islander peoples and profoundly
+          respects and acknowledges their respective perspectives, culture,
+          language and history.
         </p>
-        <p class="acknowledgement">
-          We stand for a future that promotes justice for Aboriginal and/or
-          Torres Strait Islander peoples and profoundly respects and
-          acknowledges their respective perspectives, culture, language and
-          history.
-        </p>
-        <div class="horizontal-space-between">
-          <a class="learn-more" href="/reconciliation">Learn More</a>
-          {#if custodianVisible}
-            <p transition:fade class="bold">{custodian}</p>
-          {/if}
-        </div>
-
-        <p class="disc">
-          Information provided is of a general nature only and we have not taken
-          your personal financial objectives, situation or needs into account.
-          We recommend you seek financial advice when considering if Future
-          Super is right for your objectives and needs. When considering
-          returns, past performance is not indicative of future performance.
-        </p>
-        <div class="horizontal-space-between legal-stuff">
-          <p class="disc legal-links">
-            <a href="/fund-information">Fund Information</a>
-            <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-            <a href="/terms-and-conditions">Terms & Conditions</a>
-            <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-            <a href="/privacy-policy">Privacy Policy</a>
-          </p>
-          <div class="disc">
-            <p><span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277 &nbsp;&nbsp;</p>
-            <p><span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010</p>
-          </div>
-        </div>
       </div>
+      <a class="button secondary" href="/reconciliation">
+        Learn More
+        <svg
+          class="arrow"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.7929 6H8V5H19L19.5 5.5V16.5H18.5V6.70708L5.35353 19.8536L4.64642 19.1464L17.7929 6Z"
+            fill="#3DFA52"
+          />
+        </svg>
+      </a>
     </div>
   </div>
 </footer>
@@ -150,37 +150,36 @@
 
   footer {
     margin-top: 80px;
+    border-radius: 32px 32px 0 0;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .footer-container {
-    margin: -20px;
-    background-color: $black;
-    color: $white;
-    border-radius: 32px;
-    padding: 50px 20px 20px 20px;
+    max-width: 1480px;
+    padding: 40px;
+  }
+
+  .logo-and-social-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .social-icons {
+    a {
+      margin-left: 10px;
+    }
   }
 
   .menu {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-  }
-
-  .logo-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    background-color: $white;
-    width: 66px;
-    height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-bottom: 30px;
+    margin-top: 70px;
   }
 
   .pageGroup {
@@ -190,6 +189,10 @@
       margin-top: 0;
       margin-bottom: 16px;
       font-size: 16px;
+    }
+
+    hr {
+      margin-bottom: 20px;
     }
 
     a {
@@ -205,10 +208,11 @@
     }
   }
 
-  .acknowledgement-and-legals {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 20px;
+  .acknowledgement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .flags {
@@ -221,30 +225,33 @@
     }
   }
 
-  .footer-text {
-    grid-column: span 5;
-    font-size: 14px;
-
-    a {
-      color: $green;
-      text-decoration: none;
-      margin-bottom: 40px;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   .horizontal-space-between {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
+  .legal-stuff {
+    margin-top: 20px;
+  }
+
+  .disclaimer {
+    width: 40%;
+    color: $black500;
+  }
+
   .disc {
+    width: calc(50% - 10px);
     font-size: 12px;
-    p {
+    & > * {
       display: inline-block;
+    }
+    &.abn {
+      text-align: right;
+    }
+    &.fs-acknowledgement {
+      margin: 40px 0;
     }
   }
 
@@ -259,68 +266,61 @@
     }
   }
 
+  .arrow {
+    margin-left: 10px;
+  }
+
+  marquee {
+    margin: 50px -40px 20px -40px;
+    color: $green;
+    font-size: 20px;
+  }
+
+  @keyframes scroll {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+
   @media (max-width: 760px) {
     .menu {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    .logo-col {
-      grid-row: span 2;
+    .disclaimer {
+      width: calc(50% - 10px);
     }
 
-    .legal-stuff {
-      flex-direction: column-reverse;
+    .disc {
+      width: 100%;
+      .dot {
+        display: none;
+      }
+      &.abn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        p {
+          margin: 0;
+        }
+      }
+      &.legal-links {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
   @media (max-width: 500px) {
-    .menu,
-    .acknowledgement-and-legals {
-      grid-template-columns: 30% 1fr;
-    }
-
     .menu {
-      margin-bottom: 30px;
+      grid-template-columns: 100%;
     }
 
-    .logo-col {
-      grid-row: span 5;
-    }
-
-    .pageGroup {
-      margin-bottom: 0px;
-
-      h5 {
-        margin-bottom: 10px;
-      }
-
-      a {
-        margin-bottom: 8px;
-      }
-    }
-
-    .footer-text {
-      grid-column: span 1;
-    }
-
-    .dot {
-      display: none;
-    }
-
-    .legal-links {
-      display: flex;
-      flex-direction: column;
-      a {
-        margin-bottom: 6px;
-      }
-    }
-
-    .disc {
-      margin-bottom: 12px;
-      p {
-        display: block;
-        margin-bottom: 6px;
-      }
+    .disclaimer {
+      width: 70%;
     }
   }
 </style>

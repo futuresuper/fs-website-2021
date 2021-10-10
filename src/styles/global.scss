@@ -39,7 +39,8 @@ button,
   }
 }
 
-button.secondary {
+button.secondary,
+.button.secondary {
   border-color: $black800;
   background-color: $black;
   color: $white;
