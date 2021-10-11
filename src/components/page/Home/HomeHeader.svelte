@@ -1,5 +1,7 @@
 <script>
   import pages from "../../../data/pages.json";
+
+  const marqueeMessage = "Let's put it to work. ";
 </script>
 
 <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
@@ -8,11 +10,7 @@
   <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
 </div>
 <div class="marquee">
-  Let's put it to work. Let's put it to work. Let's put it to work. Let's put it
-  to work. Let's put it to work. Let's put it to work. Let's put it to work.
-  Let's put it to work. Let's put it to work. Let's put it to work. Let's put it
-  to work. Let's put it to work. Let's put it to work. Let's put it to work.
-  Let's put it to work.
+  {marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}
 </div>
 
 <style lang="scss">
