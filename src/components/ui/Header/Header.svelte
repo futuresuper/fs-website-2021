@@ -32,7 +32,7 @@
   let y = 0;
   let yBuffered = 0;
   const sensitivity = 10;
-  $: if (Math.abs(y - yBuffered) > sensitivity) {
+  $: if (y > 100 && Math.abs(y - yBuffered) > sensitivity) {
     showMenu = y < yBuffered;
     yBuffered = y;
   }
