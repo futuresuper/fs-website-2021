@@ -1,10 +1,4 @@
-<svg
-  width="48"
-  height="74"
-  viewBox="0 0 48 74"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+<svg viewBox="0 0 48 74" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0)">
     <g clip-path="url(#clip1)">
       <path
@@ -114,3 +108,10 @@
     </clipPath>
   </defs>
 </svg>
+
+<style>
+  svg {
+    width: 100%;
+    max-width: 200px;
+  }
+</style>

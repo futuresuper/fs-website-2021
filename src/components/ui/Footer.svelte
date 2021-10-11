@@ -70,7 +70,9 @@
         right for your objectives and needs. When considering returns, past
         performance is not indicative of future performance.
       </p>
-      <BCorpLogo />
+      <div class="bcorp">
+        <BCorpLogo />
+      </div>
     </div>
 
     <div class="horizontal-space-between legal-stuff">
@@ -207,6 +209,10 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .bcorp {
+    width: 48px;
   }
 
   .acknowledgement {
