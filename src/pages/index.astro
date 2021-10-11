@@ -1,16 +1,28 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
-import Home from '$/components/page/Home.svelte'
+import HomeHeader from '../components/page/Home/HomeHeader.svelte'
+import ThreePoints from '../components/page/Home/ThreePoints.svelte'
+import DollarsCelcius from '../components/page/Home/DollarsCelcius.svelte'
+import SwitchShake from '../components/page/Home/SwitchShake.svelte'
+import BCorp from '../components/page/Home/BCorp.svelte'
+import InvestmentOptions from '../components/page/Home/InvestmentOptions.svelte'
+import ClearTransparent from '../components/page/Home/ClearTransparent.svelte'
+import Reviews from '../components/page/Home/Reviews.svelte'
+import JoinNow from '../components/ui/JoinNow.svelte'
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   hideTitle
   hideDescription
+  customHeader={true}
 >
-  <Home />
+  <HomeHeader slot="customHeader" />
+  <ThreePoints />
+  <DollarsCelcius />
+  <SwitchShake />
+  <BCorp />
+  <ClearTransparent />
+  <Reviews />
+  <JoinNow />
   <script src="/admin/netlifyCmsScript.js" />
 </BaseLayout>

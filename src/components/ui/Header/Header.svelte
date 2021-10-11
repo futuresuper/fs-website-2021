@@ -39,6 +39,7 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
+
 <header class="container {showMenu ? 'show' : ''}">
   <div class="sticky-header">
     <div class="left">
@@ -136,7 +137,7 @@
     display: none;
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: 800px) {
     .hide-on-mobile {
       display: none;
     }

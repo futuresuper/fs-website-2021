@@ -90,15 +90,14 @@
       </div>
     </div>
 
-    <!-- svelte-ignore a11y-distracting-elements -->
-    <marquee>
+    <div class="marquee">
       {#each custodians as custodian}
         {custodian + " "}
       {/each}
       {#each custodians as custodian}
         {custodian + " "}
       {/each}
-    </marquee>
+    </div>
 
     <div class="acknowledgement">
       <div class="flags">
@@ -161,6 +160,8 @@
   .footer-container {
     max-width: 1480px;
     padding: 40px;
+    width: 100%;
+    position: relative;
   }
 
   .logo-and-social-row {
@@ -270,18 +271,22 @@
     margin-left: 10px;
   }
 
-  marquee {
+  .marquee {
     margin: 50px -40px 20px -40px;
     color: $green;
     font-size: 20px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 80s linear infinite;
   }
 
-  @keyframes scroll {
+  @keyframes marquee {
     0% {
-      right: 0%;
+      text-indent: 0px;
     }
     100% {
-      right: 100%;
+      text-indent: -2000px;
     }
   }
 
