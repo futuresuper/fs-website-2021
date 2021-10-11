@@ -142,7 +142,7 @@
     }
 
     .mobile-menu-button {
-      margin-left: 20px;
+      margin-left: 14px;
       display: flex;
       align-items: center;
     }
