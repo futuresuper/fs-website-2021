@@ -259,6 +259,7 @@
     }
     &.fs-acknowledgement {
       margin: 40px 0;
+      line-height: 140%;
     }
   }
 
@@ -315,12 +316,15 @@
         flex-direction: column;
         justify-content: flex-start;
         p {
-          margin: 0;
+          margin: 0 0 4px 0;
         }
       }
       &.legal-links {
         display: flex;
         flex-direction: column;
+        > * {
+          margin-bottom: 4px;
+        }
       }
     }
   }

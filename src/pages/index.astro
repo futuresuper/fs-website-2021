@@ -5,6 +5,7 @@ import ThreePoints from '../components/page/Home/ThreePoints.svelte'
 import DollarsCelcius from '../components/page/Home/DollarsCelcius.svelte'
 import SwitchShake from '../components/page/Home/SwitchShake.svelte'
 import BCorp from '../components/page/Home/BCorp.svelte'
+import InvestmentOptionsIntro from '../components/page/Home/InvestmentOptionsIntro.svelte'
 import InvestmentOptions from '../components/page/Home/InvestmentOptions.svelte'
 import ClearTransparent from '../components/page/Home/ClearTransparent.svelte'
 import Reviews from '../components/page/Home/Reviews.svelte'
@@ -22,8 +23,10 @@ import JoinNow from '../components/ui/JoinNow.svelte'
   <DollarsCelcius />
   <SwitchShake />
   <BCorp />
+  <InvestmentOptionsIntro />
+  <InvestmentOptions />
   <ClearTransparent />
-  <Reviews />
+  <Reviews client:visible />
   <JoinNow />
   <script src="/admin/netlifyCmsScript.js" />
 </BaseLayout>

@@ -1,6 +1,7 @@
 [
   {
     "label": "Balanced Index",
+    "description": "Zero fossil fuels but no impact targets.",
     "impact": 1.2,
     "highlightInvestments": [],
     "fee": {
@@ -15,6 +16,7 @@
   },
   {
     "label": "Balanced Impact",
+    "description": "Zero fossil fuels. Targets investment in social impact and renewable energy projects.",
     "impact": -1.72,
     "highlightInvestments": [
       {
@@ -38,6 +40,7 @@
   },
   {
     "label": "Renewables Plus Growth",
+    "description": "Zero fossil fuels. Targets 20% allocation to climate change solutions.",
     "impact": -1.65,
     "highlightInvestments": [
       {
