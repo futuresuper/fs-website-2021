@@ -1,8 +1,10 @@
 <script>
   import moment from "moment";
+  import slug from "../../../components/scripts/slug";
   export let post;
   let { title, description, image, author, date, url } = post;
   let tags = post.tags ? post.tags : [];
+  let authorSlug = slug(author);
 </script>
 
 <div>
@@ -21,7 +23,7 @@
           {/if}
         </div>
       {/each}
-      <a href={"/blog/author/" + author}>
+      <a href={"/author/" + authorSlug}>
         <h4>{author}</h4>
       </a>
       <p class="date">{moment(date).format("D MMMM YYYY")}</p>

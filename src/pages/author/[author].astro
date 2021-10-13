@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
-import BlogList from '../../../components/page/Blog/BlogList.svelte'
+import BlogList from '../../components/page/Blog/BlogList.svelte'
+import slug from '../../components/scripts/slug.js'
 
 export async function getStaticPaths({paginate}) {
   const allPosts = Astro.fetchContent('$/pages/blog/*.md');
-  let allAuthorsUnique = [...new Set(posts.map(p => p.author))];
+  let allAuthorsUnique = [...new Set(allPosts.map(p => slug(p.author)))];
   return allAuthorsUnique.map(author => ({params: {author}, props: {allPosts}}));
 }
 
@@ -13,15 +14,19 @@ const { params } = Astro.request;
 
 /** filter posts by author, sort by date */
 const posts = allPosts
-  .filter((post) => post.author === params.author)
+  .filter((post) => slug(post.author) === params.author)
   .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 const author = posts[0].author;
 ---
 
 <BaseLayout
-  title={"Blog | " + author}
+  title={author + " | Blog Posts"}
   description={"Blog posts by " + author}
-  hideDescription
+  customHeader
 >
+  <div slot="customHeader" class="container">
+    <h3>Blog posts by</h3>
+    <h1>{author}</h1>
+  </div>
   <BlogList posts={posts} />
 </BaseLayout>
