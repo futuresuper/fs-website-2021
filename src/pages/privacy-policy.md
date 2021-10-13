@@ -9,13 +9,9 @@ summary: ""
 
 ## About this policy
 
-The _​Privacy Act 1988​_ requires organisations that are bound by the ​*Australian Privacy Principles*​ to have
-a privacy policy. This privacy policy sets out the way in which we collect and handle personal information.
+The Privacy Act 1988 requires organisations that are bound by the Australian Privacy Principles to have a privacy policy. This privacy policy sets out the way in which we collect and handle personal information.
 
-We may amend or update this policy from time to time. If this happens, we will keep you posted via our
-website. If you do not agree with the changes, you must cease accessing the website. If you continue to
-access or use the website after the changes come into effect, we will assume that you have agreed to
-them.
+We may amend or update this policy from time to time. If this happens, we will keep you posted via our website. If you do not agree with the changes, you must cease accessing the website. If you continue to access or use the website after the changes come into effect, we will assume that you have agreed to them.
 
 ## What we do
 
@@ -156,9 +152,7 @@ de-identify it.
 
 ## Data breaches
 
-We are required by the *​Privacy Act 1988*​ to notify you and the Office of the Australian Information
-Commissioner in the event of a serious data breach, for example if a database containing personal
-information is hacked or personal information is mistakenly provided to the wrong person.
+We are required by the Privacy Act 1988 to notify you and the Office of the Australian Information Commissioner (OAIC) in the event of an eligible data breach. For example, if a database containing your personal information is hacked or your personal information is mistakenly provided to the wrong person, and we have not been able to prevent the likelihood of serious harm to you because of the breach.
 
 Our notification to you will be sent as soon as practicable and will contain:
 
@@ -169,30 +163,28 @@ Our notification to you will be sent as soon as practicable and will contain:
 
 ## Making contact or complaints
 
-If you have any queries or complaints about our privacy policy or Future Super’s privacy practices
-please contact us at:
+If you have any queries or complaints about a possible interference with your personal information, this Privacy Policy or Future Super’s privacy practices, please contact us at:
 
 ### Future Super Privacy Officer
 
 Call: 1300 658 422
+
 Email: [privacy@futuresuper.com.au](mailto:privacy@futuresuper.com.au)
+
 Mail: Level 3, 2 Bulletin Place, Sydney NSW 2000
 
-We take complaints or access and correction requests seriously and endeavour to respond within 30
-days of your request.
+We take access and correction requests, queries and complaints seriously and will respond promptly, in a confidential manner and in accordance with our Complaints Handling Policy.
 
-If you think that we have failed to resolve a complaint satisfactorily, have an ongoing concern or would
-like more information, you can contact the Office of the Australian Information Commissioner.
+If you would like more information about your privacy rights, you can contact the Office of the Australian Information Commissioner.
 
 ### Office of the Australian Information Commissioner
 
-Online: ​[https://www.oaic.gov.au/individuals/](​https://www.oaic.gov.au/individuals/)
+Online: https://www.oaic.gov.au/individuals/
 
 Call: 1300 363 992
-Email: [enquiries@oaic.gov.au](mailto:enquiries@oaic.gov.au)
-Fax: +61 2 9284 9666
 
-Mail: Office of the Australian Information Commissioner, GPO Box 5218, Sydney NSW 2001, Australia (or
-GPO Box 2999, Canberra ACT 2601, Australia)
+Email: enquiries@oaic.gov.au
 
-**Last updated:** ​ October 2020
+Mail: GPO Box 5218, Sydney NSW 2001, Australia
+
+**Last updated:** ​ September 2021

@@ -2,9 +2,24 @@
   import pages from "../../../data/pages.json";
 
   const marqueeMessage = "Let's put it to work. ";
+
+  export let dailyAus = false; // Daily Aus version includes intro text
 </script>
 
 <div class="container">
+  {#if dailyAus}
+    <p
+      style="padding: 40px; border: 1px solid white; border-radius: 32px; margin-bottom: 40px; margin-top: -40px"
+    >
+      Hi Daily Aus listener, By the time you finish reading this, you could have
+      already moved your money away from fossil fuels. Super is an enormous pool
+      of money that all working Australians share – worth over $3 trillion. To
+      put that massive number into perspective, we know that only 7.7% of
+      Australia's superannuation would be required to finance a transition to
+      100% renewable electricity in Australia.
+    </p>
+  {/if}
+
   <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
   <div class="text">
     <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>

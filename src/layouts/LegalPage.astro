@@ -10,7 +10,12 @@ const {content} = Astro.props;
 <BaseLayout
   title={content.title}
   description={content.description}
-  hideDescription="true"
+  hideDescription={true}
+  intro={content.intro}
 >
   <slot />
+
+  {content.title === "Reconciliation"  && <div>
+    <a href="/rap" class="button">Download our Reconciliation Action Plan</a>
+  </div> }
 </BaseLayout>

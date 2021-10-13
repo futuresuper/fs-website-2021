@@ -1,0 +1,30 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import HomeHeader from '../components/page/Home/HomeHeader.svelte'
+import ThreePoints from '../components/page/Home/ThreePoints.svelte'
+import DollarsCelcius from '../components/page/Home/DollarsCelcius.svelte'
+import SwitchShake from '../components/page/Home/SwitchShake.svelte'
+import BCorp from '../components/page/Home/BCorp.svelte'
+import InvestmentOptionsIntro from '../components/page/Home/InvestmentOptionsIntro.svelte'
+import InvestmentOptions from '../components/page/Home/InvestmentOptions.svelte'
+import ClearTransparent from '../components/page/Home/ClearTransparent.svelte'
+import Reviews from '../components/page/Home/Reviews.svelte'
+import JoinNow from '../components/ui/JoinNow.svelte'
+---
+
+<BaseLayout
+  noContainer
+  customHeader={true}
+>
+  <HomeHeader slot="customHeader" dailyAus={true} />
+  <ThreePoints />
+  <DollarsCelcius />
+  <SwitchShake />
+  <BCorp />
+  <InvestmentOptionsIntro />
+  <InvestmentOptions />
+  <ClearTransparent />
+  <Reviews client:visible />
+  <JoinNow />
+  <script src="/admin/netlifyCmsScript.js" />
+</BaseLayout>

@@ -84,6 +84,8 @@
           <a href="/terms-and-conditions">Terms & Conditions</a>
           <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
           <a href="/privacy-policy">Privacy Policy</a>
+          <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+          <a href="/complaints">Complaints</a>
         </p>
         <div class="disc abn">
           <p>
