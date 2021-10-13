@@ -1,0 +1,21 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import BlogList from '../../../components/page/Blog/BlogList.svelte'
+
+export async function getStaticPaths({paginate}) {
+  const allPosts = Astro.fetchContent('$/pages/blog/*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+
+  // Return a paginated collection of paths for all posts
+  return paginate(sortedPosts, {pageSize: 9});
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout
+  title="Blog"
+  description="What’s new at Future Super."
+>
+  <BlogList posts={page.data} prevUrl={page.url.prev} nextUrl={page.url.next} />
+</BaseLayout>

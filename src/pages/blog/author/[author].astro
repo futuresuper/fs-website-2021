@@ -1,0 +1,27 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import BlogList from '../../../components/page/Blog/BlogList.svelte'
+
+export async function getStaticPaths({paginate}) {
+  const allPosts = Astro.fetchContent('$/pages/blog/*.md');
+  let allAuthorsUnique = [...new Set(posts.map(p => p.author))];
+  return allAuthorsUnique.map(author => ({params: {author}, props: {allPosts}}));
+}
+
+const { allPosts } = Astro.props;
+const { params } = Astro.request;
+
+/** filter posts by author, sort by date */
+const posts = allPosts
+  .filter((post) => post.author === params.author)
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+const author = posts[0].author;
+---
+
+<BaseLayout
+  title={"Blog | " + author}
+  description={"Blog posts by " + author}
+  hideDescription
+>
+  <BlogList posts={posts} />
+</BaseLayout>
