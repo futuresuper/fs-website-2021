@@ -1,31 +1,46 @@
 <script>
 </script>
 
-<div class="grid">
-  <p>Fossil fuel free</p>
-  <div class="image">
-    <img src="/images/Earth_Small.gif" alt="3D rotating earth" />
+<div class="container">
+  <div class="grid">
+    <p>Fossil fuel free</p>
+    <div class="image">
+      <img src="/images/Earth_Small.gif" alt="3D rotating earth" />
+    </div>
   </div>
+</div>
+<div class="line" />
 
-  <div class="line" />
-  <p>Invested for climate action</p>
-  <div class="image">
-    <img
-      class="border-radius"
-      src="/images/climate-action.png"
-      alt="Girl at a climate rally"
-    />
+<div class="container">
+  <div class="grid">
+    <p>Invested for climate action</p>
+    <div class="image">
+      <img
+        class="border-radius"
+        src="/images/climate-action.png"
+        alt="Girl at a climate rally"
+      />
+    </div>
   </div>
+</div>
+<div class="line" />
 
-  <div class="line" />
-  <p>100% transparent</p>
-  <div class="image">
-    <img src="/images/Transparency_Small.gif" alt="100% word graphic" />
+<div class="container">
+  <div class="grid">
+    <p>100% transparent</p>
+    <div class="image">
+      <img src="/images/Transparency_Small.gif" alt="100% word graphic" />
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   .grid {
     display: grid;

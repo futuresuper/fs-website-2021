@@ -26,6 +26,11 @@ const seoDescription = description ? description : "Your super has the power to 
 <style lang="scss">
   @use "../styles/" as *;
 
+  .header-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .behind-header {
     height: 124px;
     background-color: $black;
@@ -99,19 +104,24 @@ const seoDescription = description ? description : "Your super has the power to 
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
   </head>
   <body>
-    {!hideHeader && <Header client:load />}
+    {!hideHeader &&
+      <div class="header-container">
+        <Header client:load />
+      </div>
+    }
     <main >
       {!hideHeader && <div class="behind-header" style={headerBackgroundColour ? 'background-color:' + headerBackgroundColour : '' } />}
 
       {!hidePageHeader && <div style={pageHeadBackgroundColour ? 'background-color:' + pageHeadBackgroundColour : ''}>
-        <div class="container page-header" >
-          {!customHeader &&
-            <div class="page-title-and-description">
-              { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
-              { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
+        <div class="page-header">
+          {!customHeader && <div class="container" >
+              <div class="page-title-and-description">
+                { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
+                { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
+              </div>
+              { intro && <p>{intro}</p>}
             </div>
           }
-          { intro && !customHeader && <p>{intro}</p>}
           <slot name="customHeader" />
         </div>
       </div>}

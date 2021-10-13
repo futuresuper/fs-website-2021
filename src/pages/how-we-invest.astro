@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
-import PageHeader from '../components/page/HowWeInvest/PageHeader.svelte'
+import HowWeInvestHeader from '../components/page/HowWeInvest/HowWeInvestHeader.svelte'
 import InvestmentStrategy from "../components/page/HowWeInvest/InvestmentStrategy.svelte";
 import Everything from "../components/page/HowWeInvest/Everything.svelte";
 import KeyPoints from "../components/page/HowWeInvest/KeyPoints.svelte";
@@ -24,7 +24,7 @@ const relatedPages = [
   customHeader={true}
   relatedPages={relatedPages}
 >
-  <PageHeader slot="customHeader" />
+  <HowWeInvestHeader slot="customHeader" />
   <InvestmentStrategy />
   <ThreeActions />
   <KeyPoints />

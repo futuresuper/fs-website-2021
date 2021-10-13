@@ -3,23 +3,26 @@
   import BestInWorldCircle from "../../images/BestInWorldCircle.svelte";
 </script>
 
-<section>
-  <p>
-    Future super has been awarded best for the world™ status by B Corp for 2021.
-  </p>
-  <div class="best">
-    <BestInWorldCircle />
-    <div>
-      <BCorpLogo />
+<div class="container">
+  <section>
+    <p>
+      Future super has been awarded best for the world™ status by B Corp for
+      2021.
+    </p>
+    <div class="best">
+      <BestInWorldCircle />
+      <div>
+        <BCorpLogo />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
   section {
-    margin: 60px 20px;
+    margin: 60px 0px;
     background-color: $black;
     border-radius: 32px;
     color: $white;

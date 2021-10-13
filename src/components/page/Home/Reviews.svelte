@@ -13,59 +13,62 @@
   }, 4000);
 </script>
 
-<div class="intro">
-  <h3>But don't just take it from us</h3>
-</div>
-<section>
-  <div class="review">
-    <div class="five-stars">★ ★ ★ ★ ★</div>
-    <div class="quote">"{review.title}"</div>
-    <p>
-      {review.author}, <a href={review.url}>{moment(review.date).fromNow()}</a>
-    </p>
-    <div class="slider-buttons">
-      {#each latestReviews as item, index}
-        <div
-          class="slider-button {reviewShowing === index ? 'active' : ''}"
-          on:click={() => {
-            reviewShowing = index;
-          }}
-        />
-      {/each}
-    </div>
+<div class="container">
+  <div class="intro">
+    <h3>But don't just take it from us</h3>
   </div>
-  <div class="totals">
-    <div class="five-stars small">★ ★ ★ ★ ★</div>
-    <div>
-      <p>See all reviews on</p>
+  <section>
+    <div class="review">
+      <div class="five-stars">★ ★ ★ ★ ★</div>
+      <div class="quote">"{review.title}"</div>
       <p>
-        <a href="https://www.productreview.com.au/listings/future-super">
-          ProductReview.com.au
-        </a>
+        {review.author},
+        <a href={review.url}>{moment(review.date).fromNow()}</a>
+      </p>
+      <div class="slider-buttons">
+        {#each latestReviews as item, index}
+          <div
+            class="slider-button {reviewShowing === index ? 'active' : ''}"
+            on:click={() => {
+              reviewShowing = index;
+            }}
+          />
+        {/each}
+      </div>
+    </div>
+    <div class="totals">
+      <div class="five-stars small">★ ★ ★ ★ ★</div>
+      <div>
+        <p>See all reviews on</p>
+        <p>
+          <a href="https://www.productreview.com.au/listings/future-super">
+            ProductReview.com.au
+          </a>
+        </p>
+      </div>
+
+      <p class="total-num">
+        <strong>{reviews.rating}</strong>
+        &nbsp;from&nbsp;
+        <strong>{reviews.reviews}</strong>
+        &nbsp;reviews
+      </p>
+
+      <p class="disclaimer">
+        These reviews are selected from ProductReview.com.au. We have not taken
+        your personal financial objectives, situation or needs into account. We
+        recommend you read our Product Disclosure Statement and consider seeking
+        financial advice when deciding if Future Super is right for you.
       </p>
     </div>
-
-    <p class="total-num">
-      <strong>{reviews.rating}</strong>
-      &nbsp;from&nbsp;
-      <strong>{reviews.reviews}</strong>
-      &nbsp;reviews
-    </p>
-
-    <p class="disclaimer">
-      These reviews are selected from ProductReview.com.au. We have not taken
-      your personal financial objectives, situation or needs into account. We
-      recommend you read our Product Disclosure Statement and consider seeking
-      financial advice when deciding if Future Super is right for you.
-    </p>
-  </div>
-</section>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
   section {
-    margin: 20px;
+    margin: 20px 0;
     padding: 20px;
     background-color: $black;
     border-radius: 32px;

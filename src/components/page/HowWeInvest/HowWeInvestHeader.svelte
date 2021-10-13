@@ -3,7 +3,7 @@
   const green = "#3DFA52";
 </script>
 
-<div class="page-header-container">
+<div class="container page-header-container">
   <div class="title-and-text">
     <h1>How We Invest</h1>
     <h3>We're different</h3>

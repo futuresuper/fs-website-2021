@@ -41,54 +41,57 @@
 
 <footer>
   <div class="footer-container">
-    <div class="horizontal-space-between">
-      <Logo colour="white" size="54" />
-      <div class="social-icons">
-        <a href="https://www.instagram.com/future_super/"><SocialInsta /></a>
-        <a href="https://www.facebook.com/myfuturesuper/"><SocialFacebook /></a>
-        <a href="https://www.linkedin.com/company/future-super">
-          <SocialLinkedIn />
-        </a>
-      </div>
-    </div>
-    <div class="menu">
-      {#each menu as page}
-        <div class="pageGroup">
-          <h5>{page.heading}</h5>
-          <hr />
-          {#each page.subPages as subPage}
-            <a href={subPage[1]}>{subPage[0]}</a>
-          {/each}
+    <div class="container">
+      <div class="horizontal-space-between">
+        <Logo colour="white" size="54" />
+        <div class="social-icons">
+          <a href="https://www.instagram.com/future_super/"><SocialInsta /></a>
+          <a href="https://www.facebook.com/myfuturesuper/"
+            ><SocialFacebook /></a
+          >
+          <a href="https://www.linkedin.com/company/future-super">
+            <SocialLinkedIn />
+          </a>
         </div>
-      {/each}
-    </div>
-    <div class="horizontal-space-between">
-      <p class="disclaimer">
-        Information provided is of a general nature only and we have not taken
-        your personal financial objectives, situation or needs into account. We
-        recommend you seek financial advice when considering if Future Super is
-        right for your objectives and needs. When considering returns, past
-        performance is not indicative of future performance.
-      </p>
-      <div class="bcorp">
-        <BCorpLogo />
       </div>
-    </div>
-
-    <div class="horizontal-space-between legal-stuff">
-      <p class="disc legal-links">
-        <a href="/fund-information">Fund Information</a>
-        <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-        <a href="/terms-and-conditions">Terms & Conditions</a>
-        <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-        <a href="/privacy-policy">Privacy Policy</a>
-      </p>
-      <div class="disc abn">
-        <p>
-          <span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277
-          <span class="dot">&nbsp;&nbsp;</span>
+      <div class="menu">
+        {#each menu as page}
+          <div class="pageGroup">
+            <h5>{page.heading}</h5>
+            <hr />
+            {#each page.subPages as subPage}
+              <a href={subPage[1]}>{subPage[0]}</a>
+            {/each}
+          </div>
+        {/each}
+      </div>
+      <div class="horizontal-space-between">
+        <p class="disclaimer">
+          Information provided is of a general nature only and we have not taken
+          your personal financial objectives, situation or needs into account.
+          We recommend you seek financial advice when considering if Future
+          Super is right for your objectives and needs. When considering
+          returns, past performance is not indicative of future performance.
         </p>
-        <p><span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010</p>
+        <div class="bcorp">
+          <BCorpLogo />
+        </div>
+      </div>
+      <div class="horizontal-space-between legal-stuff">
+        <p class="disc legal-links">
+          <a href="/fund-information">Fund Information</a>
+          <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <span class="dot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+          <a href="/privacy-policy">Privacy Policy</a>
+        </p>
+        <div class="disc abn">
+          <p>
+            <span class="bold">ABN</span> ‍45 ‍960 ‍194 ‍277
+            <span class="dot">&nbsp;&nbsp;</span>
+          </p>
+          <p><span class="bold">USI</span>‍ 45 ‍960 ‍194 ‍277 ‍010</p>
+        </div>
       </div>
     </div>
 
@@ -101,47 +104,49 @@
       {/each}
     </div>
 
-    <div class="acknowledgement">
-      <div class="flags">
-        <img
-          src="/images/aboriginal-flag.png"
-          alt="Aboriginal Flag"
-          loading="lazy"
-        />
-        <img
-          src="/images/tsi-flag.png"
-          alt="Torres Strait Islander Flag"
-          loading="lazy"
-        />
-      </div>
-      <div class="footer-text">
-        <p class="disc fs-acknowledgement">
-          Future Super acknowledges the Traditional Custodians of the lands on
-          which we operate and pay our respects to Elders, past, present and
-          emerging. We recognise the enduring relationship Aboriginal and/or
-          Torres Strait Islander peoples have with Country and that sovereignty
-          was never ceded. We stand for a future that promotes justice for
-          Aboriginal and/or Torres Strait Islander peoples and profoundly
-          respects and acknowledges their respective perspectives, culture,
-          language and history.
-        </p>
-      </div>
-      <a class="button secondary" href="/reconciliation">
-        Learn More
-        <svg
-          class="arrow"
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.7929 6H8V5H19L19.5 5.5V16.5H18.5V6.70708L5.35353 19.8536L4.64642 19.1464L17.7929 6Z"
-            fill="#3DFA52"
+    <div class="container">
+      <div class="acknowledgement">
+        <div class="flags">
+          <img
+            src="/images/aboriginal-flag.png"
+            alt="Aboriginal Flag"
+            loading="lazy"
           />
-        </svg>
-      </a>
+          <img
+            src="/images/tsi-flag.png"
+            alt="Torres Strait Islander Flag"
+            loading="lazy"
+          />
+        </div>
+        <div class="footer-text">
+          <p class="disc fs-acknowledgement">
+            Future Super acknowledges the Traditional Custodians of the lands on
+            which we operate and pay our respects to Elders, past, present and
+            emerging. We recognise the enduring relationship Aboriginal and/or
+            Torres Strait Islander peoples have with Country and that
+            sovereignty was never ceded. We stand for a future that promotes
+            justice for Aboriginal and/or Torres Strait Islander peoples and
+            profoundly respects and acknowledges their respective perspectives,
+            culture, language and history.
+          </p>
+        </div>
+        <a class="button secondary" href="/reconciliation">
+          Learn More
+          <svg
+            class="arrow"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.7929 6H8V5H19L19.5 5.5V16.5H18.5V6.70708L5.35353 19.8536L4.64642 19.1464L17.7929 6Z"
+              fill="#3DFA52"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </footer>
@@ -154,16 +159,12 @@
     border-radius: 32px 32px 0 0;
     background-color: $black;
     color: $white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 
   .footer-container {
-    max-width: 1480px;
-    padding: 40px;
     width: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   .logo-and-social-row {

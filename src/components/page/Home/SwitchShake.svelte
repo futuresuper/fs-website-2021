@@ -9,55 +9,59 @@
   ];
 </script>
 
-<section>
-  <div class="top">
-    <div class="heading">
-      <h2>Switch your<br />super.<br /><span>Shake the<br />system.</span></h2>
-    </div>
-    <p>
-      Switching your super is an easy action that can benefit you while creating
-      real systems change. Here’s how choosing Future Super can compare with
-      other actions you might take.
-    </p>
-  </div>
-  <div class="key">↓ Tonnes of carbon abated by actions</div>
-  {#each rows as row}
-    <div
-      class="grid"
-      style="grid-template-columns: {row[1] * 6}vw 1fr min(180px,30vw)"
-    >
-      {#if row[0] === "Investing with Future Super"}
-        <GraphFSBubble />
-      {:else}
-        <div
-          class="circle"
-          style="width: {row[1] * 6}vw; height: {row[1] * 6}vw"
-        />
-      {/if}
-
-      <div class="line" />
-      <div class="text">
-        <h5>{row[0]}</h5>
-        <p>{row[1]} tonnes</p>
+<div class="container">
+  <section>
+    <div class="top">
+      <div class="heading">
+        <h2>
+          Switch your<br />super.<br /><span>Shake the<br />system.</span>
+        </h2>
       </div>
+      <p>
+        Switching your super is an easy action that can benefit you while
+        creating real systems change. Here’s how choosing Future Super can
+        compare with other actions you might take.
+      </p>
     </div>
-  {/each}
-  <div class="bottom">
-    <p class="disclaimer">
-      Source: Future Super Carbon Transparency Report 2020. These figures are
-      annual and based on the average financial Future Super member’s account
-      balance of $32,631 as at 31 December 2020, switching their account balance
-      from the relevant benchmark fund.
-    </p>
-    <a class="button full-width" href="/how-we-invest">See how we invest</a>
-  </div>
-</section>
+    <div class="key">↓ Tonnes of carbon abated by actions</div>
+    {#each rows as row}
+      <div
+        class="grid"
+        style="grid-template-columns: {row[1] * 6}vw 1fr min(180px,30vw)"
+      >
+        {#if row[0] === "Investing with Future Super"}
+          <GraphFSBubble />
+        {:else}
+          <div
+            class="circle"
+            style="width: {row[1] * 6}vw; height: {row[1] * 6}vw"
+          />
+        {/if}
+
+        <div class="line" />
+        <div class="text">
+          <h5>{row[0]}</h5>
+          <p>{row[1]} tonnes</p>
+        </div>
+      </div>
+    {/each}
+    <div class="bottom">
+      <p class="disclaimer">
+        Source: Future Super Carbon Transparency Report 2020. These figures are
+        annual and based on the average financial Future Super member’s account
+        balance of $32,631 as at 31 December 2020, switching their account
+        balance from the relevant benchmark fund.
+      </p>
+      <a class="button full-width" href="/how-we-invest">See how we invest</a>
+    </div>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
   section {
-    margin: 60px 0;
+    margin: 60px -20px;
     padding: 20px;
   }
 

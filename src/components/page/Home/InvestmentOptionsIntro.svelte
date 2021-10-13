@@ -2,18 +2,20 @@
   import Arrow from "../../images/Arrow.svelte";
 </script>
 
-<section>
-  <p>Choose from three impactful investment options for your&nbsp;super</p>
-  <div class="arrow">
-    <Arrow direction="down" />
-  </div>
-</section>
+<div class="container">
+  <section>
+    <p>Choose from three impactful investment options for your&nbsp;super</p>
+    <div class="arrow">
+      <Arrow direction="down" />
+    </div>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
   section {
-    margin: 20px;
+    margin: 20px 0;
     padding: 7vw 7vw 4vw 7vw;
     border: 1px solid $green;
     border-radius: 32px;

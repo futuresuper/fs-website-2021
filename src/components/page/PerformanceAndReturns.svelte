@@ -6,31 +6,33 @@
   export let faqs = [];
 </script>
 
-<div class="container tables">
-  <HeaderRow includePension={true} />
-  {#each returns.table as r}
-    <div class="table-row">
-      <div class="row-head">
-        <h4>{r.rowHeading}</h4>
-        {#if r.rowSubHeading}
-          <p class="head-desc">Relative to launch date</p>
-        {/if}
+<div class="tables">
+  <div class="container">
+    <HeaderRow includePension={true} />
+    {#each returns.table as r}
+      <div class="table-row">
+        <div class="row-head">
+          <h4>{r.rowHeading}</h4>
+          {#if r.rowSubHeading}
+            <p class="head-desc">Relative to launch date</p>
+          {/if}
+        </div>
+        <div class="number">{r.balancedIndex}</div>
+        <div class="number">{r.balancedImpact}</div>
+        <div class="number">{r.renewablesPlusGrowth}</div>
+        <div class="number">{r.balancedGrowthPension}</div>
       </div>
-      <div class="number">{r.balancedIndex}</div>
-      <div class="number">{r.balancedImpact}</div>
-      <div class="number">{r.renewablesPlusGrowth}</div>
-      <div class="number">{r.balancedGrowthPension}</div>
-    </div>
-  {/each}
-  <JoinRow includePension={true} />
-  <p class="disclaimer">
-    Returns provided are after investment fees, percentage-based administration
-    fees and taxes but before dollar-based administration fees have been taken
-    out. Returns for periods of greater than one year are on a per annum
-    compound basis. Return of capital and the performance of your investment in
-    the Fund are not guaranteed. Past performance is not a reliable indicator of
-    future performance.
-  </p>
+    {/each}
+    <JoinRow includePension={true} />
+    <p class="disclaimer">
+      Returns provided are after investment fees, percentage-based
+      administration fees and taxes but before dollar-based administration fees
+      have been taken out. Returns for periods of greater than one year are on a
+      per annum compound basis. Return of capital and the performance of your
+      investment in the Fund are not guaranteed. Past performance is not a
+      reliable indicator of future performance.
+    </p>
+  </div>
 </div>
 <div class="container">
   <RelatedFaqs {faqs} />

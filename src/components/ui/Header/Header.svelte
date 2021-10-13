@@ -91,7 +91,7 @@
   }
 
   .sticky-header {
-    margin: -20px;
+    margin: -20px auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;

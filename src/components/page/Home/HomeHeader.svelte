@@ -4,13 +4,18 @@
   const marqueeMessage = "Let's put it to work. ";
 </script>
 
-<h1>The super fund that’s doing something about climate&nbsp;change.</h1>
-<div class="text">
-  <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
-  <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
+<div class="container">
+  <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
+  <div class="text">
+    <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
+    <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
+  </div>
 </div>
-<div class="marquee">
-  {marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}
+
+<div class="marquee-container">
+  <div class="marquee">
+    {marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}
+  </div>
 </div>
 
 <style lang="scss">
@@ -32,6 +37,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .marquee-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
   }
 
   .marquee {

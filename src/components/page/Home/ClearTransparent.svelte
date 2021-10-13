@@ -2,43 +2,45 @@
   import Arrow from "../../images/Arrow.svelte";
 </script>
 
-<section>
-  <h2>Clear. Open.<br />Transparent.</h2>
-  <div>
-    <div class="intro">
-      <p>
-        If you have a question about your super, we have the answer easily
-        available and easy to understand.
-      </p>
-      <div>
-        <Arrow />
+<div class="container">
+  <section>
+    <h2>Clear. Open.<br />Transparent.</h2>
+    <div>
+      <div class="intro">
+        <p>
+          If you have a question about your super, we have the answer easily
+          available and easy to understand.
+        </p>
+        <div>
+          <Arrow />
+        </div>
       </div>
+      <p class="question">
+        Want to know how our investment strategy impacts your carbon emissions?
+      </p>
+      <a href="/" class="button">
+        <span class="mobile-hide">Browse the&nbsp;</span>Carbon Transparency
+        Report
+      </a>
+      <p class="question">
+        Want to know everything that Future Super invests in, how much money we
+        allocate to each company, and which investments go in which options?
+      </p>
+      <a href="/" class="button"> Check out everything we invest in </a>
+      <p class="question">
+        Want to know how each of our screens works, including tolerance and how
+        we define things like“fossil fuels”?
+      </p>
+      <a href="/" class="button"> Understand our screens </a>
     </div>
-    <p class="question">
-      Want to know how our investment strategy impacts your carbon emissions?
-    </p>
-    <a href="/" class="button">
-      <span class="mobile-hide">Browse the&nbsp;</span>Carbon Transparency
-      Report
-    </a>
-    <p class="question">
-      Want to know everything that Future Super invests in, how much money we
-      allocate to each company, and which investments go in which options?
-    </p>
-    <a href="/" class="button"> Check out everything we invest in </a>
-    <p class="question">
-      Want to know how each of our screens works, including tolerance and how we
-      define things like“fossil fuels”?
-    </p>
-    <a href="/" class="button"> Understand our screens </a>
-  </div>
-</section>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
   section {
-    margin: 140px 20px;
+    margin: 100px 0px 20px 0;
     display: flex;
     justify-content: space-between;
     > * {
