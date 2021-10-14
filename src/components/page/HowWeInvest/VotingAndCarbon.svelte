@@ -20,7 +20,6 @@
         improve their ESG policies.
       </p>
     </div>
-    <a href="#" class="button">More about our stewardship</a>
   </div>
   <div class="col">
     <div>
@@ -34,7 +33,9 @@
       </h4>
     </div>
 
-    <a href="#" class="button">Download carbon transparency report</a>
+    <a href="/carbon-transparency-report" class="button"
+      >Download carbon transparency report</a
+    >
   </div>
 </div>
 

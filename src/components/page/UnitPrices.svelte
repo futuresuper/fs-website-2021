@@ -76,11 +76,6 @@
     .row-head {
       margin: 0;
       grid-column: span 2;
-      .head-desc {
-        font-size: 13px;
-        margin-top: 4px;
-        margin-bottom: 0px;
-      }
     }
 
     .number {
@@ -110,10 +105,6 @@
       }
     }
 
-    .allocDesc {
-      font-size: 10px;
-    }
-
     .disclaimer {
       max-width: 100%;
     }
@@ -122,10 +113,6 @@
   @media (max-width: 600px) {
     .table-row {
       grid-gap: 10px;
-    }
-
-    .intro-text {
-      max-width: 100%;
     }
   }
 

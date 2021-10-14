@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import WorkWithUs from "../components/page/WorkWithUs.svelte"
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Work With Us"
+  intro="We do financial services with a difference. Help us combat climate change and inequality."
   description="We do financial services with a difference. Help us combat climate change and inequality."
+  hideDescription
+  skinnyContainer
 >
-
+  <WorkWithUs />
 </BaseLayout>

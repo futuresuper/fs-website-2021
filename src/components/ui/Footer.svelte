@@ -17,7 +17,6 @@
         pages.PENSION_FUND,
         pages.PERFORMANCE_AND_RETURNS,
         pages.EVERYTHING_WE_INVEST_IN,
-        pages.UNIT_PRICES,
       ],
     },
     {
@@ -27,6 +26,8 @@
         pages.BLOG,
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
+        pages.CARBON_TRANSPARENCY,
+        pages.UNIT_PRICES,
       ],
     },
     {

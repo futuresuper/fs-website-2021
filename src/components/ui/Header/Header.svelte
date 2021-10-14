@@ -55,8 +55,10 @@
       </div>
     </div>
     <div class="right">
-      <button class="secondary hide-on-mobile">Login</button>
-      <button>Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</button>
+      <a class="button secondary hide-on-mobile" href={pages.LOGIN[1]}>Login</a>
+      <a class="button" href={pages.JOIN[1]}
+        >Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</a
+      >
       <div
         class="mobile-menu-button"
         on:click={() => {
@@ -119,7 +121,7 @@
     flex-direction: row;
     align-items: center;
 
-    button {
+    a {
       margin-left: 20px;
       height: 40px;
       font-family: $regular;
@@ -162,7 +164,7 @@
     }
 
     .right {
-      button {
+      .button {
         height: 30px;
       }
     }

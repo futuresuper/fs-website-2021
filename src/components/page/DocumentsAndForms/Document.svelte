@@ -37,7 +37,7 @@
   }
 
   article {
-    padding: 20px 0;
+    padding: 20px;
     border-top: 1px solid $black;
     display: flex;
     &:hover {

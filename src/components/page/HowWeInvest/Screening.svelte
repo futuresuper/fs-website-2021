@@ -21,7 +21,9 @@
       from companies thoughtfully addressing their environmental, social and
       governance opportunities and risks.
     </p>
-    <a href="#" class="button">Our full screening strategy</a>
+    <a href="/impact-screening-strategy" class="button">
+      Our full screening strategy
+    </a>
     <p class="disclaimer">
       Future Super Investment Services Pty Ltd (FSIS) is a service provider for
       the BetaShares products we invest in. The role of FSIS is to advise and

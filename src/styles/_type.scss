@@ -83,6 +83,11 @@ h2 {
   font-size: min(max(1.5rem, 4vw), 5rem); // Min, Variable, Max
   letter-spacing: -0.04rem;
 }
+.skinny-container {
+  h2 {
+    margin-top: 60px;
+  }
+}
 
 h3 {
   line-height: $line-height-xs;
