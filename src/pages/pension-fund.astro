@@ -1,14 +1,43 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import PensionFund from '../components/page/PensionFund.svelte'
+import RelatedFaqs from '../components/ui/RelatedFaqs.astro'
+import RelatedDocs from '../components/ui/RelatedDocs.astro'
+
+import pages from '../data/pages.json'
+const relatedPages = [
+  pages.HOW_WE_INVEST,
+  pages.EVERYTHING_WE_INVEST_IN,
+  pages.PERFORMANCE_AND_RETURNS
+]
+
+const black = "#212121"
 ---
 
-<style lang="scss">
-  @use "../styles/" as *;
+<style>
+  div {
+    padding: 0 calc(20% + 40px);
+  }
+
+  @media (max-width: 900px) {
+    div {
+      padding: 0 40px;
+    }
+  }
 </style>
 
 <BaseLayout
   title="Pension Fund"
   description="Free your pension from fossil fuels."
+  hideDescription
+  noContainer
+  relatedPages={relatedPages}
+  pageHeadBackgroundColour={black}
 >
+  <PensionFund />
 
+  <div>
+    <RelatedFaqs category="Pension" />
+    <RelatedDocs category="Pension Documents" />
+  </div>
 </BaseLayout>

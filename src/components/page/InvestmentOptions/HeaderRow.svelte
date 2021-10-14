@@ -12,6 +12,7 @@
 
   export let title = "";
   export let includePension = false;
+  export let pensionOnly = false;
 
   const firstColSpan = includePension ? 2 : 3;
 </script>
@@ -24,52 +25,54 @@
     {title}
   </h3>
 
-  <div class="option-label">
-    <div class="icons">
-      <div class="icon">
-        <NoFossilFuels colour={black} />
+  {#if !pensionOnly}
+    <div class="option-label">
+      <div class="icons">
+        <div class="icon">
+          <NoFossilFuels colour={black} />
+        </div>
       </div>
+      <h4>Balanced Index</h4>
     </div>
-    <h4>Balanced Index</h4>
-  </div>
 
-  <div class="option-label">
-    <div class="icons">
-      <div class="icon">
-        <Leaf colour={blue} />
+    <div class="option-label">
+      <div class="icons">
+        <div class="icon">
+          <Leaf colour={blue} />
+        </div>
+        <div class="plus">
+          <Plus colour={blue} />
+        </div>
+        <div class="icon">
+          <NoFossilFuels colour={blue} />
+        </div>
       </div>
-      <div class="plus">
-        <Plus colour={blue} />
-      </div>
-      <div class="icon">
-        <NoFossilFuels colour={blue} />
-      </div>
+      <h4>Balanced Impact</h4>
     </div>
-    <h4>Balanced Impact</h4>
-  </div>
 
-  <div class="option-label">
-    <div class="icons">
-      <div class="icon">
-        <World colour={green} />
+    <div class="option-label">
+      <div class="icons">
+        <div class="icon">
+          <World colour={green} />
+        </div>
+        <div class="plus">
+          <Plus colour={green} />
+        </div>
+        <div class="icon">
+          <Leaf colour={green} />
+        </div>
+        <div class="plus">
+          <Plus colour={green} />
+        </div>
+        <div class="icon">
+          <NoFossilFuels colour={green} />
+        </div>
       </div>
-      <div class="plus">
-        <Plus colour={green} />
-      </div>
-      <div class="icon">
-        <Leaf colour={green} />
-      </div>
-      <div class="plus">
-        <Plus colour={green} />
-      </div>
-      <div class="icon">
-        <NoFossilFuels colour={green} />
-      </div>
+      <h4>Renewables Plus Growth</h4>
     </div>
-    <h4>Renewables Plus Growth</h4>
-  </div>
+  {/if}
 
-  {#if includePension}
+  {#if includePension || pensionOnly}
     <div class="option-label">
       <div class="icons">
         <div class="icon">

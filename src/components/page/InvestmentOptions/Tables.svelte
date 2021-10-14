@@ -6,25 +6,32 @@
   import returns from "$/data/performanceReturns.json";
   import moment from "moment";
 
-  const options = investmentOptions.slice(0, 3); // exclude Pension
+  export let pension = false;
 
   returns.table.map((r) => {
     if (r.rowHeading === "1 Year") {
-      options[0].returnOneYear = r.balancedIndex;
-      options[1].returnOneYear = r.balancedImpact;
-      options[2].returnOneYear = r.renewablesPlusGrowth;
+      investmentOptions[0].returnOneYear = r.balancedIndex;
+      investmentOptions[1].returnOneYear = r.balancedImpact;
+      investmentOptions[2].returnOneYear = r.renewablesPlusGrowth;
+      investmentOptions[3].returnOneYear = r.balancedGrowthPension;
     }
     if (r.rowHeading === "Since inception") {
-      options[0].returnSinceInception = r.balancedIndex;
-      options[1].returnSinceInception = r.balancedImpact;
-      options[2].returnSinceInception = r.renewablesPlusGrowth;
+      investmentOptions[0].returnSinceInception = r.balancedIndex;
+      investmentOptions[1].returnSinceInception = r.balancedImpact;
+      investmentOptions[2].returnSinceInception = r.renewablesPlusGrowth;
+      investmentOptions[3].returnSinceInception = r.balancedGrowthPension;
     }
     if (r.rowHeading === "Launch date") {
-      options[0].launchDate = r.balancedIndex;
-      options[1].launchDate = r.balancedImpact;
-      options[2].launchDate = r.renewablesPlusGrowth;
+      investmentOptions[0].launchDate = r.balancedIndex;
+      investmentOptions[1].launchDate = r.balancedImpact;
+      investmentOptions[2].launchDate = r.renewablesPlusGrowth;
+      investmentOptions[3].launchDate = r.balancedGrowthPension;
     }
   });
+
+  const options = pension
+    ? investmentOptions.slice(3, 4)
+    : investmentOptions.slice(0, 3); // exclude Pension
 </script>
 
 <div class="tables">
@@ -40,74 +47,85 @@
         to see a normal human explanation.
       </p>
     </div>
-    <HeaderRow title="Impact talk" />
+    <HeaderRow title="Impact talk" pensionOnly={pension} />
     <div class="table-row">
       <h4>Zero fossil fuels</h4>
       <div class="tick"><Tick /></div>
-      <div class="tick"><Tick /></div>
-      <div class="tick"><Tick /></div>
+      {#if !pension}
+        <div class="tick"><Tick /></div>
+        <div class="tick"><Tick /></div>
+      {/if}
     </div>
     <div class="table-row">
       <h4>Ethically screened</h4>
       <div class="tick"><Tick /></div>
-      <div class="tick"><Tick /></div>
-      <div class="tick"><Tick /></div>
+      {#if !pension}
+        <div class="tick"><Tick /></div>
+        <div class="tick"><Tick /></div>
+      {/if}
     </div>
     <div class="table-row">
       <h4>Invests for impact</h4>
-      <div />
-      <div class="tick"><Tick /></div>
-      <div class="tick"><Tick /></div>
-    </div>
-    <div class="table-row">
-      <h4>Targets 20% investment in climate change solutions</h4>
-      <div />
-      <div />
+      {#if !pension}
+        <div />
+        <div class="tick"><Tick /></div>
+      {/if}
       <div class="tick"><Tick /></div>
     </div>
-    <div class="table-row">
-      <div class="row-head">
-        <h4 class="tooltip">
-          Emissions
-          <span class="tooltip-text">
-            How much greenhouse gas is emitted by investing in this option. If
-            negative, it means it abates more carbon than it emits
-          </span>
-        </h4>
-        <p class="head-desc">
-          Based on a balance of $30,000 as at 31st of December, 2020.
-        </p>
-        <p class="head-desc">
-          <a href="/carbon-transparency">See how we measure emissions</a>
-        </p>
+    {#if !pension}
+      <div class="table-row">
+        <h4>Targets 20% investment in climate change solutions</h4>
+        <div />
+        <div />
+        <div class="tick"><Tick /></div>
       </div>
-      {#each options as option}
-        <div>
-          <p class="number">{option.impact}</p>
-          <p class="number-desc">tonnes of CO<sub>2</sub> equivalent</p>
+    {/if}
+    {#if !pension}
+      <div class="table-row">
+        <div class="row-head">
+          <h4 class="tooltip">
+            Emissions
+            <span class="tooltip-text">
+              How much greenhouse gas is emitted by investing in this option. If
+              negative, it means it abates more carbon than it emits
+            </span>
+          </h4>
+          <p class="head-desc">
+            Based on a balance of $30,000 as at 31st of December, 2020.
+          </p>
+          <p class="head-desc">
+            <a href="/carbon-transparency">See how we measure emissions</a>
+          </p>
         </div>
-      {/each}
-    </div>
-    <div class="table-row">
-      <div class="row-head">
-        <h4>Highlight investments</h4>
-        <p class="head-desc">
-          <a href="/everything-we-invest-in">See all investments</a>
-        </p>
+        {#each options as option}
+          <div>
+            <p class="number">{option.impact}</p>
+            <p class="number-desc">tonnes of CO<sub>2</sub> equivalent</p>
+          </div>
+        {/each}
       </div>
-      {#each options as option}
-        <div class="highlight-investments">
-          {#each option.highlightInvestments as inv}
-            <p class="tooltip">
-              {inv.label}<span class="tooltip-text">{inv.definition}</span>
-            </p>
-          {/each}
-        </div>
-      {/each}
-    </div>
-    <JoinRow />
 
-    <HeaderRow title="Money talk" />
+      <div class="table-row">
+        <div class="row-head">
+          <h4>Highlight investments</h4>
+          <p class="head-desc">
+            <a href="/everything-we-invest-in">See all investments</a>
+          </p>
+        </div>
+        {#each options as option}
+          <div class="highlight-investments">
+            {#each option.highlightInvestments as inv}
+              <p class="tooltip">
+                {inv.label}<span class="tooltip-text">{inv.definition}</span>
+              </p>
+            {/each}
+          </div>
+        {/each}
+      </div>
+      <JoinRow />
+    {/if}
+
+    <HeaderRow title="Money talk" pensionOnly={pension} />
     <div class="table-row">
       <div class="row-head">
         <h4>Fees per year *</h4>
@@ -193,22 +211,41 @@
         </div>
       {/each}
     </div>
-    <JoinRow />
+    {#if !pension}
+      <JoinRow />
+    {/if}
 
     <p class="disclaimer">
-      * Read our <a href="/pds">Product Disclosure Statement</a>
-      and
-      <a href="/aib">Additional Information Booklet</a>
-      for details on how fees apply to your Future Super account. The fees shown
-      above are the total Investment Fees, Administration Fees and Indirect Cost
-      Ratio payable for each of our investment options. Other fees and costs may
-      apply to your account. There's no dollar-based admin fee when your balance
-      is below $6,000. ^ Returns provided are after investment fees, percentage-based
-      administration fees and taxes but before dollar-based administration fees have
-      been taken out. Returns for periods of greater than one year are on a per annum
-      compound basis. Return of capital and the performance of your investment in
-      the Fund are not guaranteed. Past performance is not a reliable indicator of
-      future performance.
+      {#if pension}
+        * Read our <a href="/pppds">Pension Product Disclosure Statement</a> for
+        full details on how fees apply to your Future Super account. The fees
+        shown above are the total Investment Fees, Administration Fees and
+        Indirect Cost Ratio payable for our pension option. Other fees and costs
+        may apply to your account.
+        <br /><br />
+        ^ Returns provided are after investment fees, percentage-based administration
+        fees and taxes but before dollar-based administration fees have been taken
+        out. Returns for periods of greater than one year are on a per annum compound
+        basis. Return of capital and the performance of your investment in the Fund
+        are not guaranteed. Past performance is not a reliable indicator of future
+        performance.
+      {:else}
+        * Read our <a href="/pds">Product Disclosure Statement</a>
+        and
+        <a href="/aib">Additional Information Booklet</a>
+        for details on how fees apply to your Future Super account. The fees shown
+        above are the total Investment Fees, Administration Fees and Indirect Cost
+        Ratio payable for each of our investment options. Other fees and costs may
+        apply to your account. There's no dollar-based admin fee when your balance
+        is below $6,000.
+        <br /><br />
+        ^ Returns provided are after investment fees, percentage-based administration
+        fees and taxes but before dollar-based administration fees have been taken
+        out. Returns for periods of greater than one year are on a per annum compound
+        basis. Return of capital and the performance of your investment in the Fund
+        are not guaranteed. Past performance is not a reliable indicator of future
+        performance.
+      {/if}
     </p>
   </div>
 </div>
