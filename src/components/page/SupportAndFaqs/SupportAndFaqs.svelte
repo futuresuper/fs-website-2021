@@ -30,9 +30,7 @@
       {#if searchMode}
         <div class="category-container">
           {#each matchingFaqs as faq}
-            <div class="faq-container">
-              <Faq {faq} />
-            </div>
+            <Faq {faq} />
           {/each}
           {#if matchingFaqs.length < 1}
             <p>No results matching <strong>{searchText}</strong></p>
@@ -75,19 +73,14 @@
 
   .category-container {
     margin: 50px 0 80px 0;
+    border-bottom: 1px solid $black;
   }
 
   h2 {
     font-size: 16px;
     color: $black500;
     padding-bottom: 18px;
-    border-bottom: 1px solid $black;
     margin: 0;
-  }
-
-  .faq-container {
-    border-bottom: 1px solid $black;
-    padding: 18px 0;
   }
 
   .search-container {

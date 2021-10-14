@@ -6,21 +6,28 @@
   let expanded = false;
 </script>
 
-<div class="faq-heading" on:click={() => (expanded = !expanded)}>
-  <h3>{faq.title}</h3>
+<div class="faq-container">
+  <div class="faq-heading" on:click={() => (expanded = !expanded)}>
+    <h3>{faq.title}</h3>
+    {#if expanded}
+      <MinusCircle />
+    {:else}
+      <PlusCircle />
+    {/if}
+  </div>
   {#if expanded}
-    <MinusCircle />
-  {:else}
-    <PlusCircle />
+    <div class="faq">{@html faq.astro.html}</div>
+    <a href={faq.url}>Permalink</a>
   {/if}
 </div>
-{#if expanded}
-  <div class="faq">{@html faq.astro.html}</div>
-  <a href={faq.url}>Permalink</a>
-{/if}
 
 <style lang="scss">
   @use "../../../styles/" as *;
+
+  .faq-container {
+    border-top: 1px solid $black;
+    padding: 18px 0;
+  }
 
   h3 {
     max-width: 80%;

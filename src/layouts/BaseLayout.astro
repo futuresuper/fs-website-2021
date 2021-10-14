@@ -16,6 +16,7 @@ const {
   relatedPages,
   pageHeadBackgroundColour,
   headerBackgroundColour,
+  skinnyContainer,
   customHeader
 } = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
@@ -60,8 +61,18 @@ const seoDescription = description ? description : "Your super has the power to 
     }
   }
 
+  .skinny-container {
+    padding: 0 20%;
+  }
+
   main {
     width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    .skinny-container {
+      padding: 0;
+    }
   }
 
   @media (max-width: 800px) {
@@ -99,7 +110,7 @@ const seoDescription = description ? description : "Your super has the power to 
     <meta property="twitter:description" content={seoDescription} />
     <meta property="twitter:image" content={pageImage} />
     <meta name="twitter:card" content="summary_large_image"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.futuresuper.com.au/images/favicon/favicon-32.png">
+    <link rel="icon" type="image/gif" sizes="32x32" href="/images/FS_Favicon.gif">
     <link rel="apple-touch-icon" href="https://www.futuresuper.com.au/images/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
   </head>
@@ -126,8 +137,10 @@ const seoDescription = description ? description : "Your super has the power to 
         </div>
       </div>}
 
-      <div class={!noContainer ? "container" : ""}>
-        <slot />
+      <div class={!noContainer ? 'container' : ''}>
+        <div class={skinnyContainer ? 'skinny-container' : ''}>
+          <slot />
+        </div>
       </div>
 
       {relatedPages && <RelatedPages relatedPages={relatedPages} />}

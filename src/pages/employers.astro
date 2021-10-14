@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import Employers from '../components/page/Employers.svelte'
+import RelatedFaqs from "../components/ui/RelatedFaqs.astro";
+import RelatedDocs from "../components/ui/RelatedDocs.astro";
 ---
 
 <style lang="scss">
@@ -8,7 +11,12 @@ import BaseLayout from '$/layouts/BaseLayout.astro'
 
 <BaseLayout
   title="Employers"
+  intro="Here’s what you need to know about paying your employees’ super."
   description="Here’s what you need to know about paying your employees’ super."
+  hideDescription
+  skinnyContainer
 >
-
+  <Employers />
+  <RelatedDocs category="Employer Forms" />
+  <RelatedFaqs category="Employers" />
 </BaseLayout>
