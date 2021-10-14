@@ -17,7 +17,11 @@
   const firstColSpan = includePension ? 2 : 3;
 </script>
 
-<div class="header-row {includePension ? 'pension' : ''}">
+<div
+  class="header-row {includePension ? 'pension' : ''} {pensionOnly
+    ? 'pensionOnly'
+    : ''}"
+>
   <h3
     class={includePension ? "pension" : ""}
     style="grid-column: span {firstColSpan};"
@@ -122,7 +126,12 @@
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       text-align: center;
-
+      h3 {
+        margin-left: 0;
+      }
+      &.pensionOnly {
+        grid-template-columns: 100%;
+      }
       h4 {
         font-size: 12px;
       }

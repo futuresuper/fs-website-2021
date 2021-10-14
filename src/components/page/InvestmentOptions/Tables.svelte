@@ -48,7 +48,7 @@
       </p>
     </div>
     <HeaderRow title="Impact talk" pensionOnly={pension} />
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <h4>Zero fossil fuels</h4>
       <div class="tick"><Tick /></div>
       {#if !pension}
@@ -56,7 +56,7 @@
         <div class="tick"><Tick /></div>
       {/if}
     </div>
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <h4>Ethically screened</h4>
       <div class="tick"><Tick /></div>
       {#if !pension}
@@ -64,7 +64,7 @@
         <div class="tick"><Tick /></div>
       {/if}
     </div>
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <h4>Invests for impact</h4>
       {#if !pension}
         <div />
@@ -73,7 +73,7 @@
       <div class="tick"><Tick /></div>
     </div>
     {#if !pension}
-      <div class="table-row">
+      <div class="table-row {pension ? 'pension' : ''}">
         <h4>Targets 20% investment in climate change solutions</h4>
         <div />
         <div />
@@ -81,7 +81,7 @@
       </div>
     {/if}
     {#if !pension}
-      <div class="table-row">
+      <div class="table-row {pension ? 'pension' : ''}">
         <div class="row-head">
           <h4 class="tooltip">
             Emissions
@@ -105,7 +105,7 @@
         {/each}
       </div>
 
-      <div class="table-row">
+      <div class="table-row {pension ? 'pension' : ''}">
         <div class="row-head">
           <h4>Highlight investments</h4>
           <p class="head-desc">
@@ -126,7 +126,7 @@
     {/if}
 
     <HeaderRow title="Money talk" pensionOnly={pension} />
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <div class="row-head">
         <h4>Fees per year *</h4>
       </div>
@@ -144,7 +144,7 @@
         </div>
       {/each}
     </div>
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <div class="row-head">
         <h4 class="tooltip">
           Investment objectives
@@ -168,7 +168,7 @@
         </div>
       {/each}
     </div>
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <div class="row-head">
         <h4 class="tooltip">
           Asset allocation
@@ -191,7 +191,7 @@
         </div>
       {/each}
     </div>
-    <div class="table-row">
+    <div class="table-row {pension ? 'pension' : ''}">
       <div class="row-head">
         <h4>Recent returns^</h4>
         <p class="head-desc">
@@ -322,6 +322,9 @@
     .table-row {
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
+      &.pension {
+        grid-template-columns: 100%;
+      }
     }
 
     .number {

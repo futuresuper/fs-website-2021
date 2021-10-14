@@ -16,7 +16,6 @@
             <Scales colour={pink} />
           </div>
         </div>
-        <h5>Indexed Investments</h5>
         <h3>Balanced Growth <br /><span class="pink">Pension</span></h3>
         <p>
           Zero fossil fuels. Targets investment in social impact and renewable
