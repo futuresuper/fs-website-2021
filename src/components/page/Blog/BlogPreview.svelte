@@ -1,6 +1,6 @@
 <script>
   import moment from "moment";
-  import slug from "../../../components/scripts/slug";
+  import slug from "../../scripts/slug";
   export let post;
   let { title, description, image, author, date, url } = post;
   let tags = post.tags ? post.tags : [];
@@ -17,7 +17,7 @@
     <div>
       {#each tags as tag, i}
         <div class="tag">
-          {tag}
+          <a href={"/blog/tag/" + slug(tag)}>{tag}</a>
           {#if i !== tags.length - 1}
             <span>•</span>
           {/if}
