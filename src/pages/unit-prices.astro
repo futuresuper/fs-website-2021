@@ -1,14 +1,18 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
----
+import UnitPrices from '../components/page/UnitPrices.svelte'
+import unitPrices from '../data/unitPrices.json'
+import moment from 'moment'
 
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
+const asAtDate = moment(unitPrices[0].effective_date).format("D MMMM YYYY");
+---
 
 <BaseLayout
   title="Unit Prices"
   description="Unit prices for each of our investment options."
+  pageDescription={"As at " + asAtDate}
+  intro="Future Super is a unitised fund, which means that every time you make a contribution you are issued units in the fund. The unit price for all members of the fund (the value of a unit) is calculated every week day and changes based on the value of the assets the fund invests in, as well as the fees and taxes that are due. As the unit price fluctuates so too will your balance, as your balance is calculated as the number of units you hold multiplied by the unit price on any particular day."
+  noContainer
 >
-
+  <UnitPrices />
 </BaseLayout>
