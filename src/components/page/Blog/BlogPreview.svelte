@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 260px;
+    min-height: 220px;
   }
 
   h3 {
@@ -72,5 +72,19 @@
   .date {
     font-size: 12px;
     color: $black500;
+  }
+
+  @media (max-width: 800px) {
+    img {
+      height: 200px;
+    }
+
+    .text {
+      min-height: 0px;
+    }
+
+    h3 {
+      min-height: 0px;
+    }
   }
 </style>

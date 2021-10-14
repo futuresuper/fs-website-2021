@@ -42,4 +42,10 @@
       margin: 0 10px;
     }
   }
+
+  @media (max-width: 800px) {
+    .grid {
+      grid-template-columns: 100%;
+    }
+  }
 </style>

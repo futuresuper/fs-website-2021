@@ -1,25 +1,18 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import BlogPost from '../components/page/Blog/BlogPost.svelte'
+import JoinNow from '../components/ui/JoinNow.svelte'
 const {content} = Astro.props;
-const tags = content.tags ? [...content.tags] : [];
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title={content.title}
   description={content.description}
-  hideDescription="true"
+  hidePageHeader
+  headerBackgroundColour="white"
 >
-  <p>Author: {content.author}</p>
-  <div>
-    <p>tags:</p>
-    <ol>
-      {tags.map(t => <li>{t}</li>)}
-    </ol>
-  </div>
-  <hr />
-  <slot />
+  <BlogPost post={content}>
+    <slot />
+  </BlogPost>
+  <JoinNow />
 </BaseLayout>
