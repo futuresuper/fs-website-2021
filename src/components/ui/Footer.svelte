@@ -16,6 +16,7 @@
         pages.INVESTMENT_OPTIONS,
         pages.PENSION_FUND,
         pages.PERFORMANCE_AND_RETURNS,
+        pages.EVERYTHING_WE_INVEST_IN,
         pages.UNIT_PRICES,
       ],
     },

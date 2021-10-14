@@ -5,13 +5,13 @@
 
   export let doc;
 
-  const { title, docurl, type } = doc;
+  const { title, docurl, type, desc } = doc;
 </script>
 
 <a href={docurl}>
   <article>
     <div class="icon">
-      {#if type === "PDF"}
+      {#if type === "PDF" || type === "Document"}
         <Download />
       {/if}
       {#if type === "Contact"}
@@ -23,7 +23,7 @@
     </div>
     <div>
       <h3>{title}</h3>
-      <div class="desc">{@html doc.astro.html}</div>
+      <div class="desc">{@html desc ? desc : doc.astro.html}</div>
     </div>
   </article>
 </a>

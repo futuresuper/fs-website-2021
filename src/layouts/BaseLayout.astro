@@ -69,6 +69,11 @@ const seoDescription = description ? description : "Your super has the power to 
     width: 100%;
   }
 
+  p.intro {
+    max-width: 70%;
+    color: $black400;
+  }
+
   @media (max-width: 1000px) {
     .skinny-container {
       padding: 0;
@@ -91,6 +96,10 @@ const seoDescription = description ? description : "Your super has the power to 
         max-width: 100%;
         text-align: left;
       }
+    }
+
+    p.intro {
+      max-width: 100%;
     }
   }
 </style>
@@ -130,7 +139,7 @@ const seoDescription = description ? description : "Your super has the power to 
                 { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
                 { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
               </div>
-              { intro && <p>{intro}</p>}
+              { intro && <p class="intro">{intro}</p>}
             </div>
           }
           <slot name="customHeader" />
