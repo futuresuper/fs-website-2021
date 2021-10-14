@@ -1,14 +1,15 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
----
+import DocumentsAndForms from "../components/page/DocumentsAndForms/DocumentsAndForms.svelte"
 
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
+let allDocs = Astro.fetchContent('$/docs-and-forms/*.md');
+let docs = allDocs.sort((a, b) => b.order - a.order);
+---
 
 <BaseLayout
   title="Documents and Forms"
   description="All the documents and forms you need for joining and managing your ethical, fossil fuel free superannuation or pension fund with Future Super."
+  hideDescription
 >
-
+  <DocumentsAndForms docs={docs} />
 </BaseLayout>
