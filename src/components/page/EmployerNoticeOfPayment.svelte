@@ -1,39 +1,6 @@
-<script>
-  let valid = false;
-
-  let sg = 0;
-  let ss = 0;
-  let ea = 0;
-  let mc = 0;
-  let total = 0;
-
-  $: if (sg || ss || ea || mc) {
-    total = (sg + ss + ea + mc).toFixed(2);
-    if (total > 0) {
-      valid = true;
-    }
-  }
-
-  const handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "Employer Notice of Payment",
-        Name: "Andrew",
-      }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
-  };
-</script>
-
 <article>
   <div class="form-container">
-    <form on:submit={handleSubmit}>
-      <!-- <form name="Employer Notice of Payment" method="POST" data-netlify="true"> -->
+    <form name="Employer Notice of Payment" method="POST" data-netlify="true">
       <h3>Enter your employer details</h3>
       <p>
         Enter your business name and the payment reference you wish to use (such
@@ -46,7 +13,7 @@
         >
       </p>
       <button type="submit">Send it</button>
-      <!-- <p>
+      <p>
         <label
           >Contact email
           <input type="email" name="Contact email" required="required" /></label
@@ -110,7 +77,6 @@
             id="SG-Amount"
             name="SG Amount"
             required="required"
-            bind:value={sg}
           /></label
         >
       </p>
@@ -126,7 +92,6 @@
             step="0.01"
             id="Salary-Sacrifice-Amount"
             name="Salary Sacrifice Amount"
-            bind:value={ss}
           /></label
         >
       </p>
@@ -138,7 +103,6 @@
             step="0.01"
             id="Employer-Additional-Amount"
             name="Employer Additional Amount"
-            bind:value={ea}
           /></label
         >
       </p>
@@ -151,20 +115,18 @@
             step="0.01"
             id="Member-Contribution-Amount"
             name="Member Contribution Amount"
-            bind:value={mc}
           /></label
         >
       </p>
-      <p>
+      <!-- <p>
         Total contribution ($)<br />
         <span id="total" class="bold">${total}</span>
-      </p>
+      </p> -->
       <input
         type="text"
         id="Total-Contribution"
         name="Total Contribution"
         style="display: none"
-        value={total}
       />
       <h3>Contribution amounts</h3>
       <p>
@@ -191,15 +153,8 @@
       </p>
 
       <p>
-        <button
-          type="submit"
-          class="primary {valid ? '' : 'invalid'}"
-          disabled={!valid}
-          >{valid
-            ? "Submit for this employee"
-            : "Add contribution amounts before your submit"}</button
-        >
-      </p> -->
+        <button type="submit" class="primary">Submit for this employee</button>
+      </p>
     </form>
   </div>
 </article>
