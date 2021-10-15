@@ -1,14 +1,12 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import MemberExitSurvey from "../components/page/MemberExitSurvey.svelte"
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Member Exit Survey"
   description="Left Future Super? Please tell us how we can do better."
+  skinnyContainer
 >
-
+  <MemberExitSurvey client:load />
 </BaseLayout>
