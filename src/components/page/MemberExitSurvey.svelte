@@ -1,28 +1,28 @@
 <script>
   import { getQueryParam } from "../scripts/getQueryParam.js";
 
-  const clientSide = !import.meta.env.SSR;
+  // const clientSide = !import.meta.env.SSR;
 
-  let name = "";
-  let email = "";
+  // let name = "";
+  // let email = "";
 
-  if (clientSide) {
-    name = getQueryParam("fname");
-    email = getQueryParam("email");
-  }
+  // if (clientSide) {
+  //   name = getQueryParam("fname");
+  //   email = getQueryParam("email");
+  // }
 </script>
 
 <form name="Exit Survey" method="POST" data-netlify="true">
   <p>
     <label
       >First Name
-      <input type="text" id="name" name="name" bind:value={name} /></label
+      <input type="text" id="name" name="name" /></label
     >
   </p>
   <p>
     <label
       >Email
-      <input type="email" id="email" name="email" bind:value={email} /></label
+      <input type="email" id="email" name="email" /></label
     >
   </p>
   <p>

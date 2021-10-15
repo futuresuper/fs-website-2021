@@ -76,7 +76,7 @@
         <label
           >Member date of birth
           <input
-            type="text"
+            type="date"
             name="Member date of birth"
             placeholder="DD/MM/YYYY"
             required="required"
