@@ -12,7 +12,6 @@
           <input type="text" name="Employer name" required="required" /></label
         >
       </p>
-      <button type="submit">Send it</button>
       <p>
         <label
           >Contact email
