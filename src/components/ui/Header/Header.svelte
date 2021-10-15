@@ -82,6 +82,7 @@
   @use "../../../styles/" as *;
 
   header {
+    z-index: 9999;
     color: $white;
     width: 100%;
     position: fixed;
@@ -140,6 +141,10 @@
   }
 
   @media (max-width: 800px) {
+    .sticky-header {
+      margin: -20px;
+    }
+
     .hide-on-mobile {
       display: none;
     }
