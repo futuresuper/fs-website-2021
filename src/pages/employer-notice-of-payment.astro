@@ -1,14 +1,13 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import EmployerNoticeOfPayment from "../components/page/EmployerNoticeOfPayment.svelte"
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Employer Notice of Payment"
   description="Employer Notice of Payment online form"
+  hideDescription
+  skinnyContainer
 >
-
+  <EmployerNoticeOfPayment client:load />
 </BaseLayout>
