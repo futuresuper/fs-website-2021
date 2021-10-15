@@ -1,17 +1,3 @@
-<script>
-  import { getQueryParam } from "../scripts/getQueryParam.js";
-
-  // const clientSide = !import.meta.env.SSR;
-
-  // let name = "";
-  // let email = "";
-
-  // if (clientSide) {
-  //   name = getQueryParam("fname");
-  //   email = getQueryParam("email");
-  // }
-</script>
-
 <form name="Exit Survey" method="POST" data-netlify="true">
   <p>
     <label
