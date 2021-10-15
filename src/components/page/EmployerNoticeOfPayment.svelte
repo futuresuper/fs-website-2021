@@ -13,11 +13,27 @@
       valid = true;
     }
   }
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "Employer Notice of Payment",
+        Name: "Andrew",
+      }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
 </script>
 
 <article>
   <div class="form-container">
-    <form name="Employer Notice of Payment" method="POST" data-netlify="true">
+    <form on:submit={handleSubmit}>
+      <!-- <form name="Employer Notice of Payment" method="POST" data-netlify="true"> -->
       <h3>Enter your employer details</h3>
       <p>
         Enter your business name and the payment reference you wish to use (such
@@ -29,7 +45,8 @@
           <input type="text" name="Employer name" required="required" /></label
         >
       </p>
-      <p>
+      <button type="submit">Send it</button>
+      <!-- <p>
         <label
           >Contact email
           <input type="email" name="Contact email" required="required" /></label
@@ -182,7 +199,7 @@
             ? "Submit for this employee"
             : "Add contribution amounts before your submit"}</button
         >
-      </p>
+      </p> -->
     </form>
   </div>
 </article>
