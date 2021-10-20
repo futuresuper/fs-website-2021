@@ -1,7 +1,7 @@
 ---
 title: "What information do I need to pay employer contributions via a clearing house?"
 slug: what-information-do-i-need-to-pay-employer-contributions-via-a-clearing-house
-date: 2020-12-15T06:43:33Z
+date: 2021-10-19T07:57:21Z
 category: Employers
 layout: $/layouts/FaqPage
 order: 127
@@ -17,6 +17,4 @@ USI: 45 960 194 277 010
 
 Member number (request this from the employee)
 
-The below video tutorial demonstrates how to set up a payment instruction from the Small Business Superannuation Clearing House (SBSCH).
-
-`Source: Services Australia, YouTube`
+_Note - If you are a small business with 19 or fewer employees, or a turnover of less than $10 million a year, you can access the ATO's Small Business Super Clearing House (SBSCH). To register or find out more, go to [www.ato.gov.au/SBSCH](http://www.ato.gov.au/SBSCH)._
