@@ -126,10 +126,10 @@
           <p class="disc fs-acknowledgement">
             Future Super acknowledges the Traditional Custodians of the lands on
             which we operate and pay our respects to Elders, past, present and
-            emerging. We recognise the enduring relationship Aboriginal and/or
+            emerging. We recognise the enduring relationship Aboriginal and
             Torres Strait Islander peoples have with Country and that
             sovereignty was never ceded. We stand for a future that promotes
-            justice for Aboriginal and/or Torres Strait Islander peoples and
+            justice for Aboriginal and Torres Strait Islander peoples and
             profoundly respects and acknowledges their respective perspectives,
             culture, language and history.
           </p>
