@@ -8,9 +8,7 @@
   <div class="container-narrow">
     <h2>{heading}</h2>
     {#each faqs as faq}
-      <div class="faq-container">
-        <Faq {faq} />
-      </div>
+      <Faq {faq} />
     {/each}
   </div>
 </div>
@@ -27,10 +25,6 @@
   .container-narrow {
     width: 100%;
     max-width: 600px;
-  }
-
-  .faq-container {
     border-bottom: 1px solid $black;
-    padding: 18px 0;
   }
 </style>
