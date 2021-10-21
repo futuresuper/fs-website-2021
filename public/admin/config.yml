@@ -36,7 +36,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "documentsAndForms"
     label: "Documents and Forms"
-    folder: "src/pages/documents-and-forms"
+    folder: "src/docs-and-forms"
     create: true
     slug: "{{slug}}"
     fields:
