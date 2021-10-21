@@ -1,6 +1,6 @@
 ---
 title: "Application Form (Online)"
-docurl: "https://join.futuresuper.com.au/"
+url: "https://join.futuresuper.com.au/"
 type: "Online"
 order: 1
 category: "Super Forms"

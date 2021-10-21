@@ -1,6 +1,6 @@
 ---
 title: Protect Your Super Factsheet
-docurl: https://www.futuresuper.com.au/protectyoursuperfactsheet
+url: https://www.futuresuper.com.au/protectyoursuperfactsheet
 type: PDF
 category: Super Documents
 order: 12

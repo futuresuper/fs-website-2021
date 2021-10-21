@@ -1,6 +1,6 @@
 ---
 title: "Financial Services Guide"
-docurl: "https://www.futuresuper.com.au/fsg"
+url: "https://www.futuresuper.com.au/fsg"
 type: "PDF"
 order: 2
 category: "Pension Documents"

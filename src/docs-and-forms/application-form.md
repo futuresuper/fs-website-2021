@@ -1,6 +1,6 @@
 ---
 title: "Application Form"
-docurl: "https://www.futuresuper.com.au/pensionpaperapplicationform"
+url: "https://www.futuresuper.com.au/pensionpaperapplicationform"
 type: "PDF"
 order: 1
 category: "Pension Forms"

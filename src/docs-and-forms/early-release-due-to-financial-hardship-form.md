@@ -1,6 +1,6 @@
 ---
 title: "Early Release Due To Financial Hardship Form"
-docurl: "https://www.futuresuper.com.au/financialhardshipinformation"
+url: "https://www.futuresuper.com.au/financialhardshipinformation"
 type: "PDF"
 order: 11
 category: "Super Forms"

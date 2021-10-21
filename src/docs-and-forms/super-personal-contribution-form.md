@@ -1,6 +1,6 @@
 ---
 title: "Personal Contribution Form"
-docurl: "https://www.futuresuper.com.au/personalcontributionsform"
+url: "https://www.futuresuper.com.au/personalcontributionsform"
 type: "PDF"
 order: 5
 category: "Super Forms"

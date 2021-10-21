@@ -1,6 +1,6 @@
 ---
 title: "Change of Details Form"
-docurl: "https://www.futuresuper.com.au/changeofdetailsform"
+url: "https://www.futuresuper.com.au/changeofdetailsform"
 type: "PDF"
 order: 13
 category: "Super Forms"

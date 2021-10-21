@@ -1,6 +1,6 @@
 ---
 title: "Binding Nomination of Beneficiaries Form"
-docurl: "https://www.futuresuper.com.au/bindingnomination"
+url: "https://www.futuresuper.com.au/bindingnomination"
 type: "PDF"
 order: 9
 category: "Super Forms"

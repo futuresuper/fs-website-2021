@@ -1,6 +1,6 @@
 ---
 title: "Reversionary Form"
-docurl: "https://www.futuresuper.com.au/reversionarybeneficiary"
+url: "https://www.futuresuper.com.au/reversionarybeneficiary"
 type: "PDF"
 order: 6
 category: "Pension Forms"

@@ -1,6 +1,6 @@
 ---
 title: "Withdrawal Form"
-docurl: "https://www.futuresuper.com.au/withdrawal"
+url: "https://www.futuresuper.com.au/withdrawal"
 type: "PDF"
 order: 5
 category: "Pension Forms"

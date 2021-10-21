@@ -1,6 +1,6 @@
 ---
 title: "Significant Event Notice: Issued 1 June 2017"
-docurl: "https://content.myfuturesuper.com.au/forms-docs/FS_Pension_SEN_TTR_closure_under_65_1_June_2017.pdf"
+url: "https://content.myfuturesuper.com.au/forms-docs/FS_Pension_SEN_TTR_closure_under_65_1_June_2017.pdf"
 type: "PDF"
 order: 4
 category: "Pension Documents"
