@@ -41,7 +41,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Document URL", name: "url", widget: "string" }
+      - { label: "Document URL", name: "docurl", widget: "string" }
       - {
           label: "Link Type",
           name: "type",
