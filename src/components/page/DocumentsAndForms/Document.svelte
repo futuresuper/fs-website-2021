@@ -8,7 +8,7 @@
   const { title, docurl, type, desc } = doc;
 </script>
 
-<a href={docurl}>
+<a href={type === "Contact" ? "/contact-us" : docurl}>
   <article>
     <div class="icon">
       {#if type === "PDF" || type === "Document"}
