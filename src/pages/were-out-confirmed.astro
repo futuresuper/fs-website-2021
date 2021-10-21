@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import WereOutConfirmed from "../components/page/WereOutConfirmed.svelte"
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Success!"
+  intro="You’ve agreed to your name featuring in Future Super’s We’re Out campaign."
+  hideDescription
+  skinnyContainer
 >
-
+  <WereOutConfirmed client:load />
 </BaseLayout>
