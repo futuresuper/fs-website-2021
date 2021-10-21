@@ -3,7 +3,7 @@ import BaseLayout from '$/layouts/BaseLayout.astro'
 import DocumentsAndForms from "../components/page/DocumentsAndForms/DocumentsAndForms.svelte"
 
 let allDocs = Astro.fetchContent('$/docs-and-forms/*.md');
-let docs = allDocs.sort((a, b) => b.order - a.order);
+let docs = allDocs.sort((a, b) => a.order - b.order);
 ---
 
 <BaseLayout
