@@ -1,13 +1,20 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
-  "private": true,
+  "name": "website",
+  "version": "2.0.0",
+  "description": "Future Super's website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futuresuper/fs-website-2021.git"
+  },
+  "author": "Future Super",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/futuresuper/fs-website-2021#readme",
   "devDependencies": {
     "astro": "^0.20.7"
   },
