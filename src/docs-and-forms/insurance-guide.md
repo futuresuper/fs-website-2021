@@ -1,6 +1,6 @@
 ---
 title: Insurance Guide**
-url: https://www.futuresuper.com.au/insuranceguide
+docurl: https://www.futuresuper.com.au/insuranceguide
 type: PDF
 category: Super Documents
 order: 5

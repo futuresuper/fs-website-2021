@@ -1,6 +1,6 @@
 ---
 title: Trust Deed for the Future Super Fund
-url: http://diversa.com.au/trustee/future-super
+docurl: http://diversa.com.au/trustee/future-super
 type: Online
 category: Super Documents
 order: 12

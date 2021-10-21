@@ -1,6 +1,6 @@
 ---
 title: Additional Information Booklet
-url: https://www.futuresuper.com.au/aib
+docurl: https://www.futuresuper.com.au/aib
 type: PDF
 category: Super Documents
 order: 4
