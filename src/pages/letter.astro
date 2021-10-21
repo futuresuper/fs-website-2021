@@ -1,14 +1,11 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import Letter from '../components/page/Letter.svelte'
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Message Sent"
   description="Your old fund has been sent the message"
 >
-
+  <Letter />
 </BaseLayout>
