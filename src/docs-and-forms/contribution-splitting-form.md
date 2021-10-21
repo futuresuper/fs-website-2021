@@ -1,6 +1,6 @@
 ---
 title: "Contribution Splitting Form"
-url: "https://www.futuresuper.com.au/contributionsplittingform"
+docurl: "https://www.futuresuper.com.au/contributionsplittingform"
 type: "PDF"
 order: 14
 category: "Super Forms"

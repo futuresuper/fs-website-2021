@@ -1,6 +1,6 @@
 ---
 title: "Product Disclosure Statement"
-url: "https://www.futuresuper.com.au/pppds"
+docurl: "https://www.futuresuper.com.au/pppds"
 type: "PDF"
 order: 1
 category: "Pension Documents"

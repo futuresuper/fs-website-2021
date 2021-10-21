@@ -1,6 +1,6 @@
 ---
 title: "General Compliance Certificate"
-url: "https://www.futuresuper.com.au/generalcompliancecertificate"
+docurl: "https://www.futuresuper.com.au/generalcompliancecertificate"
 type: "PDF"
 order: 1
 category: "Employer Forms"

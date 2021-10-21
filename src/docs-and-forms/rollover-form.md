@@ -1,6 +1,6 @@
 ---
 title: "Rollover Form"
-url: "https://www.futuresuper.com.au/rolloverform"
+docurl: "https://www.futuresuper.com.au/rolloverform"
 type: "PDF"
 order: 2
 category: "Pension Forms"

@@ -1,6 +1,6 @@
 ---
 title: "Non-Binding Nomination of Beneficiaries Form"
-url: "https://www.futuresuper.com.au/nonbindingnomination"
+docurl: "https://www.futuresuper.com.au/nonbindingnomination"
 type: "PDF"
 order: 8
 category: "Super Forms"

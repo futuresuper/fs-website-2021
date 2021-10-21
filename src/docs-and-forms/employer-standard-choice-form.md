@@ -1,6 +1,6 @@
 ---
 title: "Standard Choice Form"
-url: "https://www.futuresuper.com.au/standardchoiceform"
+docurl: "https://www.futuresuper.com.au/standardchoiceform"
 type: "PDF"
 order: 2
 category: "Employer Forms"

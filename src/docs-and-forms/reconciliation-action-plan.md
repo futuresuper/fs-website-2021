@@ -1,6 +1,6 @@
 ---
 title: "Reconciliation Action Plan"
-url: "https://www.futuresuper.com.au/rap"
+docurl: "https://www.futuresuper.com.au/rap"
 type: "PDF"
 order: 1
 category: "Reconciliation Documents"

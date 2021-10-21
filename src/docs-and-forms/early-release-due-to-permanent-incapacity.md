@@ -1,6 +1,6 @@
 ---
 title: "Early Release Due to Permanent Incapacity"
-url: "https://www.futuresuper.com.au/permanentincapacity"
+docurl: "https://www.futuresuper.com.au/permanentincapacity"
 type: "PDF"
 order: 12
 category: "Super Forms"

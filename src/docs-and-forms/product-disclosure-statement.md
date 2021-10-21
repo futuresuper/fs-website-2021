@@ -1,6 +1,6 @@
 ---
 title: "Product Disclosure Statement*"
-url: "https://www.futuresuper.com.au/pds"
+docurl: "https://www.futuresuper.com.au/pds"
 type: "PDF"
 order: 1
 category: "Super Documents"

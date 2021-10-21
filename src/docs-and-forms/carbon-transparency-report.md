@@ -1,6 +1,6 @@
 ---
 title: "Carbon Transparency Report"
-url: "https://www.futuresuper.com.au/carbon-transparency-report"
+docurl: "https://www.futuresuper.com.au/carbon-transparency-report"
 type: "PDF"
 order: 1
 category: "Carbon Transparency Documents"

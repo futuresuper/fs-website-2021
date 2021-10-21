@@ -1,6 +1,6 @@
 ---
 title: "Financial Services Guide"
-url: "https://www.futuresuper.com.au/fsg"
+docurl: "https://www.futuresuper.com.au/fsg"
 type: "PDF"
 order: 2
 category: "Super Documents"
