@@ -4,8 +4,10 @@ import Letter from '../components/page/Letter.svelte'
 ---
 
 <BaseLayout
-  title="Message Sent"
-  description="Your old fund has been sent the message"
+  title="Letter Sent"
+  hidePageHeader
+  headerBackgroundColour="#FFFFFF"
+  skinnyContainer
 >
-  <Letter />
+  <Letter client:load />
 </BaseLayout>
