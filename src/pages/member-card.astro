@@ -1,14 +1,12 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
+import MemberCard from "../components/page/MemberCard.svelte"
 ---
-
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
 
 <BaseLayout
   title="Member Card"
   description="Get a digital member card you can add to your Apple or Google Wallet"
+  skinnyContainer
 >
-
+  <MemberCard client:load />
 </BaseLayout>
