@@ -4,6 +4,7 @@
   const marqueeMessage = "Let's put it to work. ";
 
   export let dailyAus = false; // Daily Aus version includes intro text
+  export let donationOffer = false; // Includes referral donation offer
 </script>
 
 <div class="container">
@@ -17,6 +18,15 @@
       put that massive number into perspective, we know that only 7.7% of
       Australia's superannuation would be required to finance a transition to
       100% renewable electricity in Australia.
+    </p>
+  {/if}
+
+  {#if donationOffer}
+    <p
+      style="padding: 40px; border: 1px solid white; border-radius: 32px; margin-bottom: 80px; margin-top: -60px; text-align: center"
+    >
+      Looks like your friend referred you here. Switch to Future Super and we'll
+      donate $50 to WIRES on behalf of you and your friend.
     </p>
   {/if}
 
