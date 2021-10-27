@@ -16,8 +16,16 @@
     {/if}
   </div>
   {#if expanded}
-    <div class="faq">{@html faq.astro.html}</div>
-    <a href={faq.url}>Permalink</a>
+    <div class="faq">
+      {#if faq.astro}
+        {@html faq.astro.html}
+      {:else}
+        <slot />
+      {/if}
+    </div>
+    {#if faq.url}
+      <a href={faq.url}>Permalink</a>
+    {/if}
   {/if}
 </div>
 

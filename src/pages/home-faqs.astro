@@ -1,0 +1,14 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import HomeFaqs from '../components/page/Home/HomeFaqs.svelte'
+import JoinNow from '../components/ui/JoinNow.svelte'
+---
+
+<BaseLayout
+  title="Looks like you’ve been chatting to your friend about Future Super?"
+  hideDescription
+  intro="You may have only just heard of Future Super for the first time, so here are some common questions people ask about us when they’re thinking about switching their super, or just trying to get their head around what we do."
+>
+  <HomeFaqs client:load />
+  <JoinNow />
+</BaseLayout>
