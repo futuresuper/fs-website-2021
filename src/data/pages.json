@@ -33,5 +33,5 @@
   "DAILY_AUS": ["Daily Aus", "/daily-aus/"],
   "MEMBER_PRIVACY_POLICY": ["Member Privacy Policy", "/member-privacy-policy/"],
   "LOGIN": ["Login", "https://my.futuresuper.com.au/"],
-  "JOIN": ["Join Now →", "https://join.futuresuper.com.au/"]
+  "JOIN": ["Join Now →", "/join-now"]
 }

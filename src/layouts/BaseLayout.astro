@@ -17,7 +17,8 @@ const {
   pageHeadBackgroundColour,
   headerBackgroundColour,
   skinnyContainer,
-  customHeader
+  customHeader,
+  joinPage=false
 } = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
@@ -161,5 +162,6 @@ const seoDescription = description ? description : "Your super has the power to 
       {relatedPages && <RelatedPages relatedPages={relatedPages} />}
     </main>
     <Footer client:visible />
+    <script src={joinPage ? "/scripts/joinPageRefer.js" : "/scripts/refer.js" }/>
   </body>
 </html>
