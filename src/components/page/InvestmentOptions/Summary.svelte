@@ -4,6 +4,7 @@
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
   import Plus from "../../images/Plus.svelte";
+  import pages from "../../../data/pages.json";
 
   const green = "#3dfa52";
   const blue = "#0A5AFF";
@@ -32,7 +33,7 @@
         <h3>Balanced<br />Index</h3>
         <p>Zero fossil fuels but no impact targets.</p>
       </div>
-      <button class="full-width secondary"> JOIN </button>
+      <a href={pages.JOIN[1]} class="button full-width secondary"> JOIN </a>
     </div>
 
     <!-- Balanced Impact -->
@@ -56,7 +57,7 @@
           energy projects.
         </p>
       </div>
-      <button class="full-width blue-button"> JOIN </button>
+      <a href={pages.JOIN[1]} class="button full-width blue-button"> JOIN </a>
     </div>
 
     <!-- Renewables Plus Growth -->
@@ -86,7 +87,7 @@
           Zero fossil fuels. Targets 20% allocation to climate change solutions.
         </p>
       </div>
-      <button class="full-width"> JOIN </button>
+      <a href={pages.JOIN[1]} class="button full-width"> JOIN </a>
     </div>
   </div>
 </div>
@@ -105,6 +106,9 @@
     background-color: $blue;
     color: $white;
     border-color: $blue;
+    &:hover {
+      border-color: $black;
+    }
   }
 
   .black-strip {

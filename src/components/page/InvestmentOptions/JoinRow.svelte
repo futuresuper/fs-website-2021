@@ -1,14 +1,21 @@
 <script>
+  import pages from "../../../data/pages.json";
+
   export let includePension = false;
 </script>
 
 <div class="join-row {includePension ? 'pension' : ''}">
   <div class="blank3 {includePension ? 'pension' : ''}" />
-  <button class="full-width secondary"> JOIN </button>
-  <button class="full-width blue-button"> JOIN </button>
-  <button class="full-width"> JOIN </button>
+  <a href={pages.JOIN[1]} class="button full-width secondary"> JOIN </a>
+  <a href={pages.JOIN[1]} class="button full-width blue-button"> JOIN </a>
+  <a href={pages.JOIN[1]} class="button full-width"> JOIN </a>
   {#if includePension}
-    <button class="full-width pink-button"> JOIN </button>
+    <a
+      href="/pensionpaperapplicationform"
+      class="button full-width pink-button"
+    >
+      JOIN
+    </a>
   {/if}
 </div>
 
@@ -35,12 +42,18 @@
     background-color: $blue;
     color: $white;
     border-color: $blue;
+    &:hover {
+      border-color: $black;
+    }
   }
 
   .pink-button {
     background-color: $pink;
     color: $white;
     border-color: $pink;
+    &:hover {
+      border-color: $black;
+    }
   }
 
   @media (max-width: 760px) {
@@ -58,7 +71,7 @@
   }
 
   @media (max-width: 600px) {
-    button {
+    .button {
       font-size: 10px;
       padding: 4px;
     }
