@@ -1,0 +1,16 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import moment from 'moment'
+const {content} = Astro.props;
+---
+
+<BaseLayout
+  title={content.title}
+  description={"Closes " + moment(content.endDate).format("D MMM YYYY")}
+  intro={content.salary + "<br/>" + content.location}
+  skinnyContainer
+>
+  <slot />
+
+  <a href={content.applicationUrl} class="button">Apply →</a>
+</BaseLayout>

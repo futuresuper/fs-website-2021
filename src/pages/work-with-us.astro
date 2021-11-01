@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
 import WorkWithUs from "../components/page/WorkWithUs.svelte"
+import moment from 'moment'
+
+let careers = Astro.fetchContent('$/pages/career/*.md');
+careers = careers.sort((a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf());
+careers = careers.filter(c => {return moment(c.startDate).utc().isBefore(moment()) && moment(c.endDate).utc().isAfter(moment())})
+
 ---
 
 <BaseLayout
@@ -10,5 +16,5 @@ import WorkWithUs from "../components/page/WorkWithUs.svelte"
   hideDescription
   skinnyContainer
 >
-  <WorkWithUs />
+  <WorkWithUs careers={careers} />
 </BaseLayout>
