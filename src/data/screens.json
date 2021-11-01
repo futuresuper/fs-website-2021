@@ -5,11 +5,14 @@
     "criteria": [
       {
         "question": "Does the company have direct fossil fuel reserves or mines and extracts fossil fuels?",
-        "examples": ["BHP Billiton", "Woodside Petroleum (fracking)"]
+        "examples": [
+          "BHP Billiton",
+          "Woodside Petroleum (extracting and operating)"
+        ]
       },
       {
         "question": "Does the company own or operate fossil fuel power generators?",
-        "examples": ["Origin Energy", "AGL (burning)"]
+        "examples": ["Origin Energy", "AGL (operating)"]
       },
       {
         "question": "Does the company provide specific and significant services to the fossil fuel industry including engineering, financing, transport, or logistics?",

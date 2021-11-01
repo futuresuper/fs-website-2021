@@ -31,7 +31,7 @@
       </a>
       <p class="question">
         Want to know how each of our screens works, including tolerance and how
-        we define things like“fossil fuels”?
+        we define things like “fossil fuels”?
       </p>
       <a href="/impact-screening-strategy" class="button">
         Understand our screens

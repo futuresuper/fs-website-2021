@@ -33,8 +33,8 @@
       fuel free, including companies and assets that provide services to the
       fossil fuel industry, like finance and transportation. We believe that’s a
       smart investment strategy because, as the world works to limit global
-      warming to 2 degrees, most fossil fuel companies will likely be worth less
-      over time.
+      warming to 1.5 degrees, most fossil fuel companies will likely be worth
+      less over time.
     </p>
     <p>It’s not just about what you do, it’s also what you don’t.</p>
   </div>
