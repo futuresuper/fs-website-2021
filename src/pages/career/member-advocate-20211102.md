@@ -2,6 +2,7 @@
 title: Member Advocate
 startDate: 2021-11-02T00:08:34.468Z
 endDate: 2021-11-17T00:08:34.492Z
+layout: $/layouts/Career.astro
 location: Sydney, Remote from Australia (WFH)
 salary: $63,000 + 11% super
 applicationUrl: https://app.beapplied.com/apply/ghwintlllf
