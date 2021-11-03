@@ -217,9 +217,10 @@
 
     <p class="disclaimer">
       {#if pension}
-        * Read our <a href="/pppds">Pension Product Disclosure Statement</a> for
-        full details on how fees apply to your Future Super account. The fees
-        shown above are the total Investment Fees, Administration Fees and
+        * Read our <a href="/pppds">Pension Product Disclosure Statement</a> and
+        <a href="/pension-tmd">Pension Target Market Determination</a>
+        for full details on how fees apply to your Future Super account. The
+        fees shown above are the total Investment Fees, Administration Fees and
         Indirect Cost Ratio payable for our pension option. Other fees and costs
         may apply to your account.
         <br /><br />
@@ -230,9 +231,10 @@
         are not guaranteed. Past performance is not a reliable indicator of future
         performance.
       {:else}
-        * Read our <a href="/pds">Product Disclosure Statement</a>
-        and
+        * Read our <a href="/pds">Product Disclosure Statement</a>,
         <a href="/aib">Additional Information Booklet</a>
+        and
+        <a href="/tmd">Target Market Determination</a>
         for details on how fees apply to your Future Super account. The fees shown
         above are the total Investment Fees, Administration Fees and Indirect Cost
         Ratio payable for each of our investment options. Other fees and costs may
