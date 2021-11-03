@@ -1,6 +1,6 @@
 ---
 title: Accumulation Target Market Determination
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS_AccumTMD_05102021.pdf
+docurl: "https://www.futuresuper.com.au/tmd"
 type: PDF
 category: Super Documents
 order: 3

@@ -1,6 +1,6 @@
 ---
 title: Pension Plan Target Market Determination
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS_PensionTMD_05102021.pdf
+docurl: "https://www.futuresuper.com.au/pension-tmd"
 type: PDF
 category: Pension Documents
 order: 2
