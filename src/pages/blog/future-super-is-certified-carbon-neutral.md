@@ -16,7 +16,7 @@ Future Super was founded so Australians could take climate action through the po
 
 We partnered with the local branch of fellow B Corp South Pole, to tap into their deep global expertise in emissions measurement and reduction. We set our sights on Climate Active certification as it is the most comprehensive and rigorous standard for carbon neutral that we can aspire to. 
 
-We built up an emissions inventory to highlight the emissions hotspots in our operations. By seizing quick wins first, like switching the electricity provider for our Sydney office away from a provider that was not as green as we had originally thought to a new provider, so now both our offices run on 100% renewable electricity. 
+We built up an emissions inventory to highlight the emissions hotspots in our operations. We seized the quick wins first, like switching the electricity provider for our Sydney office away from a provider that was not as green as we had originally thought to a new provider. Now both our offices run on 100% carbon neutral electricity. 
 
 We choose quality Australian Carbon Credit Units from a provider who shares our values. We partnered with the Aboriginal Carbon Foundation for offsets that bring direct co-benefits to the Budjiti Traditional Owners and Native Title holders of the land impacted by the Paroo River North Environmental Project, where our offset dollars are spent. The Budjiti people share in the proceeds of this project and gain access to their traditional lands for cultural and heritage purposes, like the harvesting of bush tucker animals and plants, and hosting cultural camps for people from multiple Traditional Owner groups. 
 
