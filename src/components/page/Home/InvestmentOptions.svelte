@@ -42,7 +42,7 @@
             <span class="green">{option.label}: </span>{option.description}
           </p>
         </div>
-        <a class="button" href="/investment-options">Learn more</a>
+        <a class="button" href="/investment-options">Investment Options</a>
       </div>
     </div>
   </section>

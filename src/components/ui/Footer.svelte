@@ -135,7 +135,7 @@
           </p>
         </div>
         <a class="button secondary" href="/reconciliation">
-          Learn More
+          Reconciliation
           <svg
             class="arrow"
             width="24"
