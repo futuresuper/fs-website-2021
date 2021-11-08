@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /email-signature
 
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: https://www.futuresuper.com.au/sitemap.xml
