@@ -1,0 +1,11 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import EmailSignature from '../components/page/EmailSignature.svelte'
+---
+
+<BaseLayout
+  title="Email signature"
+  hideDescription
+>
+  <EmailSignature client:load />
+</BaseLayout>

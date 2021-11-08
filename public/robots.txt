@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /email-signature
+
+Sitemap: http://www.example.com/sitemap.xml
