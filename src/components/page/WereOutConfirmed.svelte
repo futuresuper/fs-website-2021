@@ -40,7 +40,7 @@
 </script>
 
 <p class="center">Here’s how your name will appear:</p>
-<h3 id="name" class="bold center">A. Person</h3>
+<h3 id="name" class="bold center">{name}</h3>
 <img
   class="billboard-image"
   src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_660/v1626222811/billboard_example_with_zoom_02.png"
