@@ -42,7 +42,7 @@
     <div class="icon">
       <Leaf colour={black} />
     </div>
-    <h2>2. Reivestment</h2>
+    <h2>2. Reinvestment</h2>
     <h4>
       We use reinvestment as a mechanism to create impactful super products by
       redirecting divested money into more sustainable investments and in impact
