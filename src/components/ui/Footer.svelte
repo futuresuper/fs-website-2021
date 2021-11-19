@@ -69,11 +69,18 @@
       </div>
       <div class="horizontal-space-between">
         <p class="disclaimer">
-          Information provided is of a general nature only and we have not taken
-          your personal financial objectives, situation or needs into account.
-          We recommend you seek financial advice when considering if Future
-          Super is right for your objectives and needs. When considering
-          returns, past performance is not indicative of future performance.
+          You should read the <a href="https://www.futuresuper.com.au/pds"
+            >PDS,</a
+          > <a href="https://www.futuresuper.com.au/tmd">TMD</a> and
+          <a href="https://www.futuresuper.com.au/fsg"
+            >Financial Services Guide</a
+          >
+          before making any financial decisions regarding Future Super. Information
+          provided is of a general nature only and we have not taken your personal
+          financial objectives, situation or needs into account. We recommend you
+          seek financial advice when considering if Future Super is right for your
+          objectives and needs. When considering returns, past performance is not
+          indicative of future performance.
         </p>
         <div class="bcorp">
           <BCorpLogo />
