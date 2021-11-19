@@ -258,6 +258,11 @@
   .disclaimer {
     width: 40%;
     color: $black500;
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
   }
 
   .disc {
