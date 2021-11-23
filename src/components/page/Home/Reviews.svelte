@@ -20,7 +20,7 @@
   <section>
     <div class="review">
       <div class="five-stars">★ ★ ★ ★ ★</div>
-      <div class="quote">"{review.title}"</div>
+      <div class="quote">"{@html review.title.replace("'", "&rsquo;")}"</div>
       <p>
         {review.author},
         <a href={review.url}>{moment(review.date).fromNow()}</a>

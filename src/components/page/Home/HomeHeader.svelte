@@ -1,7 +1,7 @@
 <script>
   import pages from "../../../data/pages.json";
 
-  const marqueeMessage = "Let's put it to work. ";
+  const marqueeMessage = "Let&rsquo;s put it to work. ";
 
   export let dailyAus = false; // Daily Aus version includes intro text
   export let donationOffer = false; // Includes referral donation offer
@@ -39,7 +39,7 @@
 
 <div class="marquee-container">
   <div class="marquee">
-    {marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}{marqueeMessage}
+    {@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}
   </div>
 </div>
 
