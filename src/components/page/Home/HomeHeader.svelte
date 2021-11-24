@@ -75,8 +75,8 @@
     font-family: $feature;
     color: $green;
     text-transform: uppercase;
-    font-size: 8vw;
-    height: 10vw;
+    font-size: min(8vw, 160px);
+    height: min(10vw, 200px);
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 80s linear infinite;

@@ -100,7 +100,7 @@
 
   .quote {
     width: 90%;
-    font-size: 4vw;
+    font-size: min(4vw, 80px);
     line-height: 120%;
     text-align: center;
     min-height: 12vw;
