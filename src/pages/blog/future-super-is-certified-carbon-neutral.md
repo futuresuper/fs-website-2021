@@ -1,8 +1,8 @@
 ---
 title: Future Super is certified carbon neutral
 date: 2021-11-03T00:16:22.387Z
-image: https://res.cloudinary.com/future-super/image/upload/v1635899002/Climate%20Active%20Carbon%20Neutral/ClimateActive_CNCertified_Org_Horizontal_Black_pos.png
 layout: $/layouts/BlogPost.astro
+image: https://res.cloudinary.com/future-super/image/upload/v1635899002/Climate%20Active%20Carbon%20Neutral/ClimateActive_CNCertified_Org_Horizontal_Black_pos.png
 tags:
   - climateactive
   - carbonneutral
@@ -11,7 +11,7 @@ author: Steve James
 description: Climate Active has certified Future Super’s operations as carbon
   neutral from 2019.
 ---
-Future Super was founded so Australians could take climate action through the power of their superannuation. We’ve spent the last seven years directing over a billion dollars away from fossil fuel investments. In the meantime, we were keen to certify our own operations as carbon neutral in 2021. And now we're proud to say we've been awarded carbon neutral certification! 
+Future Super was founded so Australians could take climate action through the power of their superannuation. We’ve spent the last seven years directing over a billion dollars away from fossil fuel investments. In the meantime, we were keen to certify our own operations as carbon neutral in 2021. And now we're proud to say we've been awarded carbon neutral certification!  
 
 ## How we got there
 
