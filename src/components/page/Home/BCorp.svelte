@@ -22,7 +22,7 @@
   @use "../../../styles/" as *;
 
   section {
-    margin: 60px 0px;
+    margin: 0px 0px;
     background-color: $black;
     border-radius: 32px;
     color: $white;

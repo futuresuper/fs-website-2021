@@ -137,6 +137,10 @@
   }
 
   @media (max-width: 580px) {
+    section {
+      margin-bottom: 0;
+    }
+
     .top {
       .heading {
         width: 46%;
