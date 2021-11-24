@@ -4,7 +4,9 @@
     <label>Name<input type="text" name="Name" /></label>
   </p>
   <p>
-    <label>Member Number<input type="text" name="Member Number" /></label>
+    <label
+      >Member Number<input type="text" name="Member Number" required /></label
+    >
   </p>
   <p>
     <label>Email<input type="email" name="Email" /></label>
@@ -12,17 +14,22 @@
   <p>How has your new child come into your care?</p>
   <div class="radio">
     <div>
-      <input type="radio" name="How came into care" value="birth" />
+      <input type="radio" name="How came into care" value="birth" required />
       <label for="birth">Birth</label>
     </div>
     <div>
-      <input type="radio" name="How came into care" value="adoption" />
+      <input type="radio" name="How came into care" value="adoption" required />
       <label for="adoption">Adoption</label>
     </div>
   </div>
   <div class="radio" />
   <p>What date did this child come into your care?</p>
-  <input type="text" name="Date came into care" placeholder="DD/MM/YYYY" />
+  <input
+    type="text"
+    name="Date came into care"
+    placeholder="DD/MM/YYYY"
+    required
+  />
   <p>Which of these apply to you?</p>
   <div class="radio">
     <div>
@@ -30,6 +37,7 @@
         type="radio"
         name="Which of these apply to you"
         value="Full Time Parent"
+        required
       />
       <label for="Full Time Parent"
         >Full-time parent OR returning to work for less than 10 hours per week
@@ -41,6 +49,7 @@
         type="radio"
         name="Which of these apply to you"
         value="Returning To Work"
+        required
       />
       <label for="Returning To Work"
         >Returning to work for 10 or more hours per week</label
@@ -53,6 +62,7 @@
     type="text"
     name="Date started parental leave"
     placeholder="DD/MM/YYYY"
+    required
   />
   <p>What date did you end your parental leave?</p>
   <input
