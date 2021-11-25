@@ -81,6 +81,50 @@ collections:
           widget: "text",
           hint: "One sentence that briefly describes what this contains",
         }
+  - name: "faqs"
+    label: "FAQs"
+    folder: "src/pages/faqs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "Superannuation Basics",
+              "Divestment",
+              "Joining",
+              "Rolling over",
+              "Investments and returns",
+              "Contributions and payments to your super",
+              "Fees",
+              "Insurance",
+              "Forms and documents",
+              "Managing your account",
+              "Member portal instructions",
+              "Beneficiaries",
+              "Withdrawing from your super",
+              "Pension",
+              "General",
+              "Employers",
+              "Advisor information",
+            ],
+        }
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          hint: "A number that determines where this will sit in relation to its category siblings",
+        }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "$/layouts/FaqPage.astro",
+        }
   - name: "careers"
     label: "Careers"
     folder: "src/pages/career"
