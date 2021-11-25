@@ -119,6 +119,7 @@ collections:
           widget: "number",
           hint: "A number that determines where this will sit in relation to its category siblings",
         }
+      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Layout",
           name: "layout",
