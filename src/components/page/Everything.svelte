@@ -167,7 +167,11 @@
       <select bind:value={selectedOption}>
         <option value=""> Investment Option </option>
         {#each investmentOptions as option}
-          <option value={option.label}>
+          <option
+            value={option.label === "Balanced Growth Pension"
+              ? "Pension Fund"
+              : option.label}
+          >
             {option.label}
           </option>
         {/each}
