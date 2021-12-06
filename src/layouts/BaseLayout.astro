@@ -18,7 +18,8 @@ const {
   headerBackgroundColour,
   skinnyContainer,
   customHeader,
-  joinPage=false
+  joinPage=false,
+  optimizeScript=false,
 } = Astro.props;
 const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
 const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
@@ -140,6 +141,7 @@ const seoDescription = description ? description : "Your super has the power to 
       analytics.page();
       }}();
     </script>
+    {optimizeScript && <script src="https://www.googleoptimize.com/optimize.js?id=GTM-5QGGPRK"></script>}
   </head>
   <body>
     {!hideHeader &&
