@@ -1,0 +1,16 @@
+---
+import BaseLayout from '$/layouts/BaseLayout.astro'
+import Nightingale from '../../components/page/Nightingale.svelte'
+import JoinNow from '../../components/ui/JoinNow.svelte'
+---
+<BaseLayout
+  title="Nightingale"
+  description="Nightingale Albion, due for completion by 2023, uses the power of your super to reinvent the environmental and social upsides to building new homes."
+  image=""
+  hideHeader
+  hidePageHeader
+  noContainer
+>
+  <Nightingale client:load />
+  <JoinNow />
+</BaseLayout>
