@@ -437,7 +437,7 @@
 
   .financial {
     width: 100%;
-    max-width: 50vw;
+    max-width: 600px;
     margin: 40px 0 120px 0;
   }
 
