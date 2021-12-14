@@ -2,7 +2,7 @@
 title: "Where can I find my member statement? "
 slug: where-can-i-find-my-member-statement
 date: 2020-07-27T04:33:47.000Z
-category: Member portal instructions
+category: Managing your account
 order: 5
 layout: $/layouts/FaqPage
 ---
