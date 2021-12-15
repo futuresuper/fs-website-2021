@@ -18,7 +18,7 @@ description: A helpful guide to understanding annual member statements.
 
 The annual statement is a summary of your account in the past financial year (from 1 July 2020- 30 June 2021)
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_660/v1639570682/Member%20Statement%20blog/Account_Summary_oodlea.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568914/Member%20Statement%20blog/Account_Summary_qswvjo.png)
 
 ***Opening balance*** is the balance of your account at the start of the financial year, 1 July 2020.
 
