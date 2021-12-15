@@ -36,11 +36,11 @@ Your account balance is broken into different components in the ‘**Access Your
 
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568997/Member%20Statement%20blog/Access_your_money_kfaho3.png)
 
-**Preserved** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
+***Preserved*** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
 
-**Restricted non-preserved** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
+***Restricted non-preserved*** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
 
-**Unrestricted non-preserved** benefits are the funds in your account that you can withdraw without restriction.
+***Unrestricted non-preserved*** benefits are the funds in your account that you can withdraw without restriction.
 
 ## **Investment Performance**
 
