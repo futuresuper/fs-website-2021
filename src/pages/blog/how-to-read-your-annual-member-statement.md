@@ -54,7 +54,7 @@ Your personal investment performance may differ to the fund performance dependin
 
 ### Your insurance details
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_660/v1639567989/Member%20Statement%20blog/Insurance_Information_vgk2ab.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_680/v1639567989/Member%20Statement%20blog/Insurance_Information_vgk2ab.png)
 
 Future Super provides insurance on an opt-in basis only, i.e., we do not automatically provide members with default insurance. If you have cover with us, it will appear in the Insurance Cover section and state your policy type and coverage amount.
 
