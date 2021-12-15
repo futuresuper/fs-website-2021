@@ -1,13 +1,14 @@
 ---
-title: Do I need my annual member statement to complete my tax return?
+title: "Do I need my annual member statement to complete my tax return?"
 slug: do-i-need-my-annual-member-statement-to-complete-my-tax-return
-date: 2021-06-08T03:42:03.000Z
-category: Forms and documents
-order: 2
+date: 2021-06-08T03:42:03Z
+category: Contributions and payments to your super
 layout: $/layouts/FaqPage
+order: 134
 ---
-Generally, no. 
 
-If you need confirmation that your personal contributions and your Notice of intent to claim a deduction for personal contributions has been applied to your account, you should be able to use your letter of acknowledgement for this purpose. You may also be able to use your Interim Account Activity Statement, which you can request via email ([info@futuresuper.com.au](mailto:info@futuresuper.com.au)) or over the phone on 1300 658 422.  
+No. You will only need confirmation that your personal contribution and your [Notice of intent to claim or vary a deduction for personal super contributions](https://www.ato.gov.au/uploadedFiles/Content/SPR/downloads/n71121-11-2014_js33406_w.pdf) has been applied to your account.
 
-If you have withdrawn funds from your account, your benefits may be subject to tax and you should have received a Payment Summary for this.
+You may wish to consult the ATO, an accountant or a financial advisor for appropriate advice on completing your tax return. 
+
+Please also refer to the article ‘[How do I submit a notice of intent to claim my personal contribution as a tax deduction?](https://futuresuper.groovehq.com/help/how-do-i-submit-a-notice-of-intent-to-claim-my-personal-contribution-as-a-tax-deduction)’ for more information.
