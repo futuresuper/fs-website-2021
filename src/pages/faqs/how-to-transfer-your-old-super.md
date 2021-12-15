@@ -9,7 +9,7 @@ layout: $/layouts/FaqPage
 If you have super with another fund and you would like to move this money to Future Super, you can easily request a rollover online. Here’s how to do it:
 
 1. Login to the Future Super [online account](https://my.futuresuper.com.au/).
-2. Click ‘*consolidate your super*’ on the right hand side of the **Overview** section
+2. Click ‘*Consolidate your super*’ on the right hand side of the **Overview** section
 
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_300/v1639579047/Member%20Statement%20blog/consolidate_your_super_online_account_xieyyk.png)
 
@@ -23,7 +23,6 @@ You should see the below form.
 * ABN (Australian Business Number)
 
 4. Enter your member number with your other fund in the **Member Number** field.
-
 5. Select the amount to transfer. You can choose to either transfer the whole balance or transfer a specific amount (partial rollover). If you choose to transfer a specific amount, you will need to enter the amount. (A space to enter the amount will appear once the option is selected).
 
 **Please note, if you choose to transfer your whole balance, this will automatically close your old account as well as any insurance policy or other benefits attached to it. You should consider this before making a decision to rollover.**
