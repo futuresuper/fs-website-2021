@@ -62,8 +62,6 @@ You can read more about our insurance cover [here.](https://www.myfuturesuper.co
 
 ### Your Beneficiaries
 
-This shows who you have nominated to receive your super and/or insurance benefit if you die. If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. You can read about [how to nominate a beneficiary here.](https://futuresuper.groovehq.com/help/benefici)
-
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_680/v1639567989/Member%20Statement%20blog/Beneficiary_Details_uqci1k.png)
 
 This shows who you have nominated to receive your super and/or insurance benefit if you die. These nominations can be applied as binding or non-binding. 
