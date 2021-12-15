@@ -14,7 +14,7 @@ description: A helpful guide to understanding annual member statements.
 
 **We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details.** 
 
-## **Your Account Summary**
+### **Your Account Summary**
 
 The annual statement is a summary of your account in the past financial year (from 1 July 2020- 30 June 2021)
 
@@ -30,19 +30,19 @@ The annual statement is a summary of your account in the past financial year (fr
 
 ***Closing balance*** is the balance at the end of the financial year (ending 30 June 2021). Please note, this is not your current balance.
 
-## Accessing your super
+### Accessing your super
 
 Your account balance is broken into different components in the ‘**Access Your Money**’ section.
 
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568997/Member%20Statement%20blog/Access_your_money_kfaho3.png)
 
-**Preserved** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
+***Preserved*** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
 
-**Restricted non-preserved** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
+***Restricted non-preserved*** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
 
-**Unrestricted non-preserved** benefits are the funds in your account that you can withdraw without restriction.
+***Unrestricted non-preserved*** benefits are the funds in your account that you can withdraw without restriction.
 
-## **Investment Performance**
+### **Investment Performance**
 
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639569122/Member%20Statement%20blog/Investment_performance_f0mvgx.png)
 
@@ -52,15 +52,15 @@ Your investment performance is displayed after the percentage-based fees and tax
 
 Your personal investment performance may differ to the fund performance depending on when you rolled in, and when and how much you contributed during the financial year.
 
-## Your insurance details
+### Your insurance details
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_660/v1639567989/Member%20Statement%20blog/Insurance_Information_vgk2ab.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_680/v1639567989/Member%20Statement%20blog/Insurance_Information_vgk2ab.png)
 
 Future Super provides insurance on an opt-in basis only, i.e., we do not automatically provide members with default insurance. If you have cover with us, it will appear in the Insurance Cover section and state your policy type and coverage amount.
 
 You can read more about our insurance cover [here.](https://www.myfuturesuper.com.au/faqs/does-future-super-offer-insurance/) You can also see more information about our policy in our [Insurance Guide](https://content.myfuturesuper.com.au/forms-docs/FS_InsuranceGuide_05102021.pdf).
 
-## Your Beneficiaries
+### Your Beneficiaries
 
 This shows who you have nominated to receive your super and/or insurance benefit if you die. If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. You can read about [how to nominate a beneficiary here.](https://futuresuper.groovehq.com/help/benefici)
 
@@ -72,7 +72,7 @@ If you do not nominate a beneficiary, the Trustee of Future Super will have the 
 
 You can read about [how to nominate a beneficiary here](https://www.myfuturesuper.com.au/faqs/how-do-i-nominate-a-beneficiary/).
 
-## Total Fees You Paid
+### Total Fees You Paid
 
 You pay **direct fees** and **percentage-based fees**. Combined they make up the **total fees**. A more detailed breakdown of fees can be found from page 24 of the [Additional Information Booklet](http://www.futuresuper.com.au/aib). 
 
