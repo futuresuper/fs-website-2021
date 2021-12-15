@@ -17,4 +17,4 @@ If you have super with another fund and you would like to move this money to Fut
 
 Please note that rolling a full balance over to Future Super will close your other super account and cancel any insurance that you hold through this account.
 
-We’ll take care of the rest!  Rollovers from other funds usually takes 3–7 business days to process. Please note, the processing time to roll over ATO held super varies and is subject to the ATO’s timeframes.
+We’ll take care of the rest!  Rollovers from other funds usually takes 3–7 business days to process. However, the processing time to roll over ATO held super varies and is subject to the ATO’s timeframes.
