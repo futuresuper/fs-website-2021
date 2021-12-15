@@ -1,93 +1,91 @@
 ---
-title: "How to read your Annual Member Statement"
-slug: how-to-read-your-annual-member-statement
-date: 2020-12-08T05:30:49.773Z
 layout: $/layouts/BlogPost.astro
+author: Member Advocacy
+slug: how-to-read-your-annual-member-statement
+date: 2021-12-15T06:08:13.168Z
+canonical: null
+title: How to read your Annual Member Statement
+image: https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_thumb,w_200,g_face/v1639568291/Member%20Statement%20blog/FS_White_BlackBG_po6bgy.png
 tags:
   - Superannuation
-author: James Alexander
-canonical:
-description: >-
-  We've written a helpful explainer to equip you with what you need to read (and understand) your member statement.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015250cd3e0f_Blog%20Header%20(1).jpg
+description: A helpful guide to understanding annual member statements.
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ycl6Vkksmww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](<https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd36083b443cc541d35e5b7_siora-photography-hgFY1mZY-Y0-unsplash%20(1)%20(1).jpg>)
+**We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details.** 
 
-**We know that annual superannuation statements aren’t the easiest things in the world to understand, so we wrote this handy blog article to guide you through.**
 
-#### Opening balance
 
-This is the balance you started the financial year with (beginning July 1st 2019).
+### **Your Account Summary**
 
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd35db484d36afe4d8cd29a_Balance%20Information.png)
+The annual statement is a summary of your account in the past financial year (from 1 July 2020- 30 June 2021)
 
-Balance information.
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_660/v1639570682/Member%20Statement%20blog/Account_Summary_oodlea.png)
 
-#### What’s gone in and out
+***Opening balance*** is the balance of your account at the start of the financial year, 1 July 2020.
 
-Contributions (like rollovers, government, employer and personal contributions), and returns were **added** to your balance.
+***What’s been added*** include funds allocated to your account, such as rollovers from your other super accounts, contributions (government, employer and personal contributions, for example) and tax rebates (you receive a tax rebate of 15% on direct fees deducted from your account).
 
-What’s gone out was **deducted** (like [taxes on your contributions](https://www.futuresuper.com.au/faqs/why-is-tax-taken-from-my-account), withdrawals, insurance fees and direct fees). Anything in brackets means a deduction or loss.
+***What has been deducted*** from your account include deductions like [taxes on your contributions](https://www.futuresuper.com.au/faqs/why-is-tax-taken-from-my-account), withdrawals, insurance premiums and direct fees. (Fees are explained further below). Note, anything in brackets means a deduction or loss.
 
-#### Closing balance
+***Investment Earnings*** shows the net return (or loss) for the year. This is the net movement in value of your investment over the year, less any indirect fees or taxes. (Read more about this below).
 
-This is the balance at the end of the previous financial year (ending June 30th 2020). _Please note: this is not your current balance._
-
-#### How returns are calculated
-
-Your investment performance is displayed after the percentage-based fees are deducted (more on this below). This also means our [published fund returns](https://www.myfuturesuper.com.au/choosing/performanceandreturns) are shown after those fees are deducted.
-
-Your personal investment performance may differ to the fund performance depending on _when_ you rolled in, and _when_ and _how much_ you contributed.
-
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd32a6cf1285189435c266f_NVywIVJGbM9oM0vqyZLBBxK4IgE7CXLQCWT-Gt4LX0cUsCCvFVdS7l2iPwtTDLTdJroNz4va653ITypxLbsvgtgGHnZzwg-oTwZ6TEPFVD1SJOZ_wM-o3xRCPQZmpkK0SoLSTk-P.png)
-
-Investment performance information.
-
-#### The fees you paid
-
-You pay **direct fees** and **percentage-based fees.** Combined they make up the **total fees.**
-
-A **direct fee** is deducted directly from your account and appears in your transaction history.
-
-The **percentage-based fees** are deducted when calculating your investment earnings figure, so they don’t appear in your transaction history. In the statement, they are listed under ‘total of indirect costs of your investment’ and ‘other fees of your investment.'
-
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd32b1b44331971e1514d6b_Jqmqj2a84gDY48UDhY2s9d45GZctqdTwrEnpS3UujP-YX70AU97lrhmGysdHCk0hE7V4K-XprQI1NxJzXH3VksexMAjGE7mtAdFumPd5PNsvBHlj24F5ef3CDW_IUsVJm9fqERLc.png)
-
-Fee information.
+***Closing balance*** is the balance at the end of the financial year (ending 30 June 2021). Please note, this is not your current balance.
 
 #### Accessing your super
 
-Your account balance is broken into different components in the ‘Access Your Money’ section.
+Your account balance is broken into different components in the ‘**Access Your Money**’ section.
 
-**Preserved** means you can only withdraw this money if you meet [a condition of release.](https://www.ato.gov.au/super/apra-regulated-funds/paying-benefits/releasing-benefits/conditions-of-release/) **‍**
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568997/Member%20Statement%20blog/Access_your_money_kfaho3.png)
 
-**Unrestricted preserved** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
+**Preserved** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
 
-**Unrestricted non-preserved** means you can withdraw without restriction.
+**Restricted non-preserved** benefits generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
 
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd32bd3edfbd13b396ba927_MszBLylZ3x7iMfdIq8QJBT2_3ORz43A5oPagSbe5IMS74ELdiybEZ82DOHaEI-9U4CJjTf8UL-yFKrzH9PbFB3d7tBPFkwn7KPT3OVIcrTdKE3WK1zeS2Fz1GD-RV_fnh7nkAVP6.png)
+**Unrestricted non-preserved** benefits are the funds in your account that you can withdraw without restriction.
 
-Preservation information.
+### **Investment Performance**
 
-#### Your insurance details
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639569122/Member%20Statement%20blog/Investment_performance_f0mvgx.png)
 
-Future Super only provides voluntary insurance, and never gives members default insurance. If you have cover with us, it will appear in the Insurance Cover section and state your policy type and coverage amount.
+#### **How returns are calculated**
 
-You can read more about our insurance cover [here.](https://futuresuper.groovehq.com/help/does-future-super-offer-insurance)
+Your investment performance is displayed after the percentage-based fees and taxes are deducted (more on this below). This also means our [published fund returns](https://www.myfuturesuper.com.au/choosing/performanceandreturns) are shown after those fees and taxes are deducted.
 
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd32c089fa5722f60b0d615_ykwHmVj8qJ3qgXy-ndeRzBUpoqr77zu4p1ImK_uBk1pxsLrWITYAFKHNEkyU6HNA6D9Y7naiUZ8O5FZhojc702D4x6J1dtuEkyR2Wkoxs5Nuji4-2HGq2Q0VvQEuOYxHvJuDUfJN.png)
+Your personal investment performance may differ to the fund performance depending on when you rolled in, and when and how much you contributed during the financial year.
 
-Insurance information.
+### Your insurance details
 
-#### Your beneficiaries
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_660/v1639567989/Member%20Statement%20blog/Insurance_Information_vgk2ab.png)
+
+Future Super provides insurance on an opt-in basis only, i.e., we do not automatically provide members with default insurance. If you have cover with us, it will appear in the Insurance Cover section and state your policy type and coverage amount.
+
+You can read more about our insurance cover [here.](https://www.myfuturesuper.com.au/faqs/does-future-super-offer-insurance/) You can also see more information about our policy in our [Insurance Guide](https://content.myfuturesuper.com.au/forms-docs/FS_InsuranceGuide_05102021.pdf).
+
+### Your Beneficiaries
 
 This shows who you have nominated to receive your super and/or insurance benefit if you die. If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. You can read about [how to nominate a beneficiary here.](https://futuresuper.groovehq.com/help/benefici)
 
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd32c4c703d906a73fbed7c_--1Wdh-hygcKZuxoakzXcofDvprxv3sgfTgLOaD-9VnnBp_hyro5XErP_MguANjcN2kqkuQuOk0F0Hy4FSL7CmR8BG56nEl_S7FhC3k5X6dcUXcQZenE90wOZJPzaUlXWpdGohYo.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_680/v1639567989/Member%20Statement%20blog/Beneficiary_Details_uqci1k.png)
 
-Beneficiary information.
+This shows who you have nominated to receive your super and/or insurance benefit if you die. These nominations can be applied as binding or non-binding. 
 
-If you have any further questions you can find answers on our [Knowledge Base](https://futuresuper.groovehq.com/help), email us at [info@myfuturesuper.com.au](mailto:info@myfuturesuper.com.au) or call us on **1300 658 422.**
+If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. 
 
-**You should read the important information in our** [**Product Disclosure Statement**](https://www.myfuturesuper.com.au/pds) **and** [**Additional Information Booklet**](https://www.myfuturesuper.com.au/aib) **before making any financial decisions with Future Super.**
+You can read about [how to nominate a beneficiary here](https://www.myfuturesuper.com.au/faqs/how-do-i-nominate-a-beneficiary/).
+
+### Total Fees You Paid
+
+You pay **direct fees** and **percentage-based fees**. Combined they make up the **total fees**. A more detailed breakdown of fees can be found from page 24 of the [Additional Information Booklet](http://www.futuresuper.com.au/aib). 
+
+The **percentage-based fees** are deducted when calculating your investment earnings figure, so they don’t appear in your transaction history. In the statement, they are listed under total of indirect costs of your investment and other fees of your investment.
+
+A **direct fee** is deducted directly from your account and appears in your transaction history and is typically the dollar based administration fee.
+
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639569513/Member%20Statement%20blog/Total_Fees_and_costs_rodhjx.png)
+
+
+
+If you have any further questions you can find answers on our [Support and FAQs page](https://www.myfuturesuper.com.au/support-and-faqs/), email us at info@myfuturesuper.com.au or call us on 1300 658 422.
+
+**You should read the important information in our [Product Disclosure Statement](https://www.myfuturesuper.com.au/pds), [Additional Information Booklet](https://www.myfuturesuper.com.au/aib) and [Target Market Determination](https://www.futuresuper.com.au/tmd) before making any financial decisions with Future Super.**
