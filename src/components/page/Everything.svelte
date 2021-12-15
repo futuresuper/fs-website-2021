@@ -89,7 +89,7 @@
   let searchText;
   let selectedOption;
   let selectedCountry;
-  let selectedBusinessType;
+  // let selectedBusinessType;
   let selectedAssetClass;
 
   let filteredInvestments = sortedInvestments;
@@ -97,7 +97,7 @@
   $: if (
     selectedOption ||
     selectedCountry ||
-    selectedBusinessType ||
+    // selectedBusinessType ||
     selectedAssetClass ||
     searchText
   ) {
@@ -107,9 +107,10 @@
     const countryFiltered = selectedCountry
       ? optionFiltered.filter((i) => i.country === selectedCountry)
       : optionFiltered;
-    const typeFiltered = selectedBusinessType
-      ? countryFiltered.filter((i) => i.businessType === selectedBusinessType)
-      : countryFiltered;
+    const typeFiltered = countryFiltered;
+    // const typeFiltered = selectedBusinessType
+    //   ? countryFiltered.filter((i) => i.businessType === selectedBusinessType)
+    //   : countryFiltered;
     const assetClassFiltered = selectedAssetClass
       ? typeFiltered.filter((i) => i.type === selectedAssetClass)
       : typeFiltered;
@@ -131,8 +132,8 @@
         filteredInvestments.length +
         "</strong> " +
         selectedAssetClass +
-        " " +
-        selectedBusinessType +
+        // " " +
+        // selectedBusinessType +
         " assets";
       resultDescription += selectedCountry ? " from " + selectedCountry : "";
       resultDescription += selectedOption
@@ -192,14 +193,14 @@
           </option>
         {/each}
       </select>
-      <select bind:value={selectedBusinessType} class="mobile-hide">
+      <!-- <select bind:value={selectedBusinessType} class="mobile-hide">
         <option value=""> Business Type </option>
         {#each companyTypes as type}
           <option value={type}>
             {type}
           </option>
         {/each}
-      </select>
+      </select> -->
     </div>
     <p class="result-description">
       {@html resultDescription}
@@ -213,7 +214,7 @@
       <div class="table-row header mobile-hide">
         <div class="first-col" />
         <h4>Asset Class</h4>
-        <h4>Business Type</h4>
+        <!-- <h4>Business Type</h4> -->
         <h4>Country</h4>
         <h4>$ Value</h4>
       </div>
@@ -222,7 +223,7 @@
       <div class="table-row">
         <h4 class="first-col">{investment.name}</h4>
         <div class="text mobile-hide">{investment.type}</div>
-        <div class="text mobile-hide">{investment.businessType}</div>
+        <!-- <div class="text mobile-hide">{investment.businessType}</div> -->
         <div class="flag mobile-hide">
           {investment.countryFlag ? investment.countryFlag : investment.country}
         </div>
@@ -256,7 +257,7 @@
   .dropdowns {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .search-container {
@@ -296,7 +297,7 @@
     }
 
     .first-col {
-      grid-column: span 2;
+      grid-column: span 3;
     }
 
     .number {
