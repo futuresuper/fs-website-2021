@@ -18,7 +18,7 @@ description: A helpful guide to understanding annual member statements.
 
 The annual statement is a summary of your account in the past financial year (from 1 July 2020- 30 June 2021)
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568914/Member%20Statement%20blog/Account_Summary_qswvjo.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_865/v1639575370/Member%20Statement%20blog/Account_Summary_2_cy9mgv.png)
 
 ***Opening balance*** is the balance of your account at the start of the financial year, 1 July 2020.
 
@@ -34,7 +34,7 @@ The annual statement is a summary of your account in the past financial year (fr
 
 Your account balance is broken into different components in the ‘**Access Your Money**’ section.
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639568997/Member%20Statement%20blog/Access_your_money_kfaho3.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_683/v1639576113/Member%20Statement%20blog/Access_to_your_Money_2_eaviea.png)
 
 ***Preserved*** means you can only withdraw this money if you meet [a condition of release.](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/)‍
 
@@ -44,7 +44,7 @@ Your account balance is broken into different components in the ‘**Access Your
 
 ### **Investment Performance**
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639569122/Member%20Statement%20blog/Investment_performance_f0mvgx.png)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,w_675/v1639576599/Member%20Statement%20blog/Investment_performance_2_cxdua7.png)
 
 #### **How returns are calculated**
 
