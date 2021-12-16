@@ -6,7 +6,7 @@ layout: $/layouts/FaqPage.astro
 ---
 If you have super with another fund and you would like to move this money to Future Super, here’s how to do it:
 
-### **Transferring from another fund (other than a Self-Managed Super Fund)**
+#### **Transferring from another fund (other than a Self-Managed Super Fund)**
 
 1. Login to the Future Super your [online account](https://my.futuresuper.com.au/).
 2. Click ‘*consolidate your super*’ in the **Overview** section (under Actions)
@@ -29,13 +29,13 @@ Please note, if you choose to transfer your whole balance, this will automatical
 
 Rollover can take 3-7 business days to process. You will be able to view the transaction within your [online account](https://my.futuresuper.com.au/) once processed.
 
-### Self-Managed Super Funds (SMSFs)
+#### Self-Managed Super Funds (SMSFs)
 
 To transfer funds from your Self-Managed Super Funds(SMSF) to your Future Super account, this will need to be arranged by the SMSF administrator. 
 
 Please get in touch with us at info@futuresuper.com.au or call us on 1300 658 422 for further information.
 
-### **ATO held super**
+#### **ATO held super**
 
 You can rollover any ATO held super you have through your MyGov account. You can find further information about how to do this [here](https://www.futuresuper.com.au/faqs/how-to-roll-over-your-existing-super-through-mygov/).
 
