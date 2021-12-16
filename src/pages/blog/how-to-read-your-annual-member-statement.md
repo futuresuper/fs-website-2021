@@ -1,6 +1,6 @@
 ---
 layout: $/layouts/BlogPost.astro
-author: Member Advocacy
+author: Member Experience team
 slug: how-to-read-your-annual-member-statement
 date: 2021-12-15T06:08:13.168Z
 canonical: null
