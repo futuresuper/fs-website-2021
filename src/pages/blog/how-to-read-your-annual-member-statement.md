@@ -12,6 +12,8 @@ description: A helpful guide to understanding annual member statements.
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ycl6Vkksmww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+##### **Only got 2 mins? Check out our video explainer.**
+
 **We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details.** 
 
 ### **Your Account Summary**
