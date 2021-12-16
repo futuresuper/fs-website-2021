@@ -1,7 +1,7 @@
 ---
 title: How do I know if my employer paid enough super?
 category: Managing your account
-order: 11
+order: 7
 layout: $/layouts/FaqPage.astro
 ---
 In the 2020-21 financial year, the super guarantee rate that your employer was obligated to pay was 9.5% of your annual income. 
