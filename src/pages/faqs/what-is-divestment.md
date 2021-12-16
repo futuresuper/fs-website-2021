@@ -1,10 +1,10 @@
 ---
-title: What is divestment?
+title: "What is divestment?"
 slug: what-is-divestment
-date: 2020-09-02T10:20:57.000Z
+date: 2020-09-02T10:20:57Z
 category: Divestment
-order: 1
 layout: $/layouts/FaqPage
+order: 29
 ---
 
 Put simply, divestment is the opposite of investment. It is the act of selling assets for moral, political or financial reasons.
