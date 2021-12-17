@@ -5,7 +5,7 @@ slug: how-to-read-your-annual-member-statement
 date: 2021-12-15T06:08:13.168Z
 canonical: null
 title: How to read your Annual Member Statement
-image: https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1639571883/Member%20Statement%20blog/Annual_Member_Statement_words_adsrfk.png
+image: https://res.cloudinary.com/future-super/image/upload/v1639718267/Member_Statement.png
 tags:
   - Superannuation
 description: A helpful guide to understanding annual member statements.
