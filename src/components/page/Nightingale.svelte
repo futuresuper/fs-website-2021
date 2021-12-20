@@ -13,7 +13,7 @@
 
 <div class="bg">
   <div class="container">
-    <h1>NIGHTINGALE ALBION</h1>
+    <h1>NIGHTINGALE Wurru Wurru Biik</h1>
 
     <div class="hero">
       <h2>YOUR SUPER IS DISRUPTING THE PROPERTY MARKET</h2>
@@ -21,9 +21,9 @@
 
     <p>
       A more sustainable model of living is essential for a future free from
-      climate change. Nightingale Albion, due for completion by 2023, uses the
-      power of your super to reinvent the environmental and social upsides to
-      building&nbsp;new&nbsp;homes.
+      climate change. Nightingale Wurru Wurru Biik, due for completion by 2023,
+      uses the power of your super to reinvent the environmental and social
+      upsides to building new&nbsp;homes.
     </p>
 
     <div class="arrow">
@@ -33,17 +33,17 @@
     <h3>INVESTED FOR PLANET, PEOPLE AND PROFIT.</h3>
 
     <p>
-      Nightingale Albion is just one of your investments that’s creating real
-      systems change.
+      Nightingale is just one of your investments that’s creating real systems
+      change.
     </p>
 
     <div class="nightingale-image apartment" />
 
     <p>
       Future Super's investment in Nightingale lends the power of your super to
-      build an eco-friendly apartment complex on Albion St in Melbourne. The
-      creation of these homes aims to create financial benefits for members as
-      well as environmental and social impact.
+      build an eco-friendly apartment complex on Albion St in Brunswick,
+      Melbourne. The creation of these homes aims to create financial benefits
+      for members as well as environmental and social impact.
     </p>
 
     <div class="cards">
@@ -54,11 +54,11 @@
 
         <h4>ENVIRONMENTAL IMPACT</h4>
 
-        <p class="small">Carbon neutral developments.</p>
+        <p class="small">Carbon neutral, fossil fuel-free communities</p>
+        <p class="small">Powered by solar and certified GreenPower</p>
         <p class="small">
           Support sustainable living with communal spaces and transport access.
         </p>
-        <p class="small">Builds no fossil fuel communities.</p>
       </div>
 
       <div class="card">
@@ -69,17 +69,20 @@
         <h4>SOCIAL IMPACT</h4>
 
         <p class="small">
-          Affordability first: apartments sell without profit margins to keep
-          cost down.
+          Affordability first: Nightingale is not-for-profit. Apartments are
+          sold without profit margins making each home more affordable.
+        </p>
+
+        <p class="small">Low deposit options for first home buyers.</p>
+
+        <p class="small">
+          20% of Nightingale Wurru Wurru Biik is allocated to registered
+          Community Housing Providers, for social housing.
         </p>
 
         <p class="small">
-          Apartments reserved for people unable to buy under normal
-          circumstances.
-        </p>
-
-        <p class="small">
-          Nightingale finance plan assists with purchase on lower incomes.
+          A further 20% of apartments are reserved for demographics who often
+          find it more difficult to secure property.
         </p>
       </div>
 
@@ -129,10 +132,10 @@
         class="circle {circle1 ? 'on' : 'off'}"
       >
         {#if circle1}
-          <div>2.5% deposit for ballot&nbsp;winners</div>
+          <div>5% DEPOSITS</div>
           <p class="circle-small">
             People who experience higher barriers to home ownership can apply
-            for a reduced deposit through a ballot&nbsp;system.
+            for a reduced deposit option.
           </p>
         {:else}
           20% deposit on mortgage
@@ -239,9 +242,12 @@
       </p>
 
       <p class="small">
-        Nightingale is a fixed interest investment, so an agreement has been
-        made that Future Super will invest in the project and Nightingale will
-        pay a fixed rate of interest.
+        Future Super’s investment is in the Nightingale Fund, which distributes
+        capital to finance the construction of Nightingale Albion. The
+        Nightingale Fund will make a fixed interest repayment on Future Super’s
+        investment at the conclusion of the project, which will then be
+        reflected in the overall unit price of the Balanced Impact and
+        Renewables Plus Growth investment options.
       </p>
     </div>
 
@@ -266,6 +272,13 @@
         <progress value="0" class="bar" />
       </div>
     </section>
+
+    <p class="disclaimer">
+      Please note that returns on an individual investment do not equal returns
+      on an investment option. You can find more info on the <a
+        href="/performance-and-returns">overall returns here</a
+      >. Please note past performance does not guarantee future performance.
+    </p>
   </div>
 </div>
 
@@ -302,6 +315,7 @@
     font-weight: 400;
     letter-spacing: 1px;
     font-size: $font-size-m;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -356,6 +370,11 @@
       font-size: $font-size-s;
       margin-top: 10px;
     }
+  }
+
+  .disclaimer {
+    max-width: 800px;
+    color: $black200;
   }
 
   .skinny {
@@ -460,7 +479,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://res.cloudinary.com/future-super/image/upload/c_scale,q_auto,w_400/v1639299184/Brick.gif");
+    background: url("https://res.cloudinary.com/future-super/image/upload/c_scale,q_auto,w_400/v1639299184/bricks-and-coins.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
