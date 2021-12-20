@@ -1,9 +1,9 @@
 ---
-title: "Reversionary Form"
-docurl: "https://www.futuresuper.com.au/reversionarybeneficiary"
-type: "PDF"
+title: Reversionary Beneficiary Form
+docurl: https://www.futuresuper.com.au/reversionarybeneficiary
+type: PDF
+category: Pension Forms
 order: 6
-category: "Pension Forms"
 ---
 
 Use this form to nominate reversionary beneficiaries to your account.
