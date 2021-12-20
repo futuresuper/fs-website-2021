@@ -23,8 +23,19 @@
       page if you think your question might be a common one. Otherwise, feel free
       to reach out to our friendly Member Advocates.
     </p>
+    <p class="intro bold">
+      After a huge year, the Future Super team will be taking a break and
+      shutting down the office from 24th December and reopening on 3rd January.
+      Our Member Advocacy will still be there for our members during this time,
+      but just operating at reduced hours for urgent enquires and withdrawals.
+      We’ll be responding to emails and taking phone calls between 10am and 3pm
+      on December 24th, 29th, 30th and 31st. For all other enquires, we’ll be
+      back on January 4th and will endeavour to get back to you as soon as
+      possible.
+    </p>
   </div>
   <address>
+    <hr />
     <h5>Email</h5>
     <a href="mailto:{contact.support.email}">{contact.support.email}</a>
     <hr />
@@ -60,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     > * {
-      width: 40%;
+      width: 45%;
     }
   }
 
