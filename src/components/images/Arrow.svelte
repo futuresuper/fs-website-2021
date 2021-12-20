@@ -19,6 +19,7 @@
   svg {
     width: 100%;
     max-width: 200px;
+    max-height: 100%;
     &.down {
       transform: rotate(-45deg);
     }
