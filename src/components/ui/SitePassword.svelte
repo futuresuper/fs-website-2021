@@ -52,6 +52,7 @@
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
+    border: 1px solid $black;
   }
 
   button {
