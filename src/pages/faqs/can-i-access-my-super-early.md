@@ -43,7 +43,7 @@ Compassionate grounds include needing money to pay for:
 
 **Note, applications for early release of super on compassionate grounds must be completed through the [ATO](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/?anchor=Howtoapply#Howtoapply).** 
 
-If successful, we’ll need you to submit our [Withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
+If successful, we’ll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
 [Permanent incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Accessduetopermanentincapacity)
 
@@ -77,7 +77,7 @@ If you have worked and earned super while visiting Australia on a temporary visa
 
 You can apply for DASP through the [ATO](ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/?anchor=Howtoclaimyoursuper#Howtoclaimyoursuper). 
 
-Note, If successful, we'll need you to submit our [Withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
+Note, If successful, we'll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
 [Balances less than $200](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Superlessthan200)
 
