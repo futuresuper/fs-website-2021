@@ -89,13 +89,14 @@
         <li>Click on the cog (top right)</li>
         <li>Click 'See all settings'</li>
         <li>Scroll down to 'Signature'</li>
+        <li>Click 'Create new' and call it whatever you want</li>
+        <li>Paste your new signature in</li>
+        <li>
+          Change your 'signature defaults' for both of your email addresses
+          (@future.. and @myfuture...)
+        </li>
+        <li>Scroll down and press 'Save changes'</li>
       </ul>
-      <p>
-        You can either choose 'Create new' or overwrite your old signature, but
-        if you 'Create new', make sure you also change your 'Signature default'
-        to the new one.
-      </p>
-      <p>Scroll down and press 'Save changes' when you're ready.</p>
     </div>
   </section>
 </SitePassword>
