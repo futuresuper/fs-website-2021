@@ -8,16 +8,16 @@ layout: $/layouts/FaqPage
 ---
 Superannuation is designed to help you save for retirement, however, there are some limited circumstances where you may be able to access your super early, including:
 
-* Severe financial hardship 
-* Compassionate grounds
-* Permanent incapacity
-* Temporary incapacity
-* Terminal medical condition
-* First home super saver scheme (FHSSS)
-* Departing Australia Superannuation Payment (DASP)
-* Balances under $200 AND employment has been terminated.
+* [Severe financial hardship](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Access_due_to_severe_financial_hardship)
+* [Compassionate grounds](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/)
+* [Permanent incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Accessduetopermanentincapacity)
+* [Temporary incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Temporaryincapacity)
+* [Terminal medical condition](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Terminalmedicalcondition)
+* [First Home Super Saver (FHSS) scheme](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/)
+* [Departing Australia Superannuation Payment (DASP)](https://www.ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/)
+* [Balances less than $200](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Superlessthan200), where employment has been terminated.
 
-[Severe financial hardship](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Access_due_to_severe_financial_hardship)
+#### Severe financial hardship
 
 You may be eligible for early release of super if all of the following apply to you: 
 
@@ -29,7 +29,7 @@ You may be eligible for early release of super if all of the following apply to 
 
 Read more about how to apply for an early release of super on the grounds of severe financial hardship in our [information sheet](https://content.myfuturesuper.com.au/forms-docs/FinancialHardshipInformationSheet.pdf).  
 
-[Compassionate grounds](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/)
+#### Compassionate grounds
 
 There are very limited circumstances when you may be allowed to withdraw some of your super on compassionate grounds for unpaid expenses, where you have no other means of paying for these expenses. The amount of super you can withdraw is limited to what you reasonably need to meet the unpaid expense.
 
@@ -45,15 +45,15 @@ Compassionate grounds include needing money to pay for:
 
 If successful, we’ll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
-[Permanent incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Accessduetopermanentincapacity)
+#### Permanent incapacity
 
 You may be eligible to access your super if you have a permanent physical or mental medical condition that is likely to stop you from ever working again in a job you were qualified to do by education, training or experience.
 
-[Temporary incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Temporaryincapacity)
+#### Temporary incapacity
 
 This condition of release is generally used to access insurance benefits linked to your super account and may be applicable if you are temporarily unable to work, or need to work less hours, because of a physical or mental medical condition.
 
-[Terminal medical condition](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Terminalmedicalcondition)
+#### Terminal medical condition
 
 You may be able to access your super if you have a terminal medical condition. You will need to meet the following to be eligible: 
 
@@ -61,7 +61,7 @@ You may be able to access your super if you have a terminal medical condition. Y
 * At least one of the registered medical practitioners is a specialist practising in an area related to your illness or injury; AND
 * The 24-month certification period has not ended.[](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/)
 
-[First Home Super Saver (FHSS) scheme](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/)
+#### First Home Super Saver (FHSS) scheme
 
 The First Home Super Saver (FHSS) scheme was introduced by the Australian Government to reduce pressure on housing affordability for first home buyers. 
 
@@ -71,7 +71,7 @@ You can currently apply to have a maximum of $15,000 of your voluntary contribut
 
 Read more about the FHSS scheme and related processes on the ATO's website [here](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/). 
 
-[Departing Australia Superannuation Payment (DASP)](https://www.ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/)
+#### Departing Australia Superannuation Payment (DASP)
 
 If you have worked and earned super while visiting Australia on a temporary visa, you can apply to have this super paid to you as a Departing Australia Superannuation Payment (DASP) once you leave Australia. [Eligibility conditions](https://www.ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/?anchor=EligibilityforDASP#EligibilityforDASP) apply.
 
@@ -79,7 +79,7 @@ You can apply for DASP through the [ATO](ato.gov.au/Individuals/Super/In-detail/
 
 Note, If successful, we'll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
-[Balances less than $200](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Superlessthan200)
+#### Balances less than $200
 
 You may be able to access your super if your employment has been terminated and the balance of your super account is less than $200. 
 
