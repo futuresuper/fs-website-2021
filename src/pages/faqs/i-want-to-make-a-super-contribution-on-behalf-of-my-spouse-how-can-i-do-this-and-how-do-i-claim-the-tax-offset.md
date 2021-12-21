@@ -15,3 +15,7 @@ If you would like to pay a super contribution to your spouse's Future Super acco
 2. **Transfer the money** to us using the bank account details provided on the form. Note, we can only accept funds via direct deposit for spouse contributions. 
 
 *Pro tip: The personal details in section 1 of the **[Personal and Spouse Contribution form](https://content.myfuturesuper.com.au/forms-docs/FS_PersonalContributionsForm_082020.pdf)** should be for the person making the contribution. The member's details (receiving spouse) should be provided in section 3.*
+
+You can read about claiming the tax offset for spouse contributions on the ATO's website [here](https://www.ato.gov.au/Individuals/myTax/2020/In-detail/Super-contributions-on-behalf-of-your-spouse/), or contact the ATO for more information. 
+
+***Information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account. You should consider whether Future Super’s products are right for your individual objectives and needs and seek personal financial advice. Before investing, please read our [Product Disclosure Statement (PDS)](www.futuresuper.com.au/pds) and check our [Target Market Determination (TMD)](www.futuresuper.com.au/tmd).***
