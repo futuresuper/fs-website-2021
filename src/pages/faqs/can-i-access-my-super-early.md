@@ -17,8 +17,6 @@ Superannuation is designed to help you save for retirement, however, there are s
 * Departing Australia Superannuation Payment (DASP)
 * Balances under $200 AND employment has been terminated.
 
-
-
 [Severe financial hardship](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Access_due_to_severe_financial_hardship)
 
 You may be eligible for early release of super if all of the following apply to you: 
@@ -29,7 +27,7 @@ You may be eligible for early release of super if all of the following apply to 
 * you have outstanding debts (such as bills, credit card debt, personal debts, electricity, gas, phone, car repayment, medical expenses, school fees, rent); and
 * you are able to demonstrate that you are in arrears on a weekly basis.
 
-  Read more about how to apply for an early release of super on the grounds of severe financial hardship in our [information sheet](https://content.myfuturesuper.com.au/forms-docs/FinancialHardshipInformationSheet.pdf).  
+Read more about how to apply for an early release of super on the grounds of severe financial hardship in our [information sheet](https://content.myfuturesuper.com.au/forms-docs/FinancialHardshipInformationSheet.pdf).  
 
 [Compassionate grounds](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/)
 
@@ -82,7 +80,5 @@ Note, If successful, we'll need you to submit our [Withdrawal form](https://www.
 [Balances less than $200](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Superlessthan200)
 
 You may be able to access your super if your employment has been terminated and the balance of your super account is less than $200. 
-
-
 
 If you believe any of the above applies to you and would like further information, please reach out to our team at info@futuresuper.com.au or call us on 1300 658 422.
