@@ -142,7 +142,9 @@
 
   @media (max-width: 800px) {
     .sticky-header {
-      margin: -20px;
+      margin: 0px;
+      padding: 0px 20px;
+      height: 54px;
     }
 
     .hide-on-mobile {
@@ -161,11 +163,6 @@
       display: flex;
       align-items: center;
       margin-left: -12px;
-    }
-
-    .sticky-header {
-      padding: 0px 20px;
-      height: 54px;
     }
 
     .right {

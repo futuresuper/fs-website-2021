@@ -77,6 +77,10 @@
     color: $white;
   }
 
+  p {
+    text-align: center;
+  }
+
   .review {
     border: 1px solid $green;
     border-radius: 32px;
@@ -181,7 +185,10 @@
       grid-row: 2;
     }
     .five-stars {
-      font-size: 32px;
+      font-size: 24px;
+      &.small {
+        font-size: 18px;
+      }
     }
     .slider-buttons {
       margin-top: 40px;

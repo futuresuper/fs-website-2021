@@ -9,6 +9,12 @@
   padding: 40px;
 }
 
+@media (max-width: 700px) {
+  .container {
+    padding: 20px;
+  }
+}
+
 button,
 .button {
   font-family: $heading;

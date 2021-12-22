@@ -59,6 +59,10 @@
     h2.smaller {
       font-size: 20px;
     }
+
+    .button {
+      font-size: 14px;
+    }
   }
 
   @media (max-width: 440px) {

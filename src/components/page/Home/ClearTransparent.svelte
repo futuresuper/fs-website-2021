@@ -27,7 +27,7 @@
         allocate to each company, and which investments go in which options?
       </p>
       <a href="/everything-we-invest-in" class="button">
-        Check out everything we invest in
+        See everything we invest&nbsp;in
       </a>
       <p class="question">
         Want to know how each of our screens works, including tolerance and how

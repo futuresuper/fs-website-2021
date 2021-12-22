@@ -52,13 +52,19 @@
   }
 
   @media (max-width: 740px) {
+    section {
+      flex-direction: column;
+    }
+
     .best {
-      width: 45%;
+      width: 100%;
     }
 
     p {
-      max-width: 45%;
+      max-width: 100%;
       font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 

@@ -315,6 +315,10 @@
   }
 
   @media (max-width: 760px) {
+    .footer-container {
+      padding-top: 20px;
+    }
+
     .menu {
       grid-template-columns: repeat(2, 1fr);
     }

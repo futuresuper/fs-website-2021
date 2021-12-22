@@ -1,36 +1,30 @@
 <script>
 </script>
 
-<div class="container">
-  <div class="grid">
-    <p>Fossil fuel free</p>
-    <div class="image">
-      <img src="/images/Earth_Small.gif" alt="3D rotating earth" />
-    </div>
+<div class="grid">
+  <p>Fossil fuel free</p>
+  <div class="image">
+    <img src="/images/Earth_Small.gif" alt="3D rotating earth" />
   </div>
 </div>
 <div class="line" />
 
-<div class="container">
-  <div class="grid">
-    <p>Invested for climate action</p>
-    <div class="image">
-      <img
-        class="border-radius"
-        src="/images/climate-action.png"
-        alt="Girl at a climate rally"
-      />
-    </div>
+<div class="grid">
+  <p>Invested for climate action</p>
+  <div class="image">
+    <img
+      class="border-radius"
+      src="/images/climate-action.png"
+      alt="Girl at a climate rally"
+    />
   </div>
 </div>
 <div class="line" />
 
-<div class="container">
-  <div class="grid">
-    <p>100% transparent</p>
-    <div class="image">
-      <img src="/images/Transparency_Small.gif" alt="100% word graphic" />
-    </div>
+<div class="grid">
+  <p>100% transparent</p>
+  <div class="image">
+    <img src="/images/Transparency_Small.gif" alt="100% word graphic" />
   </div>
 </div>
 
@@ -46,7 +40,8 @@
     display: grid;
     grid-template-columns: 1fr 330px;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 1000px;
   }
 
   p {

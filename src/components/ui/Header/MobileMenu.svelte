@@ -18,7 +18,7 @@
 
   .menu {
     width: calc(100% - 40px);
-    margin: 36px -20px 0;
+    margin: 20px 0px 0;
     position: absolute;
     background-color: $white;
     color: $black;
