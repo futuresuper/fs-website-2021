@@ -86,6 +86,10 @@ collections:
     folder: "src/pages/faqs"
     create: true
     slug: "{{slug}}"
+    sortable_fields: ["order"]
+    view_groups:
+      - label: Category
+        field: category
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
