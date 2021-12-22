@@ -1,10 +1,29 @@
 <script>
   import pages from "../../../data/pages.json";
+  import abTests from "../../../data/abTests.json";
 
   const marqueeMessage = "Let&rsquo;s put it to work. ";
 
   export let dailyAus = false; // Daily Aus version includes intro text
   export let donationOffer = false; // Includes referral donation offer
+
+  let testName = "home-headline-dec-21";
+  let testGroup;
+  const clientSide = !import.meta.env.SSR;
+  if (clientSide) {
+    window.onload = function () {
+      testGroup = getCookie(testName);
+      if (!testGroup) {
+        let groupNum = Math.random() > 0.5 ? 0 : 1;
+        testGroup = abTests[testName][groupNum];
+        setCookie(testName, testGroup, 365);
+      }
+      analytics.track("User ParticipatedInABTest", {
+        testName,
+        testGroup,
+      });
+    };
+  }
 </script>
 
 <div class="container">
@@ -30,7 +49,12 @@
     </p>
   {/if}
 
-  <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
+  {#if testGroup === "switch-shake"}
+    <h1>Switch your super. Shake&nbsp;the&nbsp;system.</h1>
+  {:else}
+    <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
+  {/if}
+
   <div class="text">
     <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
     <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>

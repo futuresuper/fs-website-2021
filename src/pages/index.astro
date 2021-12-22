@@ -15,9 +15,8 @@ import JoinNow from '../components/ui/JoinNow.svelte'
 <BaseLayout
   noContainer
   customHeader={true}
-  optimizeScript={true}
 >
-  <HomeHeader slot="customHeader" />
+  <HomeHeader slot="customHeader" client:load />
   <ThreePoints />
   <DollarsCelcius />
   <SwitchShake />
