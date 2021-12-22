@@ -2,6 +2,7 @@
 import BaseLayout from '$/layouts/BaseLayout.astro';
 import Faqs from '../components/page/SupportAndFaqs/SupportAndFaqs.svelte';
 let faqs = Astro.fetchContent('$/pages/faqs/*.md');
+faqs = faqs.sort((a, b) => a.order - b.order);
 const black100 = "#f5f5f5";
 
 import pages from '../data/pages.json';
