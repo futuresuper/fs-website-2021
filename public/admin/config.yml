@@ -89,7 +89,8 @@ collections:
     summary: "{{order}} | {{title}}"
     sortable_fields: ["order"]
     view_groups:
-      - field: category
+      - label: "Category: "
+        field: category
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
