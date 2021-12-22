@@ -6,8 +6,8 @@
 <div class="container">
   <section>
     <p>
-      Future Super has been awarded Best For The World™ status by B Corp for
-      2021.
+      Future Super has been awarded Best For The World™ status by B Corp
+      for&nbsp;2021.
     </p>
     <div class="best">
       <BestInWorldCircle />

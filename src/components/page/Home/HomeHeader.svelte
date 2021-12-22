@@ -99,6 +99,10 @@
   }
 
   @media (max-width: 740px) {
+    .container {
+      padding: 40px;
+    }
+
     h1 {
       max-width: 100%;
       font-size: 40px;
@@ -113,6 +117,12 @@
     h3 {
       max-width: 100%;
       margin-top: 60px;
+    }
+  }
+
+  @media (max-width: 354px) {
+    h1 {
+      font-size: 32px;
     }
   }
 </style>
