@@ -11,6 +11,20 @@
   const downloads = [
     {
       title: "All our investments (CSV)",
+      desc: "As at 30 September 2021",
+      docurl:
+        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210930.csv",
+      type: "Document",
+    },
+    {
+      title: "All our investments (PDF)",
+      desc: "As at 30 September 2021",
+      docurl:
+        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210930.pdf",
+      type: "Document",
+    },
+    {
+      title: "All our investments (CSV)",
       desc: "As at 30 June 2021",
       docurl:
         "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210630-CSV.csv",
