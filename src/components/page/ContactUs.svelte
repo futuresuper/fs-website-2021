@@ -24,14 +24,7 @@
       to reach out to our friendly Member Advocates.
     </p>
     <p class="intro bold">
-      After a huge year, the Future Super team will be taking a break and
-      shutting down the office from 24th December and reopening on 3rd January.
-      Our Member Advocacy will still be there for our members during this time,
-      but just operating at reduced hours for urgent enquires and withdrawals.
-      We’ll be responding to emails and taking phone calls between 10am and 3pm
-      on December 24th, 29th, 30th and 31st. For all other enquires, we’ll be
-      back on January 4th and will endeavour to get back to you as soon as
-      possible.
+      Due to impacts of surging Covid-19 cases, we have temporarily reduced our phone contact hours. Our team will be available to answer your call between 10am and 3pm until Friday 7th January 2022.
     </p>
   </div>
   <address>
