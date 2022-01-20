@@ -1,6 +1,6 @@
 ---
 title: Third Party Authority Form
-docurl: futuresuper.com/tpa
+docurl: https://futuresuper.com/tpa
 type: PDF
 category: Super Forms
 order: 16
