@@ -23,9 +23,6 @@
       page if you think your question might be a common one. Otherwise, feel free
       to reach out to our friendly Member Advocates.
     </p>
-    <p class="intro bold">
-      Due to impacts of surging Covid-19 cases, we have temporarily reduced our phone contact hours. Our team will be available to answer your call between 10am and 3pm until Friday 7th January 2022.
-    </p>
   </div>
   <address>
     <hr />
