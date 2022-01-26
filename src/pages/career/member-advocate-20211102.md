@@ -1,11 +1,11 @@
 ---
 title: Member Advocate
-startDate: 2021-11-02T00:08:34.468Z
-endDate: 2021-11-17T00:08:34.492Z
+startDate: 2022-01-25T00:08:34.468Z
+endDate: 2022-02-08T00:08:34.492Z
 layout: $/layouts/Career.astro
-location: Sydney, Remote from Australia (WFH)
+location: "Co-working space/ WFH "
 salary: $63,000 + 11% super
-applicationUrl: https://app.beapplied.com/apply/ghwintlllf
+applicationUrl: https://app.beapplied.com/apply/9fvbi6pfwf
 summary: We are looking for someone to join our fun and passionate team as a
   Member Advocate. Future Super’s Member Advocacy team is the face and voice of
   our members. We’re a fast growing team, passionate about using our skills to
