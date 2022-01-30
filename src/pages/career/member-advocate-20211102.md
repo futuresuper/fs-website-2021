@@ -3,7 +3,8 @@ title: Member Advocate
 startDate: 2022-01-25T00:08:34.468Z
 endDate: 2022-02-08T00:08:34.492Z
 layout: $/layouts/Career.astro
-location: "Co-working space/ WFH "
+location: Our team is mainly based in Sydney, we are open to candidates from
+  anywhere in Australia
 salary: $63,000 + 11% super
 applicationUrl: https://app.beapplied.com/apply/9fvbi6pfwf
 summary: We are looking for someone to join our fun and passionate team as a
