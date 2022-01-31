@@ -14,7 +14,7 @@
         <p>Location: {career.location}</p>
         <p>Salary: {career.salary}</p>
         <p>
-          Closes: {moment(career.endDate).format("D MMM YYYY")}
+          Closes: {moment(career.endDate).add(10, "hours").format("D MMM YYYY")}
         </p>
         <a href={career.url} class="button secondary">More info →</a>
       </div>
