@@ -3,8 +3,8 @@ title: Ethical Investment Analyst
 startDate: 2022-01-31T04:12:02.193Z
 endDate: 2022-02-14T04:12:02.202Z
 layout: $/layouts/Career.astro
-location: Most of the team is based in Sydney, we are open to applications from
-  within Australia
+location: Most of the team is based in Sydney, we are open to candidates from
+  anywhere in Australia
 salary: $70,000 - $80,000 + 11% super
 applicationUrl: https://app.beapplied.com/apply/jurfkrmdrk
 summary: To help us deliver on those targets we’re looking for someone to join
