@@ -3,7 +3,7 @@ title: I’m self-employed. How do I make contributions?
 slug: im-self-employed-how-do-i-make-contributions
 date: 2020-12-15T04:29:48.000Z
 category: Contributions and payments to your super
-order: 4
+order: 6
 layout: $/layouts/FaqPage
 ---
 To contribute to your super as a self-employed person, simply:
