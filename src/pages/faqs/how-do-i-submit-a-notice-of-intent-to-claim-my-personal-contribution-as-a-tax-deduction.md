@@ -11,4 +11,6 @@ If you wish to claim your personal contributions as a tax deduction, you need to
 
 You can submit the form to us by email to [info@futuresuper.com.au](mailto:info@futuresuper.com.au). Once your notice of intent to claim a tax deduction has been applied to your contribution, we will email you a letter of acknowledgement for the receipt of a valid notice for your tax records.
 
+You can find further instructions about how to make a claim on the ATO website [here](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Claiming-deductions-for-personal-super-contributions/?page=2#How_to_make_a_claim).
+
 If you need to vary your notice later, you can do so provided you haven’t completed your tax return for the financial year in which you have made your contributions. You can read more information [here](https://www.futuresuper.com.au/faqs/how-do-i-vary-the-amount-included-in-a-previous-notice-of-intent-for-a-personal-contribution).
