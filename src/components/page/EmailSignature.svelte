@@ -5,6 +5,8 @@
   let pronouns = "";
   let title = "";
   let phone = "";
+  let place = "";
+  let hours = "";
 </script>
 
 <SitePassword>
@@ -19,6 +21,15 @@
       <input bind:value={title} type="text" />
       <p class="label">Phone (Optional) (eg 0402 123 456)</p>
       <input bind:value={phone} type="text" />
+      <p class="label">
+        Traditional Custodian of land you work on (eg Gadigal)
+      </p>
+      <input bind:value={place} type="text" />
+      <p class="label">
+        Working hours or other info (optional) (eg I work on Mondays and
+        Wednesdays)
+      </p>
+      <input bind:value={hours} type="text" />
     </div>
     <div>
       <h3>2. Copy-paste below</h3>
@@ -33,7 +44,12 @@
           >
           <br />
           {title}<br />
-          {phone}
+          {#if phone}
+            {phone}<br />
+          {/if}
+          {#if hours}
+            <br /><i>{hours}</i><br />
+          {/if}
         </p>
         <img
           src="https://content.myfuturesuper.com.au/email/email-sig.gif"
@@ -73,12 +89,29 @@
             />
           </a>
         </div>
+        {#if place}
+          <p
+            style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
+          >
+            I work on {place} land.
+          </p>
+        {/if}
+
         <p
           style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
         >
           We acknowledge the Traditional Custodians of the lands on which we
-          operate. We pay our respects to their Elders, past, present and
-          emerging, and recognise that sovereignty was never ceded.
+          operate and pay our respects to Elders, past, present and emerging. We
+          recognise the enduring relationship Aboriginal and Torres Strait
+          Islander peoples have with Country and that sovereignty was never
+          ceded.
+        </p>
+        <p
+          style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
+        >
+          We stand for a future that promotes justice for First Nations peoples
+          and profoundly respects and acknowledges their respective
+          perspectives, cultures, languages and histories.
         </p>
       </div>
     </div>
