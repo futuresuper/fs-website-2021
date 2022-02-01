@@ -3,7 +3,7 @@ title: When should I submit a Notice of Intent for a personal contribution?
 slug: when-should-i-submit-a-notice-of-intent-for-a-personal-contribution
 date: 2021-11-14T21:28:44.000Z
 category: Contributions and payments to your super
-order: 17
+order: 18
 layout: $/layouts/FaqPage
 ---
 If you want to submit a [Notice of intent to claim or vary a deduction for personal super contributions form](http://www.ato.gov.au/uploadedFiles/Content/SPR/downloads/n71121-11-2014_js33406_w.pdf), you must submit this at the earlier of either: 
