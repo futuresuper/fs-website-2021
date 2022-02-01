@@ -1,13 +1,13 @@
 ---
-title: "What is the work test?"
+title: What is the work test?
 slug: what-is-the-work-test
-date: 2020-12-29T03:46:49Z
+date: 2020-12-29T03:46:49.000Z
 category: Contributions and payments to your super
+order: 14
 layout: $/layouts/FaqPage
-order: 113
 ---
 
-You may be required to satisfy the **work test** if you are between 65-74 years old and wish to make additional contributions to your super. From 2020-21 financial year onwards, this will apply for people between 67-74 years old.
+You may be required to satisfy the **work test** if you are between 67-74 years old and wish to make additional contributions to your super. 
 
 #### Work test
 
