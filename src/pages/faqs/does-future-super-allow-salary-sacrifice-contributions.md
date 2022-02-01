@@ -3,7 +3,7 @@ title: Does Future Super allow salary sacrifice contributions?
 slug: does-future-super-allow-salary-sacrifice-contributions
 date: 2020-12-15T04:32:58.000Z
 category: Contributions and payments to your super
-order: 8
+order: 7
 layout: $/layouts/FaqPage
 ---
 
