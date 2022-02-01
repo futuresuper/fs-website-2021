@@ -3,7 +3,7 @@ title: How do I make personal contributions to my account?
 slug: how-do-i-make-personal-contributions-to-my-account
 date: 2021-06-30T05:19:47.000Z
 category: Contributions and payments to your super
-order: 5
+order: 7
 layout: $/layouts/FaqPage
 ---
 You can make additional contributions to your super account by completing the ***make a personal contribution form*** available in the **Actions** menu of your [online account](https://my.futuresuper.com.au/) and then making a payment via direct transfer or BPAY.
