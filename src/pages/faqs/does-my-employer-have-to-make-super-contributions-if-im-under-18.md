@@ -7,4 +7,4 @@ order: 5
 layout: $/layouts/FaqPage
 ---
 
-If you are under 18, you generally have to work more than 30 hours per week and earn more than $450 (before tax) per month to be entitled to super contributions.
+If you are under 18, you generally have to work more than 30 hours per week and earn more than $450 (before tax) per calendar month to be entitled to super contributions.
