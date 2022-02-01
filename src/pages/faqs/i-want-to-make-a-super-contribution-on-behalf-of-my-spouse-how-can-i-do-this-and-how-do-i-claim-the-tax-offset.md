@@ -2,7 +2,7 @@
 title: I want to make a super contribution on behalf of my spouse. How can I do
   this and how do I claim the tax offset?
 category: Contributions and payments to your super
-order: 20
+order: 9
 layout: $/layouts/FaqPage.astro
 ---
 If your spouse is earning a low income or not working, you can choose to pay super contributions on their behalf. If you make a spouse contribution, you may be entitled to a tax offset. 
