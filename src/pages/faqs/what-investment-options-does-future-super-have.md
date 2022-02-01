@@ -1,13 +1,12 @@
 ---
-title: "What investment options does Future Super have?"
+title: What investment options does Future Super have?
 slug: what-investment-options-does-future-super-have
-date: 2021-11-14T21:45:45Z
+date: 2021-11-14T21:45:45.000Z
 category: Investments and returns
+order: 2
 layout: $/layouts/FaqPage
-order: 91
 ---
-
-Future Super has three investment options: **Balanced Index**, **Balanced Impact** and **Renewables Plus Growth**. You can find a handy snapshot of our investment options on our website [here](https://www.myfuturesuper.com.au/investment-options/).
+Future Super has three investment options: **Balanced Index**, **Balanced Impact** and **Renewables Plus Growth**. You can find a handy snapshot of our investment options on our website [here](https://www.futuresuper.com.au/investment-options/).
 
 All the details you need to make an informed decision about our products can be found in our [Product Disclosure Statement](https://www.futuresuper.com.au/pds), [Target Market Determination](https://www.futuresuper.com.au/tmd) and [Additional Information Booklet](https://www.futuresuper.com.au/aib).
 
