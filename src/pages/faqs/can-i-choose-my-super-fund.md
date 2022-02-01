@@ -3,7 +3,7 @@ title: Can I choose my super fund?
 slug: can-i-choose-my-super-fund
 date: 2020-07-30T01:01:09.000Z
 category: Superannuation Basics
-order: -4
+order: 2
 layout: $/layouts/FaqPage
 ---
 
