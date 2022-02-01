@@ -3,7 +3,7 @@ title: What is the difference between concessional and non-concessional contribu
 slug: concessional-and-non-concessional-contributions
 date: 2021-06-30T05:22:59.000Z
 category: Contributions and payments to your super
-order: 63
+order: 10
 layout: $/layouts/FaqPage
 ---
 
