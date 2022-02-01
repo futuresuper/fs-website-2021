@@ -3,7 +3,7 @@ title: What is the Downsizer contribution?
 slug: what-is-the-downsizer-contribution
 date: 2021-06-30T05:20:41.000Z
 category: Contributions and payments to your super
-order: 12
+order: 16
 layout: $/layouts/FaqPage
 ---
 If you are aged 65 or over and have recently sold your home, you may be able to make a voluntary super contribution of up to $300,000 from the proceeds of sale. [Eligibility criteria apply.](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Downsizer-contributions-for-individuals/?anchor=Howyouwillknowifyouareeligible#Howyouwillknowifyouareeligible)
