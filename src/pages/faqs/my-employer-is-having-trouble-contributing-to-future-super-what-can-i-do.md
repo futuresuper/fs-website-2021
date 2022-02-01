@@ -1,10 +1,10 @@
 ---
-title: "My employer is having trouble contributing to Future Super. What can I do?"
+title: My employer is having trouble contributing to Future Super. What can I do?
 slug: my-employer-is-having-trouble-contributing-to-future-super-what-can-i-do
-date: 2020-12-15T04:26:17Z
+date: 2020-12-15T04:26:17.000Z
 category: Contributions and payments to your super
+order: 20
 layout: $/layouts/FaqPage
-order: 96
 ---
 
 First, you may wish to double-check your employer has all the correct details. This includes:
@@ -14,6 +14,6 @@ First, you may wish to double-check your employer has all the correct details. T
 - **ABN**: 45 960 194 277
 - **USI**: 45 960 194 277 010
 
-This information can be found in our [Employer Hub](https://www.futuresuper.com.au/employers).
+This information can also be found on the [Employers] (https://www.futuresuper.com.au/employers) page of our website .
 
 If your employer is still having trouble contributing to Future Super, they can get in touch with us directly by callings us on 1300 658 422 or emailing us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au).
