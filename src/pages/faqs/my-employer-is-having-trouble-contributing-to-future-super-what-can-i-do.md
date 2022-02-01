@@ -14,6 +14,6 @@ First, you may wish to double-check your employer has all the correct details. T
 - **ABN**: 45 960 194 277
 - **USI**: 45 960 194 277 010
 
-This information can be found in our [Employer Hub](https://www.futuresuper.com.au/employers).
+This information can also be found on the [Employers] (https://www.futuresuper.com.au/employers) page of our website .
 
 If your employer is still having trouble contributing to Future Super, they can get in touch with us directly by callings us on 1300 658 422 or emailing us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au).
