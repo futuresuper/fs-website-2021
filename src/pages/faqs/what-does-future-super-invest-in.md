@@ -1,15 +1,15 @@
 ---
 title: "What does Future Super invest in? "
 slug: what-does-future-super-invest-in
-date: 2020-08-27T04:11:52Z
+date: 2020-08-27T04:11:52.000Z
 category: Investments and returns
+order: 1
 layout: $/layouts/FaqPage
-order: 36
 ---
 
 When we launched in 2014, Future Super was the first super fund to not invest in fossil fuel companies and remains the only super fund to screen out diversified fossil fuel companies and companies providing significant services and financing to the fossil fuel industry. 
 
-At Future Super we use a three-step process to ensure your money is invested in companies that can both grow your super savings and build a better world. You can see our [strict ethical screens here](https://www.myfuturesuper.com.au/choosing/ethicalscreens). 
+At Future Super we use a three-step process to ensure your money is invested in companies that can both grow your super savings and build a better world. You can see our [full screening strategy here](https://www.futuresuper.com.au/impact-screening-strategy). 
 
 First, out with the bad: our negative screen rules out harmful and destructive industries like fossil fuels, detention centres, live animal export, nuclear, tobacco and more.
 
