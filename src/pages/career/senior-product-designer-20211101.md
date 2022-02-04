@@ -4,7 +4,7 @@ startDate: 2021-10-31T22:49:23.125Z
 endDate: 2021-11-07T22:49:23.132Z
 layout: $/layouts/Career.astro
 location: Sydney/ Remote from Australia
-salary: $130,000 - 150,000 + super
+salary: $130,000 - $150,000 + super
 applicationUrl: https://app.beapplied.com/apply/1ulvy0jw2v
 summary: With ambitious targets and a passionate membership base, we’re on the
   hunt for a Senior Product Designer to design our end-to-end member experience,
