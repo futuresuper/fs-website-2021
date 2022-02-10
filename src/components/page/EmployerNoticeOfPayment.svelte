@@ -1,194 +1,69 @@
 <article>
-  <div class="form-container">
-    <form name="Employer Notice of Payment" method="POST" data-netlify="true">
-      <h3>Enter your employer details</h3>
-      <p>
-        Enter your business name and the payment reference you wish to use (such
-        as the member's member number).
-      </p>
-      <p>
-        <label
-          >Employer name
-          <input type="text" name="Employer name" required="required" /></label
-        >
-      </p>
-      <p>
-        <label
-          >Contact email
-          <input type="email" name="Contact email" required="required" /></label
-        >
-      </p>
-      <p>
-        <label
-          >Contact Phone Number
-          <input
-            type="text"
-            name="Contact Phone Number"
-            required="required"
-          /></label
-        >
-      </p>
-      <p>
-        <label
-          >Payment reference
-          <input
-            type="text"
-            name="Payment reference"
-            required="required"
-          /></label
-        >
-      </p>
-      <h3>Enter the payment contribution details</h3>
-      <p>
-        Remember: this form is for one member payment contribution only. Please
-        submit a new form for each additional member payment contribution.
-      </p>
-      <p>
-        <label
-          >Member name
-          <input type="text" name="Member name" required="required" /></label
-        >
-      </p>
-      <p>
-        <label
-          >Member number
-          <input type="text" name="Member number" required="required" /></label
-        >
-      </p>
-      <p>
-        <label
-          >Member date of birth
-          <input
-            type="date"
-            name="Member date of birth"
-            placeholder="DD/MM/YYYY"
-            required="required"
-          /></label
-        >
-      </p>
-      <h3>Contribution amounts</h3>
-      <p>
-        <label
-          >Super guarantee amount ($)
-          <input
-            type="number"
-            step="0.01"
-            id="SG-Amount"
-            name="SG Amount"
-            required="required"
-          /></label
-        >
-      </p>
-      <p class="disclaimer">
-        Super Guarantee Contributions are the standard 9.5% employer
-        contributions that you are required to pay each quarter.
-      </p>
-      <p>
-        <label
-          >Salary sacrifice amount ($) (optional)
-          <input
-            type="number"
-            step="0.01"
-            id="Salary-Sacrifice-Amount"
-            name="Salary Sacrifice Amount"
-          /></label
-        >
-      </p>
-      <p>
-        <label
-          >Employer additional amount ($) (optional)
-          <input
-            type="number"
-            step="0.01"
-            id="Employer-Additional-Amount"
-            name="Employer Additional Amount"
-          /></label
-        >
-      </p>
-      <p class="disclaimer">Post-tax.</p>
-      <p>
-        <label
-          >Member contribution amount ($) (optional)
-          <input
-            type="number"
-            step="0.01"
-            id="Member-Contribution-Amount"
-            name="Member Contribution Amount"
-          /></label
-        >
-      </p>
-      <!-- <p>
-        Total contribution ($)<br />
-        <span id="total" class="bold">${total}</span>
-      </p> -->
-      <input
-        type="text"
-        id="Total-Contribution"
-        name="Total Contribution"
-        style="display: none"
-      />
-      <h3>Contribution amounts</h3>
-      <p>
-        <label
-          >From Date
-          <input
-            type="date"
-            name="From Date"
-            placeholder="DD/MM/YYYY"
-            required="required"
-          /></label
-        >
-      </p>
-      <p>
-        <label
-          >To Date
-          <input
-            type="date"
-            name="To Date"
-            placeholder="DD/MM/YYYY"
-            required="required"
-          /></label
-        >
-      </p>
-
-      <p>
-        <button type="submit" class="primary">Submit for this employee</button>
-      </p>
-    </form>
+  <p>
+    Recently the Australian Tax Office rules around paying the Super Guarantee
+    have changed.
+    <a
+      href="https://www.ato.gov.au/business/super-for-employers/paying-super-contributions/how-to-pay-super/superstream-for-employers/"
+    >
+      Super Guarantee contributions must now be paid via a clearing house.
+    </a>
+    We can no longer accept employer contributions without remittance via&nbsp;SuperStream.
+  </p>
+  <h3>Our clearing house details</h3>
+  <div class="grid">
+    <h4>Fund name</h4>
+    <p>Future Super <span>or</span> Future Super Fund</p>
+    <h4>ABN</h4>
+    <p>45 960 194 277</p>
+    <h4>USI</h4>
+    <p>45 960 194 277 010</p>
+    <h4>SPIN</h4>
+    <p>We do not have a SPIN number. Use our USI instead.</p>
   </div>
+  <p>
+    You can register with a SuperStream compliant superannuation clearing house
+    to make the process of paying super contributions easier. Many modern
+    payroll systems are already SuperStream compliant. If you are a small
+    business with less than 20 employees, you can use the free
+
+    <a
+      href="https://www.ato.gov.au/Business/super-for-employers/paying-super-contributions/how-to-pay-super/small-business-superannuation-clearing-house/"
+    >
+      Small Business Superannuation Clearing House
+    </a>
+
+    operated by&nbsp;the&nbsp;ATO.
+  </p>
+  <p>
+    All the information needed to pay employer super contributions can also be
+    found on the
+    <a href="/employers"> employer section of our&nbsp;website. </a>
+  </p>
+  <p>
+    If you have any questions, please feel free to reply to this email or call
+    us on&nbsp;1300&nbsp;658&nbsp;422.
+  </p>
 </article>
 
 <style lang="scss">
   @use "../../styles/" as *;
 
-  form {
-    border: 1px solid $black;
-    border-radius: 32px;
-    padding: 40px;
+  h3 {
+    margin: 40px 0 20px 0;
   }
 
-  input {
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid $black;
-    outline: none;
-    margin-top: 8px;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-  button.invalid {
-    background-color: $black500;
-    color: $black;
-    cursor: not-allowed;
-    border: 0;
-    &:hover {
-      background-color: $black500;
+  .grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 15% 1fr;
+    h4,
+    p {
+      margin-bottom: 0;
     }
+    margin-bottom: 40px;
   }
 
-  .disclaimer {
-    margin: -30px 0 40px 0;
+  span {
+    color: $black500;
   }
 </style>
