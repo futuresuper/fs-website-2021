@@ -1,59 +1,11 @@
 <script>
   import pages from "../../../data/pages.json";
-  import abTests from "../../../data/abTests.json";
 
   const marqueeMessage = "Let&rsquo;s put it to work. ";
-
-  export let dailyAus = false; // Daily Aus version includes intro text
-  export let donationOffer = false; // Includes referral donation offer
-
-  let testName = "home-headline-dec-21";
-  let testGroup;
-  const clientSide = !import.meta.env.SSR;
-  if (clientSide) {
-    window.onload = function () {
-      testGroup = getCookie(testName);
-      if (!testGroup) {
-        let groupNum = Math.random() > 0.5 ? 0 : 1;
-        testGroup = abTests[testName][groupNum];
-        setCookie(testName, testGroup, 365);
-      }
-      analytics.track("User ParticipatedInABTest", {
-        testName,
-        testGroup,
-      });
-    };
-  }
 </script>
 
 <div class="container">
-  {#if dailyAus}
-    <p
-      style="padding: 40px; border: 1px solid white; border-radius: 32px; margin-bottom: 40px; margin-top: -40px"
-    >
-      Hi Daily Aus listener, By the time you finish reading this, you could have
-      already moved your money away from fossil fuels. Super is an enormous pool
-      of money that all working Australians share – worth over $3 trillion. To
-      put that massive number into perspective, we know that only 7.7% of
-      Australia's superannuation would be required to finance a transition to
-      100% renewable electricity in Australia.
-    </p>
-  {/if}
-
-  {#if donationOffer}
-    <p
-      style="padding: 40px; border: 1px solid white; border-radius: 32px; margin-bottom: 80px; margin-top: -60px; text-align: center"
-    >
-      Looks like your friend referred you here. Switch to Future Super and we'll
-      donate $50 to WIRES on behalf of you and your friend.
-    </p>
-  {/if}
-
-  {#if testGroup === "switch-shake"}
-    <h1>Switch your super. Shake&nbsp;the&nbsp;system.</h1>
-  {:else}
-    <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
-  {/if}
+  <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
 
   <div class="text">
     <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
