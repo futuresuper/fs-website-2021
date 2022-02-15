@@ -6,8 +6,7 @@ category: Divestment
 order: 3
 layout: $/layouts/FaqPage
 ---
-
-We take a wholistic approach to investing that covers a wide range of ethical issues. We do not invest in companies or activities that cause social or environmental harm, such as detention centres, live animal export, tobacco, and armaments, to name a few. This is known as ‘negatively screening’ companies.
+We take a holistic approach to investing that covers a wide range of ethical issues. We do not invest in companies or activities that cause social or environmental harm, such as detention centres, live animal export, tobacco, and armaments, to name a few. This is known as ‘negatively screening’ companies.
 
 Further to this, we also seek out positive investments in industries that provide benefits for the environment, society and the economy. These investments include renewable energy and energy efficiency, water and resource conservation, healthcare, education, electric transport, green infrastructure and more. This is called ‘positive screening.’
 
