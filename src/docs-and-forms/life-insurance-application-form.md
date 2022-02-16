@@ -1,6 +1,6 @@
 ---
 title: Life Insurance Application Form
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS-InsuranceApplicationForm.pdf
+docurl: https://www.futuresuper.com.au/life_insurance_application
 type: PDF
 category: Super Forms
 order: 6
