@@ -89,6 +89,22 @@
             />
           </a>
         </div>
+
+        <img
+          src="https://content.myfuturesuper.com.au/email/email-sig-art.png"
+          alt="Gather by Madison Gibbs"
+          style="margin-top: 20px"
+        />
+        <p
+          style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-top: 6px; color: black"
+        >
+          <i>Gather</i> by <i>Maddison Gibbs</i>.
+          <a
+            href="https://www.futuresuper.com.au/email-signature-art"
+            style="color: black">About this artwork</a
+          ><br />
+        </p>
+
         {#if place}
           <p
             style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
