@@ -18,7 +18,7 @@ Please see the following list of people who can certify your ID:
 * A registrar or a deputy registrar of a court
 * A Notary Public Officer or a Commissioner of Declarations
 
-You must have the copy of your identification document(s) certified as being **a true copy** **of the original** document(s). The person who is authorised to certify documents must sight the original and the copy to make sure both documents are identical, then make sure all pages have been certified as true copies by writing or stamping 'certified true copy of the original' followed by their **signature, printed name, occupation, contact number and date.**
+You must have the copy of your identification document(s) certified as being **a true copy of the original** document(s). The person who is authorised to certify documents must sight the original and the copy to make sure both documents are identical, then make sure all pages have been certified as true copies by writing or stamping 'certified true copy of the original' followed by their **signature, printed name, occupation, contact number and date.**
 
 Please also note the certification has to be on the same page as the copy of the document, for example it cannot be on the back of the document.
 
