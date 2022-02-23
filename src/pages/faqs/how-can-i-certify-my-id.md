@@ -2,7 +2,7 @@
 title: How can I certify my ID?
 slug: how-can-i-certify-my-id
 date: 2019-02-07T03:06:43.000Z
-category: Withdrawing from your super
+category: Forms and documents
 order: 1
 layout: $/layouts/FaqPage
 ---
@@ -23,3 +23,5 @@ You must have the copy of your identification document(s) certified as being **a
 Please also note the certification has to be on the same page as the copy of the document, for example it cannot be on the back of the document.
 
 To ensure your certified copy of your ID is acceptable, please read our [factsheet on Certified ID.](https://futuresuper.com/certifiedidfactsheet)
+
+**Note**: If your proof of identity documents are in a language other than English, they must be accompanied by an English translation prepared by an accredited translator. Read more about translating proof of identity documents [here](https://www.futuresuper.com.au/faqs/do-proof-of-identity-documents-need-to-be-translated).
