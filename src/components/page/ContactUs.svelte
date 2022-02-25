@@ -29,7 +29,7 @@
     <h5>Email</h5>
     <a href="mailto:{contact.support.email}">{contact.support.email}</a>
     <p>
-      We respond to emails Monday-Friday, 9am-5pm<br />
+      We respond to emails Monday to Friday, 9am-5pm<br />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
