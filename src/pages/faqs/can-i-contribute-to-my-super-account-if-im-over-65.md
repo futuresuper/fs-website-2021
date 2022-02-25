@@ -13,3 +13,7 @@ If you are between 67 - 74 years old and wish to make additional voluntary contr
 Note - before 30 June 2020, the requirement to satisfy the work test or work test exemption applied to people 65-74. However, this maximum age limit was lifted to 67 from 1 July 2020. 
 
 Once you are over the age of 75, we will only be able to accept mandated Employer Super Guarantee contributions or a [Downsizer](https://www.futuresuper.com.au/faqs/what-is-the-downsizer-contribution) contribution (if eligible).
+
+
+
+*Note: From 1 July 2022, the criteria to earn more than $450 per calendar month will be removed. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid. Employees must still satisfy other super guarantee eligibility requirements.*
