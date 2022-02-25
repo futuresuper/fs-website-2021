@@ -4,8 +4,8 @@
       email: "info@futuresuper.com.au",
       phone: {
         number: "1300 658 422",
-        openingTime: "9:30am",
-        closingTime: "4:30pm",
+        openingTime: "10:00am",
+        closingTime: "3:00pm",
       },
     },
     media: {
@@ -28,14 +28,17 @@
     <hr />
     <h5>Email</h5>
     <a href="mailto:{contact.support.email}">{contact.support.email}</a>
+    <p>
+      We respond to emails Monday-Friday, 9am-5pm<br />
+      <span class="disclaimer">Sydney local time</span>
+    </p>
     <hr />
     <h5>Phone</h5>
     <a href="tel:{contact.support.phone.number}">
       {contact.support.phone.number}
     </a>
     <p>
-      Monday-Friday, {contact.support.phone.openingTime}-{contact.support.phone
-        .closingTime}<br />
+      We’re available to answer calls Monday to Friday, 10am-3pm<br />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
