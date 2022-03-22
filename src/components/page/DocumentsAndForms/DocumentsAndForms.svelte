@@ -12,6 +12,7 @@
     "Annual Reports",
     "Impact Reports",
     "Employer Forms",
+    "Disclosure Requirements",
   ];
 </script>
 

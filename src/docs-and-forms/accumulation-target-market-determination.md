@@ -2,7 +2,7 @@
 title: Accumulation Target Market Determination
 docurl: "https://www.futuresuper.com.au/tmd"
 type: PDF
-category: Super Documents
+category: Disclosure Requirements
 order: 3
 ---
 
