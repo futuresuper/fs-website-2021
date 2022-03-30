@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Refer from '../components/page/Refer.svelte'
+---
+<BaseLayout
+  title="Refer"
+  description="Your personal referal code"
+  hideHeader
+  hidePageHeader
+>
+  <Refer client:load />
+</BaseLayout>
