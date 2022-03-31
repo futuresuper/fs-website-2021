@@ -13,11 +13,11 @@ For your account to be affected under Protecting Your Super, the following crite
 * You have not amended your insurance cover in the past 16 months; 
 * You have not made or amended a binding nomination of beneficiaries.
 
-### **What classifies an Inactive low balance account (ILBA):**
+#### **What classifies an Inactive low balance account (ILBA):**
 
 An Inactive low balance account is essentially a super account with a balance below $6,000 and none of the actions as stated in the above section have occurred in the past 16 months. The result of this is that the balance will be transferred to the ATO. 
 
-### What classifies an Inactive account for insurance purposes:
+#### What classifies an Inactive account for insurance purposes:
 
  An inactive account for insurance purposes is where contributions have not been received in your account for the past 16 months and that you have not let us know that you’d like to continue to hold insurance cover. 
 
