@@ -4,7 +4,7 @@ category: Managing your account
 order: 9
 layout: $/layouts/FaqPage.astro
 ---
-# Inactive Low-Balance Accounts (ILBA)
+#### Inactive Low-Balance Accounts (ILBA)
 
 To prevent your account from being rolled out to the ATO, you are required to make a financial change on your superannuation account. This could be one of the following: 
 
@@ -16,7 +16,7 @@ To prevent your account from being rolled out to the ATO, you are required to ma
 
 You can also provide us with a written notice electing not to be a member of an inactive low-balance account. This can be sent to us via email to info@futuresuper.com.au.
 
-### Fee limit on low-balance accounts
+###### Fee limit on low-balance accounts
 
 From 1 July 2019, Future Super will not charge the dollar based fee on accounts with balances of less than $6,000. 
 
@@ -28,7 +28,7 @@ Please note that the following fees are not included in the fee cap:
 * insurance premiums, and 
 * other activity fees such as investment switches (if applicable) and family law fees.
 
-# Insurance
+#### Insurance
 
 To prevent your insurance cover being cancelled, you are required to make a financial change on your superannuation account. 
 
@@ -38,7 +38,7 @@ This could be one of the following:
 * Combine your super accounts 
 * Elect to maintain your insurance 
 
-### Making an election to keep insurance
+##### Making an election to keep insurance
 
 You can make an election to keep your insurance cover by emailing us at info@futuresuper.com.au and specifying the following information: 
 
