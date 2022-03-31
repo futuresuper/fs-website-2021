@@ -4,7 +4,7 @@ category: General
 order: 2
 layout: $/layouts/FaqPage.astro
 ---
-**Protecting Your Super** refers to a legislative package designed to protect superannuation members with low balances accounts from erosion by fees and insurance premiums, and to help people avoid having multiple super accounts they didn’t know about. 
+**Protecting Your Super** refers to a legislative package designed to protect superannuation members with a low balance account from erosion by fees and insurance premiums, and to help people avoid having multiple super accounts they didn’t know about. 
 
 The Federal Government’s Protecting Your Super package came into effect on 1 July 2019.
 
