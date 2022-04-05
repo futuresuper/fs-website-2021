@@ -30,7 +30,7 @@
     <li>Flexible working arrangements</li>
 
     <li>Additional super for staff earning under $80,000 p.a.</li>
-    <li>Safe place for trans and non-binary employees</li>
+    <li>Safe and inclusive place for LGBTQIA+ and non-binary employees</li>
   </ul>
 </article>
 
