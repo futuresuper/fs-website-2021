@@ -22,4 +22,8 @@ When you first join Future Super you have 60 days to apply for our **Easy Opt-I
 
 Please note, Easy Opt-in Insurance will commence only once you have a balance in your account. You can read more about Easy Opt-In Standard Cover on page 5 of the [Insurance Guide](https://www.futuresuper.com.au/insuranceguide). 
 
-If your 60 days have expired, or if you wish to apply for Income Protection, get in touch with us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au) and our friendly team will help you organise a quote for Voluntary Cover.If you currently hold insurance with a different super fund, you may be eligible to transfer your cover. Email us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au) to find out more.Note: Insurance is not available for pension account holders.
+If your 60 days have expired, or if you wish to apply for Income Protection, get in touch with us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au) and our friendly team will help you organise a quote for Voluntary Cover.
+
+If you currently hold insurance with a different super fund, you may be eligible to transfer your cover. Email us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au) to find out more.
+
+Note: Insurance is not available for pension account holders.
