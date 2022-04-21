@@ -23,6 +23,9 @@
       page if you think your question might be a common one. Otherwise, feel free
       to reach out to our friendly Member Advocates.
     </p>
+    <p>
+      Please note our team will not be available on public holidays.
+    </p>
   </div>
   <address>
     <hr />
