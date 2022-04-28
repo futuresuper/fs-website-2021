@@ -33,7 +33,7 @@
   <div id="share-with-friend">
     <p>Your referral link is</p>
     <div id="personal-url">
-      www.futuresuper.com.au/billboard?r={referCode}
+      www.futuresuper.com.au/?r={referCode}
     </div>
     <button on:click={handleCopy}>COPY LINK</button>
     <p>
