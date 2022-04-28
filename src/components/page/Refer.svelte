@@ -17,6 +17,7 @@
   }
 
   function handleCopy() {
+    analytics.track("Member ClickedCopyReferCode");
     const text = "www.futuresuper.com.au/?r=" + referCode;
     copyTextToClipboard(text);
     copySuccessMessage = "✅  Copied!";
