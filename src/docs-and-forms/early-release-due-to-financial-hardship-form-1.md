@@ -1,5 +1,5 @@
 ---
-title: Early Release Due to Financial Hardship Form
+title: Early Release Due to Financial Hardship Fact Sheet
 docurl: https://futuresuper.com/financialhardshipinformation*
 type: PDF
 category: Super Forms
