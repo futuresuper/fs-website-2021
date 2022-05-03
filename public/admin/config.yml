@@ -11,6 +11,40 @@ media_library:
 publish_mode: editorial_workflow
 
 collections:
+  - name: "app"
+    label: "App Stories"
+    folder: "src/app-posts"
+    create: true
+    fields:
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          hint: "1080px Square, or 1920x1080px Rectangle",
+        }
+      - {
+          label: "Headline",
+          name: "title",
+          widget: "string",
+          hint: "Max 120 characters",
+          required: false,
+          pattern: [".{0,120}", "Max 120 characters"],
+        }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "text",
+          hint: "One paragraph, no longer than about 4 lines",
+          required: false,
+        }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Read More Link",
+          name: "link",
+          widget: "string",
+          hint: "Include the https://",
+          required: false,
+        }
   - name: "posts"
     label: "Posts"
     folder: "src/pages/blog"
