@@ -24,7 +24,7 @@ collections:
         }
       - {
           label: "Headline",
-          name: "title",
+          name: "headline",
           widget: "string",
           hint: "Max 120 characters",
           required: false,
