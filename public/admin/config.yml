@@ -12,9 +12,10 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "app"
-    label: "App Stories"
+    label: "App Posts"
     folder: "src/app-posts"
     create: true
+    slug: "{{slug}}"
     fields:
       - {
           label: "Image",
