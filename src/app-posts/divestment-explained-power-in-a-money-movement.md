@@ -1,6 +1,6 @@
 ---
 image: https://res.cloudinary.com/future-super/image/upload/v1651753016/student-with-megaphone-wide.png
-title: "Divestment explained: Power in a money movement"
+title: "Divestment explained - Power in a money movement"
 summary: Some of the most impactful social movements were powered by divestment.
   That’s because taking your money back creates systems change.
 date: 2022-05-05T12:18:30.213Z
