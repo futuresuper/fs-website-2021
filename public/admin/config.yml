@@ -18,6 +18,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - {
+          label: "Title (For our reference - Not shown in app)",
+          name: "title",
+          widget: "string",
+        }
+      - {
           label: "Image",
           name: "image",
           widget: "image",
@@ -25,9 +30,9 @@ collections:
         }
       - {
           label: "Headline",
-          name: "title",
+          name: "headine",
           widget: "string",
-          hint: "Max 120 characters",
+          hint: "Optional. Max 120 characters",
           required: false,
           pattern: [".{0,120}", "Max 120 characters"],
         }
@@ -35,6 +40,7 @@ collections:
           label: "Summary",
           name: "summary",
           widget: "text",
+          hint: "Optional",
           hint: "One paragraph, no longer than about 4 lines",
           required: false,
         }
@@ -43,7 +49,14 @@ collections:
           label: "Read More Link",
           name: "link",
           widget: "string",
-          hint: "Include the https://",
+          hint: "Optional. Include the https://",
+          required: false,
+        }
+      - {
+          label: "Number Minutes To Read",
+          name: "minutes",
+          widget: "number",
+          hint: "Optional",
           required: false,
         }
   - name: "posts"
