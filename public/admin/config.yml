@@ -30,7 +30,7 @@ collections:
         }
       - {
           label: "Headline",
-          name: "headine",
+          name: "headline",
           widget: "string",
           hint: "Optional. Max 120 characters",
           required: false,
