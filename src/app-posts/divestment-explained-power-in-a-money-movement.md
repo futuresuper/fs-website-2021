@@ -1,8 +1,8 @@
 ---
-image: https://res.cloudinary.com/future-super/image/upload/v1651753016/student-with-megaphone-wide.png
-title: "Divestment explained - Power in a money movement"
-summary: Some of the most impactful social movements were powered by divestment.
-  That’s because taking your money back creates systems change.
-date: 2022-05-05T12:18:30.213Z
-link: https://www.futuresuper.com.au/faqs/what-is-divestment/
+image: https://res.cloudinary.com/future-super/image/upload/v1639718804/solar-farm.png
+title: "Investment Profile: Infradebt Ethical Infrastructure Debt Fund"
+summary: The Infradebt Ethical Fund (IEF) is an ethically screened private debt
+  infrastructure fund, in which Future Super has a sizeable investment.
+date: 2022-05-05T12:13:27.604Z
+link: https://www.futuresuper.com.au/blog/investment-profile-infradebt-ethical-infrastructure-debt-fund
 ---
