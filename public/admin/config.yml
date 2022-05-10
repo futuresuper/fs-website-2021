@@ -40,8 +40,7 @@ collections:
           label: "Summary",
           name: "summary",
           widget: "text",
-          hint: "Optional",
-          hint: "One paragraph, no longer than about 4 lines",
+          hint: "Optional. One paragraph, no longer than about 4 lines",
           required: false,
         }
       - { label: "Date", name: "date", widget: "datetime" }
