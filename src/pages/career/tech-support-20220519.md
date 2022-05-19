@@ -4,6 +4,7 @@ startDate: 2022-05-19T02:31:40.960Z
 endDate: 2022-06-02T02:31:40.969Z
 layout: $/layouts/Career.astro
 location: Sydney preferred, remote
+salary: $65,000 - $70,000 per annum + 11% super
 applicationUrl: https://app.beapplied.com/apply/an072sejbj
 summary: "In the role of Tech Support, you will help keep the business running
   and assist with any day-to-day issues the broader team may have with hardware
