@@ -168,7 +168,11 @@
     <h2>Filter and search</h2>
     <p>
       We update this information every 3 months. It is current as of {investments.asAtDate}.
-      Downloadable versions are available below.
+      You can also download our
+      <a
+        href="https://www.futuresuper.com.au/documents-and-forms/#disclosure-requirements"
+        >Portfolio Holdings Disclosure</a
+      >.
     </p>
     <div class="search-container">
       <MagnifyingGlass />
@@ -230,7 +234,7 @@
         <h4>Asset Class</h4>
         <!-- <h4>Business Type</h4> -->
         <h4>Country</h4>
-        <h4>$ Value</h4>
+        <h4>$ Value (Total all portfolios)</h4>
       </div>
     {/if}
     {#each filteredInvestments as investment}
@@ -251,15 +255,14 @@
   </div>
 </section>
 
-<section class="container">
+<!-- <section class="container">
   <div class="downloads">
     <h2>Downloadable files</h2>
     {#each downloads as doc}
       <Document {doc} />
     {/each}
   </div>
-</section>
-
+</section> -->
 <style lang="scss">
   @use "../../styles/" as *;
 
