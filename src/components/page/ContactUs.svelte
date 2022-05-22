@@ -5,7 +5,7 @@
       phone: {
         number: "1300 658 422",
         openingTime: "10:00am",
-        closingTime: "3:00pm",
+        closingTime: "4:00pm",
       },
     },
     media: {
