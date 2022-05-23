@@ -1,12 +1,15 @@
 ---
 import BaseLayout from '$/layouts/BaseLayout.astro'
 import ContactUs from '../components/page/ContactUs.svelte'
+
+let contactPage = Astro.fetchContent('$/pages/contact/contact-us.md');
+const content = contactPage[0];
 ---
 
 <BaseLayout
-  title="Contact Us"
-  description="We'd love to hear from you. Contact us by phone, email or post."
-  pageDescription="We're here to help"
+  title={content.title}
+  description={content.description}
+  pageDescription={content.intro}
 >
-  <ContactUs />
+  <ContactUs contact={content} />
 </BaseLayout>

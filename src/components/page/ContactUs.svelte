@@ -1,52 +1,36 @@
 <script>
-  const contact = {
-    support: {
-      email: "info@futuresuper.com.au",
-      phone: {
-        number: "1300 658 422",
-        openingTime: "10:00am",
-        closingTime: "4:00pm",
-      },
-    },
-    media: {
-      email: "media@futuresuper.com.au",
-    },
-  };
+  export let contact;
 </script>
 
 <section>
   <div>
     <h2>Support</h2>
-    <p class="intro">
-      Check out our
-      <a href="/support-and-faqs">Support & FAQs</a>
-      page if you think your question might be a common one. Otherwise, feel free
-      to reach out to our friendly Member Advocates.
-    </p>
-    <p>
-      Please note our team will not be available on public holidays.
-    </p>
+    <div class="intro">
+      {@html contact.astro.html}
+    </div>
   </div>
   <address>
     <hr />
     <h5>Email</h5>
-    <a href="mailto:{contact.support.email}">{contact.support.email}</a>
+    <a href="mailto:{contact.emailAddress}">{contact.emailAddress}</a>
     <p>
-      We respond to emails Monday to Friday, 9am-5pm<br />
+      We respond to emails Monday to Friday, {contact.emailOpeningTime}-{contact.emailClosingTime}<br
+      />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
     <h5>Phone</h5>
-    <a href="tel:{contact.support.phone.number}">
-      {contact.support.phone.number}
+    <a href="tel:{contact.phone}">
+      {contact.phone}
     </a>
     <p>
-      We’re available to answer calls Monday to Friday, 10am-3pm<br />
+      We're available to answer calls Monday to Friday, {contact.phoneOpeningTime}-{contact.phoneClosingTime}<br
+      />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
     <h5>Post</h5>
-    <p>PO Box 1282<br />Albury, NSW 2640</p>
+    <p>{contact.postLine1}<br />{contact.postLine2}</p>
   </address>
 </section>
 
@@ -56,7 +40,7 @@
   <h2>Media enquiries</h2>
   <div>
     <h5>Email</h5>
-    <a href="mailto:{contact.media.email}">{contact.media.email}</a>
+    <a href="mailto:{contact.mediaEmail}">{contact.mediaEmail}</a>
   </div>
 </section>
 

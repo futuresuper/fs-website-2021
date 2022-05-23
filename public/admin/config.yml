@@ -224,3 +224,38 @@ collections:
           hint: "One paragraph, no longer than about 4 lines",
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "contact"
+    label: "Contact Info"
+    folder: "src/pages/contact"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Intro", name: "intro", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Email Adress", name: "emailAddress", widget: "string" }
+      - {
+          label: "Email Opening Time",
+          name: "emailOpeningTime",
+          widget: "string",
+        }
+      - {
+          label: "Email Closing Time",
+          name: "emailClosingTime",
+          widget: "string",
+        }
+      - { label: "Phone", name: "phone", widget: "string" }
+      - {
+          label: "Phone Opening Time",
+          name: "phoneOpeningTime",
+          widget: "string",
+        }
+      - {
+          label: "Phone Closing Time",
+          name: "phoneClosingTime",
+          widget: "string",
+        }
+      - { label: "Media Email", name: "mediaEmail", widget: "string" }
+      - { label: "Post Line 1", name: "postLine1", widget: "string" }
+      - { label: "Post Line 2", name: "postLine2", widget: "string" }
+      - { label: "Introduction info", name: "body", widget: "markdown" }
