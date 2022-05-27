@@ -51,13 +51,6 @@ collections:
           hint: "Optional. Include the https://",
           required: false,
         }
-      - {
-          label: "Number Minutes To Read",
-          name: "minutes",
-          widget: "number",
-          hint: "Optional",
-          required: false,
-        }
   - name: "posts"
     label: "Posts"
     folder: "src/pages/blog"
