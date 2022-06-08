@@ -35,7 +35,7 @@ You should speak to a qualified tax accountant or financial adviser before makin
 
 *Personal Contribution form in Future Super online account (desktop version)*
 
-![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1654677647/EOFY%20blog/EOFY_blog_personal_cont_mobile_axeood.gif)
+![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,h_426/v1654677647/EOFY%20blog/EOFY_blog_personal_cont_mobile_axeood.gif)
 
 *Personal Contribution form in Future Super online account (mobile version)*
 
