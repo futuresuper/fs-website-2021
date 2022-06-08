@@ -82,7 +82,7 @@ If you do need an account summary before the annual member statements are releas
 
 Yes, there are some age restrictions for making personal contributions. If you are under 67 you can make personal contributions regardless if you are working or not. If you are between 67 and 74 you must pass the [work test](https://www.futuresuper.com.au/faqs/what-is-the-work-test/) or [work test exemption](https://www.futuresuper.com.au/faqs/what-is-the-work-test-exemption/) to be eligible to make personal contributions. If you are over 75 you cannot make personal contributions.
 
-**From July 1st 2022, work test requirements will be changing. To read more about it, please see this [ATO webpage](https://www.ato.gov.au/Super/APRA-regulated-funds/In-detail/News/Changes-to-the-work-test-requirements-for-superannuation-contributions/#:~:text=Soon%20older%20Australians%20will%20no,to%20existing%20contribution%20cap%20limits.).**
+**From July 1st 2022, work test requirements will be changing. To read more about the changes, please see this [ATO webpage](https://www.ato.gov.au/Super/APRA-regulated-funds/In-detail/News/Changes-to-the-work-test-requirements-for-superannuation-contributions/#:~:text=Soon%20older%20Australians%20will%20no,to%20existing%20contribution%20cap%20limits.).**
 
 ### Do I have to fill out a contribution form every time I make a payment?
 
