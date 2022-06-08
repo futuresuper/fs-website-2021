@@ -33,7 +33,7 @@ You should speak to a qualified tax accountant or financial adviser before makin
 
 ![Contributions page of Future Super online account]()
 
-*Contributions page of Future Super member account*
+*Contributions page of Future Super online account*
 
 3. Transfer the funds from your bank to Future Super. Use the BPAY or direct deposit details provided on screen immediately after you submit the online personal contribution form (you can also find payment details in our [paper form](https://www.futuresuper.com.au/personalcontributionsform)). Use your personal payment reference number (which will be provided) when transferring the money.
 
