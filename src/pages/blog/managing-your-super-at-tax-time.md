@@ -31,9 +31,9 @@ You should speak to a qualified tax accountant or financial adviser before makin
 1. Log into your [online account](https://my.futuresuper.com.au/).
 2. Complete the online Personal Contribution Form. You will find this through the “Make a personal contribution” button on the right of your homepage on desktop or below the asset allocation graph on your homepage on mobile.
 
-![Contributions page of Future Super online account](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1654675796/EOFY%20blog/online_account_desktop_olgwge.gif)
+![Overview page of Future Super online account](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1654675796/EOFY%20blog/online_account_desktop_olgwge.gif)
 
-*Contributions page of Future Super online account*
+*Overview page of Future Super online account*
 
 3. Transfer the funds from your bank to Future Super. Use the BPAY or direct deposit details provided on screen immediately after you submit the online personal contribution form (you can also find payment details in our [paper form](https://www.futuresuper.com.au/personalcontributionsform)). Use your personal payment reference number (which will be provided) when transferring the money.
 
