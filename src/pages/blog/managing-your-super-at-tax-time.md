@@ -47,7 +47,7 @@ Please be sure to use the correct payment reference number when you make your pa
 
 If you are unable to find your payment reference number, please [get in touch with us](https://www.futuresuper.com.au/contact-us/).
 
-To ensure your funds are received and allocated to your account in time for the 2021/22 financial year, we recommend making any personal contributions by Friday the 24th June 2022. This allows for bank processing times. Contributions are allocated to your account based on the date we receive them into the Fund’s bank account.
+To ensure your funds are received and allocated to your account in time for the 2021/22 financial year, we recommend making any personal contributions by **Friday the 24th June 2022.** This allows for bank processing times. Contributions are allocated to your account based on the date we receive them into the Fund’s bank account.
 
 ## Claiming a tax deduction for personal contributions
 
@@ -55,16 +55,18 @@ Personal contributions are automatically allocated as [non-concessional contribu
 
 However, you may be able to claim personal super contributions as a tax deduction. This may reduce your taxable income when lodging a tax return by the amount of the contribution claimed in that financial year.
 
-To claim your personal contributions as a tax deduction, you must complete and submit a [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/forms/notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/) (Notice of Intent) to info@futuresuper.com.au. You can submit a Notice of Intent once per year for all personal contributions made in a financial year. This will mean that your personal contributions will become [concessional contributions](https://www.futuresuper.com.au/faqs/concessional-and-non-concessional-contributions/) and 15% tax is withheld by the super fund to be paid to the ATO.
+To claim your personal contributions as a tax deduction, you must complete and submit a [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/forms/notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/) (Notice of Intent) to info@futuresuper.com.au. 
+
+You can submit a Notice of Intent once per year for all personal contributions made in a financial year. This will mean that your personal contributions will become [concessional contributions](https://www.futuresuper.com.au/faqs/concessional-and-non-concessional-contributions/) and 15% tax is withheld by the super fund to be paid to the ATO.
 
 Please note, you can submit a Notice of Intent up until the earlier of either:
 
-1. before the end of the day that you lodge your income tax return for the income year in which the personal contributions were made; or
-2. before the end of the financial year following the year in which the contribution was made.
+* before the end of the day that you lodge your income tax return for the income year in which the personal contributions were made; or
+* before the end of the financial year following the year in which the contribution was made.
 
 Once your Notice of Intent has been applied to your account, we’ll provide you with a letter of acknowledgement for your reference. You may need this for lodging your tax return.
 
-**You can read more about how super benefits are taxed [here](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Withdrawing-your-super-and-paying-tax/?page=4#How_tax_applies_to_your_super).**
+You can read more about how super benefits are taxed [here](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Withdrawing-your-super-and-paying-tax/?page=4#How_tax_applies_to_your_super).
 
 ## Member Statements
 
