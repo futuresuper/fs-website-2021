@@ -5,6 +5,7 @@ layout: $/layouts/BlogPost.astro
 image: https://res.cloudinary.com/future-super/image/upload/v1623979268/tax-blog-image.png
 tags:
   - tax
+  - EOFY
 author: Future Super
 description: What you may need to know about making personal contributions,
   claiming a tax deduction and annual member statements.
@@ -12,8 +13,6 @@ description: What you may need to know about making personal contributions,
 2022 is flying by and the end of the financial year is just around the corner. You’ve probably got a lot on, but there are a few things you may need to know about managing your super at tax time.
 
 We wrote this guide to help you navigate the EOFY like a pro.
-
-
 
 ## Making a Personal Contribution
 
@@ -32,7 +31,7 @@ You should speak to a qualified tax accountant or financial adviser before makin
 1. Log into your [online account](https://my.futuresuper.com.au/).
 2. Complete the online Personal Contribution Form. You will find this through the “Make a personal contribution” button on the right of your homepage on desktop or below the asset allocation graph on your homepage on mobile.
 
-![Contributions page of Future Super member account](https://res.cloudinary.com/future-super/image/upload/v1623979107/tax-screenshot.png)
+![Contributions page of Future Super online account]()
 
 *Contributions page of Future Super member account*
 
@@ -45,8 +44,6 @@ Please be sure to use the correct payment reference number when you make your pa
 If you are unable to find your payment reference number, please [get in touch with us](https://www.futuresuper.com.au/contact-us/).
 
 To ensure your funds are received and allocated to your account in time for the 2021/22 financial year, we recommend making any personal contributions by Friday the 24th June 2022. This allows for bank processing times. Contributions are allocated to your account based on the date we receive them into the Fund’s bank account.
-
-
 
 ## Claiming a tax deduction for personal contributions
 
@@ -100,8 +97,6 @@ If you choose not to claim a tax deduction for your personal contribution, the c
 Yes, you may be able to access your unused contribution caps from other years under the [carry-forward arrangements](https://www.ato.gov.au/individuals/super/in-detail/growing-your-super/super-contributions---too-much-can-mean-extra-tax/?page=6) for concessional contributions or [bring forward arrangements](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?anchor=Bringforwardarrangements#Bringforwardarrangements) for non-concessional contributions.
 
 Eligibility conditions apply. Please read the eligibility criteria carefully to find out if these arrangements are available to you.
-
-
 
 - - -
 
