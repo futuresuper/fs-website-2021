@@ -1,7 +1,7 @@
 ---
 title: Software Engineer
 startDate: 2022-04-13T07:34:05.009Z
-endDate: 2022-04-28T07:34:05.018Z
+endDate: 2022-09-01T07:34:05.018Z
 layout: $/layouts/Career.astro
 location: "Our team is mainly based in Sydney, we're open to candidates from
   anywhere in Australia "
