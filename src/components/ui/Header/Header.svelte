@@ -27,6 +27,8 @@
 
   let mobileMenuOpen = false;
 
+  let showEmergencyNotice = true;
+
   // Hide menu on downward scroll and show on upward
   let showMenu = true;
   let y = 0;
@@ -76,17 +78,34 @@
   {#if mobileMenuOpen}
     <MobileMenu {menu} />
   {/if}
+  {#if showEmergencyNotice}
+    <div class="notice">
+      Our member portal and join form are currently down. We expect them to be
+      up again soon.
+    </div>
+  {/if}
 </header>
 
 <style lang="scss">
   @use "../../../styles/" as *;
+
+  .notice {
+    width: 100%;
+    margin-top: 40px;
+    background-color: $black800;
+    padding: 4px 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   header {
     z-index: 9999;
     color: $white;
     width: 100%;
     position: fixed;
-    top: -120px;
+    top: -180px;
     transition: top 0.5s ease-in-out;
     &.show {
       top: 0px;
