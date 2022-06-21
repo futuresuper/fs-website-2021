@@ -160,6 +160,18 @@
   }
 
   @media (max-width: 800px) {
+    .notice {
+      width: 100%;
+      margin-top: 10px;
+      background-color: $black800;
+      padding: 4px 20px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.6rem;
+    }
+
     .sticky-header {
       margin: 0px;
       padding: 0px 20px;
