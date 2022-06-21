@@ -27,7 +27,7 @@
 
   let mobileMenuOpen = false;
 
-  let showEmergencyNotice = true;
+  let showEmergencyNotice = false;
 
   // Hide menu on downward scroll and show on upward
   let showMenu = true;
