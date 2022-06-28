@@ -17,10 +17,7 @@
           </div>
         </div>
         <h3>Balanced Growth <br /><span class="pink">Pension</span></h3>
-        <p>
-          Zero fossil fuels. Targets investment in social impact and renewable
-          energy projects.
-        </p>
+        <p>Zero fossil fuels.</p>
       </div>
       <a
         href="/pensionpaperapplicationform"
