@@ -12,11 +12,7 @@ mediaEmail: media@futuresuper.com.au
 postLine1: PO Box 1282
 postLine2: Albury, NSW 2640
 ---
-
-
-**Tuesday 28/6 - We’re currently experiencing an outage with our phones due to an issue with our service provider. We’ll update here once this has been resolved.**
-
-
+**Tuesday 28/6 - Update: The outage with our phone system this morning has now been resolved.** 
 
 Check out our [Support & FAQs](https://www.futuresuper.com.au/support-and-faqs) page if you think your question might be a common one. Otherwise, feel free to reach out to our friendly Member Advocates.
 
