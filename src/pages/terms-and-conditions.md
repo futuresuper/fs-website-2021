@@ -1,5 +1,5 @@
 ---
-title: "Terms and Conditions"
+title: Terms and Conditions
 layout: $/layouts/LegalPage.astro
 intro: By accessing this website, you agree to the following terms and conditions.
 description: Terms and conditions of the Future Super website.
@@ -7,7 +7,6 @@ alsoSee:
   - Privacy Policy
   - Fund Information
 ---
-
 The website www.futuresuper.com.au (‘this website’) is owned and operated by Future Superannuation Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. By accessing this website, you agree to the following terms and conditions.
 
 ## General information only
@@ -60,7 +59,7 @@ Net investment returns are calculated using prescribed standard methods and assu
 
 ## Transacting
 
-Each investment option in the Fund is unitised. The unit price is determined weekly on a forward pricing basis. This means that when processing contributions or withdrawals the price used will be the next price calculated after the contribution or withdrawal request is received.
+Each investment option in the Fund is unitised. The unit price for each option is calculated every business day and takes into account any change in the value of the assets held by the investment options, as well as applicable fees and taxes. Every member of the Fund will have the same unit price for the relevant option applied to their investments. As the unit price fluctuates, so too will your account balance, as your balance is calculated as the number of units you hold, multiplied by the unit price on any particular day. For all benefit payments (including rollovers and withdrawals) and contributions, the unit price from the date when the contribution or benefit payment request was received will be used (provided that all relevant supporting information has also been received).
 
 ## Buy-sell spread
 
