@@ -171,7 +171,7 @@ Call: 1300 658 422
 
 Email: [privacy@futuresuper.com.au](mailto:privacy@futuresuper.com.au)
 
-Mail: Level 3, 2 Bulletin Place, Sydney NSW 2000
+Mail: Level 3, 31 Alfred Street, Sydney NSW 2000. Please ensure mail is addressed c/o Future Super.
 
 We take access and correction requests, queries and complaints seriously and will respond promptly, in a confidential manner and in accordance with our Complaints Handling Policy.
 
