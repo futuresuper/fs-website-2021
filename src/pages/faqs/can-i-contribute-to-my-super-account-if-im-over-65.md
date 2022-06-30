@@ -14,6 +14,5 @@ Note - before 30 June 2020, the requirement to satisfy the work test or work tes
 
 Once you are over the age of 75, we will only be able to accept mandated Employer Super Guarantee contributions or a [Downsizer](https://www.futuresuper.com.au/faqs/what-is-the-downsizer-contribution) contribution (if eligible).
 
-
-
-*Note: From 1 July 2022, the criteria to earn more than $450 per calendar month will be removed. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid. Employees must still satisfy other super guarantee eligibility requirements.*
+***Note**: From 1 July 2022, the criteria to earn more than $450 per calendar month will be removed. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid. Employees must still satisfy other super guarantee eligibility requirements. Please see the [following ATO article](https://www.ato.gov.au/Business/Business-bulletins-newsroom/Employer-information/Get-ready-for-super-changes-from-1-July/) for more information.*\
+*Additionally, members under 75 years of age will be able to make or receive personal contributions and salary sacrificed contributions without meeting the work test, subject to existing contribution cap limits. They may also be able use the bring forward rule. Please see the [following ATO article](https://www.ato.gov.au/Super/APRA-regulated-funds/In-detail/News/Changes-to-the-work-test-requirements-for-superannuation-contributions/) for more information.*
