@@ -1,5 +1,5 @@
 ---
-title: Why are returns down recently?
+title: Why are returns down recently (2022)?
 category: Investments and returns
 order: 8
 layout: $/layouts/FaqPage.astro
