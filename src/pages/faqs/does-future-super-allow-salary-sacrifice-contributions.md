@@ -10,6 +10,6 @@ Yes. You need to organise salary sacrifice contributions directly with your empl
 
 You can read more about salary sacrificing arrangements [here](https://www.ato.gov.au/Individuals/Super/Growing-your-super/Adding-to-your-super/Salary-sacrificing-super/).
 
-Please note - Salary sacrifice contributions are subject to the concessional contribution cap. If you breach this cap, you may be required to pay additional tax. For the 2021/22 financial year,  the  concessional contribution cap is $27,500 per financial year.
+Please note - Salary sacrifice contributions are subject to the concessional contribution cap. If you breach this cap, you may be required to pay additional tax. For the 2022/23 financial year,  the  concessional contribution cap is $27,500 per financial year.
 
 For more information on contribution caps, please refer to this ATO [webpage](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/).
