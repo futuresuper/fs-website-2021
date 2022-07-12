@@ -6,11 +6,14 @@ category: Contributions and payments to your super
 order: 6
 layout: $/layouts/FaqPage
 ---
-To contribute to your super as a self-employed person, simply:
+You can make additional contributions to your super account by completing the ***make a personal contribution form*** available in the **Actions** menu of your [online account](https://my.futuresuper.com.au/) and then making a payment via direct transfer or BPAY.
 
-1. Submit the online ***make a personal contribution*** form from your **[online account](https://my.futuresuper.com.au/)**. (You will find this under the **Actions** menu). Alternatively, you can submit our downloadable *[Personal Contribution Form](https://www.futuresuper.com.au/personalcontributionsform)*. This allows our administrators to allocate your payment into your account, as all payments go into the one bank account.
-2. **Transfer the money** to us using the payment details in the personal contributions form. You can either pay using BPAY or direct deposit if you're paying from an Australian bank account. 
+Your personal payment details (like your BPAY reference number) will be shown in the online form.
 
-To claim your personal contributions for tax purposes, you need to complete the *[Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/Forms/Notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/)*. You'll need to do this once per financial year for all the contributions during that financial year.
+If you wish to claim your personal contributions for tax purposes, you will need to complete a **[Notice of intent to claim or vary a deduction for personal super contributions form](http://www.ato.gov.au/uploadedFiles/Content/SPR/downloads/n71121-11-2014_js33406_w.pdf)**. You can read more about this [here](https://www.ato.gov.au/forms/notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/).
 
-Note - You have one year from the end of the relevant financial year within which to submit your notice of intent.
+***Note - An annual contribution cap applies to personal contributions, and if you breach this cap, you may be required to pay additional tax.***
+
+For the 2022/23 financial year,  the  contribution caps are $110,000 for non-concessional contributions (contributions made from after-tax income which you do not claim a tax deduction for), and  $27,500 for concessional contributions (taxed contributions), per financial year.
+
+For more information on contribution caps, please refer to this ATO [webpage](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/).
