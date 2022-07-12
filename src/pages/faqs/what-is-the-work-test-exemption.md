@@ -6,9 +6,12 @@ category: Contributions and payments to your super
 order: 15
 layout: $/layouts/FaqPage
 ---
+If you are aged 60 or over and have recently sold your home, you may be able to make a voluntary super contribution of up to $300,000 from the proceeds of sale. [Eligibility criteria apply.](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Downsizer-contributions-for-individuals/?anchor=Howyouwillknowifyouareeligible#Howyouwillknowifyouareeligible)
 
-If you are between 67-74 years old and wish to make additional contributions to your super, and do not meet the work test, you may be required to meet the conditions for the work test exemption.
+Downsizer contributions **do not** count towards contribution caps.
 
-The **work test exemption** allows you to make voluntary contributions for an additional 12-month period from the end of the financial year in which you last met the work test. The work test exemption applies if your super balance is less than $300,000.
+However, Downsizer contributions **do** count toward the $1.7m [transfer balance cap](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/transfer-balance-cap/) for transferring super into the retirement phase.
 
-You cannot have relied on the work test exemption in a previous financial year.
+There are a number of requirements to assess your eligibility for the Downsizer contribution. You can read more about the eligibility requirements on the ATO website [here](https://www.ato.gov.au/Individuals/Super/Growing-your-super/Adding-to-your-super/Downsizing-contributions-into-superannuation/).
+
+***You should consider speaking with a professional financial advisor before making any financial decisions.*** 
