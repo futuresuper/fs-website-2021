@@ -6,13 +6,8 @@ category: Contributions and payments to your super
 order: 13
 layout: $/layouts/FaqPage
 ---
-Your employer will be able to make Superannuation Guarantee (SG) contributions into your super fund for as long as you remain working and earn more than $450 (before tax) per month.
+Your employer will be able to make Superannuation Guarantee (SG) contributions into your super fund for as long as you remain working. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid. Employees must still satisfy other super guarantee eligibility requirements.*
 
-If you are between 67 - 74 years old and wish to make additional voluntary contributions, you will need to satisfy the **[work test](https://futuresuper.groovehq.com/help/what-is-the-work-test)** or **[work test exemption](https://futuresuper.groovehq.com/help/what-is-the-work-test-exemption)**.
-
-Note - before 30 June 2020, the requirement to satisfy the work test or work test exemption applied to people 65-74. However, this maximum age limit was lifted to 67 from 1 July 2020. 
+If you are between 67 - 74 years old, you can make additional voluntary contributions. But, if you are intending to claim a tax deduction on your additional voluntary contributions, you will need to satisfy the work test that is recorded in your tax return instead. 
 
 Once you are over the age of 75, we will only be able to accept mandated Employer Super Guarantee contributions or a [Downsizer](https://www.futuresuper.com.au/faqs/what-is-the-downsizer-contribution) contribution (if eligible).
-
-***Note**: From 1 July 2022, the criteria to earn more than $450 per calendar month will be removed. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid. Employees must still satisfy other super guarantee eligibility requirements. Please see the [following ATO article](https://www.ato.gov.au/Business/Business-bulletins-newsroom/Employer-information/Get-ready-for-super-changes-from-1-July/) for more information.*\
-*Additionally, members under 75 years of age will be able to make or receive personal contributions and salary sacrificed contributions without meeting the work test, subject to existing contribution cap limits. They may also be able use the bring forward rule. Please see the [following ATO article](https://www.ato.gov.au/Super/APRA-regulated-funds/In-detail/News/Changes-to-the-work-test-requirements-for-superannuation-contributions/) for more information.*
