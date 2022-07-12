@@ -6,15 +6,10 @@ category: Contributions and payments to your super
 order: 14
 layout: $/layouts/FaqPage
 ---
+You are required to satisfy the **work test** if you are between 67-74 years old and wish to claim a tax deduction on your additional contributions to your super. 
 
-You may be required to satisfy the **work test** if you are between 67-74 years old and wish to make additional contributions to your super. 
+The **work test** requires you to be gainfully employed for at least 40 hours during a consecutive 30-day period during each financial year in which you intend to claim a tax deduction on the contributions that are made.
 
-The **work test** requires you to be gainfully employed for at least 40 hours during a consecutive 30-day period during each financial year in which the contributions are made.
+**The work test is recorded within your tax return and is not administered by your superannuation fund.**
 
-If you meet the work test, you can make the following types of contributions:
-
-- Voluntary contributions paid by your employer, such as salary sacrifice contributions
-- Personal contributions made by you
-- Contributions made by someone other than you, such as your spouse.
-
-If you do not satisfy the work test you may still be able to make additional contributions to your super if you meet the [work test exemption](https://www.futuresuper.com.au/faqs/what-is-the-work-test-exemption).
+If you do not satisfy the work test you are still be able to make additional contributions to your super. However, you will not be able to claim a tax deduction on these contributions.
