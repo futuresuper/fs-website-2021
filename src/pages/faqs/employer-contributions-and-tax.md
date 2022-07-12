@@ -8,20 +8,16 @@ layout: $/layouts/FaqPage
 ---
 Australian employers are required by Government legislation to make superannuation contributions for their eligible employees. These are called **Employer Superannuation Guarantee (SG) contributions**.
 
-Generally, you’re entitled to super guarantee contributions from your employer if you earn more than $450 (before tax) per month. It doesn’t matter whether you’re full time, part time or casual, or if you’re a temporary resident of Australia.
+Generally, all employees are entitled to SG contributions, no matter how much they earn in a month. It doesn’t matter whether you’re full time, part time or casual, or if you’re a temporary resident of Australia.
 
 If you’re under 18 years old, you must work more than 30 hours per week to be entitled to super contributions.
 
 If you're a contractor, you may still be entitled to super from your employer. You can read more about super contributions for contractors [here](https://www.ato.gov.au/Individuals/Super/Getting-your-super-started/Contractors/).
 
-Your employer’s super contributions may be shown on your payslip but often employers will transfer this money to your super fund every 3 months.
+Please note, your employer’s super contributions may be shown on your payslip, but employers will often transfer this money to your super fund every 3 months by the quarterly due dates.
 
 Some people may have multiple accounts, so it is important to tell your employer about your Future Super account if you want your employer’s contributions to be invested with us on your behalf. 
 
 Contributions made by your employer (including salary sacrifice) are taxed at 15%. As this rate is lower than most people’s marginal income tax rate, these contributions are called **Concessional Contributions**.
 
 Read more about contributions tax [here](https://www.ato.gov.au/Individuals/Super/Growing-your-super/Adding-to-your-super/Tax-on-contributions/).
-
-
-
-*Note: From 1 July 2022, the criteria to earn more than $450 per calendar month will be removed. Employers will be required to make super guarantee contributions to their eligible employee's super fund regardless of how much the employee is paid.* *Employees must still satisfy other super guarantee eligibility requirements.*
