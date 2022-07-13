@@ -172,6 +172,17 @@
     min-height: 50px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: 100%;
+      grid-gap: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 </style>
