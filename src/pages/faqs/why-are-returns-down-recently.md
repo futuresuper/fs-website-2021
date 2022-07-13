@@ -1,7 +1,7 @@
 ---
 title: Why are returns down recently (2022)?
-category: Investments and returns
-order: 8
+category: Market volatility
+order: 1
 layout: $/layouts/FaqPage.astro
 ---
 While super is a long term investment and it’s important not to get too caught up in short term returns, it’s natural to be concerned about seeing negative returns - especially if you haven’t noticed this happening before. 
