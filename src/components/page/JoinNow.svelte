@@ -26,7 +26,7 @@
       >Privacy Policy</a
     >. You can elect to receive communications by post at any time by contacting
     Future Super on 1300 658 422 or via email at info@myfuturesuper.com.au or in
-    writing at GPO Box 1858, Sydney, NSW 2001.
+    writing at PO Box 1282, Albury, NSW 2640.
   </p>
 </form>
 
