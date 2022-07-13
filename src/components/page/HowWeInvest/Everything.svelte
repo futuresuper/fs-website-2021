@@ -11,9 +11,9 @@
     <p>
       Future Super invests in a diversified range of assets - from impact assets
       like clean energy seed funds, to everyday companies you might recognise
-      like Netflix and Telstra. We don’t expect every investment to change the
-      world, but we do make all of our investments public so that you can see
-      where your money goes.
+      like Telstra. We don’t expect every investment to change the world, but we
+      do make all of our investments public so that you can see where your money
+      goes.
     </p>
     <a href="/everything-we-invest-in" class="button">Explore our investments</a
     >
