@@ -1,7 +1,7 @@
 ---
 title: "Can I just switch all my super to cash while markets are volatile? "
 category: Market volatility
-order: 11
+order: 4
 layout: $/layouts/FaqPage.astro
 ---
 
