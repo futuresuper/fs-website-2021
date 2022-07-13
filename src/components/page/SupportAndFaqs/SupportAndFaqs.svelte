@@ -11,7 +11,7 @@
     matchingFaqs = [];
     searchMode = true;
     faqs.map((f) => {
-      if ( f.title.toUpperCase().includes(searchText.toUpperCase()) ) {
+      if (f.title.toUpperCase().includes(searchText.toUpperCase())) {
         matchingFaqs = [...matchingFaqs, f];
       }
     });
