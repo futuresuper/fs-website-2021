@@ -18,18 +18,14 @@ const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY")
 let faqs = Astro.fetchContent('$/pages/faqs/*.md');
 let performanceFaqs = [];
 faqs.map(f => {
-  if (f.category === "Investments and returns") {
+  if (f.category === "Investments and returns" || f.category === "Market volatility") {
     performanceFaqs.push(f);
   }
 })
 ---
 
-<BaseLayout
-  title="Performance and Returns"
+<BaseLayout title="Performance and Returns"
   description="See the competitive performance of our funds over the short, medium and long term."
-  pageDescription={desc}
-  noContainer
-  relatedPages={relatedPages}
->
+  pageDescription={desc} noContainer relatedPages={relatedPages}>
   <PerformanceAndReturns client:load faqs={performanceFaqs} />
 </BaseLayout>
