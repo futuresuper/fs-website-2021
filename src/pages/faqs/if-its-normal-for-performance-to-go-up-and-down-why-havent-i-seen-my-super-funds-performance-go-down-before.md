@@ -1,8 +1,8 @@
 ---
 title: " If it's normal for performance to go up and down, why haven't I seen my
   super fund's performance go down before? "
-category: Investments and returns
-order: 10
+category: Market volatility
+order: 3
 layout: $/layouts/FaqPage.astro
 ---
 Whether you’ve seen your super returns go down before probably depends on how long you have had a super fund for and how often you’ve looked at your balance. 
