@@ -10,7 +10,7 @@ tags:
 author: Future Super
 description: The Artesian Green & Sustainable Bond Fund (ASGBF) invests in a
   diversified portfolio of green, sustainable and social bonds issued by
-  companies and governments.
+  companies.
 ---
 
 ## What is this investment? How are we invested?
