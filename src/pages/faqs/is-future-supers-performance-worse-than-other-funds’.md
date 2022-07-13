@@ -1,7 +1,7 @@
 ---
 title: "Is Future Super's performance worse than other funds’? "
-category: Investments and returns
-order: 9
+category: Market volatility
+order: 2
 layout: $/layouts/FaqPage.astro
 ---
 It depends which other fund you are looking at and over what period of time. In the first half of 2022, fossil fuel stocks have done well. The funds that invest in those stocks would have benefited from that.
