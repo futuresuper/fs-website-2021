@@ -67,7 +67,7 @@ The First Home Super Saver (FHSS) scheme was introduced by the Australian Govern
 
 From 1 July 2018, you can apply to release your voluntary contributions, along with associated earnings, to help you purchase your first home. You must meet the [eligibility requirements](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/#WhoiseligibletorequestaFHSSdetermination) to apply for the release of these amounts.
 
-You can currently apply to have a maximum of $15,000 of your voluntary contributions from any one financial year included in your eligible contributions to be released under the FHSS scheme, up to a total of $30,000 contributions across all years. You will also receive an amount of earnings that relate to those contributions.
+You can currently apply to have a maximum of $15,000 of your voluntary contributions from any one financial year included in your eligible contributions to be released under the FHSS scheme, up to a total of $50,000 contributions across all years. You will also receive an amount of earnings that relate to those contributions.
 
 Read more about the FHSS scheme and related processes on the ATO's website [here](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/). 
 
