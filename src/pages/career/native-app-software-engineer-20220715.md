@@ -7,7 +7,9 @@ location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $100,000 - $130,000 + super (based on skills and experience)
 applicationUrl: https://app.beapplied.com/apply/unwuriroce
-summary: " Calling all Native App Software Engineers"
+summary: We are looking for a native app software engineer to join our mission
+  focused high-growth startup to continue to grow and support our technology
+  platform to serve and engage with our members.
 ---
 ## About Future Super
 
