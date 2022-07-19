@@ -10,4 +10,4 @@ If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371
 
 Our contact hours are:
 
-Monday to Friday - 10:00 am to 4:00 pm (AEST)
+Monday to Friday - 10:00 am to 4:00 pm Sydney local time.
