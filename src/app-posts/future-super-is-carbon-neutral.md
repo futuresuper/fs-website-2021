@@ -1,6 +1,6 @@
 ---
 title: Future Super is Carbon Neutral
-image: https://res.cloudinary.com/future-super/image/upload/v1652145900/trees.png
+image: https://res.cloudinary.com/future-super/image/upload/v1658727840/trees2.png
 headline: Future Super is certified carbon neutral
 summary: Climate Active has certified Future Super’s operations as carbon
   neutral from 2019.
