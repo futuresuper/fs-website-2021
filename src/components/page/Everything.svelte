@@ -8,49 +8,6 @@
   import { flag } from "country-emoji";
   import Document from "../page/DocumentsAndForms/Document.svelte";
 
-  const downloads = [
-    {
-      title: "All our investments (CSV)",
-      desc: "As at 30 September 2021",
-      docurl:
-        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210930.csv",
-      type: "Document",
-    },
-    {
-      title: "All our investments (PDF)",
-      desc: "As at 30 September 2021",
-      docurl:
-        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210930.pdf",
-      type: "Document",
-    },
-    {
-      title: "All our investments (CSV)",
-      desc: "As at 30 June 2021",
-      docurl:
-        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210630-CSV.csv",
-      type: "Document",
-    },
-    {
-      title: "All our investments (PDF)",
-      desc: "As at 30 June 2021",
-      docurl: "https://www.futuresuper.com.au/phd-20210630",
-      type: "Document",
-    },
-    {
-      title: "All our investments (CSV)",
-      desc: "As at 31 March 2021",
-      docurl:
-        "https://content.myfuturesuper.com.au/forms-docs/FS-PHD-20210331-CSV.csv",
-      type: "Document",
-    },
-    {
-      title: "All our investments (PDF)",
-      desc: "As at 31 March 2021",
-      docurl: "https://www.futuresuper.com.au/phd-20210331",
-      type: "Document",
-    },
-  ];
-
   let sortedInvestments = investments.list.sort(
     (a, b) => b.totalSize - a.totalSize
   );
@@ -223,6 +180,10 @@
     <p class="result-description">
       {@html resultDescription}
     </p>
+    <p class="disclaimer">
+      The values shown are estimates based on the underlying investments in all of the Fund's investment options. Investments marked with an asterisk are
+      held indirectly via Exchange Traded Funds (ETFs).
+    </p>
   </div>
 </section>
 
@@ -239,7 +200,10 @@
     {/if}
     {#each filteredInvestments as investment}
       <div class="table-row">
-        <h4 class="first-col">{investment.name}</h4>
+        <h4 class="first-col">
+          {investment.name}
+          {investment.inEtf ? "*" : ""}
+        </h4>
         <div class="text mobile-hide">{investment.type}</div>
         <!-- <div class="text mobile-hide">{investment.businessType}</div> -->
         <div class="flag mobile-hide">
@@ -253,16 +217,13 @@
       </div>
     {/each}
   </div>
+  <div class="container">
+    <p class="disclaimer">
+      * This investment is held indirectly via an Exchange Traded Fund (ETF).
+    </p>
+  </div>
 </section>
 
-<!-- <section class="container">
-  <div class="downloads">
-    <h2>Downloadable files</h2>
-    {#each downloads as doc}
-      <Document {doc} />
-    {/each}
-  </div>
-</section> -->
 <style lang="scss">
   @use "../../styles/" as *;
 
@@ -333,11 +294,6 @@
     margin-top: 40px;
   }
 
-  .downloads {
-    margin: 120px 20% 40px 20%;
-    border-bottom: 1px solid $black;
-  }
-
   @media (max-width: 800px) {
     .mobile-hide {
       display: none;
@@ -345,10 +301,6 @@
 
     input {
       margin-left: 8px;
-    }
-
-    .downloads {
-      margin: 60px 0 0 0;
     }
 
     .dropdowns {

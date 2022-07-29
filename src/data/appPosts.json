@@ -1,1 +1,57 @@
-{"articles":[{"id":"reconciliation-action-plan","date":"2022-07-26T00:47:20.660Z","image":"https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1645488055/gather-uncropped.jpg","placeholderImage":"https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1645488055/gather-uncropped.png","headline":"Learn about Future Super's Reconciliation Action Plan","summary":"We work on and thus profit from stolen land. The stealing of this land from Aboriginal and Torres Strait Islander people started centuries of cultural desecration and genocide. We can't claim to want a future free from inequality, and not reckon with the facts of our history.","link":"https://www.futuresuper.com.au/reconciliation/","minutesToRead":2},{"id":"future-super-is-carbon-neutral","date":"2022-07-26T00:41:38.377Z","image":"https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1658727840/trees2.jpg","placeholderImage":"https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1658727840/trees2.png","headline":"Future Super is certified carbon neutral","summary":"Climate Active has certified Future Super's operations as carbon neutral from 2019.","link":"https://www.futuresuper.com.au/blog/future-super-is-certified-carbon-neutral/","minutesToRead":3},{"id":"bloody-good-policy","date":"2022-07-25T23:53:49.077Z","image":"https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg","placeholderImage":"https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg","headline":"A bloody good policy","summary":"Future Super's new Menstrual and Menopausal Leave Guidelines finally recognise that periods, menopause and its symptoms can have a serious impact on a person's day to day.","link":"https://www.futuresuper.com.au/blog/a-bloody-good-policy/","minutesToRead":3},{"id":"divestment-explained-power-in-a-money-movement","date":"2022-05-05T12:18:30.213Z","image":"https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1651753016/student-with-megaphone-wide.jpg","placeholderImage":"https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1651753016/student-with-megaphone-wide.png","headline":"Divestment explained: Power in a money movement","summary":"Some of the most impactful social movements were powered by divestment. That's because taking your money back creates systems change.","link":"https://www.futuresuper.com.au/faqs/what-is-divestment/","minutesToRead":1},{"id":"investment-profile-infradebt-ethical-infrastructure-debt-fund","date":"2022-05-05T12:13:27.604Z","image":"https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1639718804/solar-farm.jpg","placeholderImage":"https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1639718804/solar-farm.png","headline":"Investment Profile: Infradebt Ethical Infrastructure Debt Fund","summary":"The Infradebt Ethical Fund (IEF) is an ethically screened private debt infrastructure fund, in which Future Super has a sizeable investment.","link":"https://www.futuresuper.com.au/blog/investment-profile-infradebt-ethical-infrastructure-debt-fund","minutesToRead":2}]}
+{
+  "feed": [
+    {
+      "id": "reconciliation-action-plan",
+      "date": "2022-07-26T00:47:20.660Z",
+      "feedItemType": "article",
+      "feedItem": {
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1645488055/gather-uncropped.jpg",
+        "placeholderImage": "https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1645488055/gather-uncropped.png",
+        "headline": "Learn about Future Super's Reconciliation Action Plan",
+        "summary": "We work on and thus profit from stolen land. The stealing of this land from Aboriginal and Torres Strait Islander people started centuries of cultural desecration and genocide. We can't claim to want a future free from inequality, and not reckon with the facts of our history.",
+        "link": "https://www.futuresuper.com.au/reconciliation/",
+        "minutesToRead": 2
+      }
+    },
+    {
+      "id": "future-super-is-carbon-neutral",
+      "date": "2022-07-26T00:41:38.377Z",
+      "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1658727840/trees2.jpg",
+      "placeholderImage": "https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1658727840/trees2.png",
+      "headline": "Future Super is certified carbon neutral",
+      "summary": "Climate Active has certified Future Super's operations as carbon neutral from 2019.",
+      "link": "https://www.futuresuper.com.au/blog/future-super-is-certified-carbon-neutral/",
+      "minutesToRead": 3
+    },
+    {
+      "id": "bloody-good-policy",
+      "date": "2022-07-25T23:53:49.077Z",
+      "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg",
+      "placeholderImage": "https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg",
+      "headline": "A bloody good policy",
+      "summary": "Future Super's new Menstrual and Menopausal Leave Guidelines finally recognise that periods, menopause and its symptoms can have a serious impact on a person's day to day.",
+      "link": "https://www.futuresuper.com.au/blog/a-bloody-good-policy/",
+      "minutesToRead": 3
+    },
+    {
+      "id": "divestment-explained-power-in-a-money-movement",
+      "date": "2022-05-05T12:18:30.213Z",
+      "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1651753016/student-with-megaphone-wide.jpg",
+      "placeholderImage": "https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1651753016/student-with-megaphone-wide.png",
+      "headline": "Divestment explained: Power in a money movement",
+      "summary": "Some of the most impactful social movements were powered by divestment. That's because taking your money back creates systems change.",
+      "link": "https://www.futuresuper.com.au/faqs/what-is-divestment/",
+      "minutesToRead": 1
+    },
+    {
+      "id": "investment-profile-infradebt-ethical-infrastructure-debt-fund",
+      "date": "2022-05-05T12:13:27.604Z",
+      "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1639718804/solar-farm.jpg",
+      "placeholderImage": "https://res.cloudinary.com/future-super/image/upload/c_scale,e_blur:100,q_10,w_100/v1639718804/solar-farm.png",
+      "headline": "Investment Profile: Infradebt Ethical Infrastructure Debt Fund",
+      "summary": "The Infradebt Ethical Fund (IEF) is an ethically screened private debt infrastructure fund, in which Future Super has a sizeable investment.",
+      "link": "https://www.futuresuper.com.au/blog/investment-profile-infradebt-ethical-infrastructure-debt-fund",
+      "minutesToRead": 2
+    }
+  ]
+}
