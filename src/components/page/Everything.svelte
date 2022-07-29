@@ -181,8 +181,7 @@
       {@html resultDescription}
     </p>
     <p class="disclaimer">
-      This information is an estimate based on the underlying investments in all
-      of the Fund's investment options. Investments marked with an asterisk are
+      The values shown are estimates based on the underlying investments in all of the Fund's investment options. Investments marked with an asterisk are
       held indirectly via Exchange Traded Funds (ETFs).
     </p>
   </div>
