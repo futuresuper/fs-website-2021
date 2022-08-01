@@ -1,0 +1,125 @@
+{
+  "feed": [
+    {
+      "data": {
+        "__type": "article",
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1645488055/gather-uncropped.jpg",
+        "headline": "Learn about Future Super's Reconciliation Action Plan",
+        "summary": "We work on and thus profit from stolen land. The stealing of this land from Aboriginal and Torres Strait Islander people started centuries of cultural desecration and genocide. We can't claim to want a future free from inequality, and not reckon with the facts of our history.",
+        "link": "https://www.futuresuper.com.au/reconciliation/"
+      },
+      "id": "reconciliation-action-plan",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "fum",
+        "amount": "$1.23B",
+        "asAtDate": "As at 30 June 2022",
+        "text": "The amount that you, together with other members have invested with Future Super",
+        "imageForSharing": "https://res.cloudinary.com/future-super/image/upload/v1659070238/fum-image-30-june-22.png"
+      },
+      "id": "fum-update-to-30-june-22",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "inlineQuiz",
+        "question": "Do you know your biggest investment?",
+        "questionDescription": "As of 31 March 2022",
+        "answers": [
+          {
+            "text": "Resmed",
+            "subline": "A healthcare company",
+            "image": "https://res.cloudinary.com/future-super/image/upload/v1658991696/resmed-quiz.png"
+          },
+          {
+            "text": "Infradebt Ethical Fund",
+            "subline": "Lends to renewable projects",
+            "correct": true,
+            "image": "https://res.cloudinary.com/future-super/image/upload/v1658991696/infradebt-quiz.png"
+          },
+          {
+            "text": "Apple",
+            "subline": "A big tech company",
+            "image": "https://res.cloudinary.com/future-super/image/upload/v1658991696/apple-quiz.png"
+          }
+        ]
+      },
+      "id": "biggest-investment-quiz",
+      "investmentOptionsShowTo": ["balancedImpact", "renewablesPlusGrowth"],
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "article",
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1658727840/trees2.jpg",
+        "headline": "Future Super is certified carbon neutral",
+        "summary": "Climate Active has certified Future Super's operations as carbon neutral from 2019.",
+        "link": "https://www.futuresuper.com.au/blog/future-super-is-certified-carbon-neutral/"
+      },
+      "id": "future-super-is-carbon-neutral",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "inlineQuiz",
+        "question": "How many people joined Future Super in the past year?",
+        "questionDescription": "to 30 June 2022",
+        "answers": [
+          { "text": "748" },
+          { "text": "4,671" },
+          {
+            "text": "10,983",
+            "correct": true,
+            "successImage": "https://res.cloudinary.com/future-super/image/upload/v1659056949/number-joined.png",
+            "successMessage": "10,983 joined"
+          }
+        ]
+      },
+      "id": "how-many-members-quiz",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "article",
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg",
+        "headline": "A bloody good policy",
+        "summary": "Future Super's new Menstrual and Menopausal Leave Guidelines finally recognise that periods, menopause and its symptoms can have a serious impact on a person's day to day.",
+        "link": "https://www.futuresuper.com.au/blog/a-bloody-good-policy/"
+      },
+      "id": "bloody-good-policy",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "article",
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1651753016/student-with-megaphone-wide.jpg",
+        "headline": "Divestment explained: Power in a money movement",
+        "summary": "Some of the most impactful social movements were powered by divestment. That's because taking your money back creates systems change.",
+        "link": "https://www.futuresuper.com.au/faqs/what-is-divestment/"
+      },
+      "id": "divestment-explained-power-in-a-money-movement",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    },
+    {
+      "data": {
+        "__type": "article",
+        "image": "https://res.cloudinary.com/future-super/image/upload/c_fill,h_530,w_686,q_70/v1639718804/solar-farm.jpg",
+        "headline": "Investment Profile: Infradebt Ethical Infrastructure Debt Fund",
+        "summary": "The Infradebt Ethical Fund (IEF) is an ethically screened private debt infrastructure fund, in which Future Super has a sizeable investment.",
+        "link": "https://www.futuresuper.com.au/blog/investment-profile-infradebt-ethical-infrastructure-debt-fund"
+      },
+      "id": "investment-profile-infradebt-ethical-infrastructure-debt-fund",
+      "dateFirstPublished": "2022-07-26T00:47:20.660Z",
+      "dateLastUpdated": "2022-07-26T00:47:20.660Z"
+    }
+  ]
+}
