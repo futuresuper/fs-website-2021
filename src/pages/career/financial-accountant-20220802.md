@@ -1,5 +1,5 @@
 ---
-title: Financial Accountant
+title: Accountant
 startDate: 2022-08-01T22:50:53.194Z
 endDate: 2022-09-06T22:50:53.206Z
 layout: $/layouts/Career.astro
@@ -7,7 +7,7 @@ location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $80,000 - $90,000 + super (based on skills and experience)
 applicationUrl: https://app.beapplied.com/apply/gpyhha74sv
-summary: "We are looking for a Financial Accountant to join our Finance team. "
+summary: "We are looking for an Accountant to join our Finance team. "
 ---
 ## About Future Super
 
