@@ -141,6 +141,9 @@ const seoDescription = description ? description : "Your super has the power to 
       analytics.page();
       }}();
     </script>
+
+  {joinPage &&
+  <script src="https://www.googleoptimize.com/optimize.js?id=GTM-5QGGPRK"></script>}
 </head>
 
 <body>
@@ -179,6 +182,7 @@ const seoDescription = description ? description : "Your super has the power to 
   </main>
   <Footer client:visible />
   <script src="/scripts/tracking.js" />
+
 </body>
 
 </html>

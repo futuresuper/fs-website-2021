@@ -1,6 +1,9 @@
 <form method="GET" action="https://join.futuresuper.com.au/">
   <h1>Join Future Super</h1>
-  <h4>Joining usually takes about 5 minutes</h4>
+  <div class="time-row">
+    <img src="/images/clock.gif" alt="clock" class="clock" />
+    <h4>Joining usually takes about 8 minutes</h4>
+  </div>
   <p>
     <label
       >First Name<input
@@ -60,6 +63,20 @@
   }
 
   h4 {
+    margin-bottom: 0;
+  }
+
+  .clock {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .time-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #00a900;
     margin-bottom: 30px;
   }
 

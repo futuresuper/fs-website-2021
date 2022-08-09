@@ -11,6 +11,10 @@ window.onload = function () {
   // If Join Page
   const refererField = document.getElementById("referer");
   if (refererField) {
+
+    
+
+
     if (referer) {
       refererField.value = referer;
     } else if (refererCookie) {
