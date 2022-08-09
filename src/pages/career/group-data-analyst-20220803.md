@@ -1,7 +1,7 @@
 ---
 title: Group Data Analyst
 startDate: 2022-08-03T02:17:38.937Z
-endDate: 2022-09-14T02:17:38.944Z
+endDate: 2022-08-18T02:17:38.944Z
 layout: $/layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
