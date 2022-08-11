@@ -11,7 +11,7 @@ The website www.futuresuper.com.au (‘this website’) is owned and operated by
 
 ## General information only
 
-This website provides you with general information only and does not take account of your individual investment objectives, financial situation or needs. Before acting on any information contained herein, consider its appropriateness to your circumstances. Our [Financial Services Guide](https://www.futuresuper.com.au/fsg) and the [Product Disclosure Statement](https://www.futuresuper.com.au/pds) for the Fund should be considered before making an investment decision.
+This website provides you with general information only and does not take account of your individual investment objectives, financial situation or needs. Before acting on any information contained herein, consider its appropriateness to your circumstances. Our [Financial Services Guide](https://www.futuresuper.com.au/fsg), [Target Market Determination](https://content.myfuturesuper.com.au/forms-docs/FS_AccumTMD_05102021.pdf) and the [Product Disclosure Statement](https://www.futuresuper.com.au/pds) for the Fund should be considered before making an investment decision.
 
 We recommend that you seek professional financial advice before deciding whether to acquire, or continue to hold, interests in the Fund.
 
@@ -27,21 +27,21 @@ You are responsible for ensuring that your use of this website is lawful, does n
 
 ## Privacy
 
-Future Superannuation Holdings is committed to maintaining the privacy of any personal data it holds about you, and does so in accordance with the Australian Privacy Principles and the Privacy Act 1998. Please read our Privacy Policy to understand how your personal information will be treated when you use this website.
+Future Superannuation Holdings is committed to maintaining the privacy of any personal data it holds about you, and does so in accordance with the Australian Privacy Principles and the Privacy Act 1998. Please read our [Privacy Policy](https://www.myfuturesuper.com.au/privacy-policy/) to understand how your personal information will be treated when you use this website.
 
 ## Website links
 
-This website provides links to other websites operated by independent third parties. Future Superannuation Holdings does not control or endorse, and is not responsible for, the content of these linked third-party websites, and provides hyperlinks to other websites for your convenience and information only. Any information, opinions, representations or offers made in those linked third-party websites are solely the responsibility of the third parties operating those websites and are not made by Future Superannuation Holdings, which makes no representation or warranty as to accuracy or reliability of the information in those websites.
+This website provides links to other websites operated by third parties. Future Superannuation Holdings does not control or endorse, and is not responsible for, the content of these linked third-party websites, and provides hyperlinks to other websites for your convenience and information only. Any information, opinions, representations or offers made in those linked third-party websites are solely the responsibility of the third parties operating those websites and are not made by Future Superannuation Holdings, which makes no representation or warranty as to accuracy or reliability of the information in those websites.
 
 ## Third party information and materials
 
-This website may provide information, articles and material that are written and prepared by people who are not employees or representatives of Future Superannuation Holdings. Such material is provided for your convenience and information only. The material will be clearly identified as the product of an independent third party. Future Superannuation Holdings is not responsible for the contents or accuracy of this material, and the opinions expressed in the material should not be taken as recommendations or opinions of Future Superannuation Holdings.
+This website may provide information, articles and material that are written and prepared by people who are not employees or representatives of Future Superannuation Holdings. Such material is provided for your convenience and information only. The material will be clearly identified as the product of a third party. Future Superannuation Holdings is not responsible for the contents or accuracy of this material, and the opinions expressed in the material should not be taken as recommendations or opinions of Future Superannuation Holdings.
 
 ## Issuer and promoter details
 
 Interests in the Future Superannuation Fund are issued by Diversa Trustees Limited (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635) as trustee of the Future Superannuation Fund (ABN 45 960 194277; RSE Registration R1072914). The Future Superannuation Fund is administered by OneVue Super Services Pty Limited (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
 
-The Founder, Promoter and Investment Manager of the Future Superannuation Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Superannuation Holdings Pty Ltd (ABN 90 167800 580; AFSL 482684) and a member of the Future Super Group.
+The Founder, Promoter and Investment Manager of the Future Superannuation Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Superannuation Holdings Pty Ltd (ABN 90 167800 580; AFSL 482684) and a member of the Future Super Group. The trustee does not in any way endorse, warrant, or accept responsibility for any services provided by the Promoter in its own right or directly to members or prospective members.
 
 ## Legal effect of documentation
 
