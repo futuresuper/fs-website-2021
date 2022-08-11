@@ -1,13 +1,13 @@
 ---
-title: "What is SuperStream?"
+title: What is SuperStream?
 slug: what-is-superstream
-date: 2021-10-19T08:04:34Z
+date: 2021-10-19T08:04:34.000Z
 category: Employers
-layout: $/layouts/FaqPage
 order: 126
+layout: $/layouts/FaqPage
 ---
 
-SuperStream is an electronic gateway which streamlines the way employers make super contributions for their employees. All employers should be paying super contributions in a SuperStream compliant way.
+SuperStream is an electronic gateway which streamlines the way employers make super contributions for their employees. All employers must pay super contributions in a SuperStream compliant way.
 
 The only exceptions for non-compliance are:
 
