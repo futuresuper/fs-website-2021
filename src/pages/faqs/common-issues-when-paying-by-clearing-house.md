@@ -1,10 +1,10 @@
 ---
 title: "Common issues when paying by clearing house "
 slug: common-issues-when-paying-by-clearing-house
-date: 2021-10-19T07:52:44Z
+date: 2021-10-19T07:52:44.000Z
 category: Employers
-layout: $/layouts/FaqPage
 order: 129
+layout: $/layouts/FaqPage
 ---
 
 **Where do I find all the payment information?**
@@ -17,7 +17,7 @@ You can request the member number from your employee. You can also request they 
 
 If you have had a contribution amount returned to you, it’s possible that some of the fund or member information was incorrect. It may also be due to the member account being inactive. 
 
-You may wish to check the fund and member details you have are correct. If all the details are correct, you can reach out to our helpful team on 1300 658 422 or email us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au.).
+You may wish to check the fund and member details you have are correct. If all the details are correct, you can reach out to our Member Advocacy team on 1300 658 422 or email us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au.).
 
 **Small Business Superannuation Clearing House (SBSCH) Troubleshooting**
 
