@@ -1,9 +1,33 @@
+<script>
+  import { onMount } from "svelte";
+
+  const testGroups = {
+    GREEN: "Green Clock Gif 8 Mins",
+    BLACK: "Black No Gif 4 Mins",
+  };
+
+  let testGroup;
+
+  onMount(async () => {
+    const rand = Math.random();
+    testGroup = rand > 0.5 ? testGroups.GREEN : testGroups.BLACK;
+
+    analytics.track("JoinForm ViewedByABTestParticipant", {
+      testGroup,
+    });
+  });
+</script>
+
 <form method="GET" action="https://join.futuresuper.com.au/">
   <h1>Join Future Super</h1>
-  <div class="time-row">
-    <img src="/images/clock.gif" alt="clock" class="clock" />
-    <h4>Joining usually takes about 8 minutes</h4>
-  </div>
+  {#if testGroup === testGroups.GREEN}
+    <div class="time-row">
+      <img src="/images/clock.gif" alt="clock" class="clock" />
+      <h4>Joining usually takes about 8 minutes</h4>
+    </div>
+  {:else}
+    <h4 style="margin-bottom: 30px;">Joining usually takes about 4 minutes</h4>
+  {/if}
   <p>
     <label
       >First Name<input

@@ -12,9 +12,6 @@ window.onload = function () {
   const refererField = document.getElementById("referer");
   if (refererField) {
 
-    
-
-
     if (referer) {
       refererField.value = referer;
     } else if (refererCookie) {
