@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Clock from "../images/Clock.svelte";
 
   const testGroups = {
     GREEN: "Green Clock Gif 8 Mins",
@@ -22,7 +23,7 @@
   <h1>Join Future Super</h1>
   {#if testGroup === testGroups.GREEN}
     <div class="time-row">
-      <img src="/images/clock.gif" alt="clock" class="clock" />
+      <img src="/images/clock2.gif" alt="clock" class="clock" />
       <h4>Joining usually takes about 8 minutes</h4>
     </div>
   {:else}
