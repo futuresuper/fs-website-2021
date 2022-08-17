@@ -1,7 +1,7 @@
 ---
 title: Has Future Super changed its investment strategy given the negative returns?
-category: Investments and returns
-order: 12
+category: Market volatility
+order: 5
 layout: $/layouts/FaqPage.astro
 ---
 No strategic changes have been made as a result of these recent negative returns and higher volatility in share markets. Future Super takes a rules-based approach to investment, which aims to deliver results over a longer term time horizon.
