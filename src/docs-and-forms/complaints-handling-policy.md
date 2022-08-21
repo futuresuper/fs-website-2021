@@ -2,7 +2,7 @@
 title: Complaints Handling Policy
 docurl: /complaints-handling-policy
 type: PDF
-category: Super Documents
+category: Other Documents
 order: 8
 ---
 

@@ -2,7 +2,7 @@
 title: Whistleblower Policy
 docurl: https://www.futuresuper.com.au/whistleblower-policy
 type: PDF
-category: Super Documents
+category: Other Documents
 order: 7
 ---
 

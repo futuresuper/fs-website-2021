@@ -7,12 +7,13 @@
   const categories = [
     "Super Documents",
     "Super Forms",
-    "Pension Documents",
-    "Pension Forms",
+    "Pension Documents and Forms",
     "Annual Reports",
     "Impact Reports",
     "Employer Forms",
+    "Significant Event Notices",
     "Disclosure Requirements",
+    "Other Documents",
   ];
 </script>
 
@@ -43,7 +44,7 @@
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 
   h4 {
