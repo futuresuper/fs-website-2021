@@ -3,8 +3,8 @@
   import Clock from "../images/Clock.svelte";
 
   const testGroups = {
-    GREEN: "Green Clock Gif 8 Mins",
-    BLACK: "Black No Gif 4 Mins",
+    GREEN: "Green Clock Gif",
+    BLACK: "Black No Gif",
   };
 
   let testGroup;
@@ -24,7 +24,7 @@
   {#if testGroup === testGroups.GREEN}
     <div class="time-row">
       <img src="/images/clock2.gif" alt="clock" class="clock" />
-      <h4>Joining usually takes about 8 minutes</h4>
+      <h4>Joining usually takes about 4 minutes</h4>
     </div>
   {:else}
     <h4 style="margin-bottom: 30px;">Joining usually takes about 4 minutes</h4>
