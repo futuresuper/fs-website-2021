@@ -1,8 +1,8 @@
 <section>
   <p>
-    The easiest way to manage your employees' super is by clearing house. Using
-    a clearing house ensures your payments are SuperStream compliant, and makes
-    them easier to track.
+    The only way to manage your employees' super is by clearing house. Using a
+    clearing house ensures your payments are SuperStream compliant, and makes
+    them easy to track.
   </p>
   <p>
     You might already have access to a clearing house through your accounting
