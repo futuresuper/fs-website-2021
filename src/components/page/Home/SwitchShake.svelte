@@ -13,9 +13,7 @@
   <section>
     <div class="top">
       <div class="heading">
-        <h2>
-          Switch your<br />super.<br /><span>Shake the<br />system.</span>
-        </h2>
+        <h2>Make your super a powerful climate action.</h2>
       </div>
       <p>
         Switching your super is an easy action that can benefit you while
@@ -70,13 +68,7 @@
     justify-content: space-between;
     margin-bottom: 40px;
     .heading {
-      width: 30%;
-      h2 {
-        span {
-          display: block;
-          text-align: right;
-        }
-      }
+      width: 40%;
     }
     p {
       max-width: 50%;

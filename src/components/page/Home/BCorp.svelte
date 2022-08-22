@@ -7,7 +7,7 @@
   <section>
     <p>
       Future Super has been awarded Best For The World™ status by B Corp
-      for&nbsp;2021.
+      for&nbsp;2022.
     </p>
     <div class="best">
       <BestInWorldCircle />

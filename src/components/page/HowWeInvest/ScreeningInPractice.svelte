@@ -36,6 +36,18 @@
           {/if}
         </div>
       {/each}
+      <p class="disclaimer">
+        All Future Super investments are screened to ensure they align with our
+        members’ values. To help us do this, we consider how each investment and
+        asset class may have exposure to ethical risks or impact opportunities,
+        as well as how they can work together to produce the best possible
+        return for our members. Therefore, adapting our screening, stewardship
+        and impact strategies for each investment leverages it for the best
+        effect on climate change and equality while also reflecting our broader
+        investment and risk management strategies. For more information on
+        Future Super’s impact strategy, screening guideline for each asset, and
+        specific thresholds for each screen, click here.
+      </p>
     </div>
     <div class="screen-example">
       {#each screens as screen}
@@ -58,26 +70,17 @@
       {/each}
     </div>
   </div>
-  <p class="disclaimer">
-    All Future Super investments are screened to ensure they align with our
-    members’ values. To help us do this, we consider how each investment and
-    asset class may have exposure to ethical risks or impact opportunities, as
-    well as how they can work together to produce the best possible return for
-    our members. Therefore, adapting our screening, stewardship and impact
-    strategies for each investment leverages it for the best effect on climate
-    change and equality while also reflecting our broader investment and risk
-    management strategies. For more information on Future Super’s impact
-    strategy, screening guideline for each asset, and specific thresholds for
-    each screen, click here.
-  </p>
 </div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
-  .intro,
-  .disclaimer {
+  .intro {
     width: calc(50% - 10px);
+  }
+
+  .disclaimer {
+    margin-top: 40px;
   }
 
   h4 {

@@ -2,11 +2,32 @@
   import pages from "../../../data/pages.json";
 
   const marqueeMessage = "Let&rsquo;s put it to work. ";
+
+  import { onMount } from "svelte";
+
+  const testGroups = {
+    DOING: "Doing something about climate change",
+    PEOPLE: "People power change",
+  };
+
+  let testGroup;
+
+  onMount(async () => {
+    const rand = Math.random();
+    testGroup = rand > 0.5 ? testGroups.DOING : testGroups.PEOPLE;
+
+    analytics.track("JoinForm ViewedByABTestParticipant", {
+      testGroup,
+    });
+  });
 </script>
 
 <div class="container">
-  <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
-
+  {#if testGroup === testGroups.PEOPLE}
+    <h1>People Power Change. So Can Super.</h1>
+  {:else}
+    <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
+  {/if}
   <div class="text">
     <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
     <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
