@@ -20,6 +20,8 @@
     <p>45 960 194 277</p>
     <h4>USI</h4>
     <p>45 960 194 277 010</p>
+    <h4>Fund registration number</h4>
+    <p>R1072914</p>
     <h4>SPIN</h4>
     <p>We do not have a SPIN number. Use our USI instead.</p>
   </div>
