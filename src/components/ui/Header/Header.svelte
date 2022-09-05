@@ -29,6 +29,8 @@
 
   let showEmergencyNotice = false;
 
+  export let joinPage = false;
+
   // Hide menu on downward scroll and show on upward
   let showMenu = true;
   let y = 0;
@@ -58,9 +60,11 @@
     </div>
     <div class="right">
       <a class="button secondary hide-on-mobile" href={pages.LOGIN[1]}>Login</a>
-      <a class="button" href={pages.JOIN[1]}
-        >Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</a
-      >
+      {#if !joinPage}
+        <a class="button" href={pages.JOIN[1]}
+          >Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</a
+        >
+      {/if}
       <div
         class="mobile-menu-button"
         on:click={() => {

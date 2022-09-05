@@ -1,7 +1,7 @@
 ---
-import Header from '../components/ui/Header/Header.svelte';
-import Footer from '../components/ui/Footer.svelte';
-import RelatedPages from '../components/ui/RelatedPages.svelte';
+import Header from "../components/ui/Header/Header.svelte";
+import Footer from "../components/ui/Footer.svelte";
+import RelatedPages from "../components/ui/RelatedPages.svelte";
 const {
   title,
   image,
@@ -20,9 +20,15 @@ const {
   customHeader,
   joinPage = false,
 } = Astro.props;
-const pageTitle = title ? title + " | Future Super" : "Future Super | Ethical & Sustainable Superannuation";
-const pageImage = image ? image : "https://www.futuresuper.com.au/images/future-super-og.png";
-const seoDescription = description ? description : "Your super has the power to combat climate change, let’s put it to work.";
+const pageTitle = title
+  ? title + " | Future Super"
+  : "Future Super | Ethical & Sustainable Superannuation";
+const pageImage = image
+  ? image
+  : "https://www.futuresuper.com.au/images/future-super-og.png";
+const seoDescription = description
+  ? description
+  : "Your super has the power to combat climate change, let’s put it to work.";
 ---
 
 <style lang="scss">
@@ -105,81 +111,117 @@ const seoDescription = description ? description : "Your super has the power to 
   }
 </style>
 
-<html lang="en">
+<title>{pageTitle}</title>
+<meta charset="UTF-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0 viewport-fit=cover"
+  shrink-to-fit="no"
+/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="description" content={seoDescription} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={seoDescription} />
+<meta property="og:image" content={pageImage} />
+<meta property="og:type" content="website" />
+<meta property="twitter:title" content={pageTitle} />
+<meta property="twitter:description" content={seoDescription} />
+<meta property="twitter:image" content={pageImage} />
+<meta name="twitter:card" content="summary_large_image" />
 
-<head>
-  <title>{pageTitle}</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" shrink-to-fit="no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content={seoDescription} />
-  <meta property="og:title" content={pageTitle} />
-  <meta property="og:description" content={seoDescription} />
-  <meta property="og:image" content={pageImage} />
-  <meta property="og:type" content="website" />
-  <meta property="twitter:title" content={pageTitle} />
-  <meta property="twitter:description" content={seoDescription} />
-  <meta property="twitter:image" content={pageImage} />
-  <meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/images/FS_Favicon_32.png" sizes="32x32" />
+<link rel="icon" href="/images/FS_Favicon_128.png" sizes="128x128" />
+<link rel="icon" href="/images/FS_Favicon_192.png" sizes="192x192" />
 
-  <link rel="icon" href="/images/FS_Favicon_32.png" sizes="32x32">
-  <link rel="icon" href="/images/FS_Favicon_128.png" sizes="128x128">
-  <link rel="icon" href="/images/FS_Favicon_192.png" sizes="192x192">
+<!-- Favicon: Android -->
+<link rel="shortcut icon" sizes="196x196" href="/images/FS_Favicon_196.png" />
 
-  <!-- Favicon: Android -->
-  <link rel="shortcut icon" sizes="196x196" href="/images/FS_Favicon_196.png">
+<!-- Favicon: iOS -->
+<link
+  rel="apple-touch-icon"
+  href="/images/FS_Favicon_152.png"
+  sizes="152x152"
+/>
+<link
+  rel="apple-touch-icon"
+  href="/images/FS_Favicon_120.png"
+  sizes="167x167"
+/>
+<link
+  rel="apple-touch-icon"
+  href="/images/FS_Favicon_180.png"
+  sizes="180x180"
+/>
 
-  <!-- Favicon: iOS -->
-  <link rel="apple-touch-icon" href="/images/FS_Favicon_152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="/images/FS_Favicon_120.png" sizes="167x167">
-  <link rel="apple-touch-icon" href="/images/FS_Favicon_180.png" sizes="180x180">
-
-  <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
-  <script>
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ";;analytics.SNIPPET_VERSION="4.15.3";
+<link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}" />
+<script>
+  // prettier-ignore
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ";;analytics.SNIPPET_VERSION="4.15.3";
       analytics.load("eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ");
       analytics.page();
       }}();
-    </script>
-</head>
+</script>
+
 
 <body>
-
-  {!hideHeader &&
-  <div class="header-container">
-    <Header client:load />
-  </div>
+  {
+    !hideHeader && (
+      <div class="header-container">
+        <Header client:load {joinPage} />
+      </div>
+    )
   }
   <main>
-    {!hideHeader &&
-    <div class="behind-header" style={headerBackgroundColour ? 'background-color:' + headerBackgroundColour : '' } />}
+    {
+      !hideHeader && (
+        <div
+          class="behind-header"
+          style={
+            headerBackgroundColour
+              ? "background-color:" + headerBackgroundColour
+              : ""
+          }
+        />
+      )
+    }
 
-    {!hidePageHeader && <div style={pageHeadBackgroundColour ? 'background-color:' + pageHeadBackgroundColour : '' }>
-      <div class="page-header">
-        {!customHeader && <div class="container">
-          <div class="page-title-and-description">
-            { !hideTitle && <h1>{title ? title : "Future Super"}</h1> }
-            { !hideDescription && <h3>{pageDescription ? pageDescription : seoDescription}</h3>}
+    {
+      !hidePageHeader && (
+        <div
+          style={
+            pageHeadBackgroundColour
+              ? "background-color:" + pageHeadBackgroundColour
+              : ""
+          }
+        >
+          <div class="page-header">
+            {!customHeader && (
+              <div class="container">
+                <div class="page-title-and-description">
+                  {!hideTitle && <h1>{title ? title : "Future Super"}</h1>}
+                  {!hideDescription && (
+                    <h3>
+                      {pageDescription ? pageDescription : seoDescription}
+                    </h3>
+                  )}
+                </div>
+                {intro && <p class="intro">{intro}</p>}
+              </div>
+            )}
+            <slot name="customHeader" />
           </div>
-          { intro && <p class="intro">{intro}</p>}
         </div>
-        }
-        <slot name="customHeader" />
-      </div>
-    </div>}
+      )
+    }
 
-    <div class={!noContainer ? 'container' : '' }>
-      <div class={skinnyContainer ? 'skinny-container' : '' }>
+    <div class={!noContainer ? "container" : ""}>
+      <div class={skinnyContainer ? "skinny-container" : ""}>
         <slot />
       </div>
     </div>
 
-    {relatedPages &&
-    <RelatedPages relatedPages={relatedPages} />}
+    {relatedPages && <RelatedPages relatedPages={relatedPages} />}
   </main>
   <Footer client:visible />
-  <script src="/scripts/tracking.js" />
-
+  <script src="/scripts/tracking.js"></script>
 </body>
-
-</html>
