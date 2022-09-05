@@ -70,18 +70,21 @@
       <div class="horizontal-space-between">
         <div>
           <p class="disclaimer">
-            You should read the <a href="https://www.futuresuper.com.au/pds"
-              >PDS,</a
-            > <a href="https://www.futuresuper.com.au/tmd">TMD</a> and
-            <a href="https://www.futuresuper.com.au/fsg"
-              >Financial Services Guide</a
-            >
-            before making any financial decisions regarding Future Super. Information
-            provided is of a general nature only and we have not taken your personal
-            financial objectives, situation or needs into account. We recommend you
-            seek financial advice when considering if Future Super is right for your
-            objectives and needs. When considering returns, past performance is not
-            indicative of future performance.
+            Information provided is of a general nature only and we have not
+            taken your personal financial objectives, situation or needs into
+            account. You should consider whether Future Super’s products are
+            right for your individual objectives and needs and seek personal
+            financial advice. Before making a decision to acquire, hold or
+            continue to hold an interest in Future Super, please read the PDS
+            and check our Target Market Determination (TMD) available at
+            <a href="https://www.futuresuper.com.au/documents-and-forms/"
+              >https://www.futuresuper.com.au/documents-and-forms/</a
+            >. Future Super does not accept any responsibility for any loss or
+            damage that may result from reliance on, or the use of, any
+            information contained on this site. The contents of this website are
+            exclusively owned by Future Super. You must not use or disclose them
+            for any other reason than for the purposes for which they were
+            supplied.
           </p>
           <p class="disclaimer">
             Interests in Future Super are issued by Diversa Trustees Limited
