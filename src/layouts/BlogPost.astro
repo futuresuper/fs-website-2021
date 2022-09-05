@@ -1,13 +1,14 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import BlogPost from '../components/page/Blog/BlogPost.svelte'
-import JoinNow from '../components/ui/JoinNow.svelte'
-const {content} = Astro.props;
+import BaseLayout from "$/layouts/BaseLayout.astro";
+import BlogPost from "../components/page/Blog/BlogPost.svelte";
+import JoinNow from "../components/ui/JoinNow.svelte";
+const { content } = Astro.props;
 ---
 
 <BaseLayout
   title={content.title}
   description={content.description}
+  image={content.image}
   hidePageHeader
   headerBackgroundColour="white"
 >
