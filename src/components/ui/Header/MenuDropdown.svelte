@@ -32,6 +32,7 @@
   .heading {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .carat {

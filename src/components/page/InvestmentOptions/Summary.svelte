@@ -33,7 +33,6 @@
         <h3>Balanced<br />Index</h3>
         <p>Zero fossil fuels but no impact targets.</p>
       </div>
-      <a href={pages.JOIN[1]} class="button full-width secondary"> JOIN </a>
     </div>
 
     <!-- Balanced Impact -->
@@ -57,7 +56,6 @@
           energy projects.
         </p>
       </div>
-      <a href={pages.JOIN[1]} class="button full-width blue-button"> JOIN </a>
     </div>
 
     <!-- Renewables Plus Growth -->
@@ -87,7 +85,6 @@
           Zero fossil fuels. Targets 20% allocation to climate change solutions.
         </p>
       </div>
-      <a href={pages.JOIN[1]} class="button full-width"> JOIN </a>
     </div>
   </div>
 </div>

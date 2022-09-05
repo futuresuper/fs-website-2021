@@ -1,6 +1,5 @@
 <script>
   import HeaderRow from "./HeaderRow.svelte";
-  import JoinRow from "./JoinRow.svelte";
   import Tick from "../../images/Tick.svelte";
   import investmentOptions from "$/data/investmentOptions.json";
   import returns from "$/data/performanceReturns.json";
@@ -122,7 +121,6 @@
           </div>
         {/each}
       </div>
-      <JoinRow />
     {/if}
 
     <HeaderRow title="Money talk" pensionOnly={pension} />
@@ -211,18 +209,15 @@
         </div>
       {/each}
     </div>
-    {#if !pension}
-      <JoinRow />
-    {/if}
 
     <p class="disclaimer">
       {#if pension}
         * Read our <a href="/pppds">Pension Product Disclosure Statement</a> and
         <a href="/pension-tmd">Pension Target Market Determination</a>
-        for full details on how fees apply to your Future Super account. The
-        fees shown above are the total Investment Fees, Administration Fees and
-        Indirect Cost Ratio payable for our pension option. Other fees and costs
-        may apply to your account.
+        for full details on how fees apply to your Future Super account. The fees
+        shown above are the total Investment Fees, Administration Fees and Indirect
+        Cost Ratio payable for our pension option. Other fees and costs may apply
+        to your account.
         <br /><br />
         ^ Returns provided are after investment fees, percentage-based administration
         fees and taxes but before dollar-based administration fees have been taken
