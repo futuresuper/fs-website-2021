@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-const {content} = Astro.props;
+import BaseLayout from "$/layouts/BaseLayout.astro";
+const { content } = Astro.props;
 ---
 
 <style lang="scss">
@@ -11,6 +11,7 @@ const {content} = Astro.props;
   title={content.title}
   description={content.title}
   hideDescription="true"
+  image={content.image}
 >
   <slot />
 </BaseLayout>

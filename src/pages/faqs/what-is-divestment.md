@@ -5,6 +5,7 @@ date: 2020-09-02T10:20:57.000Z
 category: Divestment
 order: 1
 layout: $/layouts/FaqPage
+image: https://res.cloudinary.com/future-super/image/upload/v1651753016/student-with-megaphone-wide.png
 ---
 
 Put simply, divestment is the opposite of investment. It is the act of selling assets for moral, political or financial reasons.
