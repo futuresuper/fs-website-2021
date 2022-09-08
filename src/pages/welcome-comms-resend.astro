@@ -1,0 +1,12 @@
+---
+import BaseLayout from "$/layouts/BaseLayout.astro";
+import WelcomeCommsResend from "../components/page/WelcomeCommsResend.svelte";
+---
+
+<BaseLayout
+  title="Resend Welcome Comms"
+  description="Enter your email to get your welcome comms sent again"
+  skinnyContainer
+>
+  <WelcomeCommsResend client:load />
+</BaseLayout>
