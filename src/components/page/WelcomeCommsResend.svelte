@@ -21,7 +21,7 @@
 
 {#if status === "success"}
   <h3>Done!</h3>
-  <p>Welcome comms will be resent in about 5 minutes.</p>
+  <p>Welcome communications will be resent in about 5 minutes.</p>
 {:else if status === "failed"}
   <p>
     We couldn't find an account with that email. Please
@@ -34,12 +34,17 @@
   <form on:submit={handleSubmit}>
     <p>
       <label>
-        Email address
-        <input bind:value={email} type="email" required />
+        Email address - Must be the one you use for your Future Super Account
+        <input
+          bind:value={email}
+          type="email"
+          required
+          placeholder="Email address"
+        />
       </label>
     </p>
     <p>
-      <button type="submit" class="primary">Resend welcome comms</button>
+      <button type="submit" class="primary">Send</button>
     </p>
   </form>
 {/if}
