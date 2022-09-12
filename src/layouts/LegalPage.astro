@@ -16,12 +16,14 @@ const { content } = Astro.props;
   image={content.image}
 >
   <slot />
-</BaseLayout>{
-  content.title === "Reconciliation" && (
-    <div>
-      <a href="/rap" class="button">
-        Download our Reconciliation Action Plan
-      </a>
-    </div>
-  )
-}
+
+  {
+    content.title === "Reconciliation" && (
+      <div>
+        <a href="/rap" class="button">
+          Download our Reconciliation Action Plan
+        </a>
+      </div>
+    )
+  }
+</BaseLayout>
