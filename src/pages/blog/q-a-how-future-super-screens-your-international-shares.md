@@ -2,7 +2,7 @@
 title: "Q+A: How Future Super Screens Your International Shares"
 date: 2022-05-31T23:24:12.242Z
 layout: $/layouts/BlogPost.astro
-image: https://res.cloudinary.com/future-super/image/upload/v1622092700/NBAU_Wrap_Header.png
+image: https://res.cloudinary.com/future-super/image/upload/v1663143007/Screen_Shot_2022-02-23_at_11.41.53_am.png
 author: Jake Landa
 description: The Bottom Line is Future Super's newsletter for members, where we
   update you on the world of superannuation, climate and how money is making
