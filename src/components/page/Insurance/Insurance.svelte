@@ -101,7 +101,7 @@
         <a
           class="button"
           style="margin-right: 20px"
-          href="https://fsinsurancequotetool.netlify.app/">Get a quote →</a
+          href="https://insurance.futuresuper.com.au/">Get a quote →</a
         >
         <a class="button outline" href="/life_insurance_application"
           >Download Application Form
