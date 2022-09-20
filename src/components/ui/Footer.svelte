@@ -26,6 +26,7 @@
         pages.BLOG,
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
+        pages.INSURANCE,
         pages.CARBON_TRANSPARENCY,
         pages.UNIT_PRICES,
       ],

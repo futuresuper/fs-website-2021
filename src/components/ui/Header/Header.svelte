@@ -21,7 +21,6 @@
         pages.SUPPORT_AND_FAQS,
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
-        pages.INSURANCE,
       ],
     },
   ];
