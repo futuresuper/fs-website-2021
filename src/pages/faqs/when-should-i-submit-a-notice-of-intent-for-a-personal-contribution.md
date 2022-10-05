@@ -11,6 +11,8 @@ If you want to submit a [Notice of intent to claim or vary a deduction for perso
 * Before the end of the day that you lodge your income tax return for the income year in which the personal contributions were made; OR
 * Before the end of the income year following the year in which the contribution was made.
 
+For example, if you made personal contributions in the 2021-22 financial year, you should submit your Notice of Intent either before you lodge your 2021-22 tax return, or before 30/06/2023, whichever comes sooner. 
+
 You find further instructions for completing and submitting a notice of intent to claim or vary a deduction for personal super contributions form [here](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Claiming-deductions-for-personal-super-contributions/?page=2#When_to_give_your_notice_of_intent).
 
 ***Please note, we can only apply a Notice of intent to claim or vary a deduction for personal super contributions to your account while you are a current member of the fund and to contributions received and held by Future Super.***
