@@ -6,7 +6,7 @@
     {
       title: "Menstrual and menopausal leave",
       description: [
-        "We track track employee Net Promoter Score (eNPS) to understand the engagement and overall satisfaction of the Future Super team. We assess eNPS on a quarterly basis by running Engagement Surveys.",
+        "We track employee Net Promoter Score (eNPS) to understand the engagement and overall satisfaction of the Future Super team. We assess eNPS on a quarterly basis by running Engagement Surveys.",
         "Prior to implementing Menstrual and Menopausal Leave, eNPS for women was at 38, while the score for men was 86. Immediately after implementing the leave, we saw eNPS jump to 71 for women, and have since maintained a rolling 12-month average of 68.",
         'Recently, we surveyed our team to better understand what was important to them about Future Super and our culture. For the question, "What sets us apart?", Menstrual and Menopausal Leave came out as one of the top three things that makes Future Super unique.',
         "It has sparked a whole conversation and removed a lot of stigma. One of our team members actually made a little bloodied period pad emoji that people now use in their Slack status when they're on menstrual leave. About 42% of our team to whom the policy applies have made use of this leave since it was introduced.",
