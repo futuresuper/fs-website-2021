@@ -9,7 +9,8 @@
         "We track employee Net Promoter Score (eNPS) to understand the engagement and overall satisfaction of the Future Super team. We assess eNPS on a quarterly basis by running Engagement Surveys.",
         "Prior to implementing Menstrual and Menopausal Leave, eNPS for women was at 38, while the score for men was 86. Immediately after implementing the leave, we saw eNPS jump to 71 for women, and have since maintained a rolling 12-month average of 68.",
         'Recently, we surveyed our team to better understand what was important to them about Future Super and our culture. For the question, "What sets us apart?", Menstrual and Menopausal Leave came out as one of the top three things that makes Future Super unique.',
-        "It has sparked a whole conversation and removed a lot of stigma. One of our team members actually made a little bloodied period pad emoji that people now use in their Slack status when they're on menstrual leave. About 42% of our team to whom the policy applies have made use of this leave since it was introduced.",
+        "It has sparked a whole conversation and removed a lot of stigma. One of our team members actually made a little bloodied period pad emoji that people now use in their Slack status when they're on menstrual leave.",
+        "Thank you to the Victorian Women’s Trust for creating an open-source menstrual leave template. It’s helped us to implement a policy that we can now share too.",
       ],
       link: "https://docs.google.com/document/d/1M9vaiFBybjmobrb_jYIQDNf6WACJFB-2hFftiQVxC3c/edit?usp=sharing",
     },
@@ -77,8 +78,7 @@
       </p>
       <p>
         As an employer, we offer a number of benefits to employees, including
-        Mental Health Leave and Menstrual and Menopausal Leave thanks to the
-        Victorian Women’s Trust.
+        Mental Health Leave and Menstrual and Menopausal Leave.
       </p>
     </div>
     <div class="pill">Open Source Policies</div>
