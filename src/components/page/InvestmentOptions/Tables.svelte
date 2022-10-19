@@ -133,12 +133,12 @@
           <p class="number">
             {option.fee.perAnnumPercentage}% + ${option.fee.perYearPrice}
           </p>
-          <p class="number-desc">
+          <!-- <p class="number-desc">
             ${(
               50000 * (option.fee.perAnnumPercentage / 100) +
               option.fee.perYearPrice
             ).toFixed(2)} per year on a balance of $50,000
-          </p>
+          </p> -->
         </div>
       {/each}
     </div>
@@ -212,37 +212,37 @@
 
     <p class="disclaimer">
       {#if pension}
-        * Read our <a href="/pppds">Pension Product Disclosure Statement</a> and
+        *The fees shown are the total Administration Fees and Costs, Investment
+        Fees and Costs and Transaction Costs payable by you in respect of your
+        investment in each investment option. Other fees and costs may apply to
+        your account. Please read the
+        <a href="/pppds">Pension Product Disclosure Statement</a>
+        and
         <a href="/pension-tmd">Pension Target Market Determination</a>
-        for full details on how fees apply to your Future Super account. The fees
-        shown above are the total Investment Fees, Administration Fees and Indirect
-        Cost Ratio payable for our pension option. Other fees and costs may apply
-        to your account.
-        <br /><br />
-        ^ Returns provided are after investment fees, percentage-based administration
-        fees and taxes but before dollar-based administration fees have been taken
-        out. Returns for periods of greater than one year are on a per annum compound
-        basis. Return of capital and the performance of your investment in the Fund
-        are not guaranteed. Past performance is not a reliable indicator of future
-        performance.
+        for full details about how fees and costs may impact your investment.
       {:else}
-        * Read our <a href="/pds">Product Disclosure Statement</a>,
+        *The fees shown are the total Administration Fees and Costs, Investment
+        Fees and Costs and Transaction Costs payable by you in respect of your
+        investment in each investment option. Other fees and costs may apply to
+        your account. Please read the
+        <a href="/pds">Product Disclosure Statement</a>
+        ,
         <a href="/aib">Additional Information Booklet</a>
         and
         <a href="/tmd">Target Market Determination</a>
-        for details on how fees apply to your Future Super account. The fees shown
-        above are the total Investment Fees, Administration Fees and Indirect Cost
-        Ratio payable for each of our investment options. Other fees and costs may
-        apply to your account. There's no dollar-based admin fee when your balance
+        for full details about how fees and costs may impact your investment. Refer
+        to section 5 of the
+        <a href="/aib">Additional Information Booklet</a>
+        for more information. There is no dollar-based admin fee when your balance
         is below $6,000.
-        <br /><br />
-        ^ Returns provided are after investment fees, percentage-based administration
-        fees and taxes but before dollar-based administration fees have been taken
-        out. Returns for periods of greater than one year are on a per annum compound
-        basis. Return of capital and the performance of your investment in the Fund
-        are not guaranteed. Past performance is not a reliable indicator of future
-        performance.
       {/if}
+      <br /><br />
+      ^ Returns provided are after investment fees, percentage-based administration
+      fees and taxes but before dollar-based administration fees have been taken
+      out. Returns for periods of greater than one year are on a per annum compound
+      basis. Return of capital and the performance of your investment in the Fund
+      are not guaranteed. Past performance is not a reliable indicator of future
+      performance.
     </p>
   </div>
 </div>

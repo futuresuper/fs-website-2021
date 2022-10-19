@@ -24,6 +24,10 @@
     <p>R1072914</p>
     <h4>SPIN</h4>
     <p>We do not have a SPIN number. Use our USI instead.</p>
+    <h4>Fund Phone Number</h4>
+    <p>1300 658 422</p>
+    <h4>Fund Address</h4>
+    <p>PO Box 1282, Albury, NSW 2640</p>
   </div>
 </section>
 
@@ -37,7 +41,7 @@
   .grid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 1fr 2fr;
     h4,
     p {
       margin-bottom: 0;
