@@ -26,8 +26,8 @@
           investments and uses the power of your money to invest in climate
           solutions and act on the issues of today.
         </p>
-        <a class="button full-width" href={pages.PERFORMANCE_AND_RETURNS[1]}
-          >See our performance</a
+        <a class="button full-width" href={pages.HOW_WE_INVEST[1]}
+          >See How We Invest</a
         >
       </div>
     </div>
