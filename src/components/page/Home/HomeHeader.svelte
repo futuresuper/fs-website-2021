@@ -29,7 +29,7 @@
     <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
   {/if}
   <div class="text">
-    <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
+    <h3>Your super "possibly maybe" has the power to combat&nbsp;climate&nbsp;change.</h3>
     <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
   </div>
 </div>
