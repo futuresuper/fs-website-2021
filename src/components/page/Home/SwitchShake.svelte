@@ -50,7 +50,9 @@
         balance of $32,631 as at 31 December 2020, switching their account
         balance from the relevant benchmark fund.
       </p>
-      <a class="button full-width" href="/how-we-invest">See how we invest</a>
+      <a class="button full-width" href="/investment-options"
+        >View our investment options</a
+      >
     </div>
   </section>
 </div>

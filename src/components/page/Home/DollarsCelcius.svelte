@@ -27,7 +27,7 @@
           solutions and act on the issues of today.
         </p>
         <a class="button full-width" href={pages.HOW_WE_INVEST[1]}
-          >See How We Invest</a
+          >See how we invest</a
         >
       </div>
     </div>
