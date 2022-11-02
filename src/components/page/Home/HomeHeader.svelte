@@ -53,7 +53,7 @@
   </div>
 {:else}
   <div class="video-container">
-    <video class="video" muted loop
+    <video class="video" autoplay muted loop
       ><!--<video autoplay muted loop>-->
       <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
     </video>
@@ -165,9 +165,8 @@
     height: 70vh;
 
     .video {
-      width: 100%;
+      object-fit: fill;
       position: absolute;
-      min-width: 1000px;
       top: 50%;
       left: 50%;
       transform: translate(calc(-50% - 20px), -50%);
