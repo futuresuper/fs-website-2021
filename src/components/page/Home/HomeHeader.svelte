@@ -12,8 +12,8 @@
 
   const topPanelTestGroups = {
     ORIGINAL: "Original Future Super design",
-    SIMPLIFIED: "New simplified design with a more obvious join"
-  }
+    SIMPLIFIED: "New simplified design with a more obvious join",
+  };
 
   let testGroup;
   let topPanelTestGroup;
@@ -22,7 +22,11 @@
     const rand = Math.random();
     testGroup = rand > 0.5 ? testGroups.DOING : testGroups.PEOPLE;
 
-    topPanelTestGroup = topPanelTestGroups.SIMPLIFIED
+    topPanelTestGroup = topPanelTestGroups.SIMPLIFIED;
+    if (topPanelTestGroup == topPanelTestGroups.SIMPLIFIED) {
+      // The simplified design requires a special video header
+      document.body.classList.add("video-header");
+    }
 
     analytics.track("JoinForm ViewedByABTestParticipant", {
       testGroup,
@@ -49,40 +53,41 @@
   </div>
 {:else}
   <div class="video-container">
+    <video class="video" muted loop
+      ><!--<video autoplay muted loop>-->
+      <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
+    </video>
     <div class="text-container">
-      <h1>People power change</h1><h1>So can super.</h1>
+      <h1>People power change.</h1>
+      <h1>So can super.</h1>
       <h3 class="feature">Let's put it to work</h3>
       <div class="button-container">
         <a class="button" href={pages.JOIN[1]}>Join now</a>
       </div>
     </div>
-    
-    <video class="video" muted loop><!--<video autoplay muted loop>-->
-        <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
-    </video>
-    
   </div>
 {/if}
 
-
 <style lang="scss">
   @use "../../../styles/" as *;
-  h1 {
-    max-width: 54%;
-    line-height: 100%;
-  }
+  .container {
+    h1 {
+      max-width: 54%;
+      line-height: 100%;
+    }
 
-  h3 {
-    max-width: 40%;
-    margin: 0;
-    font-family: $regular;
-  }
+    h3 {
+      max-width: 40%;
+      margin: 0;
+      font-family: $regular;
+    }
 
-  .text {
-    margin: 70px 0 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    .text {
+      margin: 70px 0 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
 
   .marquee-container {
@@ -113,16 +118,18 @@
   }
 
   @media (max-width: 1280px) {
-    h1 {
-      max-width: 70%;
-      font-size: 6vw;
+    .container {
+      h1 {
+        max-width: 70%;
+        font-size: 6vw;
+      }
     }
   }
 
   @media (max-width: 740px) {
     .container {
       padding: 40px;
-      
+
       h1 {
         max-width: 100%;
         font-size: 40px;
@@ -150,24 +157,33 @@
   }
 
   .video-container {
-    
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: $blackVideo;
+    height: 70vh;
+
     .video {
       width: 100%;
+      position: absolute;
+      min-width: 1000px;
+      top: 50%;
+      left: 50%;
+      transform: translate(calc(-50% - 20px), -50%);
     }
 
     .text-container {
-      position:absolute; 
-      width:100%;
-      
-      display:flex; 
-      flex-direction:column; 
-      align-items:center;
-      text-align:center; 
-      justify-content:center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       h1 {
+        max-width: none;
         margin-bottom: 0;
       }
+
       h3.feature {
         margin-top: 50px;
         max-width: 100%;
@@ -175,43 +191,42 @@
         font-family: $feature;
         font-size: 20px;
       }
-    }    
-
-    .button-container {
-      width:90%;
-      max-width: 313px;
-      padding: 10px;
-      margin-top: 50px;
     }
 
     .button-container {
+      padding: 10px;
+      margin-top: 50px;
+
       .button {
         width: 100%;
       }
     }
   }
 
-  @media (max-width: 354px) {
+  @media (max-width: 740px) {
     .video-container {
-      height: 100vh;
-      h1 {
-        font-size:40px;
+      .text-container {
+        h1 {
+          font-size: 40px !important;
+        }
       }
-      h3 {
-        font-size: 16px;
-      }
-
-      .button-container {
-        width: 90%;
-        max-width: none;
-      }
-      
-        
-        
-      
     }
   }
-  
-  
-  
+
+  @media (max-width: 354px) {
+    .video-container {
+      .text-container {
+        h1 {
+          font-size: 40px !important;
+        }
+        h3 {
+          font-size: 16px;
+        }
+
+        .button-container {
+          max-width: none;
+        }
+      }
+    }
+  }
 </style>

@@ -5,6 +5,7 @@
   import MenuButton from "../../images/MenuButton.svelte";
   import Cross from "../../images/Cross.svelte";
   import MobileMenu from "./MobileMenu.svelte";
+  import { onMount } from "svelte";
 
   const menu = [
     {
@@ -34,6 +35,7 @@
 
   // Hide menu on downward scroll and show on upward
   let showMenu = true;
+
   let y = 0;
   let yBuffered = 0;
   const sensitivity = 10;
@@ -41,6 +43,14 @@
     showMenu = y < yBuffered;
     yBuffered = y;
   }
+
+  onMount(async () => {
+    // For the special case where a video header is being used then we don't
+    // want to show the menu when the page is first loaded
+    if (document.body.classList.contains("video-header")) {
+      showMenu = false;
+    }
+  });
 </script>
 
 <svelte:window bind:scrollY={y} />
