@@ -1,6 +1,9 @@
 <script>
   import pages from "../../../data/pages.json";
-  import { headerMenuShowing } from "../../store/stores.js";
+  import {
+    headerMenuShowing,
+    showHeaderMenuOnLoad,
+  } from "../../store/stores.js";
 
   const marqueeMessage = "Let&rsquo;s put it to work. ";
 
@@ -21,10 +24,9 @@
         ? headerDesignTestGroups.ORIGINAL
         : headerDesignTestGroups.VIDEO;
 
-    // Don't show the menu on load for the video design
     if (headerDesignTestGroup == headerDesignTestGroups.VIDEO) {
-      // TODO: Figure out how to use a store for this
-      document.body.classList.add("no-menu");
+      // Don't show the header menu on load for the video design
+      showHeaderMenuOnLoad.update((value) => false);
     }
 
     analytics.track("Website ViewedByABTestParticipant", {
@@ -174,6 +176,9 @@
       width: 310px;
       height: 65px;
       font-size: 23pt;
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     a.login {
@@ -183,7 +188,7 @@
       width: 120px;
       height: 45px;
       font-size: 16pt;
-      padding-top: 6px;
+      padding: 5px 32px;
       display: none;
       line-height: normal;
       &:hover {
