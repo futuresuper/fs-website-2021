@@ -49,3 +49,15 @@ button,
     }
   }
 }
+
+// .video-header is added for the case when the video is displayed in the header
+.video-header {
+  .behind-header,
+  .page-header {
+    background-color: $blackVideo !important;
+  }
+
+  .behind-header {
+    display: none;
+  }
+}
