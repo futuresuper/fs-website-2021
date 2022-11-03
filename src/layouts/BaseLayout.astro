@@ -10,6 +10,7 @@ const {
   intro,
   hideHeader = false,
   hidePageHeader = false,
+  noBehindHeader = false,
   hideTitle = false,
   hideDescription = false,
   noContainer = false,
@@ -40,7 +41,7 @@ const seoDescription = description
   }
 
   .behind-header {
-    height: 124px;
+    height: $behind-header-height;
     background-color: $black; // Future Super black is not pure
   }
 
@@ -175,7 +176,7 @@ const seoDescription = description
     {
       !hideHeader && (
         <div
-          class="behind-header"
+          class={!noBehindHeader ? "behind-header" : "no-behind-header"}
           style={
             headerBackgroundColour
               ? "background-color:" + headerBackgroundColour
