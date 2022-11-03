@@ -53,7 +53,7 @@
 
 <svelte:window bind:scrollY={y} />
 
-<header class="container {showMenu ? 'show' : ''}">
+<header id="header-menu" class="container {showMenu ? 'show' : ''}">
   <div class="sticky-header">
     <div class="left">
       <a href="/">
