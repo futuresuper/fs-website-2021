@@ -7,8 +7,8 @@
   import { onMount } from "svelte";
 
   const headerDesignTestGroups = {
-    ORIGINAL: "Original Future Super design",
-    VIDEO: "New design with a video background and a more obvious join button",
+    ORIGINAL: "pre-NMS splashpage", // The original front page design
+    VIDEO: "Autoplay video splashpage", // An autoply video splash page with prominent join button
   };
 
   let showLoginButton = true;
@@ -27,7 +27,7 @@
       document.body.classList.add("no-menu");
     }
 
-    analytics.track("JoinForm ViewedByABTestParticipant", {
+    analytics.track("Website ViewedByABTestParticipant", {
       headerDesignTestGroup,
     });
   });
@@ -61,7 +61,7 @@
       <h1>So can super.</h1>
       <h3 class="feature">Let's put it to work</h3>
       <div class="button-container">
-        <a class="button" href={pages.JOIN[1]}>Join now</a>
+        <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
       </div>
     </div>
     {#if showLoginButton}
@@ -170,13 +170,26 @@
     background-color: $blackVideo;
     height: 80vh;
 
+    a.large-login {
+      width: 310px;
+      height: 65px;
+      font-size: 23pt;
+    }
+
     a.login {
       position: absolute;
-      top: -45px;
+      top: 15px;
       right: 30px;
+      width: 120px;
+      height: 45px;
+      font-size: 16pt;
+      padding-top: 6px;
       display: none;
-      background-color: transparent;
-      color: $white;
+      line-height: normal;
+      &:hover {
+        background-color: transparent;
+        color: $white;
+      }
     }
 
     .video {
