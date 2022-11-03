@@ -72,7 +72,6 @@
 <style lang="scss">
   @use "../../../styles/" as *;
   .container {
-    margin-top: 124px;
     h1 {
       max-width: 54%;
       line-height: 100%;
