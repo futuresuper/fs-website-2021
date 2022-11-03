@@ -175,7 +175,7 @@
     a.large-login {
       width: 310px;
       height: 65px;
-      font-size: 23pt;
+      font-size: 23px;
       &:hover {
         background-color: transparent;
       }
@@ -186,9 +186,7 @@
       top: 15px;
       right: 30px;
       width: 120px;
-      height: 45px;
-      font-size: 16pt;
-      padding: 5px 32px;
+      height: 44px;
       display: none;
       line-height: normal;
       &:hover {

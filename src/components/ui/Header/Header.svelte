@@ -77,7 +77,7 @@
       <a class="button secondary hide-on-mobile" href={pages.LOGIN[1]}>Login</a>
       {#if !joinPage}
         <a class="button" href={pages.JOIN[1]}
-          >Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</a
+          >Join<span class="hide-on-mobile">&nbsp;now</span></a
         >
       {/if}
       <div
