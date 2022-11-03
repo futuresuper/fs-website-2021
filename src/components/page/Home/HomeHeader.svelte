@@ -170,7 +170,7 @@
     text-align: center;
     color: $white;
     background-color: $blackVideo;
-    height: 80vh;
+    height: 90vh;
 
     a.large-login {
       width: 310px;
@@ -240,9 +240,9 @@
     .video-container {
       .text-container {
         margin-top: 20px;
-        width: 90%;
+        width: 80%;
         h1 {
-          font-size: 64px !important;
+          font-size: 60px !important;
         }
         h3.feature {
           font-size: 18px;
@@ -255,7 +255,7 @@
     .video-container {
       .text-container {
         h1 {
-          font-size: 64px !important;
+          font-size: 60px !important;
         }
         h3.feature {
           font-size: 18px;
