@@ -153,7 +153,7 @@
     text-align: center;
     color: #fff;
     background-color: $blackVideo;
-    height: 70vh;
+    height: 100vh;
 
     .video {
       object-fit: fill;
