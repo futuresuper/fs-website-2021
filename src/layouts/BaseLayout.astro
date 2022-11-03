@@ -48,11 +48,18 @@ const seoDescription = description
   .page-header {
     background-color: $black;
     color: $white;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: $page-header-padding-top;
+    padding-bottom: $page-header-padding-bottom;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
     overflow: hidden;
+  }
+
+  .no-behind-header {
+    &.page-header {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   .page-title-and-description {
@@ -195,7 +202,9 @@ const seoDescription = description
               : ""
           }
         >
-          <div class="page-header">
+          <div
+            class={"page-header " + (noBehindHeader ? "no-behind-header" : "")}
+          >
             {!customHeader && (
               <div class="container">
                 <div class="page-title-and-description">

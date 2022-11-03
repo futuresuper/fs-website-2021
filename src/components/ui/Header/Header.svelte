@@ -47,9 +47,10 @@
   }
 
   onMount(() => {
-    // For the special case where a video header is being used then we don't
-    // want to show the menu when the page is first loaded
-    showMenu = document.body.classList.contains("video-header") ? false : true;
+    // For the special case we don't want a menu on inital load
+    // NB: If we do this by setting the headerMenuShowing store default to false, then the menu
+    // will not appear on all pages if we subscribe to it.
+    showMenu = document.body.classList.contains("no-menu") ? false : true;
     headerMenuShowing.update((value) => showMenu);
   });
 </script>

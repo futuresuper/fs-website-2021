@@ -21,9 +21,10 @@
         ? headerDesignTestGroups.ORIGINAL
         : headerDesignTestGroups.VIDEO;
 
+    // Don't show the menu on load for the video design
     if (headerDesignTestGroup == headerDesignTestGroups.VIDEO) {
-      // The design with a video requires some specific header styling
-      document.body.classList.add("video-header");
+      // TODO: Figure out how to use a store for this
+      document.body.classList.add("no-menu");
     }
 
     analytics.track("JoinForm ViewedByABTestParticipant", {
@@ -95,6 +96,7 @@
   }
 
   .marquee-container {
+    padding-bottom: $page-header-padding-bottom;
     width: 100%;
     position: relative;
     overflow: hidden;
