@@ -34,7 +34,7 @@
   export let joinPage = false;
 
   // Hide menu on downward scroll and show on upward
-  let showMenu = true;
+  let showMenu = false;
 
   let y = 0;
   let yBuffered = 0;
@@ -44,12 +44,10 @@
     yBuffered = y;
   }
 
-  onMount(async () => {
+  onMount(() => {
     // For the special case where a video header is being used then we don't
     // want to show the menu when the page is first loaded
-    if (document.body.classList.contains("video-header")) {
-      showMenu = false;
-    }
+    showMenu = document.body.classList.contains("video-header") ? false : true;
   });
 </script>
 
