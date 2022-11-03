@@ -1,5 +1,6 @@
 <script>
   import pages from "../../../data/pages.json";
+  import { headerMenuShowing } from "../../store/stores.js";
 
   const marqueeMessage = "Let&rsquo;s put it to work. ";
 
@@ -10,7 +11,6 @@
     VIDEO: "New design with a video background and a more obvious join button",
   };
 
-  let scrollY;
   let showLoginButton = true;
   let headerDesignTestGroup;
 
@@ -31,14 +31,11 @@
     });
   });
 
-  $: if (scrollY >= 0) {
-    showLoginButton = !document
-      .getElementById("header-menu")
-      .classList.contains("show");
-  }
+  headerMenuShowing.subscribe((value) => {
+    // Hide the login button when the menu is showing
+    showLoginButton = !value;
+  });
 </script>
-
-<svelte:window bind:scrollY />
 
 {#if headerDesignTestGroup === headerDesignTestGroups.ORIGINAL}
   <div class="container">

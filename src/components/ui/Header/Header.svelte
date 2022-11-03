@@ -6,6 +6,7 @@
   import Cross from "../../images/Cross.svelte";
   import MobileMenu from "./MobileMenu.svelte";
   import { onMount } from "svelte";
+  import { headerMenuShowing } from "../../store/stores.js";
 
   const menu = [
     {
@@ -41,6 +42,7 @@
   const sensitivity = 10;
   $: if (y > 100 && Math.abs(y - yBuffered) > sensitivity) {
     showMenu = y < yBuffered;
+    headerMenuShowing.update((value) => showMenu);
     yBuffered = y;
   }
 
@@ -48,6 +50,7 @@
     // For the special case where a video header is being used then we don't
     // want to show the menu when the page is first loaded
     showMenu = document.body.classList.contains("video-header") ? false : true;
+    headerMenuShowing.update((value) => showMenu);
   });
 </script>
 
