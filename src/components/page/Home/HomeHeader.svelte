@@ -72,6 +72,9 @@
 <style lang="scss">
   @use "../../../styles/" as *;
   .container {
+    // Since the behind header is not used for this page we need to use a margin instead for this container
+    margin-top: $behind-header-height;
+
     h1 {
       max-width: 54%;
       line-height: 100%;
