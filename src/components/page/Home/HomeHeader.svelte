@@ -10,6 +10,8 @@
     VIDEO: "New design with a video background and a more obvious join button",
   };
 
+  let scrollY;
+  let showLoginButton = true;
   let headerDesignTestGroup;
 
   onMount(async () => {
@@ -28,7 +30,15 @@
       headerDesignTestGroup,
     });
   });
+
+  $: if (scrollY >= 0) {
+    showLoginButton = !document
+      .getElementById("header-menu")
+      .classList.contains("show");
+  }
 </script>
+
+<svelte:window bind:scrollY />
 
 {#if headerDesignTestGroup === headerDesignTestGroups.ORIGINAL}
   <div class="container">
@@ -56,12 +66,16 @@
         <a class="button" href={pages.JOIN[1]}>Join now</a>
       </div>
     </div>
+    {#if showLoginButton}
+      <a class="button login" href={pages.LOGIN[1]}>Login</a>
+    {/if}
   </div>
 {/if}
 
 <style lang="scss">
   @use "../../../styles/" as *;
   .container {
+    margin-top: 124px;
     h1 {
       max-width: 54%;
       line-height: 100%;
@@ -151,12 +165,22 @@
     width: 100vw;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: $white;
     background-color: $blackVideo;
-    height: 100vh;
+    height: 80vh;
+
+    a.login {
+      position: absolute;
+      top: -45px;
+      right: 30px;
+      display: none;
+      background-color: transparent;
+      color: $white;
+    }
 
     .video {
-      object-fit: fill;
+      width: 100%;
+      min-width: 2000px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -167,7 +191,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(calc(-50% - 10px), -50%);
+      transform: translate(calc(-50%), -50%);
       width: 90%;
       h1 {
         font-size: 85px;
@@ -198,6 +222,7 @@
   @media (max-width: 740px) {
     .video-container {
       .text-container {
+        margin-top: 20px;
         width: 90%;
         h1 {
           font-size: 64px !important;
@@ -218,6 +243,14 @@
         h3.feature {
           font-size: 18px;
         }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .video-container {
+      a.login {
+        display: block;
       }
     }
   }
