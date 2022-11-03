@@ -5,42 +5,34 @@
 
   import { onMount } from "svelte";
 
-  const testGroups = {
-    DOING: "Doing something about climate change",
-    PEOPLE: "People power change",
-  };
-
-  const topPanelTestGroups = {
+  const headerDesignTestGroups = {
     ORIGINAL: "Original Future Super design",
-    SIMPLIFIED: "New simplified design with a more obvious join",
+    VIDEO: "New design with a video background and a more obvious join button",
   };
 
-  let testGroup;
-  let topPanelTestGroup;
+  let headerDesignTestGroup;
 
   onMount(async () => {
     const rand = Math.random();
-    testGroup = rand > 0.5 ? testGroups.DOING : testGroups.PEOPLE;
+    headerDesignTestGroup =
+      rand > 0.5
+        ? headerDesignTestGroups.ORIGINAL
+        : headerDesignTestGroups.VIDEO;
 
-    topPanelTestGroup = topPanelTestGroups.SIMPLIFIED;
-    if (topPanelTestGroup == topPanelTestGroups.SIMPLIFIED) {
-      // The simplified design requires a special video header
+    if (headerDesignTestGroup == headerDesignTestGroups.VIDEO) {
+      // The design with a video requires some specific header styling
       document.body.classList.add("video-header");
     }
 
     analytics.track("JoinForm ViewedByABTestParticipant", {
-      testGroup,
+      headerDesignTestGroup,
     });
   });
 </script>
 
-{#if topPanelTestGroup === topPanelTestGroups.ORIGINAL}
+{#if headerDesignTestGroup === headerDesignTestGroups.ORIGINAL}
   <div class="container">
-    {#if testGroup === testGroups.PEOPLE}
-      <h1>People Power Change. So Can Super.</h1>
-    {:else}
-      <h1>The super fund that’s doing something about climate&nbsp;change.</h1>
-    {/if}
+    <h1>People Power Change. So Can Super.</h1>
     <div class="text">
       <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
       <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
@@ -53,8 +45,7 @@
   </div>
 {:else}
   <div class="video-container">
-    <video class="video" autoplay muted loop
-      ><!--<video autoplay muted loop>-->
+    <video class="video" autoplay muted loop>
       <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
     </video>
     <div class="text-container">
@@ -176,9 +167,10 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-
+      transform: translate(calc(-50% - 10px), -50%);
+      width: 90%;
       h1 {
+        font-size: 85px;
         max-width: none;
         margin-bottom: 0;
       }
@@ -188,15 +180,16 @@
         max-width: 100%;
         text-transform: uppercase;
         font-family: $feature;
-        font-size: 20px;
+        font-size: 26px;
       }
     }
 
     .button-container {
       padding: 10px;
-      margin-top: 50px;
+      margin-top: 60px;
 
       .button {
+        max-width: 320px;
         width: 100%;
       }
     }
@@ -205,8 +198,12 @@
   @media (max-width: 740px) {
     .video-container {
       .text-container {
+        width: 90%;
         h1 {
-          font-size: 40px !important;
+          font-size: 64px !important;
+        }
+        h3.feature {
+          font-size: 18px;
         }
       }
     }
@@ -216,14 +213,10 @@
     .video-container {
       .text-container {
         h1 {
-          font-size: 40px !important;
+          font-size: 64px !important;
         }
-        h3 {
-          font-size: 16px;
-        }
-
-        .button-container {
-          max-width: none;
+        h3.feature {
+          font-size: 18px;
         }
       }
     }
