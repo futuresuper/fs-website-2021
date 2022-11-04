@@ -67,7 +67,7 @@
       </div>
     </div>
     {#if showLoginButton}
-      <a class="button login" href={pages.LOGIN[1]}>Login</a>
+      <a class="button secondary login" href={pages.LOGIN[1]}>Login</a>
     {/if}
   </div>
 {/if}
@@ -175,15 +175,17 @@
 
     a.login {
       position: absolute;
-      top: 15px;
-      right: 15px;
+      top: 18px;
+      right: 30px;
       width: 120px;
       height: 44px;
       display: none;
       line-height: normal;
+      background-color: transparent;
+      border: 1px solid $green;
       &:hover {
-        background-color: transparent;
-        color: $white;
+        background-color: $green;
+        color: $black;
       }
     }
 
