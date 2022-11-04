@@ -239,6 +239,7 @@
 
   @media (max-width: 740px) {
     .video-container {
+      height: 90vh;
       .text-container {
         h1 {
           font-size: 54px !important;
@@ -252,6 +253,7 @@
 
   @media (max-width: 354px) {
     .video-container {
+      height: 90vh;
       .text-container {
         h1 {
           font-size: 54px !important;
