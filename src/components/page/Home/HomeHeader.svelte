@@ -241,7 +241,7 @@
     .video-container {
       .text-container {
         h1 {
-          font-size: 60px !important;
+          font-size: 54px !important;
         }
         h3.feature {
           font-size: 18px;
@@ -254,7 +254,7 @@
     .video-container {
       .text-container {
         h1 {
-          font-size: 60px !important;
+          font-size: 54px !important;
         }
         h3.feature {
           font-size: 18px;
