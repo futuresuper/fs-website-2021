@@ -170,21 +170,13 @@
     text-align: center;
     color: $white;
     background-color: $blackVideo;
-    height: 90vh;
-
-    a.large-login {
-      width: 310px;
-      height: 65px;
-      font-size: 23px;
-      &:hover {
-        background-color: transparent;
-      }
-    }
+    min-height: 500px;
+    height: 80vh;
 
     a.login {
       position: absolute;
       top: 15px;
-      right: 30px;
+      right: 15px;
       width: 120px;
       height: 44px;
       display: none;
@@ -192,6 +184,15 @@
       &:hover {
         background-color: transparent;
         color: $white;
+      }
+    }
+
+    a.large-login {
+      width: 310px;
+      height: 65px;
+      font-size: 23px;
+      &:hover {
+        background-color: transparent;
       }
     }
 
@@ -205,10 +206,10 @@
     }
 
     .text-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(calc(-50%), -50%);
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding-top: $behind-header-height;
       width: 90%;
       h1 {
         font-size: 85px;
@@ -238,9 +239,8 @@
 
   @media (max-width: 740px) {
     .video-container {
+      height: 100vh;
       .text-container {
-        margin-top: 20px;
-        width: 80%;
         h1 {
           font-size: 60px !important;
         }
@@ -253,6 +253,7 @@
 
   @media (max-width: 354px) {
     .video-container {
+      height: 100vh;
       .text-container {
         h1 {
           font-size: 60px !important;
