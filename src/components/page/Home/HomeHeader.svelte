@@ -206,10 +206,10 @@
     }
 
     .text-container {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      padding-top: $behind-header-height;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 90%;
       h1 {
         font-size: 85px;
@@ -239,7 +239,6 @@
 
   @media (max-width: 740px) {
     .video-container {
-      height: 100vh;
       .text-container {
         h1 {
           font-size: 60px !important;
@@ -253,7 +252,6 @@
 
   @media (max-width: 354px) {
     .video-container {
-      height: 100vh;
       .text-container {
         h1 {
           font-size: 60px !important;
