@@ -5,6 +5,12 @@
   import MenuButton from "../../images/MenuButton.svelte";
   import Cross from "../../images/Cross.svelte";
   import MobileMenu from "./MobileMenu.svelte";
+  import { onMount } from "svelte";
+  import { get } from "svelte/store";
+  import {
+    headerMenuShowing,
+    showHeaderMenuOnLoad,
+  } from "../../store/stores.js";
 
   const menu = [
     {
@@ -33,14 +39,22 @@
   export let joinPage = false;
 
   // Hide menu on downward scroll and show on upward
-  let showMenu = true;
+  let showMenu = false;
+
   let y = 0;
   let yBuffered = 0;
   const sensitivity = 10;
   $: if (y > 100 && Math.abs(y - yBuffered) > sensitivity) {
     showMenu = y < yBuffered;
+    headerMenuShowing.update((value) => showMenu);
     yBuffered = y;
   }
+
+  onMount(() => {
+    // Determine whether the menu should be shown when page is loaded
+    showMenu = get(showHeaderMenuOnLoad);
+    headerMenuShowing.update((value) => showMenu);
+  });
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -63,7 +77,7 @@
       <a class="button secondary hide-on-mobile" href={pages.LOGIN[1]}>Login</a>
       {#if !joinPage}
         <a class="button" href={pages.JOIN[1]}
-          >Join<span class="hide-on-mobile">&nbsp;now</span>&nbsp;→</a
+          >Join<span class="hide-on-mobile">&nbsp;now</span></a
         >
       {/if}
       <div
