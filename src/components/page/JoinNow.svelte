@@ -6,7 +6,14 @@
   <h1>Join Future Super</h1>
   <div class="time-row">
     <img src="/images/clock2.gif" alt="clock" class="clock" />
-    <h4>Joining usually takes about 4 minutes</h4>
+    <h4>Joining takes about 4 minutes.</h4>
+  </div>
+  <div class="info-block">
+    <p class="info-block__heading">What you'll need</p>
+    <ul class="info-block__list">
+      <li>Your Tax File Number (TFN)</li>
+      <li>Your mobile phone</li>
+    </ul>
   </div>
   <p>
     <label
@@ -81,7 +88,22 @@
     flex-direction: row;
     align-items: center;
     color: #00a900;
-    margin-bottom: 30px;
+    margin-bottom: 1.75rem;
+    font-size: 1.25rem;
+  }
+
+  .info-block{
+    margin-bottom: 1.75rem;
+    &__heading{
+      font-size: 1.125rem;
+      font-family: $heading;
+      margin-bottom: 0.5rem;
+    }
+    &__list{
+      font-size: 1rem;
+      list-style: circle;
+      margin-left: 1.187rem;
+    }
   }
 
   @media (min-width: 1300px) {
