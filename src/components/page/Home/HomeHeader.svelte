@@ -5,14 +5,12 @@
     showHeaderMenuOnLoad,
   } from "../../store/stores.js";
 
-  const marqueeMessage = "Let&rsquo;s put it to work. ";
-
   import { onMount } from "svelte";
 
   const headerJoinTimerGroups = {
     ORIGINAL: "Autoplay video splashpage without timer", // An autoplay video slash page
     TIMER: "Autoplay video splashpage with timer", // An autoplay video slash page with the timer
-  }
+  };
 
   let showLoginButton = true;
   let headerJoinTimerGroup;
@@ -23,12 +21,12 @@
 
     const timerRand = Math.random();
     headerJoinTimerGroup =
-            timerRand > 0.5
-                    ? headerJoinTimerGroups.ORIGINAL
-                    : headerJoinTimerGroups.TIMER;
+      timerRand > 0.5
+        ? headerJoinTimerGroups.ORIGINAL
+        : headerJoinTimerGroups.TIMER;
 
     analytics.track("Website ViewedByABTestParticipant", {
-      headerJoinTimerGroup
+      headerJoinTimerGroup,
     });
   });
 
@@ -50,10 +48,10 @@
       <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
     {#if headerJoinTimerGroup === headerJoinTimerGroups.TIMER}
-    <div class="time-row">
-      <img src="/images/clock-icon.svg" alt="clock" class="clock" />
-      <h4>Joining takes about 4 minutes.</h4>
-    </div>
+      <div class="time-row">
+        <img src="/images/clock-icon.svg" alt="clock" class="clock" />
+        <h4>Joining takes about 4 minutes.</h4>
+      </div>
     {/if}
   </div>
   {#if showLoginButton}
@@ -114,7 +112,7 @@
     font-size: 0.875rem;
     margin-top: 1rem;
 
-    h4{
+    h4 {
       margin-bottom: 0;
     }
   }
