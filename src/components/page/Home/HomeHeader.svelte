@@ -5,32 +5,28 @@
     showHeaderMenuOnLoad,
   } from "../../store/stores.js";
 
-  const marqueeMessage = "Let&rsquo;s put it to work. ";
-
   import { onMount } from "svelte";
 
-  const headerDesignTestGroups = {
-    ORIGINAL: "pre-NMS splashpage", // The original front page design
-    VIDEO: "Autoplay video splashpage", // An autoply video splash page with prominent join button
+  const headerJoinTimerGroups = {
+    ORIGINAL: "Autoplay video splashpage without timer", // An autoplay video slash page
+    TIMER: "Autoplay video splashpage with timer", // An autoplay video slash page with the timer
   };
 
   let showLoginButton = true;
-  let headerDesignTestGroup;
+  let headerJoinTimerGroup;
 
   onMount(async () => {
-    const rand = Math.random();
-    headerDesignTestGroup =
-      rand > 0.5
-        ? headerDesignTestGroups.ORIGINAL
-        : headerDesignTestGroups.VIDEO;
+    // Don't show the header menu on load for the video design
+    showHeaderMenuOnLoad.update((value) => false);
 
-    if (headerDesignTestGroup == headerDesignTestGroups.VIDEO) {
-      // Don't show the header menu on load for the video design
-      showHeaderMenuOnLoad.update((value) => false);
-    }
+    const timerRand = Math.random();
+    headerJoinTimerGroup =
+      timerRand > 0.5
+        ? headerJoinTimerGroups.ORIGINAL
+        : headerJoinTimerGroups.TIMER;
 
     analytics.track("Website ViewedByABTestParticipant", {
-      headerDesignTestGroup,
+      headerJoinTimerGroup,
     });
   });
 
@@ -40,37 +36,28 @@
   });
 </script>
 
-{#if headerDesignTestGroup === headerDesignTestGroups.ORIGINAL}
-  <div class="container">
-    <h1>People Power Change. So Can Super.</h1>
-    <div class="text">
-      <h3>Your super has the power to combat&nbsp;climate&nbsp;change.</h3>
-      <a class="button" href={pages.JOIN[1]}>{pages.JOIN[0]}</a>
+<div class="video-container">
+  <video class="video" autoplay muted loop>
+    <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
+  </video>
+  <div class="text-container">
+    <h1>People power change.</h1>
+    <h1>So can super.</h1>
+    <h3 class="feature">Let's put it to work</h3>
+    <div class="button-container">
+      <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
-  </div>
-  <div class="marquee-container">
-    <div class="marquee">
-      {@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}{@html marqueeMessage}
-    </div>
-  </div>
-{:else}
-  <div class="video-container">
-    <video class="video" autoplay muted loop>
-      <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
-    </video>
-    <div class="text-container">
-      <h1>People power change.</h1>
-      <h1>So can super.</h1>
-      <h3 class="feature">Let's put it to work</h3>
-      <div class="button-container">
-        <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
+    {#if headerJoinTimerGroup === headerJoinTimerGroups.TIMER}
+      <div class="time-row">
+        <img src="/images/clock-icon.svg" alt="clock" class="clock" />
+        <h4>Joining takes about 4 minutes.</h4>
       </div>
-    </div>
-    {#if showLoginButton}
-      <a class="button secondary login" href={pages.LOGIN[1]}>Login</a>
     {/if}
   </div>
-{/if}
+  {#if showLoginButton}
+    <a class="button secondary login" href={pages.LOGIN[1]}>Login</a>
+  {/if}
+</div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
@@ -114,6 +101,26 @@
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 80s linear infinite;
+  }
+
+  .time-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
+  .clock {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
   }
 
   @keyframes marquee {
@@ -270,7 +277,7 @@
   @media (min-width: 800px) {
     .video-container {
       a.login {
-        display: block;
+        display: flex;
       }
     }
   }
