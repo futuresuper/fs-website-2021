@@ -37,15 +37,9 @@
 </script>
 
 <div class="video-container">
-  <video
-    class="video"
-    autoplay
-    muted
-    loop
-    playsinline
-    src="videos/FS_HomePage_Hero_02.mp4"
-  />
-  <!-- <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" /> -->
+  <video class="video" autoplay muted loop playsinline>
+    <source src="videos/FS_HomePage_Hero_02.mp4" type="video/mp4" />
+  </video>
 
   <div class="text-container">
     <h1>People power change.</h1>
