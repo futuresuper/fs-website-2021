@@ -7,27 +7,11 @@
 
   import { onMount } from "svelte";
 
-  const headerJoinTimerGroups = {
-    ORIGINAL: "Autoplay video splashpage without timer", // An autoplay video slash page
-    TIMER: "Autoplay video splashpage with timer", // An autoplay video slash page with the timer
-  };
-
   let showLoginButton = true;
-  let headerJoinTimerGroup;
 
   onMount(async () => {
     // Don't show the header menu on load for the video design
     showHeaderMenuOnLoad.update((value) => false);
-
-    const timerRand = Math.random();
-    headerJoinTimerGroup =
-      timerRand > 0.5
-        ? headerJoinTimerGroups.ORIGINAL
-        : headerJoinTimerGroups.TIMER;
-
-    analytics.track("Website ViewedByABTestParticipant", {
-      headerJoinTimerGroup,
-    });
   });
 
   headerMenuShowing.subscribe((value) => {
@@ -48,12 +32,6 @@
     <div class="button-container">
       <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
-    {#if headerJoinTimerGroup === headerJoinTimerGroups.TIMER}
-      <div class="time-row">
-        <img src="/images/clock-icon.svg" alt="clock" class="clock" />
-        <h4>Joining takes about 4 minutes.</h4>
-      </div>
-    {/if}
   </div>
   {#if showLoginButton}
     <a class="button secondary login" href={pages.LOGIN[1]}>Login</a>
@@ -102,26 +80,6 @@
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 80s linear infinite;
-  }
-
-  .time-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 0.875rem;
-    margin-top: 1rem;
-
-    h4 {
-      margin-bottom: 0;
-    }
-  }
-
-  .clock {
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
   }
 
   @keyframes marquee {
