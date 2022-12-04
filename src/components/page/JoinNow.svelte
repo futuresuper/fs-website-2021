@@ -1,5 +1,28 @@
 <script>
   import Clock from "../images/Clock.svelte";
+  import { onMount } from "svelte";
+  const buttonCtaGroups = {
+    NEXT: "CTA Next", // Button with text of 'Next'
+    START: "CTA Start", // Button with text of 'Start'
+  };
+
+  //Set its default to the orginal text
+  let buttonCtaGroup = buttonCtaGroups.NEXT;
+
+  onMount(async () => {
+    const rand = Math.random();
+    buttonCtaGroup =
+            rand > 0.5
+                    ? buttonCtaGroups.NEXT
+                    : buttonCtaGroups.START;
+
+
+    //Track the button text display
+    analytics.track("JoinNow ViewedByABTestParticipant", {
+      buttonCtaGroup
+    });
+  });
+
 </script>
 
 <form method="GET" action="https://join.futuresuper.com.au/">
@@ -30,7 +53,11 @@
   </p>
   <input type="text" id="referer" name="ReferCode" style="display:none" />
   <p>
-    <button type="submit" class="primary">Next →</button>
+    {#if buttonCtaGroup === buttonCtaGroups.NEXT}
+      <button type="submit" class="primary">Next →</button>
+    {:else}
+      <button type="submit" class="primary">Start →</button>
+    {/if}
   </p>
   <p class="disclaimer">
     ^ By providing your email address, you consent and authorise us to send you
