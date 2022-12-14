@@ -1,4 +1,6 @@
 <script>
+  import Info from "../images/Info.svelte";
+
   export let contact;
 </script>
 
@@ -10,6 +12,14 @@
     </div>
   </div>
   <address>
+    <div class="info-block">
+      <div>
+        <Info/>
+      </div>
+      <p><strong>Our office will be closed from Friday 23rd of December 2022 to Monday 2nd of January 2023, inclusive.</strong> We will reopen at 10am AEDT Tuesday 3rd January.
+        Our Member Advocacy team will continue to monitor our inbox during this time to assist with any urgent enquiries.
+      </p>
+    </div>
     <hr />
     <h5>Email</h5>
     <a href="mailto:{contact.emailAddress}">{contact.emailAddress}</a>
@@ -46,6 +56,20 @@
 
 <style lang="scss">
   @use "../../styles/" as *;
+
+  .info-block{
+    background-color: #CEDEFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    gap: 0.5rem;
+    color: $black;
+    margin-bottom: 1.375rem;
+    p{
+      margin: 0;
+    }
+  }
 
   section {
     display: flex;
