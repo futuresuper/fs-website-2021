@@ -2,7 +2,7 @@
 title: " If it's normal for performance to go up and down, why haven't I seen my
   super fund's performance go down before? "
 category: Market volatility
-order: 3
+order: 2
 layout: $/layouts/FaqPage.astro
 ---
 This is Future Super’s first year of negative returns since we launched eight years ago.* 
