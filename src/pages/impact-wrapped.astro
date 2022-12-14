@@ -1,0 +1,21 @@
+---
+import BaseLayout from "$/layouts/BaseLayout.astro";
+import App from "$/components/page/App.svelte";
+---
+
+<style lang="scss">
+  @use "../styles/" as *;
+</style>
+
+<BaseLayout
+  title="Your Impact Wrapped"
+  description="Get the Future Super app to view your Impact Wrapped"
+  image="https://res.cloudinary.com/future-super/image/upload/v1666674820/app-preview.png"
+>
+  <p style="text-align: center">
+    As the year draws to a close, we’re excited to show you what your super did
+    this year, including the change it created and some of the investments that
+    helped you get there.
+  </p>
+  <App />
+</BaseLayout>
