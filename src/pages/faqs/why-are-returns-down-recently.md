@@ -1,5 +1,5 @@
 ---
-title: Why are returns down recently (2022)?
+title: Why are returns down this year?
 category: Market volatility
 order: 1
 layout: $/layouts/FaqPage.astro
