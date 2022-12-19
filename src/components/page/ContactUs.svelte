@@ -1,4 +1,6 @@
 <script>
+  import EndOfYearInfo from "../common/EndOfYearInfo.svelte";
+
   export let contact;
 </script>
 
@@ -10,6 +12,7 @@
     </div>
   </div>
   <address>
+    <EndOfYearInfo />
     <hr />
     <h5>Email</h5>
     <a href="mailto:{contact.emailAddress}">{contact.emailAddress}</a>

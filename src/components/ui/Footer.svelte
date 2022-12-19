@@ -7,6 +7,8 @@
   import SocialFacebook from "../images/SocialFacebook.svelte";
   import SocialInsta from "../images/SocialInsta.svelte";
   import SocialLinkedIn from "../images/SocialLinkedIn.svelte";
+  import Info from "../images/Info.svelte";
+  import EndOfYearInfo from "../common/EndOfYearInfo.svelte";
 
   const menu = [
     {
@@ -62,6 +64,9 @@
           <div class="pageGroup">
             <h5>{page.heading}</h5>
             <hr />
+            {#if page.heading === "Company"}
+              <EndOfYearInfo />
+            {/if}
             {#each page.subPages as subPage}
               <a href={subPage[1]}>{subPage[0]}</a>
             {/each}
