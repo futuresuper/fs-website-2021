@@ -14,7 +14,9 @@ postLine2: Albury, NSW 2640
 ---
 Check out our [Support & FAQs](https://www.futuresuper.com.au/support-and-faqs) page if you think your question might be a common one. Otherwise, feel free to reach out to our friendly Member Advocates.
 
-Please note our team will not be available on NSW and National public holidays.
+**Please note, our call centre will be closed from Friday 23rd December 2022 to Sunday 2nd January 2023 inclusive.** 
+
+**Our team will be available to answer phone queries from Monday 3rd January 2023.**
 
 **Future Super** welcomes calls through the National Relay Service if you are deaf, hard of hearing and/or have a speech impairment. Choose your access option ([information here)](https://www.infrastructure.gov.au/media-communications-arts/phone/services-people-disability/accesshub/national-relay-service) and provide our phone number **1300 658 422** when asked by the relay officer.
 
