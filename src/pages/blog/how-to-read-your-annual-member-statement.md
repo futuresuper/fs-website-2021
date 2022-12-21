@@ -4,7 +4,7 @@ author: Member Advocacy Team
 slug: how-to-read-your-annual-member-statement
 date: 2022-12-22T06:08:13.168Z
 canonical: null
-title: How to read your Annual Member Statement
+title: How to read your 2021-22  Annual Member Statement
 image: https://res.cloudinary.com/future-super/image/upload/v1639718267/Member_Statement.png
 tags:
   - Superannuation
