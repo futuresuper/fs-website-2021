@@ -6,6 +6,8 @@ image: https://i.postimg.cc/T1rXknnD/micheile-dot-com-l-Z-4n-PFKc-V8-unsplash.jp
 author: "Member Advocacy Team "
 description: There have been changes to the way we disclose fees and costs.
 ---
+
+
 From 30 September 2022, all super funds, and other financial services organisations, must comply with new disclosure regulations set out by the Australian Government. The Australian Securities and Investments Commission (better known as ASIC) has issued guidance on these new requirements: ‘RG 97: Disclosing fees and costs in Product Disclosure Statements (PDSs) and periodic statements’.
 
 If you’d like to get into the nitty gritty details, you can view ASIC’s regulatory guidance here. Or for those of you who’d rather the summary, we’ve created this overview for you.
@@ -36,9 +38,25 @@ ASIC has changed the way that super funds are required to present the fees and c
 
 This is intended to give you a better understanding of the fees and costs that you pay because you have an account, and the fees and costs that you incur only if a particular activity is undertaken.
 
-
-
 *Administration and investment fees are now broken down into:*
 
 * Fees - generally paid by you from your account
 * Costs - generally taken from the calculation of the investment return before it is paid into your account
+
+*Transaction costs, which relate to the buying and selling of investments, were previously captured in investment fees and costs but are now shown separately*
+
+* Indirect costs are no longer shown separately and are instead included in the calculation of ‘Investment fees and costs’
+
+*Two additional costs are now required to be disclosed: costs paid by third parties and costs paid from reserves:*
+
+* If your fund relies on third parties and/or reserves to pay admin-related costs, you’ll now find that disclosed in the ‘Administration fees and costs’ section. 
+* It’s important to note that these are not costs paid for by the member and not all funds incur these types of costs. 
+
+
+
+
+
+**So, what’s changed for Future Super?**\
+We’ve always been transparent with the way we display information about fees and costs, as well as where we invest. With the changes to how fees and costs are now calculated there has been a slight increase in the costs associated with having a Future Super account.
+
+For example, for a superannuation balance of $50,000 in Future Super’s Balanced Index option, prior to 30 September 2022, you’d expect to pay approximately $477.50 per year in fees for holding a Future Super account. You can see a demonstration of this below:
