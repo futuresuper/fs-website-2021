@@ -12,13 +12,15 @@ mediaEmail: media@futuresuper.com.au
 postLine1: PO Box 1282
 postLine2: Albury, NSW 2640
 ---
-**Please note, our call centre will be closed from Friday 23rd December 2022 to Sunday 2nd January 2023 inclusive.** 
+**Please note, our call centre will be closed from Friday 23rd December 2022 to Monday 2nd January 2023 inclusive.** 
 
-**Our team will be available to answer phone queries from Monday 3rd January 2023.**
+**Our call centre will reopen from 10 am AEDT (Sydney local time) on Tuesday 3rd January 2023.**
 
-Check out our [Support & FAQs](https://www.futuresuper.com.au/support-and-faqs) page if you think your question might be a common one. 
+You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
-Otherwise, please feel free to send us an email to info@futuresuper.com.au. If you need urgent assistance, please add "URGENT" to the subject line and a team member will respond to you as soon as possible. 
+You can also find information about your account [online](https://my.futuresuper.com.au/)
+
+Otherwise, please feel free to send us an email to info@futuresuper.com.au. Our Member Advocacy team will continue to monitor our inbox during this time to assist with any urgent enquiries.
 
 O﻿ur team will not be available on National and NSW public holidays. 
 
