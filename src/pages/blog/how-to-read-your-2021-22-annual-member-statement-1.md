@@ -12,7 +12,9 @@ description: "A helpful guide to your annual member statement. "
 
 **Or if you’re more of a visual and audio kind of person, you can find our video explainer [here](https://www.youtube.com/watch?v=ycl6Vkksmww&ab_channel=FutureSuper).**
 
-#### Your Account Summary
+
+
+### Your Account Summary
 
 The annual statement is a summary of your account in the past financial year (from 1 July 2021- 30 June 2022) 
 
@@ -28,9 +30,7 @@ The annual statement is a summary of your account in the past financial year (fr
 
 ***Closing balance*** is the balance at the end of the financial year (ending 30 June 2022). Please note, this is not your current balance.
 
-
-
-### A﻿ccessing Your Super 
+### A﻿ccessing Your Super
 
 Your account balance is broken into different components in the ‘Access Your Money’ section. 
 
@@ -38,16 +38,13 @@ Your account balance is broken into different components in the ‘Access Your M
 
 ***Preserved benefit*** means you can only withdraw this money if you meet a [condition of release](https://www.futuresuper.com.au/faqs/what-is-a-condition-of-release/).
 
-
 ***Restricted non-preserved benefits*** generally stem from employment-related contributions (other than employer contributions) made before 1 July 1999. You can access this component of your super if that employment has terminated.
-
 
 ***Unrestricted non-preserved benefits*** are the funds in your account that you can withdraw without restriction.
 
 
 
-### Investment Performance 
-
+### Investment Performance
 
 The ***total value*** shown here is your balance as at 30 June 2022. 
 
@@ -57,48 +54,35 @@ The ***total value*** shown here is your balance as at 30 June 2022.
 
 ***Unit price*** is the price for all members of the fund (the value of a unit) is calculated every weekday and changes based on the value of the assets the fund invests in, as well as the fees and taxes that are due and deducted from the value of the assets.
 
-
-
-#### How returns are calculated
+### How returns are calculated
 
 ![](https://i.postimg.cc/XqfY4zSN/statement-pic-4-performance.png)
 
 Your investment performance is displayed after the ***fees and costs deducted from your investment***. This includes the asset-based administration fee (% fee), investment fee and taxes are deducted (more on this below). 
 
-
 This also means our[](https://www.myfuturesuper.com.au/choosing/performanceandreturns)[published fund returns](https://www.myfuturesuper.com.au/performance-and-returns/) are shown after those fees and taxes are deducted.
-
 
 Your personal investment performance may differ to the fund performance depending on when you rolled in, and when and how much you contributed during the financial year.
 
 
 
-Y﻿our Insurance Details 
+### Y﻿our Insurance Details 
 
 ![](https://i.postimg.cc/pTNvrJBm/statement-pic-5-insurance.png)
 
 Future Super provides insurance on an **opt-in basis only,** i.e., we do not automatically provide members with default insurance. If you have cover with us, it will appear in the ***Insurance Cover*** section and state your policy type and coverage amount.
 
-
 You can read more about our insurance cover [here](https://www.myfuturesuper.com.au/faqs/does-future-super-offer-insurance/). You can also see more information about our policy in our [Insurance Guide](https://content.myfuturesuper.com.au/forms-docs/FS_InsuranceGuide_20122022.pdf). 
 
-
-
-### Y﻿our Beneficiaries 
+### Y﻿our Beneficiaries
 
 ![](https://i.postimg.cc/cC4bLvPK/Beneficiary-Details-uqci1k.png)
 
 ***Beneficiary Details*** shows who you have nominated to receive a lump sum benefit in the event of your death. These nominations can be applied as binding or non-binding. 
 
-
 If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. 
 
-
 You can read more about how beneficiaries work on [pages 8-9 of our Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf). 
-
-
-
-
 
 ### Total Fees You Paid
 
@@ -106,35 +90,16 @@ You can read more about how beneficiaries work on [pages 8-9 of our Additional I
 
 The ***total fees and costs you paid*** is made up of ***fees deducted directly from your account*** and the ***fees and costs deducted from your investment***. This may differ depending on the investment option you have chosen to be in. A more detailed breakdown of fees can be found from [pages 26-30 of the Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf). 
 
-
 ***Fees deducted directly from your account*** are the fees deducted directly from your account that appear in your transaction history. This includes the dollar-based administration fee. 
-
 
 ***Fees and costs deducted from your investment*** include most of your percentage-based fees are deducted when calculating your investment earnings figure. This includes the asset-based administration fee (%) and your investment fee. These don’t appear in your transaction history.
 
-
 This amount also includes indirect costs met by reserves and costs paid by third parties; these amounts are not deducted from your investment earnings but are a representation of the costs incurred to operate the fund. 
-
 
 You can read more about how fees and costs are now displayed in our [blog post here](https://www.futuresuper.com.au/blog/change-is-in-the-air-fees-costs-in-super-from-30-september-2022-1/). 
 
-
 Please note, the way the fees are calculated and when they are applied differs depending on the type of fee, for more information refer to the [page 27 of the Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 **If you have any further questions you can find answers on our [Support and FAQs page](https://www.myfuturesuper.com.au/support-and-faqs/), email us at info@myfuturesuper.com.au or call us on 1300 658 422.**
-
 
 **You should read the important information in our [Product Disclosure Statement](https://content.myfuturesuper.com.au/forms-docs/FS_PDS_20122022.pdf), [Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf) and [Target Market Determination](https://content.myfuturesuper.com.au/forms-docs/FS_AccumTMD_20122022.pdf) before making any financial decisions with Future Super.**
