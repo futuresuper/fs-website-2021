@@ -10,7 +10,7 @@ tags:
   - Superannuation
 description: A helpful guide to understanding annual member statements.
 ---
-### We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details. 
+### We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details.
 
 ### Or if you’re more of a visual and audio kind of person, you can find our video explainer [here](https://www.youtube.com/watch?v=ycl6Vkksmww&ab_channel=FutureSuper)
 
@@ -24,7 +24,7 @@ The annual statement is a summary of your account in the past financial year (fr
 
 ***Opening balance*** is the balance of your account at the start of the financial year, 1 July 2021.
 
-***What’s been added*** include funds allocated to your account, such as rollovers from your other super accounts, contributions (government, employer and personal contributions, for example) and tax rebates (you receive a tax rebate of 15% on direct fees deducted from your account).
+***What’s been added*** includes funds allocated to your account, such as rollovers from your other super accounts, contributions (government, employer and personal contributions, for example) and tax rebates (you receive a tax rebate of 15% on direct fees deducted from your account).
 
 ***What has been deducted*** from your account include deductions like [taxes on your contributions](https://www.futuresuper.com.au/faqs/why-is-tax-taken-from-my-account), withdrawals, insurance premiums and direct fees. (Fees are explained further below). Note, anything in brackets means a deduction or loss.
 
@@ -78,13 +78,9 @@ You can read more about our insurance cover [here.](https://www.myfuturesuper.co
 
 This shows who you have nominated to receive a lump sum benefit in the event of your death. These nominations can be applied as binding or non-binding. 
 
-
 If you do not nominate a beneficiary, the Trustee of Future Super will have the final say as to who should receive your benefits. 
 
-
 You can read more about how beneficiaries work on pages 8-9 of our [Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf). 
-
-
 
 ### Total Fees You Paid
 
@@ -99,7 +95,6 @@ The ***total fees and costs you paid*** is made up of ***fees deducted directly 
 This amount also includes indirect costs met by reserves and costs paid by third parties; these amounts are not deducted from your investment earnings but are a representation of the costs incurred to operate the fund. 
 
 You can read more about how fees and costs are now displayed in [our blog post here](<our blog post here>). 
-
 
 Please note, the way the fees are calculated and when they are applied differs depending on the type of fee, for more information refer to the [page 27 of the Additional Information Booklet](https://content.myfuturesuper.com.au/forms-docs/FS_AIB_20122022.pdf).
 
