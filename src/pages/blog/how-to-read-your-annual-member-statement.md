@@ -8,7 +8,7 @@ title: How to read your 2021-22  Annual Member Statement
 image: https://res.cloudinary.com/future-super/image/upload/v1639718267/Member_Statement.png
 tags:
   - Superannuation
-description: A helpful guide to understanding annual member statements.
+description: A helpful guide to understanding your annual member statement.
 ---
 ### We know that annual superannuation statements can contain a lot of information, so we wrote this handy guide to help you understand the details.
 
