@@ -6,11 +6,11 @@ image: https://i.postimg.cc/T1rXknnD/micheile-dot-com-l-Z-4n-PFKc-V8-unsplash.jp
 author: "Member Advocacy Team "
 description: There have been changes to the way we disclose fees and costs.
 ---
-
-
 From 30 September 2022, all super funds, and other financial services organisations, must comply with new disclosure regulations set out by the Australian Government. The Australian Securities and Investments Commission (better known as ASIC) has issued guidance on these new requirements: ‘RG 97: Disclosing fees and costs in Product Disclosure Statements (PDSs) and periodic statements’.
 
 If you’d like to get into the nitty gritty details, you can view ASIC’s regulatory guidance here. Or for those of you who’d rather the summary, we’ve created this overview for you.
+
+
 
 **Super regulated**\
 Superannuation is designed for retirement, and there are huge sums of money invested in super, so there are strict regulations about the way super funds operate. While the Australian Government sets the legislation for super, there are several key organisations that enforces it.
@@ -18,6 +18,8 @@ Superannuation is designed for retirement, and there are huge sums of money inve
 Most super funds are regulated by the Australian Prudential Regulation Authority (APRA), whereas the Australian Tax Office (ATO) regulates self-managed super funds (SMSFs). Future Super Fund (Future Super) is an APRA-regulated fund.
 
 ASIC enforces the legislation which regulates the conduct and disclosure obligations of super funds, and has a memorandum of understanding with both APRA and the ATO to help with the exchange of information between regulators.
+
+
 
 **Disclosing the details**\
 When joining a super fund, you’re acquiring a financial product. And, like when you’re choosing between other products, it’s important to find out what you’re getting and what it costs.
@@ -28,6 +30,8 @@ Super funds are required to provide these disclosure documents to members as the
 
 **What’s changed with these regulations**\
 ASIC has changed the way that super funds are required to present the fees and costs in their PDSs and statements with the intention of making it easier for members to compare fees and costs across funds (more on this in a moment).
+
+
 
 **H﻿ere's a rundown of the key changes:** 
 
@@ -54,9 +58,9 @@ This is intended to give you a better understanding of the fees and costs that y
 
 
 
-
-
 **So, what’s changed for Future Super?**\
 We’ve always been transparent with the way we display information about fees and costs, as well as where we invest. With the changes to how fees and costs are now calculated there has been a slight increase in the costs associated with having a Future Super account.
 
-For example, for a superannuation balance of $50,000 in Future Super’s Balanced Index option, prior to 30 September 2022, you’d expect to pay approximately $477.50 per year in fees for holding a Future Super account. You can see a demonstration of this below:
+For example, for a superannuation balance of $50,000 in Future Super’s Balanced Index option, prior to 30 September 2022, you’d expect to pay approximately $477.50 per year in fees for holding a Future Super account. You can see a demonstration of this below: 
+
+\
