@@ -14,9 +14,9 @@ postLine2: Albury, NSW 2640
 ---
 **Please note, our call centre will be closed from Friday 23rd December 2022 to Monday 2nd January 2023 inclusive.** 
 
-**Our call centre will reopen**
+**Our call centre will reopen from 10 am AEDT (Sydney local time) on Tuesday 3rd January 2023.**
 
-**equeries from 10 am AEDT (Sydney local time) on Tuesday 3rd January 2023.n**You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
+You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
 You can also find information about your account [online](https://my.futuresuper.com.au/)
 
