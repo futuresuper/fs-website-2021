@@ -2,8 +2,8 @@
 title: Do I need my annual member statement to complete my tax return?
 slug: do-i-need-my-annual-member-statement-to-complete-my-tax-return
 date: 2021-06-08T03:42:03.000Z
-category: Forms and documents
-order: 120
+category: Annual Statement
+order: 8
 layout: $/layouts/FaqPage
 ---
 Generally, no. 
