@@ -1,7 +1,7 @@
 ---
 title: Where do I find my insurance information?
-category: Forms and documents
-order: 8
+category: Annual Statement
+order: 13
 layout: $/layouts/FaqPage.astro
 ---
 You can find out about the insurance coverage you hold on page 2 of your Annual Member Statement, under the heading “Your insurance cover”.
