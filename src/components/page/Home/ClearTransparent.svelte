@@ -16,13 +16,6 @@
         </div>
       </div>
       <p class="question">
-        Want to know how our investment strategy impacts your carbon emissions?
-      </p>
-      <a href="/carbon-transparency-report" class="button">
-        <span class="mobile-hide">Browse the&nbsp;</span>Carbon Transparency
-        Report
-      </a>
-      <p class="question">
         Want to know everything that Future Super invests in, how much money we
         allocate to each company, and which investments go in which options?
       </p>
