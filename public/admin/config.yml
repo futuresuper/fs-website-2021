@@ -141,6 +141,7 @@ collections:
           widget: "select",
           options:
             [
+              "Annual Statement",
               "Superannuation Basics",
               "Market volatility",
               "Divestment",
