@@ -1,7 +1,7 @@
 ---
 title: "What does restricted non-preserved benefit mean? "
-category: Forms and documents
-order: 5
+category: Annual Statement
+order: 10
 layout: $/layouts/FaqPage.astro
 ---
 Restricted non-preserved benefits refer to employment-related contributions (other than employer contributions) made before 1 July 1999.  
