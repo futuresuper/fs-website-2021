@@ -1,7 +1,7 @@
 ---
 title: What does preserved benefit mean?
-category: Forms and documents
-order: 4
+category: Annual Statement
+order: 9
 layout: $/layouts/FaqPage.astro
 ---
 Preserved benefits include all contributions made by you or on your behalf since 30th of June 1999 and the investment returns gained from these contributions. 
