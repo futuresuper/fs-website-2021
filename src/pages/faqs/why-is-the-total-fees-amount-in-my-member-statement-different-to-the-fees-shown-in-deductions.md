@@ -1,8 +1,8 @@
 ---
 title: Why is the total fees amount in my member statement different to the fees
   shown in deductions?
-category: Fees
-order: 3
+category: Annual Statement
+order: 6
 layout: $/layouts/FaqPage.astro
 ---
 The investment fee, percentage-based administration fee and indirect cost ratios are accrued and reflected in the unit price when the unit price is calculated, and paid in arrears. These fees are not deducted directly from your account.\
