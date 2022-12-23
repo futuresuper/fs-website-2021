@@ -1,7 +1,7 @@
 ---
 title: Why did I receive a fee rebate?
-category: Fees
-order: 4
+category: Annual Statement
+order: 7
 layout: $/layouts/FaqPage.astro
 ---
 Under the Protecting Your Super legislation, accounts with a balance under $6,000 have a 3% fee cap. In order to comply with this legislation, the flat (dollar-based) administration fee is waived for accounts with balances under $6,000.
