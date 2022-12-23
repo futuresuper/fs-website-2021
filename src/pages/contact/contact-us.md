@@ -20,8 +20,6 @@ You may be able to find answers to your questions on our [Support & FAQs page](
 
 You can also find information about your account [online](https://my.futuresuper.com.au/)
 
-Otherwise, please feel free to send us an email to info@futuresuper.com.au. Our Member Advocacy team will continue to monitor our inbox during this time to assist with any urgent enquiries.
-
 O﻿ur team will not be available on National and NSW public holidays. 
 
 **Future Super** welcomes calls through the National Relay Service if you are deaf, hard of hearing and/or have a speech impairment. Choose your access option ([information here)](https://www.infrastructure.gov.au/media-communications-arts/phone/services-people-disability/accesshub/national-relay-service) and provide our phone number **1300 658 422** when asked by the relay officer.
