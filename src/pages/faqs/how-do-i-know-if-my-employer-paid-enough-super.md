@@ -1,7 +1,7 @@
 ---
 title: How do I know if my employer paid enough super?
-category: Managing your account
-order: 7
+category: Annual Statement
+order: 17
 layout: $/layouts/FaqPage.astro
 ---
 
