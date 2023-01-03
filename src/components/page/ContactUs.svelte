@@ -10,9 +10,8 @@
     </div>
   </div>
   <address>
-    <!-- <EndOfYearInfo />
-    <hr /> -->
-
+    <!-- <EndOfYearInfo /> -->
+    <hr />
     <h5>Email</h5>
     <a href="mailto:{contact.emailAddress}">{contact.emailAddress}</a>
     <p>
