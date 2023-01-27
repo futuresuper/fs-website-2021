@@ -1,10 +1,6 @@
 <script>
   import Clock from "../images/Clock.svelte";
   import { onMount } from "svelte";
-  const buttonCtaGroups = {
-    NEXT: "CTA Next", // Button with text of 'Next'
-    START: "CTA Start", // Button with text of 'Start'
-  };
 
   const infoBlockGroups = {
     CHECKLIST: "2023Jan Checklist", // Info on what you need to join
@@ -12,31 +8,18 @@
   };
 
   //Set its default to the orginal text
-  let buttonCtaGroup = buttonCtaGroups.NEXT;
   let infoBlockGroup = infoBlockGroups.CHECKLIST;
 
   onMount(async () => {
     const rand = Math.random();
-    buttonCtaGroup =
-            rand > 0.5
-                    ? buttonCtaGroups.NEXT
-                    : buttonCtaGroups.START;
 
-    const rand2 = Math.random();
     infoBlockGroup =
-            rand2 > 0.5
+            rand > 0.5
                     ? infoBlockGroups.CHECKLIST
                     : infoBlockGroups.NOCHECKLIST;
 
-    console.log(rand2)
 
-
-    //Track the button text display
-    analytics.track("JoinNow ViewedByABTestParticipant", {
-      buttonCtaGroup
-    });
-
-    //Track the button text display
+    //Track the details text display
     analytics.track("JoinNow ViewedByABTestParticipant", {
       infoBlockGroup
     });
@@ -74,11 +57,7 @@
   </p>
   <input type="text" id="referer" name="ReferCode" style="display:none" />
   <p>
-    {#if buttonCtaGroup === buttonCtaGroups.NEXT}
       <button type="submit" class="primary">Next →</button>
-    {:else}
-      <button type="submit" class="primary">Start →</button>
-    {/if}
   </p>
   <p class="disclaimer">
     ^ By providing your email address, you consent and authorise us to send you
