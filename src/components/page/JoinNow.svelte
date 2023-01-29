@@ -14,17 +14,13 @@
     const rand = Math.random();
 
     infoBlockGroup =
-            rand > 0.5
-                    ? infoBlockGroups.CHECKLIST
-                    : infoBlockGroups.NOCHECKLIST;
-
+      rand > 0.5 ? infoBlockGroups.CHECKLIST : infoBlockGroups.NOCHECKLIST;
 
     //Track the details text display
     analytics.track("JoinNow ViewedByABTestParticipant", {
-      infoBlockGroup
+      infoBlockGroup,
     });
   });
-
 </script>
 
 <form method="GET" action="https://join.futuresuper.com.au/">
@@ -40,7 +36,7 @@
         <li>Your Tax File Number</li>
         <li>Current super details for any funds you plan to transfer*</li>
       </ul>
-  </div>
+    </div>
   {/if}
   <p>
     <label
@@ -57,17 +53,20 @@
   </p>
   <input type="text" id="referer" name="ReferCode" style="display:none" />
   <p>
-      <button type="submit" class="primary">Next →</button>
+    <button type="submit" class="primary">Next →</button>
   </p>
   <p class="disclaimer">
-    ^ By providing your email address, you consent and authorise us to send you
-    communications or information, including information required by law, via
-    email or similar technologies. Your details will never be passed onto a
-    third party other than in accordance with our <a href="/privacy-policy"
-      >Privacy Policy</a
-    >. You can elect to receive communications by post at any time by contacting
-    Future Super on 1300 658 422 or via email at info@myfuturesuper.com.au or in
-    writing at PO Box 1282, Albury, NSW 2640.
+    {#if infoBlockGroup === infoBlockGroups.CHECKLIST}
+      * Please note that you don't need to rollover funds to create an account
+      with Future Super.<br /><br />
+    {/if}
+    ^ By providing your email address, you consent and authorise us to send you communications
+    or information, including information required by law, via email or similar technologies.
+    Your details will never be passed onto a third party other than in accordance
+    with our <a href="/privacy-policy">Privacy Policy</a>. You can elect to
+    receive communications by post at any time by contacting Future Super on
+    1300 658 422 or via email at info@myfuturesuper.com.au or in writing at PO
+    Box 1282, Albury, NSW 2640.
   </p>
 </form>
 
@@ -119,14 +118,14 @@
     font-size: 1.25rem;
   }
 
-  .info-block{
+  .info-block {
     margin-bottom: 1.75rem;
-    &__heading{
+    &__heading {
       font-size: 1.125rem;
       font-family: $heading;
       margin-bottom: 0.5rem;
     }
-    &__list{
+    &__list {
       font-size: 1rem;
       list-style: circle;
       margin-left: 1.187rem;
