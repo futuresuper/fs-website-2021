@@ -1,28 +1,26 @@
 <script>
   import Clock from "../images/Clock.svelte";
   import { onMount } from "svelte";
-  const buttonCtaGroups = {
-    NEXT: "CTA Next", // Button with text of 'Next'
-    START: "CTA Start", // Button with text of 'Start'
+
+  const infoBlockGroups = {
+    CHECKLIST: "2023Jan Checklist", // Info on what you need to join
+    NOCHECKLIST: "2023Jan No Checklist", // No info on what you need to join
   };
 
   //Set its default to the orginal text
-  let buttonCtaGroup = buttonCtaGroups.NEXT;
+  let infoBlockGroup = infoBlockGroups.CHECKLIST;
 
   onMount(async () => {
     const rand = Math.random();
-    buttonCtaGroup =
-            rand > 0.5
-                    ? buttonCtaGroups.NEXT
-                    : buttonCtaGroups.START;
 
+    infoBlockGroup =
+      rand > 0.5 ? infoBlockGroups.CHECKLIST : infoBlockGroups.NOCHECKLIST;
 
-    //Track the button text display
+    //Track the details text display
     analytics.track("JoinNow ViewedByABTestParticipant", {
-      buttonCtaGroup
+      infoBlockGroup,
     });
   });
-
 </script>
 
 <form method="GET" action="https://join.futuresuper.com.au/">
@@ -31,13 +29,15 @@
     <img src="/images/clock2.gif" alt="clock" class="clock" />
     <h4>Joining takes about 4 minutes.</h4>
   </div>
-  <div class="info-block">
-    <p class="info-block__heading">What you'll need</p>
-    <ul class="info-block__list">
-      <li>Your Tax File Number (TFN)</li>
-      <li>Your mobile phone</li>
-    </ul>
-  </div>
+  {#if infoBlockGroup === infoBlockGroups.CHECKLIST}
+    <div class="info-block">
+      <p class="info-block__heading">What you'll need</p>
+      <ul class="info-block__list">
+        <li>Your Tax File Number</li>
+        <li>Current super details for any funds you plan to transfer*</li>
+      </ul>
+    </div>
+  {/if}
   <p>
     <label
       >First Name<input
@@ -53,21 +53,20 @@
   </p>
   <input type="text" id="referer" name="ReferCode" style="display:none" />
   <p>
-    {#if buttonCtaGroup === buttonCtaGroups.NEXT}
-      <button type="submit" class="primary">Next →</button>
-    {:else}
-      <button type="submit" class="primary">Start →</button>
-    {/if}
+    <button type="submit" class="primary">Next →</button>
   </p>
   <p class="disclaimer">
-    ^ By providing your email address, you consent and authorise us to send you
-    communications or information, including information required by law, via
-    email or similar technologies. Your details will never be passed onto a
-    third party other than in accordance with our <a href="/privacy-policy"
-      >Privacy Policy</a
-    >. You can elect to receive communications by post at any time by contacting
-    Future Super on 1300 658 422 or via email at info@myfuturesuper.com.au or in
-    writing at PO Box 1282, Albury, NSW 2640.
+    {#if infoBlockGroup === infoBlockGroups.CHECKLIST}
+      * Please note that you don't need to rollover funds to create an account
+      with Future Super.<br /><br />
+    {/if}
+    ^ By providing your email address, you consent and authorise us to send you communications
+    or information, including information required by law, via email or similar technologies.
+    Your details will never be passed onto a third party other than in accordance
+    with our <a href="/privacy-policy">Privacy Policy</a>. You can elect to
+    receive communications by post at any time by contacting Future Super on
+    1300 658 422 or via email at info@myfuturesuper.com.au or in writing at PO
+    Box 1282, Albury, NSW 2640.
   </p>
 </form>
 
@@ -119,14 +118,14 @@
     font-size: 1.25rem;
   }
 
-  .info-block{
+  .info-block {
     margin-bottom: 1.75rem;
-    &__heading{
+    &__heading {
       font-size: 1.125rem;
       font-family: $heading;
       margin-bottom: 0.5rem;
     }
-    &__list{
+    &__list {
       font-size: 1rem;
       list-style: circle;
       margin-left: 1.187rem;
