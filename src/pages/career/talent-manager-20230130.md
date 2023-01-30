@@ -1,7 +1,7 @@
 ---
 title: Talent Manager
 startDate: 2023-01-30T07:25:55.774Z
-endDate: 2023-02-13T07:25:55.787Z
+endDate: 2023-02-14T07:25:55.787Z
 layout: $/layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere within Australia
