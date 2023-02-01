@@ -29,7 +29,7 @@
     <li>14 weeks paid parental leave</li>
     <li>Flexible working arrangements</li>
 
-    <li>Additional super for staff earning under $80,000 p.a.</li>
+    <li>Additional super for staff earning under $120,000 p.a.</li>
     <li>Safe and inclusive place for LGBTQIA+ and non-binary employees</li>
   </ul>
 </article>
