@@ -61,12 +61,12 @@ Don’t tick all the boxes? That’s okay, we like thinking outside the box. We 
 * [AFR’s Best Place to Work 2022](https://www.afr.com/work-and-careers/workplace/employee-benefits-catapult-future-super-to-the-top-of-the-ladder-20220421-p5af6m) for the banking, superannuation and financial services sector 
 * The choice to work from home, from one of our [co-working spaces](https://www.hubaustralia.com/), from anywhere within Australia or even from overseas (for a short period of time)
 * Team lunches and company-wide events
-* Progressive, people-focused policies and benefits including Menstrual and Menopausal Leave, Mental Health Leave and Gender Affirmation Guidelines and Leave (you can check them out [here](https://www.futuresuper.com.au/purpose/))
+* Progressive, people-focused policies and benefits including Menstrual and Menopausal Leave, Mental Health Leave and Gender Affirmation Guidelines and Leave
 * We offer employee network groups for people from diverse backgrounds: SuperGenders for cisgender women, trans men and women and  non-binary folks; SuperGlobal for culturally diverse folks; and SuperPride for LGBTQIA+ folks. The groups are a safe, supportive space for people to share experiences and ideas  
 * 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, and membership to Bicycle NSW (or your State or Territory’s equivalent) as part of our sustainable transport policy
 * Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
 
-The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
+The [application](https://app.beapplied.com/apply/9stqwri51w) will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
 
 We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D).
 
