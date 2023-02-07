@@ -11,21 +11,16 @@
 
   onMount(async () => {
     const rand = Math.random();
-    buttonCtaGroup =
-            rand > 0.5
-                    ? buttonCtaGroups.NEXT
-                    : buttonCtaGroups.START;
-
+    buttonCtaGroup = rand > 0.5 ? buttonCtaGroups.NEXT : buttonCtaGroups.START;
 
     //Track the button text display
     analytics.track("JoinNow ViewedByABTestParticipant", {
-      buttonCtaGroup
+      buttonCtaGroup,
     });
   });
-
 </script>
 
-<form method="GET" action="https://join.futuresuper.com.au/">
+<form method="GET" action="https://join.fsstaging.com.au/">
   <h1>Join Future Super</h1>
   <div class="time-row">
     <img src="/images/clock2.gif" alt="clock" class="clock" />
@@ -119,14 +114,14 @@
     font-size: 1.25rem;
   }
 
-  .info-block{
+  .info-block {
     margin-bottom: 1.75rem;
-    &__heading{
+    &__heading {
       font-size: 1.125rem;
       font-family: $heading;
       margin-bottom: 0.5rem;
     }
-    &__list{
+    &__list {
       font-size: 1rem;
       list-style: circle;
       margin-left: 1.187rem;
