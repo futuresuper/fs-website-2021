@@ -22,7 +22,9 @@
         {@html policy.description}
       </p>
     </div>
-    <a class="button" href={policy.link}> Steal Our Policy </a>
+    {#if policy.link}
+      <a class="button" href={policy.link}> Steal Our Policy </a>
+    {/if}
   {/if}
 </div>
 
