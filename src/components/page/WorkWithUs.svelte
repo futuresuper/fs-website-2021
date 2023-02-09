@@ -37,7 +37,7 @@
               </div>
             </div>
           </div>
-          <div style="width: 70px">
+          <div class="arrow">
             <Arrow direction="right" />
           </div>
         </div>
@@ -94,7 +94,7 @@
   <h3 style="padding-right: 80px">
     Here’s what you can expect from working at Future Super Group…
   </h3>
-  <div style="padding-left: 80px">
+  <div class="expect-text">
     <p>
       As a Future Super Group employee you’ll be working to build a future free
       from climate change and inequality. Working for a purpose driven business
@@ -228,6 +228,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     margin-bottom: 80px;
+    .expect-text {
+      padding-left: 80px;
+    }
   }
 
   .box {
@@ -253,5 +256,52 @@
     background-color: $black100;
     border-radius: 40px;
     padding: 40px 20px;
+  }
+
+  .arrow {
+    width: 70px;
+  }
+
+  @media (max-width: 700px) {
+    .career-details {
+      grid-template-columns: 1fr;
+    }
+
+    .career-item {
+      padding: 0;
+      border-right: none;
+    }
+
+    .career {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .arrow {
+      width: 30px;
+    }
+
+    article {
+      grid-template-columns: 1fr;
+    }
+
+    .what-expect {
+      grid-template-columns: 1fr;
+      .expect-text {
+        padding-left: 0px;
+      }
+    }
+
+    .box {
+      .logo {
+        height: 200px;
+      }
+    }
+
+    .marquee-container {
+      width: calc(100% + 40px);
+      margin: 0 -20px;
+    }
   }
 </style>
