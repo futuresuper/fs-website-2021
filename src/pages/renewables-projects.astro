@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "$/layouts/BaseLayout.astro";
-import RenewablesProjects from "$/components/page/RenewablesProjects/RenewablesProjects.svelte";
+import RenewablesProjects from "../components/page/RenewablesProjects/RenewablesProjects.svelte";
 ---
 
 <BaseLayout
@@ -10,5 +10,5 @@ import RenewablesProjects from "$/components/page/RenewablesProjects/RenewablesP
   hidePageHeader
   noContainer
 >
-  <RenewablesProjects />
+  <RenewablesProjects client:load />
 </BaseLayout>

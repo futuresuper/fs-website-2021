@@ -163,11 +163,31 @@
 
   .card-container {
     padding: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .card-container {
+      padding: 80px 0px;
+    }
   }
 </style>
