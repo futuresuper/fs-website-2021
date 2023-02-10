@@ -48,9 +48,9 @@ We prioritise giving our business to Aboriginal and/or Torres Strait Islander ow
       link: "https://drive.google.com/drive/folders/1tcvhHbQjkDDSN78qV-bMKzmdjMpHC7vU",
     },
     {
-      title: "Inclusive language policy",
+      title: "Inclusive Language Guide",
       description: `Future Super has an inclusive language guide which is constantly updated. The guide forms part of onboarding for all new employees and all employees are encouraged to provide feedback on it. Thinking about inclusive language is one of the ways Future Super aims to uphold its values and ethics. Showing consideration around language is one of the ways all businesses can create a more inclusive culture. The inclusive language guide is frequently updated and we are always learning and open to suggestions in this department. `,
-      link: "https://docs.google.com/document/d/1oMR6EA6thsWsnN61om5EbGajodXNMYaEroFFHMfS6Gc/edit",
+      link: "https://myfuturesuper.atlassian.net/wiki/spaces/Public/pages/1836285953/Inclusive+Language+Guide",
     },
     {
       title: "Anti-racism policy",
