@@ -2,6 +2,9 @@
   import Title from "./Title.svelte";
   import Logo from "../../images/Logo.svelte";
   import ProjectCard from "./ProjectCard.svelte";
+  import LikeCard from "./LikeCard.svelte";
+  import AppDownloadCard from "./AppDownloadCard.svelte";
+  import QrCodeCard from "./QrCodeCard.svelte";
 
   const projects = [
     {
@@ -117,6 +120,9 @@
         {#each projects as project}
           <ProjectCard {project} />
         {/each}
+        <LikeCard />
+        <AppDownloadCard />
+        <QrCodeCard />
       </div>
     </div>
   </div>

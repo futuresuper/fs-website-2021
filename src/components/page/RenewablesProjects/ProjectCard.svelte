@@ -3,6 +3,7 @@
   import Lightning from "../../images/Lightning.svelte";
   import ProjectFullScreen from "./ProjectFullScreen.svelte";
   import Expand from "../../images/Expand.svelte";
+  import Card from "./Card.svelte";
 
   export let project;
 
@@ -15,7 +16,7 @@
   <ProjectFullScreen {project} onClose={() => (fullScreen = false)} />
 {/if}
 
-<div on:click={() => (fullScreen = true)} class="card">
+<Card onClick={() => (fullScreen = true)}>
   <h3>{project.projectName}</h3>
   <div>
     <div class="image-container">
@@ -41,7 +42,7 @@
       </div>
     </div>
   </div>
-</div>
+</Card>
 
 <style lang="scss">
   @use "../../../styles/" as *;
