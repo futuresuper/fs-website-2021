@@ -18,7 +18,7 @@
 
 <Card onClick={() => (fullScreen = true)}>
   <h3>{project.projectName}</h3>
-  <div>
+  <div style="width: 100%">
     <div class="image-container">
       <img src={project.mainImageUrl} alt={project.projectName} />
     </div>
@@ -47,27 +47,15 @@
 <style lang="scss">
   @use "../../../styles/" as *;
 
-  .card {
-    width: 100%;
-    height: 100%;
-    background-color: $black;
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid $black600;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
   h3 {
     color: $green;
     font-family: $regular;
+    width: 100%;
   }
 
   .image-container {
     width: 100%;
-    height: 300px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,8 +77,10 @@
 
   .footer {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: flex-end;
+    min-height: 48px;
   }
 
   .row {

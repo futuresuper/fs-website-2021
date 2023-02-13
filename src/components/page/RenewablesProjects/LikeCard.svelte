@@ -41,6 +41,7 @@
     margin: 0;
     text-transform: uppercase;
     font-size: 12px;
+    width: 100%;
   }
 
   .like-container {

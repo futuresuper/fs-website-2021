@@ -1,8 +1,14 @@
 <script>
   export let onClick;
+
+  export let style = "";
 </script>
 
-<div on:click={onClick} class="card" style={onClick ? "cursor: pointer" : null}>
+<div
+  on:click={onClick}
+  class="card"
+  style="{onClick ? 'cursor: pointer' : null}; {style}"
+>
   <slot />
 </div>
 
@@ -11,7 +17,7 @@
 
   .card {
     width: 100%;
-    height: 100%;
+    min-height: 440px;
     background-color: $black;
     border-radius: 20px;
     padding: 20px;
@@ -19,5 +25,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 </style>

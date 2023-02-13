@@ -85,18 +85,6 @@
     cursor: pointer;
   }
 
-  .card {
-    width: 100%;
-    height: 100%;
-    background-color: $black;
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid $black600;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .inner-scroll {
     max-width: 480px;
     margin: 0 auto;
@@ -161,5 +149,15 @@
     justify-content: space-between;
     width: 100%;
     text-decoration: none;
+  }
+
+  @media (max-width: 480px) {
+    .full-screen {
+      padding: 80px 20px;
+    }
+
+    .close-button {
+      right: 30px;
+    }
   }
 </style>
