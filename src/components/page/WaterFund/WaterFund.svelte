@@ -1,4 +1,6 @@
 <script>
+  import Frogs from "./Frogs.svelte";
+  import GetTheApp from "./GetTheApp.svelte";
   import Impact from "./Impact.svelte";
   import ImpactDetails from "./ImpactDetails.svelte";
   import Title from "./Title.svelte";
@@ -11,6 +13,8 @@
   <Impact />
 </div>
 <ImpactDetails />
+<Frogs />
+<GetTheApp />
 
 <style lang="scss">
   @use "../../../styles/" as *;
