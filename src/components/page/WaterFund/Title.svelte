@@ -19,7 +19,7 @@
 
   section {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,6 +41,6 @@
     color: $black500;
     text-align: center;
     margin: 0;
-    font-size: 11px;
+    font-size: 16px;
   }
 </style>

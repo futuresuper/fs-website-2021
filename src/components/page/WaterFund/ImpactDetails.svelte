@@ -1,3 +1,14 @@
+<script>
+  import { onMount } from "svelte";
+
+  let vid;
+
+  onMount(() => {
+    console.log("PLAY");
+    vid.play;
+  });
+</script>
+
 <div style="position: relative; overflow: hidden">
   <div class="blob" />
   <section>
@@ -27,7 +38,7 @@
     <div class="square">
       <p class="small num">02-03</p>
       <!-- svelte-ignore a11y-media-has-caption -->
-      <video autoplay loop>
+      <video autoplay loop muted playsinline bind:this={vid}>
         <source
           src="https://res.cloudinary.com/future-super/video/upload/v1670289689/impact-wrapped-2022/waterfund_03_video_small_2.mp4"
           type="video/mp4"
@@ -77,10 +88,10 @@
   }
 
   .square {
+    min-height: 80vh;
     position: relative;
     border: 1px solid $black800;
     border-bottom: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +144,7 @@
     }
 
     .square {
-      min-height: 80vw;
+      min-height: 120vw;
       align-items: center;
       &:nth-of-type(even) {
         border-left: 1px solid $black800;

@@ -1,6 +1,11 @@
 <section>
   <!-- svelte-ignore a11y-media-has-caption -->
-  <video controls loop>
+  <video
+    controls
+    loop
+    playsinline
+    poster="https://res.cloudinary.com/future-super/image/upload/v1670290962/impact-wrapped-2022/frog-video-poster.png"
+  >
     <source
       src="https://res.cloudinary.com/future-super/video/upload/v1669593620/impact-wrapped-2022/frog-video-cropped.mp4"
       type="video/mp4"

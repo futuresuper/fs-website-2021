@@ -16,7 +16,7 @@
   section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@
   }
 
   h2 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: $regular;
     color: $black400;
     text-transform: uppercase;
@@ -41,10 +41,10 @@
   }
 
   p {
-    font-size: 28px;
+    font-size: 48px;
     color: $white;
     text-align: center;
-    max-width: 500px;
+    max-width: 800px;
     span {
       color: $green;
     }
@@ -62,5 +62,11 @@
     position: absolute;
     top: 0;
     opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 32px;
+    }
   }
 </style>

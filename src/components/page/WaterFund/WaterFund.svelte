@@ -7,11 +7,10 @@
   import WhatItDoes from "./WhatItDoes.svelte";
 </script>
 
-<div class="bg">
-  <Title />
-  <WhatItDoes />
-  <Impact />
-</div>
+<div class="bg" />
+<Title />
+<WhatItDoes />
+<Impact />
 <ImpactDetails />
 <Frogs />
 <GetTheApp />
@@ -21,12 +20,19 @@
 
   .bg {
     width: 100%;
+    height: 100vh;
     background: url("https://res.cloudinary.com/future-super/image/upload/v1676262740/water-bg.png");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center top;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    .bg {
+      background-attachment: scroll;
+    }
   }
 </style>

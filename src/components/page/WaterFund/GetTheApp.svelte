@@ -92,7 +92,7 @@
     }
 
     .square {
-      min-height: 50vw;
+      min-height: 120vw;
       align-items: center;
       &:nth-of-type(even) {
         border-left: 1px solid $black800;
