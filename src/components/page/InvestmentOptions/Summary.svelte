@@ -4,7 +4,7 @@
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
   import Plus from "../../images/Plus.svelte";
-  import pages from "../../../data/pages.json";
+  import pages from "@data/pages.json";
 
   const green = "#3dfa52";
   const blue = "#0A5AFF";

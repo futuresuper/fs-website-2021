@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import UnitPrices from "@components/page/UnitPrices.svelte";
-import unitPrices from "../data/unitPrices.json";
+import unitPrices from "@data/unitPrices.json";
 import moment from "moment";
 
 const asAtDate = moment(unitPrices[0].effective_date).format("D MMMM YYYY");

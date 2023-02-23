@@ -1,10 +1,10 @@
 <script>
   import MagnifyingGlass from "../images/MagnifyingGlass.svelte";
-  import investments from "../../data/investments.json";
-  import countries from "../../data/countries.json";
-  import companyTypes from "../../data/companyTypes.json";
-  import investmentOptions from "../../data/investmentOptions.json";
-  import assetClasses from "../../data/assetClasses.json";
+  import investments from "@data/investments.json";
+  import countries from "@data/countries.json";
+  import companyTypes from "@data/companyTypes.json";
+  import investmentOptions from "@data/investmentOptions.json";
+  import assetClasses from "@data/assetClasses.json";
   import { flag } from "country-emoji";
   import Document from "../page/DocumentsAndForms/Document.svelte";
 
@@ -181,7 +181,8 @@
       {@html resultDescription}
     </p>
     <p class="disclaimer">
-      The values shown are estimates based on the underlying investments in all of the Fund's investment options. Investments marked with an asterisk are
+      The values shown are estimates based on the underlying investments in all
+      of the Fund's investment options. Investments marked with an asterisk are
       held indirectly via Exchange Traded Funds (ETFs).
     </p>
   </div>

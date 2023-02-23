@@ -1,7 +1,7 @@
 <script>
   import CircleAroundText from "../ui/CircleAroundText.svelte";
   import SwitchShakeCircle from "../images/SwitchShakeCircle.svelte";
-  import pages from "../../data/pages.json";
+  import pages from "@data/pages.json";
 </script>
 
 <CircleAroundText

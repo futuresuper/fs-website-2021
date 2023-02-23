@@ -1,5 +1,5 @@
 <script>
-  import pages from "../../../data/pages.json";
+  import pages from "@data/pages.json";
 
   export let menu;
 

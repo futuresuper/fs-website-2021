@@ -1,6 +1,6 @@
 <script>
   import DiagArrow from "../../images/DiagArrow.svelte";
-  import pages from "../../../data/pages.json";
+  import pages from "@data/pages.json";
 </script>
 
 <div class="container">

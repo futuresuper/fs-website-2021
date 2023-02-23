@@ -1,8 +1,8 @@
 <script>
   import HeaderRow from "./HeaderRow.svelte";
   import Tick from "../../images/Tick.svelte";
-  import investmentOptions from "../../../data/investmentOptions.json";
-  import returns from "../../../data/performanceReturns.json";
+  import investmentOptions from "@data/investmentOptions.json";
+  import returns from "@data/performanceReturns.json";
   import moment from "moment";
 
   export let pension = false;

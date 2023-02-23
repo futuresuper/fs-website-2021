@@ -1,5 +1,5 @@
 <script>
-  import screens from "../../../data/screens.json";
+  import screens from "@data/screens.json";
   import Carat from "../../images/Carat.svelte";
   import CrossCircle from "../../images/CrossCircle.svelte";
 
@@ -46,7 +46,9 @@
         effect on climate change and equality while also reflecting our broader
         investment and risk management strategies. For more information on
         Future Super’s impact strategy, screening guideline for each asset, and
-        specific thresholds for each screen, click <a href="/impact-screening-strategy">here</a>.
+        specific thresholds for each screen, click <a
+          href="/impact-screening-strategy">here</a
+        >.
       </p>
     </div>
     <div class="screen-example">

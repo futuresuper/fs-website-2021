@@ -1,7 +1,7 @@
 <script>
   import Faq from "./Faq.svelte";
   import MagnifyingGlass from "../../images/MagnifyingGlass.svelte";
-  import categories from "../../../data/faqCategories.json";
+  import categories from "@data/faqCategories.json";
   export let faqs;
   let searchText = "";
   let searchMode = false;
