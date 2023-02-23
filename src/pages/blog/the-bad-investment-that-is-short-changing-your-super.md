@@ -2,7 +2,7 @@
 title: "The bad investment that is short-changing your super"
 slug: the-bad-investment-that-is-short-changing-your-super
 date: 2019-02-05T19:17:14.241Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Divestment
   - Disruption

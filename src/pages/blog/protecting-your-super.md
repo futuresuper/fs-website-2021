@@ -2,7 +2,7 @@
 title: "Protecting Your Super"
 slug: protecting-your-super
 date: 2019-07-12T03:19:34.816Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - News

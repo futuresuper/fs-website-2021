@@ -2,7 +2,7 @@
 title: "Why Westpac Caved On Adani, And What We Need To Do Next"
 slug: why-westpac-caved-on-adani-and-what-we-need-to-do-next
 date: 2019-02-06T10:08:07.527Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Michael Bones

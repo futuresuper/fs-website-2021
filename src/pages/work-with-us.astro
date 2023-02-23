@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "$/layouts/BaseLayout.astro";
-import WorkWithUs from "../components/page/WorkWithUs.svelte";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import WorkWithUs from "@components/page/WorkWithUs.svelte";
 import moment from "moment";
 
-let careers = Astro.fetchContent("$/pages/career/*.md");
+let careers = await Astro.glob("@pages/career/*.md");
 careers = careers.sort(
   (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf()
 );

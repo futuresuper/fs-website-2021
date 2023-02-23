@@ -11,7 +11,9 @@
     matchingFaqs = [];
     searchMode = true;
     faqs.map((f) => {
-      if (f.title.toUpperCase().includes(searchText.toUpperCase())) {
+      if (
+        f.frontmatter.title.toUpperCase().includes(searchText.toUpperCase())
+      ) {
         matchingFaqs = [...matchingFaqs, f];
       }
     });
@@ -41,7 +43,7 @@
           <div class="category-container">
             <h2>{category}</h2>
             {#each faqs as faq}
-              {#if category === faq.category}
+              {#if category === faq.frontmatter.category}
                 <div class="faq-container">
                   <Faq {faq} />
                 </div>

@@ -2,7 +2,7 @@
 title: "How de-identified recruitment is improving the diversity of our team"
 slug: how-de-identified-recruitment-is-improving-the-diversity-of-our-team
 date: 2021-01-18T00:20:01.928Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Equality
   - News

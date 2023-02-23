@@ -3,7 +3,7 @@ title: "How does super work for temporary residents of Australia?"
 slug: how-does-super-work-for-temporary-residents-of-australia
 date: 2020-07-27T22:38:18Z
 category: General
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 89
 ---
 

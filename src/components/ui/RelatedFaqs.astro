@@ -1,13 +1,13 @@
 ---
-  import Faq from "../page/SupportAndFaqs/Faq.svelte";
-  const { heading, category } = Astro.props;
-  let allFaqs = Astro.fetchContent('$/pages/faqs/*.md');
-  let faqs = [];
-  allFaqs.map(f => {
-    if (f.category === category) {
-      faqs.push(f);
-    }
-  })
+import Faq from "../page/SupportAndFaqs/Faq.svelte";
+const { heading, category } = Astro.props;
+let allFaqs = await Astro.glob("@pages/faqs/*.md");
+let faqs = [];
+allFaqs.map((f) => {
+  if (f.category === category) {
+    faqs.push(f);
+  }
+});
 ---
 
 <style lang="scss">
@@ -21,7 +21,5 @@
 
 <aside>
   <h2>{heading ? heading : "Related FAQs"}</h2>
-  {faqs.map(f => <Faq client:load faq={f} />)}
+  {faqs.map((f) => <Faq client:load faq={f} />)}
 </aside>
-
-

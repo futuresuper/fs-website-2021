@@ -2,7 +2,7 @@
 title: " Future Super awarded ‘Best Super Fund’ by leading climate advocates"
 slug: future-super-awarded-best-super-fund-by-leading-climate-advocates
 date: 2019-02-05T12:52:19.573Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Community
 author: Michael Bones

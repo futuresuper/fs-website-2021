@@ -29,7 +29,7 @@
       <div class="category">
         <h4 id={slug(category)}>{category}</h4>
         {#each docs as doc}
-          {#if doc.category === category}
+          {#if doc.frontmatter.category === category}
             <Document {doc} />
           {/if}
         {/each}

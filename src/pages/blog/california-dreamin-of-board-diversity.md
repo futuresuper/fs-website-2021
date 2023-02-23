@@ -2,7 +2,7 @@
 title: "California Dreamin’ (of board diversity)"
 slug: california-dreamin-of-board-diversity
 date: 2019-02-05T18:54:59.912Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Politics
   - Activism

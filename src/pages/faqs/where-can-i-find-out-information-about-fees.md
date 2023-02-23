@@ -3,7 +3,7 @@ title: "Where can I find out information about fees?"
 slug: where-can-i-find-out-information-about-fees
 date: 2020-08-18T00:31:30Z
 category: Fees
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 78
 ---
 

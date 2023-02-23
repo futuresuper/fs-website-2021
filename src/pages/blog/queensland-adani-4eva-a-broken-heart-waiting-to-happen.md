@@ -2,7 +2,7 @@
 title: "Queensland + Adani 4EVA: A broken heart waiting to happen."
 slug: queensland-adani-4eva-a-broken-heart-waiting-to-happen
 date: 2019-02-06T12:15:03.613Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Disruption

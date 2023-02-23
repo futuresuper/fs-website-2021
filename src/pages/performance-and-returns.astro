@@ -1,31 +1,38 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import PerformanceAndReturns from '../components/page/PerformanceAndReturns.svelte'
-import returns from "$/data/performanceReturns.json";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PerformanceAndReturns from "@components/page/PerformanceAndReturns.svelte";
+import returns from "../data/performanceReturns.json";
 import moment from "moment";
 
-import pages from '../data/pages.json'
+import pages from "../data/pages.json";
 const relatedPages = [
   pages.UNIT_PRICES,
   pages.INVESTMENT_OPTIONS,
   pages.HOW_WE_INVEST,
   pages.EVERYTHING_WE_INVEST_IN,
-  pages.PENSION_FUND
-]
+  pages.PENSION_FUND,
+];
 
-const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY")
+const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY");
 
-let faqs = Astro.fetchContent('$/pages/faqs/*.md');
+let faqs = await Astro.glob("@pages/faqs/*.md");
 let performanceFaqs = [];
-faqs.map(f => {
-  if (f.category === "Investments and returns" || f.category === "Market volatility") {
+faqs.map((f) => {
+  if (
+    f.category === "Investments and returns" ||
+    f.category === "Market volatility"
+  ) {
     performanceFaqs.push(f);
   }
-})
+});
 ---
 
-<BaseLayout title="Performance and Returns"
+<BaseLayout
+  title="Performance and Returns"
   description="See the competitive performance of our funds over the short, medium and long term."
-  pageDescription={desc} noContainer relatedPages={relatedPages}>
+  pageDescription={desc}
+  noContainer
+  relatedPages={relatedPages}
+>
   <PerformanceAndReturns client:load faqs={performanceFaqs} />
 </BaseLayout>

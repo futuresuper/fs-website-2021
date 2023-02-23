@@ -3,7 +3,7 @@ title: "Difference between binding and non-binding nominations"
 slug: difference-between-binding-and-non-binding-nominations
 date: 2020-08-19T06:29:32Z
 category: Beneficiaries
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 119
 ---
 

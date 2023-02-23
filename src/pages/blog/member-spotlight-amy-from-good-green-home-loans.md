@@ -2,7 +2,7 @@
 title: "Member Spotlight: Amy from Good Green Home Loans"
 slug: member-spotlight-amy-from-good-green-home-loans
 date: 2019-04-17T02:25:24.004Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Member stories
   - Community

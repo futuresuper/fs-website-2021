@@ -2,7 +2,7 @@
 title: "Future Super's COVID-19 response"
 slug: covid-19-response
 date: 2020-07-13T08:16:58.372Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
 author: Kirstin Hunter
 canonical:

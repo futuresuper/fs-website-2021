@@ -3,7 +3,7 @@ title: Senior Developer
 startDate: 2021-04-16T00:29:09.917Z
 endDate: 2021-04-26T00:29:09.969Z
 location: Sydney/ Canberra Preferred
-layout: $/layouts/Career.astro
+layout: @layouts/Career.astro
 salary: $135,000 - $140,000 + super
 applicationUrl: https://app.beapplied.com/apply/rt1zu9efdm
 summary: Join our team and help us move Australia's money out of fossil fuels

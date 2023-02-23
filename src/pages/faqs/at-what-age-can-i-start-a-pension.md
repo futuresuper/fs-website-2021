@@ -3,7 +3,7 @@ title: "At what age can I start a pension?"
 slug: at-what-age-can-i-start-a-pension
 date: 2020-10-02T01:31:34Z
 category: Pension
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 6
 ---
 

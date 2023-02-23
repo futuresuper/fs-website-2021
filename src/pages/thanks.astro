@@ -1,11 +1,8 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import Thanks from '../components/page/Thanks.svelte'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Thanks from "@components/page/Thanks.svelte";
 ---
 
-<BaseLayout
-  title="Thanks"
-  hideDescription
->
+<BaseLayout title="Thanks" hideDescription>
   <Thanks client:load />
 </BaseLayout>

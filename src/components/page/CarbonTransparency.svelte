@@ -1,5 +1,5 @@
 <script>
-  import Document from "../../components/page/DocumentsAndForms/Document.svelte";
+  import Document from "@components/page/DocumentsAndForms/Document.svelte";
 
   export let doc;
 </script>

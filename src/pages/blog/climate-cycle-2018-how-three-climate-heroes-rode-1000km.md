@@ -2,7 +2,7 @@
 title: "How three climate heroes rode 1000km to address the elephant in the (Parliamentary) room"
 slug: climate-cycle-2018-how-three-climate-heroes-rode-1000km
 date: 2019-02-05T18:30:49.028Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Community
   - Divestment

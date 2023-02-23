@@ -2,7 +2,7 @@
 title: "NYC vs Fossil Fuels: the Big Apple’s clever plan to take down Big Polluters"
 slug: nyc-vs-fossil-fuels-the-big-apples-clever-plan-to-take-down-big-polluters
 date: 2019-02-06T09:14:17.951Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Disruption
 author: Michael Bones

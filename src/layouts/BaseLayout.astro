@@ -1,7 +1,9 @@
 ---
-import Header from "../components/ui/Header/Header.svelte";
-import Footer from "../components/ui/Footer.svelte";
-import RelatedPages from "../components/ui/RelatedPages.svelte";
+import Header from "@components/ui/Header/Header.svelte";
+import Footer from "@components/ui/Footer.svelte";
+import RelatedPages from "@components/ui/RelatedPages.svelte";
+import "../styles/global.scss";
+
 const {
   title,
   image,
@@ -162,8 +164,7 @@ const seoDescription = description
   sizes="180x180"
 />
 
-<link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}" />
-<script>
+<script is:inline>
   // prettier-ignore
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ";;analytics.SNIPPET_VERSION="4.15.3";
       analytics.load("eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ");
@@ -233,5 +234,5 @@ const seoDescription = description
     {relatedPages && <RelatedPages relatedPages={relatedPages} />}
   </main>
   <Footer client:visible />
-  <script src="/scripts/tracking.js"></script>
+  <script is:inline src="/scripts/tracking.js"></script>
 </body>

@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import ContactUs from '../components/page/ContactUs.svelte'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ContactUs from "@components/page/ContactUs.svelte";
 
-let contactPage = Astro.fetchContent('$/pages/contact/contact-us.md');
+let contactPage = await Astro.glob("@pages/contact/contact-us.md");
 const content = contactPage[0];
 ---
 

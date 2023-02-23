@@ -2,7 +2,7 @@
 title: "Not Even Dutton Can Save Coal"
 slug: not-even-dutton-can-save-coal
 date: 2019-02-05T18:59:48.568Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Divestment
   - Ethical Investing

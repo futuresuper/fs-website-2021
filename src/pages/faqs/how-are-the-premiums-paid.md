@@ -3,7 +3,7 @@ title: "How are the premiums paid?"
 slug: how-are-the-premiums-paid
 date: 2020-08-27T00:03:55Z
 category: Insurance
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 48
 ---
 

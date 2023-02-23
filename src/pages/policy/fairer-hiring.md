@@ -2,7 +2,7 @@
 title: Fairer hiring
 slug: fairer-hiring
 order: 1
-layout: $/layouts/PolicyPage
+layout: @layouts/PolicyPage
 downloadLink: "/fairer-hiring"
 ---
 

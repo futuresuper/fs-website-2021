@@ -3,7 +3,7 @@ title: "What are my fees paying for?"
 slug: what-are-my-fees-paying-for
 date: 2021-06-30T05:22:30Z
 category: Fees
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 117
 ---
 

@@ -2,7 +2,7 @@
 title: "Giving it back"
 slug: giving-it-back
 date: 2020-07-14T07:43:01.141Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - News
 author: James Wanjura

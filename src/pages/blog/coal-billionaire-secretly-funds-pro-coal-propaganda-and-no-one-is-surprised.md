@@ -2,7 +2,7 @@
 title: "Coal Billionaire Secretly Funds Pro-Coal Propaganda, And No One Is Surprised"
 slug: coal-billionaire-secretly-funds-pro-coal-propaganda-and-no-one-is-surprised
 date: 2019-02-05T19:12:33.184Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - Disruption

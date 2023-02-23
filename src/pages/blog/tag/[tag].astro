@@ -1,21 +1,21 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import BlogList from '../../../components/page/Blog/BlogList.svelte'
-import slug from '../../../components/scripts/slug.js'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/page/Blog/BlogList.svelte";
+import slug from "@components/scripts/slug.js";
 
-export async function getStaticPaths({paginate}) {
-  const allPosts = Astro.fetchContent('$/pages/blog/*.md');
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob("@pages/blog/*.md");
   let allTags = [];
-  allPosts.map(p => {
+  allPosts.map((p) => {
     if (p.tags) {
-      p.tags.map(t => {
+      p.tags.map((t) => {
         allTags.push(slug(t));
       });
-    };
+    }
   });
-  let allTagsUnique = [...new Set(allTags)]
+  let allTagsUnique = [...new Set(allTags)];
 
-  return allTagsUnique.map(tag => ({params: {tag}, props: {allPosts}}));
+  return allTagsUnique.map((tag) => ({ params: { tag }, props: { allPosts } }));
 }
 
 const { allPosts } = Astro.props;
@@ -23,7 +23,9 @@ const { params } = Astro.request;
 
 /** filter posts by author, sort by date */
 const posts = allPosts
-  .filter((post) => post.tags ? slug(post.tags.join()).includes(params.tag) : false)
+  .filter((post) =>
+    post.tags ? slug(post.tags.join()).includes(params.tag) : false
+  )
   .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 

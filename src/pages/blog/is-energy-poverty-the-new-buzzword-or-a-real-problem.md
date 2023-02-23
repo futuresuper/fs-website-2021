@@ -2,7 +2,7 @@
 title: "Is Energy Poverty the new buzzword or a real problem?"
 slug: is-energy-poverty-the-new-buzzword-or-a-real-problem
 date: 2019-02-05T18:22:06.043Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Tara James

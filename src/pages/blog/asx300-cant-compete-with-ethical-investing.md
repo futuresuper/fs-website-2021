@@ -2,7 +2,7 @@
 title: "ASX300 can’t compete with ethical investing"
 slug: asx300-cant-compete-with-ethical-investing
 date: 2019-02-05T18:20:25.717Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - Superannuation

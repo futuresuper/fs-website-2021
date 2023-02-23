@@ -4,7 +4,7 @@ slug: how-do-i-get-my-employer-to-pay-contributions-to-future-super
 date: 2020-08-13T05:15:56.000Z
 category: Contributions and payments to your super
 order: 2
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 ---
 
 When you join Future Super we’ll send you an email which you can forward to your employer. It will have all the details to help them make payments to your account.

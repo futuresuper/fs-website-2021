@@ -3,7 +3,7 @@ title: "Who can I nominate as a binding beneficiary? "
 slug: who-can-i-nominate-as-a-binding-beneficiary
 date: 2021-09-07T01:27:29Z
 category: Beneficiaries
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 41
 ---
 

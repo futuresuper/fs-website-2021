@@ -2,7 +2,7 @@
 title: "Investing in the Explosion of Data, the Clean Energy Way (NEXTDC Profile)"
 slug: investing-in-the-explosion-of-data-the-clean-energy-way-nextdc-profile
 date: 2019-02-06T12:35:24.467Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
 author: Michael Bones

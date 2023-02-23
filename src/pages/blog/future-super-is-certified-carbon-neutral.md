@@ -2,7 +2,7 @@
 title: Future Super is certified carbon neutral
 date: 2021-11-03T00:16:22.387Z
 image: https://res.cloudinary.com/future-super/image/upload/v1658727840/trees2.png
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - climateactive
   - carbonneutral

@@ -2,7 +2,7 @@
 title: "Why Coal is a Dying Investment"
 slug: why-coal-is-a-dying-investment
 date: 2019-02-06T08:54:36.923Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Environment
   - Renewable Energy

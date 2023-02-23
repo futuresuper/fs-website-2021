@@ -1,5 +1,5 @@
 <script>
-  import Logo from "$/components/images/Logo.svelte";
+  import Logo from "@components/images/Logo.svelte";
   import pages from "../../../data/pages.json";
   import MenuDropdown from "./MenuDropdown.svelte";
   import MenuButton from "../../images/MenuButton.svelte";

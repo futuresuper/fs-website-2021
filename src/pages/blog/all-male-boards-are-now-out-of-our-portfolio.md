@@ -2,7 +2,7 @@
 title: "All-male boards are now out of our portfolio"
 slug: all-male-boards-are-now-out-of-our-portfolio
 date: 2019-05-03T06:59:50.729Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
 author: Emily Flood
 canonical:

@@ -3,7 +3,7 @@ title: We’re a Best for the World B Corp
 date: 2021-07-15T00:10:05.450Z
 draft: false
 image: https://res.cloudinary.com/future-super/image/upload/v1626307870/Bcorp_BlogPost.png
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - bcorp
   - sustainability

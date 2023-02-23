@@ -3,7 +3,7 @@ title: "How does a pension work?"
 slug: how-does-a-pension-work
 date: 2020-08-27T01:41:18Z
 category: Pension
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 98
 ---
 

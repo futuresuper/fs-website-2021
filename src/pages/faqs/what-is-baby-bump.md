@@ -3,7 +3,7 @@ title: "What is Baby Bump? "
 slug: what-is-baby-bump
 date: 2021-06-30T05:24:35Z
 category: Fees
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 1
 ---
 

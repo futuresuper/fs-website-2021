@@ -4,8 +4,9 @@ slug: concessional-and-non-concessional-contributions
 date: 2021-06-30T05:22:59.000Z
 category: Contributions and payments to your super
 order: 10
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 ---
+
 **Non-concessional contributions**
 
 Non-concessional contributions are able to be made to your account from your after-tax income and are not taxed when entering the fund.

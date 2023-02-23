@@ -2,7 +2,7 @@
 title: How do I know if my employer paid enough super?
 category: Annual Statement
 order: 17
-layout: $/layouts/FaqPage.astro
+layout: @layouts/FaqPage.astro
 ---
 
 In the 2021-22 financial year, the super guarantee rate that your employer was obligated to pay was 10% of your annual income.

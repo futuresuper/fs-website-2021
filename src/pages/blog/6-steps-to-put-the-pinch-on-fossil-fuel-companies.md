@@ -2,7 +2,7 @@
 title: "6 Steps to Put the Pinch on Fossil Fuel Companies"
 slug: 6-steps-to-put-the-pinch-on-fossil-fuel-companies
 date: 2019-02-06T09:35:02.730Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Divestment

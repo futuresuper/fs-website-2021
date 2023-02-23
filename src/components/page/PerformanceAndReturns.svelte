@@ -1,5 +1,5 @@
 <script>
-  import returns from "$/data/performanceReturns.json";
+  import returns from "../../data/performanceReturns.json";
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinRow from "./InvestmentOptions/JoinRow.svelte";
   import RelatedFaqs from "../ui/RelatedFaqs.svelte";

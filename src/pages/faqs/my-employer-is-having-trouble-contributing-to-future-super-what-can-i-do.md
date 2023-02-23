@@ -4,7 +4,7 @@ slug: my-employer-is-having-trouble-contributing-to-future-super-what-can-i-do
 date: 2020-12-15T04:26:17.000Z
 category: Contributions and payments to your super
 order: 20
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 ---
 
 First, you may wish to double-check your employer has all the correct details. This includes:

@@ -2,7 +2,7 @@
 title: "5 Renewable Energy Growth Trends to Watch in 2017"
 slug: 5-renewable-energy-growth-trends-to-watch-in-2017
 date: 2019-02-06T09:30:08.862Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Environment
   - Renewable Energy

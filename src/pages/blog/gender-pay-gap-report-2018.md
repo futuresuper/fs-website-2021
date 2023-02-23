@@ -2,7 +2,7 @@
 title: "Short-change women and you short-change the world: Why we should all care more about the gender pay gap in Australia"
 slug: gender-pay-gap-report-2018
 date: 2019-02-05T19:19:12.995Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - Disruption

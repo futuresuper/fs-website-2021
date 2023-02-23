@@ -2,7 +2,7 @@
 title: "How to Talk to a Climate Change Denier"
 slug: how-to-talk-to-a-climate-change-denier
 date: 2019-02-06T12:29:14.185Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Environment

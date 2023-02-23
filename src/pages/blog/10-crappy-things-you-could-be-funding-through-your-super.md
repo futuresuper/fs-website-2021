@@ -2,7 +2,7 @@
 title: "10 crappy things you could be funding through your super (and might want to stop)"
 slug: 10-crappy-things-you-could-be-funding-through-your-super
 date: 2019-02-06T09:57:25.228Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Divestment

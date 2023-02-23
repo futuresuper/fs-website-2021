@@ -2,7 +2,7 @@
 title: "The September 20 Climate Strike: A Retrospective"
 slug: september-20-climate-strike
 date: 2020-07-13T08:17:46.400Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Brett Morgan

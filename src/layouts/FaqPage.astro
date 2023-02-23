@@ -1,17 +1,15 @@
 ---
-import BaseLayout from "$/layouts/BaseLayout.astro";
-const { content } = Astro.props;
+import BaseLayout from "./BaseLayout.astro";
+const { title, image } = Astro.props.frontmatter;
+
+console.log("TITLE: ", title);
 ---
 
-<style lang="scss">
-  @use "../styles/" as *;
-</style>
-
 <BaseLayout
-  title={content.title}
-  description={content.title}
+  title={title}
+  description={title}
   hideDescription="true"
-  image={content.image}
+  image={image}
 >
   <slot />
 </BaseLayout>

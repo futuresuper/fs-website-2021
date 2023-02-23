@@ -2,7 +2,7 @@
 title: "Solar Pilgrimage: Seeing Your Super Power In Action"
 slug: solar-pilgrimage-seeing-your-super-power-in-action
 date: 2019-02-06T07:45:08.648Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Renewable Energy
   - Environment

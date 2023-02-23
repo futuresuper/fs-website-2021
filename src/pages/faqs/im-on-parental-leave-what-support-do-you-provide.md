@@ -3,7 +3,7 @@ title: "I’m on parental leave. What support do you provide? "
 slug: im-on-parental-leave-what-support-do-you-provide
 date: 2021-06-30T05:25:07Z
 category: Fees
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 2
 ---
 

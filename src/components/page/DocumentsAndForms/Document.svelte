@@ -5,7 +5,7 @@
 
   export let doc;
 
-  const { title, docurl, type, desc } = doc;
+  const { title, docurl, type, desc } = doc.frontmatter;
 </script>
 
 <a href={type === "Contact" ? "/contact-us" : docurl}>
@@ -23,7 +23,7 @@
     </div>
     <div>
       <h3>{title}</h3>
-      <div class="desc">{@html desc ? desc : doc.astro.html}</div>
+      <div class="desc">{@html desc ? desc : doc.compiledContent()}</div>
     </div>
   </article>
 </a>

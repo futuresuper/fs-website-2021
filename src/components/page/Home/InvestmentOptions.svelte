@@ -2,7 +2,7 @@
   import NoFossilFuels from "../../images/NoFossilFuels.svelte";
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
-  import investmentOptions from "$/data/investmentOptions.json";
+  import investmentOptions from "../../../data/investmentOptions.json";
   const options = investmentOptions.slice(0, 3); // exclude Pension
   const green = "#3dfa52";
 </script>

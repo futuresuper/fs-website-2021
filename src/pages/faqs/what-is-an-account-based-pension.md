@@ -3,7 +3,7 @@ title: "What is an Account-Based Pension?"
 slug: what-is-an-account-based-pension
 date: 2020-08-20T06:22:36Z
 category: Pension
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Fund Information"
-layout: $/layouts/LegalPage.astro
+layout: @layouts/LegalPage.astro
 description: Fund Information for the Future Super Fund
 alsoSee:
   - Employers

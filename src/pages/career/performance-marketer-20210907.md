@@ -2,7 +2,7 @@
 title: Performance Marketer
 startDate: 2021-09-07T22:27:50.981Z
 endDate: 2021-09-21T22:27:50.991Z
-layout: $/layouts/Career.astro
+layout: @layouts/Career.astro
 location: "Sydney/ WFH remote "
 salary: $95,000 - $115,000 + super
 applicationUrl: https://app.beapplied.com/apply/io8dbb5m6f

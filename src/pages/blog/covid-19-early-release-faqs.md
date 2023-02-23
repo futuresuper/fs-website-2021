@@ -2,7 +2,7 @@
 title: "FAQs: Early release of super due to COVID-19"
 slug: covid-19-early-release-faqs
 date: 2020-12-11T03:03:13.808Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - News
 author: Brett Morgan

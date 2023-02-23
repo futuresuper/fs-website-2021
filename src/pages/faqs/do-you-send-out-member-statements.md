@@ -3,7 +3,7 @@ title: "Do you send out member statements?"
 slug: do-you-send-out-member-statements
 date: 2020-06-27T03:49:29Z
 category: Forms and documents
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 93
 ---
 

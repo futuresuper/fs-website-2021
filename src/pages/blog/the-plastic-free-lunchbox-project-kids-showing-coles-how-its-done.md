@@ -2,7 +2,7 @@
 title: "The Plastic-Free Lunchbox Project: kids showing Coles how it’s done"
 slug: the-plastic-free-lunchbox-project-kids-showing-coles-how-its-done
 date: 2019-02-05T19:06:46.967Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Community
 author: Michael Bones

@@ -3,7 +3,7 @@ title: "What is a condition of release? "
 slug: what-is-a-condition-of-release
 date: 2019-02-01T00:07:15Z
 category: Withdrawing from your super
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 3
 ---
 

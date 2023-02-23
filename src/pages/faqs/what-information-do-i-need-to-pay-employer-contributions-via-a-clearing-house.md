@@ -3,7 +3,7 @@ title: "What information do I need to pay employer contributions via a clearing 
 slug: what-information-do-i-need-to-pay-employer-contributions-via-a-clearing-house
 date: 2021-10-19T07:57:21Z
 category: Employers
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 127
 ---
 

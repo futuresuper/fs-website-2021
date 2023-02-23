@@ -2,7 +2,7 @@
 title: "“Coal Is Dead”: Political Fetish with Little Black Rock Trashed By Trillionaire Investor"
 slug: coal-is-dead-coal-fetish-trashed-by-trillionaire-investor
 date: 2020-01-17T02:58:33.598Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Renewable Energy
   - Divestment

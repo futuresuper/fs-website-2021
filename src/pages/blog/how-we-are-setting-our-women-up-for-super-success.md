@@ -2,7 +2,7 @@
 title: "How we are setting our women up for super success"
 slug: how-we-are-setting-our-women-up-for-super-success
 date: 2019-02-06T09:43:51.262Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Equality
 author: Kirstin Hunter

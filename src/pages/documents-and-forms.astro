@@ -1,9 +1,10 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import DocumentsAndForms from "../components/page/DocumentsAndForms/DocumentsAndForms.svelte"
+import BaseLayout from "@layouts/BaseLayout.astro";
+import DocumentsAndForms from "@components/page/DocumentsAndForms/DocumentsAndForms.svelte";
 
-let allDocs = Astro.fetchContent('$/docs-and-forms/*.md');
-let docs = allDocs.sort((a, b) => a.order - b.order);
+let allDocs = await Astro.glob("../docs-and-forms/*.md");
+let docs = allDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+// console.log("docs[0]", docs[0].frontmatter);
 ---
 
 <BaseLayout

@@ -2,7 +2,7 @@
 title: "Future Super Member Spotlight: Josh @ Seaside Scavenge"
 slug: future-super-member-spotlight-josh-seaside-scavenge
 date: 2019-07-16T05:09:13.860Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Community
   - Environment

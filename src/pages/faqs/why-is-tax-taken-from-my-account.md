@@ -4,8 +4,9 @@ slug: why-is-tax-taken-from-my-account
 date: 2021-06-30T05:24:14.000Z
 category: Contributions and payments to your super
 order: 11
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 ---
+
 The super contributions your employer makes from your before-tax income ([concessional contributions](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?page=2#Concessional_contributions)) are taxed at 15% by the Australian Taxation Office (ATO).
 
 This tax component is displayed in your transaction history as 'Contributions Tax' and is sent to the ATO by Future Super regularly.

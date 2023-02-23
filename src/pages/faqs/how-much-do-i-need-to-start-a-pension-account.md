@@ -3,7 +3,7 @@ title: "How much do I need to start a pension account?"
 slug: how-much-do-i-need-to-start-a-pension-account
 date: 2020-07-30T06:57:35Z
 category: Pension
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 4
 ---
 

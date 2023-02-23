@@ -2,7 +2,7 @@
 title: "Future Super named 2018 Telstra Business Awards: Social Change Maker Finalist!"
 slug: future-super-2018-telstra-business-awards-finalist
 date: 2019-02-05T19:22:50.417Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Renewable Energy
   - Disruption

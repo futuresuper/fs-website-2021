@@ -2,7 +2,7 @@
 title: "This Is Our Why: reflections on Bill McKibben's Accelerate Climate Action Tour"
 slug: this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour
 date: 2018-05-16T03:18:10.815Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Divestment

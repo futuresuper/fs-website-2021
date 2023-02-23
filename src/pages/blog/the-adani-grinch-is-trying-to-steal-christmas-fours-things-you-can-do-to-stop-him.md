@@ -2,7 +2,7 @@
 title: "The Adani Grinch is trying to steal Christmas - four things you can do to stop him"
 slug: the-adani-grinch-is-trying-to-steal-christmas-fours-things-you-can-do-to-stop-him
 date: 2019-02-05T18:26:42.747Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Environment

@@ -2,7 +2,7 @@
 title: "A Plain English Guide to Superannuation"
 slug: a-plain-english-guide-to-superannuation
 date: 2019-02-06T09:28:55.651Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Divestment
 author: Future Super

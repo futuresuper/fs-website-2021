@@ -3,7 +3,7 @@ title: "Senior Investment Risk Manager"
 applicationUrl: "https://app.beapplied.com/apply/h8kzxvzeon"
 location: "Sydney"
 salary: "$165,000 – $175,000 + super"
-layout: $/layouts/Career.astro
+layout: @layouts/Career.astro
 startDate: "2021-01-01"
 endDate: "2021-02-15"
 summary: "We are looking for someone to join our passionate team as the Senior Investment Risk Manager, a risk management oversight role that is part of Future Super’s Risk function, reporting to the Head of Risk and Compliance."

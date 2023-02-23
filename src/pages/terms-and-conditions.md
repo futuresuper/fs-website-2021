@@ -1,12 +1,13 @@
 ---
 title: Terms and Conditions
-layout: $/layouts/LegalPage.astro
+layout: @layouts/LegalPage.astro
 intro: By accessing this website, you agree to the following terms and conditions.
 description: Terms and conditions of the Future Super website.
 alsoSee:
   - Privacy Policy
   - Fund Information
 ---
+
 The website www.futuresuper.com.au (‘this website’) is owned and operated by Future Superannuation Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. By accessing this website, you agree to the following terms and conditions.
 
 ## General information only

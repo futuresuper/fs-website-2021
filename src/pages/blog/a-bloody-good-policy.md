@@ -5,7 +5,7 @@ date: 2021-02-12T07:00:00.122Z
 canonical: null
 title: A bloody good policy
 image: https://res.cloudinary.com/future-super/image/upload/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Equality
   - News

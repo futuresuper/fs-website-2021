@@ -2,7 +2,7 @@
 title: "Why Mark is suing REST super for failing on climate"
 slug: why-mark-is-suing-his-super-fund
 date: 2019-02-05T19:11:23.902Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Divestment

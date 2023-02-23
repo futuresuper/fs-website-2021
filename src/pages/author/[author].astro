@@ -1,12 +1,15 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import BlogList from '../../components/page/Blog/BlogList.svelte'
-import slug from '../../components/scripts/slug.js'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/page/Blog/BlogList.svelte";
+import slug from "@components/scripts/slug.js";
 
-export async function getStaticPaths({paginate}) {
-  const allPosts = Astro.fetchContent('$/pages/blog/*.md');
-  let allAuthorsUnique = [...new Set(allPosts.map(p => slug(p.author)))];
-  return allAuthorsUnique.map(author => ({params: {author}, props: {allPosts}}));
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob("@pages/blog/*.md");
+  let allAuthorsUnique = [...new Set(allPosts.map((p) => slug(p.author)))];
+  return allAuthorsUnique.map((author) => ({
+    params: { author },
+    props: { allPosts },
+  }));
 }
 
 const { allPosts } = Astro.props;

@@ -3,7 +3,7 @@ title: "What is a beneficiary?"
 slug: what-is-a-beneficiary
 date: 2020-08-19T06:27:04Z
 category: Beneficiaries
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 110
 ---
 

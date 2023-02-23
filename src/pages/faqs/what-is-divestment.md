@@ -4,7 +4,7 @@ slug: what-is-divestment
 date: 2020-09-02T10:20:57.000Z
 category: Divestment
 order: 1
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 image: https://res.cloudinary.com/future-super/image/upload/v1651753016/student-with-megaphone-wide.png
 ---
 

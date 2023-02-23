@@ -2,7 +2,7 @@
 title: Member Advocate
 startDate: 2022-09-22T21:50:00.733Z
 endDate: 2022-10-08T20:50:00.742Z
-layout: $/layouts/Career.astro
+layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere in Australia
 salary: $63,000 + 11% super
@@ -10,6 +10,7 @@ applicationUrl: https://app.beapplied.com/apply/vqfn6jypxf
 summary: "We're looking for someone who wants to use their communication and
   people skills in the fight against climate change and inequality! "
 ---
+
 ## About Future Super
 
 At Future Super, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world!
@@ -20,34 +21,34 @@ We strongly encourage applications from First Nations peoples, people with disab
 
 ## You’ll love this job if:
 
-* You get a lot of energy from talking to and connecting with people. You are passionate about engaging with different people everyday, especially on topics about our climate and social issues 
-* You find superannuation opaque and frustrating, and if you had the chance to revolutionize the industry to be better for people, you would 
-* You have a knack for engaging people through different mediums (phone and email) 
-* Providing people with an awesome experience is near and dear to you
-* You have the aptitude to understand complex processes and be able to talk about them in a clear and straightforward way 
-* You love to problem-solve. You are curious, agile, and can learn as you go 
-* You are ready to harness your communication and people skills in the fight against climate change and inequality 
+- You get a lot of energy from talking to and connecting with people. You are passionate about engaging with different people everyday, especially on topics about our climate and social issues
+- You find superannuation opaque and frustrating, and if you had the chance to revolutionize the industry to be better for people, you would
+- You have a knack for engaging people through different mediums (phone and email)
+- Providing people with an awesome experience is near and dear to you
+- You have the aptitude to understand complex processes and be able to talk about them in a clear and straightforward way
+- You love to problem-solve. You are curious, agile, and can learn as you go
+- You are ready to harness your communication and people skills in the fight against climate change and inequality
 
 ## We’re looking for someone who:
 
-* Is a superb communicator! You have a natural flair for building relationships over the phone and can send crafty emails to our member base with a unique tone of voice 
-* Lives and breathes customer service and has the experience to go with it 
-* Believes in Future Super’s mission and has a passion for moving Australia’s money out of fossil-fuels and into renewable energy (and other industries that benefit our wellbeing) - and can apply this to member interactions
-* Is able to prioritise, can self-direct and has the initiative to make decisions on the go
-* Has experience or knowledge about superannuation products and the industry (this is highly desirable). Points for experience within the finance sector, or a demonstrable willingness to learn
-* Is experienced in delivering information to members/ customers in a personable way 
-* Possesses a keen eye for detail and can follow (or create) processes to make your job and other people’s working lives easier
+- Is a superb communicator! You have a natural flair for building relationships over the phone and can send crafty emails to our member base with a unique tone of voice
+- Lives and breathes customer service and has the experience to go with it
+- Believes in Future Super’s mission and has a passion for moving Australia’s money out of fossil-fuels and into renewable energy (and other industries that benefit our wellbeing) - and can apply this to member interactions
+- Is able to prioritise, can self-direct and has the initiative to make decisions on the go
+- Has experience or knowledge about superannuation products and the industry (this is highly desirable). Points for experience within the finance sector, or a demonstrable willingness to learn
+- Is experienced in delivering information to members/ customers in a personable way
+- Possesses a keen eye for detail and can follow (or create) processes to make your job and other people’s working lives easier
 
 Don’t tick all the boxes? That’s okay, we like thinking outside the box. We value skills, passion and who you are over what you’ve done or where you’ve studied. So if this job resonates with you, we want to hear from you!
 
 ## You'll love working here with:
 
-* A purpose-driven organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality
-* A proud B Corp organisation that cares about what how it behaves on the inside too 
-* A values driven team that provides industry leading service and has fun doing it!
-* Team lunches and company-wide events
-* 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW  (or your State’s equivalent) as part of our sustainable transport policy
-* Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
+- A purpose-driven organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality
+- A proud B Corp organisation that cares about what how it behaves on the inside too
+- A values driven team that provides industry leading service and has fun doing it!
+- Team lunches and company-wide events
+- 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW  (or your State’s equivalent) as part of our sustainable transport policy
+- Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
 
 The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
 

@@ -1,15 +1,14 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import BlogList from '../components/page/Blog/BlogList.svelte'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/page/Blog/BlogList.svelte";
 
-let allPosts = Astro.fetchContent('$/pages/blog/*.md');
-let posts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
-let firstPage = allPosts.slice(0,9);
+let allPosts = await Astro.glob("@pages/blog/*.md");
+let posts = allPosts.sort(
+  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+);
+let firstPage = allPosts.slice(0, 9);
 ---
 
-<BaseLayout
-  title="Blog"
-  description="What’s new at Future Super."
->
+<BaseLayout title="Blog" description="What’s new at Future Super.">
   <BlogList posts={firstPage} nextUrl={"/blog/page/2"} />
 </BaseLayout>

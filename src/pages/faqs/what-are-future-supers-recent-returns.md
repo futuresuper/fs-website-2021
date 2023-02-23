@@ -3,7 +3,7 @@ title: "What are Future Super’s recent returns? "
 slug: what-are-future-supers-recent-returns
 date: 2020-08-13T05:35:31Z
 category: Advisor information
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 47
 ---
 

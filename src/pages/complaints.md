@@ -1,6 +1,6 @@
 ---
 title: Complaints
-layout: $/layouts/LegalPage.astro
+layout: @layouts/LegalPage.astro
 intro: This page is designed to give you information about how complaints are
   managed for Future Super, a product issued by Diversa Trustees Limited (ABN 49
   006 421 638; AFSL 235153; RSE Licence L0000635).
@@ -8,6 +8,7 @@ description: This page is designed to give you information about how complaints
   are managed for Future Super, a product issued by Diversa Trustees Limited
   (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635).
 ---
+
 ## How do I complain?
 
 You can complain to us at any time, and in any way. You can call us, send us a letter or email, or post on our social media platforms. How you contact us is up to you.
@@ -76,11 +77,11 @@ Time limits may apply to complain to AFCA so you should act promptly or otherwis
 
 For more detailed information about how we and our partners manage complaints, please refer to the applicable complaints handling policy, which will set out:
 
-* How you may lodge a complaint;
-* The options available to you if need additional assistance to lodge a complaint;
-* The key steps we or our partners will follow for dealing with complaints, including acknowledgement, assessment and investigation, and provision of an IDR response;
-* The applicable complaint response timeframes; and
-* Details about accessing the Australian Financial Complaints Authority (AFCA) where a complaint is not resolved within the required timeframe, or to your satisfaction.
+- How you may lodge a complaint;
+- The options available to you if need additional assistance to lodge a complaint;
+- The key steps we or our partners will follow for dealing with complaints, including acknowledgement, assessment and investigation, and provision of an IDR response;
+- The applicable complaint response timeframes; and
+- Details about accessing the Australian Financial Complaints Authority (AFCA) where a complaint is not resolved within the required timeframe, or to your satisfaction.
 
 The complaints handling policies for us, and our partners, are available here:
 

@@ -4,7 +4,7 @@ slug: what-is-your-abn-and-usi
 date: 2021-03-16T23:22:42.000Z
 category: ABN and USI
 order: 1
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 ---
 
 Our Unique Super Identifier (USI) is 45 960 194 277 010

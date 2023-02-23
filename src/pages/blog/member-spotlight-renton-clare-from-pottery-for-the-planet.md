@@ -4,7 +4,7 @@ slug: member-spotlight-renton-clare-from-pottery-for-the-planet
 date: 2019-02-05T18:17:40.813Z
 draft: false
 image: https://res.cloudinary.com/future-super/image/upload/v1626307870/Bcorp_BlogPost.png
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
 author: Future Super
 description: We don’t blow our own horn very often, but this time we actually

@@ -4,11 +4,17 @@
   import MinusCircle from "../../images/MinusCircle.svelte";
 
   let expanded = false;
+
+  const { title, url } = faq.frontmatter;
 </script>
 
 <div class="faq-container">
-  <div class="faq-heading" on:click={() => (expanded = !expanded)}>
-    <h3>{faq.title}</h3>
+  <div
+    class="faq-heading"
+    on:click={() => (expanded = !expanded)}
+    on:keypress={() => (expanded = !expanded)}
+  >
+    <h3>{title}</h3>
     {#if expanded}
       <MinusCircle />
     {:else}
@@ -17,14 +23,14 @@
   </div>
   {#if expanded}
     <div class="faq">
-      {#if faq.astro}
-        {@html faq.astro.html}
+      {#if faq.compiledContent()}
+        {@html faq.compiledContent()}
       {:else}
         <slot />
       {/if}
     </div>
-    {#if faq.url}
-      <a href={faq.url}>Permalink</a>
+    {#if url}
+      <a href={url}>Permalink</a>
     {/if}
   {/if}
 </div>

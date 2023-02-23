@@ -1,6 +1,6 @@
 ---
 title: "Future Super Mobile App Disclaimers"
-layout: $/layouts/LegalPage.astro
+layout: @layouts/LegalPage.astro
 description: Disclaimers for the Future Super app
 ---
 

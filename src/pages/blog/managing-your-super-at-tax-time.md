@@ -1,7 +1,7 @@
 ---
 title: Managing your super at tax time
 date: 2022-06-08T01:16:54.271Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 image: https://res.cloudinary.com/future-super/image/upload/v1623979268/tax-blog-image.png
 tags:
   - tax
@@ -10,6 +10,7 @@ author: Future Super
 description: What you may need to know about making personal contributions,
   claiming a tax deduction and annual member statements.
 ---
+
 2022 is flying by and the end of the financial year is just around the corner. You’ve probably got a lot on, but there are a few things you may need to know about managing your super at tax time.
 
 We wrote this guide to help you navigate the EOFY like a pro.
@@ -33,11 +34,11 @@ You should speak to a qualified tax accountant or financial adviser before makin
 
 ![*Personal Contribution form in Future Super online account (desktop version)](https://res.cloudinary.com/fdq5gvf9pls/image/upload/v1654677264/EOFY%20blog/EOFY_personal_contribution_desktop_pui3lm.gif)
 
-*Personal Contribution Form in Future Super online account (desktop version)*
+_Personal Contribution Form in Future Super online account (desktop version)_
 
 ![](https://res.cloudinary.com/fdq5gvf9pls/image/upload/c_scale,h_426/v1654677647/EOFY%20blog/EOFY_blog_personal_cont_mobile_axeood.gif)
 
-*Personal Contribution Form in Future Super online account (mobile version)*
+_Personal Contribution Form in Future Super online account (mobile version)_
 
 3. Transfer the funds from your bank to Future Super. Use the BPAY or direct deposit details provided on screen immediately after you submit the online personal contribution form (you can also find payment details in our [paper form](https://www.futuresuper.com.au/personalcontributionsform)). Use your personal payment reference number (which will be provided) when transferring the money.
 
@@ -55,14 +56,14 @@ Personal contributions are automatically allocated as [non-concessional contribu
 
 However, you may be able to claim personal super contributions as a tax deduction. This may reduce your taxable income when lodging a tax return by the amount of the contribution claimed in that financial year.
 
-To claim your personal contributions as a tax deduction, you must complete and submit a [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/forms/notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/) (Notice of Intent) to info@futuresuper.com.au. 
+To claim your personal contributions as a tax deduction, you must complete and submit a [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/forms/notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/) (Notice of Intent) to info@futuresuper.com.au.
 
 You can submit a Notice of Intent once per year for all personal contributions made in a financial year. This will mean that your personal contributions will become [concessional contributions](https://www.futuresuper.com.au/faqs/concessional-and-non-concessional-contributions/) and 15% tax is withheld by the super fund to be paid to the ATO.
 
 Please note, you can submit a Notice of Intent up until the earlier of either:
 
-* before the end of the day that you lodge your income tax return for the income year in which the personal contributions were made; or
-* before the end of the financial year following the year in which the contribution was made.
+- before the end of the day that you lodge your income tax return for the income year in which the personal contributions were made; or
+- before the end of the financial year following the year in which the contribution was made.
 
 Once your Notice of Intent has been applied to your account, we’ll provide you with a letter of acknowledgement for your reference. You may need this for lodging your tax return.
 
@@ -70,7 +71,7 @@ You can read more about how super benefits are taxed [here](https://www.ato.gov.
 
 ## Member Statements
 
-Annual member statements become available later in the year and generally aren’t needed to complete your tax return. 
+Annual member statements become available later in the year and generally aren’t needed to complete your tax return.
 
 If you are a member and have received a benefit payment during the financial year, you should have received a PAYG Payment Summary if tax was withheld. You can use this for your tax return if you need to. If you have not received a PAYG Payment Summary and have received a lump sum payment, please [reach out to us](https://www.futuresuper.com.au/contact-us/).
 
@@ -104,12 +105,12 @@ Yes, you may be able to access your unused contribution caps from other years un
 
 Eligibility conditions apply. Please read the eligibility criteria carefully to find out if these arrangements are available to you.
 
-- - -
+---
 
 For more information, the ATO’s website has a useful guide for [concessional contributions](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?page=2#Carry_forward_concessional_contributions) and [non-concessional contributions](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?page=8#Non_concessional_contributions_and_contribution_caps).
 
-*Please note that the information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account.*
+_Please note that the information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account._
 
-*We recommend you seek financial advice when considering if Future Super is right for your objectives and needs.*
+_We recommend you seek financial advice when considering if Future Super is right for your objectives and needs._
 
-*Please read our [Product Disclosure Document](https://www.futuresuper.com.au/pds) and [Additional Information Booklet](https://www.futuresuper.com.au/aib) for more information about our products and services.*
+_Please read our [Product Disclosure Document](https://www.futuresuper.com.au/pds) and [Additional Information Booklet](https://www.futuresuper.com.au/aib) for more information about our products and services._

@@ -2,7 +2,7 @@
 title: "What Shipped: Issue 16"
 slug: what-shipped-issue-16
 date: 2020-11-18T06:59:08.122Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
 author: Danny White
 canonical:

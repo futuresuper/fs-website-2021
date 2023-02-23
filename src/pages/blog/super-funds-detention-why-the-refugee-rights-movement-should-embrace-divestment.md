@@ -2,7 +2,7 @@
 title: "Super Funds Detention: why the refugee rights movement should embrace divestment"
 slug: super-funds-detention-why-the-refugee-rights-movement-should-embrace-divestment
 date: 2019-02-06T09:02:37.496Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Equality
   - Disruption

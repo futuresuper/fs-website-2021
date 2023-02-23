@@ -1,7 +1,7 @@
 <script>
-  import Logo from "$/components/images/Logo.svelte";
-  import BCorpLogo from "$/components/images/BCorpLogo.svelte";
-  import custodians from "$/data/custodians.json";
+  import Logo from "@components/images/Logo.svelte";
+  import BCorpLogo from "@components/images/BCorpLogo.svelte";
+  import custodians from "../../data/custodians.json";
   import { fade } from "svelte/transition";
   import pages from "../../data/pages.json";
   import SocialFacebook from "../images/SocialFacebook.svelte";

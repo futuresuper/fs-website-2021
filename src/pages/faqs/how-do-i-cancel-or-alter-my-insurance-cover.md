@@ -3,7 +3,7 @@ title: "How do I cancel or alter my insurance cover?"
 slug: how-do-i-cancel-or-alter-my-insurance-cover
 date: 2020-08-26T23:53:40Z
 category: Insurance
-layout: $/layouts/FaqPage
+layout: @layouts/FaqPage
 order: 49
 ---
 

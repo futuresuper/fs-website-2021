@@ -2,7 +2,7 @@
 title: "The Clean Tech Car Revolution You Didn't Realise Was Happening "
 slug: the-clean-tech-car-revolution-you-didnt-realise-was-happening
 date: 2019-02-06T09:19:03.973Z
-layout: $/layouts/BlogPost.astro
+layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Renewable Energy
