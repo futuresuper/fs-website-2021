@@ -2,7 +2,6 @@
 title: "A message from our Chief Investment Officer on the recent market volatility"
 slug: market-volatility-2020
 date: 2020-07-13T08:22:58.806Z
-layout: @layouts/BlogPost.astro
 tags:
   - News
 author: Dan East

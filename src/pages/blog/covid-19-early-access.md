@@ -2,7 +2,6 @@
 title: "Early access to super due to COVID-19"
 slug: covid-19-early-access
 date: 2020-10-20T23:09:41.335Z
-layout: @layouts/BlogPost.astro
 tags:
   - News
 author: Brett Morgan

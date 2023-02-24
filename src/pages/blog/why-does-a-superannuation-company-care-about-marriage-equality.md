@@ -2,7 +2,6 @@
 title: "Why does a superannuation company care about marriage equality?"
 slug: why-does-a-superannuation-company-care-about-marriage-equality
 date: 2018-11-20T06:39:56.859Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Kirstin Hunter

@@ -2,7 +2,6 @@
 title: "I just can’t help falling in love (with Tesla solar roofs)"
 slug: fall-in-love-with-tesla-solar-roof
 date: 2019-02-06T09:45:59.727Z
-layout: @layouts/BlogPost.astro
 tags:
   - Renewable Energy
   - Disruption

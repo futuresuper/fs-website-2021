@@ -2,8 +2,9 @@
   import moment from "moment";
   import slug from "../../scripts/slug";
   export let post;
-  let { title, description, image, author, date, url } = post;
-  let tags = post.tags ? post.tags : [];
+  let { title, description, image, author, date } = post.frontmatter;
+  let { url } = post;
+  let tags = post.frontmatter.tags ? post.frontmatter.tags : [];
   let authorSlug = slug(author);
 </script>
 

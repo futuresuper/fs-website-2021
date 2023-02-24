@@ -2,7 +2,6 @@
 title: "Fact checking our favourite impact stats"
 slug: future-super-impact-and-resources
 date: 2020-08-03T05:17:21.845Z
-layout: @layouts/BlogPost.astro
 tags:
   - Divestment
   - Ethical Investing

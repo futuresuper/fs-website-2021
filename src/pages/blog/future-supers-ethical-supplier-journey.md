@@ -3,7 +3,6 @@ title: "Future Super's Ethical Supplier Journey "
 date: 2021-09-13T03:28:15.719Z
 draft: false
 image: https://res.cloudinary.com/future-super-services-pty-ltd/image/upload/v1631509807/Screen_Shot_2021-09-13_at_3.09.44_pm_jczexe.png
-layout: @layouts/BlogPost.astro
 tags:
   - diversityequityinclusion
   - supplierdiversity

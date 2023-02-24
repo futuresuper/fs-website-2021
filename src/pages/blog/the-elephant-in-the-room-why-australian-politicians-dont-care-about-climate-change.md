@@ -2,7 +2,6 @@
 title: "The Elephant in the Room: Why Australian Politicians Don’t Care about Climate Change"
 slug: the-elephant-in-the-room-why-australian-politicians-dont-care-about-climate-change
 date: 2019-02-06T08:04:09.410Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Environment

@@ -2,7 +2,6 @@
 title: "Why You Should Snoop On Your Super Fund"
 slug: why-you-should-snoop-on-your-super-fund
 date: 2019-02-06T03:57:53.930Z
-layout: @layouts/BlogPost.astro
 tags:
   - Superannuation
   - Disruption

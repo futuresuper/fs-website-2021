@@ -2,7 +2,6 @@
 title: "11 Important Reasons to Help Us #StopAdani"
 slug: 11-important-reasons-to-help-us-stopadani
 date: 2019-02-06T09:51:31.275Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Disruption

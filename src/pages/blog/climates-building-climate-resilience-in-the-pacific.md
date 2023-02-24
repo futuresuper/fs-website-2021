@@ -2,7 +2,6 @@
 title: "Impact Spotlight: How Climates Is Building Climate Resilience In The Pacific"
 slug: climates-building-climate-resilience-in-the-pacific
 date: 2019-02-06T10:24:31.229Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Divestment

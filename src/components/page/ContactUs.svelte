@@ -1,37 +1,41 @@
 <script>
   export let contact;
+  console.log(contact);
 </script>
 
 <section>
   <div>
     <h2>Support</h2>
     <div class="intro">
-      {@html contact.astro.html}
+      {@html contact.compiledContent()}
+      <!-- {@html contact.} -->
     </div>
   </div>
   <address>
     <!-- <EndOfYearInfo /> -->
     <hr />
     <h5>Email</h5>
-    <a href="mailto:{contact.emailAddress}">{contact.emailAddress}</a>
+    <a href="mailto:{contact.frontmatter.emailAddress}"
+      >{contact.frontmatter.emailAddress}</a
+    >
     <p>
-      We respond to emails Monday to Friday, {contact.emailOpeningTime}-{contact.emailClosingTime}<br
-      />
+      We respond to emails Monday to Friday, {contact.frontmatter
+        .emailOpeningTime}-{contact.frontmatter.emailClosingTime}<br />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
     <h5>Phone</h5>
-    <a href="tel:{contact.phone}">
-      {contact.phone}
+    <a href="tel:{contact.frontmatter.phone}">
+      {contact.frontmatter.phone}
     </a>
     <p>
-      We're available to answer calls Monday to Friday, {contact.phoneOpeningTime}-{contact.phoneClosingTime}<br
-      />
+      We're available to answer calls Monday to Friday, {contact.frontmatter
+        .phoneOpeningTime}-{contact.frontmatter.phoneClosingTime}<br />
       <span class="disclaimer">Sydney local time</span>
     </p>
     <hr />
     <h5>Post</h5>
-    <p>{contact.postLine1}<br />{contact.postLine2}</p>
+    <p>{contact.frontmatter.postLine1}<br />{contact.frontmatter.postLine2}</p>
   </address>
 </section>
 
@@ -41,7 +45,9 @@
   <h2>Media enquiries</h2>
   <div>
     <h5>Email</h5>
-    <a href="mailto:{contact.mediaEmail}">{contact.mediaEmail}</a>
+    <a href="mailto:{contact.frontmatter.mediaEmail}"
+      >{contact.frontmatter.mediaEmail}</a
+    >
   </div>
 </section>
 

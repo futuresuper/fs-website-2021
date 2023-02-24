@@ -4,8 +4,10 @@ import BlogList from "@components/page/Blog/BlogList.svelte";
 import slug from "@components/scripts/slug.js";
 
 export async function getStaticPaths({ paginate }) {
-  const allPosts = await Astro.glob("@pages/blog/*.md");
-  let allAuthorsUnique = [...new Set(allPosts.map((p) => slug(p.author)))];
+  const allPosts = await Astro.glob("../../pages/blog/*.md");
+  let allAuthorsUnique = [
+    ...new Set(allPosts.map((p) => slug(p.frontmatter.author))),
+  ];
   return allAuthorsUnique.map((author) => ({
     params: { author },
     props: { allPosts },
@@ -13,13 +15,17 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { allPosts } = Astro.props;
-const { params } = Astro.request;
+const { params } = Astro;
 
 /** filter posts by author, sort by date */
 const posts = allPosts
-  .filter((post) => slug(post.author) === params.author)
-  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
-const author = posts[0].author;
+  .filter((post) => slug(post.frontmatter.author) === params.author)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+const author = params.author || "Unknown";
 ---
 
 <BaseLayout

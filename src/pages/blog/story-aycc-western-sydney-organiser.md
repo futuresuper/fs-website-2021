@@ -2,7 +2,6 @@
 title: "The story of AYCC’s first Western Sydney Organiser"
 slug: story-aycc-western-sydney-organiser
 date: 2020-01-19T22:24:24.549Z
-layout: @layouts/BlogPost.astro
 tags:
   - Community
   - Member stories

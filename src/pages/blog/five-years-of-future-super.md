@@ -2,7 +2,6 @@
 title: "Five years of Future Super"
 slug: five-years-of-future-super
 date: 2020-08-11T01:58:33.101Z
-layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - Divestment

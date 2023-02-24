@@ -2,7 +2,6 @@
 title: "Teller me the Truth: CommBank’s dirty laundry to finally get aired"
 slug: teller-me-the-truth-commbanks-dirty-laundry-to-finally-get-aired
 date: 2020-01-17T03:00:38.415Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Activism

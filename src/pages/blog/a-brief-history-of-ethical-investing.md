@@ -2,7 +2,6 @@
 title: "A Brief History of Ethical Investing"
 slug: a-brief-history-of-ethical-investing
 date: 2019-02-06T12:40:59.057Z
-layout: @layouts/BlogPost.astro
 tags:
   - Ethical Investing
   - Environment

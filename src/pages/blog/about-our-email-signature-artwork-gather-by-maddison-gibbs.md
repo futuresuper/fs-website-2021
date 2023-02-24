@@ -1,7 +1,6 @@
 ---
 title: "About our email signature artwork: Gather by Maddison Gibbs"
 date: 2022-02-21T23:57:16.807Z
-layout: @layouts/BlogPost.astro
 image: https://res.cloudinary.com/future-super/image/upload/v1645488051/gather-cropped.png
 tags: []
 author: Future Super

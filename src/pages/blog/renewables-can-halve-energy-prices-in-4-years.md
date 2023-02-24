@@ -2,7 +2,6 @@
 title: "Renewables Can Halve Energy Prices In 4 Years"
 slug: renewables-can-halve-energy-prices-in-4-years
 date: 2019-02-05T18:58:49.281Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Ethical Investing

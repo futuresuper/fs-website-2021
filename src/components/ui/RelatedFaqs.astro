@@ -1,7 +1,7 @@
 ---
 import Faq from "../page/SupportAndFaqs/Faq.svelte";
 const { heading, category } = Astro.props;
-let allFaqs = await Astro.glob("@pages/faqs/*.md");
+let allFaqs = await Astro.glob("../../pages/faqs/*.md");
 let faqs = [];
 allFaqs.map((f) => {
   if (f.category === category) {

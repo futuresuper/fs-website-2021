@@ -129,6 +129,7 @@
       font-size: 1rem;
       list-style: circle;
       margin-left: 1.187rem;
+      padding-left: 0;
     }
   }
 

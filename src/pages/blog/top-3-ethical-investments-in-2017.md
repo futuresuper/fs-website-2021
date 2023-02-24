@@ -2,7 +2,6 @@
 title: "Top 3 Ethical Investments in 2017"
 slug: top-3-ethical-investments-in-2017
 date: 2019-02-06T09:22:57.036Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Divestment

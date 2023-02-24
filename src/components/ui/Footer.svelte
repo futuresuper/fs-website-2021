@@ -2,7 +2,6 @@
   import Logo from "@components/images/Logo.svelte";
   import BCorpLogo from "@components/images/BCorpLogo.svelte";
   import custodians from "@data/custodians.json";
-  import { fade } from "svelte/transition";
   import pages from "@data/pages.json";
   import SocialFacebook from "../images/SocialFacebook.svelte";
   import SocialInsta from "../images/SocialInsta.svelte";
@@ -27,7 +26,6 @@
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
         pages.INSURANCE,
-        pages.CARBON_TRANSPARENCY,
         pages.UNIT_PRICES,
       ],
     },

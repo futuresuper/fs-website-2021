@@ -1,7 +1,6 @@
 ---
 title: "How to read your 2021-22 Annual Member Statement "
 date: 2022-12-21T22:55:30.857Z
-layout: @layouts/BlogPost.astro
 image: https://i.postimg.cc/nLgMnm5z/Member-Statement.png
 tags:
   - superannuation

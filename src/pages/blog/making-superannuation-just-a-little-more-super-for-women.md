@@ -2,7 +2,6 @@
 title: "Making superannuation just a little more super for women"
 slug: making-superannuation-just-a-little-more-super-for-women
 date: 2019-02-06T07:52:56.814Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Disruption

@@ -4,7 +4,6 @@ import DocumentsAndForms from "@components/page/DocumentsAndForms/DocumentsAndFo
 
 let allDocs = await Astro.glob("../docs-and-forms/*.md");
 let docs = allDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
-// console.log("docs[0]", docs[0].frontmatter);
 ---
 
 <BaseLayout

@@ -1,7 +1,6 @@
 ---
 title: "Investment Profile: Infradebt Ethical Infrastructure Debt Fund"
 date: 2021-12-17T05:22:49.515Z
-layout: @layouts/BlogPost.astro
 image: https://res.cloudinary.com/future-super/image/upload/v1639718804/solar-farm.png
 tags:
   - investment

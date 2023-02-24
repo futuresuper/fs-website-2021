@@ -2,7 +2,6 @@
 title: "$200 Million In 2 years: How Future Super Helped Thousand Of Aussies Divest Their Superannuation"
 slug: how-future-super-grew-by-200-million-in-just-2-years
 date: 2018-11-20T06:40:24.114Z
-layout: @layouts/BlogPost.astro
 tags:
   - Environment
   - Ethical Investing

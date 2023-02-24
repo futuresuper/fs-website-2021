@@ -2,7 +2,6 @@
 title: "How activism lends itself to other decisions you make in your life"
 slug: activism-and-self-development
 date: 2020-07-13T08:19:24.068Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Brett Morgan

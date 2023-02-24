@@ -2,7 +2,6 @@
 title: "11 Tips for a Carbon-Friendly Christmas"
 slug: 11-tips-for-a-carbon-friendly-christmas
 date: 2019-02-06T10:39:40.631Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Activism

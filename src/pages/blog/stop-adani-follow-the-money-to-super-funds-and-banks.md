@@ -2,7 +2,6 @@
 title: "Follow The Money: The fight to #StopAdani brings banks and super funds into focus"
 slug: stop-adani-follow-the-money-to-super-funds-and-banks
 date: 2019-02-06T10:31:25.462Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Michael Bones

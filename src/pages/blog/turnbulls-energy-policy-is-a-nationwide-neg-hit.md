@@ -2,7 +2,6 @@
 title: "Turnbull’s energy policy is a nationwide NEG hit"
 slug: turnbulls-energy-policy-is-a-nationwide-neg-hit
 date: 2019-02-06T07:42:50.556Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Renewable Energy

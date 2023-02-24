@@ -2,7 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BlogList from "@components/page/Blog/BlogList.svelte";
 
-let allPosts = await Astro.glob("@pages/blog/*.md");
+let allPosts = await Astro.glob("./blog/*.md");
 let posts = allPosts.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 );

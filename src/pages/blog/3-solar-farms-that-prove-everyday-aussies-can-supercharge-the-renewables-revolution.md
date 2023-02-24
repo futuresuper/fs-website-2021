@@ -2,7 +2,6 @@
 title: "3 Solar Farms That Prove Everyday Aussies Can Supercharge The Renewables Revolution"
 slug: 3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution
 date: 2019-02-05T19:27:37.674Z
-layout: @layouts/BlogPost.astro
 tags:
   - Renewable Energy
 author: Michael Bones

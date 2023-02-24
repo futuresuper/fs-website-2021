@@ -2,7 +2,6 @@
 title: "What is the Real Economic Cost of Climate Change?"
 slug: what-is-the-real-economic-cost-of-climate-change
 date: 2019-02-06T12:18:41.637Z
-layout: @layouts/BlogPost.astro
 tags:
   - Politics
   - Environment

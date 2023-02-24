@@ -2,7 +2,6 @@
 title: "New research reveals that 7.7% of Australia’s retirement savings could fund 100% renewable power by 2030"
 slug: new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030
 date: 2019-02-05T19:30:30.550Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
   - Disruption

@@ -3,14 +3,16 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import WorkWithUs from "@components/page/WorkWithUs.svelte";
 import moment from "moment";
 
-let careers = await Astro.glob("@pages/career/*.md");
+let careers = await Astro.glob("./career/*.md");
 careers = careers.sort(
-  (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf()
+  (a, b) =>
+    new Date(b.frontmatter.startDate).valueOf() -
+    new Date(a.frontmatter.startDate).valueOf()
 );
 careers = careers.filter((c) => {
   return (
-    moment(c.startDate).utc().isBefore(moment()) &&
-    moment(c.endDate).utc().isAfter(moment())
+    moment(c.frontmatter.startDate).utc().isBefore(moment()) &&
+    moment(c.frontmatter.endDate).utc().isAfter(moment())
   );
 });
 ---

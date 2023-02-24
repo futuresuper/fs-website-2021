@@ -4,7 +4,7 @@ import BlogList from "@components/page/Blog/BlogList.svelte";
 import slug from "@components/scripts/slug.js";
 
 export async function getStaticPaths({ paginate }) {
-  const allPosts = await Astro.glob("@pages/blog/*.md");
+  const allPosts = await Astro.glob("../../pages/blog/*.md");
   let allTags = [];
   allPosts.map((p) => {
     if (p.tags) {

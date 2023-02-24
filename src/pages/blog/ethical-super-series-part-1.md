@@ -2,7 +2,6 @@
 title: "Ethical Super Series - Part 1"
 slug: ethical-super-series-part-1
 date: 2019-02-06T09:26:30.752Z
-layout: @layouts/BlogPost.astro
 tags:
   - Disruption
   - Divestment

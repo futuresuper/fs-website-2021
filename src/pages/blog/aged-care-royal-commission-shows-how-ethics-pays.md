@@ -2,7 +2,6 @@
 title: "Aged Care Royal Commission Shows How Ethics Pays"
 slug: aged-care-royal-commission-shows-how-ethics-pays
 date: 2019-02-05T18:56:28.110Z
-layout: @layouts/BlogPost.astro
 tags:
   - Superannuation
   - Ethical Investing

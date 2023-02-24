@@ -2,7 +2,6 @@
 title: "5 Reasons to Care About Your Super"
 slug: 5-reasons-to-care-about-your-super
 date: 2019-02-06T10:28:21.410Z
-layout: @layouts/BlogPost.astro
 tags:
   - Environment
   - Divestment

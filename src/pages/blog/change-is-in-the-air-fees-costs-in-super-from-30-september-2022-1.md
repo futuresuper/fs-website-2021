@@ -1,7 +1,6 @@
 ---
 title: "Change is in the Air: Fees & Costs in Super from 30 September 2022"
 date: 2022-12-21T01:09:21.256Z
-layout: @layouts/BlogPost.astro
 image: https://i.postimg.cc/T1rXknnD/micheile-dot-com-l-Z-4n-PFKc-V8-unsplash.jpg
 author: "Member Advocacy Team "
 description: There have been changes to the way we disclose fees and costs.

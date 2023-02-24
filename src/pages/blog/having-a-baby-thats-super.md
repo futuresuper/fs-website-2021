@@ -5,7 +5,6 @@ date: 2019-02-05T19:23:53.261Z
 canonical: null
 title: Having a baby? That’s super!
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014ad9cd3e36_having%20a%20baby%20(1).png
-layout: @layouts/BlogPost.astro
 tags:
   - Equality
   - Ethical Investing

@@ -1,7 +1,6 @@
 ---
 title: Managing your super at tax time
 date: 2022-06-08T01:16:54.271Z
-layout: @layouts/BlogPost.astro
 image: https://res.cloudinary.com/future-super/image/upload/v1623979268/tax-blog-image.png
 tags:
   - tax

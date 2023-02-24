@@ -165,6 +165,7 @@
 
   .download-icon {
     width: 24px;
+    height: 24px;
     margin-left: 10px;
   }
 

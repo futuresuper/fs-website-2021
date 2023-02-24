@@ -15,7 +15,7 @@ const relatedPages = [
 
 const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY");
 
-let faqs = await Astro.glob("@pages/faqs/*.md");
+let faqs = await Astro.glob("./faqs/*.md");
 let performanceFaqs = [];
 faqs.map((f) => {
   if (

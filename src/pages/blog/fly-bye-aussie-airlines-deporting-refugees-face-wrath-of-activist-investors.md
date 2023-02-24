@@ -2,7 +2,6 @@
 title: "Fly Bye: Aussie Airlines Deporting Refugees Face Wrath of Activist Investors"
 slug: fly-bye-aussie-airlines-deporting-refugees-face-wrath-of-activist-investors
 date: 2019-02-05T19:00:48.920Z
-layout: @layouts/BlogPost.astro
 tags:
   - Activism
 author: Michael Bones
