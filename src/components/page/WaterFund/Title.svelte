@@ -9,8 +9,8 @@
     <h1>Murray-Darling Basin Balanced Water Fund</h1>
   </div>
   <p>
-    The Murray-Darling Basin Balanced Water Fund is part of the Balanced Index
-    investment option
+    The Murray-Darling Basin Balanced Water Fund is part of the Balanced Impact
+    investment option as at 31 December 2022.
   </p>
 </section>
 

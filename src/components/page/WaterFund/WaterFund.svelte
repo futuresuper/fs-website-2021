@@ -5,15 +5,18 @@
   import ImpactDetails from "./ImpactDetails.svelte";
   import Title from "./Title.svelte";
   import WhatItDoes from "./WhatItDoes.svelte";
+  import SitePassword from "../../ui/SitePassword.svelte";
 </script>
 
-<div class="bg" />
-<Title />
-<WhatItDoes />
-<Impact />
-<ImpactDetails />
-<Frogs />
-<GetTheApp />
+<SitePassword>
+  <div class="bg" />
+  <Title />
+  <WhatItDoes />
+  <Impact />
+  <ImpactDetails />
+  <Frogs />
+  <GetTheApp />
+</SitePassword>
 
 <style lang="scss">
   @use "../../../styles/" as *;

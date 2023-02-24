@@ -15,10 +15,16 @@
     <div class="square">
       <p class="small">Project Impact</p>
       <h3>
-        Last financial year the fund donated <span>3.8 billion litres</span> to wetlands
-        that have been suffering as a result of the Murray-Darling being relied on
-        for irrigation
+        The fund donated <span>3.8 billion litres</span> to wetlands that have been
+        suffering as a result of the Murray-Darling being relied on for irrigation
+        in the 2021-22 financial year
       </h3>
+      <div class="source">
+        Source:
+        <a href="https://kilterrural.com/bwf/" target="_blank"
+          >https://kilterrural.com/bwf/</a
+        >
+      </div>
     </div>
     <div class="square">
       <p class="small num">01-03</p>
@@ -34,6 +40,15 @@
         history and has helped <span>restore threatened wetlands</span> and
         <span>wetlands of cultural significance</span>
       </h3>
+      <div class="source">
+        Source:
+        <a
+          href="https://citywire.com/au/news/kilter-rural-water-funds-generate-strong-returns/a2394333"
+          target="_blank"
+        >
+          https://citywire.com/au/news/kilter-rural-water-funds-generate-strong-returns/a2394333
+        </a>
+      </div>
     </div>
     <div class="square">
       <p class="small num">02-03</p>
@@ -51,6 +66,12 @@
         Water donations have helped increase bird diversity in the wetlands by
         up to&nbsp;<span>212%</span>
       </h3>
+      <div class="source">
+        Source:
+        <a href="https://kilterrural.com/bwf/" target="_blank"
+          >https://kilterrural.com/bwf/</a
+        >
+      </div>
     </div>
     <div class="square">
       <p class="small num">03-03</p>
@@ -106,6 +127,20 @@
     &:nth-of-type(even) {
       border-left: none;
       align-items: center;
+    }
+  }
+
+  .source {
+    color: $black600;
+    position: absolute;
+    bottom: var(--padding);
+    left: var(--padding);
+    a {
+      color: $black600;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
