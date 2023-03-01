@@ -99,42 +99,42 @@
   ];
 </script>
 
-<!-- <SitePassword> -->
-<div class="bg-outer">
-  <div class="bg">
-    <div class="header">
-      <Title />
-      <div class="logo">
-        <Logo colour="white" size="100%" />
+<SitePassword>
+  <div class="bg-outer">
+    <div class="bg">
+      <div class="header">
+        <Title />
+        <div class="logo">
+          <Logo colour="white" size="100%" />
+        </div>
       </div>
-    </div>
-    <div class="card-container">
-      <div class="description">
-        <h3>
-          Explore some renewables projects Future Super is invested in. Tap on
-          each card for more information.
-        </h3>
-        <p>
-          Exposure in these projects is obtained through Future Super's
-          investment in Infradebt. Infradebt is an investment in the Renewables
-          Plus, Balanced Impact, and Balanced Growth Pension investment options
-          only.
-        </p>
-      </div>
-      <div class="cards">
-        {#each projects as project}
-          <ProjectCard {project} />
-        {/each}
-        <LikeCard />
-        <!-- <AppDownloadCard /> -->
-        <QrCodeCard />
+      <div class="card-container">
+        <div class="description">
+          <h3>
+            Explore some renewables projects Future Super is invested in. Tap on
+            each card for more information.
+          </h3>
+          <p>
+            Exposure in these projects is obtained through Future Super's
+            investment in Infradebt. Infradebt is an investment in the
+            Renewables Plus, Balanced Impact, and Balanced Growth Pension
+            investment options only.
+          </p>
+        </div>
+        <div class="cards">
+          {#each projects as project}
+            <ProjectCard {project} />
+          {/each}
+          <LikeCard />
+          <!-- <AppDownloadCard /> -->
+          <QrCodeCard />
+        </div>
       </div>
     </div>
   </div>
-</div>
-<JoinNow />
+  <JoinNow />
+</SitePassword>
 
-<!-- </SitePassword> -->
 <style lang="scss">
   @use "../../../styles/" as *;
 
