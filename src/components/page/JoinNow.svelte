@@ -1,26 +1,4 @@
 <script>
-  import Clock from "../images/Clock.svelte";
-  import { onMount } from "svelte";
-
-  const infoBlockGroups = {
-    CHECKLIST: "2023Jan Checklist", // Info on what you need to join
-    NOCHECKLIST: "2023Jan No Checklist", // No info on what you need to join
-  };
-
-  //Set its default to the orginal text
-  let infoBlockGroup = infoBlockGroups.CHECKLIST;
-
-  onMount(async () => {
-    const rand = Math.random();
-
-    infoBlockGroup =
-      rand > 0.5 ? infoBlockGroups.CHECKLIST : infoBlockGroups.NOCHECKLIST;
-
-    //Track the details text display
-    analytics.track("JoinNow ViewedByABTestParticipant", {
-      infoBlockGroup,
-    });
-  });
 </script>
 
 <form method="GET" action="https://join.futuresuper.com.au/">
@@ -29,15 +7,13 @@
     <img src="/images/clock2.gif" alt="clock" class="clock" />
     <h4>Joining takes about 4 minutes.</h4>
   </div>
-  {#if infoBlockGroup === infoBlockGroups.CHECKLIST}
-    <div class="info-block">
-      <p class="info-block__heading">What you'll need</p>
-      <ul class="info-block__list">
-        <li>Your Tax File Number</li>
-        <li>Current super details for any funds you plan to transfer*</li>
-      </ul>
-    </div>
-  {/if}
+  <div class="info-block">
+    <p class="info-block__heading">What you'll need</p>
+    <ul class="info-block__list">
+      <li>Your Tax File Number</li>
+      <li>Current super details for any funds you plan to transfer*</li>
+    </ul>
+  </div>
   <p>
     <label
       >First Name<input
@@ -56,10 +32,8 @@
     <button type="submit" class="primary">Next →</button>
   </p>
   <p class="disclaimer">
-    {#if infoBlockGroup === infoBlockGroups.CHECKLIST}
-      * Please note that you don't need to rollover funds to create an account
-      with Future Super.<br /><br />
-    {/if}
+    * Please note that you don't need to rollover funds to create an account
+    with Future Super.<br /><br />
     ^ By providing your email address, you consent and authorise us to send you communications
     or information, including information required by law, via email or similar technologies.
     Your details will never be passed onto a third party other than in accordance
