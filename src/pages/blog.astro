@@ -2,11 +2,13 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BlogList from "@components/page/Blog/BlogList.svelte";
 
-let allPosts = await Astro.glob("./blog/*.md");
+let allPosts = await Astro.glob("../blog-posts/*.md");
 let posts = allPosts.sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+  (a, b) =>
+    new Date(b.frontmatter.date).valueOf() -
+    new Date(a.frontmatter.date).valueOf()
 );
-let firstPage = allPosts.slice(0, 9);
+let firstPage = posts.slice(0, 9);
 ---
 
 <BaseLayout title="Blog" description="What’s new at Future Super.">
