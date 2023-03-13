@@ -15,15 +15,28 @@ const relatedPages = [
 
 const desc = "As at " + moment(returns.dateAsAt).format("DD MMMM YYYY");
 
-let faqs = await Astro.glob("./faqs/*.md");
+function getSlug(str) {
+  const startIndex = str.indexOf("faqs/") + "faqs/".length;
+  const endIndex = str.length - 3;
+  return str.substring(startIndex, endIndex);
+}
+let faqs = await Astro.glob("../faqs/*.md");
 let performanceFaqs = [];
 faqs.map((f) => {
   if (
-    f.category === "Investments and returns" ||
-    f.category === "Market volatility"
+    f.frontmatter.category === "Investments and returns" ||
+    f.frontmatter.category === "Market volatility"
   ) {
     performanceFaqs.push(f);
   }
+});
+const faqsFlat = performanceFaqs.map((faq) => {
+  return {
+    title: faq.frontmatter.title,
+    url: "/faqs/" + getSlug(faq.file),
+    category: faq.frontmatter.category,
+    content: faq.compiledContent(),
+  };
 });
 ---
 
@@ -34,5 +47,5 @@ faqs.map((f) => {
   noContainer
   relatedPages={relatedPages}
 >
-  <PerformanceAndReturns client:load faqs={performanceFaqs} />
+  <PerformanceAndReturns client:load faqs={faqsFlat} />
 </BaseLayout>
