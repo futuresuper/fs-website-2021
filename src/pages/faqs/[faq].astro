@@ -20,11 +20,10 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const faq = Astro.props;
-const { title, description, image } = faq.frontmatter;
+const { title, image } = faq.frontmatter;
 const { Content } = faq;
 ---
 
 <BaseLayout title={title} hideDescription image={image}>
   <Content />
-  <JoinNow />
 </BaseLayout>
