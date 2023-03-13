@@ -182,9 +182,9 @@ collections:
           hint: "One paragraph, no longer than about 4 lines",
         }
       - { label: "Role Description", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    folder: "src/pages"
+  - name: "legal"
+    label: "Legal Pages"
+    folder: "src/legal-pages"
     create: false
     slug: "{{slug}}"
     fields:

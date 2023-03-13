@@ -1,6 +1,5 @@
 ---
 title: Complaints
-layout: @layouts/LegalPage.astro
 intro: This page is designed to give you information about how complaints are
   managed for Future Super, a product issued by Diversa Trustees Limited (ABN 49
   006 421 638; AFSL 235153; RSE Licence L0000635).

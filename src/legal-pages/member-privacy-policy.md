@@ -1,6 +1,5 @@
 ---
 title: "Member Privacy Policy"
-layout: @layouts/LegalPage.astro
 intro: We will always respect your privacy. Read our privacy policy to find out more.
 description: We will always respect your privacy. Read our privacy policy to find out more.
 ---

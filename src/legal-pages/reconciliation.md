@@ -1,6 +1,5 @@
 ---
 title: Reconciliation
-layout: @layouts/LegalPage.astro
 intro: Holding ourselves accountable.
 description: Why reconciliation is important to us and the action we're taking.
 image: https://res.cloudinary.com/future-super/image/upload/v1645488051/gather-cropped.png

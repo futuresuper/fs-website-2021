@@ -1,6 +1,5 @@
 ---
 title: Terms and Conditions
-layout: @layouts/LegalPage.astro
 intro: By accessing this website, you agree to the following terms and conditions.
 description: Terms and conditions of the Future Super website.
 alsoSee:
