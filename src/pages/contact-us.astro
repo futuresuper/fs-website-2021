@@ -2,7 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import ContactUs from "@components/page/ContactUs.svelte";
 
-let contactPage = await Astro.glob("./contact/contact-us.md");
+let contactPage = await Astro.glob("../contact/contact-us.md");
 const content = contactPage[0];
 ---
 
