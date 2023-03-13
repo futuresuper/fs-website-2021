@@ -75,12 +75,9 @@ We also refund the administration fee for Future Super members while they are on
     },
     {
       title: "Gender affirmation leave",
-      description: `This policy is still a work in progress. The reality for transgender and gender diverse people is that they still experience discrimination, a lack of acceptance, stigma and abuse from broader society, resulting in them experiencing worse mental health than the general population, facing barriers to employment and barriers to health care.  
-
-We encourage employees to state their preferred pronouns and we expect employees to be respectful of preferred pronouns (while also being kind about any honest mistakes). Leadership is expected to model appropriate standards of behaviour and to be supportive of transgender and gender diverse employees. 
-
-Future Super will offer flexible working arrangements and collaborate on a workplace plan for any employee undergoing any aspect of a gender affirmation process. We offer up to 30 paid days (6 weeks) leave and unlimited unpaid leave in these circumstances. `,
-      link: "https://docs.google.com/document/d/1AZ7S16Y7dwDhaklMr_w-QBTMJ2jKqpsn/edit",
+      description: `This policy is still a work in progress. We believe that creating a society that is inclusive and equitable is everyone’s business and, as an employer, Future Super has an opportunity to practice real allyship for Transgender and Gender Diverse people. 
+      
+Future Super will support Transgender and Gender Diverse employees by creating a workplace plan in conjunction with an employee undergoing any aspect of a gender affirmation process, noting that each process will look different for each person. We will offer flexible working arrangements, up to 30 days paid (6 weeks) leave and 12 months unpaid leave in these circumstances.`,
     },
   ];
 </script>

@@ -50,6 +50,21 @@
   </div>
 </section>
 
+<hr />
+
+<section>
+  <h2>Partnerships</h2>
+  <div>
+    <p>
+      We're always open to connecting with like-minded organisations that share
+      our purpose, vision and values, and who are keen to discuss how they can
+      partner with Future Super. To find out more please complete
+      <a href="https://form.typeform.com/to/Ad4a04G3">this form </a>
+      and we'll be in touch!
+    </p>
+  </div>
+</section>
+
 <style lang="scss">
   @use "../../styles/" as *;
 
