@@ -2,7 +2,6 @@
 title: Finance Officer
 startDate: 2022-01-27T22:24:03.787Z
 endDate: 2022-02-09T22:24:03.792Z
-layout: @layouts/Career.astro
 location: Our team is located in NSW and QLD, we are open to candidates from
   anywhere in Australia
 salary: $72,000 - $82,000 + super

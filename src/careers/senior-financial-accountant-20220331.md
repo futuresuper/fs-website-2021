@@ -2,7 +2,6 @@
 title: Senior Financial Accountant
 startDate: 2022-03-31T05:17:06.111Z
 endDate: 2022-04-17T06:17:06.120Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $120,000 - $130,000 + super

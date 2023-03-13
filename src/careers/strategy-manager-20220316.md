@@ -2,7 +2,6 @@
 title: Strategy Manager
 startDate: 2022-03-15T04:04:20.425Z
 endDate: 2022-03-29T04:04:20.432Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere in Australia
 salary: $120,000 - $130,000 + super

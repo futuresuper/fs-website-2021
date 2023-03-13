@@ -2,7 +2,6 @@
 title: Senior Product Designer
 startDate: 2022-02-04T04:47:24.892Z
 endDate: 2022-02-21T04:47:24.897Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $130,000 - 150,000 + super

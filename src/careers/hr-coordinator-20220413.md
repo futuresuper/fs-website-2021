@@ -2,7 +2,6 @@
 title: HR Coordinator
 startDate: 2022-04-13T04:52:15.759Z
 endDate: 2022-04-28T04:52:15.767Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $63,000 - $68,000 + 11% super

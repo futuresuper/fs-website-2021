@@ -2,7 +2,6 @@
 title: Accountant
 startDate: 2022-08-01T22:50:53.194Z
 endDate: 2022-08-16T22:50:53.206Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $80,000 - $90,000 + super (based on skills and experience)

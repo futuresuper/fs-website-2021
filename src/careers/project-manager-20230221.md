@@ -2,7 +2,6 @@
 title: Project Manager
 startDate: 2023-02-21T04:05:07.533Z
 endDate: 2023-03-08T04:05:07.551Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere within Australia
 salary: $110,000 - $120,000 + super + 1% additional super

@@ -2,7 +2,6 @@
 title: Senior Risk Manager
 startDate: 2023-01-31T05:14:51.081Z
 endDate: 2023-02-15T05:14:51.098Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $170,000 - $190,000 + super

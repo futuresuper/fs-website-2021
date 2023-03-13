@@ -2,7 +2,6 @@
 title: Chief Financial Officer
 startDate: 2022-03-25T01:22:12.439Z
 endDate: 2022-04-04T02:22:12.447Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere in Australia
 salary: $220,000 - $250,000 + super

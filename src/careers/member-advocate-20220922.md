@@ -1,24 +1,18 @@
 ---
 title: Member Advocate
-startDate: 2023-01-31T05:19:30.378Z
-endDate: 2023-02-15T05:19:30.386Z
-layout: @layouts/Career.astro
-location: Our team is mainly based in Sydney, we are open to candidates from
+startDate: 2022-09-22T21:50:00.733Z
+endDate: 2022-10-08T20:50:00.742Z
+location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere in Australia
-salary: AUD $70,000 + super + 1% additional super
-applicationUrl: https://app.beapplied.com/apply/afejubwu5k
-summary: We are looking for someone to join our fun and passionate team as a
-  Member Advocate. Future Super’s Member Advocacy team is the face and voice of
-  our members. We’re a fast growing team, passionate about using our skills to
-  provide an amazing and meaningful experience for all our members and advocate
-  for them at every opportunity.
+salary: $63,000 + 11% super
+applicationUrl: https://app.beapplied.com/apply/vqfn6jypxf
+summary: "We're looking for someone who wants to use their communication and
+  people skills in the fight against climate change and inequality! "
 ---
 
-<!--StartFragment-->
+## About Future Super
 
-## About Future Super Group
-
-At Future Super Group, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world!
+At Future Super, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world!
 
 We are looking for someone to join our fun and passionate team as a Member Advocate. Future Super’s Member Advocacy team is the face and voice of our members. We’re a fast growing team, passionate about using our skills to provide an amazing and meaningful experience for all our members and advocate for them at every opportunity.
 
@@ -43,26 +37,20 @@ We strongly encourage applications from First Nations peoples, people with disab
 - Has experience or knowledge about superannuation products and the industry (this is highly desirable). Points for experience within the finance sector, or a demonstrable willingness to learn
 - Is experienced in delivering information to members/ customers in a personable way
 - Possesses a keen eye for detail and can follow (or create) processes to make your job and other people’s working lives easier
-- Is able to work 9am to 5pm AEDT
-- Is able to work full-time
+
+Don’t tick all the boxes? That’s okay, we like thinking outside the box. We value skills, passion and who you are over what you’ve done or where you’ve studied. So if this job resonates with you, we want to hear from you!
 
 ## You'll love working here with:
 
 - A purpose-driven organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality
-- A proud [B Corp](https://www.bcorporation.net/en-us/certification) organisation that cares about how it behaves inside and out
-- Heaps of flexibility to fit work into your life (not your life around our work) and the opportunity to work with your manager to define what that looks like for you now and in the future
-- [AFR’s Best Place to Work 2022](https://www.afr.com/work-and-careers/workplace/employee-benefits-catapult-future-super-to-the-top-of-the-ladder-20220421-p5af6m) for the banking, superannuation and financial services sector
-- The choice to work from home, from one of our [co-working spaces](https://www.hubaustralia.com/), from anywhere within Australia or even from overseas (for a short period of time)
+- A proud B Corp organisation that cares about what how it behaves on the inside too
+- A values driven team that provides industry leading service and has fun doing it!
 - Team lunches and company-wide events
-- Progressive, people-focused policies and benefits including Menstrual and Menopausal Leave, Mental Health Leave and Gender Affirmation Guidelines and Leave
-- We offer employee network groups for people from diverse backgrounds: SuperGenders for cisgender women, trans men and women and  non-binary folks; SuperGlobal for culturally diverse folks; and SuperPride for LGBTQIA+ folks. The groups are a safe, supportive space for people to share experiences and ideas
-- 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, and membership to Bicycle NSW (or your State or Territory’s equivalent) as part of our sustainable transport policy
+- 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW  (or your State’s equivalent) as part of our sustainable transport policy
 - Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
 
-The [application](https://app.beapplied.com/apply/afejubwu5k) will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
+The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
 
 We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D).
 
-Questions? Please reach out to Khi, People & Culture Advisor, at careers@futuresuper.com.au.
-
-<!--EndFragment-->
+Questions? Please reach out to Keely, People and Culture Coordinator, at careers@futuresuper.com.au.

@@ -216,7 +216,11 @@ const seoDescription = description
                     </h3>
                   )}
                 </div>
-                {intro && <p class="intro">{intro}</p>}
+                {intro && (
+                  <p class="intro">
+                    <Fragment set:html={intro} />
+                  </p>
+                )}
               </div>
             )}
             <slot name="customHeader" />

@@ -2,7 +2,6 @@
 title: Impact Reporter
 startDate: 2022-02-04T04:40:05.289Z
 endDate: 2022-02-21T04:40:05.298Z
-layout: @layouts/Career.astro
 location: "Our team is mainly in Sydney, we're open to candidates from anywhere
   in Australia "
 salary: $120,000 - $140,000 + super

@@ -2,7 +2,6 @@
 title: Compliance Manager, Investments
 startDate: 2023-01-27T05:10:33.553Z
 endDate: 2023-02-12T05:10:33.563Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we're open to candidates from
   anywhere within Australia
 salary: $165,000 - $180,000

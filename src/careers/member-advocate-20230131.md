@@ -1,12 +1,11 @@
 ---
 title: Member Advocate
-startDate: 2022-01-25T00:08:34.468Z
-endDate: 2022-02-08T00:08:34.492Z
-layout: @layouts/Career.astro
-location: Most of the team is based in Sydney, we are open to candidates from
+startDate: 2023-01-31T05:19:30.378Z
+endDate: 2023-02-15T05:19:30.386Z
+location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
-salary: $63,000 + 11% super
-applicationUrl: https://app.beapplied.com/apply/9fvbi6pfwf
+salary: AUD $70,000 + super + 1% additional super
+applicationUrl: https://app.beapplied.com/apply/afejubwu5k
 summary: We are looking for someone to join our fun and passionate team as a
   Member Advocate. Future Super’s Member Advocacy team is the face and voice of
   our members. We’re a fast growing team, passionate about using our skills to
@@ -14,9 +13,11 @@ summary: We are looking for someone to join our fun and passionate team as a
   for them at every opportunity.
 ---
 
-## About Future Super
+<!--StartFragment-->
 
-At Future Super, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world!
+## About Future Super Group
+
+At Future Super Group, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world!
 
 We are looking for someone to join our fun and passionate team as a Member Advocate. Future Super’s Member Advocacy team is the face and voice of our members. We’re a fast growing team, passionate about using our skills to provide an amazing and meaningful experience for all our members and advocate for them at every opportunity.
 
@@ -34,26 +35,33 @@ We strongly encourage applications from First Nations peoples, people with disab
 
 ## We’re looking for someone who:
 
-- Is a superb communicator! You have a natural flair for building relationships over the phone and can send crafty emails to our member base in your own voice
+- Is a superb communicator! You have a natural flair for building relationships over the phone and can send crafty emails to our member base with a unique tone of voice
 - Lives and breathes customer service and has the experience to go with it
-- Believes in Future Super’s mission and has a passion for moving Australia’s money out of fossil-fuels and into renewable energy - and can apply this to member interactions
+- Believes in Future Super’s mission and has a passion for moving Australia’s money out of fossil-fuels and into renewable energy (and other industries that benefit our wellbeing) - and can apply this to member interactions
 - Is able to prioritise, can self-direct and has the initiative to make decisions on the go
 - Has experience or knowledge about superannuation products and the industry (this is highly desirable). Points for experience within the finance sector, or a demonstrable willingness to learn
 - Is experienced in delivering information to members/ customers in a personable way
 - Possesses a keen eye for detail and can follow (or create) processes to make your job and other people’s working lives easier
+- Is able to work 9am to 5pm AEDT
+- Is able to work full-time
 
 ## You'll love working here with:
 
 - A purpose-driven organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality
-- A proud B-Corp organisation, yes that's right, we are part of a group of purpose-driven businesses committed to the highest standards of social and environmental impact
-- A values driven team that provides industry leading service and has fun doing it!
-- Lots of social gatherings and company-wide events
-- We love work life balance, we provide access to a mental wellbeing platform - Uprise, and we provide Mental Health Leave
-- 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW  (or your State’s equivalent) as part of our sustainable transport policy
+- A proud [B Corp](https://www.bcorporation.net/en-us/certification) organisation that cares about how it behaves inside and out
+- Heaps of flexibility to fit work into your life (not your life around our work) and the opportunity to work with your manager to define what that looks like for you now and in the future
+- [AFR’s Best Place to Work 2022](https://www.afr.com/work-and-careers/workplace/employee-benefits-catapult-future-super-to-the-top-of-the-ladder-20220421-p5af6m) for the banking, superannuation and financial services sector
+- The choice to work from home, from one of our [co-working spaces](https://www.hubaustralia.com/), from anywhere within Australia or even from overseas (for a short period of time)
+- Team lunches and company-wide events
+- Progressive, people-focused policies and benefits including Menstrual and Menopausal Leave, Mental Health Leave and Gender Affirmation Guidelines and Leave
+- We offer employee network groups for people from diverse backgrounds: SuperGenders for cisgender women, trans men and women and  non-binary folks; SuperGlobal for culturally diverse folks; and SuperPride for LGBTQIA+ folks. The groups are a safe, supportive space for people to share experiences and ideas
+- 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, and membership to Bicycle NSW (or your State or Territory’s equivalent) as part of our sustainable transport policy
 - Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
 
-The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
+The [application](https://app.beapplied.com/apply/afejubwu5k) will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
 
 We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D).
 
-Questions? Please reach out to Khi, HR Coordinator, at careers@futuresuper.com.au.
+Questions? Please reach out to Khi, People & Culture Advisor, at careers@futuresuper.com.au.
+
+<!--EndFragment-->

@@ -2,7 +2,6 @@
 title: Full Stack Software Developer
 startDate: 2021-02-22T05:53:04.604Z
 endDate: 2021-03-09T05:53:04.632Z
-layout: @layouts/Career.astro
 location: Australia, Sydney or Canberra (preferred)
 salary: $85,000 – $90,000
 applicationUrl: https://app.beapplied.com/apply/jsia4ficmj

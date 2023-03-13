@@ -2,7 +2,6 @@
 title: People and Culture Coordinator
 startDate: 2022-11-24T03:15:32.060Z
 endDate: 2022-12-11T03:15:32.069Z
-layout: @layouts/Career.astro
 location: Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia
 salary: $68,000 - $78,000

@@ -5,7 +5,6 @@
   import Policies from "./Purpose/Policies.svelte";
 
   export let careers;
-  // export let policies;
 </script>
 
 <section>
