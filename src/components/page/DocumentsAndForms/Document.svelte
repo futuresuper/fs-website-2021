@@ -40,6 +40,8 @@
     padding: 20px;
     border-top: 1px solid $black;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     &:hover {
       background-color: $black100;
     }

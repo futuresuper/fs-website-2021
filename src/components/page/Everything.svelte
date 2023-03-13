@@ -6,7 +6,6 @@
   import investmentOptions from "@data/investmentOptions.json";
   import assetClasses from "@data/assetClasses.json";
   import { flag } from "country-emoji";
-  import Document from "../page/DocumentsAndForms/Document.svelte";
 
   let sortedInvestments = investments.list.sort(
     (a, b) => b.totalSize - a.totalSize
