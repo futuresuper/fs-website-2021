@@ -39,7 +39,7 @@
       <a class="button outline" href="/life_insurance_transfer_application_form"
         >Download Transfer Form
         <div class="download-icon">
-          <Download />
+          <Download size="24" />
         </div>
       </a>
     </div>
