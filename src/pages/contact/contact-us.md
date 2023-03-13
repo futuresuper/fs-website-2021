@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Contact Future Super
 intro: We're here to help
 description: We'd love to hear from you. Contact us by phone, email or post.
 emailAddress: info@futuresuper.com.au
@@ -12,7 +12,8 @@ mediaEmail: media@futuresuper.com.au
 postLine1: PO Box 1282
 postLine2: Albury, NSW 2640
 ---
-Please note, our team will not be available on National and NSW public holidays. 
+
+Please note, our team will not be available on National and NSW public holidays.
 
 You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
