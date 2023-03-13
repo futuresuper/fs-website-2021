@@ -52,8 +52,8 @@ collections:
           required: false,
         }
   - name: "posts"
-    label: "Posts"
-    folder: "src/blog"
+    label: "Blog Posts"
+    folder: "src/blog-posts"
     create: true
     slug: "{{slug}}"
     fields:
@@ -204,7 +204,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "contact"
     label: "Contact Info"
-    folder: "src/pages/contact"
+    folder: "src/contact"
     create: false
     slug: "{{slug}}"
     fields:
