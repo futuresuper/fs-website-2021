@@ -1,10 +1,17 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Faqs from "@components/page/SupportAndFaqs/SupportAndFaqs.svelte";
-let faqs = await Astro.glob("./faqs/*.md");
+let faqs = await Astro.glob("../faqs/*.md");
 faqs = faqs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+const faqsFlat = faqs.map((faq) => {
+  return {
+    title: faq.frontmatter.title,
+    url: faq.frontmatter.url,
+    category: faq.frontmatter.category,
+    content: faq.compiledContent(),
+  };
+});
 const black100 = "#f5f5f5";
-
 import pages from "@data/pages.json";
 const relatedPages = [
   pages.CONTACT_US,
@@ -24,5 +31,5 @@ const relatedPages = [
   pageHeadBackgroundColour={black100}
   relatedPages={relatedPages}
 >
-  <Faqs client:load faqs={faqs} />
+  <Faqs client:load faqs={faqsFlat} />
 </BaseLayout>

@@ -1,6 +1,5 @@
 <script>
   export let contact;
-  console.log(contact);
 </script>
 
 <section>

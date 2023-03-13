@@ -6,14 +6,11 @@
   let searchText = "";
   let searchMode = false;
   let matchingFaqs = [];
-
   $: if (searchText.length > 2) {
     matchingFaqs = [];
     searchMode = true;
     faqs.map((f) => {
-      if (
-        f.frontmatter.title.toUpperCase().includes(searchText.toUpperCase())
-      ) {
+      if (f.title.toUpperCase().includes(searchText.toUpperCase())) {
         matchingFaqs = [...matchingFaqs, f];
       }
     });
@@ -32,7 +29,7 @@
       {#if searchMode}
         <div class="category-container">
           {#each matchingFaqs as faq}
-            <Faq {faq} />
+            <Faq title={faq.title} url={faq.url} content={faq.content} />
           {/each}
           {#if matchingFaqs.length < 1}
             <p>No results matching <strong>{searchText}</strong></p>
@@ -43,9 +40,9 @@
           <div class="category-container">
             <h2>{category}</h2>
             {#each faqs as faq}
-              {#if category === faq.frontmatter.category}
+              {#if category === faq.category}
                 <div class="faq-container">
-                  <Faq {faq} />
+                  <Faq title={faq.title} url={faq.url} content={faq.content} />
                 </div>
               {/if}
             {/each}
@@ -58,33 +55,27 @@
 
 <style lang="scss">
   @use "../../../styles/" as *;
-
   .background {
     background-color: $black100;
   }
-
   .container {
     display: flex;
     justify-content: center;
   }
-
   .container-narrow {
     width: 100%;
     max-width: 600px;
   }
-
   .category-container {
     margin: 50px 0 80px 0;
     border-bottom: 1px solid $black;
   }
-
   h2 {
     font-size: 16px;
     color: $black500;
     padding-bottom: 18px;
     margin: 0;
   }
-
   .search-container {
     width: 100%;
     background-color: $white;
@@ -95,14 +86,12 @@
     padding: 20px;
     margin-bottom: 40px;
   }
-
   input {
     margin-left: 20px;
     border: 0;
     outline: none;
     width: 90%;
   }
-
   @media (max-width: 500px) {
     input {
       margin-left: 8px;

@@ -1,0 +1,30 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/page/Blog/BlogList.svelte";
+import slug from "@components/scripts/slug.js";
+import BlogPost from "@components/page/Blog/BlogPost.svelte";
+import JoinNow from "@components/ui/JoinNow.svelte";
+
+export async function getStaticPaths({ paginate }) {
+  function getSlug(str) {
+    const startIndex = str.indexOf("faqs/") + "faqs/".length;
+    const endIndex = str.length - 3;
+    return str.substring(startIndex, endIndex);
+  }
+
+  const allFaqs = await Astro.glob("../../faqs/*.md");
+  return allFaqs.map((faq) => ({
+    params: { faq: getSlug(faq.file) },
+    props: faq,
+  }));
+}
+
+const faq = Astro.props;
+const { title, description, image } = faq.frontmatter;
+const { Content } = faq;
+---
+
+<BaseLayout title={title} hideDescription image={image}>
+  <Content />
+  <JoinNow />
+</BaseLayout>

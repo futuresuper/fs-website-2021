@@ -1,11 +1,12 @@
 <script>
-  export let faq;
+  export let title;
+  export let url;
+  export let content;
+
   import PlusCircle from "../../images/PlusCircle.svelte";
   import MinusCircle from "../../images/MinusCircle.svelte";
 
   let expanded = false;
-
-  const { title, url } = faq.frontmatter;
 </script>
 
 <div class="faq-container">
@@ -21,18 +22,14 @@
       <PlusCircle />
     {/if}
   </div>
-  {#if expanded}
+  <div class={expanded ? "" : "closed"}>
     <div class="faq">
-      {#if faq.compiledContent()}
-        {@html faq.compiledContent()}
-      {:else}
-        <slot />
-      {/if}
+      {@html content}
     </div>
     {#if url}
       <a href={url}>Permalink</a>
     {/if}
-  {/if}
+  </div>
 </div>
 
 <style lang="scss">
@@ -63,6 +60,10 @@
   a {
     font-size: 14px;
     color: $black500;
+  }
+
+  .closed {
+    display: none;
   }
 
   @media (max-width: 500px) {
