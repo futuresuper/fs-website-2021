@@ -159,14 +159,14 @@
         </div>
         <div class="footer-text">
           <p class="disc fs-acknowledgement">
-            Future Super acknowledges the Traditional Custodians of the lands on
-            which we operate and pay our respects to Elders, past, present and
-            emerging. We recognise the enduring relationship Aboriginal and
-            Torres Strait Islander peoples have with Country and that
-            sovereignty was never ceded. We stand for a future that promotes
-            justice for Aboriginal and Torres Strait Islander peoples and
-            profoundly respects and acknowledges their respective perspectives,
-            culture, language and history.
+            Future Super Group acknowledges that we operate on sovereign First
+            Nations land. We recognise the ongoing connection Aboriginal and
+            Torres Strait Islander people have with Country throughout this
+            continent since time immemorial. We stand for a future where First
+            Nations people have true justice and redress, and our society has a
+            profound respect, understanding and commitment to acknowledging
+            First Nations perspectives, culture, languages, histories, country,
+            values and ancestors.
           </p>
         </div>
         <a class="button secondary" href="/reconciliation">
