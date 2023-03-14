@@ -4,5 +4,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte(), sitemap()]
+  site: "https://www.futuresuper.com.au",
+  integrations: [svelte(), sitemap()],
 });
