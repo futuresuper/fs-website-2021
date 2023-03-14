@@ -43,15 +43,42 @@
 <footer>
   <div class="footer-container">
     <div class="container">
-      <div class="horizontal-space-between">
+      <div class="logo-and-socials">
         <Logo colour="white" size="54" />
         <div class="social-icons">
-          <a href="https://www.instagram.com/future_super/"><SocialInsta /></a>
-          <a href="https://www.facebook.com/myfuturesuper/"
-            ><SocialFacebook /></a
-          >
+          <a href="https://www.instagram.com/future_super/">
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/insta.png"
+              alt="Instagram Icon"
+            />
+          </a>
+          <a href="https://www.facebook.com/myfuturesuper/">
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/fb.png"
+              alt="Facebook Icon"
+            />
+          </a>
           <a href="https://www.linkedin.com/company/future-super">
-            <SocialLinkedIn />
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/in.png"
+              alt="LinkedIn Icon"
+            />
+          </a>
+        </div>
+        <div class="app-download">
+          <a href="https://apps.apple.com/au/app/future-super/id1620110464">
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Apple2.png"
+              alt="Apple App Store"
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app"
+          >
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Google2.png"
+              alt="Googple Play Store"
+            />
           </a>
         </div>
       </div>
@@ -204,15 +231,21 @@
     overflow: hidden;
   }
 
-  .logo-and-social-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+  .logo-and-socials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
   }
 
-  .social-icons {
+  .social-icons,
+  .app-download {
+    display: flex;
+    align-items: center;
     a {
-      margin-left: 10px;
+      margin-left: 20px;
+      img {
+        height: 52px;
+      }
     }
   }
 
@@ -375,6 +408,16 @@
         }
       }
     }
+
+    .logo-and-socials {
+      grid-template-columns: 1fr auto;
+
+      .app-download {
+        grid-column: span 2;
+        justify-content: flex-end;
+        padding-top: 20px;
+      }
+    }
   }
 
   @media (max-width: 500px) {
@@ -384,6 +427,27 @@
 
     .disclaimer {
       width: 70%;
+    }
+
+    .logo-and-socials {
+      .app-download {
+        a {
+          margin-left: 0px;
+        }
+        justify-content: space-between;
+      }
+    }
+  }
+
+  @media (max-width: 390px) {
+    .logo-and-socials {
+      .app-download {
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 </style>
