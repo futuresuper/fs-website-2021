@@ -430,23 +430,22 @@
     }
 
     .logo-and-socials {
+      .app-download,
+      .social-icons {
+        a {
+          margin-left: 10px;
+        }
+      }
       .app-download {
         a {
-          margin-left: 0px;
+          &:first-of-type {
+            margin-left: 0;
+          }
+          img {
+            height: auto;
+          }
         }
         justify-content: space-between;
-      }
-    }
-  }
-
-  @media (max-width: 390px) {
-    .logo-and-socials {
-      .app-download {
-        flex-direction: column;
-        align-items: flex-end;
-        a {
-          margin-bottom: 20px;
-        }
       }
     }
   }
