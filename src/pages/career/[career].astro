@@ -1,0 +1,33 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import moment from "moment";
+
+export async function getStaticPaths({ paginate }) {
+  function getSlug(str) {
+    const startIndex = str.indexOf("careers/") + "careers/".length;
+    const endIndex = str.length - 3;
+    return str.substring(startIndex, endIndex);
+  }
+
+  const allCareers = await Astro.glob("../../careers/*.md");
+  return allCareers.map((career) => ({
+    params: { career: getSlug(career.file) },
+    props: career,
+  }));
+}
+
+const career = Astro.props;
+const { title, endDate, salary, location, applicationUrl } = career.frontmatter;
+const { Content } = career;
+---
+
+<BaseLayout
+  title={title}
+  description={"Closes " + moment(endDate).format("D MMM YYYY")}
+  intro={salary + "<br/>" + location}
+  skinnyContainer
+>
+  <Content />
+
+  <a href={applicationUrl} class="button">Apply →</a>
+</BaseLayout>

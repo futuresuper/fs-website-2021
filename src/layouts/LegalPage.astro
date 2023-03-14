@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "$/layouts/BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 const { content } = Astro.props;
 ---
 
@@ -8,17 +8,17 @@ const { content } = Astro.props;
 </style>
 
 <BaseLayout
-  title={content.title}
-  description={content.description}
+  title={content.frontmatter.title}
+  description={content.frontmatter.description}
   hideDescription={true}
-  intro={content.intro}
+  intro={content.frontmatter.intro}
   skinnyContainer
-  image={content.image}
+  image={content.frontmatter.image}
 >
   <slot />
 
   {
-    content.title === "Reconciliation" && (
+    content.frontmatter.title === "Reconciliation" && (
       <div>
         <a href="/rap" class="button">
           Download our Reconciliation Action Plan

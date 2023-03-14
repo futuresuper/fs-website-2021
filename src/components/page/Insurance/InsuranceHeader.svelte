@@ -1,8 +1,3 @@
-<script>
-  import SwitchShakeCircle from "../../images/SwitchShakeCircle.svelte";
-  const green = "#3DFA52";
-</script>
-
 <div class="container page-header-container">
   <div class="title-and-text">
     <h1>Insurance</h1>
@@ -16,15 +11,15 @@
           Future Super offers opt-in insurance. You can apply for cover for the
           following types of insurance:
         </p>
-        <ul>
-          <li>
+        <ul class="reset">
+          <li class="reset">
             <span>→</span>&nbsp;Death Only
           </li>
-          <li>
+          <li class="reset">
             <span>→</span>&nbsp;Death &amp; Total Permanent Disablement (TPD),
             and
           </li>
-          <li>
+          <li class="reset">
             <span>→</span>&nbsp;Income Protection
           </li>
         </ul>

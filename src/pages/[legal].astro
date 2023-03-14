@@ -1,0 +1,46 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+export async function getStaticPaths({ paginate }) {
+  function getSlug(str) {
+    const startIndex = str.indexOf("legal-pages/") + "legal-pages/".length;
+    const endIndex = str.length - 3;
+    return str.substring(startIndex, endIndex);
+  }
+
+  const allLegalPages = await Astro.glob("../legal-pages/*.md");
+  return allLegalPages.map((page) => ({
+    params: { legal: getSlug(page.file) },
+    props: page,
+  }));
+}
+
+const page = Astro.props;
+const { title, description, image, intro } = page.frontmatter;
+const { Content } = page;
+---
+
+<style lang="scss">
+  @use "../styles/" as *;
+</style>
+
+<BaseLayout
+  title={title}
+  description={description}
+  hideDescription={true}
+  intro={intro}
+  skinnyContainer
+  image={image}
+>
+  <Content />
+
+  {
+    title === "Reconciliation" && (
+      <div>
+        <a href="/rap" class="button">
+          Download our Reconciliation Action Plan
+        </a>
+      </div>
+    )
+  }
+</BaseLayout>

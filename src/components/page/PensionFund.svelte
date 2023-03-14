@@ -1,5 +1,5 @@
 <script>
-  import Tables from "../../components/page/InvestmentOptions/Tables.svelte";
+  import Tables from "@components/page/InvestmentOptions/Tables.svelte";
   import Scales from "../images/Scales.svelte";
 
   const pink = "#ff27c3";

@@ -1,13 +1,26 @@
 ---
-  import Faq from "../page/SupportAndFaqs/Faq.svelte";
-  const { heading, category } = Astro.props;
-  let allFaqs = Astro.fetchContent('$/pages/faqs/*.md');
-  let faqs = [];
-  allFaqs.map(f => {
-    if (f.category === category) {
-      faqs.push(f);
-    }
-  })
+import Faq from "../page/SupportAndFaqs/Faq.svelte";
+const { heading, category } = Astro.props;
+let allFaqs = await Astro.glob("../../faqs/*.md");
+let faqs = [];
+allFaqs.map((f) => {
+  if (f.frontmatter.category === category) {
+    faqs.push(f);
+  }
+});
+function getSlug(str) {
+  const startIndex = str.indexOf("faqs/") + "faqs/".length;
+  const endIndex = str.length - 3;
+  return str.substring(startIndex, endIndex);
+}
+const faqsFlat = faqs.map((faq) => {
+  return {
+    title: faq.frontmatter.title,
+    url: "/faqs/" + getSlug(faq.file),
+    category: faq.frontmatter.category,
+    content: faq.compiledContent(),
+  };
+});
 ---
 
 <style lang="scss">
@@ -21,7 +34,9 @@
 
 <aside>
   <h2>{heading ? heading : "Related FAQs"}</h2>
-  {faqs.map(f => <Faq client:load faq={f} />)}
+  {
+    faqsFlat.map((faq) => (
+      <Faq client:load title={faq.title} url={faq.url} content={faq.content} />
+    ))
+  }
 </aside>
-
-

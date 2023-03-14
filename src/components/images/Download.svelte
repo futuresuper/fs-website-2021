@@ -1,4 +1,14 @@
-<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<script>
+  export let size = 48;
+</script>
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <path
     d="M24 1V34.22"
     stroke="#212121"

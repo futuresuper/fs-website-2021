@@ -1,0 +1,5 @@
+{
+    "typescript.format.enable": true,
+    "astro.typescript.diagnostics.enabled": false,
+    "astro.typescript.enabled": false
+}

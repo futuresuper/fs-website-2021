@@ -1,18 +1,36 @@
 ---
-import BaseLayout from "$/layouts/BaseLayout.astro";
-import WorkWithUs from "../components/page/WorkWithUs.svelte";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import WorkWithUs from "@components/page/WorkWithUs.svelte";
 import moment from "moment";
 
-let careers = Astro.fetchContent("$/pages/career/*.md");
-careers = careers.sort(
-  (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf()
-);
-careers = careers.filter((c) => {
-  return (
-    moment(c.startDate).utc().isBefore(moment()) &&
-    moment(c.endDate).utc().isAfter(moment())
-  );
-});
+function getSlug(str) {
+  const startIndex = str.indexOf("careers/") + "careers/".length;
+  const endIndex = str.length - 3;
+  return str.substring(startIndex, endIndex);
+}
+
+let careers = await Astro.glob("../careers/*.md");
+
+const careersFlat = careers
+  .map((c) => {
+    return {
+      title: c.frontmatter.title,
+      startDate: c.frontmatter.startDate,
+      endDate: c.frontmatter.endDate,
+      salary: c.frontmatter.salary,
+      location: c.frontmatter.location,
+      url: "/career/" + getSlug(c.file),
+    };
+  })
+  .sort(
+    (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf()
+  )
+  .filter((c) => {
+    return (
+      moment(c.startDate).utc().isBefore(moment()) &&
+      moment(c.endDate).utc().isAfter(moment())
+    );
+  });
 ---
 
 <BaseLayout
@@ -20,5 +38,5 @@ careers = careers.filter((c) => {
   description="We do financial services with a difference. Help us combat climate change and inequality."
   hideDescription
 >
-  <WorkWithUs careers={careers} client:load />
+  <WorkWithUs careers={careersFlat} client:load />
 </BaseLayout>

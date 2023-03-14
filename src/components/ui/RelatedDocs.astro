@@ -1,14 +1,16 @@
 ---
-  import Document from "../page/DocumentsAndForms/Document.svelte";
-  const { heading, category } = Astro.props;
-  let allDocs = Astro.fetchContent('$/docs-and-forms/*.md');
-  let sortedDocs = allDocs.sort((a, b) => b.order - a.order);
-  let docs = [];
-  sortedDocs.map(d => {
-    if (d.category === category) {
-      docs.push(d);
-    }
-  })
+import Document from "../page/DocumentsAndForms/Document.svelte";
+const { heading, category } = Astro.props;
+let allDocs = await Astro.glob("../../docs-and-forms/*.md");
+let sortedDocs = allDocs.sort(
+  (a, b) => b.frontmatter.order - a.frontmatter.order
+);
+let docs = [];
+sortedDocs.map((d) => {
+  if (d.frontmatter.category === category) {
+    docs.push(d);
+  }
+});
 ---
 
 <style lang="scss">
@@ -22,7 +24,5 @@
 
 <aside>
   <h2>{heading ? heading : "Related documents"}</h2>
-  {docs.map(d => <Document doc={d} />)}
+  {docs.map((d) => <Document doc={d} />)}
 </aside>
-
-

@@ -1,21 +1,21 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import HowWeInvestHeader from '../components/page/HowWeInvest/HowWeInvestHeader.svelte'
-import InvestmentStrategy from "../components/page/HowWeInvest/InvestmentStrategy.svelte";
-import Everything from "../components/page/HowWeInvest/Everything.svelte";
-import KeyPoints from "../components/page/HowWeInvest/KeyPoints.svelte";
-import Screening from "../components/page/HowWeInvest/Screening.svelte";
-import ScreeningInPractice from "../components/page/HowWeInvest/ScreeningInPractice.svelte";
-import VotingAndCarbon from "../components/page/HowWeInvest/VotingAndCarbon.svelte";
-import ThreeActions from "../components/page/HowWeInvest/ThreeActions.svelte";
-import JoinNow from "../components/ui/JoinNow.svelte";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import HowWeInvestHeader from "@components/page/HowWeInvest/HowWeInvestHeader.svelte";
+import InvestmentStrategy from "@components/page/HowWeInvest/InvestmentStrategy.svelte";
+import Everything from "@components/page/HowWeInvest/Everything.svelte";
+import KeyPoints from "@components/page/HowWeInvest/KeyPoints.svelte";
+import Screening from "@components/page/HowWeInvest/Screening.svelte";
+import ScreeningInPractice from "@components/page/HowWeInvest/ScreeningInPractice.svelte";
+import VotingAndCarbon from "@components/page/HowWeInvest/VotingAndCarbon.svelte";
+import ThreeActions from "@components/page/HowWeInvest/ThreeActions.svelte";
+import JoinNow from "@components/ui/JoinNow.svelte";
 
-import pages from '../data/pages.json';
+import pages from "@data/pages.json";
 const relatedPages = [
   pages.EVERYTHING_WE_INVEST_IN,
   pages.INVESTMENT_OPTIONS,
-  pages.PERFORMANCE_AND_RETURNS
-]
+  pages.PERFORMANCE_AND_RETURNS,
+];
 ---
 
 <BaseLayout

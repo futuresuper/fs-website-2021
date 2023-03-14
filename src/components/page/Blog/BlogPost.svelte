@@ -3,7 +3,7 @@
   import slug from "../../scripts/slug";
 
   export let post;
-  const { title, author, image, tags, description, date } = post;
+  const { title, author, image, tags, description, date } = post.frontmatter;
 </script>
 
 <h1>{title}</h1>
@@ -24,7 +24,7 @@
   </div>
   <div class="image-and-text">
     <img src={image} alt={description} />
-    <slot />
+    {@html post.compiledContent()}
   </div>
 </div>
 
