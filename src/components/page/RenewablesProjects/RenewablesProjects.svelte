@@ -132,7 +132,6 @@
       </div>
     </div>
   </div>
-  <JoinNow />
 </SitePassword>
 
 <style lang="scss">
