@@ -115,7 +115,7 @@
             each card for more information.
           </h3>
           <p>
-            Exposure in these projects is obtained through Future Super's
+            Exposure in some of these projects is obtained through Future Super's
             investment in Infradebt. Infradebt is an investment in the
             Renewables Plus, Balanced Impact, and Balanced Growth Pension
             investment options only.
