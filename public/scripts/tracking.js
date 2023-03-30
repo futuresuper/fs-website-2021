@@ -4,25 +4,75 @@ window.onload = function () {
   if (referer) {
     setCookie("fsreferer", referer, 365);
   }
+  const referCode = referer || refererCookie;
 
   // Reddit pixel script
-  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_5k2s1p3', {"optOut":false,"useDecimalCurrencyValues":true});rdt('track', 'PageVisit');
+  !(function (w, d) {
+    if (!w.rdt) {
+      var p = (w.rdt = function () {
+        p.sendEvent
+          ? p.sendEvent.apply(p, arguments)
+          : p.callQueue.push(arguments);
+      });
+      p.callQueue = [];
+      var t = d.createElement("script");
+      (t.src = "https://www.redditstatic.com/ads/pixel.js"), (t.async = !0);
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(t, s);
+    }
+  })(window, document);
+  rdt("init", "t2_5k2s1p3", { optOut: false, useDecimalCurrencyValues: true });
+  rdt("track", "PageVisit");
 
   // StackAdapt pixel
-  !function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('ts', 'g8vKQngwKwiJ17GZcOLEqA');
+  !(function (s, a, e, v, n, t, z) {
+    if (s.saq) return;
+    n = s.saq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!s._saq) s._saq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "1.0";
+    n.queue = [];
+    t = a.createElement(e);
+    t.async = !0;
+    t.src = v;
+    z = a.getElementsByTagName(e)[0];
+    z.parentNode.insertBefore(t, z);
+  })(window, document, "script", "https://tags.srv.stackadapt.com/events.js");
+  saq("ts", "g8vKQngwKwiJ17GZcOLEqA");
+
+  // Send a segment event if the user has come from a referral link
+  if (referCode) {
+    analytics.track("ReferralCode Used", {
+      code: referCode,
+    });
+  }
 
   // If Join Page
   const refererField = document.getElementById("referer");
-  if (refererField) {
+  const isJoinPage = Boolean(refererField);
+  if (isJoinPage) {
+    if (referCode) {
+      refererField.value = referCode;
+      analytics.track("ReferralCode UsedOnJoinForm", {
+        code: referCode,
+      });
 
-    if (referer) {
-      refererField.value = referer;
-    } else if (refererCookie) {
-      refererField.value = refererCookie;
+      // Customer.io form handler
+      var t = document.createElement("script"),
+        s = document.getElementsByTagName("script")[0];
+      t.async = true;
+      t.id = "cio-forms-handler";
+      t.setAttribute("data-site-id", "7ec51976e7aed714a43e");
+      t.setAttribute("data-base-url", "https://customerioforms.com");
+      t.src = "https://customerioforms.com/assets/forms.js";
+      s.parentNode.insertBefore(t, s);
     }
 
     // Reddit pixel - track lead
-    rdt('track', 'Lead');
+    rdt("track", "Lead");
   }
 
   // Qualified Lead Event
