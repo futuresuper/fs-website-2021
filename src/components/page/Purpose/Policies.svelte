@@ -27,7 +27,7 @@ To set people up for success working from home, we offer a $750 budget to set up
       description: `Future Super Group recognizes that menstrual and menopausal experiences can be debilitating, yet as a society, we have been indoctrinated to [deny its existence publicly](https://www.futuresuper.com.au/blog/a-bloody-good-policy/). All full-time Future Super Group employees who experience menstruation and menopause are entitled to 6 paid days off a year to manage the symptoms. 
 
 This policy also acts as a commitment by Future Super Group that as an organisation we aim to remove the stigma and taboo surrounding menstruation and menopause, and recognize its impact on women and all people that menstruate and experience menopause. `,
-      link: "https://docs.google.com/document/d/1M9vaiFBybjmobrb_jYIQDNf6WACJFB-2hFftiQVxC3c/edit",
+      link: "https://docs.google.com/document/d/1bpX6CoxjewWIw2HHFs0eT0jgODYyrx5irUyu32JYEp8/edit",
     },
     {
       title: "Mental health and wellbeing",
