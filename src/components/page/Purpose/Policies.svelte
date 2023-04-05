@@ -56,7 +56,7 @@ We prioritise giving our business to Aboriginal and/or Torres Strait Islander ow
       title: "Anti-racism policy",
       description:
         "There is zero tolerance for racism and discrimination at Future Super. The super fund’s mission statement is to build a future free from climate change and inequality, and celebrating differences and creating a psychologically safe space for employees is an important part of that. Future Super’s anti-racism policy aims to set the foundations for providing a safe space for those who have been marginalised by the injustices of systemic racism. We offer annual anti-racism training to all employees so they’re better informed about the origins of racism and better equipped to counter potential racism in the workplace, or in their personal life. Our training providers have included Hue, Democracy in Colour and Erfan Daliri. ",
-      link: "https://docs.google.com/document/d/13Xa49Ox_lWIdBRqoX4_Umg9CXTurowWM/edit",
+      link: "https://docs.google.com/document/d/1TNlPSKFSaQo2NeSMCIAQxEVd02xl73Qf/edit",
     },
     {
       title: "Climate emergency leave",
