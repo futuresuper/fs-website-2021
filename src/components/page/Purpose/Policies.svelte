@@ -10,7 +10,7 @@
       title: "Remuneration",
       description: `Our remuneration policies aim to be fair, consistent and transparent and to remove inequality on the basis of gender and cultural diversity. Our salaries are benchmarked to the industry and are competitive.
 
-At Future Super Group, we cap our pay ratio of highest salary to lowest salary at 5 to 1. To offer some context, in 2021 the [ABC reported](https://www.abc.net.au/news/2021-08-23/ceo-pay-ratio-the-small-number-that-could-change-a-lot/100215434) that the chief executive of Woolworth’s out-earned the company’s average worker 143 to 1. In 2022, it was reported that Amazon’s [chief executive to worker pay gap was 6474 to 1](https://www.businessinsider.com/these-20-companies-have-biggest-ceo-to-worker-pay-ratios-2022-7#:~:text=Amazon%20had%20the%20biggest%20CEO,a%20mile%3A%206%2C474%20to%201.). 
+At Future Super Group, we cap our pay ratio of highest base salary to lowest base salary at 5 to 1. We report this figure to B Corp as part of their rigorous re-certification process.
 
 On top of capping our pay ratio and to further our commitment to treating those on lower salaries with the fairness everyone deserves, Future Super Group pays all full time employees earning less than $120,000 an extra 1% in superannuation. 
 
