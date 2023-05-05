@@ -14,7 +14,7 @@ At Future Super Group, we cap our pay ratio of highest base salary to lowest bas
 
 On top of capping our pay ratio and to further our commitment to treating those on lower salaries with the fairness everyone deserves, Future Super Group pays all full time employees earning less than $120,000 an extra 1% in superannuation. 
 
-To address the gender pay gap and improve diversity, Future Super Group has a[ diversity dashboard](https://datastudio.google.com/u/0/reporting/7bb60d21-08b1-4236-9207-260f09522ac6/page/iyPsC) and reports on the gender pay gap and on diversity within our business. Our numbers shift and often are not where we would like them to be, but we believe we will improve by being transparent because that’s how we hold ourselves to account. We encourage staff to openly discuss compensation, ask questions and advocate for themselves and others. `,
+To address the gender pay gap and improve diversity, Future Super Group has a[ diversity dashboard](https://lookerstudio.google.com/u/5/reporting/039500c3-eb10-47fd-8303-900b0d4928fc/page/p_cgwbrcgc5c) and reports on the gender pay gap and on diversity within our business. Our numbers shift and often are not where we would like them to be, but we believe we will improve by being transparent because that’s how we hold ourselves to account. We encourage staff to openly discuss compensation, ask questions and advocate for themselves and others. `,
     },
     {
       title: "Flexible working",
