@@ -1,7 +1,7 @@
 ---
 title: Social Media Producer
 startDate: 2023-04-26T04:20:17.483Z
-endDate: 2023-05-10T04:20:17.511Z
+endDate: 2023-05-14T04:20:17.511Z
 location: " Our team is mainly based in Sydney, we are open to candidates from
   anywhere in Australia"
 salary: $75,000 - $90,000 + super + 1% additional super
