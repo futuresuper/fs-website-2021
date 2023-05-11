@@ -14,11 +14,8 @@ You need to submit your form by the earlier of either:
 
 For example, if you made personal contributions in the 2022-2023 financial year, you’re required to submit your Notice of Intent either before you lodge your 2022-2023 tax return, or before the end of the next financial year (30th June 2024), whichever comes sooner.
 
-
 You find further instructions for completing and submitting a notice of intent to claim or vary a deduction for personal super contributions form[ in our FAQs ](https://www.futuresuper.com.au/faqs/how-do-i-submit-a-notice-of-intent-to-claim-my-personal-contribution-as-a-tax-deduction/)as well as on the [ATO website.](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Claiming-deductions-for-personal-super-contributions/?page=2#When_to_give_your_notice_of_intent)
 
-
-*Please note that as stated in **Section D: Declaration of the form,** we can only apply a Notice of intent to claim or vary a deduction for personal super contributions to your account to **a) contributions received by and currently held by Future Super, and b) while you are a current member of Future Super.***
-
+Please note that as stated in **Section D: Declaration of the form,** we can only apply a Notice of intent to claim or vary a deduction for personal super contributions to your account to **a) contributions received by and currently held by Future Super, and b) while you are a current member of Future Super.**
 
 ***We are not able to apply your notice to any personal contributions that you made to another fund prior to rolling over to Future Super, or to any contributions made to your account while you were a member if you have exited the Fund before filing your notice of intent to claim.***
