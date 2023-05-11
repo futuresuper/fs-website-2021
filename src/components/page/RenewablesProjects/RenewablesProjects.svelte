@@ -111,12 +111,12 @@
       <div class="card-container">
         <div class="description">
           <h3>
-            Explore some renewables projects Future Super is invested in. Tap on
+            Explore some renewables projects you may be invested in. Tap on
             each card for more information.
           </h3>
           <p>
-            Exposure in some of these projects is obtained through Future Super's
-            investment in Infradebt. Infradebt is an investment in the
+            Exposure to these projects is obtained through Future Super's
+            investment in Infradebt. Exposure to Infradebt is in the
             Renewables Plus, Balanced Impact, and Balanced Growth Pension
             investment options only.
           </p>
