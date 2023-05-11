@@ -7,15 +7,9 @@ order: 8
 ---
 If you’d like to grow your super balance, you can make contributions to your super from your after-tax pay - these payments are called [](https://moneysmart.gov.au/grow-your-super/super-contributions) **[non-concessional contributions](https://moneysmart.gov.au/grow-your-super/super-contributions).**
 
- 
-
 When you make a personal contribution, it's not as simple as putting the dollar amount in your account. Before a payment can be allocated to your account, we need information, via a personal contribution form (please see below for more information) to allocate it correctly. If we do not receive the correct information in time, **your funds may be returned to you.**
 
- 
-
 Your super is split into [](https://www.ato.gov.au/Super/APRA-regulated-funds/Paying-benefits/Calculating-components-of-a-super-benefit/) [components](https://www.ato.gov.au/Super/APRA-regulated-funds/Paying-benefits/Calculating-components-of-a-super-benefit/) depending on the source of the funds. As these can affect the way your super is taxed or paid in the future, the ATO requires that we record this information at the time we accept funds into your account.
-
- 
 
 **How to make a personal contribution to your Future Super account**
 
@@ -37,6 +31,7 @@ There's two steps:
    For your **transaction description**, **please enter the unique reference number from your online form.** \
    \
    If you use the manual personal contribution form, you'll need to make sure the payment reference you choose in Section 2 exactly matches the payment description you enter when you make the payment from your bank account. We recommend using your member number + contribution type e.g. 123456personal.
+
 
 
 
