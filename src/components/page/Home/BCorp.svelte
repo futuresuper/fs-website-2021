@@ -5,10 +5,16 @@
 
 <div class="container">
   <section>
-    <p>
-      Future Super has been awarded Best For The World™ status by B Corp
-      for&nbsp;2022.
-    </p>
+    <div class="text">
+      <p>
+        Future Super has been awarded Best For The World™ status by B Corp
+        for&nbsp;2022.
+      </p>
+      <p class="disclaimer">
+        Source:
+        https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/
+      </p>
+    </div>
     <div class="best">
       <BestInWorldCircle />
       <div>
@@ -32,11 +38,17 @@
     align-items: center;
   }
 
-  p {
+  .text {
     max-width: 40%;
-    font-size: 30px;
-    line-height: 120%;
-    margin: 0;
+    p {
+      font-size: 30px;
+      line-height: 120%;
+      margin: 0;
+    }
+    .disclaimer {
+      font-size: 11px;
+      margin-top: 20px;
+    }
   }
 
   .best {
@@ -60,11 +72,13 @@
       width: 100%;
     }
 
-    p {
+    .text {
       max-width: 100%;
-      font-size: 20px;
-      text-align: center;
       margin-bottom: 20px;
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 
