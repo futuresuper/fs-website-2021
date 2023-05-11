@@ -13,7 +13,9 @@
       <p class="disclaimer">
         Source:
         <a
-          href="https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/"
+          href="https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/#:~:text=Future%20Super%20Services%20Pty%20Ltd"
+          target="_blank"
+          rel="noopener noreferrer"
           >https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/</a
         >
       </p>
