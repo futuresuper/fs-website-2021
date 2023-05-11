@@ -12,7 +12,10 @@
       </p>
       <p class="disclaimer">
         Source:
-        https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/
+        <a
+          href="https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/"
+          >https://www.bcorporation.net/en-us/best-for-the-world-2022-customers/</a
+        >
       </p>
     </div>
     <div class="best">
@@ -48,6 +51,12 @@
     .disclaimer {
       font-size: 11px;
       margin-top: 20px;
+      color: $black500;
+      a {
+        &:hover {
+          color: $black500;
+        }
+      }
     }
   }
 
