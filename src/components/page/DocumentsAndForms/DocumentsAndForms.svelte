@@ -12,6 +12,7 @@
     "Impact Reports",
     "Employer Forms",
     "Significant Event Notices",
+    "Member Outcomes Assessments",
     "Disclosure Requirements",
     "Other Documents",
   ];
