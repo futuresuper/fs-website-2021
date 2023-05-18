@@ -9,6 +9,7 @@ import InvestmentOptions from "@components/page/Home/InvestmentOptions.svelte";
 import ClearTransparent from "@components/page/Home/ClearTransparent.svelte";
 import Reviews from "@components/page/Home/Reviews.svelte";
 import JoinNow from "@components/ui/JoinNow.svelte";
+import AppDownload from "@components/page/Home/AppDownload.svelte";
 ---
 
 <BaseLayout noContainer customHeader={true} noBehindHeader={true}>
@@ -18,6 +19,7 @@ import JoinNow from "@components/ui/JoinNow.svelte";
   <!-- This section about carbon abatement is being removed for now as it has been deemed too risky -->
   <!-- <SwitchShake /> -->
 
+  <AppDownload client:visible />
   <BCorp />
   <InvestmentOptionsIntro />
   <InvestmentOptions />
