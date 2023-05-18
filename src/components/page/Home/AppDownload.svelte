@@ -6,7 +6,9 @@
   };
 
   const handleAppStoreClick = (link) => {
-    analytics.track("ExternalLink Opened");
+    analytics.track("ExternalLink Opened", {
+      href: link,
+    });
     window.open(link, "_blank");
   };
 </script>
