@@ -5,11 +5,11 @@
       "https://play.google.com/store/apps/details?id=au.com.futuresuper.app",
   };
 
-  const handleAppStoreClick = (link) => {
+  const handleAppStoreClick = (href) => {
     analytics.track("ExternalLink Opened", {
-      href: link,
+      href,
     });
-    window.open(link, "_blank");
+    window.open(href, "_blank");
   };
 </script>
 
@@ -29,9 +29,8 @@
             class="app-store-button"
             on:click={() => handleAppStoreClick(url.ios)}
             on:keydown={() => handleAppStoreClick(url.ios)}
-            tabindex="0"
             role="button"
-            aria-label="Download on the App Store"
+            aria-label="Download on the Apple App Store"
           >
             <img
               id="app-store"
@@ -43,7 +42,6 @@
             class="app-store-button"
             on:click={() => handleAppStoreClick(url.android)}
             on:keydown={() => handleAppStoreClick(url.android)}
-            tabindex="0"
             role="button"
             aria-label="Download on the Google Play Store"
           >
