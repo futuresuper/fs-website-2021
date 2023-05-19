@@ -23,7 +23,7 @@ We are looking for a Head of People & Culture (12-month, fixed-term contract - p
 
 We strongly encourage applications from people with diverse lived experience and identities as the problems we face are complex, and the more diverse our team is, the better our solutions become. We are a team that is all about building a strong workplace culture, that's not only diverse, but competent. We are always learning and doing better together, and holding ourselves to account on our values.
 
-If you are of Aboriginal and/or Torres Strait Islander background, a person with a disability, someone from a cultural and linguistically diverse background, mature aged, LGBTQIA+ we would love for you to apply. Please get in touch to learn more about who we are before applying, or if you need any assistance with the application process.
+If you are of Aboriginal and/or Torres Strait Islander background, a person with a disability, someone from a culturally and racially marginalised background, mature aged, LGBTQIA+ we would love for you to apply. Please get in touch to learn more about who we are before applying, or if you need any assistance with the application process.
 
 **You’ll love this job if you:**
 
