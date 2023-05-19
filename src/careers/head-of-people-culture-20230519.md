@@ -46,7 +46,7 @@ If you are of Aboriginal and/or Torres Strait Islander background, a person with
 * Cares deeply about Diversity, Equity and Inclusion, and is able to consider all of their work through this lens 
 * Isn’t above jumping in and lending a hand to members of the People & Culture team if they find themselves a bit stretched
 
-It would be great if you also had experience:
+**It would be great if you also had experience:**
 
 * Working directly with an executive team, and providing recommendations to a CEO and Board
 * Overseeing and supporting change management and transformation
