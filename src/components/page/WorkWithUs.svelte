@@ -29,9 +29,7 @@
               <div class="career-item">
                 <h4>Closes</h4>
                 <p>
-                  {moment(career.endDate)
-                    .add(10, "hours")
-                    .format("Do of MMMM, YYYY")}
+                  {moment(career.endDate).format("Do of MMMM, YYYY")}
                 </p>
               </div>
             </div>
