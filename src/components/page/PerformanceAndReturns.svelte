@@ -6,7 +6,7 @@
   export let faqs = [];
 
   const returnsWith30June = [
-    ...returns.table.slice(0, 6),
+    ...returns.table.slice(0, 7),
     {
       rowHeading: "1 Year to 30 June 2022",
       balancedIndex: "-11.41%",
@@ -14,7 +14,7 @@
       renewablesPlusGrowth: "-9.87%",
       balancedGrowthPension: "-10.97%",
     },
-    ...returns.table.slice(6),
+    ...returns.table.slice(7),
   ];
 </script>
 
