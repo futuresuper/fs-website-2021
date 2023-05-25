@@ -1,7 +1,7 @@
 ---
-title: Trust Deed for the Future Super Fund
-docurl: http://diversa.com.au/trustee/future-super
-type: Online
+title: Trust Deed - Amendment 5 - December 2018
+docurl: /trust-deed-5
+type: PDF
 category: Super Documents
 order: 12
 ---
