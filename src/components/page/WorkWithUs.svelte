@@ -117,6 +117,14 @@
       Future Super Group has been awarded Best For The World™ for Customers
       status by B Corp for 2022
     </p>
+    <p class="disclaimer">
+      Source:
+      <a
+        href="https://www.bcorporation.net/en-us/find-a-b-corp/company/future-superannuation-holdings-pty-ltd/"
+        target="_blank"
+        rel="noopener noreferrer">B Corp</a
+      >
+    </p>
   </div>
   <div class="box">
     <div class="logo">
@@ -129,6 +137,14 @@
     <p>
       Future Super Group is ranked #1 in the AFR BOSS Best Places to Work 2022
       in the category of financial services
+    </p>
+    <p class="disclaimer">
+      Source:
+      <a
+        href="https://afrbestplacestowork.com/2022-winners/"
+        target="_blank"
+        rel="noopener noreferrer">AFR Boss</a
+      >
     </p>
   </div>
 </div>
@@ -241,6 +257,16 @@
     p {
       color: $white;
       text-align: center;
+    }
+    p.disclaimer {
+      font-size: 11px;
+      color: $black500;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $black500;
+        }
+      }
     }
     .logo {
       height: 340px;
