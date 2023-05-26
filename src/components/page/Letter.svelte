@@ -13,28 +13,46 @@
   let referCode = "";
   let firstName = "";
   let fund = "";
+
   let share;
 
   if (clientSide) {
-    referCode = getQueryParam("r");
+    const userId = getQueryParam("i");
     firstName = getQueryParam("first");
     fund = getQueryParam("fund");
-    share = getQueryParam("share");
-    if (share) {
-      postData(
-        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letter?rcode=" +
-          referCode
-      );
-    } else {
-      friendMode = true;
-      getData(
-        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letterdetails?rcode=" +
-          referCode
-      ).then((data) => {
-        firstName = data.firstName;
-        fund = data.oldFund;
-      });
-    }
+    analytics.identify(userId);
+    analytics.track("BreakupLetterPage Viewed");
+
+    // _cio.identify({
+    //   // Required attributes
+    //   cio_id: userId, // Use either cio_id or id.
+    // });
+
+    // _cio.track("BreakupLetter PageViewed");
+      
+      
+    
+    // PREVIOUS IMPLEMENTATION
+    // referCode = getQueryParam("r");
+    // firstName = getQueryParam("first");
+    // fund = getQueryParam("fund");
+    // share = getQueryParam("share");
+    // if (share) {
+    //   postData(
+    //     "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letter?rcode=" +
+    //       referCode
+    //   );
+    // } else {
+    //   friendMode = true;
+    //   getData(
+    //     "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letterdetails?rcode=" +
+    //       referCode
+    //   ).then((data) => {
+    //     console.log(data);
+    //     firstName = data.firstName;
+    //     fund = data.oldFund;
+    //   });
+    // }
   }
 
   function handleCopy() {
