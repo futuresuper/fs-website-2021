@@ -17,21 +17,27 @@
   let share;
 
   if (clientSide) {
-    const userId = getQueryParam("i");
-    firstName = getQueryParam("first");
-    fund = getQueryParam("fund");
+    // Extract the details from the link code
+    // The link code is a base64 encoded json object containing the necessary details
+    const code = getQueryParam("r");
+    const details = JSON.parse(window.atob(code));
+    
+    // Get the details to display on the page
+    firstName = details.firstName;
+    fund = details.fund;
+
+    // Identify the user so this page view can be tracked
+    const userId = details.userId;
     analytics.identify(userId);
     analytics.track("BreakupLetterPage Viewed");
 
-    // _cio.identify({
-    //   // Required attributes
-    //   cio_id: userId, // Use either cio_id or id.
-    // });
-
-    // _cio.track("BreakupLetter PageViewed");
+    // With details in the URL
+    // const userId = getQueryParam("i");
+    // firstName = getQueryParam("first");
+    // fund = getQueryParam("fund");
+    // analytics.identify(userId);
+    // analytics.track("BreakupLetterPage Viewed");
       
-      
-    
     // PREVIOUS IMPLEMENTATION
     // referCode = getQueryParam("r");
     // firstName = getQueryParam("first");
