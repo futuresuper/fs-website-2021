@@ -65,19 +65,62 @@ We prioritise giving our business to Aboriginal and/or Torres Strait Islander ow
     },
     {
       title: "Parental leave",
-      description: `We’re currently in the process of refreshing our parental leave policy to make it as good as possible. We’ve always offered paid parental leave of 14 weeks to all workers regardless of gender or carer status, and we will continue to do that. 
+      description: `When taking parental leave, Future Super employees will continue to receive superannuation payments during the period of leave, for up to 12 months. If you start working part-time in a role that would otherwise be full-time were it not for your parenting responsibilities, or return to work part-time after parental leave, then you will receive super contributions as if you were working full-time. We do this so that people who take parental leave or work part-time due to parenting responsibilities - often women - don’t take a hit to their superannuation as a result. According to 2022 statistics, the average superannuation payout for women is a third of the payout for men - $37,000 compared with $110, 000.
 
-When taking parental leave, Future Super employees will continue to receive superannuation payments during the period of leave, for up to 12 months. If you start working part-time in a role that would otherwise be full-time were it not for your parenting responsibilities, or return to work part-time after parental leave, then you will receive super contributions as if you were working full-time. We do this so that people who take parental leave or work part-time due to parenting responsibilities - often women - don’t take a hit to their superannuation as a result. According to[ 2022 statistics](https://humanrights.gov.au/our-work/gender-gap-retirement-savings), the average superannuation payout for women is a third of the payout for men - $37,000 compared with $110, 000.
+Other benefits of Future Super Group’s parental leave policy include 5 days of paid pre-adoption, pre-fostering, pre-surrogacy or fertility leave; 5 days of pre-parental leave; and access to 3 x career coaching sessions (before, during and after parental leave). 
 
-According to the legislation around long service leave, parental leave doesn’t break your continuity of service with an employer, but also  doesn’t count towards your continuous service, which ultimately entitles you to long service leave. The Future Super team thinks this is another old fashioned policy that creates gender inequality, so we do count parental leave towards service - that means carers can access long service leave sooner. 
+To acknowledge parents’ need for flexibility, for the first three months after returning to work, parents can work 4 days per week  but be paid for a full 5-day week. If parents return to work and begin working part-time in a role that would otherwise be full-time were it not for their caring responsibilities, then they will receive super contributions as if they were working full-time. 
 
-We also refund the administration fee for Future Super members while they are on parental leave under our [Baby Bump](https://www.futuresuper.com.au/baby-bump/#:~:text=Baby%20Bump%20is%20a%20refund,when%20you%20take%20parental%20leave) policy. `,
+There’s also no minimum requirement for length of employment to be eligible for parental leave at Future Super Group.`,
     },
     {
       title: "Gender affirmation leave",
       description: `This policy is still a work in progress. We believe that creating a society that is inclusive and equitable is everyone’s business and, as an employer, Future Super has an opportunity to practice real allyship for Transgender and Gender Diverse people. 
       
 Future Super will support Transgender and Gender Diverse employees by creating a workplace plan in conjunction with an employee undergoing any aspect of a gender affirmation process, noting that each process will look different for each person. We will offer flexible working arrangements, up to 30 days paid (6 weeks) leave and 12 months unpaid leave in these circumstances.`,
+    },
+    {
+      title: "Cultural leave (for culturally and/or faith diverse people)",
+      description: `This policy is a small part of Future Super Group’s work to decolonise the workplace. Culturally and/or faith diverse people are often underrepresented and marginalised throughout their lives, which contradicts the values of diversity, equity and inclusion which Future Super Group upholds. 
+
+Australia’s history is rooted in colonisation, exploitation, and injustice. Unfortunately, our current systems and norms are a product of historical inequalities, and continue to foster unfair outcomes for culturally and/or faith diverse people.
+
+With this policy, full-time culturally and/or faith diverse employees (either on a permanent or fixed-term contract) are entitled to up to 4 paid cultural leave days per financial year. Cultural leave is pro-rated. Managers are encouraged to facilitate cultural leave.`,
+      link: "https://docs.google.com/document/d/1HVWzDOAKajY2ECLWlkpppui-xRduxz8B/edit",
+    },
+    {
+      title: "Cultural leave (for First Nations peoples)",
+      description: `Future Super Group is strongly committed to reconciliation with First Nations peoples and communities. As a business that exists to build a future free from climate change and inequality, it is vital we pursue equity for our staff and stay true to our purpose.
+
+A [Minderoo Foundation study from 2018](https://www.minderoo.org/indigenous-employment-index/), found that racism in the workplace is a common experience for Indigenous employees, with more than 50% of study participants reporting they had experienced direct or indirect racism at work. The study also found that many First Nations employees feel culturally unsafe at work, meaning they cannot practise their cultural identity without discrimination, ridicule or denunciation.
+
+Full-time Aboriginal and Torres Strait Islander employees (either on a permanent or fixed-term contract) are entitled to up to 4 paid cultural leave days per financial year. Cultural leave is pro-rated. Managers are encouraged to facilitate cultural leave.`,
+      link: "https://docs.google.com/document/d/1EkVTFmmlSyt5O4LRydSXllSufIphRzo-/edit",
+    },
+    {
+      title: "Public holiday swapping",
+      description: `Another part of extending inclusivity to all employees, and of working to decolonise the workplace, is acknowledging that some public holidays are not only irrelevant to some employees - they may even be offensive. 
+
+All full-time and part-time employees (either on a permanent or fixed-term contract) are entitled to swap any number of public holidays within a calendar year. The public holiday(s) can be swapped for any other working day in the same calendar year.
+
+Christmas Day, Boxing Day and New Year’s Day are currently excluded from this policy, due to the office shutdown period.`,
+      link: "https://docs.google.com/document/d/1MoBOvZC9lBYOiz5IkXNwCREKZvDYCWCfeZ7BhAPb1dU/edit",
+    },
+    {
+      title: "Pay the Rent",
+      description: `In acknowledging that the sovereignty of First Nations people was never ceded, we also acknowledge that we conduct business and take shelter on land which was removed from First Nations people. This has created a disproportionate distribution of wealth and marginalised the Aboriginal and Torres Strait Islander owners. 
+
+Paying the Rent is a step towards justice, truth and equality for First Nations people. Future Super Group pays rent through the [Pay The Rent Collective](https://paytherent.net.au/about-us/), which disburses payments to a range of Aboriginal and Torres Strait Islander organisations they partner with across the country.`,
+      link: "https://docs.google.com/document/d/1la0VZhGWGBTRIud4qYXJfbvnDhnAD_m0/edit",
+    },
+    {
+      title: "Statement of commitment to increase First Nations employment",
+      description: `At Future Super Group, we are committed to building on our Reconciliation Action Plan (RAP). We strongly commit to attaining a First Nations employment target of 3.8% by 2025. 
+
+This figure is in-line with the 2021 census statistic that 3.8% of the Australian population are Aboriginal and Torres Strait Islander.
+
+The commitment to increasing First Nations employment was developed in consultation with Arrilla Indigenous Consulting (Arrilla), which created an Aboriginal and Torres Strait Islander Employment Strategy for Future Super Group. We acknowledge that there is a lot of work to be done internally to attract and maintain First Nations employees and, thanks to insights from Arrilla, we have steps in place to meet our target.`,
+      link: "https://docs.google.com/document/d/1d55QtU07ydvr-mPZprTl56dC3ThOCvnuNiaElsnqVfM/edit",
     },
   ];
 </script>
