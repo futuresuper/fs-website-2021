@@ -1,4 +1,5 @@
 <script>
+  import Logo from "@components/images/Logo.svelte";
   import { getQueryParam } from "@components/scripts/getQueryParam.js";
   const clientSide = !import.meta.env.SSR;
 
@@ -41,7 +42,7 @@
 
   if (clientSide) {
     const linkType = linkTypes[getQueryParam("linktype")];
-    let store = stores[getQueryParam("store")] || getStore();
+    const store = stores[getQueryParam("store")] || getStore();
     const source = sources[getQueryParam("source")];
 
     analytics.track("AppStoreLink Used", {
@@ -54,4 +55,31 @@
   }
 </script>
 
-Please wait...
+<div class="container">
+  <Logo colour="white" />
+  <h3>Please wait...</h3>
+  <p>Redirecting to app store</p>
+</div>
+
+<style lang="scss">
+  @use "../../styles/" as *;
+
+  .container {
+    max-width: none;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  h3 {
+    margin-top: 80px;
+  }
+
+  h3,
+  p {
+    color: $white;
+  }
+</style>

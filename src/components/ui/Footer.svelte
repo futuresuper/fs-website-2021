@@ -66,14 +66,20 @@
           </a>
         </div>
         <div class="app-download">
-          <a href="https://apps.apple.com/au/app/future-super/id1620110464">
+          <a
+            href="https://www.futuresuper.com.au/app-store?linktype=button&source=footer&store=apple"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Apple2.png"
               alt="Apple App Store"
             />
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app"
+            href="https://www.futuresuper.com.au/app-store?linktype=button&source=footer&store=google"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Google2.png"

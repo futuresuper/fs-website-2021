@@ -1,8 +1,8 @@
 <script>
   const url = {
-    ios: "https://apps.apple.com/au/app/future-super/id1620110464",
+    ios: "https://www.futuresuper.com.au/app-store?linktype=button&source=homePage&store=apple",
     android:
-      "https://play.google.com/store/apps/details?id=au.com.futuresuper.app",
+      "https://www.futuresuper.com.au/app-store?linktype=button&source=homePage&store=google",
   };
 
   const handleAppStoreClick = (href) => {
@@ -54,7 +54,7 @@
         </div>
         <img
           id="qr-code"
-          src="https://res.cloudinary.com/future-super/image/upload/v1684297442/qr-code-7.png"
+          src="https://res.cloudinary.com/future-super/image/upload/v1686033581/Website_QR_Code_to_App_Stores.svg"
           alt="QR code to download Future Super app on the App Store"
         />
       </div>
@@ -144,6 +144,7 @@
     &#qr-code {
       width: 180px;
       margin-left: 20px;
+      border-radius: 20px;
     }
     &#app-screenshot {
       width: 383px;

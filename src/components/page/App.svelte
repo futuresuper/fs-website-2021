@@ -4,10 +4,14 @@
   <div>
     <img
       class="qr-code"
-      src="https://res.cloudinary.com/future-super/image/upload/v1666673642/apple-app-qr.png"
+      src="https://res.cloudinary.com/future-super/image/upload/v1686098692/Website_App_Page_QR_Code_to_Apple_App_Store.svg"
       alt="QR Code to get the Future Super app from the Apple App Store"
     />
-    <a href="https://apps.apple.com/au/app/future-super/id1620110464">
+    <a
+      href="https://www.futuresuper.com.au/app-store?linktype=button&source=appPage&store=apple"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         class="store-button"
         src="https://res.cloudinary.com/future-super/image/upload/v1666673642/apple-app-store-button.png"
@@ -18,11 +22,13 @@
   <div>
     <img
       class="qr-code"
-      src="https://res.cloudinary.com/future-super/image/upload/v1666673642/android-app-qr.png"
+      src="https://res.cloudinary.com/future-super/image/upload/v1686098694/Website_App_Page_QR_Code_to_Google_Store.svg"
       alt="QR Code to get the Future Super app from the Google Play Store"
     />
     <a
-      href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app"
+      href="https://www.futuresuper.com.au/app-store?linktype=button&source=appPage&store=google"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         class="store-button"
