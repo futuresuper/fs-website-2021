@@ -9,8 +9,6 @@ applicationUrl: https://app.beapplied.com/apply/sm5kdk40hg
 summary: We are looking for someone to join our mission focused high-growth
   scaleup to create videos that demonstrate the power super has.
 ---
-
-
 ### About Future Super
 
 At Future Super, we’re making money moves and changing the way super is done. By giving people a chance to invest their life savings in companies that don’t harm the planet, we’re showing the power super has to change the world! 
@@ -61,8 +59,7 @@ We strongly encourage applications from Aboriginal and Torres Strait Islander pe
 \
 Don’t tick all the boxes? That’s okay, we like thinking outside the box. We value skills, passion and who you are over what you’ve done or where you’ve studied. So if this job resonates with you, we want to hear from you!
 
-### \
-Why would you enjoy working at Future Super?
+### Why would you enjoy working at Future Super?
 
 * A purpose-driven organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality
 * A proud [B Corp](https://www.bcorporation.net/en-us/certification) organisation that cares about how it behaves inside and out
