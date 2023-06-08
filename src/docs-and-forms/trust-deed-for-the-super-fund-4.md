@@ -2,7 +2,7 @@
 title: Trust Deed - Amendment 4 - November 2017
 docurl: /trust-deed-4
 type: PDF
-category: Super Documents
+category: Trust Deed
 order: 13
 ---
 

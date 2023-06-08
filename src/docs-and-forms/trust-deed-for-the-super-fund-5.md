@@ -2,7 +2,7 @@
 title: Trust Deed - Amendment 5 - December 2018
 docurl: /trust-deed-5
 type: PDF
-category: Super Documents
+category: Trust Deed
 order: 12
 ---
 

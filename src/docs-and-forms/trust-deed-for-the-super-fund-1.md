@@ -2,7 +2,7 @@
 title: Trust Deed - Amendment 1 - September 2011
 docurl: /trust-deed-1
 type: PDF
-category: Super Documents
+category: Trust Deed
 order: 16
 ---
 

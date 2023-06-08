@@ -2,7 +2,7 @@
 title: Trust Deed - Amendment 3 - June 2015
 docurl: /trust-deed-3
 type: PDF
-category: Super Documents
+category: Trust Deed
 order: 14
 ---
 

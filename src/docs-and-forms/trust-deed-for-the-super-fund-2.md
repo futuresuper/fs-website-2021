@@ -2,7 +2,7 @@
 title: Trust Deed - Amendment 2 - August 2013
 docurl: /trust-deed-2
 type: PDF
-category: Super Documents
+category: Trust Deed
 order: 15
 ---
 
