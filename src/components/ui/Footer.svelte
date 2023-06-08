@@ -122,11 +122,10 @@
             supplied.
           </p>
           <p class="disclaimer">
-            Interests in Future Super are issued by Diversa Trustees Limited
-            (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635) (“the
-            Trustee”) as trustee of the Future Super Fund (ABN 45 960 194 277;
-            RSE Registration R1072914) (“the Fund” or “Future Super”). The Fund
-            is administered by OneVue Super Services Pty Limited (ABN 74 006 877
+            Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE
+            Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund
+            (ABN 45 960 194 277; RSE Registration R1072914). The Fund is
+            administered by OneVue Super Services Pty Limited (ABN 74 006 877
             872; AFSL 246883). Insurance cover is provided to eligible members
             by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
           </p>
