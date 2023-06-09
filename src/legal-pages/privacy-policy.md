@@ -187,3 +187,5 @@ Email: enquiries@oaic.gov.au
 Mail: GPO Box 5218, Sydney NSW 2001, Australia
 
 **Last updated:** ​ September 2021
+
+See the Trustee's privacy statement at [https://www.eqt.com.au/global/privacystatement](www.eqt.com.au/global/privacystatement)
