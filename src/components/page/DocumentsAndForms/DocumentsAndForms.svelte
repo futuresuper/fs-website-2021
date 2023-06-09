@@ -6,6 +6,7 @@
 
   const categories = [
     "Super Documents",
+    "Trust Deed",
     "Super Forms",
     "Pension Documents and Forms",
     "Annual Reports",
