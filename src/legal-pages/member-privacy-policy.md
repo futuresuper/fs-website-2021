@@ -171,4 +171,4 @@ Telephone: 1300 363 992\
 Email: [enquiries@oaic.gov.au](mailto:enquiries@oaic.gov.au)\
 Post: OAIC, GPO Box 5218 Sydney NSW 2001
 
-See the Trustee's privacy statement at [https://www.eqt.com.au/global/privacystatement](www.eqt.com.au/global/privacystatement)
+See the Trustee's privacy statement at [https://www.eqt.com.au/global/privacystatement](https://www.eqt.com.au/global/privacystatement)
