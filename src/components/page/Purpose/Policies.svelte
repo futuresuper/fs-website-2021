@@ -65,13 +65,14 @@ We prioritise giving our business to Aboriginal and/or Torres Strait Islander ow
     },
     {
       title: "Parental leave",
-      description: `When taking parental leave, Future Super employees will continue to receive superannuation payments during the period of leave, for up to 12 months. If you start working part-time in a role that would otherwise be full-time were it not for your parenting responsibilities, or return to work part-time after parental leave, then you will receive super contributions as if you were working full-time. We do this so that people who take parental leave or work part-time due to parenting responsibilities - often women - don’t take a hit to their superannuation as a result. According to 2022 statistics, the average superannuation payout for women is a third of the payout for men - $37,000 compared with $110, 000.
-
-Other benefits of Future Super Group’s parental leave policy include 5 days of paid pre-adoption, pre-fostering, pre-surrogacy or fertility leave; 5 days of pre-parental leave; and access to 3 x career coaching sessions (before, during and after parental leave). 
+      description: `Future Super Group offers 20 weeks of paid parental leave. In addition, employees may access 5 days of paid pre-adoption, pre-fostering, pre-surrogacy or fertility leave; 5 days of pre-parental leave; and access to 3 x career coaching sessions (before, during and after parental leave). 
+      
+When taking parental leave, Future Super Group employees will continue to receive superannuation payments during the period of leave, for up to 12 months. If you start working part-time in a role that would otherwise be full-time were it not for your parenting responsibilities, or return to work part-time after parental leave, then you will receive super contributions as if you were working full-time. We do this so that people who take parental leave or work part-time due to parenting responsibilities - often women - don’t take a hit to their superannuation as a result. According to 2022 statistics, the average superannuation payout for women is a third of the payout for men - $37,000 compared with $110, 000.
 
 To acknowledge parents’ need for flexibility, for the first three months after returning to work, parents can work 4 days per week  but be paid for a full 5-day week. If parents return to work and begin working part-time in a role that would otherwise be full-time were it not for their caring responsibilities, then they will receive super contributions as if they were working full-time. 
 
 There’s also no minimum requirement for length of employment to be eligible for parental leave at Future Super Group.`,
+      link: "https://docs.google.com/document/d/1XNnpa-Vnmq6GdkwN1PCybR8gt_my_8SFBLvs8R-KHjg/edit",
     },
     {
       title: "Gender affirmation leave",
