@@ -62,7 +62,7 @@
     <div id="app-crop">
       <img
         id="app-screenshot"
-        src="https://res.cloudinary.com/future-super/image/upload/v1684302130/phone-app-screenshot.png"
+        src="https://res.cloudinary.com/future-super/image/upload/v1687325459/app-screenshot-2.png"
         alt="Screenshot of the Future Super mobile app"
       />
     </div>
