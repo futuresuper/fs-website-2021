@@ -7,7 +7,7 @@ alsoSee:
   - Fund Information
 ---
 
-The website www.futuresuper.com.au (‘this website’) is owned and operated by Future Superannuation Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. By accessing this website, you agree to the following terms and conditions.
+The website www.futuresuper.com.au (‘this website’) is owned and operated by Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. By accessing this website, you agree to the following terms and conditions.
 
 ## General information only
 
@@ -39,15 +39,15 @@ This website may provide information, articles and material that are written and
 
 ## Issuer and promoter details
 
-Interests in the Future Superannuation Fund are issued by Diversa Trustees Limited (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635) as trustee of the Future Superannuation Fund (ABN 45 960 194277; RSE Registration R1072914). The Future Superannuation Fund is administered by OneVue Super Services Pty Limited (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
+Interests in the Future Superannuation Fund are issued by Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE Licence L0001458, AFSL 229757) as trustee of the Future Superannuation Fund (ABN 45 960 194277; RSE Registration R1072914). The Future Superannuation Fund is administered by OneVue Super Services Pty Limited (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
 
-The Founder, Promoter and Investment Manager of the Future Superannuation Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Superannuation Holdings Pty Ltd (ABN 90 167800 580; AFSL 482684) and a member of the Future Super Group. The trustee does not in any way endorse, warrant, or accept responsibility for any services provided by the Promoter in its own right or directly to members or prospective members.
+The Founder, Promoter and Investment Manager of the Future Superannuation Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167800 580; AFSL 482684) and a member of the Future Super Group. The trustee does not in any way endorse, warrant, or accept responsibility for any services provided by the Promoter in its own right or directly to members or prospective members.
 
 ## Legal effect of documentation
 
 The offer to invest in the Future Superannuation Fund is contained in the [Product Disclosure Statement](https://www.futuresuper.com.au/pds) (PDS) for this Fund. Anyone wishing to invest in the Fund will need to read the PDS and complete the relevant join form.
 
-This website does not take the place of the legal document known as the [Trust Deed](https://diversa.com.au/trustee/future-super) which governs the operation of the Fund. The Trust Deed is binding on the Trustee, the Promoter and the members of the Fund. If any dispute arises concerning benefits or any other aspect of the Fund, the Trust Deed (and the law) will always be the final authority.
+This website does not take the place of the legal document known as the [Trust Deed](/documents-and-forms/#trust-deed) which governs the operation of the Fund. The Trust Deed is binding on the Trustee, the Promoter and the members of the Fund. If any dispute arises concerning benefits or any other aspect of the Fund, the Trust Deed (and the law) will always be the final authority.
 
 ## About returns performance
 
