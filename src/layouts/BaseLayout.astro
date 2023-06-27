@@ -11,6 +11,7 @@ const {
   pageDescription,
   intro,
   hideHeader = false,
+  hideFooter = false,
   hidePageHeader = false,
   noBehindHeader = false,
   hideTitle = false,
@@ -239,6 +240,11 @@ const seoDescription = description
 
     {relatedPages && <RelatedPages relatedPages={relatedPages} />}
   </main>
-  <Footer client:visible />
+  {
+      !hideFooter && (
+         <Footer client:visible />
+      )
+    }
+
   <script is:inline src="/scripts/tracking.js"></script>
 </body>

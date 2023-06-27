@@ -19,7 +19,7 @@ const sixthActiveSet = 389;
     <section class="hero-section">
       <h1 class="hero-section__heading center">Welcome to the movement</h1>
 
-      <div class="hero-section__content">
+      <div class="hero-section__content container">
         <p>
           By joining Future Super, you’re also joining a movement! We’re fighting for a future free from climate change and inequality. 
         </p>
@@ -40,7 +40,7 @@ const sixthActiveSet = 389;
         </div>
       </div>
 
-      <div class="balance-section__content">
+      <div class="balance-section__content container">
         <p>Sounds like a lot of money, right? But, all together Australia has $3.4 trillion worth of super savings. That $320,150 is just a tiny dot.</p>
       </div>
     </section>
@@ -185,6 +185,54 @@ const sixthActiveSet = 389;
       </section>
     </div>
 
+    <section class="amount-section-info">
+      <div class="container">
+        <p>That’s a lot of money.</p>
+        <p>Think of all the people whose retirement savings are part of that $60 trillion.</p>
+        <p>How you invest matters. You might feel like a tiny dot, but you’re part of something huge.</p>
+      </div>
+
+    </section>
+
+
+    <section class="download-section">
+      <div class="download-section__action">
+        <div class="container">
+          <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> for more content like this! </p>
+        </div>
+
+        <div class="download-section__action--phones">
+          <img
+
+                  src="/images/download-phones.svg"
+                  alt="Download Phones"
+          />
+        </div>
+
+
+        <a class="download-section__action--button" href="">
+          <img
+                  src="/images/download-button.svg"
+                  alt="Download Button"
+          />
+        </a>
+
+      </div>
+
+      <div class="container download-section__sources">
+        <p class="download-section__sources--heading">Sources:</p>
+        <ul class="download-section__sources--list">
+          <li>Wealth of Bernard Arnault, Elon Musk, Jeff Bezos and Bill Gates from <a href="https://www.forbes.com/real-time-billionaires/#3d905e643d78" target="_blank">Forbes</a> Tuesday 6 June (data updated daily).</li>
+          <li>Australian 2022 GDP from <a href="https://www.worldeconomics.com/Country-Size/Australia.aspx" target="_blank">World Economics</a>, listed in USD and converted to AUD.</li>
+          <li>Market cap of Apple from <a href="https://finance.yahoo.com/quote/AAPL/?guccounter=1" target="_blank">Yahoo Finance</a> on Tuesday 6 June, converted to AUD.</li>
+          <li>Global divestment commitment from <a href="https://divestmentdatabase.org/" target="_blank">Divestment Database</a>, converted to AUD.</li>
+          <li>7.2% and 9.5% stats from <a href="https://www.uts.edu.au/isf/news/supercharging-road-100-clean-energy" target="_blank">UTS research</a> funded by Future Super.</li>
+          <li>$3.4 trillion size of superannuation <a href="https://www.apra.gov.au/news-and-publications/apra-releases-superannuation-statistics-for-december-2022" target="_blank">from APRA</a>.</li>
+        </ul>
+      </div>
+
+    </section>
+
   </div>
 </div>
 
@@ -287,7 +335,7 @@ const sixthActiveSet = 389;
 
   .journey-section{
     min-height: 8000px;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
     height: 100%;
     position: relative;
     width: 100%;
@@ -437,10 +485,86 @@ const sixthActiveSet = 389;
 
       &--description{
         font-size: 1.75rem;
-        color: white;
+        color: #E0E0E0;
         font-weight: 400;
       }
     }
+  }
+
+  .amount-section-info{
+    padding: 8rem 0;
+
+    font-size: 1.25rem;
+  }
+
+  .download-section{
+    background-color: #161616;
+    border-radius: 40px 40px 0 0;
+
+    padding-bottom: 80px;
+
+    &__heading{
+      font-size: 1.875rem;
+      padding-top: 40px;
+    }
+
+    &__action{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      &--phones{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img{
+          max-width: 277px;
+          position: relative;
+          z-index: 2;
+        }
+
+        &::after{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          right: 0;
+          background-color: #3DFA52;
+          z-index: 1;
+          border-radius: 375px;
+          filter: blur(90px);
+        }
+      }
+
+      &--button{
+        max-width: 230px;
+      }
+    }
+
+    &__sources{
+      margin-top: 80px;
+      &--heading{
+        text-transform: uppercase;
+      }
+
+      &--list{
+        a{
+          color: #E0E0E0;
+
+        }
+
+      }
+    }
+  }
+
+  .container{
+    padding: 0 40px 0 40px;
   }
 
 </style>
