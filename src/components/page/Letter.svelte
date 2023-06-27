@@ -1,8 +1,6 @@
 <script>
   import JoinNow from "../ui/JoinNow.svelte";
   import { getQueryParam } from "../scripts/getQueryParam.js";
-  import { postData } from "../scripts/postData.js";
-  import { getData } from "../scripts/getData.js";
   import { copyTextToClipboard } from "../scripts/clipboard.js";
   import Toast from "../ui/Toast.svelte";
   const clientSide = !import.meta.env.SSR;
@@ -14,51 +12,35 @@
   let firstName = "";
   let fund = "";
 
-  let share;
+  let send;
 
   if (clientSide) {
     // Extract the details from the link code
     // The link code is a base64 encoded json object containing the necessary details
-    const code = getQueryParam("r");
-    const details = JSON.parse(window.atob(code));
+    referCode = getQueryParam("r");
+    send = getQueryParam("send")
+    
+    const details = JSON.parse(window.atob(referCode));
     
     // Get the details to display on the page
     firstName = details.firstName;
     fund = details.fund;
 
-    // Identify the user so this page view can be tracked
-    const userId = details.userId;
-    analytics.identify(userId);
-    analytics.track("BreakupLetterPage Viewed");
+    // By default the page shows the friend sharing mode 
+    friendMode = true;
 
-    // With details in the URL
-    // const userId = getQueryParam("i");
-    // firstName = getQueryParam("first");
-    // fund = getQueryParam("fund");
-    // analytics.identify(userId);
-    // analytics.track("BreakupLetterPage Viewed");
+    if(send) {
+      // When send is set in the URL it means we want to send the breakup letter to the fund
+      // NB: This parameter will only be set from the link in the breakup letter email
+      friendMode = false;
+
+      // Identify the user so this page view can be tracked
+      const userId = details.userId;
+      analytics.identify(userId);
       
-    // PREVIOUS IMPLEMENTATION
-    // referCode = getQueryParam("r");
-    // firstName = getQueryParam("first");
-    // fund = getQueryParam("fund");
-    // share = getQueryParam("share");
-    // if (share) {
-    //   postData(
-    //     "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letter?rcode=" +
-    //       referCode
-    //   );
-    // } else {
-    //   friendMode = true;
-    //   getData(
-    //     "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letterdetails?rcode=" +
-    //       referCode
-    //   ).then((data) => {
-    //     console.log(data);
-    //     firstName = data.firstName;
-    //     fund = data.oldFund;
-    //   });
-    // }
+      // Send the event that will trigger the Customer.io campaign to send the letter to the fund
+      analytics.track("BreakupLetterPage Viewed");
+    }
   }
 
   function handleCopy() {
@@ -144,6 +126,10 @@
     font-family: $heading;
     font-size: max(10px, 1.2vw);
     margin-bottom: 8px;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .desc {
