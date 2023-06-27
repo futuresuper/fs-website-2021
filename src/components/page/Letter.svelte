@@ -96,10 +96,10 @@
     <button id="copy-button" class="primary" on:click={() => handleCopy()}>
       COPY LINK
     </button>
-    <p class="desc">
+    <!-- <p class="desc">
       We’ll let you know when someone joins Future Super from this link so you
       can see the difference you make.
-    </p>
+    </p> -->
   </div>
 {/if}
 
