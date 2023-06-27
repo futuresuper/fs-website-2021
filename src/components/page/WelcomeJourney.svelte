@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte";
+
 const firstActiveSet = 37;
 const secondActiveSet = 11;
 
@@ -11,6 +13,28 @@ const thirdActiveSet = 273;
 const fourthActiveSet = 99;
 const fifthActiveSet = 273;
 const sixthActiveSet = 389;
+
+
+onMount(() => {
+  const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('animate')
+      }else{
+        entry.target.classList.remove('animate')
+      }
+    })
+  })
+
+  const animateElements = document.querySelectorAll('.animated');
+
+  animateElements.forEach((el) => observer.observe(el));
+
+
+  // document.addEventListener('scroll', function(e) {
+  //   console.log(document.documentElement.scrollTop);
+  // });
+});
 
 </script>
 
@@ -33,7 +57,7 @@ const sixthActiveSet = 389;
     </section>
 
     <section class="balance-section">
-      <div class="balance-section__circle animate">
+      <div class="balance-section__circle animated">
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$320,150K</h2>
           <p class="balance-section__balance--description">Is the average super balance at retirement</p>
@@ -45,7 +69,7 @@ const sixthActiveSet = 389;
       </div>
     </section>
 
-    <div class="journey-section animate">
+    <div class="journey-section">
         <div class="active-dot top-dot"></div>
 
           <section class="journey-section__block journey-section__block--all">
@@ -168,17 +192,17 @@ const sixthActiveSet = 389;
       </section>
 
       <section class="amount-section journey-section__block--all">
-        <div class="amount-section__circle">
+        <div class="amount-section__circle amount-section__circle--1">
           <div class="amount-section__amount center">
             <p class="amount-section__amount--heading"> $60 trillion.</p>
             <p class="amount-section__amount--description"> Australia's super</p>
           </div>
 
-          <div class="amount-section__circle--2 animate">
+          <div class="amount-section__circle amount-section__circle--2 animated">
 
           </div>
 
-          <div class="amount-section__circle--3">
+          <div class="amount-section__circle amount-section__circle--3 animated">
 
           </div>
         </div>
@@ -285,7 +309,7 @@ const sixthActiveSet = 389;
 
     &__content{
       font-size: 1.25rem;
-
+      margin-bottom: 50px;
     }
   }
 
@@ -308,10 +332,11 @@ const sixthActiveSet = 389;
       align-items: center;
       border-radius: 500px;
       background-color: $green;
-      transition: transform ease-in-out 1.5s, top ease-in-out 1.5s;
+      transition: transform ease-in-out 3s, top ease-in-out 3s;
       transform-origin: bottom;
 
-      &.animate{
+      &:global(.animate) {
+        transition-delay: 1s;
         transform: translateX(-50%) scale(0.028);
 
         top: 219px;
@@ -374,7 +399,7 @@ const sixthActiveSet = 389;
         }
       }
 
-    &.animate{
+    &:global(.animate) {
       //Smaller dots
       background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
       background-size: 6px 6px;
@@ -436,18 +461,20 @@ const sixthActiveSet = 389;
   .amount-section{
     overflow-x: clip;
     &__circle{
-      position: relative;
-      bottom: -300px;
-      left: 50%;
-      transform: translateX(-50%) scale(1);
-      width: 630px;
-      height: 630px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 500px;
-      background-color: #424242;
-      z-index: 1;
+      &--1{
+        position: relative;
+        bottom: -300px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        width: 630px;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 500px;
+        background-color: #424242;
+        z-index: 1;
+      }
 
       &--2{
         position: absolute;
@@ -460,7 +487,7 @@ const sixthActiveSet = 389;
         transform-origin: bottom;
         transition: all ease-in-out 2s;
 
-        &.animate{
+        &:global(.animate) {
           transform: scale(1);
           bottom: 0;
         }
@@ -477,7 +504,9 @@ const sixthActiveSet = 389;
         transform-origin: bottom;
         transition: all ease-in-out 2s;
 
-        &.animate{
+
+        &:global(.animate) {
+          transition-delay: 2s;
           transform: scale(1.05);
           bottom: -5px;
         }
@@ -578,6 +607,12 @@ const sixthActiveSet = 389;
 
   .container{
     padding: 0 40px 0 40px;
+  }
+
+  .test{
+    //Smaller dots
+    background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+    background-size: 6px 6px;
   }
 
 </style>
