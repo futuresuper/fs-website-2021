@@ -166,6 +166,23 @@ const sixthActiveSet = 389;
           But, what do all those tiny dots add up to?
         </p>
       </section>
+
+      <section class="amount-section journey-section__block--all">
+        <div class="amount-section__circle">
+          <div class="amount-section__amount center">
+            <p class="amount-section__amount--heading"> $60 trillion.</p>
+            <p class="amount-section__amount--description"> Australia's super</p>
+          </div>
+
+          <div class="amount-section__circle--2">
+
+          </div>
+
+          <div class="amount-section__circle--3">
+
+          </div>
+        </div>
+      </section>
     </div>
 
   </div>
@@ -270,6 +287,7 @@ const sixthActiveSet = 389;
 
   .journey-section{
     min-height: 8000px;
+    margin-bottom: 500px;
     height: 100%;
     position: relative;
     width: 100%;
@@ -361,6 +379,68 @@ const sixthActiveSet = 389;
 
   .highlighted{
     color: $green;
+  }
+
+
+  .amount-section{
+    overflow-x: clip;
+    &__circle{
+      position: relative;
+      bottom: -300px;
+      left: 50%;
+      transform: translateX(-50%) scale(1);
+      width: 630px;
+      height: 630px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 500px;
+      background-color: #424242;
+      z-index: 1;
+
+      &--2{
+        position: absolute;
+        background-color: #303030;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.1143);
+        border-radius: 500px;
+        bottom: 5px;
+        transform-origin: bottom;
+        transition: all ease-in-out 2s;
+      }
+
+      &--3{
+        position: absolute;
+        background-color: #212121;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.02);
+        border-radius: 500px;
+        bottom: 8px;
+        transform-origin: bottom;
+        transition: all ease-in-out 2s;
+      }
+    }
+
+    &__amount {
+      max-width: 290px;
+      z-index: 1;
+
+
+      &--heading{
+        color: $green;
+        font-size: 3.25rem;
+        font-weight: 900;
+        font-family: 'FutureSuperFeature';
+      }
+
+      &--description{
+        font-size: 1.75rem;
+        color: white;
+        font-weight: 400;
+      }
+    }
   }
 
 </style>
