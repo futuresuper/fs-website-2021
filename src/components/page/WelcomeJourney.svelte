@@ -33,7 +33,7 @@ const sixthActiveSet = 389;
     </section>
 
     <section class="balance-section">
-      <div class="balance-section__circle">
+      <div class="balance-section__circle animate">
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$320,150K</h2>
           <p class="balance-section__balance--description">Is the average super balance at retirement</p>
@@ -45,7 +45,7 @@ const sixthActiveSet = 389;
       </div>
     </section>
 
-    <div class="journey-section">
+    <div class="journey-section animate">
         <div class="active-dot top-dot"></div>
 
           <section class="journey-section__block journey-section__block--all">
@@ -174,7 +174,7 @@ const sixthActiveSet = 389;
             <p class="amount-section__amount--description"> Australia's super</p>
           </div>
 
-          <div class="amount-section__circle--2">
+          <div class="amount-section__circle--2 animate">
 
           </div>
 
@@ -300,7 +300,7 @@ const sixthActiveSet = 389;
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) scale(1);
       width: 550px;
       height: 550px;
       display: flex;
@@ -308,7 +308,14 @@ const sixthActiveSet = 389;
       align-items: center;
       border-radius: 500px;
       background-color: $green;
+      transition: transform ease-in-out 1.5s, top ease-in-out 1.5s;
+      transform-origin: bottom;
 
+      &.animate{
+        transform: translateX(-50%) scale(0.028);
+
+        top: 219px;
+      }
     }
 
     &__balance{
@@ -343,15 +350,7 @@ const sixthActiveSet = 389;
     background-size: 24.5px 23.5px;
     background-position: 50% 0;
     padding-top: 1px;
-
-
-
-    //Smaller dots
-    //background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
-    //background-size: 6px 6px;
-
-
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
 
 
       z-index: 1;
@@ -375,7 +374,11 @@ const sixthActiveSet = 389;
         }
       }
 
-
+    &.animate{
+      //Smaller dots
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 6px 6px;
+    }
     }
 
   .active-dot{
@@ -456,6 +459,11 @@ const sixthActiveSet = 389;
         bottom: 5px;
         transform-origin: bottom;
         transition: all ease-in-out 2s;
+
+        &.animate{
+          transform: scale(1);
+          bottom: 0;
+        }
       }
 
       &--3{
@@ -468,6 +476,11 @@ const sixthActiveSet = 389;
         bottom: 8px;
         transform-origin: bottom;
         transition: all ease-in-out 2s;
+
+        &.animate{
+          transform: scale(1.05);
+          bottom: -5px;
+        }
       }
     }
 
