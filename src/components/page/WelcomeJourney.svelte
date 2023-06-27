@@ -8,9 +8,9 @@ const secondActiveSet = 11;
 const thirdActiveSet = 273;
 
 
-const fourthActiveSet = 11;
-const fifthActiveSet = 11;
-const sixthActiveSet = 11;
+const fourthActiveSet = 99;
+const fifthActiveSet = 273;
+const sixthActiveSet = 389;
 
 </script>
 
@@ -48,7 +48,7 @@ const sixthActiveSet = 11;
     <div class="journey-section">
         <div class="active-dot top-dot"></div>
 
-          <section class="journey-section__block journey-section__block--1">
+          <section class="journey-section__block journey-section__block--all">
             <p>
               Now let’s think about more numbers. Did you know that just <span class="highlighted">7.2%</span> of that money, or $302 billion, could 100% fund Australia’s transition to renewable energy?
             </p>
@@ -71,50 +71,50 @@ const sixthActiveSet = 11;
         {/each}
       </div>
 
-      <section class="journey-section__block journey-section__block--3">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest.
         </p>
       </section>
 
-      <section class="journey-section__block journey-section__block--4">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change.
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--5">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           In Australia, some super funds believe it’s possible to engage with coal, oil and gas companies to try to influence them to reduce emissions.
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--6">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”.
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--7">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           Future Super is just a tiny drop in the global divestment movement. 
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--8">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels.
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--9">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           After so much scrolling, you might have forgotten - all these tiny dots are still representing that $3.4 trillion pool of super. And yep, that’s a lot of dots!
         </p>
       </section>
-      <section class="journey-section__block journey-section__block--10">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           But $3.4 trillion is about to look like nothing. Wait until you see how big the divestment movement is....
         </p>
       </section>
 
 
-      <section class="journey-section__block journey-section__block--11">
+      <section class="journey-section__block journey-section__block--all">
         <p>
           All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
         </p>
@@ -124,6 +124,48 @@ const sixthActiveSet = 11;
           <div class="active-dot active-dot__smaller"></div>
         {/each}
       </div>
+
+
+      <section class="journey-section__block journey-section__block--all">
+        <p>
+          What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
+        </p>
+      </section>
+      <div class="active-dot-set active-dot-set__smaller">
+        {#each Array(fourthActiveSet) as _, index (index)}
+          <div class="active-dot active-dot__smaller"></div>
+        {/each}
+      </div>
+
+      <section class="journey-section__block journey-section__block--all">
+        <p>
+          Australia’s GDP in 2022 was <span class="highlighted">$2.5 trillion.</span> Here’s what that looks like.
+        </p>
+      </section>
+      <div class="active-dot-set active-dot-set__smaller">
+        {#each Array(fifthActiveSet) as _, index (index)}
+          <div class="active-dot active-dot__smaller"></div>
+        {/each}
+      </div>
+
+
+      <section class="journey-section__block journey-section__block--all">
+        <p>
+          Apple is worth more money than any other company in the world. Here’s what it’s <span class="highlighted">$4.3 trillion</span> market cap looks like?
+        </p>
+      </section>
+      <div class="active-dot-set active-dot-set__smaller">
+        {#each Array(sixthActiveSet) as _, index (index)}
+          <div class="active-dot active-dot__smaller"></div>
+        {/each}
+      </div>
+
+
+      <section class="journey-section__block journey-section__block--all">
+        <p>
+          But, what do all those tiny dots add up to?
+        </p>
+      </section>
     </div>
 
   </div>
@@ -227,7 +269,8 @@ const sixthActiveSet = 11;
   }
 
   .journey-section{
-    height: 8000px;
+    min-height: 8000px;
+    height: 100%;
     position: relative;
     width: 100%;
     background-image: radial-gradient(#424242 6px, transparent 9px), radial-gradient(#424242 8px, transparent 8px);
@@ -257,7 +300,7 @@ const sixthActiveSet = 11;
           margin: 0;
         }
 
-        &--1, &--3, &--4,&--5,&--6,&--7,&--8,&--9,&--10, &--11{
+        &--all{
           margin-top: 495px;
         }
 
