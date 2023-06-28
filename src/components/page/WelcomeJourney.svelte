@@ -1,70 +1,62 @@
 <script>
   import { onMount } from "svelte";
 
-const firstActiveSet = 37;
-const secondActiveSet = 11;
-
-//58 per, 41 last
-
-// 64 totla
-const thirdActiveSet = 273;
-
-
-const fourthActiveSet = 99;
-const fifthActiveSet = 273;
-const sixthActiveSet = 389;
+  //Green dots
+  const firstActiveSet = 37;
+  const secondActiveSet = 11;
+  const thirdActiveSet = 273;
+  const fourthActiveSet = 99;
+  const fifthActiveSet = 273;
+  const sixthActiveSet = 389;
 
 
-onMount(() => {
-  const scrollSection = document.querySelector('.scroll-section');
+  onMount(() => {
+    const scrollSection = document.querySelector('.scroll-section');
 
-  const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
-  const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
+    const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
 
+    scrollSection.addEventListener('scroll', function(e) {
+      let circle = document.querySelector('.balance-section__circle');
+      let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 500);
 
-  scrollSection.addEventListener('scroll', function(e) {
-    // console.log(e)
-    // console.log(document.documentElement.scrollTop);
-    let circle = document.querySelector('.balance-section__circle');
-    const singleCircle = document.querySelector('.top-dot');
-    let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 500);
-
-    const circleTop = circle.getBoundingClientRect().top;
-    const dotGrid = document.querySelector('.journey-section');
-    const dotGridTop = dotGrid.getBoundingClientRect().top;
-    const dotGridBottom = dotGrid.getBoundingClientRect().bottom;
+      const singleCircle = document.querySelector('.top-dot');
+      const circleTop = circle.getBoundingClientRect().top;
+      const dotGrid = document.querySelector('.journey-section');
+      const dotGridTop = dotGrid.getBoundingClientRect().top;
 
 
-    const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
+      const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
 
-    if(e.target.scrollTop >= (heroSectionHeight - 100)){
-      circle.style.transform = `translateX(-50%) scale(${scale})`;
-      circle.style.position = `fixed`;
-      circle.style.top = '150px';
-    }else{
-      circle.style.position = `absolute`;
-      circle.style.top = '0';
-    }
+      //Scale and move big dot as the user scrolls
+      if(e.target.scrollTop >= (heroSectionHeight - 100)){
+        circle.style.transform = `translateX(-50%) scale(${scale})`;
+        circle.style.position = `fixed`;
+        circle.style.top = '150px';
+      }else{
+        circle.style.position = `absolute`;
+        circle.style.top = '0';
+      }
 
 
-    if(circleTop >= dotGridTop){
-      circle.classList.add('hidden');
-      singleCircle.classList.add('show');
+      //Hide big dot and show small single dot in dots background
+      if(circleTop >= dotGridTop){
+        circle.classList.add('hidden');
+        singleCircle.classList.add('show');
 
-    }else{
-      circle.classList.remove('hidden');
-      singleCircle.classList.remove('show');
+      }else{
+        circle.classList.remove('hidden');
+        singleCircle.classList.remove('show');
 
-    }
+      }
 
-    if(e.target.scrollTop > dotGrid.offsetTop&& e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20)){
-      scrollSection.classList.add('snap');
-    }else{
-      scrollSection.classList.remove('snap');
-    }
+      //Blocks with dots to snap to center when scrolling
+      if(e.target.scrollTop > dotGrid.offsetTop&& e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20)){
+        scrollSection.classList.add('snap');
+      }else{
+        scrollSection.classList.remove('snap');
+      }
+    });
   });
-});
-
 </script>
 
 <div class="bg">
@@ -99,7 +91,6 @@ onMount(() => {
     </section>
 
     <div class="journey-section">
-<!--      <div class="scroll-section">-->
         <div class="active-dot top-dot hidden"></div>
 
         <div class="journey-section__content">
@@ -248,7 +239,6 @@ onMount(() => {
             </p>
           </section>
         </div>
-<!--      </div>-->
 
 
       <section class="amount-section journey-section__block--all">
