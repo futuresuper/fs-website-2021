@@ -30,10 +30,38 @@ onMount(() => {
 
   animateElements.forEach((el) => observer.observe(el));
 
+  const heroSectionHeight = (document.querySelector('.hero-section').clientHeight) - 100;
 
-  // document.addEventListener('scroll', function(e) {
-  //   console.log(document.documentElement.scrollTop);
-  // });
+
+  document.addEventListener('scroll', function(e) {
+    // console.log(document.documentElement.scrollTop);
+    let circle = document.querySelector('.balance-section__circle');
+    const singleCircle = document.querySelector('.top-dot');
+    let scale = Math.max(0.028, 1 - (window.pageYOffset - heroSectionHeight) / 500);
+
+    const circleTop = circle.getBoundingClientRect().top;
+    const dotGrid = document.querySelector('.journey-section');
+    const dotGridTop = dotGrid.getBoundingClientRect().top;
+
+    if(window.pageYOffset >= (heroSectionHeight)){
+      circle.style.transform = `translateX(-50%) scale(${scale})`;
+      circle.style.position = `fixed`;
+      circle.style.top = '150px';
+    }else{
+      circle.style.position = `absolute`;
+      circle.style.top = '0';
+    }
+
+
+    if(circleTop >= dotGridTop){
+      circle.classList.add('hidden');
+      singleCircle.classList.add('show');
+    }else{
+      circle.classList.remove('hidden');
+      singleCircle.classList.remove('show');
+    }
+
+  });
 });
 
 </script>
@@ -57,7 +85,7 @@ onMount(() => {
     </section>
 
     <section class="balance-section">
-      <div class="balance-section__circle animated">
+      <div class="balance-section__circle">
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$320,150K</h2>
           <p class="balance-section__balance--description">Is the average super balance at retirement</p>
@@ -70,7 +98,7 @@ onMount(() => {
     </section>
 
     <div class="journey-section">
-        <div class="active-dot top-dot"></div>
+        <div class="active-dot top-dot hidden"></div>
 
           <section class="journey-section__block journey-section__block--all">
             <p>
@@ -281,7 +309,7 @@ onMount(() => {
       background-color: $green;
 
       filter: blur(50px);
-      opacity: 10%;
+      opacity: 5%;
     }
 
     &::after{
@@ -332,14 +360,14 @@ onMount(() => {
       align-items: center;
       border-radius: 500px;
       background-color: $green;
-      transition: transform ease-in-out 3s, top ease-in-out 3s;
-      transform-origin: bottom;
+      transition: all ease-in-out;
+      //transform-origin: bottom;
 
       &:global(.animate) {
-        transition-delay: 1s;
-        transform: translateX(-50%) scale(0.028);
+        //transition-delay: 1s;
+        //transform: translateX(-50%) scale(0.028);
 
-        top: 219px;
+        //top: 219px;
       }
     }
 
@@ -380,7 +408,7 @@ onMount(() => {
 
       z-index: 1;
       &__block{
-        position: sticky;
+        position: static;
         top: 0;
         padding: 0.5rem 2.5rem;
         background-color: rgba(21,21,21, 0.85);
@@ -581,6 +609,7 @@ onMount(() => {
           z-index: 1;
           border-radius: 375px;
           filter: blur(90px);
+          opacity: 65%;
         }
       }
 
@@ -613,6 +642,14 @@ onMount(() => {
     //Smaller dots
     background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
     background-size: 6px 6px;
+  }
+
+  :global(.hidden) {
+    visibility: hidden;
+  }
+
+  :global(.show) {
+    visibility: visible;
   }
 
 </style>
