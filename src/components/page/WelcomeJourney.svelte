@@ -16,34 +16,28 @@ const sixthActiveSet = 389;
 
 
 onMount(() => {
-  const observer = new IntersectionObserver((entries) =>{
-    entries.forEach((entry) =>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('animate')
-      }else{
-        entry.target.classList.remove('animate')
-      }
-    })
-  })
+  const scrollSection = document.querySelector('.scroll-section');
 
-  const animateElements = document.querySelectorAll('.animated');
-
-  animateElements.forEach((el) => observer.observe(el));
-
-  const heroSectionHeight = (document.querySelector('.hero-section').clientHeight) - 100;
+  const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
+  const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
 
 
-  document.addEventListener('scroll', function(e) {
+  scrollSection.addEventListener('scroll', function(e) {
+    // console.log(e)
     // console.log(document.documentElement.scrollTop);
     let circle = document.querySelector('.balance-section__circle');
     const singleCircle = document.querySelector('.top-dot');
-    let scale = Math.max(0.028, 1 - (window.pageYOffset - heroSectionHeight) / 500);
+    let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 500);
 
     const circleTop = circle.getBoundingClientRect().top;
     const dotGrid = document.querySelector('.journey-section');
     const dotGridTop = dotGrid.getBoundingClientRect().top;
+    const dotGridBottom = dotGrid.getBoundingClientRect().bottom;
 
-    if(window.pageYOffset >= (heroSectionHeight)){
+
+    const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
+
+    if(e.target.scrollTop >= (heroSectionHeight - 100)){
       circle.style.transform = `translateX(-50%) scale(${scale})`;
       circle.style.position = `fixed`;
       circle.style.top = '150px';
@@ -56,18 +50,25 @@ onMount(() => {
     if(circleTop >= dotGridTop){
       circle.classList.add('hidden');
       singleCircle.classList.add('show');
+
     }else{
       circle.classList.remove('hidden');
       singleCircle.classList.remove('show');
+
     }
 
+    if(e.target.scrollTop > dotGrid.offsetTop&& e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20)){
+      scrollSection.classList.add('snap');
+    }else{
+      scrollSection.classList.remove('snap');
+    }
   });
 });
 
 </script>
 
 <div class="bg">
-  <div class="">
+  <div class="scroll-section">
     <section class="hero-section">
       <h1 class="hero-section__heading center">Welcome to the movement</h1>
 
@@ -98,8 +99,10 @@ onMount(() => {
     </section>
 
     <div class="journey-section">
+<!--      <div class="scroll-section">-->
         <div class="active-dot top-dot hidden"></div>
 
+        <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
               Now let’s think about more numbers. Did you know that just <span class="highlighted">7.2%</span> of that money, or $302 billion, could 100% fund Australia’s transition to renewable energy?
@@ -110,114 +113,143 @@ onMount(() => {
               <div class="active-dot"></div>
             {/each}
           </div>
+        </div>
 
 
-      <section class="journey-section__block journey-section__block--2">
-        <p>
-          If we wanted to do even better than 100% renewables, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be about $754 billion. That’s just <span class="highlighted">2.3%</span> on top.
-        </p>
-      </section>
-      <div class="active-dot-set">
-        {#each Array(secondActiveSet) as _, index (index)}
-          <div class="active-dot"></div>
-        {/each}
-      </div>
 
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest.
-        </p>
-      </section>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--2">
+            <p>
+              If we wanted to do even better than 100% renewables, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be about $754 billion. That’s just <span class="highlighted">2.3%</span> on top.
+            </p>
+          </section>
+          <div class="active-dot-set">
+            {#each Array(secondActiveSet) as _, index (index)}
+              <div class="active-dot"></div>
+            {/each}
+          </div>
+        </div>
 
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change.
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          In Australia, some super funds believe it’s possible to engage with coal, oil and gas companies to try to influence them to reduce emissions.
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”.
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          Future Super is just a tiny drop in the global divestment movement. 
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels.
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          After so much scrolling, you might have forgotten - all these tiny dots are still representing that $3.4 trillion pool of super. And yep, that’s a lot of dots!
-        </p>
-      </section>
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          But $3.4 trillion is about to look like nothing. Wait until you see how big the divestment movement is....
-        </p>
-      </section>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest.
+            </p>
+          </section>
+        </div>
 
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change.
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              In Australia, some super funds believe it’s possible to engage with coal, oil and gas companies to try to influence them to reduce emissions.
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”.
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              Future Super is just a tiny drop in the global divestment movement. 
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels.
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              After so much scrolling, you might have forgotten - all these tiny dots are still representing that $3.4 trillion pool of super. And yep, that’s a lot of dots!
+            </p>
+          </section>
+        </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              But $3.4 trillion is about to look like nothing. Wait until you see how big the divestment movement is....
+            </p>
+          </section>
+        </div>
 
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
-        </p>
-      </section>
-      <div class="active-dot-set active-dot-set__smaller">
-        {#each Array(thirdActiveSet) as _, index (index)}
-          <div class="active-dot active-dot__smaller"></div>
-        {/each}
-      </div>
-
-
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
-        </p>
-      </section>
-      <div class="active-dot-set active-dot-set__smaller">
-        {#each Array(fourthActiveSet) as _, index (index)}
-          <div class="active-dot active-dot__smaller"></div>
-        {/each}
-      </div>
-
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          Australia’s GDP in 2022 was <span class="highlighted">$2.5 trillion.</span> Here’s what that looks like.
-        </p>
-      </section>
-      <div class="active-dot-set active-dot-set__smaller">
-        {#each Array(fifthActiveSet) as _, index (index)}
-          <div class="active-dot active-dot__smaller"></div>
-        {/each}
-      </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
+            </p>
+          </section>
+          <div class="active-dot-set active-dot-set__smaller">
+            {#each Array(thirdActiveSet) as _, index (index)}
+              <div class="active-dot active-dot__smaller"></div>
+            {/each}
+          </div>
+        </div>
 
 
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          Apple is worth more money than any other company in the world. Here’s what it’s <span class="highlighted">$4.3 trillion</span> market cap looks like?
-        </p>
-      </section>
-      <div class="active-dot-set active-dot-set__smaller">
-        {#each Array(sixthActiveSet) as _, index (index)}
-          <div class="active-dot active-dot__smaller"></div>
-        {/each}
-      </div>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
+            </p>
+          </section>
+          <div class="active-dot-set active-dot-set__smaller">
+            {#each Array(fourthActiveSet) as _, index (index)}
+              <div class="active-dot active-dot__smaller"></div>
+            {/each}
+          </div>
+        </div>
 
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              Australia’s GDP in 2022 was <span class="highlighted">$2.5 trillion.</span> Here’s what that looks like.
+            </p>
+          </section>
+          <div class="active-dot-set active-dot-set__smaller">
+            {#each Array(fifthActiveSet) as _, index (index)}
+              <div class="active-dot active-dot__smaller"></div>
+            {/each}
+          </div>
+        </div>
 
-      <section class="journey-section__block journey-section__block--all">
-        <p>
-          But, what do all those tiny dots add up to?
-        </p>
-      </section>
+        <div class="journey-section__content">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              Apple is worth more money than any other company in the world. Here’s what it’s <span class="highlighted">$4.3 trillion</span> market cap looks like?
+            </p>
+          </section>
+          <div class="active-dot-set active-dot-set__smaller">
+            {#each Array(sixthActiveSet) as _, index (index)}
+              <div class="active-dot active-dot__smaller"></div>
+            {/each}
+          </div>
+        </div>
+
+        <div class="journey-section__content journey-section__content--last">
+          <section class="journey-section__block journey-section__block--all">
+            <p>
+              But, what do all those tiny dots add up to?
+            </p>
+          </section>
+        </div>
+<!--      </div>-->
+
 
       <section class="amount-section journey-section__block--all">
         <div class="amount-section__circle amount-section__circle--1">
@@ -300,6 +332,7 @@ onMount(() => {
   .hero-section{
     position: relative;
     overflow-x: clip;
+    pointer-events: none;
 
     &::after, &::before{
       content: "";
@@ -347,6 +380,7 @@ onMount(() => {
     display: flex;
     flex-direction: column-reverse;
     overflow-x: clip;
+    pointer-events: none;
 
     &__circle{
       position: absolute;
@@ -393,6 +427,17 @@ onMount(() => {
     }
   }
 
+  .scroll-section{
+    //scroll-snap-type: y;
+    overflow-y: scroll;
+    max-height: 100vh;
+
+    &:global(.snap){
+
+      scroll-snap-type: y mandatory;
+    }
+  }
+
   .journey-section{
     min-height: 8000px;
     margin-bottom: 300px;
@@ -406,7 +451,19 @@ onMount(() => {
     transition: all 2s ease-in-out;
 
 
+
+
       z-index: 1;
+
+    &__content{
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+    }
       &__block{
         position: static;
         top: 0;
@@ -419,11 +476,12 @@ onMount(() => {
         }
 
         &--all{
-          margin-top: 495px;
+          //margin-top: 495px;
+          //min-height: 100vh;
         }
 
         &--2{
-          margin-top: 499px;
+          //margin-top: 499px;
         }
       }
 
@@ -459,11 +517,11 @@ onMount(() => {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    position: absolute;
+    //position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 28px;
+    margin-top: 36px;
     width: 312px;
 
     &__smaller{
@@ -488,6 +546,7 @@ onMount(() => {
 
   .amount-section{
     overflow-x: clip;
+    pointer-events: none;
     &__circle{
       &--1{
         position: relative;
