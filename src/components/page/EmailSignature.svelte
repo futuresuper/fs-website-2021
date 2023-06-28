@@ -1,6 +1,8 @@
 <script>
   import SitePassword from "../ui/SitePassword.svelte";
 
+  let brand = "fg";
+
   let name = "";
   let pronouns = "";
   let title = "";
@@ -9,61 +11,87 @@
   let hours = "";
 </script>
 
-<SitePassword>
-  <section>
-    <div>
-      <h3>1. Enter your details</h3>
-      <p class="label">Name</p>
-      <input bind:value={name} type="text" />
-      <p class="label">Pronouns (eg She/Her)</p>
-      <input bind:value={pronouns} type="text" />
-      <p class="label">Title (eg Member Advocate)</p>
-      <input bind:value={title} type="text" />
-      <p class="label">Phone (Optional) (eg 0402 123 456)</p>
-      <input bind:value={phone} type="text" />
-      <p class="label">
-        Traditional Custodian of land you work on (eg Gadigal)
-      </p>
-      <input bind:value={place} type="text" />
-      <p class="label">
-        Working hours or other info (optional) (eg I work on Mondays and
-        Wednesdays)
-      </p>
-      <input bind:value={hours} type="text" />
+<section>
+  <div>
+    <h3>1. Enter your details</h3>
+    <p class="label">Name</p>
+    <input bind:value={name} type="text" />
+    <p class="label">Pronouns (eg She/Her)</p>
+    <input bind:value={pronouns} type="text" />
+    <p class="label">Title (eg Member Advocate)</p>
+    <input bind:value={title} type="text" />
+    <p class="label">Phone (Optional) (eg 0402 123 456)</p>
+    <input bind:value={phone} type="text" />
+    <p class="label">Traditional Custodian of land you work on (eg Gadigal)</p>
+    <input bind:value={place} type="text" />
+    <p class="label">
+      Working hours or other info (optional) (eg I work on Mondays and
+      Wednesdays)
+    </p>
+    <input bind:value={hours} type="text" />
+  </div>
+  <div>
+    <h3>2. Choose type</h3>
+    <div class="radio-buttons">
+      <label>
+        <input type="radio" bind:group={brand} name="brand" value={"fg"} />
+        Future Group
+      </label>
+      <label>
+        <input type="radio" bind:group={brand} name="brand" value={"fs"} />
+        Future Super
+      </label>
     </div>
+    <h3>3. Copy-paste below</h3>
     <div>
-      <h3>2. Copy-paste below</h3>
-      <div>
-        <p>__</p>
-        <p
-          style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-bottom: 40px; color: black"
+      <p>__</p>
+      <p
+        style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-bottom: 40px; color: black"
+      >
+        <strong
+          >{name ? name.toUpperCase() : ""}
+          {pronouns ? "(" + pronouns + ")" : ""}</strong
         >
-          <strong
-            >{name ? name.toUpperCase() : ""}
-            {pronouns ? "(" + pronouns + ")" : ""}</strong
-          >
-          <br />
-          {title}<br />
-          {#if phone}
-            {phone}<br />
-          {/if}
-          {#if hours}
-            <br /><i>{hours}</i><br />
-          {/if}
-        </p>
+        <br />
+        {title}<br />
+        {#if phone}
+          {phone}<br />
+        {/if}
+        {#if hours}
+          <br /><i>{hours}</i><br />
+        {/if}
+      </p>
+      {#if brand === "fs"}
         <img
           src="https://content.myfuturesuper.com.au/email/email-sig.gif"
           alt="Future Super logo"
         />
-        <p
-          style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-top: 40px; color: black"
-        >
-          1300 658 422<br />
+      {:else}
+        <img
+          src="https://content.myfuturesuper.com.au/email/future-group-email-sig.png"
+          alt="Future Group logo"
+          width="230"
+        />
+      {/if}
+
+      <p
+        style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-top: 40px; color: black"
+      >
+        1300 658 422<br />
+        {#if brand === "fs"}
           <a
             href="https://www.futuresuper.com.au?utm_source=staff+email+signature"
-            style="color: black">www.futuresuper.com.au</a
-          ><br />
-        </p>
+            style="color: black">futuresuper.com.au</a
+          >
+        {:else}
+          <a
+            href="https://futuregroup.com.au?utm_source=staff+email+signature"
+            style="color: black">futuregroup.com.au</a
+          >
+        {/if}
+        <br />
+      </p>
+      {#if brand === "fs"}
         <div>
           <a href="https://www.instagram.com/future_super/">
             <img
@@ -89,62 +117,61 @@
             />
           </a>
         </div>
+      {/if}
+      <img
+        src="https://content.myfuturesuper.com.au/email/email-sig-art.png"
+        alt="Gather by Madison Gibbs"
+        style="margin-top: 20px"
+      />
+      <p
+        style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-top: 6px; color: black"
+      >
+        <i>Gather</i> by <i>Maddison Gibbs</i>.
+        <a
+          href="https://www.futuresuper.com.au/email-signature-art"
+          style="color: black">About this artwork</a
+        ><br />
+      </p>
 
-        <img
-          src="https://content.myfuturesuper.com.au/email/email-sig-art.png"
-          alt="Gather by Madison Gibbs"
-          style="margin-top: 20px"
-        />
-        <p
-          style="font-size: 13px; font-family: Helvetica, Arial, sans-serif; margin-top: 6px; color: black"
-        >
-          <i>Gather</i> by <i>Maddison Gibbs</i>.
-          <a
-            href="https://www.futuresuper.com.au/email-signature-art"
-            style="color: black">About this artwork</a
-          ><br />
-        </p>
-
-        {#if place}
-          <p
-            style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
-          >
-            I work on {place} land.
-          </p>
-        {/if}
-
+      {#if place}
         <p
           style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
         >
-          Future Super Group acknowledges that we operate on sovereign First
-          Nations land. We recognise the ongoing connection Aboriginal and
-          Torres Strait Islander people have with Country throughout this
-          continent since time immemorial. We stand for a future where First
-          Nations people have true justice and redress, and our society has a
-          profound respect, understanding and commitment to acknowledging First
-          Nations perspectives, culture, languages, histories, country, values
-          and ancestors.
+          I work on {place} land.
         </p>
-      </div>
+      {/if}
+
+      <p
+        style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
+      >
+        Future Super Group acknowledges that we operate on sovereign First
+        Nations land. We recognise the ongoing connection Aboriginal and Torres
+        Strait Islander people have with Country throughout this continent since
+        time immemorial. We stand for a future where First Nations people have
+        true justice and redress, and our society has a profound respect,
+        understanding and commitment to acknowledging First Nations
+        perspectives, culture, languages, histories, country, values and
+        ancestors.
+      </p>
     </div>
-    <div>
-      <h3>3. Add to Gmail</h3>
-      <p>To get to the signature section in Gmail...</p>
-      <ul>
-        <li>Click on the cog (top right)</li>
-        <li>Click 'See all settings'</li>
-        <li>Scroll down to 'Signature'</li>
-        <li>Click 'Create new' and call it whatever you want</li>
-        <li>Paste your new signature in</li>
-        <li>
-          Change your 'signature defaults' for both of your email addresses
-          (@future.. and @myfuture...)
-        </li>
-        <li>Scroll down and press 'Save changes'</li>
-      </ul>
-    </div>
-  </section>
-</SitePassword>
+  </div>
+  <div>
+    <h3>4. Add to Gmail</h3>
+    <p>To get to the signature section in Gmail...</p>
+    <ul>
+      <li>Click on the cog (top right)</li>
+      <li>Click 'See all settings'</li>
+      <li>Scroll down to 'Signature'</li>
+      <li>Click 'Create new' and call it whatever you want</li>
+      <li>Paste your new signature in</li>
+      <li>
+        Change your 'signature defaults' for both of your email addresses
+        (@future.. and @myfuture...)
+      </li>
+      <li>Scroll down and press 'Save changes'</li>
+    </ul>
+  </div>
+</section>
 
 <style lang="scss">
   @use "../../styles/" as *;
@@ -165,7 +192,7 @@
     margin-bottom: 6px;
   }
 
-  input {
+  input[type="text"] {
     display: block;
     padding: 8px;
     border-radius: 8px;
@@ -182,6 +209,10 @@
     padding: 40px;
     border-radius: 32px;
     background-color: $black200;
+  }
+
+  .radio-buttons {
+    margin-bottom: 40px;
   }
 
   @media (max-width: 600px) {
