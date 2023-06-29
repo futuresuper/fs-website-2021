@@ -428,11 +428,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      animation: fadeIn 0.5s ease-in-out;
     }
 
     &__content{
       font-size: 1.25rem;
       margin-bottom: 50px;
+      animation: fadeIn 0.5s ease-in-out;
     }
   }
 
@@ -861,6 +864,18 @@
 
     100% {
       background-size: 24.5px 23.5px;
+    }
+  }
+
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+      transform: translateY(10%);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
