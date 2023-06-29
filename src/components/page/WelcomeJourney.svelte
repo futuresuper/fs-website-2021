@@ -9,6 +9,9 @@
   const fifthActiveSet = 273;
   const sixthActiveSet = 389;
 
+  let isCorrect = null;
+
+
 
   onMount(() => {
     const scrollSection = document.querySelector('.scroll-section');
@@ -128,6 +131,33 @@
         </div>
       </div>
 
+
+      <div class="journey-section__content">
+        <div class="question-modal">
+            <div class="question-modal__info">
+              <div class="question-modal__badge">Let's guess</div>
+              <p class="question-modal__label">Select Your Answer </p>
+            </div>
+          <p class="question-modal__heading">What it would take to to shift towards renewable energy?</p>
+          <div class="question-modal__answers">
+            {#if !isCorrect}
+              <div class="question-modal__answers--block"  on:click={() => (isCorrect = true)}>7.2 %</div>
+              <div class="question-modal__answers--block {isCorrect === false ? 'question-modal__answers--block-selected' : ''}" on:click={() => (isCorrect = false)}>
+                {#if isCorrect === null}
+                  33.9%
+                {:else}
+                  Good news, we need way less!
+                {/if}
+              </div>
+            {:else}
+              <div class="question-modal__correct">
+                <img src="/images/correct.svg" alt="Correct" />
+              </div>
+            {/if}
+          </div>
+        </div>
+
+      </div>
 
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
@@ -357,7 +387,7 @@
 
   .bg {
     width: 100%;
-    background-color: $black;
+    background-color: #161616;
     color: #E0E0E0;
   }
 
@@ -729,6 +759,79 @@
 
   :global(.show) {
     visibility: visible;
+  }
+
+
+  .question-modal{
+    background-color: $black;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    width: 21.5rem;
+
+    &__info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.875rem;
+    }
+
+    &__badge{
+      background-color: #303030;
+      border-radius: 2rem;
+      padding: 0.375rem 0.5rem;
+
+    }
+
+    &__label{
+      text-transform: uppercase;
+      text-align: right;
+      color: #BDBDBD;
+      margin: 0;
+    }
+
+    &__heading{
+      margin: 2rem 0 3rem 0;
+      font-size: 1.875rem;
+      max-width: 17.5rem;
+    }
+
+    &__answers{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      height: 14.375rem;
+      &--block{
+        display: flex;
+        align-items: center;
+        border: 1px solid #303030;
+        padding: 2rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.25rem;
+        height: 6.875rem;
+
+        &-selected{
+          color: #84ACFF;
+          border-color: #84ACFF;
+        }
+      }
+    }
+
+    &__correct{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      animation: spin 10s linear infinite;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
   }
 
 </style>
