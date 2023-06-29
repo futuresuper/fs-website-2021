@@ -14,6 +14,7 @@
     const scrollSection = document.querySelector('.scroll-section');
 
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
+    const amountSection = (document.querySelector('.amount-section'));
 
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
@@ -23,6 +24,8 @@
       const circleTop = circle.getBoundingClientRect().top;
       const dotGrid = document.querySelector('.journey-section');
       const dotGridTop = dotGrid.getBoundingClientRect().top;
+
+      const firstBigCircle = document.querySelector('.amount-section__circle--1');
 
 
       const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
@@ -46,6 +49,29 @@
       }else{
         circle.classList.remove('hidden');
         singleCircle.classList.remove('show');
+
+      }
+
+
+      // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
+      let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - (amountSection.clientHeight + 300));
+
+      let scaleOne = Math.max(1, 1 + (scrollTopOffset - (amountSection.clientHeight - 50)) / 50);
+      let top = Math.max(22, 25 + (scrollTopOffset - (amountSection.clientHeight - 100)) / 100);
+
+      console.log(top)
+      //Scale and move big dot as the user scrolls
+      if(e.target.scrollTop >= (amountSection.offsetTop - (firstBigCircle.clientHeight - 220)) && top < 45){
+        firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne})`;
+        firstBigCircle.style.position = `fixed`;
+        firstBigCircle.style.top = top + '%';
+      }else{
+        firstBigCircle.style.position = `absolute`;
+        firstBigCircle.style.top = '-9%';
+        if(top > 45){
+          firstBigCircle.style.bottom = '0';
+          firstBigCircle.style.top = '99%';
+        }
 
       }
 
@@ -240,24 +266,30 @@
           </section>
         </div>
 
+    </div>
 
-      <section class="amount-section journey-section__block--all">
-        <div class="amount-section__circle amount-section__circle--1">
+    <section class="amount-section journey-section__block--all">
+      <div class="amount-section__circle amount-section__circle--1">
+        <div class="amount-section__amount center">
+          <p class="amount-section__amount--heading">60 trillion</p>
+          <p class="amount-section__amount--description">That's how big the divestment movement is!</p>
+        </div>
+
+        <div class="amount-section__circle amount-section__circle--2 animated">
           <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading"> $60 trillion.</p>
-            <p class="amount-section__amount--description"> Australia's super</p>
-          </div>
-
-          <div class="amount-section__circle amount-section__circle--2 animated">
-
-          </div>
-
-          <div class="amount-section__circle amount-section__circle--3 animated">
-
+            <p class="amount-section__amount--heading"> 3.4 trillion</p>
+            <p class="amount-section__amount--description">Australia's super</p>
           </div>
         </div>
-      </section>
-    </div>
+
+        <div class="amount-section__circle amount-section__circle--3 animated">
+          <div class="amount-section__amount center">
+            <p class="amount-section__amount--heading">754 billon</p>
+            <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="amount-section-info">
       <div class="container">
@@ -430,7 +462,7 @@
 
   .journey-section{
     min-height: 8000px;
-    margin-bottom: 300px;
+    padding-bottom: 300px;
     height: 100%;
     position: relative;
     width: 100%;
@@ -537,10 +569,14 @@
   .amount-section{
     overflow-x: clip;
     pointer-events: none;
+    height: 2000px;
+    position: relative;
     &__circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &--1{
-        position: relative;
-        bottom: -300px;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%) scale(1);
         width: 630px;
@@ -551,6 +587,8 @@
         border-radius: 500px;
         background-color: #424242;
         z-index: 1;
+        transform-origin: bottom;
+        transition: all ease-in-out;
       }
 
       &--2{
@@ -577,7 +615,7 @@
         height: 100%;
         transform: scale(0.02);
         border-radius: 500px;
-        bottom: 8px;
+        bottom: 5px;
         transform-origin: bottom;
         transition: all ease-in-out 2s;
 
@@ -591,7 +629,7 @@
     }
 
     &__amount {
-      max-width: 290px;
+      max-width: 22rem;
       z-index: 1;
 
 
@@ -612,7 +650,7 @@
 
   .amount-section-info{
     padding: 8rem 0;
-
+    margin-top: 600px;
     font-size: 1.25rem;
   }
 
