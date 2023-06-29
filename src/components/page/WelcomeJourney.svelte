@@ -265,7 +265,7 @@
               What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
             </p>
           </section>
-          <div class="active-dot-set active-dot-set__smaller">
+          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
             {#each Array(fourthActiveSet) as _, index (index)}
               <div class="active-dot active-dot__smaller"></div>
             {/each}
@@ -499,11 +499,13 @@
     height: 100%;
     position: relative;
     width: 100%;
+
+    animation: bigger 1s ease-in-out;
     background-image: radial-gradient(#424242 6px, transparent 9px), radial-gradient(#424242 8px, transparent 8px);
     background-size: 24.5px 23.5px;
+
     background-position: 50% 0;
     padding-top: 1px;
-    transition: all 5s ease-in-out;
 
 
 
@@ -550,9 +552,10 @@
 
     &:global(.animate) {
       //Smaller dots
+      animation: smaller 1s ease-in-out;
       background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
       background-size: 6px 6px;
-      transition: all 5s ease-in-out;
+      //transition: all 1.5s ease-in-out;
     }
     }
 
@@ -585,13 +588,17 @@
     left: 50%;
     //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 36px;
+    margin-top: 12px;
     width: 312px;
 
     &__smaller{
       gap: 2px;
-      margin-top: 21px;
+      margin-top: 18px;
       width: 341px;
+
+      &--2{
+        margin-top: 12px;
+      }
     }
   }
 
@@ -831,6 +838,29 @@
     }
     100% {
       transform: rotate(359deg);
+    }
+  }
+
+  @keyframes smaller {
+    0% {
+      background-size: 24.5px 23.5px;
+    }
+
+    100% {
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 6px 6px;
+    }
+  }
+
+  @keyframes bigger {
+    0% {
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 6px 6px;
+
+    }
+
+    100% {
+      background-size: 24.5px 23.5px;
     }
   }
 
