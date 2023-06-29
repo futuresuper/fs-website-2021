@@ -144,11 +144,11 @@
       <p
         style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;  margin-top: 20px; max-width: 400px; color: black"
       >
-        Future Super Group acknowledges that we operate on sovereign First
-        Nations land. We recognise the ongoing connection Aboriginal and Torres
-        Strait Islander people have with Country throughout this continent since
-        time immemorial. We stand for a future where First Nations people have
-        true justice and redress, and our society has a profound respect,
+        Future Group acknowledges that we operate on sovereign First Nations
+        land. We recognise the ongoing connection Aboriginal and Torres Strait
+        Islander people have with Country throughout this continent since time
+        immemorial. We stand for a future where First Nations people have true
+        justice and redress, and our society has a profound respect,
         understanding and commitment to acknowledging First Nations
         perspectives, culture, languages, histories, country, values and
         ancestors.
