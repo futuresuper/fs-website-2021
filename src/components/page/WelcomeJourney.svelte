@@ -14,6 +14,7 @@
     const scrollSection = document.querySelector('.scroll-section');
 
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
+    const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
     const amountSection = (document.querySelector('.amount-section'));
 
     scrollSection.addEventListener('scroll', function(e) {
@@ -34,7 +35,7 @@
       if(e.target.scrollTop >= (heroSectionHeight - 100)){
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
-        circle.style.top = '150px';
+        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 50}px`;
       }else{
         circle.style.position = `absolute`;
         circle.style.top = '0';
@@ -110,14 +111,16 @@
           <p class="balance-section__balance--description">Is the average super balance at retirement</p>
         </div>
       </div>
-
-      <div class="balance-section__content container">
-        <p>Sounds like a lot of money, right? But, all together Australia has $3.4 trillion worth of super savings. That $320,150 is just a tiny dot.</p>
-      </div>
     </section>
 
     <div class="journey-section">
+      <div class="journey-section__content journey-section__content--top">
         <div class="active-dot top-dot hidden"></div>
+        <div class="journey-section__block journey-section__block--top">
+          <p>Sounds like a lot of money, right? But, all together Australia has <span class="highlighted">$3.4 trillion</span> worth of super savings. That $320,150 is just a tiny dot.</p>
+        </div>
+      </div>
+
 
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
@@ -485,6 +488,10 @@
       justify-content: center;
       align-items: center;
       scroll-snap-align: start;
+
+      &--top{
+        justify-content: start;
+      }
     }
       &__block{
         position: static;
@@ -495,6 +502,10 @@
         z-index: 3;
         p{
           margin: 0;
+        }
+
+        &--top{
+          margin-top: 50px;
         }
 
         &--all{
