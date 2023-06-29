@@ -19,7 +19,7 @@
 
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
-      let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 500);
+      let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 400);
 
       const singleCircle = document.querySelector('.top-dot');
       const circleTop = circle.getBoundingClientRect().top;
@@ -32,10 +32,10 @@
       const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
 
       //Scale and move big dot as the user scrolls
-      if(e.target.scrollTop >= (heroSectionHeight - 100)){
+      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 75))){
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
-        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 50}px`;
+        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 75}px`;
       }else{
         circle.style.position = `absolute`;
         circle.style.top = '0';
@@ -55,23 +55,24 @@
 
 
       // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
-      let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - (amountSection.clientHeight + 300));
+      let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - 175);
 
-      let scaleOne = Math.max(1, 1 + (scrollTopOffset - (amountSection.clientHeight - 50)) / 50);
-      let top = Math.max(22, 25 + (scrollTopOffset - (amountSection.clientHeight - 100)) / 100);
+      let scaleOne = Math.max(1, 1 + (scrollTopOffset / 50));
+      let top = Math.max(1, 1 +(scrollTopOffset / 100));
 
       console.log(top)
+
       //Scale and move big dot as the user scrolls
-      if(e.target.scrollTop >= (amountSection.offsetTop - (firstBigCircle.clientHeight - 220)) && top < 45){
-        firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne})`;
+      if((e.target.scrollTop >= (amountSection.offsetTop -  175)) && top < 20){
+        firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne})  translateZ(0)`;
         firstBigCircle.style.position = `fixed`;
         firstBigCircle.style.top = top + '%';
       }else{
         firstBigCircle.style.position = `absolute`;
         firstBigCircle.style.top = '-9%';
-        if(top > 45){
+        if(top > 20){
           firstBigCircle.style.bottom = '0';
-          firstBigCircle.style.top = '99%';
+          firstBigCircle.style.top = '92%';
         }
 
       }
@@ -455,6 +456,7 @@
   .scroll-section{
     //scroll-snap-type: y;
     overflow-y: scroll;
+    overflow-x: hidden;
     max-height: 100vh;
 
     &:global(.snap){
@@ -586,56 +588,36 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      &--1{
+      &--1, &--2, &--3{
         position: absolute;
         left: 50%;
-        transform: translateX(-50%) scale(1);
         width: 630px;
         height: 630px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 500px;
-        background-color: #424242;
-        z-index: 1;
         transform-origin: bottom;
         transition: all ease-in-out;
       }
 
-      &--2{
-        position: absolute;
-        background-color: #303030;
-        width: 100%;
-        height: 100%;
-        transform: scale(0.1143);
-        border-radius: 500px;
-        bottom: 5px;
-        transform-origin: bottom;
-        transition: all ease-in-out 2s;
+      &--1{
+        background-color: #424242;
+        z-index: 1;
+        transform: translateX(-50%) scale(1) translateZ(0);
+      }
 
-        &:global(.animate) {
-          transform: scale(1);
-          bottom: 0;
-        }
+      &--2{
+        background-color: #303030;
+        transform: scale(0.1143) translateZ(0);
+        bottom: 5px;
+        left: 0;
+        z-index: 2;
       }
 
       &--3{
-        position: absolute;
         background-color: #212121;
-        width: 100%;
-        height: 100%;
-        transform: scale(0.02);
-        border-radius: 500px;
+        transform: scale(0.02) translateZ(0);
         bottom: 5px;
-        transform-origin: bottom;
-        transition: all ease-in-out 2s;
-
-
-        &:global(.animate) {
-          transition-delay: 2s;
-          transform: scale(1.05);
-          bottom: -5px;
-        }
+        left: 0;
+        z-index: 3;
       }
     }
 
