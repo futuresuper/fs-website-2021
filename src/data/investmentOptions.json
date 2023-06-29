@@ -5,7 +5,7 @@
     "impact": 1.2,
     "highlightInvestments": [],
     "fee": {
-      "perAnnumPercentage": 0.788,
+      "perAnnumPercentage": 0.785,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -29,7 +29,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.511,
+      "perAnnumPercentage": 1.5,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -57,7 +57,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.379,
+      "perAnnumPercentage": 1.385,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -69,7 +69,7 @@
   {
     "label": "Balanced Growth Pension",
     "fee": {
-      "perAnnumPercentage": 0.785,
+      "perAnnumPercentage": 0.791,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,

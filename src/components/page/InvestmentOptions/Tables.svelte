@@ -131,7 +131,8 @@
       {#each options as option}
         <div>
           <p class="number">
-            {option.fee.perAnnumPercentage}% + ${option.fee.perYearPrice}
+            {option.fee.perAnnumPercentage.toFixed(3)}% + ${option.fee
+              .perYearPrice}
           </p>
           <!-- <p class="number-desc">
             ${(
