@@ -47,8 +47,6 @@ Here’s how we’re planning on doing that:
 - We’re diversifying our supply chain, with a focus on lifting engagement with traditionally underrepresented groups and preferencing them as partners, in particular focussing on First Nations suppliers.
 - We’re doing our bit to reduce inequality through our charitable giving channels, which includes paying the rent by donating 10% of our office rental expense to First Nations organisations.
 
-If you want to check out our impact score and report in the B Corp directory, you can [find it here](https://bcorporation.net/directory/future-superannuation-holdings-pty-ltd).
-
 ![](https://res.cloudinary.com/future-super/image/upload/v1626307870/Bcorp_BlogPost.png)
 
 _Source: [BCorp Website](https://www.bcorporation.net/en-us/find-a-b-corp/company/future-superannuation-holdings-pty-ltd/)_
