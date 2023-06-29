@@ -16,6 +16,7 @@
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
     const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
     const amountSection = (document.querySelector('.amount-section'));
+    const smallerDotsSection = (document.querySelector('.smaller-dots-bg'));
 
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
@@ -54,13 +55,18 @@
       }
 
 
+      if(e.target.scrollTop >= smallerDotsSection.offsetTop){
+        dotGrid.classList.add('animate');
+      }else{
+        dotGrid.classList.remove('animate');
+      }
+
+
       // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
       let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - 175);
 
       let scaleOne = Math.max(1, 1 + (scrollTopOffset / 50));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
-
-      console.log(top)
 
       //Scale and move big dot as the user scrolls
       if((e.target.scrollTop >= (amountSection.offsetTop -  175)) && top < 20){
@@ -209,7 +215,7 @@
           </section>
         </div>
 
-        <div class="journey-section__content">
+        <div class="journey-section__content smaller-dots-bg">
           <section class="journey-section__block journey-section__block--all">
             <p>
               All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
@@ -279,14 +285,14 @@
           <p class="amount-section__amount--description">That's how big the divestment movement is!</p>
         </div>
 
-        <div class="amount-section__circle amount-section__circle--2 animated">
+        <div class="amount-section__circle amount-section__circle--2">
           <div class="amount-section__amount center">
             <p class="amount-section__amount--heading"> 3.4 trillion</p>
             <p class="amount-section__amount--description">Australia's super</p>
           </div>
         </div>
 
-        <div class="amount-section__circle amount-section__circle--3 animated">
+        <div class="amount-section__circle amount-section__circle--3">
           <div class="amount-section__amount center">
             <p class="amount-section__amount--heading">754 billon</p>
             <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry</p>
@@ -421,14 +427,6 @@
       border-radius: 500px;
       background-color: $green;
       transition: all ease-in-out;
-      //transform-origin: bottom;
-
-      &:global(.animate) {
-        //transition-delay: 1s;
-        //transform: translateX(-50%) scale(0.028);
-
-        //top: 219px;
-      }
     }
 
     &__balance{
@@ -475,7 +473,7 @@
     background-size: 24.5px 23.5px;
     background-position: 50% 0;
     padding-top: 1px;
-    transition: all 2s ease-in-out;
+    transition: all 5s ease-in-out;
 
 
 
@@ -524,6 +522,7 @@
       //Smaller dots
       background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
       background-size: 6px 6px;
+      transition: all 5s ease-in-out;
     }
     }
 
