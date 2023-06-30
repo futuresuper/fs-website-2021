@@ -33,7 +33,7 @@ The eligibility criteria for this payment are as follows:
 
 ## ‍**Important things to consider**
 
-This payment will arrive in your account as an “Other contribution” and will count toward your non-concessional contribution cap\*. This offer is made by Future Super Services Pty Ltd ex gratia and in good faith, and does not create any obligation or liability upon the assets of the Fund or its Trustee, Diversa Trustees Limited.
+This payment will arrive in your account as an “Other contribution” and will count toward your non-concessional contribution cap\*. This offer is made by Future Super Services Pty Ltd ex gratia and in good faith, and does not create any obligation or liability upon the assets of the Fund or its Trustee, Equity Trustees Superannuation Limited.
 
 Please note that this contribution is subject to the fees of your chosen investment option and will be required to remain in the superannuation system until you meet a condition of release. Read more about superannuation preservation rules here.
 
