@@ -11,7 +11,7 @@
     <p class="info-block__heading">What you'll need</p>
     <ul class="info-block__list">
       <li>Your Tax File Number</li>
-      <li>Current super details for any funds you plan to transfer*</li>
+      <li>An Australian ID or Medicare card to find your super and complete a transfer.*</li>
     </ul>
   </div>
   <p>
@@ -32,7 +32,7 @@
     <button type="submit" class="primary">Next →</button>
   </p>
   <p class="disclaimer">
-    * Please note that you don't need to rollover funds to create an account
+    * Please note that you don't need to transfer funds to create an account
     with Future Super.<br /><br />
     ^ By providing your email address, you consent and authorise us to send you communications
     or information, including information required by law, via email or similar technologies.
