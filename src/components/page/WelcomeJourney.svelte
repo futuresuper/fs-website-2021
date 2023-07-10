@@ -14,12 +14,26 @@
 
 
   onMount(() => {
+    const observer = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('show')
+        }else{
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+    const animateElements = document.querySelectorAll('.hidden');
+    animateElements.forEach((el) => observer.observe(el));
+
+
     const scrollSection = document.querySelector('.scroll-section');
 
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
     const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
     const amountSection = (document.querySelector('.amount-section'));
     const smallerDotsSection = (document.querySelector('.smaller-dots-bg'));
+    const smallestDotsSection = (document.querySelector('.smallest-dots-bg'));
 
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
@@ -62,6 +76,12 @@
         dotGrid.classList.add('animate');
       }else{
         dotGrid.classList.remove('animate');
+      }
+
+      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 1000)){
+        dotGrid.classList.add('animate-small');
+      }else{
+        dotGrid.classList.remove('animate-small');
       }
 
 
@@ -167,7 +187,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(firstActiveSet) as _, index (index)}
-              <div class="active-dot"></div>
+              <div style="transition-delay: {index * 50}ms" class="active-dot hidden"></div>
             {/each}
           </div>
         </div>
@@ -182,7 +202,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(secondActiveSet) as _, index (index)}
-              <div class="active-dot"></div>
+              <div style="transition-delay: {index * 50}ms" class="active-dot hidden"></div>
             {/each}
           </div>
         </div>
@@ -251,9 +271,9 @@
               All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
             </p>
           </section>
-          <div class="active-dot-set active-dot-set__smaller">
+          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
             {#each Array(thirdActiveSet) as _, index (index)}
-              <div class="active-dot active-dot__smaller"></div>
+              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -267,7 +287,7 @@
           </section>
           <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
             {#each Array(fourthActiveSet) as _, index (index)}
-              <div class="active-dot active-dot__smaller"></div>
+              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -278,9 +298,9 @@
               Australia’s GDP in 2022 was <span class="highlighted">$2.5 trillion.</span> Here’s what that looks like.
             </p>
           </section>
-          <div class="active-dot-set active-dot-set__smaller">
+          <div class="active-dot-set active-dot-set__smaller  active-dot-set__smaller--3">
             {#each Array(fifthActiveSet) as _, index (index)}
-              <div class="active-dot active-dot__smaller"></div>
+              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -291,9 +311,9 @@
               Apple is worth more money than any other company in the world. Here’s what it’s <span class="highlighted">$4.3 trillion</span> market cap looks like?
             </p>
           </section>
-          <div class="active-dot-set active-dot-set__smaller">
+          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--4">
             {#each Array(sixthActiveSet) as _, index (index)}
-              <div class="active-dot active-dot__smaller"></div>
+              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -308,7 +328,7 @@
 
     </div>
 
-    <section class="amount-section journey-section__block--all">
+    <section class="amount-section journey-section__block--all smallest-dots-bg">
       <div class="amount-section__circle amount-section__circle--1">
         <div class="amount-section__amount center">
           <p class="amount-section__amount--heading">60 trillion</p>
@@ -560,6 +580,13 @@
       background-size: 6px 6px;
       //transition: all 1.5s ease-in-out;
     }
+    &:global(.animate-small) {
+      //Smaller dots
+      animation: smallest 1s ease-in-out;
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 2px 2px;
+      //transition: all 1.5s ease-in-out;
+    }
     }
 
   .active-dot{
@@ -591,16 +618,20 @@
     left: 50%;
     //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 12px;
+    margin-top: 32px;
     width: 312px;
 
     &__smaller{
       gap: 2px;
-      margin-top: 18px;
+      margin-top: 12px;
       width: 341px;
 
+      &--1{
+        margin-top: 17px;
+      }
+
       &--2{
-        margin-top: 12px;
+        margin-top: 10px;
       }
     }
   }
@@ -855,6 +886,17 @@
     }
   }
 
+  @keyframes smallest {
+    0% {
+      background-size: 24.5px 23.5px;
+    }
+
+    100% {
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 2px 2px;
+    }
+  }
+
   @keyframes bigger {
     0% {
       background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
@@ -877,6 +919,15 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  :global(.hidden){
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  :global(.show){
+    opacity: 1;
   }
 
 </style>
