@@ -132,6 +132,9 @@
           What does the power of money look like? Well...
         </p>
       </div>
+
+<!--      <div class="balance-section__house transform">-->
+<!--      </div>-->
     </section>
 
     <section class="balance-section">
@@ -145,14 +148,14 @@
 
     <div class="journey-section">
       <div class="journey-section__content journey-section__content--top">
-        <div class="active-dot top-dot hidden"></div>
+        <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top">
           <p>Sounds like a lot of money, right? But, all together Australia has <span class="highlighted">$3.4 trillion</span> worth of super savings. That $320,150 is just a tiny dot.</p>
         </div>
       </div>
 
 
-      <div class="journey-section__content">
+      <div class="journey-section__content  journey-section__content--form">
         <div class="question-modal">
             <div class="question-modal__info">
               <div class="question-modal__badge">Let's guess</div>
@@ -467,6 +470,31 @@
     overflow-x: clip;
     pointer-events: none;
 
+    &__house{
+      clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+      width: 400px;
+      height: 480px;
+
+      background-color: $green;
+      margin: 0 auto;
+
+      &:global(.transform){
+        clip-path: polygon(50% 0%, 200% 6%, 100% 100%, 0 100%, -200% 0%);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        width: 550px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 500px;
+        background-color: $green;
+        transition: clip-path 5s ease-in-out;
+      }
+    }
+
     &__circle{
       position: absolute;
       top: 0;
@@ -480,6 +508,7 @@
       border-radius: 500px;
       background-color: $green;
       transition: all ease-in-out;
+
     }
 
     &__balance{
@@ -536,8 +565,9 @@
       z-index: 1;
 
     &__content{
-      min-height: 100vh;
-      margin: 0;
+      margin-top: 100%;
+      padding-top: 50%;
+      margin-bottom: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -546,6 +576,13 @@
 
       &--top{
         justify-content: start;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 50%;
+      }
+
+      &--form{
+        padding-top: 25%;
       }
     }
       &__block{
@@ -608,6 +645,11 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    opacity: 0;
+
+    &:global(.show){
+      opacity: 1;
+    }
   }
 
   .active-dot-set{
@@ -619,7 +661,7 @@
     //transform: translateX(-50%);
     z-index: 2;
     margin-top: 32px;
-    width: 312px;
+    max-width: 312px;
 
     &__smaller{
       gap: 2px;
@@ -792,14 +834,6 @@
     //Smaller dots
     background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
     background-size: 6px 6px;
-  }
-
-  :global(.hidden) {
-    visibility: hidden;
-  }
-
-  :global(.show) {
-    visibility: visible;
   }
 
 
