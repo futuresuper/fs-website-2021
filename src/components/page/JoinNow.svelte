@@ -1,4 +1,25 @@
 <script>
+  import { onMount } from "svelte";
+
+  const infoBlockGroups = {
+    CONTROL: "2023Jul Control",        // Standard join information
+    SUPERMATCH: "2023Jul SuperMatch",  // Join information tailored for Supermatch
+  };
+
+  // Set its default to the orginal text
+  let infoBlockGroup = infoBlockGroups.CONTROL;
+
+  onMount(async () => {
+    const rand = Math.random();
+
+    infoBlockGroup =
+      rand > 0.5 ? infoBlockGroups.CONTROL : infoBlockGroups.SUPERMATCH;
+
+    // Track the details text display
+    analytics.track("JoinNow ViewedByABTestParticipant", {
+      infoBlockGroup,
+    });
+  });
 </script>
 
 <form method="GET" action="https://join.futuresuper.com.au/">
@@ -11,7 +32,11 @@
     <p class="info-block__heading">What you'll need</p>
     <ul class="info-block__list">
       <li>Your Tax File Number</li>
-      <li>Current super details for any funds you plan to transfer*</li>
+      {#if infoBlockGroup === infoBlockGroups.CONTROL}
+        <li>Current super details for any funds you plan to transfer*</li>
+      {:else}
+        <li>An Australian ID or Medicare card to find your super and complete a transfer*</li>
+      {/if}
     </ul>
   </div>
   <p>
@@ -32,7 +57,7 @@
     <button type="submit" class="primary">Next →</button>
   </p>
   <p class="disclaimer">
-    * Please note that you don't need to rollover funds to create an account
+    * Please note that you don't need to transfer funds to create an account
     with Future Super.<br /><br />
     ^ By providing your email address, you consent and authorise us to send you communications
     or information, including information required by law, via email or similar technologies.
