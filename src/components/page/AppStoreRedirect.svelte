@@ -23,6 +23,7 @@
     welcomeEmail: "Welcome Email",
     welcomeSMS: "Welcome SMS",
     emailFooter: "Email Footer",
+    tbl: "The Bottom Line",
   };
 
   const href = {
