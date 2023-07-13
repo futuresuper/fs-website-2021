@@ -6,6 +6,7 @@
   } from "../../store/stores.js";
 
   import { onMount } from "svelte";
+  import Logo from "@components/images/Logo.svelte";
 
   let showLoginButton = true;
 
@@ -34,12 +35,20 @@
     </div>
   </div>
   {#if showLoginButton}
-    <a class="button secondary login" href={pages.LOGIN[1]}>Login</a>
+    <div class="logo-login-container">
+      <div class="logo">
+        <Logo colour="white" size={60} />
+      </div>
+      <a id="login-button" class="button secondary login" href={pages.LOGIN[1]}
+        >Login</a
+      >
+    </div>
   {/if}
 </div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
+
   .container {
     // Since the behind header is not used for this page we need to use a margin instead for this container
     margin-top: $behind-header-height;
@@ -80,6 +89,12 @@
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 80s linear infinite;
+  }
+
+  .logo-login-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
   }
 
   @keyframes marquee {
@@ -141,7 +156,7 @@
 
     a.login {
       position: absolute;
-      top: 18px;
+      top: 20px;
       right: 30px;
       width: 120px;
       height: 44px;
@@ -238,6 +253,10 @@
       a.login {
         display: flex;
       }
+    }
+
+    .logo-login-container {
+      justify-content: space-between;
     }
   }
 </style>
