@@ -6,7 +6,6 @@
 
   const categories = [
     "Super Documents",
-    "Trust Deed",
     "Super Forms",
     "Pension Documents and Forms",
     "Annual Reports",
@@ -16,6 +15,7 @@
     "Significant Event Notices",
     "Member Outcomes Assessments",
     "Disclosure Requirements",
+    "Trust Deed",
     "Other Documents",
   ];
 </script>
