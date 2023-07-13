@@ -2,7 +2,7 @@
   import ScreeningCircle from "../../images/ScreeningCircle.svelte";
 </script>
 
-<div class="screening">
+<div class="screening" id="screening">
   <div class="image">
     <ScreeningCircle />
   </div>

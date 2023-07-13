@@ -20,6 +20,16 @@
       </div>
       <div class="text">
         <p>
+          Future Super invests for a fossil fuel free future. Fossil fuels are
+          coal, oil and gas. Future Super sets a 0% threshold for direct
+          exposure to fossil fuels in our investments, meaning all fossil fuel
+          companies and investments are screened out. See
+          <a href={pages.HOW_WE_INVEST[1]}> How We Invest </a>
+          and our
+          <a href="{pages.HOW_WE_INVEST[1]}#screening"> Screening Approach </a>
+          for further information.
+        </p>
+        <p>
           We care about what kind of future your super investments deliver, so
           we choose renewables over fossil fuels, responsibility over a quick
           buck, and the future over now. Our investment strategy avoids harmful
@@ -73,14 +83,14 @@
   }
 
   p {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 120%;
     margin-bottom: 50px;
   }
 
   @media (max-width: 740px) {
     p {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 
@@ -104,7 +114,7 @@
     }
 
     p {
-      font-size: 24px;
+      font-size: 16px;
     }
   }
 </style>
