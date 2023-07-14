@@ -151,7 +151,7 @@
     <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <filter id="round">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
           <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
           <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
         </filter>
@@ -161,8 +161,8 @@
       <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
-          <h2 class="balance-section__balance--heading">$320,150K</h2>
-          <p class="balance-section__balance--description">Is the average super balance at retirement</p>
+          <h2 class="balance-section__balance--heading">$1.3 <br> million</h2>
+          <p class="balance-section__balance--description">It’s the median house price in Sydney</p>
         </div>
       </div>
     </section>
@@ -491,31 +491,6 @@
     overflow-x: clip;
     pointer-events: none;
 
-    &__house{
-      clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
-      width: 400px;
-      height: 480px;
-
-      background-color: $green;
-      margin: 0 auto;
-
-      &:global(.transform){
-        clip-path: polygon(50% 0%, 200% 6%, 100% 100%, 0 100%, -200% 0%);
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) scale(1);
-        width: 550px;
-        height: 550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 500px;
-        background-color: $green;
-        transition: clip-path 5s ease-in-out;
-      }
-    }
-
     &__circle{
       position: absolute;
       top: 0;
@@ -535,7 +510,7 @@
       &::before{
         content:"";
         display:block;
-        padding-top: 100%;
+        padding-top: 120%;
         background:currentColor;
         clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
         transition-property: border-radius, clip-path;
@@ -563,18 +538,21 @@
           transition-timing-function: ease-in-out;
         }
 
-
+        .balance-section__balance {
+          top: 45%;
+        }
       }
 
     }
 
     &__balance{
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $black;
       max-width: 290px;
+      width: 100%;
 
 
       &--heading{
