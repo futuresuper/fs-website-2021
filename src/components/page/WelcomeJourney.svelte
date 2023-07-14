@@ -36,8 +36,9 @@
     const smallestDotsSection = (document.querySelector('.smallest-dots-bg'));
 
     scrollSection.addEventListener('scroll', function(e) {
+      console.log((e.target.scrollTop - (heroSectionHeight - 200)) / 400)
       let circle = document.querySelector('.balance-section__circle');
-      let scale = Math.max(0.028, 1 - (e.target.scrollTop - (heroSectionHeight - 100)) / 400);
+      let scale = Math.max(0.028, 0.9 - (e.target.scrollTop - (heroSectionHeight - 225)) / 400);
 
       const singleCircle = document.querySelector('.top-dot');
       const circleTop = circle.getBoundingClientRect().top;
@@ -49,12 +50,23 @@
 
       const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
 
+      // console.log(e.target.scrollTop)
+      // console.log(heroSectionHeight)
+      if(e.target.scrollTop >= (heroSectionHeight - 50)){
+        circle.classList.add("transform");
+      }else{
+        circle.classList.remove("transform");
+      }
+
       //Scale and move big dot as the user scrolls
       if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 75))){
+
+
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
         circle.style.top = `${balanceSectionHeight - circle.clientHeight - 75}px`;
       }else{
+
         circle.style.position = `absolute`;
         circle.style.top = '0';
       }
@@ -136,9 +148,18 @@
 <!--      <div class="balance-section__house transform">-->
 <!--      </div>-->
     </section>
-
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="round">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </defs>
+    </svg>
     <section class="balance-section">
       <div class="balance-section__circle">
+
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$320,150K</h2>
           <p class="balance-section__balance--description">Is the average super balance at retirement</p>
@@ -499,19 +520,59 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-50%) scale(1);
-      width: 550px;
-      height: 550px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 500px;
-      background-color: $green;
-      transition: all ease-in-out;
+      transform: translateX(-50%) scale(0.9);
+
+
+      width: 400px;
+      height: 480px;
+      margin: 0 auto;
+
+      display:inline-block;
+      color:$green;
+      filter:url(#round);
+
+
+      &::before{
+        content:"";
+        display:block;
+        padding-top: 100%;
+        background:currentColor;
+        clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+        transition-property: border-radius, clip-path;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      }
+
+
+      &:global(.transform){
+        &::before{
+          clip-path: polygon(50% 0%, 200% 6%, 100% 100%, 0 100%, -200% 0%);
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%) scale(1);
+          width: 550px;
+          height: 550px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 500px;
+          background-color: $green;
+          transition-property: border-radius, clip-path;
+          transition-duration: 1s;
+          transition-timing-function: ease-in-out;
+        }
+
+
+      }
 
     }
 
     &__balance{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $black;
       max-width: 290px;
 
