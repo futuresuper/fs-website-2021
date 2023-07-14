@@ -9,7 +9,7 @@
   const fifthActiveSet = 273;
   const sixthActiveSet = 389;
 
-  let isCorrect = null;
+  let guess = null;
 
 
 
@@ -145,8 +145,6 @@
         </p>
       </div>
 
-<!--      <div class="balance-section__house transform">-->
-<!--      </div>-->
     </section>
     <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
@@ -171,7 +169,8 @@
       <div class="journey-section__content journey-section__content--top">
         <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top">
-          <p>Sounds like a lot of money, right? But, all together Australia has <span class="highlighted">$3.4 trillion</span> worth of super savings. That $320,150 is just a tiny dot.</p>
+          <p>
+            Sounds like too much money, right? But let’s put it in perspective. Together Australia has $3.4 trillion worth of super savings. That makes <span class="highlighted">$1.3 million</span> look like just a few tiny dots
         </div>
       </div>
 
@@ -182,13 +181,20 @@
               <div class="question-modal__badge">Let's guess</div>
               <p class="question-modal__label">Select Your Answer </p>
             </div>
-          <p class="question-modal__heading">What it would take to to shift towards renewable energy?</p>
+          <p class="question-modal__heading">What percentage of $3.4 trillion is needed to switch Australia to 100% renewable energy? </p>
           <div class="question-modal__answers">
-            {#if !isCorrect}
-              <div class="question-modal__answers--block"  on:click={() => (isCorrect = true)}>7.2 %</div>
-              <div class="question-modal__answers--block {isCorrect === false ? 'question-modal__answers--block-selected' : ''}" on:click={() => (isCorrect = false)}>
-                {#if isCorrect === null}
-                  33.9%
+            {#if !guess || guess !== 1}
+              <div class="question-modal__answers--block"  on:click={() => (guess = 1)}>7.2 %</div>
+              <div class="question-modal__answers--block {guess === 2 ? 'question-modal__answers--block-selected' : ''}" on:click={() => (guess = 2)}>
+                {#if guess !== 2}
+                  18.9%
+                {:else}
+                  Good news, we need way less!
+                {/if}
+              </div>
+              <div class="question-modal__answers--block {guess === 3 ? 'question-modal__answers--block-selected' : ''}" on:click={() => (guess = 3)}>
+                {#if guess !== 3}
+                  44.1%
                 {:else}
                   Good news, we need way less!
                 {/if}
@@ -206,7 +212,7 @@
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              Now let’s think about more numbers. Did you know that just <span class="highlighted">7.2%</span> of that money, or $302 billion, could 100% fund Australia’s transition to renewable energy?
+              Here’s what <span class="highlighted">7.2%</span> of Australia’s pool of super looks like. It adds up to about $302 billion.
             </p>
           </section>
           <div class="active-dot-set">
@@ -218,10 +224,18 @@
 
 
 
+      <div class="journey-section__content">
+        <section class="journey-section__block">
+          <p>
+            If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be about $754 billion.
+          </p>
+        </section>
+      </div>
+
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--2">
             <p>
-              If we wanted to do even better than 100% renewables, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be about $754 billion. That’s just <span class="highlighted">2.3%</span> on top.
+              Sounds like a lot. But that’s just <span class="highlighted">2.3%</span> on top of 7.2%.
             </p>
           </section>
           <div class="active-dot-set">
@@ -289,7 +303,7 @@
           </section>
         </div>
 
-        <div class="journey-section__content smaller-dots-bg">
+        <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
               All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
@@ -303,7 +317,7 @@
         </div>
 
 
-        <div class="journey-section__content">
+        <div class="journey-section__content smaller-dots-bg">
           <section class="journey-section__block journey-section__block--all">
             <p>
               What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
@@ -621,7 +635,7 @@
       }
 
       &--form{
-        padding-top: 25%;
+        padding-top: 10%;
       }
     }
       &__block{
@@ -880,6 +894,7 @@
     background-color: $black;
     border-radius: 1.25rem;
     padding: 1rem;
+    padding-bottom: 2rem;
     width: 21.5rem;
 
     &__info{
@@ -913,7 +928,6 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      height: 14.375rem;
       &--block{
         display: flex;
         align-items: center;
