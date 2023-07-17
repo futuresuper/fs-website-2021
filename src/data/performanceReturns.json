@@ -1,55 +1,55 @@
 {
-  "dateAsAt": "2023-05-31",
+  "dateAsAt": "2023-06-30",
   "table": [
     {
       "rowHeading": "5 Years",
       "balancedIndex": "-",
-      "balancedImpact": "4.95%",
-      "renewablesPlusGrowth": "5.19%",
-      "balancedGrowthPension": "6.90%"
+      "balancedImpact": "4.91%",
+      "renewablesPlusGrowth": "5.37%",
+      "balancedGrowthPension": "6.95%"
     },
     {
       "rowHeading": "3 Years",
-      "balancedIndex": "3.50%",
-      "balancedImpact": "3.82%",
-      "renewablesPlusGrowth": "3.99%",
-      "balancedGrowthPension": "5.88%"
+      "balancedIndex": "3.69%",
+      "balancedImpact": "3.73%",
+      "renewablesPlusGrowth": "4.15%",
+      "balancedGrowthPension": "5.90%"
     },
     {
       "rowHeading": "1 Year",
-      "balancedIndex": "3.25%",
-      "balancedImpact": "3.33%",
-      "renewablesPlusGrowth": "3.35%",
-      "balancedGrowthPension": "5.91%"
+      "balancedIndex": "10.50%",
+      "balancedImpact": "8.54%",
+      "renewablesPlusGrowth": "9.72%",
+      "balancedGrowthPension": "13.12%"
     },
     {
       "rowHeading": "6 Months",
-      "balancedIndex": "3.48%",
-      "balancedImpact": "3.26%",
-      "renewablesPlusGrowth": "3.21%",
-      "balancedGrowthPension": "4.80%"
+      "balancedIndex": "8.38%",
+      "balancedImpact": "6.23%",
+      "renewablesPlusGrowth": "7.52%",
+      "balancedGrowthPension": "9.55%"
     },
     {
       "rowHeading": "3 Months",
-      "balancedIndex": "3.20%",
-      "balancedImpact": "1.97%",
-      "renewablesPlusGrowth": "2.15%",
-      "balancedGrowthPension": "3.51%"
+      "balancedIndex": "4.09%",
+      "balancedImpact": "2.49%",
+      "renewablesPlusGrowth": "3.50%",
+      "balancedGrowthPension": "4.45%"
     },
     {
       "rowHeading": "1 Month",
-      "balancedIndex": "0.88%",
-      "balancedImpact": "0.43%",
-      "renewablesPlusGrowth": "0.75%",
-      "balancedGrowthPension": "1.03%"
+      "balancedIndex": "1.58%",
+      "balancedImpact": "0.74%",
+      "renewablesPlusGrowth": "1.46%",
+      "balancedGrowthPension": "1.50%"
     },
     {
       "rowHeading": "Since inception",
       "rowSubHeading": "Relative to launch date",
-      "balancedIndex": "5.53%",
-      "balancedImpact": "5.58%",
-      "renewablesPlusGrowth": "5.15%",
-      "balancedGrowthPension": "6.72%"
+      "balancedIndex": "5.83%",
+      "balancedImpact": "5.61%",
+      "renewablesPlusGrowth": "5.36%",
+      "balancedGrowthPension": "6.84%"
     },
     {
       "rowHeading": "Launch date",
