@@ -5,10 +5,10 @@
   import Toast from "../ui/Toast.svelte";
   const clientSide = !import.meta.env.SSR;
 
-  let friendMode = false;
+  let friendMode = true;
   let copySuccessMessage = "";
 
-  let referCode = "";
+  let code = "";
   let firstName = "";
   let fund = "";
 
@@ -17,34 +17,45 @@
   if (clientSide) {
     // Extract the details from the link code
     // The link code is a base64 encoded json object containing the necessary details
-    referCode = getQueryParam("r");
+    code = getQueryParam("c");
     send = getQueryParam("send")
     
-    const details = JSON.parse(window.atob(referCode));
-    
-    // Get the details to display on the page
-    firstName = details.firstName;
-    fund = details.fund;
-
-    // By default the page shows the friend sharing mode 
-    friendMode = true;
-
-    if(send) {
-      // When send is set in the URL it means we want to send the breakup letter to the fund
-      // NB: This parameter will only be set from the link in the breakup letter email
-      friendMode = false;
-
-      // Identify the user so this page view can be tracked
-      const userId = details.userId;
-      analytics.identify(userId);
+    if(code !== undefined) {
+      let details = null;
+      try {
+        details = JSON.parse(window.atob(code));
+      } catch(e) {
+        console.log('Invalid code');
+      }
       
-      // Send the event that will trigger the Customer.io campaign to send the letter to the fund
-      analytics.track("BreakupLetterPage Viewed");
+      if(details) {
+        // Get the details to display on the page
+        firstName = details.firstName;
+        fund = details.fund;
+
+        // By default the page shows the friend sharing mode 
+        friendMode = true;
+
+        if(send) {
+          // When send is set in the URL it means we want to send the breakup letter to the fund
+          // NB: This parameter will only be set from the link in the breakup letter email
+          friendMode = false;
+
+          // Identify the user so this page view can be tracked
+          const userId = details.userId;
+          if(userId) {
+            analytics.identify(userId);
+            
+            // Send the event that will trigger the Customer.io campaign to send the letter to the fund
+            analytics.track("BreakupLetterPage Viewed");
+          }
+        }
+      }
     }
   }
 
   function handleCopy() {
-    const text = "www.futuresuper.com.au/letter?r=" + referCode;
+    const text = "www.futuresuper.com.au/letter?r=" + code;
     copyTextToClipboard(text);
     copySuccessMessage = "✅  Copied!";
     setTimeout(function () {
@@ -91,7 +102,7 @@
   <div class="share-container">
     <p>If you’d like to share your letter, here’s your personal link:</p>
     <div class="share-link">
-      www.futuresuper.com.au/letter?r={referCode ? referCode : ""}
+      www.futuresuper.com.au/letter?r={code ? code : ""}
     </div>
     <button id="copy-button" class="primary" on:click={() => handleCopy()}>
       COPY LINK
