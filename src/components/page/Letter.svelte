@@ -1,44 +1,61 @@
 <script>
   import JoinNow from "../ui/JoinNow.svelte";
   import { getQueryParam } from "../scripts/getQueryParam.js";
-  import { postData } from "../scripts/postData.js";
-  import { getData } from "../scripts/getData.js";
   import { copyTextToClipboard } from "../scripts/clipboard.js";
   import Toast from "../ui/Toast.svelte";
   const clientSide = !import.meta.env.SSR;
 
-  let friendMode = false;
+  let friendMode = true;
   let copySuccessMessage = "";
 
-  let referCode = "";
+  let code = "";
   let firstName = "";
   let fund = "";
-  let share;
+
+  let send;
 
   if (clientSide) {
-    referCode = getQueryParam("r");
-    firstName = getQueryParam("first");
-    fund = getQueryParam("fund");
-    share = getQueryParam("share");
-    if (share) {
-      postData(
-        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letter?rcode=" +
-          referCode
-      );
-    } else {
-      friendMode = true;
-      getData(
-        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letterdetails?rcode=" +
-          referCode
-      ).then((data) => {
-        firstName = data.firstName;
-        fund = data.oldFund;
-      });
+    // Extract the details from the link code
+    // The link code is a base64 encoded json object containing the necessary details
+    code = getQueryParam("c");
+    send = getQueryParam("send")
+    
+    if(code !== undefined) {
+      let details = null;
+      try {
+        details = JSON.parse(window.atob(code));
+      } catch(e) {
+        console.log('Invalid code');
+      }
+      
+      if(details) {
+        // Get the details to display on the page
+        firstName = details.firstName;
+        fund = details.fund;
+
+        // By default the page shows the friend sharing mode 
+        friendMode = true;
+
+        if(send) {
+          // When send is set in the URL it means we want to send the breakup letter to the fund
+          // NB: This parameter will only be set from the link in the breakup letter email
+          friendMode = false;
+
+          // Identify the user so this page view can be tracked
+          const userId = details.userId;
+          if(userId) {
+            analytics.identify(userId);
+            
+            // Send the event that will trigger the Customer.io campaign to send the letter to the fund
+            analytics.track("BreakupLetterPage Viewed");
+          }
+        }
+      }
     }
   }
 
   function handleCopy() {
-    const text = "www.futuresuper.com.au/letter?r=" + referCode;
+    const text = "www.futuresuper.com.au/letter?c=" + code;
     copyTextToClipboard(text);
     copySuccessMessage = "✅  Copied!";
     setTimeout(function () {
@@ -85,15 +102,15 @@
   <div class="share-container">
     <p>If you’d like to share your letter, here’s your personal link:</p>
     <div class="share-link">
-      www.futuresuper.com.au/letter?r={referCode ? referCode : ""}
+      www.futuresuper.com.au/letter?c={code ? code : ""}
     </div>
     <button id="copy-button" class="primary" on:click={() => handleCopy()}>
       COPY LINK
     </button>
-    <p class="desc">
+    <!-- <p class="desc">
       We’ll let you know when someone joins Future Super from this link so you
       can see the difference you make.
-    </p>
+    </p> -->
   </div>
 {/if}
 
@@ -120,6 +137,10 @@
     font-family: $heading;
     font-size: max(10px, 1.2vw);
     margin-bottom: 8px;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .desc {
