@@ -36,8 +36,8 @@
     const smallestDotsSection = (document.querySelector('.smallest-dots-bg'));
 
     scrollSection.addEventListener('scroll', function(e) {
-      console.log((e.target.scrollTop - (heroSectionHeight - 200)) / 400)
       let circle = document.querySelector('.balance-section__circle');
+      let circleText = document.querySelector('.balance-section__balance');
       let scale = Math.max(0.028, 0.9 - (e.target.scrollTop - (heroSectionHeight - 225)) / 400);
 
       const singleCircle = document.querySelector('.top-dot');
@@ -52,19 +52,25 @@
 
       // console.log(e.target.scrollTop)
       // console.log(heroSectionHeight)
-      if(e.target.scrollTop >= (heroSectionHeight - 50)){
+      if(e.target.scrollTop >= (heroSectionHeight - 150)){
         circle.classList.add("transform");
       }else{
         circle.classList.remove("transform");
       }
 
       //Scale and move big dot as the user scrolls
-      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 75))){
+      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 100))){
 
 
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
-        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 75}px`;
+        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 100}px`;
+
+        if(scale <= 0.2){
+          circleText.classList.add('hidden');
+        }else{
+          circleText.classList.remove('hidden');
+        }
       }else{
 
         circle.style.position = `absolute`;
@@ -74,11 +80,11 @@
 
       //Hide big dot and show small single dot in dots background
       if(circleTop >= dotGridTop){
-        circle.classList.add('hidden');
+        circle.style.opacity = '0';
         singleCircle.classList.add('show');
 
       }else{
-        circle.classList.remove('hidden');
+        circle.style.opacity = '1';
         singleCircle.classList.remove('show');
 
       }
@@ -160,7 +166,10 @@
 
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$1.3 <br> million</h2>
-          <p class="balance-section__balance--description">It’s the median house price in Sydney</p>
+          <p class="balance-section__balance--description">
+            <span class="house-text">It’s the median house price in Sydney</span>
+            <span class="circle-text">It’s about the same amount subsidies to fossil fuel companies cost Australia every hour</span>
+          </p>
         </div>
       </div>
     </section>
@@ -211,9 +220,17 @@
 
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
-            <p>
-              Here’s what <span class="highlighted">7.2%</span> of Australia’s pool of super looks like. It adds up to about $302 billion.
-            </p>
+
+            {#if guess && guess === 1}
+              <p>
+                Yep, that’s right! Here’s what <span class="highlighted">7.2%</span>  of Australia’s pool of super looks like.
+              </p>
+            {:else}
+              <p>
+                Good news, we only need <span class="highlighted">7.2%</span> of $3.4 trillion. Here’s what that looks like.
+              </p>
+            {/if}
+
           </section>
           <div class="active-dot-set">
             {#each Array(firstActiveSet) as _, index (index)}
@@ -528,8 +545,16 @@
         background:currentColor;
         clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
         transition-property: border-radius, clip-path;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
+      }
+
+      .house-text{
+        display: block;
+      }
+
+      .circle-text{
+        display: none;
       }
 
 
@@ -554,6 +579,14 @@
 
         .balance-section__balance {
           top: 45%;
+        }
+
+        .house-text{
+          display: none;
+        }
+
+        .circle-text{
+          display: block;
         }
       }
 
@@ -694,14 +727,14 @@
   }
 
   .top-dot{
-    top: 3px;
+    top: 3.5px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.04);
     position: absolute;
-    opacity: 0;
+    background-color: #161616;
 
     &:global(.show){
-      opacity: 1;
+      background-color: $green;
     }
   }
 
@@ -914,7 +947,7 @@
     &__label{
       text-transform: uppercase;
       text-align: right;
-      color: #BDBDBD;
+      color: #A7FFA4;
       margin: 0;
     }
 
