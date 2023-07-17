@@ -55,7 +55,7 @@
   }
 
   function handleCopy() {
-    const text = "www.futuresuper.com.au/letter?r=" + code;
+    const text = "www.futuresuper.com.au/letter?c=" + code;
     copyTextToClipboard(text);
     copySuccessMessage = "✅  Copied!";
     setTimeout(function () {
