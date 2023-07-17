@@ -8,11 +8,11 @@
   const returnsWith30June = [
     ...returns.table.slice(0, 7),
     {
-      rowHeading: "1 Year to 30 June 2022",
-      balancedIndex: "-11.41%",
-      balancedImpact: "-8.65%",
-      renewablesPlusGrowth: "-9.87%",
-      balancedGrowthPension: "-10.97%",
+      rowHeading: "1 Year to 30 June 2023",
+      balancedIndex: "10.50%",
+      balancedImpact: "8.54%",
+      renewablesPlusGrowth: "9.72%",
+      balancedGrowthPension: "13.12%",
     },
     ...returns.table.slice(7),
   ];
