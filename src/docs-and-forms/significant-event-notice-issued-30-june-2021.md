@@ -1,9 +1,9 @@
 ---
-title: "Significant Event Notice: Issued 30 June 2021"
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS_SEN_30062021.pdf
+title: Significant Event Notice Register
+docurl: www.futuresuper.com.au/senregister
 type: PDF
 category: Significant Event Notices
 order: 1
 ---
 
-Contains important information about a change to our fees and benchmark asset allocations.
+  
