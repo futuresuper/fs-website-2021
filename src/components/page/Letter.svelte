@@ -102,7 +102,7 @@
   <div class="share-container">
     <p>If you’d like to share your letter, here’s your personal link:</p>
     <div class="share-link">
-      www.futuresuper.com.au/letter?r={code ? code : ""}
+      www.futuresuper.com.au/letter?c={code ? code : ""}
     </div>
     <button id="copy-button" class="primary" on:click={() => handleCopy()}>
       COPY LINK
