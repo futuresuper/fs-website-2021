@@ -144,6 +144,8 @@
 
   .bg-outer {
     background-color: $black;
+    margin-bottom: -120px;
+    padding-bottom: 60px;
   }
 
   .bg {
