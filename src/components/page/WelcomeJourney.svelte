@@ -137,14 +137,14 @@
 <div class="bg">
   <div class="scroll-section">
     <section class="hero-section">
-      <h1 class="hero-section__heading center">Welcome to the movement</h1>
+      <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
       <div class="hero-section__content container">
         <p>
-          By joining Future Super, you’re also joining a movement! We’re fighting for a future free from climate change and inequality. 
+          By joining Future Super, you’re also joining a movement! We’re fighting for a future free from climate change and inequality.
         </p>
         <p>
-          And we’re putting our money where our mouth is. It’s easy to feel powerless when we think about the big issues facing the world, but the truth is - money has power. Together, we can be a force for change. 
+          It’s easy to feel powerless when we think about the big issues facing the world, but the truth is - money has power.
         </p>
         <p>
           What does the power of money look like? Well...
@@ -167,8 +167,8 @@
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$1.3 <br> million</h2>
           <p class="balance-section__balance--description">
-            <span class="house-text">It’s the median house price in Sydney</span>
-            <span class="circle-text">It’s about the same amount subsidies to fossil fuel companies cost Australia every hour</span>
+            <span class="house-text">It’s the median house price in Sydney <span class="reference">1</span></span>
+            <span class="circle-text">It’s about the same amount subsidies to fossil fuel companies cost Australia <strong>every hour</strong> <span class="reference">2</span></span>
           </p>
         </div>
       </div>
@@ -179,7 +179,16 @@
         <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top">
           <p>
-            Sounds like too much money, right? But let’s put it in perspective. Together Australia has $3.4 trillion worth of super savings. That makes <span class="highlighted">$1.3 million</span> look like just a few tiny dots
+            That's a lot of money right? But Australian's have more in their super, way more. <span class="highlighted--white"><strong>$3.4 trillion</strong> <span class="reference text-muted">3</span></span> to be precise. We can use that super to fight back against climate change.
+            <br><br>That makes <span class="highlighted">$1.3 million</span> look like just a tiny dot.
+        </div>
+      </div>
+
+      <div class="journey-section__content">
+        <div class="journey-section__block journey-section__block--all">
+          <p>
+            First up, let’s have a think about what <span class="highlighted--white"><strong>$3.4 trillion</strong></span> could do!
+
         </div>
       </div>
 
@@ -188,7 +197,7 @@
         <div class="question-modal">
             <div class="question-modal__info">
               <div class="question-modal__badge">Let's guess</div>
-              <p class="question-modal__label">Select Your Answer </p>
+              <p class="question-modal__label {!guess ? 'question-modal__label--green' : ''}">Select Your Answer </p>
             </div>
           <p class="question-modal__heading">What percentage of $3.4 trillion is needed to switch Australia to 100% renewable energy? </p>
           <div class="question-modal__answers">
@@ -223,7 +232,7 @@
 
             {#if guess && guess === 1}
               <p>
-                Yep, that’s right! Here’s what <span class="highlighted">7.2%</span>  of Australia’s pool of super looks like.
+                Yep, that’s right! Here’s what <span class="highlighted">7.2%</span>  of Australia’s pool of super looks like. <span class="reference text-muted">5</span>
               </p>
             {:else}
               <p>
@@ -244,7 +253,7 @@
       <div class="journey-section__content">
         <section class="journey-section__block">
           <p>
-            If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be about $754 billion.
+            If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be bigger, but maybe not by as much as you think. <span class="reference text-muted">6</span>
           </p>
         </section>
       </div>
@@ -252,7 +261,7 @@
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--2">
             <p>
-              Sounds like a lot. But that’s just <span class="highlighted">2.3%</span> on top of 7.2%.
+              It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more. <span class="reference text-muted">7</span>
             </p>
           </section>
           <div class="active-dot-set">
@@ -265,7 +274,7 @@
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest.
+              For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest. <span class="reference text-muted">8</span>
             </p>
           </section>
         </div>
@@ -273,57 +282,51 @@
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change.
+              What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change. <span class="reference text-muted">9</span>
             </p>
           </section>
         </div>
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              In Australia, some super funds believe it’s possible to engage with coal, oil and gas companies to try to influence them to reduce emissions.
+              In Australia, some super funds invest in fossil fuel companies but say they’ll pressure them to behave responsibly. <span class="reference text-muted">10</span> But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”. <span class="reference text-muted">11</span>
             </p>
           </section>
         </div>
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”.
+              Future Super is just a tiny drop in the global divestment movement.
             </p>
           </section>
         </div>
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              Future Super is just a tiny drop in the global divestment movement. 
+              After so much scrolling, you might have forgotten - all these tiny dots are still representing that <span class="highlighted--white"><strong>$3.4 trillion</strong></span> pool of super. And yep, that’s a lot of dots!
             </p>
           </section>
         </div>
         <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels.
-            </p>
-          </section>
-        </div>
-        <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
-            <p>
-              After so much scrolling, you might have forgotten - all these tiny dots are still representing that $3.4 trillion pool of super. And yep, that’s a lot of dots!
-            </p>
-          </section>
-        </div>
-        <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
-            <p>
-              But $3.4 trillion is about to look like nothing. Wait until you see how big the divestment movement is....
+              But <span class="highlighted--white"><strong>$3.4 trillion</strong></span> is about to look like nothing. Wait until you see how big the divestment movement is....
             </p>
           </section>
         </div>
 
-        <div class="journey-section__content">
+      <div class="journey-section__content">
+        <section class="journey-section__block journey-section__block--all">
+          <p>
+            The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels. <span class="reference text-muted">12</span>
+          </p>
+        </section>
+      </div>
+
+        <div class="journey-section__content  smaller-dots-bg">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              All of these tiny dots make up the divestment movement. To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is <span class="highlighted">$707 billion, that’s those green dots.</span>
+              To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
             </p>
           </section>
           <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
@@ -334,10 +337,10 @@
         </div>
 
 
-        <div class="journey-section__content smaller-dots-bg">
+        <div class="journey-section__content">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$322 billion.</span>
+              What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
             </p>
           </section>
           <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
@@ -347,36 +350,10 @@
           </div>
         </div>
 
-        <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
-            <p>
-              Australia’s GDP in 2022 was <span class="highlighted">$2.5 trillion.</span> Here’s what that looks like.
-            </p>
-          </section>
-          <div class="active-dot-set active-dot-set__smaller  active-dot-set__smaller--3">
-            {#each Array(fifthActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
-            {/each}
-          </div>
-        </div>
-
-        <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
-            <p>
-              Apple is worth more money than any other company in the world. Here’s what it’s <span class="highlighted">$4.3 trillion</span> market cap looks like?
-            </p>
-          </section>
-          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--4">
-            {#each Array(sixthActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
-            {/each}
-          </div>
-        </div>
-
         <div class="journey-section__content journey-section__content--last">
           <section class="journey-section__block journey-section__block--all">
             <p>
-              But, what do all those tiny dots add up to?
+              You’re probably starting to wonder... what do all those tiny dots add up to?
             </p>
           </section>
         </div>
@@ -386,21 +363,21 @@
     <section class="amount-section journey-section__block--all smallest-dots-bg">
       <div class="amount-section__circle amount-section__circle--1">
         <div class="amount-section__amount center">
-          <p class="amount-section__amount--heading">60 trillion</p>
-          <p class="amount-section__amount--description">That's how big the divestment movement is!</p>
+          <p class="amount-section__amount--heading">$60 trillion</p>
+          <p class="amount-section__amount--description">That's how big the divestment movement is <span class="reference text-muted">17</span>.</p>
         </div>
 
         <div class="amount-section__circle amount-section__circle--2">
           <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading"> 3.4 trillion</p>
-            <p class="amount-section__amount--description">Australia's super</p>
+            <p class="amount-section__amount--heading">$3.4 trillion</p>
+            <p class="amount-section__amount--description">Australia’s collective super savings.</p>
           </div>
         </div>
 
         <div class="amount-section__circle amount-section__circle--3">
           <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading">754 billon</p>
-            <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry</p>
+            <p class="amount-section__amount--heading">$754 billon</p>
+            <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry.</p>
           </div>
         </div>
       </div>
@@ -409,8 +386,10 @@
     <section class="amount-section-info">
       <div class="container">
         <p>That’s a lot of money.</p>
-        <p>Think of all the people whose retirement savings are part of that $60 trillion.</p>
         <p>How you invest matters. You might feel like a tiny dot, but you’re part of something huge.</p>
+        <p>We hope this story has got you thinking about the power of a $.</p>
+        <p class="highlighted">After all, just 7.2% of Australia’s combined super savings could transition us to 100% renewable energy.</p>
+        <p>When you put it that way, making big changes doesn’t seem so hard!</p>
       </div>
 
     </section>
@@ -774,6 +753,10 @@
 
   .highlighted{
     color: $green;
+
+    &--white{
+      color: white;
+    }
   }
 
 
@@ -805,17 +788,29 @@
       &--2{
         background-color: #303030;
         transform: scale(0.1143) translateZ(0);
-        bottom: 5px;
+        bottom: 4px;
         left: 0;
         z-index: 2;
       }
 
       &--3{
-        background-color: #212121;
+        background-color: $green;
+        color: #212121;
         transform: scale(0.02) translateZ(0);
         bottom: 5px;
         left: 0;
         z-index: 3;
+
+        .amount-section__amount {
+          &--heading{
+            color: #212121;
+
+          }
+
+          &--description{
+            color: #212121;
+          }
+        }
       }
     }
 
@@ -841,22 +836,21 @@
 
   .amount-section-info{
     padding: 8rem 0;
-    margin-top: 600px;
+    margin-top: 460px;
     font-size: 1.25rem;
+    background-color: #212121;
   }
 
   .download-section{
-    background-color: #161616;
-    border-radius: 40px 40px 0 0;
-
-    padding-bottom: 80px;
-
+    background-color: #212121;
     &__heading{
       font-size: 1.875rem;
       padding-top: 40px;
     }
 
     &__action{
+      background-color: #161616;
+      border-radius: 40px 40px 0 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -897,7 +891,9 @@
     }
 
     &__sources{
-      margin-top: 80px;
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
+      background-color: #161616;
       &--heading{
         text-transform: uppercase;
       }
@@ -947,8 +943,12 @@
     &__label{
       text-transform: uppercase;
       text-align: right;
-      color: #A7FFA4;
+      color: #BDBDBD;
       margin: 0;
+
+      &--green{
+        color: #A7FFA4;
+      }
     }
 
     &__heading{
@@ -964,7 +964,7 @@
       &--block{
         display: flex;
         align-items: center;
-        border: 1px solid #303030;
+        border: 1px solid #616161;
         padding: 2rem 1rem;
         border-radius: 0.5rem;
         font-size: 1.25rem;
@@ -1048,6 +1048,15 @@
 
   :global(.show){
     opacity: 1;
+  }
+
+  .reference{
+    vertical-align: super;
+    font-size: 60%;
+  }
+
+  .text-muted{
+    color: #9E9E9E;
   }
 
 </style>
