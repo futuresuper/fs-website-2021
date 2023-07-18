@@ -26,5 +26,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    &:hover {
+      background-color: $black950;
+    }
   }
 </style>

@@ -5,7 +5,6 @@
   import LikeCard from "./LikeCard.svelte";
   import AppDownloadCard from "./AppDownloadCard.svelte";
   import QrCodeCard from "./QrCodeCard.svelte";
-  import SitePassword from "../../ui/SitePassword.svelte";
   import JoinNow from "../../ui/JoinNow.svelte";
 
   const projects = [
@@ -99,48 +98,49 @@
   ];
 </script>
 
-<SitePassword>
-  <div class="bg-outer">
-    <div class="bg">
-      <div class="header">
-        <Title />
-        <div class="logo">
-          <Logo colour="white" size="100%" />
-        </div>
+<div class="bg-outer">
+  <div class="bg">
+    <div class="header">
+      <Title />
+      <div class="logo">
+        <Logo colour="white" size="100%" />
       </div>
-      <div class="card-container">
-        <div class="description">
-          <h3>
-            Explore some renewables projects Future Super is invested in. Tap on
-            each card for more information.
-          </h3>
-          <p>
-            Exposure in these projects is obtained through Future Super's
-            investment in Infradebt. Infradebt is an investment in the
-            Renewables Plus, Balanced Impact, and Balanced Growth Pension
-            investment options only.
-          </p>
-        </div>
-        <div class="cards">
-          {#each projects as project}
-            <ProjectCard {project} />
-          {/each}
-          <LikeCard />
-          <!-- <AppDownloadCard /> -->
-          <QrCodeCard />
-        </div>
+    </div>
+    <div class="card-container">
+      <div class="description">
+        <h3>
+          Explore some renewables projects Future Super is invested in. Tap on
+          each card for more information.
+        </h3>
+        <p>
+          Exposure in these projects is obtained through Future Super's
+          investment in Infradebt. Infradebt is an investment in the Renewables
+          Plus, Balanced Impact, and Balanced Growth Pension investment options
+          only.
+        </p>
+      </div>
+      <div class="cards">
+        {#each projects as project}
+          <ProjectCard {project} />
+        {/each}
+        <LikeCard />
+        <QrCodeCard />
       </div>
     </div>
   </div>
-  <JoinNow />
-</SitePassword>
+</div>
+<JoinNow />
 
 <style lang="scss">
   @use "../../../styles/" as *;
 
-  h3,
-  p {
+  h3 {
+    font-family: $regular;
     color: $white;
+  }
+
+  p {
+    color: $black400;
   }
 
   .bg-outer {
@@ -196,11 +196,13 @@
     .cards {
       grid-template-columns: 1fr;
     }
-  }
 
-  @media (max-width: 640px) {
+    .description {
+      margin-bottom: 40px;
+    }
+
     .card-container {
-      padding: 80px 0px;
+      padding: 40px 0px;
     }
   }
 </style>

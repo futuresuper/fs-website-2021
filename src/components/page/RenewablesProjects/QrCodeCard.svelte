@@ -18,7 +18,8 @@
     font-family: $regular;
     text-align: center;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 48px;
+    padding: 0 24px;
     span {
       color: $green;
     }

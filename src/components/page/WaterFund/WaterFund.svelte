@@ -8,15 +8,13 @@
   import SitePassword from "../../ui/SitePassword.svelte";
 </script>
 
-<SitePassword>
-  <div class="bg" />
-  <Title />
-  <WhatItDoes />
-  <Impact />
-  <ImpactDetails />
-  <Frogs />
-  <GetTheApp />
-</SitePassword>
+<div class="bg" />
+<Title />
+<WhatItDoes />
+<Impact />
+<ImpactDetails />
+<Frogs />
+<GetTheApp />
 
 <style lang="scss">
   @use "../../../styles/" as *;

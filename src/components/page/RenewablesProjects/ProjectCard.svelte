@@ -51,6 +51,8 @@
     color: $green;
     font-family: $regular;
     width: 100%;
+    font-size: 30px;
+    padding-right: 48px;
   }
 
   .image-container {
