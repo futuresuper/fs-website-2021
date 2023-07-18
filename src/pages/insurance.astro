@@ -1,11 +1,14 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import InsuranceHeader from '../components/page/Insurance/InsuranceHeader.svelte'
-import Insurance from '../components/page/Insurance/Insurance.svelte'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import InsuranceHeader from "@components/page/Insurance/InsuranceHeader.svelte";
+import Insurance from "@components/page/Insurance/Insurance.svelte";
 ---
 
-<BaseLayout title="Insurance" description="Here's what you need to know about our insurance offerings at Future Super."
-  customHeader={true}>
+<BaseLayout
+  title="Insurance"
+  description="Here's what you need to know about our insurance offerings at Future Super."
+  customHeader={true}
+>
   <InsuranceHeader slot="customHeader" />
   <Insurance />
 </BaseLayout>

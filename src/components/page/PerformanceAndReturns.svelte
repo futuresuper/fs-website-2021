@@ -1,15 +1,27 @@
 <script>
-  import returns from "$/data/performanceReturns.json";
+  import returns from "@data/performanceReturns.json";
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinRow from "./InvestmentOptions/JoinRow.svelte";
   import RelatedFaqs from "../ui/RelatedFaqs.svelte";
   export let faqs = [];
+
+  const returnsWith30June = [
+    ...returns.table.slice(0, 7),
+    {
+      rowHeading: "1 Year to 30 June 2023",
+      balancedIndex: "10.50%",
+      balancedImpact: "8.54%",
+      renewablesPlusGrowth: "9.72%",
+      balancedGrowthPension: "13.12%",
+    },
+    ...returns.table.slice(7),
+  ];
 </script>
 
 <div class="tables">
   <div class="container">
     <HeaderRow includePension={true} />
-    {#each returns.table as r}
+    {#each returnsWith30June as r}
       <div class="table-row">
         <div class="row-head">
           <h4>{r.rowHeading}</h4>

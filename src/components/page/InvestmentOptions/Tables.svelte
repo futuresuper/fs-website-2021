@@ -1,8 +1,8 @@
 <script>
   import HeaderRow from "./HeaderRow.svelte";
   import Tick from "../../images/Tick.svelte";
-  import investmentOptions from "$/data/investmentOptions.json";
-  import returns from "$/data/performanceReturns.json";
+  import investmentOptions from "@data/investmentOptions.json";
+  import returns from "@data/performanceReturns.json";
   import moment from "moment";
 
   export let pension = false;
@@ -131,7 +131,8 @@
       {#each options as option}
         <div>
           <p class="number">
-            {option.fee.perAnnumPercentage}% + ${option.fee.perYearPrice}
+            {option.fee.perAnnumPercentage.toFixed(3)}% + ${option.fee
+              .perYearPrice}
           </p>
           <!-- <p class="number-desc">
             ${(

@@ -1,9 +1,8 @@
 <script>
-  import Logo from "$/components/images/Logo.svelte";
-  import BCorpLogo from "$/components/images/BCorpLogo.svelte";
-  import custodians from "$/data/custodians.json";
-  import { fade } from "svelte/transition";
-  import pages from "../../data/pages.json";
+  import Logo from "@components/images/Logo.svelte";
+  import BCorpLogo from "@components/images/BCorpLogo.svelte";
+  import custodians from "@data/custodians.json";
+  import pages from "@data/pages.json";
   import SocialFacebook from "../images/SocialFacebook.svelte";
   import SocialInsta from "../images/SocialInsta.svelte";
   import SocialLinkedIn from "../images/SocialLinkedIn.svelte";
@@ -27,7 +26,6 @@
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
         pages.INSURANCE,
-        pages.CARBON_TRANSPARENCY,
         pages.UNIT_PRICES,
       ],
     },
@@ -45,15 +43,48 @@
 <footer>
   <div class="footer-container">
     <div class="container">
-      <div class="horizontal-space-between">
+      <div class="logo-and-socials">
         <Logo colour="white" size="54" />
         <div class="social-icons">
-          <a href="https://www.instagram.com/future_super/"><SocialInsta /></a>
-          <a href="https://www.facebook.com/myfuturesuper/"
-            ><SocialFacebook /></a
-          >
+          <a href="https://www.instagram.com/future_super/">
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/insta.png"
+              alt="Instagram Icon"
+            />
+          </a>
+          <a href="https://www.facebook.com/myfuturesuper/">
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/fb.png"
+              alt="Facebook Icon"
+            />
+          </a>
           <a href="https://www.linkedin.com/company/future-super">
-            <SocialLinkedIn />
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/in.png"
+              alt="LinkedIn Icon"
+            />
+          </a>
+        </div>
+        <div class="app-download">
+          <a
+            href="https://www.futuresuper.com.au/app-store?linktype=button&source=footer&store=apple"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Apple2.png"
+              alt="Apple App Store"
+            />
+          </a>
+          <a
+            href="https://www.futuresuper.com.au/app-store?linktype=button&source=footer&store=google"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/future-super/image/upload/v1678769176/App_Download_-_Google2.png"
+              alt="Googple Play Store"
+            />
           </a>
         </div>
       </div>
@@ -91,11 +122,10 @@
             supplied.
           </p>
           <p class="disclaimer">
-            Interests in Future Super are issued by Diversa Trustees Limited
-            (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635) (“the
-            Trustee”) as trustee of the Future Super Fund (ABN 45 960 194 277;
-            RSE Registration R1072914) (“the Fund” or “Future Super”). The Fund
-            is administered by OneVue Super Services Pty Limited (ABN 74 006 877
+            Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE
+            Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund
+            (ABN 45 960 194 277; RSE Registration R1072914). The Fund is
+            administered by OneVue Super Services Pty Limited (ABN 74 006 877
             872; AFSL 246883). Insurance cover is provided to eligible members
             by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
           </p>
@@ -103,11 +133,10 @@
             The Founder, Promoter and Investment Manager of the Fund is Future
             Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS
             Representative No. 001271441), which is a Corporate Authorised
-            Representative of Future Superannuation Holdings Pty Ltd (ABN 90 167
-            800 580; AFSL 482684). The Trustee does not in any way endorse,
-            warrant or accept responsibility for any services provided by the
-            Promoter in its own right or directly to members or prospective
-            members.
+            Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800
+            580; AFSL 482684). The Trustee does not in any way endorse, warrant
+            or accept responsibility for any services provided by the Promoter
+            in its own right or directly to members or prospective members.
           </p>
         </div>
         <div class="bcorp">
@@ -159,14 +188,14 @@
         </div>
         <div class="footer-text">
           <p class="disc fs-acknowledgement">
-            Future Super acknowledges the Traditional Custodians of the lands on
-            which we operate and pay our respects to Elders, past, present and
-            emerging. We recognise the enduring relationship Aboriginal and
-            Torres Strait Islander peoples have with Country and that
-            sovereignty was never ceded. We stand for a future that promotes
-            justice for Aboriginal and Torres Strait Islander peoples and
-            profoundly respects and acknowledges their respective perspectives,
-            culture, language and history.
+            Future Super Group acknowledges that we operate on sovereign First
+            Nations land. We recognise the ongoing connection Aboriginal and
+            Torres Strait Islander people have with Country throughout this
+            continent since time immemorial. We stand for a future where First
+            Nations people have true justice and redress, and our society has a
+            profound respect, understanding and commitment to acknowledging
+            First Nations perspectives, culture, languages, histories, country,
+            values and ancestors.
           </p>
         </div>
         <a class="button secondary" href="/reconciliation">
@@ -206,15 +235,21 @@
     overflow: hidden;
   }
 
-  .logo-and-social-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+  .logo-and-socials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
   }
 
-  .social-icons {
+  .social-icons,
+  .app-download {
+    display: flex;
+    align-items: center;
     a {
-      margin-left: 10px;
+      margin-left: 20px;
+      img {
+        height: 52px;
+      }
     }
   }
 
@@ -377,6 +412,16 @@
         }
       }
     }
+
+    .logo-and-socials {
+      grid-template-columns: 1fr auto;
+
+      .app-download {
+        grid-column: span 2;
+        justify-content: flex-end;
+        padding-top: 20px;
+      }
+    }
   }
 
   @media (max-width: 500px) {
@@ -386,6 +431,26 @@
 
     .disclaimer {
       width: 70%;
+    }
+
+    .logo-and-socials {
+      .app-download,
+      .social-icons {
+        a {
+          margin-left: 10px;
+        }
+      }
+      .app-download {
+        a {
+          &:first-of-type {
+            margin-left: 0;
+          }
+          img {
+            height: auto;
+          }
+        }
+        justify-content: space-between;
+      }
     }
   }
 </style>

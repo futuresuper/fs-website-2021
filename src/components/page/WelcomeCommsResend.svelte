@@ -1,65 +1,55 @@
 <script>
   import { postData } from "../scripts/postData";
+  import sha256 from "../scripts/sha256";
 
-  let email = "";
-  let status = "";
+  function getQueryParam(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
 
-  async function handleSubmit() {
-    status = "waiting";
+  const hashedKey =
+    "bb25f7dea21b99cfe85c336b94dd382b2f9b213bafe60860910e2d6494f1e8f7";
+
+  const userId = getQueryParam("id");
+  const key = getQueryParam("key");
+  const listId = "119";
+  const membersOnly = true;
+
+  console.log({ userId, key, listId, membersOnly });
+
+  let message = "Please wait... Attempting to send welcome comms...";
+
+  async function sendIt() {
     await postData(
-      "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/addtoaplist",
+      "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/addtociolist",
       {
-        email,
-        apList: "1E498F77-BBE5-4500-8301-83D3A6091824",
+        userId,
+        listId,
         membersOnly: true,
       }
     ).then((response) => {
-      status = response.status === 200 ? "success" : "failed";
+      const url =
+        "https://fly.customer.io/env/119417/people/" + userId + "/sent";
+      message =
+        response.status === 200
+          ? "Sent! <a href=" +
+            url +
+            ">Check customer.io</a> to confirm delivery was successful"
+          : "Failed";
     });
+  }
+
+  if (sha256(key) === hashedKey) {
+    sendIt();
+  } else {
+    message = "Invalid key";
   }
 </script>
 
-{#if status === "success"}
-  <h3>Done!</h3>
-  <p>Welcome communications will be resent in about 5 minutes.</p>
-{:else if status === "failed"}
-  <p>
-    We couldn't find an account with that email. Please
-    <a href="/welcome-comms-resend">try again</a>, or
-    <a href="/contact-us">contact us</a> for help.
-  </p>
-{:else if status === "waiting"}
-  <p>Please wait...</p>
-{:else}
-  <form on:submit={handleSubmit}>
-    <p>
-      <label>
-        Email address - Must be the one you use for your Future Super Account
-        <input
-          bind:value={email}
-          type="email"
-          required
-          placeholder="Email address"
-        />
-      </label>
-    </p>
-    <p>
-      <button type="submit" class="primary">Send</button>
-    </p>
-  </form>
-{/if}
-
-<style lang="scss">
-  @use "../../styles/" as *;
-
-  input {
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid $black;
-    outline: none;
-    margin-top: 8px;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-</style>
+<h2>{@html message}</h2>

@@ -5,7 +5,6 @@
   import Policies from "./Purpose/Policies.svelte";
 
   export let careers;
-  // export let policies;
 </script>
 
 <section>
@@ -30,14 +29,12 @@
               <div class="career-item">
                 <h4>Closes</h4>
                 <p>
-                  {moment(career.endDate)
-                    .add(10, "hours")
-                    .format("Do of MMMM, YYYY")}
+                  {moment(career.endDate).format("Do of MMMM, YYYY")}
                 </p>
               </div>
             </div>
           </div>
-          <div style="width: 70px">
+          <div class="arrow">
             <Arrow direction="right" />
           </div>
         </div>
@@ -94,7 +91,7 @@
   <h3 style="padding-right: 80px">
     Here’s what you can expect from working at Future Super Group…
   </h3>
-  <div style="padding-left: 80px">
+  <div class="expect-text">
     <p>
       As a Future Super Group employee you’ll be working to build a future free
       from climate change and inequality. Working for a purpose driven business
@@ -120,6 +117,14 @@
       Future Super Group has been awarded Best For The World™ for Customers
       status by B Corp for 2022
     </p>
+    <p class="disclaimer">
+      Source:
+      <a
+        href="https://www.bcorporation.net/en-us/find-a-b-corp/company/future-superannuation-holdings-pty-ltd/"
+        target="_blank"
+        rel="noopener noreferrer">B Corp</a
+      >
+    </p>
   </div>
   <div class="box">
     <div class="logo">
@@ -132,6 +137,14 @@
     <p>
       Future Super Group is ranked #1 in the AFR BOSS Best Places to Work 2022
       in the category of financial services
+    </p>
+    <p class="disclaimer">
+      Source:
+      <a
+        href="https://afrbestplacestowork.com/2022-winners/"
+        target="_blank"
+        rel="noopener noreferrer">AFR Boss</a
+      >
     </p>
   </div>
 </div>
@@ -228,6 +241,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     margin-bottom: 80px;
+    .expect-text {
+      padding-left: 80px;
+    }
   }
 
   .box {
@@ -242,6 +258,16 @@
       color: $white;
       text-align: center;
     }
+    p.disclaimer {
+      font-size: 11px;
+      color: $black500;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $black500;
+        }
+      }
+    }
     .logo {
       height: 340px;
       display: grid;
@@ -253,5 +279,52 @@
     background-color: $black100;
     border-radius: 40px;
     padding: 40px 20px;
+  }
+
+  .arrow {
+    width: 70px;
+  }
+
+  @media (max-width: 700px) {
+    .career-details {
+      grid-template-columns: 1fr;
+    }
+
+    .career-item {
+      padding: 0;
+      border-right: none;
+    }
+
+    .career {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .arrow {
+      width: 30px;
+    }
+
+    article {
+      grid-template-columns: 1fr;
+    }
+
+    .what-expect {
+      grid-template-columns: 1fr;
+      .expect-text {
+        padding-left: 0px;
+      }
+    }
+
+    .box {
+      .logo {
+        height: 200px;
+      }
+    }
+
+    .marquee-container {
+      width: calc(100% + 40px);
+      margin: 0 -20px;
+    }
   }
 </style>

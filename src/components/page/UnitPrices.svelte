@@ -1,5 +1,5 @@
 <script>
-  import unitPrices from "$/data/unitPrices.json";
+  import unitPrices from "@data/unitPrices.json";
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinNow from "../ui/JoinNow.svelte";
 

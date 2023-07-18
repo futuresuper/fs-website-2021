@@ -8,7 +8,7 @@
   <div class="container-narrow">
     <h2>{heading}</h2>
     {#each faqs as faq}
-      <Faq {faq} />
+      <Faq title={faq.title} url={faq.url} content={faq.content} />
     {/each}
   </div>
 </div>

@@ -1,6 +1,6 @@
 <script>
   import moment from "moment";
-  import reviews from "../../../data/reviews.json";
+  import reviews from "@data/reviews.json";
   let latestReviewsUnfiltered = reviews.latestReviews.slice(0, 6);
   let latestReviews = [];
   const hiddenReviewAuthors = {

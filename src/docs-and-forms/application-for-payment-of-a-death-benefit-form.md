@@ -1,6 +1,6 @@
 ---
 title: Application for Payment of a Death Benefit Form
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS_DeathBenefitPaymentForm_18112021.pdf
+docurl: https://www.futuresuper.com.au/deathbenefitapplication
 type: PDF
 category: Super Forms
 order: 15

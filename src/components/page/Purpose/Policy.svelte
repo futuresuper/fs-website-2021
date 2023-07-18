@@ -13,7 +13,7 @@
 
 <div on:click={() => (expanded = !expanded)} class="policy">
   <h3>{policy.title}</h3>
-  <div style="width: 40px; justify-self: flex-end">
+  <div style="width: 40px; justify-self: flex-end; align-self: flex-start">
     <Carat direction={expanded ? "up" : "down"} />
   </div>
   {#if expanded}
@@ -22,7 +22,9 @@
         {@html policy.description}
       </p>
     </div>
-    <a class="button" href={policy.link}> Steal Our Policy </a>
+    {#if policy.link}
+      <a class="button" href={policy.link}> Steal Our Policy </a>
+    {/if}
   {/if}
 </div>
 

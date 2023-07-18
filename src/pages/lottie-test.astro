@@ -1,16 +1,12 @@
 ---
-import BaseLayout from '$/layouts/BaseLayout.astro'
-import LottieTest from '../components/page/LottieTest.svelte'
+import BaseLayout from "@layouts/BaseLayout.astro";
+import LottieTest from "@components/page/LottieTest.svelte";
 ---
 
 <style lang="scss">
   @use "../styles/" as *;
 </style>
 
-<BaseLayout
-  title="Lottie Test"
-  hideDescription
-  noContainer
->
+<BaseLayout title="Lottie Test" hideDescription noContainer>
   <LottieTest client:load />
 </BaseLayout>

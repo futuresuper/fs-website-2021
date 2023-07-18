@@ -39,7 +39,7 @@
       <a class="button outline" href="/life_insurance_transfer_application_form"
         >Download Transfer Form
         <div class="download-icon">
-          <Download />
+          <Download size="24" />
         </div>
       </a>
     </div>
@@ -61,6 +61,16 @@
         age on your next birthday. The premiums for Standard Cover are based on
         your age next birthday, sex and occupation.
       </p>
+
+      <a
+        class="button outline"
+        style="margin-bottom: 20px"
+        href="/insurance-occupations"
+        >Download list of occupations
+        <div class="download-icon">
+          <Download size="24" />
+        </div>
+      </a>
       <p>
         Please note, Easy Opt-in Insurance will commence only once you have a
         balance in your account. You can read more about Easy Opt-In Standard
@@ -165,6 +175,7 @@
 
   .download-icon {
     width: 24px;
+    height: 24px;
     margin-left: 10px;
   }
 

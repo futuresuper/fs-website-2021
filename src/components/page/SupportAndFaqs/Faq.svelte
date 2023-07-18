@@ -1,5 +1,8 @@
 <script>
-  export let faq;
+  export let title;
+  export let url;
+  export let content;
+
   import PlusCircle from "../../images/PlusCircle.svelte";
   import MinusCircle from "../../images/MinusCircle.svelte";
 
@@ -7,26 +10,26 @@
 </script>
 
 <div class="faq-container">
-  <div class="faq-heading" on:click={() => (expanded = !expanded)}>
-    <h3>{faq.title}</h3>
+  <div
+    class="faq-heading"
+    on:click={() => (expanded = !expanded)}
+    on:keypress={() => (expanded = !expanded)}
+  >
+    <h3>{title}</h3>
     {#if expanded}
       <MinusCircle />
     {:else}
       <PlusCircle />
     {/if}
   </div>
-  {#if expanded}
+  <div class={expanded ? "" : "closed"}>
     <div class="faq">
-      {#if faq.astro}
-        {@html faq.astro.html}
-      {:else}
-        <slot />
-      {/if}
+      {@html content}
     </div>
-    {#if faq.url}
-      <a href={faq.url}>Permalink</a>
+    {#if url}
+      <a href={url}>Permalink</a>
     {/if}
-  {/if}
+  </div>
 </div>
 
 <style lang="scss">
@@ -57,6 +60,10 @@
   a {
     font-size: 14px;
     color: $black500;
+  }
+
+  .closed {
+    display: none;
   }
 
   @media (max-width: 500px) {

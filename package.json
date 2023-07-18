@@ -16,10 +16,12 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/futuresuper/fs-website-2021#readme",
   "devDependencies": {
-    "astro": "^0.20.7"
+    "astro": "^2.0.14"
   },
   "dependencies": {
     "@astrojs/renderer-svelte": "^0.1.2",
+    "@astrojs/sitemap": "^1.2.1",
+    "@astrojs/svelte": "^2.0.2",
     "country-emoji": "^1.5.6",
     "lottie-web": "^5.7.13",
     "moment": "^2.29.1",
