@@ -38,7 +38,7 @@
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
       let circleText = document.querySelector('.balance-section__balance');
-      let scale = Math.max(0.028, 0.9 - (e.target.scrollTop - (heroSectionHeight - 225)) / 400);
+      let scale = Math.max(0.028, 0.9 - (e.target.scrollTop - (heroSectionHeight - 100)) / 400);
 
       const singleCircle = document.querySelector('.top-dot');
       const circleTop = circle.getBoundingClientRect().top;
@@ -55,18 +55,23 @@
       if(e.target.scrollTop >= (heroSectionHeight - 150)){
         circle.classList.add("transform");
       }else{
+        circle.style.transform = `translateX(-50%) scale(${0.85})`;
         circle.classList.remove("transform");
       }
 
       //Scale and move big dot as the user scrolls
-      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 100))){
+      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 50))){
+        if(circle.classList.contains('transform')){
+          circle.style.transform = `translateX(-50%) scale(${scale})`;
 
+        }else{
+          circle.style.transform = `translateX(-50%) scale(${1})`;
+        }
 
-        circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
-        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 100}px`;
+        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 25}px`;
 
-        if(scale <= 0.2){
+        if(scale <= 0.30){
           circleText.classList.add('hidden');
         }else{
           circleText.classList.remove('hidden');
@@ -243,7 +248,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(firstActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 50}ms" class="active-dot hidden"></div>
+              <div style="transition-delay: {index * 100}ms" class="active-dot hidden"></div>
             {/each}
           </div>
         </div>
@@ -266,7 +271,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(secondActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 50}ms" class="active-dot hidden"></div>
+              <div style="transition-delay: {index * 100}ms" class="active-dot hidden"></div>
             {/each}
           </div>
         </div>
@@ -331,7 +336,7 @@
           </section>
           <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
             {#each Array(thirdActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
+              <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -345,7 +350,7 @@
           </section>
           <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
             {#each Array(fourthActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 20}ms" class="active-dot hidden active-dot__smaller"></div>
+              <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
             {/each}
           </div>
         </div>
@@ -422,14 +427,33 @@
       <div class="container download-section__sources">
         <p class="download-section__sources--heading">Sources:</p>
         <ul class="download-section__sources--list">
-          <li>Wealth of Bernard Arnault, Elon Musk, Jeff Bezos and Bill Gates from <a href="https://www.forbes.com/real-time-billionaires/#3d905e643d78" target="_blank">Forbes</a> Tuesday 6 June (data updated daily).</li>
-          <li>Australian 2022 GDP from <a href="https://www.worldeconomics.com/Country-Size/Australia.aspx" target="_blank">World Economics</a>, listed in USD and converted to AUD.</li>
-          <li>Market cap of Apple from <a href="https://finance.yahoo.com/quote/AAPL/?guccounter=1" target="_blank">Yahoo Finance</a> on Tuesday 6 June, converted to AUD.</li>
-          <li>Global divestment commitment from <a href="https://divestmentdatabase.org/" target="_blank">Divestment Database</a>, converted to AUD.</li>
-          <li>7.2% and 9.5% stats from <a href="https://www.uts.edu.au/isf/news/supercharging-road-100-clean-energy" target="_blank">UTS research</a> funded by Future Super.</li>
-          <li>$3.4 trillion size of superannuation <a href="https://www.apra.gov.au/news-and-publications/apra-releases-superannuation-statistics-for-december-2022" target="_blank">from APRA</a>.</li>
+
+
+          <li>Sydney’s median house price from <a href="https://www.domain.com.au/news/then-and-now-this-time-series-shows-how-much-property-prices-have-changed-in-your-capital-city-in-two-years-1214754/" target="_blank">Domain research</a>.</li>
+          <li>The hourly cost of fossil fuel subsidies calculated based on <a href="https://australiainstitute.org.au/post/australian-fossil-fuel-subsidies-surge-to-11-6-billion-in-2021-22/" target="_blank">Australia Institute</a> research.</li>
+          <li>$3.4 trillion size of super based on <a href="https://www.apra.gov.au/news-and-publications/apra-releases-superannuation-statistics-for-march-2023" target="_blank">APRA data</a> from 2022 and 2023.</li>
+          <li>Statistics on what percentage of superannuation it would take to fund the transition to renewable energy from <a href="https://www.uts.edu.au/isf/news/supercharging-road-100-clean-energy" target="_blank">UTS research, funded by Future Super</a>.</li>
+          <li>Find out more about <a href="https://www.futuresuper.com.au/how-we-invest/" target="_blank">how Future Super screens</a> investments and what we invest in.</li>
+          <li> Check out the <a href="https://divestmentdatabase.org/" target="_blank">Divestment Database</a>. The database tracks declared commitments to divestment. It’s not an indication of the amount actually divested from fossil fuels already, as investors will be at different stages of divestment. It also may omit some divestment commitments.</li>
+          <li> Wealth of Bernard Arnault, Jeff Bezos, Elon Musk and Bill Gates from <a href="https://www.forbes.com/billionaires/" target="_blank">Forbes</a> on 5 July 2023.</li>
+          <li> Value of Apple shares (market cap) from <a href="https://finance.yahoo.com/quote/AAPL/" target="_blank">Yahoo Finance</a> on 5 July 2023.</li>
         </ul>
+
+
+
       </div>
+
+      <div class="container download-section__disclaimer">
+        <p class="download-section__disclaimer--heading">Disclaimer</p>
+        <p>Information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account. You should consider whether Future Super’s products are right for your individual objectives and needs and seek personal financial advice. Before making a decision to acquire, hold or continue to hold an interest in Future Super, please read the PDS and check our Target Market Determination (TMD) available at https://www.futuresuper.com.au/documents-and-forms/. Future Super does not accept any responsibility for any loss or damage that may result from reliance on, or the use of, any information contained on this site. The contents of this website are exclusively owned by Future Super. You must not use or disclose them for any other reason than for the purposes for which they were supplied.</p>
+
+        <p>Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund (ABN 45 960 194 277; RSE Registration R1072914). The Fund is administered by OneVue Super Services Pty Limited (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).</p>
+
+        <p>The Founder, Promoter and Investment Manager of the Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684). The Trustee does not in any way endorse, warrant or accept responsibility for any services provided by the Promoter in its own right or directly to members or prospective members.</p>
+
+      </div>
+
+
 
     </section>
 
@@ -523,7 +547,7 @@
         padding-top: 120%;
         background:currentColor;
         clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
-        transition-property: border-radius, clip-path;
+        transition-property: border-radius, clip-path, scale;
         transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
       }
@@ -551,7 +575,7 @@
           align-items: center;
           border-radius: 500px;
           background-color: $green;
-          transition-property: border-radius, clip-path;
+          transition-property: border-radius, clip-path, scale;
           transition-duration: 1s;
           transition-timing-function: ease-in-out;
         }
@@ -630,9 +654,9 @@
       z-index: 1;
 
     &__content{
-      margin-top: 100%;
+      margin-top: 200%;
       padding-top: 50%;
-      margin-bottom: 50%;
+      margin-bottom: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -647,7 +671,9 @@
       }
 
       &--form{
-        padding-top: 10%;
+        justify-content: start;
+        padding-top: 5%;
+        padding-bottom: 20%;
       }
     }
       &__block{
@@ -725,7 +751,7 @@
     left: 50%;
     //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 32px;
+    margin-top: 36px;
     max-width: 312px;
 
     &__smaller{
@@ -734,11 +760,13 @@
       width: 341px;
 
       &--1{
-        margin-top: 17px;
+        margin-top: 18px;
+        margin-left: -4px;
       }
 
       &--2{
         margin-top: 10px;
+        margin-left: -3px;
       }
     }
   }
@@ -894,8 +922,31 @@
       padding-top: 80px !important;
       padding-bottom: 80px !important;
       background-color: #161616;
+      font-size: 14px;
+
+      color: #9E9E9E;
       &--heading{
-        text-transform: uppercase;
+      }
+
+      &--list{
+        padding-left: 15px;
+        a{
+          color: #9E9E9E;
+
+        }
+
+      }
+    }
+
+    &__disclaimer{
+      padding-bottom: 80px !important;
+      background-color: #161616;
+      font-size: 14px;
+
+      color: #9E9E9E;
+      &--heading{
+        font-weight: bold;
+        margin-bottom: 0;
       }
 
       &--list{
