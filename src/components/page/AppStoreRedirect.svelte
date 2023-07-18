@@ -24,6 +24,7 @@
     welcomeSMS: "Welcome SMS",
     emailFooter: "Email Footer",
     tbl: "The Bottom Line",
+    websiteCaseStudy: "Website - Case Study",
   };
 
   const href = {

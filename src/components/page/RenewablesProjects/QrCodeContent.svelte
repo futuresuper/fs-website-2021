@@ -4,18 +4,20 @@
 
 <img
   id="qr"
-  src="https://res.cloudinary.com/future-super/image/upload/v1676255071/code.png"
+  src="https://res.cloudinary.com/future-super/image/upload/v1689653809/Website_Case_Study_Page_QR_Code_to_Autodetect_App_Store.svg"
   alt="QR Code to Future Super app"
 />
 {#if showButtonsOnDesktop}
-  <a href="https://apps.apple.com/au/app/future-super/id1620110464">
+  <a
+    href="https://www.futuresuper.com.au/app-store?linktype=button&source=websiteCaseStudy&store=apple"
+  >
     <img
       src="https://res.cloudinary.com/future-super/image/upload/v1676255062/App_Download_-_Apple.png"
       alt="Button linking to App Store"
     /></a
   >
   <a
-    href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app"
+    href="https://www.futuresuper.com.au/app-store?linktype=button&source=websiteCaseStudy&store=google"
   >
     <img
       src="https://res.cloudinary.com/future-super/image/upload/v1676255050/App_Download_-_Google.png"
@@ -23,7 +25,9 @@
     /></a
   >
 {:else}
-  <a href="https://apps.apple.com/au/app/future-super/id1620110464">
+  <a
+    href="https://www.futuresuper.com.au/app-store?linktype=button&source=websiteCaseStudy&store=apple"
+  >
     <img
       class="store-button"
       src="https://res.cloudinary.com/future-super/image/upload/v1676255062/App_Download_-_Apple.png"
@@ -31,7 +35,7 @@
     /></a
   >
   <a
-    href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app"
+    href="https://www.futuresuper.com.au/app-store?linktype=button&source=websiteCaseStudy&store=google"
   >
     <img
       class="store-button"
