@@ -2,8 +2,7 @@
   <div class="content">
     <h2>What does it do?</h2>
     <p>
-      This fund invests in <span>water rights</span> which are sold to farmers for
-      irrigation.
+      This fund invests in <span>water rights</span> to generate returns for investors.
     </p>
   </div>
   <div class="blob" style="left: -50%" />

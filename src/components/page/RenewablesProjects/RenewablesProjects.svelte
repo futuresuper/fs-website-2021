@@ -129,7 +129,6 @@
     </div>
   </div>
 </div>
-<JoinNow />
 
 <style lang="scss">
   @use "../../../styles/" as *;

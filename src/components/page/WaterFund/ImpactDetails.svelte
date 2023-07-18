@@ -36,7 +36,7 @@
     <div class="square">
       <p class="small">Project Impact</p>
       <h3>
-        The donation was the largest private water donation in Australian
+        The donation was one of the largest private water donations in Australian
         history and has helped <span>restore threatened wetlands</span> and
         <span>wetlands of cultural significance</span>
       </h3>
