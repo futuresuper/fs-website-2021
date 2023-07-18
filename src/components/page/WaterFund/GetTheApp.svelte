@@ -1,5 +1,6 @@
 <script>
   import QrCodeContent from "../RenewablesProjects/QrCodeContent.svelte";
+  export let showButtonsOnDesktop = false;
 </script>
 
 <div style="position: relative; overflow: hidden">
@@ -13,7 +14,7 @@
       </h3>
     </div>
     <div class="square">
-      <QrCodeContent />
+      <QrCodeContent {showButtonsOnDesktop} />
     </div>
   </section>
 </div>

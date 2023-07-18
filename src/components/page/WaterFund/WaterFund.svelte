@@ -14,7 +14,7 @@
 <Impact />
 <ImpactDetails />
 <Frogs />
-<GetTheApp />
+<GetTheApp showButtonsOnDesktop />
 
 <style lang="scss">
   @use "../../../styles/" as *;
