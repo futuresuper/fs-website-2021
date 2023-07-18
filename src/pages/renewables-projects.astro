@@ -1,0 +1,14 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import RenewablesProjects from "@components/page/RenewablesProjects/RenewablesProjects.svelte";
+---
+
+<BaseLayout
+  title="Renewables Projects"
+  description="Explore some renewables projects Future Super is invested in."
+  hideHeader
+  hidePageHeader
+  noContainer
+>
+  <RenewablesProjects client:load />
+</BaseLayout>
