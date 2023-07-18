@@ -57,6 +57,10 @@
     display: none;
   }
 
+  img#qr {
+    border-radius: 20px;
+  }
+
   @media (max-width: 640px) {
     img#qr {
       display: none;
