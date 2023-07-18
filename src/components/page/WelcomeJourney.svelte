@@ -46,6 +46,8 @@
       const dotGridTop = dotGrid.getBoundingClientRect().top;
 
       const firstBigCircle = document.querySelector('.amount-section__circle--1');
+      const secondBigCircle = document.querySelector('.amount-section__circle--2 > div');
+      const thirdBigCircle = document.querySelector('.amount-section__circle--3 > div');
 
 
       const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
@@ -114,6 +116,17 @@
       let scaleOne = Math.max(1, 1 + (scrollTopOffset / 50));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
 
+      if(scaleOne >= 2.4){
+        secondBigCircle.classList.remove('hidden');
+      }else{
+        secondBigCircle.classList.add('hidden');
+      }
+
+      if(scaleOne >= 20){
+        thirdBigCircle.classList.remove('hidden');
+      }else{
+        thirdBigCircle.classList.add('hidden');
+      }
       //Scale and move big dot as the user scrolls
       if((e.target.scrollTop >= (amountSection.offsetTop -  175)) && top < 20){
         firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne})  translateZ(0)`;
@@ -436,7 +449,7 @@
           <li>Find out more about <a href="https://www.futuresuper.com.au/how-we-invest/" target="_blank">how Future Super screens</a> investments and what we invest in.</li>
           <li> Check out the <a href="https://divestmentdatabase.org/" target="_blank">Divestment Database</a>. The database tracks declared commitments to divestment. It’s not an indication of the amount actually divested from fossil fuels already, as investors will be at different stages of divestment. It also may omit some divestment commitments.</li>
           <li> Wealth of Bernard Arnault, Jeff Bezos, Elon Musk and Bill Gates from <a href="https://www.forbes.com/billionaires/" target="_blank">Forbes</a> on 5 July 2023.</li>
-          <li> Value of Apple shares (market cap) from <a href="https://finance.yahoo.com/quote/AAPL/" target="_blank">Yahoo Finance</a> on 5 July 2023.</li>
+          <li> Value of Apple shares (market c ap) from <a href="https://finance.yahoo.com/quote/AAPL/" target="_blank">Yahoo Finance</a> on 5 July 2023.</li>
         </ul>
 
 
@@ -819,6 +832,10 @@
         bottom: 4px;
         left: 0;
         z-index: 2;
+       & > div {
+          transition: opacity 1s ease-in-out;
+        }
+
       }
 
       &--3{
@@ -828,6 +845,12 @@
         bottom: 5px;
         left: 0;
         z-index: 3;
+
+        & > div {
+          transition: opacity 1s ease-in-out;
+        }
+
+
 
         .amount-section__amount {
           &--heading{
