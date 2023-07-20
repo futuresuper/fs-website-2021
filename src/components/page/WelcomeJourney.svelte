@@ -13,11 +13,21 @@
 
   let scrollTop = 0;
 
-  let scrollSection = null;
+  let scrollSection;
 
+  let downArrow;
+
+  let explainSectionLast;
 
   function scrollToNextSection(){
-    scrollSection.scrollTo(0, scrollTop + (window.innerHeight / 1.5))
+    if(scrollTop >= (explainSectionLast.offsetTop - (explainSectionLast.clientHeight * 0.1)) && scrollTop < (scrollTop + explainSectionLast.offsetTop)){
+      scrollSection.scrollTo(0, scrollTop + (window.innerHeight / 1.2));
+
+    }else{
+      scrollSection.scrollTo(0, scrollTop + (window.innerHeight))
+      scrollSection.style.scrollBehavior = 'smooth';
+    }
+
   }
 
   onMount(() => {
@@ -33,15 +43,20 @@
     })
     const animateElements = document.querySelectorAll('.hidden');
     animateElements.forEach((el) => observer.observe(el));
+    let timer = null;
 
     const observerArrow = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
-          setTimeout(() =>{
-            downArrow.classList.add('show')
-          }, 3000)
+          if(timer){
+            clearTimeout(timer);
+            timer = null;
+          }
+          timer = setTimeout(() =>{
+            downArrow.classList.remove('hide')
+          }, 3000);
         }else{
-          downArrow.classList.remove('show')
+          downArrow.classList.add('hide')
         }
       })
     })
@@ -49,7 +64,7 @@
     arrowElements.forEach((el) => observerArrow.observe(el));
 
 
-    const downArrow = document.querySelector('.down-arrow');
+    downArrow = document.querySelector('.down-arrow');
 
 
     scrollSection = document.querySelector('.scroll-section');
@@ -79,6 +94,8 @@
 
       const explainSectionFirst = document.querySelector('.explain-section--first');
       const explainSectionSecond = document.querySelector('.explain-section--second');
+      explainSectionLast = document.querySelector('.explain-section--last')
+
 
       scrollTop = e.target.scrollTop;
 
@@ -199,7 +216,7 @@
       <div class="container">
         <div class="explain-section explain-section--first">
           <div>
-            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 12L12 5L21 12V23C21 23.5304 20.7893 24.0391 20.4142 24.4142C20.0391 24.7893 19.5304 25 19 25H5C4.46957 25 3.96086 24.7893 3.58579 24.4142C3.21071 24.0391 3 23.5304 3 23V12Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M9 25V17H15V25" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -214,7 +231,7 @@
 
         <div class="explain-section explain-section--second">
           <div>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="dollar-sign">
                 <path id="Vector" d="M12 2V22" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path id="Vector_2" d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -232,7 +249,7 @@
 
         <div class="explain-section explain-section--last">
           <div>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="calendar-clock">
                 <path id="Vector" d="M21 7.5V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H8.5" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path id="Vector_2" d="M16 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -271,7 +288,7 @@
     <div class="journey-section">
       <div class="journey-section__content journey-section__content--top">
         <div class="active-dot top-dot"></div>
-        <div class="journey-section__block journey-section__block--top">
+        <div class="journey-section__block journey-section__block--top hasArrow">
           <p>
             That's a lot of money right? But Australian's have more in their super, way more. <span class="highlighted--white"><strong>$3.4 trillion</strong> <span class="reference text-muted">3</span></span> to be precise. We can use that super to fight back against climate change.
             <br><br>That makes <span class="highlighted">$1.3 million</span> look like just a tiny dot.
@@ -279,7 +296,7 @@
       </div>
 
       <div class="journey-section__content">
-        <div class="journey-section__block journey-section__block--all">
+        <div class="journey-section__block journey-section__block--all hasArrow">
           <p>
             First up, let’s have a think about what <span class="highlighted--white"><strong>$3.4 trillion</strong></span> could do!
 
@@ -322,7 +339,7 @@
       </div>
 
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
 
             {#if guess && guess === 1}
               <p>
@@ -345,7 +362,7 @@
 
 
       <div class="journey-section__content">
-        <section class="journey-section__block">
+        <section class="journey-section__block hasArrow">
           <p>
             If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be bigger, but maybe not by as much as you think. <span class="reference text-muted">6</span>
           </p>
@@ -353,7 +370,7 @@
       </div>
 
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--2">
+          <section class="journey-section__block journey-section__block--2 hasArrow">
             <p>
               It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more. <span class="reference text-muted">7</span>
             </p>
@@ -366,7 +383,7 @@
         </div>
 
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest. <span class="reference text-muted">8</span>
             </p>
@@ -374,35 +391,35 @@
         </div>
 
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change. <span class="reference text-muted">9</span>
             </p>
           </section>
         </div>
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               In Australia, some super funds invest in fossil fuel companies but say they’ll pressure them to behave responsibly. <span class="reference text-muted">10</span> But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”. <span class="reference text-muted">11</span>
             </p>
           </section>
         </div>
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               Future Super is just a tiny drop in the global divestment movement.
             </p>
           </section>
         </div>
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               After so much scrolling, you might have forgotten - all these tiny dots are still representing that <span class="highlighted--white"><strong>$3.4 trillion</strong></span> pool of super. And yep, that’s a lot of dots!
             </p>
           </section>
         </div>
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               But <span class="highlighted--white"><strong>$3.4 trillion</strong></span> is about to look like nothing. Wait until you see how big the divestment movement is....
             </p>
@@ -410,7 +427,7 @@
         </div>
 
       <div class="journey-section__content">
-        <section class="journey-section__block journey-section__block--all">
+        <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
             The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels. <span class="reference text-muted">12</span>
           </p>
@@ -418,7 +435,7 @@
       </div>
 
         <div class="journey-section__content  smaller-dots-bg">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
             </p>
@@ -432,7 +449,7 @@
 
 
         <div class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
             </p>
@@ -575,9 +592,8 @@
     }
 
     &::after{
-      bottom: 5%;
-      left: -35%;
-      transform: rotate(-18deg);
+      bottom: -5%;
+      left: 0;
     }
 
     &::before{
@@ -677,7 +693,7 @@
     }
 
     &--last{
-
+      margin-bottom: 50%;
     }
 
     &__content{
@@ -1248,15 +1264,16 @@
     top: 70%;
     right: 0;
     animation: bounce 1s infinite;
+    z-index: 2;
 
     &:global(.hide){
       opacity: 0;
       transition: opacity 0.1s;
     }
 
-    &:global(.show){
-      opacity: 1;
-    }
+    //&:global(.show){
+    //  opacity: 1;
+    //}
 
   }
 
