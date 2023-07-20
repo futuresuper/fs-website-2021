@@ -11,9 +11,17 @@
 
   let guess = null;
 
+  let scrollTop = 0;
 
+  let scrollSection = null;
+
+
+  function scrollToNextSection(){
+    scrollSection.scrollTo(0, scrollTop + (window.innerHeight / 1.5))
+  }
 
   onMount(() => {
+
     const observer = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
@@ -26,8 +34,25 @@
     const animateElements = document.querySelectorAll('.hidden');
     animateElements.forEach((el) => observer.observe(el));
 
+    const observerArrow = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+          setTimeout(() =>{
+            downArrow.classList.add('show')
+          }, 3000)
+        }else{
+          downArrow.classList.remove('show')
+        }
+      })
+    })
+    const arrowElements = document.querySelectorAll('.hasArrow');
+    arrowElements.forEach((el) => observerArrow.observe(el));
 
-    const scrollSection = document.querySelector('.scroll-section');
+
+    const downArrow = document.querySelector('.down-arrow');
+
+
+    scrollSection = document.querySelector('.scroll-section');
 
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
     const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
@@ -52,24 +77,16 @@
 
       const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
 
-      // console.log(e.target.scrollTop)
-      // console.log(heroSectionHeight)
-      if(e.target.scrollTop >= (heroSectionHeight - 150)){
-        circle.classList.add("transform");
-      }else{
-        circle.style.transform = `translateX(-50%) scale(${0.85})`;
-        circle.classList.remove("transform");
-      }
+      const explainSectionFirst = document.querySelector('.explain-section--first');
+      const explainSectionSecond = document.querySelector('.explain-section--second');
 
+      scrollTop = e.target.scrollTop;
+
+      // console.log(e.target.scrollTop);
+      // console.log((heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 50)));
       //Scale and move big dot as the user scrolls
       if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 50))){
-        if(circle.classList.contains('transform')){
-          circle.style.transform = `translateX(-50%) scale(${scale})`;
-
-        }else{
-          circle.style.transform = `translateX(-50%) scale(${1})`;
-        }
-
+        circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
         circle.style.top = `${balanceSectionHeight - circle.clientHeight - 25}px`;
 
@@ -142,8 +159,12 @@
 
       }
 
+      let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20);
+
+      let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (explainSectionSecond.offsetTop + explainSectionSecond.clientHeight) - 1);
+
       //Blocks with dots to snap to center when scrolling
-      if(e.target.scrollTop > dotGrid.offsetTop&& e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20)){
+      if(snapSectionWithDots || snapSectionExplainIcons){
         scrollSection.classList.add('snap');
       }else{
         scrollSection.classList.remove('snap');
@@ -154,6 +175,12 @@
 
 <div class="bg">
   <div class="scroll-section">
+    <svg on:click="{() => scrollToNextSection()}" class="down-arrow hide" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Arrow Down">
+        <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+      </g>
+    </svg>
+
     <section class="hero-section">
       <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
@@ -169,24 +196,73 @@
         </p>
       </div>
 
+      <div class="container">
+        <div class="explain-section explain-section--first">
+          <div>
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12L12 5L21 12V23C21 23.5304 20.7893 24.0391 20.4142 24.4142C20.0391 24.7893 19.5304 25 19 25H5C4.46957 25 3.96086 24.7893 3.58579 24.4142C3.21071 24.0391 3 23.5304 3 23V12Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 25V17H15V25" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+
+          <div class="explain-section__content hasArrow">
+            <p class="explain-section__content--heading">$1.3 million</p>
+            <p class="explain-section__content--text">It’s the median house price in Sydney</p>
+          </div>
+        </div>
+
+        <div class="explain-section explain-section--second">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="dollar-sign">
+                <path id="Vector" d="M12 2V22" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_2" d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+
+          </div>
+
+
+          <div class="explain-section__content hasArrow">
+            <p class="explain-section__content--heading">$1.3 million</p>
+            <p class="explain-section__content--text">It’s about the same amount that subsidies to fossil fuel companies cost Australia <strong>every hour.</strong></p>
+          </div>
+        </div>
+
+        <div class="explain-section explain-section--last">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="calendar-clock">
+                <path id="Vector" d="M21 7.5V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H8.5" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_2" d="M16 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_3" d="M8 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_4" d="M3 10H8" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_5" d="M17.5 17.5L16 16.25V14" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_6" d="M22 16C22 17.5913 21.3679 19.1174 20.2426 20.2426C19.1174 21.3679 17.5913 22 16 22C14.4087 22 12.8826 21.3679 11.7574 20.2426C10.6321 19.1174 10 17.5913 10 16C10 14.4087 10.6321 12.8826 11.7574 11.7574C12.8826 10.6321 14.4087 10 16 10C17.5913 10 19.1174 10.6321 20.2426 11.7574C21.3679 12.8826 22 14.4087 22 16Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+
+          </div>
+
+
+          <div class="explain-section__content hasArrow">
+            <p class="explain-section__content--heading">$1.3 million</p>
+            <p class="explain-section__content--text">It’s paid 24 hours a day, 7 days a week. A total of...</p>
+          </div>
+        </div>
+      </div>
+
+
     </section>
-    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="round">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-        </filter>
-      </defs>
-    </svg>
+
     <section class="balance-section">
       <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
-          <h2 class="balance-section__balance--heading">$1.3 <br> million</h2>
+          <h2 class="balance-section__balance--heading">$199 <br> million</h2>
           <p class="balance-section__balance--description">
-            <span class="house-text">It’s the median house price in Sydney <span class="reference">1</span></span>
-            <span class="circle-text">It’s about the same amount subsidies to fossil fuel companies cost Australia <strong>every hour</strong> <span class="reference">2</span></span>
+            <span class="circle-text">Spent on subsidies to fossil fuel companies <strong>every week.</strong></span>
           </p>
         </div>
       </div>
@@ -527,6 +603,95 @@
       font-size: 1.25rem;
       margin-bottom: 50px;
       animation: fadeIn 0.5s ease-in-out;
+
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        background-color: $green;
+
+        filter: blur(50px);
+        opacity: 5%;
+      }
+
+      &::after{
+        bottom: 5%;
+        left: -35%;
+        transform: rotate(-18deg);
+      }
+
+    }
+  }
+
+  .explain-section{
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+
+    padding-top: 100%;
+    padding-bottom: 100%;
+
+    scroll-snap-align: start;
+
+    &--first{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        background-color: $green;
+
+        filter: blur(50px);
+        opacity: 5%;
+      }
+
+      &::before{
+        bottom: -5%;
+        right: -75%;
+        transform: rotate(18deg);
+      }
+    }
+
+    &--second{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        background-color: $green;
+
+        filter: blur(50px);
+        opacity: 5%;
+      }
+
+      &::before{
+        bottom: -5%;
+        left: -75%;
+        transform: rotate(-18deg);
+      }
+    }
+
+    &--last{
+
+    }
+
+    &__content{
+
+      &--heading{
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'FutureSuperFeature';
+      }
+
+      &--text{
+        font-size: 20px;
+      }
     }
   }
 
@@ -542,75 +707,20 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-50%) scale(0.9);
-
-
-      width: 400px;
-      height: 480px;
-      margin: 0 auto;
-
-      display:inline-block;
-      color:$green;
-      filter:url(#round);
-
-
-      &::before{
-        content:"";
-        display:block;
-        padding-top: 120%;
-        background:currentColor;
-        clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
-        transition-property: border-radius, clip-path, scale;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in-out;
-      }
-
-      .house-text{
-        display: block;
-      }
-
-      .circle-text{
-        display: none;
-      }
-
-
-      &:global(.transform){
-        &::before{
-          clip-path: polygon(50% 0%, 200% 6%, 100% 100%, 0 100%, -200% 0%);
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%) scale(1);
-          width: 550px;
-          height: 550px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 500px;
-          background-color: $green;
-          transition-property: border-radius, clip-path, scale;
-          transition-duration: 1s;
-          transition-timing-function: ease-in-out;
-        }
-
-        .balance-section__balance {
-          top: 45%;
-        }
-
-        .house-text{
-          display: none;
-        }
-
-        .circle-text{
-          display: block;
-        }
-      }
-
+      transform: translateX(-50%) scale(1);
+      width: 550px;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 500px;
+      background-color: $green;
+      transition: all ease-in-out;
     }
 
     &__balance{
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $black;
@@ -1131,6 +1241,36 @@
 
   .text-muted{
     color: #9E9E9E;
+  }
+
+  .down-arrow{
+    position: fixed;
+    top: 70%;
+    right: 0;
+    animation: bounce 1s infinite;
+
+    &:global(.hide){
+      opacity: 0;
+      transition: opacity 0.1s;
+    }
+
+    &:global(.show){
+      opacity: 1;
+    }
+
+  }
+
+  @keyframes bounce {
+    0%{
+      transform: translateY(10%);
+    }
+
+    50%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(10%);
+    }
   }
 
 </style>
