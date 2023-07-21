@@ -180,7 +180,7 @@
       let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20);
       let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
 
-      let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (explainSectionSecond.offsetTop + explainSectionSecond.clientHeight) );
+      let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (balanceSection.offsetTop - balanceSectionHeight) );
 
       // Blocks with dots to snap to center when scrolling
       if(snapSectionWithDots || snapSectionExplainIcons || snapSectionBalance){
