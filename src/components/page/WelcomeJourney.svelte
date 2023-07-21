@@ -19,15 +19,9 @@
 
   let explainSectionLast;
 
-  function scrollToNextSection(){
-    if(scrollTop >= (explainSectionLast.offsetTop - (explainSectionLast.clientHeight * 0.1)) && scrollTop < (scrollTop + explainSectionLast.offsetTop)){
-      scrollSection.scrollTo(0, scrollTop + (window.innerHeight / 1.2));
-
-    }else{
-      scrollSection.scrollTo(0, scrollTop + (window.innerHeight))
-      scrollSection.style.scrollBehavior = 'smooth';
-    }
-
+  function scrollToNextSection(section){
+    let el = document.querySelector(section);
+    el.scrollIntoView({behavior: "smooth"});
   }
 
   onMount(() => {
@@ -53,16 +47,16 @@
             timer = null;
           }
           timer = setTimeout(() =>{
-            downArrow.classList.remove('hide')
+            entry.target.offsetParent.classList.add('show-arrow')
           }, 3000);
+
         }else{
-          downArrow.classList.add('hide')
+          entry.target.offsetParent.classList.remove('show-arrow')
         }
       })
     })
     const arrowElements = document.querySelectorAll('.hasArrow');
     arrowElements.forEach((el) => observerArrow.observe(el));
-
 
     downArrow = document.querySelector('.down-arrow');
 
@@ -192,12 +186,6 @@
 
 <div class="bg">
   <div class="scroll-section">
-    <svg on:click="{() => scrollToNextSection()}" class="down-arrow hide" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="Arrow Down">
-        <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-      </g>
-    </svg>
-
     <section class="hero-section">
       <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
@@ -227,9 +215,15 @@
             <p class="explain-section__content--heading">$1.3 million</p>
             <p class="explain-section__content--text">It’s the median house price in Sydney</p>
           </div>
+
+          <svg on:click="{() => scrollToNextSection('#explainSection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </div>
 
-        <div class="explain-section explain-section--second">
+        <div id="explainSection2" class="explain-section explain-section--second">
           <div>
             <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="dollar-sign">
@@ -245,9 +239,15 @@
             <p class="explain-section__content--heading">$1.3 million</p>
             <p class="explain-section__content--text">It’s about the same amount that subsidies to fossil fuel companies cost Australia <strong>every hour.</strong></p>
           </div>
+
+          <svg on:click="{() => scrollToNextSection('#explainSection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </div>
 
-        <div class="explain-section explain-section--last">
+        <div id="explainSection3" class="explain-section explain-section--last">
           <div>
             <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="calendar-clock">
@@ -267,6 +267,12 @@
             <p class="explain-section__content--heading">$1.3 million</p>
             <p class="explain-section__content--text">It’s paid 24 hours a day, 7 days a week. A total of...</p>
           </div>
+
+          <svg on:click="{() => scrollToNextSection('#bigCircle')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </div>
       </div>
 
@@ -274,7 +280,7 @@
     </section>
 
     <section class="balance-section">
-      <div class="balance-section__circle">
+      <div id="bigCircle" class="balance-section__circle">
 
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$199 <br> million</h2>
@@ -304,7 +310,7 @@
       </div>
 
 
-      <div class="journey-section__content  journey-section__content--form">
+      <div class="journey-section__content  journey-section__content--form hasNoArrow">
         <div class="question-modal">
             <div class="question-modal__info">
               <div class="question-modal__badge">Let's guess</div>
@@ -578,7 +584,6 @@
   .hero-section{
     position: relative;
     overflow-x: clip;
-    pointer-events: none;
 
     &::after, &::before{
       content: "";
@@ -644,13 +649,15 @@
 
   .explain-section{
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 0.5rem;
 
-    padding-top: 100%;
-    padding-bottom: 100%;
+    //padding-top: 100%;
+    //padding-bottom: 100%;
+    min-height: 100vh;
+    position: relative;
 
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
     &--first{
       position: relative;
@@ -699,6 +706,7 @@
     &__content{
 
       &--heading{
+        cursor: pointer;
         margin: 0;
         font-size: 28px;
         font-weight: bold;
@@ -1260,16 +1268,19 @@
   }
 
   .down-arrow{
-    position: fixed;
+    position: absolute;
     top: 70%;
     right: 0;
     animation: bounce 1s infinite;
-    z-index: 2;
+    z-index: 100;
+    cursor: pointer;
+    padding: 5px;
+    opacity: 0;
 
-    &:global(.hide){
-      opacity: 0;
-      transition: opacity 0.1s;
-    }
+    //&:global(.hide){
+    //  opacity: 0;
+    //  transition: opacity 0.1s;
+    //}
 
     //&:global(.show){
     //  opacity: 1;
@@ -1287,6 +1298,12 @@
     }
     100%{
       transform: translateY(10%);
+    }
+  }
+
+  :global( .show-arrow){
+    .down-arrow{
+      opacity: 1;
     }
   }
 
