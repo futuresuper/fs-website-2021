@@ -83,6 +83,7 @@
       const dotGrid = document.querySelector('.journey-section');
       const dotGridTop = dotGrid.getBoundingClientRect().top;
 
+
       const firstBigCircle = document.querySelector('.amount-section__circle--1');
       const secondBigCircle = document.querySelector('.amount-section__circle--2 > div');
       const thirdBigCircle = document.querySelector('.amount-section__circle--3 > div');
@@ -134,10 +135,13 @@
         dotGrid.classList.remove('animate');
       }
 
-      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 1000)){
+
+      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 600)){
         dotGrid.classList.add('animate-small');
+        firstBigCircle.style.opacity = '1';
       }else{
         dotGrid.classList.remove('animate-small');
+        firstBigCircle.style.opacity = '0';
       }
 
 
@@ -562,17 +566,21 @@
         </div>
 
         <div id="journeySection15" class="journey-section__content journey-section__content--last">
-          <section class="journey-section__block journey-section__block--all">
+          <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               You’re probably starting to wonder... what do all those tiny dots add up to?
             </p>
           </section>
-
+          <svg on:click="{() => scrollToNextSection('#amountSection')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </div>
 
     </div>
 
-    <section class="amount-section journey-section__block--all smallest-dots-bg">
+    <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
       <div class="amount-section__circle amount-section__circle--1">
         <div class="amount-section__amount center">
           <p class="amount-section__amount--heading">$60 trillion</p>
@@ -1040,6 +1048,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       &--1, &--2, &--3{
         position: absolute;
         left: 50%;
@@ -1054,6 +1063,9 @@
         background-color: #424242;
         z-index: 1;
         transform: translateX(-50%) scale(1) translateZ(0);
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
       }
 
       &--2{
