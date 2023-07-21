@@ -20,8 +20,9 @@
   let explainSectionLast;
 
   function scrollToNextSection(section){
+    scrollSection.classList.add('snap');
     let el = document.querySelector(section);
-    el.scrollIntoView({ behavior: "smooth"});
+    el.scrollIntoView({behavior: "smooth"});
   }
 
   onMount(() => {
@@ -95,9 +96,6 @@
 
       scrollTop = e.target.scrollTop;
 
-      console.log(scrollTop)
-      console.log(heroSectionHeight)
-      console.log(balanceSectionHeight)
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
       if(e.target.scrollTop >= balanceSection.offsetTop + 10){
@@ -177,7 +175,7 @@
       let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20);
       let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
 
-      let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (explainSectionSecond.offsetTop + explainSectionSecond.clientHeight) - 1);
+      let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (explainSectionSecond.offsetTop + explainSectionSecond.clientHeight) );
 
       // Blocks with dots to snap to center when scrolling
       if(snapSectionWithDots || snapSectionExplainIcons || snapSectionBalance){
@@ -208,17 +206,19 @@
 
       <div class="container">
         <div class="explain-section explain-section--first">
-          <div>
-            <svg width="24" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12L12 5L21 12V23C21 23.5304 20.7893 24.0391 20.4142 24.4142C20.0391 24.7893 19.5304 25 19 25H5C4.46957 25 3.96086 24.7893 3.58579 24.4142C3.21071 24.0391 3 23.5304 3 23V12Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 25V17H15V25" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+          <div class="explain-section__content">
+            <div>
+              <svg width="24" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12L12 5L21 12V23C21 23.5304 20.7893 24.0391 20.4142 24.4142C20.0391 24.7893 19.5304 25 19 25H5C4.46957 25 3.96086 24.7893 3.58579 24.4142C3.21071 24.0391 3 23.5304 3 23V12Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 25V17H15V25" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
 
 
-          <div class="explain-section__content hasArrow">
-            <p class="explain-section__content--heading">$1.3 million</p>
-            <p class="explain-section__content--text">It’s the median house price in Sydney</p>
+            <div class=" hasArrow">
+              <p class="explain-section__content--heading">$1.3 million</p>
+              <p class="explain-section__content--text">It’s the median house price in Sydney</p>
+            </div>
           </div>
 
           <svg on:click="{() => scrollToNextSection('#explainSection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,21 +229,24 @@
         </div>
 
         <div id="explainSection2" class="explain-section explain-section--second">
-          <div>
-            <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="dollar-sign">
-                <path id="Vector" d="M12 2V22" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_2" d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-            </svg>
+          <div class="explain-section__content">
+            <div>
+              <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="dollar-sign">
+                  <path id="Vector" d="M12 2V22" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_2" d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
 
+            </div>
+
+
+            <div class="hasArrow">
+              <p class="explain-section__content--heading">$1.3 million</p>
+              <p class="explain-section__content--text">It’s about the same amount that subsidies to fossil fuel companies cost Australia <strong>every hour.</strong></p>
+            </div>
           </div>
 
-
-          <div class="explain-section__content hasArrow">
-            <p class="explain-section__content--heading">$1.3 million</p>
-            <p class="explain-section__content--text">It’s about the same amount that subsidies to fossil fuel companies cost Australia <strong>every hour.</strong></p>
-          </div>
 
           <svg on:click="{() => scrollToNextSection('#explainSection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Arrow Down">
@@ -253,24 +256,26 @@
         </div>
 
         <div id="explainSection3" class="explain-section explain-section--last">
-          <div>
-            <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="calendar-clock">
-                <path id="Vector" d="M21 7.5V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H8.5" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_2" d="M16 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_3" d="M8 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_4" d="M3 10H8" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_5" d="M17.5 17.5L16 16.25V14" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="Vector_6" d="M22 16C22 17.5913 21.3679 19.1174 20.2426 20.2426C19.1174 21.3679 17.5913 22 16 22C14.4087 22 12.8826 21.3679 11.7574 20.2426C10.6321 19.1174 10 17.5913 10 16C10 14.4087 10.6321 12.8826 11.7574 11.7574C12.8826 10.6321 14.4087 10 16 10C17.5913 10 19.1174 10.6321 20.2426 11.7574C21.3679 12.8826 22 14.4087 22 16Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-            </svg>
+          <div class="explain-section__content">
+            <div>
+              <svg width="24" height="28" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="calendar-clock">
+                  <path id="Vector" d="M21 7.5V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H8.5" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_2" d="M16 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_3" d="M8 2V6" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_4" d="M3 10H8" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_5" d="M17.5 17.5L16 16.25V14" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Vector_6" d="M22 16C22 17.5913 21.3679 19.1174 20.2426 20.2426C19.1174 21.3679 17.5913 22 16 22C14.4087 22 12.8826 21.3679 11.7574 20.2426C10.6321 19.1174 10 17.5913 10 16C10 14.4087 10.6321 12.8826 11.7574 11.7574C12.8826 10.6321 14.4087 10 16 10C17.5913 10 19.1174 10.6321 20.2426 11.7574C21.3679 12.8826 22 14.4087 22 16Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
 
-          </div>
+            </div>
 
 
-          <div class="explain-section__content hasArrow">
-            <p class="explain-section__content--heading">$1.3 million</p>
-            <p class="explain-section__content--text">It’s paid 24 hours a day, 7 days a week. A total of...</p>
+            <div class="hasArrow">
+              <p class="explain-section__content--heading">$1.3 million</p>
+              <p class="explain-section__content--text">It’s paid 24 hours a day, 7 days a week. A total of...</p>
+            </div>
           </div>
 
           <svg on:click="{() => scrollToNextSection('#bigCircle')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -655,7 +660,6 @@
   .explain-section{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     min-height: 100vh;
     position: relative;
 
@@ -705,6 +709,9 @@
     }
 
     &__content{
+      display: flex;
+      align-items: start;
+      gap: 0.5rem;
 
       &--heading{
         cursor: pointer;
@@ -1277,7 +1284,7 @@
     z-index: 100;
     cursor: pointer;
     padding: 5px;
-    opacity: 0;
+    display: none;
 
     //&:global(.hide){
     //  opacity: 0;
@@ -1305,7 +1312,7 @@
 
   :global( .show-arrow){
     .down-arrow{
-      opacity: 1;
+      display: block;
     }
   }
 
