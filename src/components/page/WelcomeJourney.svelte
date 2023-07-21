@@ -21,7 +21,7 @@
 
   function scrollToNextSection(section){
     let el = document.querySelector(section);
-    el.scrollIntoView({behavior: "smooth"});
+    el.scrollIntoView({ behavior: "smooth"});
   }
 
   onMount(() => {
@@ -64,6 +64,7 @@
     scrollSection = document.querySelector('.scroll-section');
 
     const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
+    const balanceSection = document.querySelector('.balance-section');
     const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
     const amountSection = (document.querySelector('.amount-section'));
     const smallerDotsSection = (document.querySelector('.smaller-dots-bg'));
@@ -72,7 +73,8 @@
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
       let circleText = document.querySelector('.balance-section__balance');
-      let scale = Math.max(0.028, 0.9 - (e.target.scrollTop - (heroSectionHeight - 100)) / 400);
+      let scale = Math.max(0.028, 1 - (e.target.scrollTop - (balanceSection.offsetTop)) / 400);
+
 
       const singleCircle = document.querySelector('.top-dot');
       const circleTop = circle.getBoundingClientRect().top;
@@ -93,13 +95,15 @@
 
       scrollTop = e.target.scrollTop;
 
-      // console.log(e.target.scrollTop);
-      // console.log((heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 50)));
-      //Scale and move big dot as the user scrolls
-      if(e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 50))){
+      console.log(scrollTop)
+      console.log(heroSectionHeight)
+      console.log(balanceSectionHeight)
+      // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
+
+      if(e.target.scrollTop >= balanceSection.offsetTop + 10){
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
-        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 25}px`;
+        circle.style.top = `${balanceSectionHeight - circle.clientHeight - 200}px`;
 
         if(scale <= 0.30){
           circleText.classList.add('hidden');
@@ -171,11 +175,12 @@
       }
 
       let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20);
+      let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
 
       let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (explainSectionSecond.offsetTop + explainSectionSecond.clientHeight) - 1);
 
-      //Blocks with dots to snap to center when scrolling
-      if(snapSectionWithDots || snapSectionExplainIcons){
+      // Blocks with dots to snap to center when scrolling
+      if(snapSectionWithDots || snapSectionExplainIcons || snapSectionBalance){
         scrollSection.classList.add('snap');
       }else{
         scrollSection.classList.remove('snap');
@@ -276,11 +281,11 @@
         </div>
       </div>
 
-
+      <span id="bigCircle"></span>
     </section>
 
-    <section class="balance-section">
-      <div id="bigCircle" class="balance-section__circle">
+    <section  class="balance-section">
+      <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
           <h2 class="balance-section__balance--heading">$199 <br> million</h2>
@@ -651,9 +656,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-
-    //padding-top: 100%;
-    //padding-bottom: 100%;
     min-height: 100vh;
     position: relative;
 
@@ -700,7 +702,6 @@
     }
 
     &--last{
-      margin-bottom: 50%;
     }
 
     &__content{
@@ -726,6 +727,7 @@
     flex-direction: column-reverse;
     overflow-x: clip;
     pointer-events: none;
+    scroll-snap-align: start;
 
     &__circle{
       position: absolute;
