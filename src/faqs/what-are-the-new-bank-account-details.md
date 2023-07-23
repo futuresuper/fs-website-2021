@@ -21,7 +21,9 @@ Biller code: 412353
 
 Reference:[Your unique BPAY code]
 
-You can find your unique BPAY code and the updated details on your [online account](https://my.futuresuper.com.au/#/login) and through the app. Please click on "Make a personal contribution" and find the new details at the end of the form. For further instructions on how to make a personal contribution, see our [website](https://www.futuresuper.com.au/faqs/how-do-i-make-personal-contributions-to-my-account/)
+You can find your unique BPAY code and the updated details on your [online account](https://my.futuresuper.com.au/#/login) and through the app. Please click on "Make a personal contribution" and find the new details at the end of the form. 
+
+For further instructions on how to make a personal contribution, see our [website](https://www.futuresuper.com.au/faqs/how-do-i-make-personal-contributions-to-my-account/)
 
 **This will not impact your employer contributions** as your employer makes payments through a [clearing house](https://www.futuresuper.com.au/faqs/what-is-a-clearing-house/).
 
