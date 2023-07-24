@@ -19,14 +19,14 @@ There's two steps:
    \
    When you complete this form, you'll have a unique reference number generated for you - we ask that you use this as the transaction reference or description for your payment, so our administrators can match your payment to your account. You can tell us here if you're intending on making a one-off payment, or if you're setting up a recurring payment.\
    \
-   If you prefer not to use the online form, or you're having difficulty, you can fill in the paper [Personal and Spouse Contribution Form](https://content.myfuturesuper.com.au/forms-docs/FS_PersonalContributionForm_01072022.pdf) and send it to info@futuresuper.com.au.
+   If you prefer not to use the online form, or you're having difficulty, you can fill in the paper [Personal and Spouse Contribution Form](https://content.myfuturesuper.com.au/forms-docs/FS_PersonalContributionForm_01072023.pdf) and send it to info@futuresuper.com.au.
 
 
 2. **Transfer the funds via direct deposit or BPAY.**\
    \
    Set up a payment using direct deposit or BPAY - you can set up a scheduled payment if you’ve noted in your Personal Contribution Form that you’re intending on making recurring contributions. \
    \
-   You can find our bank account details when you’re completing the Personal Contribution Form in your online account, or in [Personal and Spouse Contribution Form](https://content.myfuturesuper.com.au/forms-docs/FS_PersonalContributionForm_01072022.pdf).\
+   You can find our bank account details when you’re completing the Personal Contribution Form in your online account, or in [Personal and Spouse Contribution Form](https://content.myfuturesuper.com.au/forms-docs/FS_PersonalContributionForm_01072023.pdf).\
    \
    For your **transaction description**, **please enter the unique reference number from your online form.** \
    \
