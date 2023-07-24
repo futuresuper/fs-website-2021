@@ -25,7 +25,7 @@ You can find your unique BPAY code and the updated details on your [online accou
 
 For further instructions on how to make a personal contribution, see our [website](https://www.futuresuper.com.au/faqs/how-do-i-make-personal-contributions-to-my-account/)
 
-**This will not impact your employer contributions** as your employer makes payments through a [clearing house](https://www.futuresuper.com.au/faqs/what-is-a-clearing-house/).
+**This will not impact your employer contributions** as your employer makes payments through a [clearing house](https://www.futuresuper.com.au/faqs/what-is-a-clearing-house/). **We cannot accept any employer contributions made via direct deposit or BPAY.**
 
 Any contributions received using our old details after **21 July 2023** will be returned.\
 \
