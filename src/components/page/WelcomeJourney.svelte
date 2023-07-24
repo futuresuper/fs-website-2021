@@ -43,14 +43,13 @@
     const observerArrow = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
-          console.log(entry)
           if(timer){
             clearTimeout(timer);
             timer = null;
           }
           timer = setTimeout(() =>{
             entry.target.parentElement.classList.add('show-arrow')
-          }, 3000);
+          }, 4000);
 
         }else{
           entry.target.parentElement.classList.remove('show-arrow')
@@ -148,7 +147,9 @@
       // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
       let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - 175);
 
+
       let scaleOne = Math.max(1, 1 + (scrollTopOffset / 50));
+      let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
 
       if(scaleOne >= 2.4){
@@ -164,7 +165,8 @@
       }
       //Scale and move big dot as the user scrolls
       if((e.target.scrollTop >= (amountSection.offsetTop -  175)) && top < 20){
-        firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne})  translateZ(0)`;
+        //Ramp up the zoom speed for the last circle as there is quite a bit of scrolling required to get to the end
+        firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne <= 16 ? scaleOne : scaleTwo})  translateZ(0)`;
         firstBigCircle.style.position = `fixed`;
         firstBigCircle.style.top = top + '%';
       }else{
@@ -526,7 +528,7 @@
         </svg>
       </div>
 
-        <div id="journeySection13" class="journey-section__content  smaller-dots-bg">
+        <div id="journeySection13" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
@@ -546,7 +548,7 @@
         </div>
 
 
-        <div id="journeySection14" class="journey-section__content">
+        <div id="journeySection14" class="journey-section__content smaller-dots-bg">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
@@ -606,9 +608,13 @@
     <section class="amount-section-info">
       <div class="container">
         <p>That’s a lot of money.</p>
-        <p>How you invest matters. You might feel like a tiny dot, but you’re part of something huge.</p>
+        <div class="block-quote">
+          <p class="block-quote__content">
+            How you invest matters. You might feel like a tiny dot, but you’re part of something huge. 
+          </p>
+        </div>
         <p>We hope this story has got you thinking about the power of a $.</p>
-        <p class="highlighted">After all, just 7.2% of Australia’s combined super savings could transition us to 100% renewable energy.</p>
+        <p>After all, just 7.2% of Australia’s combined super savings could transition us to 100% renewable energy.</p>
         <p>When you put it that way, making big changes doesn’t seem so hard!</p>
       </div>
 
@@ -891,7 +897,7 @@
     width: 100%;
 
     animation: bigger 1s ease-in-out;
-    background-image: radial-gradient(#424242 6px, transparent 9px), radial-gradient(#424242 8px, transparent 8px);
+    background-image: radial-gradient(#424242 8px, transparent 9px);
     background-size: 24.5px 23.5px;
 
     background-position: 50% 0;
@@ -1070,7 +1076,7 @@
 
       &--2{
         background-color: #303030;
-        transform: scale(0.1143) translateZ(0);
+        transform: scale(0.0567) translateZ(0);
         bottom: 4px;
         left: 0;
         z-index: 2;
@@ -1083,7 +1089,7 @@
       &--3{
         background-color: $green;
         color: #212121;
-        transform: scale(0.02) translateZ(0);
+        transform: scale(0.0126) translateZ(0);
         bottom: 5px;
         left: 0;
         z-index: 3;
@@ -1412,6 +1418,25 @@
   :global( .show-arrow){
     .down-arrow{
       display: block;
+    }
+  }
+
+  .block-quote{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      border: 2px solid #008400;
+      border-radius: 25px;
+      height: 100%;
+      width: 8px;
+      left: -25px;
+    }
+
+    &__content{
+      font-size: 1.75rem;
+      font-weight: bold;
+
     }
   }
 
