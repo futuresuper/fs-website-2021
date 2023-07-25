@@ -110,7 +110,8 @@
             account. You should consider whether Future Super’s products are
             right for your individual objectives and needs and seek personal
             financial advice. Before making a decision to acquire, hold or
-            continue to hold an interest in Future Super, please read the PDS
+            continue to hold an interest in Future Super, please read the
+            Product Disclosure Statement (PDS), Financial Services Guide (FSG)
             and check our Target Market Determination (TMD) available at
             <a href="https://www.futuresuper.com.au/documents-and-forms/"
               >https://www.futuresuper.com.au/documents-and-forms/</a
@@ -137,6 +138,12 @@
             580; AFSL 482684). The Trustee does not in any way endorse, warrant
             or accept responsibility for any services provided by the Promoter
             in its own right or directly to members or prospective members.
+          </p>
+          <p class="disclaimer">
+            When considering a new fund, you should consider checking the costs
+            and amount of any cover offered and any relevant information before
+            you make a decision to transfer your super, such as differences in
+            insurance cover and fees.
           </p>
         </div>
         <div class="bcorp">
