@@ -6,8 +6,6 @@
   const secondActiveSet = 11;
   const thirdActiveSet = 273;
   const fourthActiveSet = 99;
-  const fifthActiveSet = 273;
-  const sixthActiveSet = 389;
 
   let guess = null;
 
@@ -702,7 +700,7 @@
       background-color: $green;
 
       filter: blur(50px);
-      opacity: 5%;
+      opacity: 10%;
     }
 
     &::after{
@@ -744,7 +742,7 @@
         background-color: $green;
 
         filter: blur(50px);
-        opacity: 5%;
+        opacity: 10%;
       }
 
       &::after{
@@ -774,7 +772,7 @@
         background-color: $green;
 
         filter: blur(50px);
-        opacity: 5%;
+        opacity: 10%;
       }
 
       &::before{
@@ -794,7 +792,7 @@
         background-color: $green;
 
         filter: blur(50px);
-        opacity: 5%;
+        opacity: 10%;
       }
 
       &::before{
@@ -1138,6 +1136,19 @@
     margin-top: 460px;
     font-size: 1.25rem;
     background-color: #212121;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 200px;
+      background-color: $green;
+
+      filter: blur(50px);
+      opacity: 10%;
+      top: 15%;
+      right: -55%;
+    }
   }
 
   .download-section{
@@ -1423,6 +1434,7 @@
 
   .block-quote{
     position: relative;
+    margin: 48px 0;
     &::before{
       position: absolute;
       content: "";
