@@ -139,6 +139,12 @@
             or accept responsibility for any services provided by the Promoter
             in its own right or directly to members or prospective members.
           </p>
+          <p class="disclaimer">
+            When considering a new fund, you should consider checking the costs
+            and amount of any cover offered and any relevant information before
+            you make a decision to transfer your super, such as differences in
+            insurance cover and fees.
+          </p>
         </div>
         <div class="bcorp">
           <BCorpLogo />
