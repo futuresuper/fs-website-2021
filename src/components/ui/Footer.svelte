@@ -110,7 +110,8 @@
             account. You should consider whether Future Super’s products are
             right for your individual objectives and needs and seek personal
             financial advice. Before making a decision to acquire, hold or
-            continue to hold an interest in Future Super, please read the PDS
+            continue to hold an interest in Future Super, please read the
+            Product Disclosure Statement (PDS), Financial Services Guide (FSG)
             and check our Target Market Determination (TMD) available at
             <a href="https://www.futuresuper.com.au/documents-and-forms/"
               >https://www.futuresuper.com.au/documents-and-forms/</a
