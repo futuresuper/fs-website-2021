@@ -6,6 +6,7 @@
   const secondActiveSet = 11;
   const thirdActiveSet = 273;
   const fourthActiveSet = 99;
+  let formModal;
 
   let guess = null;
 
@@ -21,6 +22,11 @@
     scrollSection.classList.add('snap');
     let el = document.querySelector(section);
     el.scrollIntoView({behavior: "smooth"});
+  }
+
+  function chooseGuess(val){
+    formModal.classList.add('show-arrow');
+    guess = val;
   }
 
   onMount(() => {
@@ -41,13 +47,14 @@
     const observerArrow = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
+          let isModal = entry.target.classList.contains('question-modal');
           if(timer){
             clearTimeout(timer);
             timer = null;
           }
           timer = setTimeout(() =>{
             entry.target.parentElement.classList.add('show-arrow')
-          }, 1500);
+          }, isModal ? 8000 : 1500);
 
         }else{
           entry.target.parentElement.classList.remove('show-arrow')
@@ -68,6 +75,8 @@
     const amountSection = (document.querySelector('.amount-section'));
     const smallerDotsSection = (document.querySelector('.smaller-dots-bg'));
     const smallestDotsSection = (document.querySelector('.smallest-dots-bg'));
+
+    formModal = (document.querySelector('.journey-section__content--form'));
 
     scrollSection.addEventListener('scroll', function(e) {
       let circle = document.querySelector('.balance-section__circle');
@@ -106,13 +115,43 @@
 
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
-      if(e.target.scrollTop >= balanceSection.offsetTop ){
+      if(e.target.scrollTop >= balanceSection.offsetTop && e.target.scrollTop <= (balanceSection.offsetTop + balanceSectionHeight)){
         //Start the counter
         counterSingles.style.transform = 'translateY(-520px)';
-        counterTens.style.transform = 'translateY(-520px)';
-        counterHundreds.style.transform = 'translateY(-104px)';
+        counterSingles.style.transition = 'transform 2s ease-in-out';
+        counterSingles.style.transitionDelay = '';
 
+        counterTens.style.transform = 'translateY(-520px)';
+        counterTens.style.transition = 'transform 2s ease-in-out';
+        counterTens.style.transitionDelay = '1s';
+
+        counterHundreds.style.transform = 'translateY(-104px)';
+        counterHundreds.style.transition= 'transform 1s ease-in-out';
+        counterHundreds.style.transitionDelay = '2s';
+
+        if(timer){
+          clearTimeout(timer);
+          timer = null;
+        }
+        timer = setTimeout(() =>{
+          balanceSection.classList.add('show-arrow')
+        }, 3500);
+      }else{
+        counterSingles.style.transform = 'translateY(0)';
+        counterSingles.style.transition = 'transform 0s ease-in-out';
+        counterSingles.style.transitionDelay = '';
+
+        counterTens.style.transform = 'translateY(-260px)';
+        counterTens.style.transition = 'transform 0s ease-in-out';
+        counterTens.style.transitionDelay = '0s';
+
+        counterHundreds.style.transform = 'translateY(-52px)';
+        counterHundreds.style.transition= 'transform 0s ease-in-out';
+        counterHundreds.style.transitionDelay = '0s';
+        balanceSection.classList.remove('show-arrow')
       }
+
+
 
       if(e.target.scrollTop >= balanceSection.offsetTop + 10){
 
@@ -126,7 +165,6 @@
           circleText.classList.remove('hidden');
         }
       }else{
-
         circle.style.position = `absolute`;
         circle.style.top = '0';
       }
@@ -373,10 +411,15 @@
           </p>
         </div>
       </div>
+      <svg on:click="{() => scrollToNextSection('#journeySection1')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Arrow Down">
+          <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+        </g>
+      </svg>
     </section>
 
     <div class="journey-section">
-      <div class="journey-section__content journey-section__content--top">
+      <div  id="journeySection1" class="journey-section__content journey-section__content--top">
         <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top hasArrow">
           <p>
@@ -406,40 +449,47 @@
 
 
       <div  id="journeySection3" class="journey-section__content  journey-section__content--form">
-        <div class="question-modal">
+          <div class="question-modal hasArrow">
             <div class="question-modal__info">
               <div class="question-modal__badge">Let's guess</div>
               <p class="question-modal__label {!guess ? 'question-modal__label--green' : ''}">Select Your Answer </p>
             </div>
-          <p class="question-modal__heading">What percentage of $3.4 trillion is needed to switch Australia to 100% renewable energy? </p>
-          <div class="question-modal__answers">
-            {#if !guess || guess !== 1}
-              <div class="question-modal__answers--block"  on:click={() => (guess = 1)}>7.2 %</div>
-              <div class="question-modal__answers--block {guess === 2 ? 'question-modal__answers--block-selected' : ''}" on:click={() => (guess = 2)}>
-                {#if guess !== 2}
-                  18.9%
-                {:else}
-                  Good news, we need way less!
-                {/if}
-              </div>
-              <div class="question-modal__answers--block {guess === 3 ? 'question-modal__answers--block-selected' : ''}" on:click={() => (guess = 3)}>
-                {#if guess !== 3}
-                  44.1%
-                {:else}
-                  Good news, we need way less!
-                {/if}
-              </div>
-            {:else}
-              <div class="question-modal__correct">
-                <img src="/images/correct.svg" alt="Correct" />
-              </div>
-            {/if}
+            <p class="question-modal__heading ">What percentage of $3.4 trillion is needed to switch Australia to 100% renewable energy? </p>
+            <div class="question-modal__answers">
+              {#if !guess || guess !== 1}
+                <div class="question-modal__answers--block"  on:click={() => chooseGuess(1)}>7.2 %</div>
+                <div class="question-modal__answers--block {guess === 2 ? 'question-modal__answers--block-selected' : ''}" on:click={() => chooseGuess(2)}>
+                  {#if guess !== 2}
+                    18.9%
+                  {:else}
+                    Good news, we need way less!
+                  {/if}
+                </div>
+                <div class="question-modal__answers--block {guess === 3 ? 'question-modal__answers--block-selected' : ''}" on:click={() => chooseGuess(3)}>
+                  {#if guess !== 3}
+                    44.1%
+                  {:else}
+                    Good news, we need way less!
+                  {/if}
+                </div>
+              {:else}
+                <div class="question-modal__correct">
+                  <img src="/images/correct.svg" alt="Correct" />
+                </div>
+              {/if}
+            </div>
           </div>
-        </div>
+
+
+        <svg on:click="{() => scrollToNextSection('#journeySection3-5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
 
       </div>
 
-        <div class="journey-section__content">
+        <div id="journeySection3-5" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
 
             {#if guess && guess === 1}
@@ -899,10 +949,11 @@
     display: flex;
     flex-direction: column-reverse;
     overflow-x: clip;
-    pointer-events: none;
+
     scroll-snap-align: start;
 
     &__circle{
+      pointer-events: none;
       position: absolute;
       top: 0;
       left: 50%;
@@ -1119,7 +1170,6 @@
 
   .amount-section{
     overflow-x: clip;
-    pointer-events: none;
     height: 2000px;
     position: relative;
     &__circle{
