@@ -1,7 +1,11 @@
 ---
-title: "Future Super named 2018 Telstra Business Awards: Social Change Maker Finalist!"
+author: Kirstin Hunter
 slug: future-super-2018-telstra-business-awards-finalist
 date: 2019-02-05T19:22:50.417Z
+canonical: null
+title: "Future Super named 2018 Telstra Business Awards: Social Change Maker
+  Finalist!"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg
 tags:
   - Renewable Energy
   - Disruption
@@ -11,13 +15,9 @@ tags:
   - Ethical Investing
   - News
   - Superannuation
-author: Kirstin Hunter
-canonical:
-description: >-
-  Future Super has been listed as a 2018 Telstra Business Awards: Social Change Maker Finalist in the ACT.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg
+description: "Future Super has been listed as a 2018 Telstra Business Awards:
+  Social Change Maker Finalist in the ACT."
 ---
-
 ## Future Super has been recognised as one of Australia’s most innovative social change businesses - and we couldn’t have done it without you!
 
 ![Future Super members at Mount Majura Solar Farm, ACT (Renewable Energy Day, 2016)](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg>)
@@ -32,7 +32,7 @@ Every year the Telstra Business Awards recognises and celebrates the small and m
 
 We’re proud to announce that Future Super has been selected as 2018 Social Change Maker finalist in the ACT!
 
-As Australia’s first super fund with zero fossil fuels, we’ve empowered more than ten thousand everyday Australians to divest from coal, oil and gas, as well as other harmful industries.
+We’ve empowered more than ten thousand everyday Australians to divest from coal, oil and gas, as well as other harmful industries.
 
 But we don’t like to linger on the stuff we don’t do.
 
@@ -40,12 +40,12 @@ We know super is powerful, and that it’s yours. That’s why we aim provide ou
 
 Here’s just a few of the things we’re proud to have delivered on behalf of our community of values-driven investors:
 
-- [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
-- Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
-- [Baby Bump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
-- Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
-- Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
-- Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
+* [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
+* Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
+* [Baby Bump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
+* Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
+* Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
+* Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
 
 And, of course, [competitive returns](https://www.myfuturesuper.com.au/choosing/performanceandreturns).
 
