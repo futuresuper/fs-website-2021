@@ -1169,6 +1169,7 @@
 
 
   .amount-section{
+    pointer-events: none;
     overflow-x: clip;
     height: 2000px;
     position: relative;
