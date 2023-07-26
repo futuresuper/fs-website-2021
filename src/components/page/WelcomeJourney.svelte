@@ -99,7 +99,7 @@
       const thirdBigCircle = document.querySelector('.amount-section__circle--3 > div');
 
 
-      const scrollSectionContentLast = document.querySelector('.journey-section__content--last');
+      const scrollSectionContentLast = document.getElementById('journeySectionEnd');
 
       const explainSectionFirst = document.querySelector('.explain-section--first');
       const explainSectionSecond = document.querySelector('.explain-section--second');
@@ -189,12 +189,12 @@
       }
 
 
-      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 600)){
+      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 1000)){
         dotGrid.classList.add('animate-small');
-        firstBigCircle.style.opacity = '1';
+        firstBigCircle.classList.add('animate-small');
       }else{
         dotGrid.classList.remove('animate-small');
-        firstBigCircle.style.opacity = '0';
+        firstBigCircle.classList.remove('animate-small');
       }
 
 
@@ -684,19 +684,22 @@
           </svg>
         </div>
 
-        <div id="journeySection15" class="journey-section__content journey-section__content--last">
+        <div id="journeySection15" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               You’re probably starting to wonder... what do all those tiny dots add up to?
             </p>
           </section>
-          <svg on:click="{() => scrollToNextSection('#amountSection')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg on:click="{() => scrollToNextSection('#journeySectionEnd')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Arrow Down">
               <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
             </g>
           </svg>
         </div>
 
+      <div id="journeySectionEnd" class="journey-section__content">
+
+      </div>
     </div>
 
     <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
@@ -1012,9 +1015,12 @@
     }
   }
 
+  #journeySectionEnd{
+    padding-bottom: 0;
+  }
+
   .journey-section{
     min-height: 8000px;
-    padding-bottom: 300px;
     height: 100%;
     position: relative;
     width: 100%;
@@ -1189,12 +1195,22 @@
       }
 
       &--1{
-        background-color: #424242;
+        //background-color: #424242;
         z-index: 1;
         transform: translateX(-50%) scale(1) translateZ(0);
 
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
+        background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+        background-size: 6px 6px;
+
+        &:global(.animate-small) {
+          //Smaller dots
+          animation: smallest 1s ease-in-out;
+          background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+          background-size: 2px 2px;
+          //transition: all 1.5s ease-in-out;
+        }
+        //opacity: 0;
+        //transition: opacity 1s ease-in-out;
       }
 
       &--2{
