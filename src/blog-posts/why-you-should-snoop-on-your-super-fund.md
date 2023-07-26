@@ -1,18 +1,18 @@
 ---
-title: "Why You Should Snoop On Your Super Fund"
+author: Michael Bones
 slug: why-you-should-snoop-on-your-super-fund
 date: 2019-02-06T03:57:53.930Z
+canonical: null
+title: Why You Should Snoop On Your Super Fund
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016f89cd3d7b_why-snoop-your-super-OG-tiny.jpg
 tags:
   - Superannuation
   - Disruption
   - Ethical Investing
-author: Michael Bones
-canonical:
-description: >-
-  Ever wondered why super funds make discovering your actual investments so hard? We think you should know what you’re money’s being invested in. Here’s why.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016f89cd3d7b_why-snoop-your-super-OG-tiny.jpg
+description: Ever wondered why super funds make discovering your actual
+  investments so hard? We think you should know what you’re money’s being
+  invested in. Here’s why.
 ---
-
 ![](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016f89cd3d7b_why-snoop-your-super-OG-tiny.jpg)
 
 Nearly $10 of every $100 you earn is sent to a super fund, which invests it on your behalf. Unfortunately, the super industry makes it almost impossible to uncover the real-world companies that get access to your hard-earned savings. **‍**
@@ -25,7 +25,7 @@ If you’re reading this, chances are you’ve just searched **SuperSnooper** an
 
 It’s OK to be cranky - it’s not your fault that super funds keep this stuff out of the spotlight. But now you know, there’s two main actions you can take.
 
-### 1\. Petition for change
+### 1. Petition for change
 
 Contact your current fund and give them a piece of your mind.
 
@@ -33,9 +33,9 @@ Send your current super fund an email, or give them a call. Ask if they’re inv
 
 A few things to be aware of:
 
-- Super funds usually only release the largest 10 or 20 companies in their portfolio (but they’re investing your money, so you should ask questions and demand answers)
-- You can expect to wait at least 4-6 weeks for an email reply. But don’t let that stop you from reaching out.
-- Be nice to the customer service staff - they are just doing their job
+* Super funds usually only release the largest 10 or 20 companies in their portfolio (but they’re investing your money, so you should ask questions and demand answers)
+* You can expect to wait at least 4-6 weeks for an email reply. But don’t let that stop you from reaching out.
+* Be nice to the customer service staff - they are just doing their job
 
 Here’s a draft email you can modify and send to your fund.
 
@@ -50,7 +50,7 @@ Here’s a draft email you can modify and send to your fund.
 >
 > Your name
 
-### 2\. Switch to an ethical super fund like Future Super
+### 2. Switch to an ethical super fund like Future Super
 
 Future Super believes super can create a more just, sustainable and prosperous future for everyone.
 
@@ -62,4 +62,4 @@ We invite you to join our community of over 12,000 ordinary Australians taking e
 
 ‍
 
-#### [Learn more and join Future Super in 2 minutes](https://switch.myfuturesuper.com.au/shift/super-snooper-join?utm_campaign=SuperSnooper2019&utm_medium=Website&utm_source=FSBlog)
+#### [Learn more and join Future Super in 5 minutes](https://switch.myfuturesuper.com.au/shift/super-snooper-join?utm_campaign=SuperSnooper2019&utm_medium=Website&utm_source=FSBlog)
