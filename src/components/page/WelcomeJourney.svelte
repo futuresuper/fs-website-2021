@@ -80,6 +80,10 @@
       const dotGrid = document.querySelector('.journey-section');
       const dotGridTop = dotGrid.getBoundingClientRect().top;
 
+      // const test = document.getElementById('journeySection11');
+      //
+      // console.log(test.offsetTop);
+
 
       const firstBigCircle = document.querySelector('.amount-section__circle--1');
       const secondBigCircle = document.querySelector('.amount-section__circle--2 > div');
@@ -93,11 +97,25 @@
       explainSectionLast = document.querySelector('.explain-section--last')
 
 
+      const counterHundreds = document.querySelector('.counter__sets--hundreds');
+      const counterTens = document.querySelector('.counter__sets--tens');
+      const counterSingles = document.querySelector('.counter__sets--singles');
+
+
       scrollTop = e.target.scrollTop;
 
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
+      if(e.target.scrollTop >= balanceSection.offsetTop ){
+        //Start the counter
+        counterSingles.style.transform = 'translateY(-520px)';
+        counterTens.style.transform = 'translateY(-520px)';
+        counterHundreds.style.transform = 'translateY(-104px)';
+
+      }
+
       if(e.target.scrollTop >= balanceSection.offsetTop + 10){
+
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
         circle.style.top = `${balanceSectionHeight - circle.clientHeight - 200}px`;
@@ -194,6 +212,7 @@
 
 <div class="bg">
   <div class="scroll-section">
+
     <section class="hero-section">
       <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
@@ -298,7 +317,57 @@
       <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
-          <h2 class="balance-section__balance--heading">$199 <br> million</h2>
+          <div class="balance-section__balance--heading">
+            <div class="counter">
+              <span class="counter__sets">$</span>
+              <div class="counter__sets">
+                <div class="counter__sets--set counter__sets--hundreds">
+                  <span>0</span>
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>0</span>
+                </div>
+              </div>
+              <div class="counter__sets">
+                <div class="counter__sets--set counter__sets--tens">
+                  <span>0</span>
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>0</span>
+                </div>
+              </div>
+              <div class="counter__sets">
+                <div class="counter__sets--set counter__sets--singles">
+                  <span>0</span>
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>0</span>
+                </div>
+            </div>
+          </div>
+            <span>million</span>
+          </div>
           <p class="balance-section__balance--description">
             <span class="circle-text">Spent on subsidies to fossil fuel companies <strong>every week.</strong></span>
           </p>
@@ -854,7 +923,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: $black;
-      max-width: 290px;
+      max-width: 320px;
       width: 100%;
 
 
@@ -862,9 +931,14 @@
         font-size: 3.25rem;
         font-weight: 900;
         font-family: 'FutureSuperFeature';
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        align-items: center;
+        margin-bottom: 0.625rem;
       }
       &--description{
-        font-size: 1.75rem;
+        font-size: 1.44rem;
 
       }
     }
@@ -1450,6 +1524,44 @@
       font-weight: bold;
 
     }
+  }
+
+  .counter{
+    display: flex;
+    align-items: center;
+    font-size: 3.25rem;
+    font-weight: 900;
+    font-family: 'FutureSuperFeature';
+    &__sets{
+      max-height: 52px;
+      width: 36px;
+      overflow: hidden;
+      &--set{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(0);
+        span{
+          line-height: 1;
+        }
+      }
+
+      &--hundreds{
+        transition: transform 6s ease-in-out;
+        transform: translateY(-52px);
+      }
+
+      &--tens{
+        transition: transform 4s ease-in-out;
+        transform: translateY(-260px);
+      }
+
+      &--singles{
+        transition: transform 2s ease-in-out;
+        transform: translateY(0);
+      }
+    }
+
   }
 
 </style>
