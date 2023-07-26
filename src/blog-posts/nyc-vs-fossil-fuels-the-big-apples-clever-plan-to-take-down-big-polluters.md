@@ -1,17 +1,15 @@
 ---
-title: "NYC vs Fossil Fuels: the Big Apple’s clever plan to take down Big Polluters"
+author: Michael Bones
 slug: nyc-vs-fossil-fuels-the-big-apples-clever-plan-to-take-down-big-polluters
 date: 2019-02-06T09:14:17.951Z
+canonical: null
+title: "NYC vs Fossil Fuels: the Big Apple’s clever plan to take down Big Polluters"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017884cd3dbd_nyc%20(1).png
 tags:
   - Disruption
-author: Michael Bones
-canonical:
-description: >-
-  New York City is suing 5 fossil fuel giants and divesting billions from big polluters
-
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017884cd3dbd_nyc%20(1).png
+description: New York City is suing 5 fossil fuel giants and divesting billions
+  from big polluters
 ---
-
 Today, New York Mayor Bill de Blasio [announced](https://www.theguardian.com/us-news/2018/jan/10/new-york-city-plans-to-divest-5bn-from-fossil-fuels-and-sue-oil-companies) the city will divest their $189 billion pension portfolios from fossil fuels companies.
 
 The iconic city’s decision to divest comes with an added kick in the teeth to coal, oil and gas executives. **New York City is not just selling its fossil fuels stocks by the billions - they’re suing them, too.**
@@ -78,7 +76,7 @@ The good news is that through super we have a lot of financial muscle to flex, a
 
 ### Switch to Future Super = Divesting from Fossil Fuels
 
-In 2014, an experienced team of ethical investment experts and climate activists created [**Future Super**](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)**, Australia’s first 100% fossil fuel free super fund.**
+In 2014, an experienced team of ethical investment experts and climate activists created **[Future Super](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=), Australia’s first 100% fossil fuel free super fund.**
 
 Since launch, Future Super has empowered thousands of Australians to easily switch to fossil free super.
 
@@ -88,10 +86,10 @@ With no investment in coal, oil, gas, or the banks that fund fossil fuels, Futur
 
 Forget paper forms or scratching through draws looking for your old fund’s annual reports.
 
-[**It takes about 2 minutes to switch your super out of coal, oil and gas.**](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)
+**[It takes about 5 minutes to switch your super out of coal, oil and gas.](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)**
 
 It’s all online, and with our smart technology you can find all your old accounts and combine them in the click of a button.
 
 With New York City’s explosive divestment announcement today, 2018 is shaping up to become the year that fossil fuels divestment goes mainstream. If you care about action on climate change, you can make sure your super is free from coal, oil and gas.
 
-> [**Click here to join the fossil free movement today**](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)
+> **[Click here to join the fossil free movement today](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)**
