@@ -1,24 +1,24 @@
 ---
-title: "This Is Our Why: reflections on Bill McKibben's Accelerate Climate Action Tour"
+author: Kirstin Hunter
 slug: this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour
 date: 2018-05-16T03:18:10.815Z
+canonical: null
+title: "This Is Our Why: reflections on Bill McKibben's Accelerate Climate
+  Action Tour"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018910cd3baa_this-is-our-why-blog-post%20(1).png
 tags:
   - Activism
   - Divestment
   - Environment
   - Ethical Investing
-author: Kirstin Hunter
-canonical:
-description: >-
-  If you missed it Bill McKibben's Accelerate Climate Action Tour, here's what you need to know.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018910cd3baa_this-is-our-why-blog-post%20(1).png
+description: If you missed it Bill McKibben's Accelerate Climate Action Tour,
+  here's what you need to know.
 ---
-
 Last week Future Super was proud team up with [Impact Investment Group](https://www.impact-group.com.au/) (IIG), [Bank Australia](https://bankaust.com.au/) and [350.org Australia](http://www.350.org.au) to support [Bill McKibben](http://www.billmckibben.com/)’s national Accelerate Climate Action tour.
 
 ### Who Is Bill McKibben?
 
-For those who don’t know, nearly 30 years ago Bill wrote _The End of Nature,_ the world’s first book for public consumption on climate change*.* Bill has since gone on to write many more books, and founded 350.org, a global movement spanning 188 countries and hundreds of thousands of people demanding action from governments and corporations to divest from fossil fuels and move towards a zero-carbon economy.
+For those who don’t know, nearly 30 years ago Bill wrote *The End of Nature,* the world’s first book for public consumption on climate change*.* Bill has since gone on to write many more books, and founded 350.org, a global movement spanning 188 countries and hundreds of thousands of people demanding action from governments and corporations to divest from fossil fuels and move towards a zero-carbon economy.
 
 These events have been a powerful call to action. The Sydney leg was opened by 350.org Australia’s founder Blair Palese, followed by Sydney’s Deputy Lord Mayor [Jess Miller](https://www.smh.com.au/national/nsw/jess-miller-becomes-youngest-deputy-lord-mayor-of-city-of-sydney-20170919-gyk2ns.html), who spoke about the reality that local government will increasingly be called upon to respond to the climate-related weather events.
 
@@ -26,11 +26,11 @@ Next up, the man himself – Bill McKibben, who gave some background on his role
 
 ### **McKibben laid out three principles for stopping climate pollution**
 
-> 1\. A fast and just transition to renewables
-
-> 2\. No new fossil fuel projects
-
-> 3\. Not a penny more for dirty energy
+> 1. A fast and just transition to renewables
+>
+> 2. No new fossil fuel projects
+>
+> 3. Not a penny more for dirty energy
 
 These points were illustrated by Joseph Scales from [Repower Port Augusta](http://repowerportaugusta.org/) and Zane Sikulu from [Pacific Climate Warriors](https://350pacific.org/pacific-climate-warriors/). In the middle, we heard from Jo Dodds who survived the recent bushfires in Tathra. Jo spoke with anger and passion about her response to the Prime Minister’s statement (taking a leaf out of the NRA’s playbook) that the aftermath of the bushfires was not the time to discuss climate change politics. The next morning Jo sent a message to the PM from the smouldering ashes of the bush behind her home – it is visceral, powerful, and well worth a watch.
 
@@ -42,14 +42,14 @@ At Future Super we are building a movement of empowered Australians who will use
 
 We do this in two ways:
 
-1.  DIVEST: we ensure that none of our members’ superannuation funds are invested in fossil fuel companies or their service providers; and
-2.  REINVEST: we seek out the best investments in renewable energy which will power our country into the future.
+1. DIVEST: we ensure that none of our members’ superannuation funds are invested in fossil fuel companies or their service providers; and
+2. REINVEST: we seek out the best investments in renewable energy which will power our country into the future.
 
 ### **Divest for the future**
 
 “Divest” is an interesting word in finance - in short, it means to sell an asset. In a climate sense is often viewed as a form of moral protest - by selling out of fossil fuel companies,  it undermines the social licence of the polluter's business model and the banks and super funds who fund them.
 
-But divesting, also know as going _fossil-free_, is also a well-reasoned and logical investment strategy in a world where the cost of carbon pollution can be seen in global sea level and the increasing frequency and severity of extreme weather events.
+But divesting, also know as going *fossil-free*, is also a well-reasoned and logical investment strategy in a world where the cost of carbon pollution can be seen in global sea level and the increasing frequency and severity of extreme weather events.
 
 If Australia has any chance of delivering our [emissions reduction targets](http://www.environment.gov.au/system/files/resources/c42c11a8-4df7-4d4f-bf92-4f14735c9baa/files/factsheet-australias-2030-climate-change-target.pdf), we are going to have to reduce our overall emissions. This means using less fossil fuels, which in economic terms, means that demand for fossil fuels will have to fall.
 
@@ -67,10 +67,10 @@ Future Super's cofounder, Simon Sheikh, managed to grab a moment with Bill McKib
 
 ### **THIS. IS. WHY.**
 
-This is why we started a Future Super - so everyday Australians could invest their super responsibly, with zero fossil fuels and a focus on the sustainable industries of the future like renewable energy.
+This is why we started a Future Super - so everyday Australians could invest their super responsibly, with fossil fuel companies screened out of their super and a focus on the sustainable industries of the future like renewable energy
 
 Not only do we passionately believe that divesting from fossil fuels and reinvesting in renewables will deliver for our members in retirement, we know that without this, there may not be much of a planet left to retire onto.
 
-> [**Want to be part of the fossil-free super movement? Join today in 2 minutes.**](http://www.myfuturesuper.com.au)
+> **[Want to be part of the fossil-free super movement? Join today in 5 minutes.](http://www.myfuturesuper.com.au)**
 
 ‍
