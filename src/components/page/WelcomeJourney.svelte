@@ -47,7 +47,7 @@
           }
           timer = setTimeout(() =>{
             entry.target.parentElement.classList.add('show-arrow')
-          }, 4000);
+          }, 1500);
 
         }else{
           entry.target.parentElement.classList.remove('show-arrow')
