@@ -1,17 +1,15 @@
 ---
-title: "Why Mark is suing REST super for failing on climate"
+author: Michael Bones
 slug: why-mark-is-suing-his-super-fund
 date: 2019-02-05T19:11:23.902Z
+canonical: null
+title: Why Mark is suing REST super for failing on climate
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e275cd3db7_Why%20Mark%20is%20suing%20REST%20super%20for%20failing%20on%20climate%20(1).png
 tags:
   - Activism
   - Divestment
-author: Michael Bones
-canonical:
-description: >-
-  This legend is suing a $50 billion super fund for climate inaction.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e275cd3db7_Why%20Mark%20is%20suing%20REST%20super%20for%20failing%20on%20climate%20(1).png
+description: This legend is suing a $50 billion super fund for climate inaction.
 ---
-
 Yesterday [news broke](http://www.abc.net.au/news/2018-07-25/super-fund-rest-sued-for-not-doing-enough-on-climate-change/10029744) that 23-year-old Queenslander Mark McVeigh is suing his super fund REST for climate inaction.
 
 It’s no secret that super funds invest in the coal that’s cooking the planet.
@@ -50,13 +48,13 @@ Cases like Mark's are important, because they could shake up the whole super ind
 
 But, if you’re an average person, you probably don’t want the hassle that comes with taking a $50 billion dollar super fund to court.
 
-The good news is, in just 2 minutes, you can join thousands of Australians who are already investing their super in a safe climate future.
+The good news is, in just 5 minutes, you can join thousands of Australians who are already investing their super in a safe climate future.
 
 ## **Future Super, Australia’s first 100% fossil-free super fund**
 
 Since 2014, Future Super has been helping thousands of Australians invest their super sustainably.
 
-With zero tolerance for fossil fuels, you can have peace of mind knowing that your super is free from coal, oil, gas and the banks that provide essential services to the dying fossil fuel industry.
+With the goal of investing for a fossil fuel free future, you can have peace of mind knowing that your super screens out coal, oil, gas and the banks that provide essential services to the dying fossil fuel industry.
 
 With Future Super you’ll be investing in global sustainability leaders and [renewable energy](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) in Australia. You can even choose to have up to 20% of your super allocated to renewable assets with the Growth (Renewables Plus) investment option.
 
@@ -66,6 +64,6 @@ And even better, you can always [see](https://www.myfuturesuper.com.au/ethicalsc
 
 You don’t have to wait for mainstream super funds to see the light and do the right thing on climate.
 
-You can choose to invest your super in a fossil-free future today. It literally takes 2 minutes. All you need is a computer or your phone, and to click the link below.
+You can choose to invest your super in a fossil-free future today. It literally takes 5 minutes. All you need is a computer or your phone, and to click the link below.
 
-**[Join Future Super in 2 mins today](https://go.futrsupr.com/restoped)**
+**[Join Future Super in 5 mins today](https://go.futrsupr.com/restoped)**
