@@ -1547,12 +1547,14 @@
       }
 
       &--hundreds{
-        transition: transform 6s ease-in-out;
+        transition: transform 1s ease-in-out;
+        transition-delay: 2s;
         transform: translateY(-52px);
       }
 
       &--tens{
-        transition: transform 4s ease-in-out;
+        transition: transform 2s ease-in-out;
+        transition-delay: 1s;
         transform: translateY(-260px);
       }
 
