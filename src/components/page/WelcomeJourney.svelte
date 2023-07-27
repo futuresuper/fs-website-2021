@@ -115,7 +115,7 @@
 
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
-      if(e.target.scrollTop >= balanceSection.offsetTop && e.target.scrollTop){
+      if(e.target.scrollTop >= balanceSection.offsetTop - (window.innerHeight * 0.90)){
         //Start the counter
         // counterSingles.style.transform = 'translateY(-520px)';
         // counterSingles.style.transition = 'transform 2s ease-in-out';
