@@ -115,19 +115,24 @@
 
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
-      if(e.target.scrollTop >= balanceSection.offsetTop && e.target.scrollTop <= (balanceSection.offsetTop + balanceSectionHeight)){
+      if(e.target.scrollTop >= balanceSection.offsetTop && e.target.scrollTop){
         //Start the counter
-        counterSingles.style.transform = 'translateY(-520px)';
-        counterSingles.style.transition = 'transform 2s ease-in-out';
-        counterSingles.style.transitionDelay = '';
+        // counterSingles.style.transform = 'translateY(-520px)';
+        // counterSingles.style.transition = 'transform 2s ease-in-out';
+        // counterSingles.style.transitionDelay = '';
+        //
+        // counterTens.style.transform = 'translateY(-520px)';
+        // counterTens.style.transition = 'transform 2s ease-in-out';
+        // counterTens.style.transitionDelay = '1s';
+        //
+        // counterHundreds.style.transform = 'translateY(-104px)';
+        // counterHundreds.style.transition= 'transform 1s ease-in-out';
+        // counterHundreds.style.transitionDelay = '2s';
 
-        counterTens.style.transform = 'translateY(-520px)';
-        counterTens.style.transition = 'transform 2s ease-in-out';
-        counterTens.style.transitionDelay = '1s';
+        counterSingles.classList.add('count');
+        counterTens.classList.add('count');
+        counterHundreds.classList.add('count');
 
-        counterHundreds.style.transform = 'translateY(-104px)';
-        counterHundreds.style.transition= 'transform 1s ease-in-out';
-        counterHundreds.style.transitionDelay = '2s';
 
         if(timer){
           clearTimeout(timer);
@@ -135,19 +140,34 @@
         }
         timer = setTimeout(() =>{
           balanceSection.classList.add('show-arrow')
-        }, 3500);
+          // counterSingles.classList.remove('count');
+          // counterTens.classList.remove('count');
+
+          // counterSingles.style.transform = 'translateY(-520px)';
+          // counterSingles.style.transition = 'transform 0s ease-in-out';
+          // counterSingles.style.transitionDelay = '';
+          //
+          // counterTens.style.transform = 'translateY(-520px)';
+          // counterTens.style.transition = 'transform 0s ease-in-out';
+          // counterTens.style.transitionDelay = '';
+          //
+          // counterHundreds.style.transform = 'translateY(-104px)';
+          // counterHundreds.style.transition= 'transform 0.5s ease-in-out';
+          // counterHundreds.style.transitionDelay = '';
+        }, 8000);
       }else{
-        counterSingles.style.transform = 'translateY(0)';
-        counterSingles.style.transition = 'transform 0s ease-in-out';
-        counterSingles.style.transitionDelay = '';
-
-        counterTens.style.transform = 'translateY(-260px)';
-        counterTens.style.transition = 'transform 0s ease-in-out';
-        counterTens.style.transitionDelay = '0s';
-
-        counterHundreds.style.transform = 'translateY(-52px)';
-        counterHundreds.style.transition= 'transform 0s ease-in-out';
-        counterHundreds.style.transitionDelay = '0s';
+        timer = null;
+        // counterSingles.style.transform = 'translateY(0)';
+        // counterSingles.style.transition = 'transform 0s ease-in-out';
+        // counterSingles.style.transitionDelay = '';
+        //
+        // counterTens.style.transform = 'translateY(0)';
+        // counterTens.style.transition = 'transform 0s ease-in-out';
+        // counterTens.style.transitionDelay = '0s';
+        //
+        // counterHundreds.style.transform = 'translateY(-52px)';
+        // counterHundreds.style.transition= 'transform 0s ease-in-out';
+        // counterHundreds.style.transitionDelay = '0s';
         balanceSection.classList.remove('show-arrow')
       }
 
@@ -1614,23 +1634,98 @@
       }
 
       &--hundreds{
-        transition: transform 1s ease-in-out;
-        transition-delay: 2s;
         transform: translateY(-52px);
+
+        &:global(.count){
+          transition: transform 0.2s ease-in-out;
+          transform: translateY(-104px);
+          transition-delay: 5s;
+        }
       }
 
       &--tens{
-        transition: transform 2s ease-in-out;
-        transition-delay: 1s;
-        transform: translateY(-260px);
+        //animation: fullCount 0s;
+
+        &:global(.count){
+          animation: fullCount 5s 1;
+        }
       }
 
       &--singles{
-        transition: transform 2s ease-in-out;
-        transform: translateY(0);
+        //animation: fullCountSmooth 0s;
+        //transform: translateY(0);
+
+
+        &:global(.count){
+          animation: fullCountSmooth 0.5s 10;
+        }
       }
     }
 
   }
+
+  @keyframes fullCount {
+    0%{
+      transform: translateY(0);
+    }
+
+    10%{
+      transform: translateY(-52px);
+    }
+
+    20%{
+      transform: translateY(-104px);
+    }
+    30%{
+      transform: translateY(-156px);
+    }
+    40%{
+      transform: translateY(-208px);
+    }
+    50%{
+      transform: translateY(-260px);
+    }
+    60%{
+      transform: translateY(-312px);
+    }
+    70%{
+      transform: translateY(-364px);
+    }
+    80%{
+      transform: translateY(-416px);
+    }
+    90%{
+      transform: translateY(-468px);
+    }
+    100%{
+      transform: translateY(-520px);
+    }
+  }
+
+  @keyframes fullCountSmooth {
+    0%{
+      transform: translateY(0);
+    }
+
+    100%{
+      transform: translateY(-520px);
+    }
+  }
+
+
+  @keyframes countOne {
+    0%{
+      transform: translateY(-52px);
+    }
+
+    50%{
+      transform: translateY(-104px);
+    }
+
+    100%{
+      transform: translateY(-104px);
+    }
+  }
+
 
 </style>
