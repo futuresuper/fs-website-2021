@@ -25,6 +25,7 @@
     emailFooter: "Email Footer",
     tbl: "The Bottom Line",
     websiteCaseStudy: "Website - Case Study",
+    futureversaryEmail: "Futureversary Email"
   };
 
   const href = {
