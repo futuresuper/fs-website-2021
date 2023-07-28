@@ -13,7 +13,7 @@
       systemic change through investment, by harnessing the power of your super
       to build a future without climate change or inequality.
     </p>
-    <h4>Fossil fuel free. What does this mean?</h4>
+    <h4>Investing for a fossil fuel free future. What does this mean?</h4>
     <p>
       Fossil fuels are hydrocarbon containing materials of biological origin
       occurring within the Earth’s crust and which can be used as a source of

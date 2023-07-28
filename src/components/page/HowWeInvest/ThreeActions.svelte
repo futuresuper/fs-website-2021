@@ -29,8 +29,8 @@
     <p>
       Divestment is one of our greatest tools to change systems, challenging the
       social licence of industries like fossil fuels and pressuring other
-      investors to reject them. This process makes all our portfolios fossil
-      fuel free, including companies and assets that provide services to the
+      investors to reject them. This process screens out fossil fuels from our
+      portfolio, including companies and assets that provide services to the
       fossil fuel industry, like finance and transportation. We believe that’s a
       smart investment strategy because, as the world works to limit global
       warming to 1.5 degrees, most fossil fuel companies will likely be worth
