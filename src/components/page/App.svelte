@@ -1,6 +1,12 @@
+<script>
+  import AppCarousel from "./App/AppCarousel.svelte";
+</script>
+
+<AppCarousel />
 <div class="grid">
   <h3>Apple App Store (iOS)</h3>
   <h3>Google Play Store (Android)</h3>
+
   <div>
     <img
       class="qr-code"
