@@ -87,7 +87,16 @@
       const singleCircle = document.querySelector('.top-dot');
       const circleTop = circle.getBoundingClientRect().top;
       const dotGrid = document.querySelector('.journey-section');
+      const dotGrid2 = document.querySelector('.journey-section-2');
       const dotGridTop = dotGrid.getBoundingClientRect().top;
+
+      //Get 17000 by going 3.4 trillion / 200 million to get how many dots to show
+      //then we take the width and divide it by the width of a dot plus the gap to get how many per row
+      //then multiply by the amount of rows in 65px
+      //then divide the amount of dots by the amount in a 65px window
+      //then multiple that to get how many times to show 65px to get the height
+      dotGrid.style.height = (17000 / ((window.innerWidth / 25) * 3) * 75) + 'px';
+      dotGrid2.style.height = (300000 / ((window.innerWidth / 6) * 11) * 75) + 'px';
 
       // const test = document.getElementById('journeySection11');
       //
@@ -204,27 +213,43 @@
 
       if(e.target.scrollTop >= smallerDotsSection.offsetTop){
         dotGrid.classList.add('animate');
+        dotGrid2.classList.add('animate');
       }else{
         dotGrid.classList.remove('animate');
+        dotGrid2.classList.remove('animate');
       }
 
 
       if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 1000)){
-        dotGrid.classList.add('animate-small');
+        dotGrid2.classList.add('animate-small');
         firstBigCircle.classList.add('animate-small');
       }else{
-        dotGrid.classList.remove('animate-small');
+        dotGrid2.classList.remove('animate-small');
         firstBigCircle.classList.remove('animate-small');
       }
 
 
       // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
-      let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop - 175);
+      let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop + 10);
+
+      let startingScale = 1;
+
+      // if(window.innerWidth > 600 ){
+      //   startingScale = 1.2;
+      // }else if(window.innerWidth > 768){
+      //   startingScale = 1.3;
+      // }else if(window.innerWidth > 1000){
+      //   startingScale = 1.65;
+      // }
 
 
-      let scaleOne = Math.max(1, 1 + (scrollTopOffset / 50));
+
+
+      let scaleOne = Math.max(1, startingScale + (scrollTopOffset / 50));
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
+
+      // console.log(scaleOne)
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -237,23 +262,32 @@
       }else{
         thirdBigCircle.classList.add('hidden');
       }
+
+      // console.log(top);
       //Scale and move big dot as the user scrolls
-      if((e.target.scrollTop >= (amountSection.offsetTop -  175)) && top < 20){
+      if(top <= 1){
+        firstBigCircle.style.transform = `translateX(-50%) scale(1)  translateZ(0)`;
+
+      }
+      if((e.target.scrollTop >= (amountSection.offsetTop + 10)) && top < 14.5){
         //Ramp up the zoom speed for the last circle as there is quite a bit of scrolling required to get to the end
         firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne <= 16 ? scaleOne : scaleTwo})  translateZ(0)`;
         firstBigCircle.style.position = `fixed`;
         firstBigCircle.style.top = top + '%';
       }else{
         firstBigCircle.style.position = `absolute`;
-        firstBigCircle.style.top = '-9%';
-        if(top > 20){
+        firstBigCircle.style.top = '0.5px';
+        if(top > 14.5){
           firstBigCircle.style.bottom = '0';
-          firstBigCircle.style.top = '92%';
+          firstBigCircle.style.top = '';
         }
 
       }
 
-      let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (scrollSectionContentLast.offsetTop + dotGrid.offsetTop + 20);
+      console.log(e.target.scrollTop)
+      console.log((dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight))
+
+      let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight);
       let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
 
       let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (balanceSection.offsetTop - balanceSectionHeight) );
@@ -271,10 +305,10 @@
 <div class="bg">
   <div class="scroll-section">
 
-    <section class="hero-section">
+    <section class="hero-section container container--width">
       <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
-      <div class="hero-section__content container">
+      <div class="hero-section__content">
         <p>
           By joining Future Super, you’re also joining a movement! We’re fighting for a future free from climate change and inequality.
         </p>
@@ -286,7 +320,7 @@
         </p>
       </div>
 
-      <div class="container">
+      <div class="">
         <div class="explain-section explain-section--first">
           <div class="explain-section__content hasArrow">
             <div>
@@ -637,19 +671,23 @@
             </g>
           </svg>
         </div>
-        <div id="journeySection11" class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all hasArrow">
-            <p>
-              But <span class="highlighted--white"><strong>$3.4 trillion</strong></span> is about to look like nothing. Wait until you see how big the divestment movement is....
-            </p>
-          </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection12')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
-        </div>
+    </div>
+
+    <div class="journey-section-2 smaller-dots-bg">
+      <div id="journeySection11" class="journey-section__content">
+        <section class="journey-section__block journey-section__block--all hasArrow">
+          <p>
+            But <span class="highlighted--white"><strong>$3.4 trillion</strong></span> is about to look like nothing. Wait until you see how big the divestment movement is....
+          </p>
+        </section>
+
+        <svg on:click="{() => scrollToNextSection('#journeySection12')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
+      </div>
 
       <div id="journeySection12" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
@@ -665,63 +703,60 @@
         </svg>
       </div>
 
-        <div id="journeySection13" class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all hasArrow">
-            <p>
-              To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
-            </p>
-          </section>
-          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
-            {#each Array(thirdActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
-            {/each}
-          </div>
-
-          <svg on:click="{() => scrollToNextSection('#journeySection14')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+      <div id="journeySection13" class="journey-section__content">
+        <section class="journey-section__block journey-section__block--all hasArrow">
+          <p>
+            To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
+          </p>
+        </section>
+        <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
+          {#each Array(thirdActiveSet) as _, index (index)}
+            <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
+          {/each}
         </div>
 
+        <svg on:click="{() => scrollToNextSection('#journeySection14')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
+      </div>
 
-        <div id="journeySection14" class="journey-section__content smaller-dots-bg">
-          <section class="journey-section__block journey-section__block--all hasArrow">
-            <p>
-              What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
-            </p>
-          </section>
-          <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
-            {#each Array(fourthActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
-            {/each}
-          </div>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection15')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+      <div id="journeySection14" class="journey-section__content">
+        <section class="journey-section__block journey-section__block--all hasArrow">
+          <p>
+            What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
+          </p>
+        </section>
+        <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
+          {#each Array(fourthActiveSet) as _, index (index)}
+            <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
+          {/each}
         </div>
 
-        <div id="journeySection15" class="journey-section__content">
-          <section class="journey-section__block journey-section__block--all hasArrow">
-            <p>
-              You’re probably starting to wonder... what do all those tiny dots add up to?
-            </p>
-          </section>
-          <svg on:click="{() => scrollToNextSection('#journeySectionEnd')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
-        </div>
+        <svg on:click="{() => scrollToNextSection('#journeySection15')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
+      </div>
 
-      <div id="journeySectionEnd" class="journey-section__content">
-
+      <div id="journeySection15" class="journey-section__content">
+        <section class="journey-section__block journey-section__block--all hasArrow">
+          <p>
+            You’re probably starting to wonder... what do all those tiny dots add up to?
+          </p>
+        </section>
+        <svg on:click="{() => scrollToNextSection('#journeySectionEnd')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
       </div>
     </div>
-
+    <div id="journeySectionEnd" class="journey-section__content">
+    </div>
     <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
       <div class="amount-section__circle amount-section__circle--1">
         <div class="amount-section__amount center">
@@ -745,7 +780,7 @@
       </div>
     </section>
 
-    <section class="amount-section-info">
+    <section class="amount-section-info container--width">
       <div class="container">
         <p>That’s a lot of money.</p>
         <div class="block-quote">
@@ -761,9 +796,9 @@
     </section>
 
 
-    <section class="download-section">
+    <section class="download-section container--width">
       <div class="download-section__action">
-        <div class="container">
+        <div class="container  container--width">
           <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> for more content like this! </p>
         </div>
 
@@ -785,7 +820,7 @@
 
       </div>
 
-      <div class="container download-section__sources">
+      <div class="container  container--width download-section__sources">
         <p class="download-section__sources--heading">Sources:</p>
         <ul class="download-section__sources--list">
 
@@ -804,7 +839,7 @@
 
       </div>
 
-      <div class="container download-section__disclaimer">
+      <div class="container  container--width download-section__disclaimer">
         <p class="download-section__disclaimer--heading">Disclaimer</p>
         <p>Information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account. You should consider whether Future Super’s products are right for your individual objectives and needs and seek personal financial advice. Before making a decision to acquire, hold or continue to hold an interest in Future Super, please read the PDS and check our Target Market Determination (TMD) available at https://www.futuresuper.com.au/documents-and-forms/. Future Super does not accept any responsibility for any loss or damage that may result from reliance on, or the use of, any information contained on this site. The contents of this website are exclusively owned by Future Super. You must not use or disclose them for any other reason than for the purposes for which they were supplied.</p>
 
@@ -1036,14 +1071,19 @@
   }
 
   #journeySectionEnd{
-    padding-bottom: 0;
+    //margin-top: auto;
+    //padding-bottom: 100%;
   }
 
-  .journey-section{
-    min-height: 8000px;
-    height: 100%;
+  .journey-section, .journey-section-2{
     position: relative;
     width: 100%;
+
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
 
     animation: bigger 1s ease-in-out;
     background-image: radial-gradient(#424242 8px, transparent 9px);
@@ -1064,10 +1104,7 @@
       align-items: center;
       scroll-snap-align: start;
       position: relative;
-      height: 100%;
-      margin-top: 100%;
-      padding-top: 50%;
-      padding-bottom: 100%;
+      //margin-top: auto;
 
       &--top{
         justify-content: start;
@@ -1117,11 +1154,20 @@
     &:global(.animate-small) {
       //Smaller dots
       animation: smallest 1s ease-in-out;
-      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-image:  radial-gradient(#424242 0.5px, transparent 0);
       background-size: 2px 2px;
       //transition: all 1.5s ease-in-out;
     }
     }
+
+  .journey-section{
+    justify-content: space-between;
+  }
+
+  .journey-section-2{
+    justify-content: space-around;
+  }
+
 
   .active-dot{
     width: 16.5px;
@@ -1157,8 +1203,8 @@
     left: 50%;
     //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 36px;
-    max-width: 312px;
+    margin-top: 26px;
+    max-width: 311px;
 
     &__smaller{
       gap: 2px;
@@ -1171,8 +1217,8 @@
       }
 
       &--2{
-        margin-top: 10px;
-        margin-left: -3px;
+        margin-top: 20px;
+        margin-left: -4px;
       }
     }
   }
@@ -1196,7 +1242,7 @@
 
   .amount-section{
     pointer-events: none;
-    overflow-x: clip;
+    overflow: clip;
     height: 2000px;
     position: relative;
     &__circle{
@@ -1212,20 +1258,26 @@
         border-radius: 500px;
         transform-origin: bottom;
         transition: all ease-in-out;
+
       }
 
       &--1{
         //background-color: #424242;
         z-index: 1;
         transform: translateX(-50%) scale(1) translateZ(0);
+        border-radius: 0 0 50% 50%;
 
-        background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+        @media (min-width: 600px) {
+          transform: translateX(-50%) scale(1.65) translateZ(0);
+        }
+
+        background-image:  radial-gradient(#424242 1.3px, transparent 2px);
         background-size: 6px 6px;
 
         &:global(.animate-small) {
           //Smaller dots
           animation: smallest 1s ease-in-out;
-          background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+          background-image: radial-gradient(#424242 0.5px, transparent 0);
           background-size: 2px 2px;
           //transition: all 1.5s ease-in-out;
         }
@@ -1294,7 +1346,6 @@
 
   .amount-section-info{
     padding: 8rem 0;
-    margin-top: 460px;
     font-size: 1.25rem;
     background-color: #212121;
     position: relative;
@@ -1404,6 +1455,13 @@
 
   .container{
     padding: 0 40px 0 40px;
+
+
+    &--width{
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .test{
@@ -1506,7 +1564,7 @@
     }
 
     100% {
-      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-image: radial-gradient(#424242 0.5px, transparent 0);
       background-size: 2px 2px;
     }
   }
