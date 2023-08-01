@@ -7,9 +7,9 @@ emailOpeningTime: 9am
 emailClosingTime: 5pm
 phone: 1300 658 422
 phoneOpeningTime: 10am
-phoneClosingTime: 4pm    We will not be available by phone from Thursday 3
-  August to Friday 4 August as we will be undergoing scheduled maintenance. If
-  you have any urgent enquiries, please let us know via email at
+phoneClosingTime: 4pm                      We will not be available by phone
+  from Thursday 3 August to Friday 4 August as we will be undergoing scheduled
+  maintenance. If you have any urgent enquiries, please let us know via email at
   info@futuresuper.com.au. We will be available to talk at 1300 658 422  from
   10am on Monday 7 August.
 mediaEmail: media@futuresuper.com.au
