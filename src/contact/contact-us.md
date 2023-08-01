@@ -12,8 +12,9 @@ mediaEmail: media@futuresuper.com.au
 postLine1: PO Box 1282
 postLine2: Albury, NSW 2640
 ---
-
 Please note, our team will not be available on National and NSW public holidays.
+
+If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
 
 You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
