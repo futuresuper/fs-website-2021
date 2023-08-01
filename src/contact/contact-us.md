@@ -7,7 +7,11 @@ emailOpeningTime: 9am
 emailClosingTime: 5pm
 phone: 1300 658 422
 phoneOpeningTime: 10am
-phoneClosingTime: 4pm
+phoneClosingTime: 4pm we will not be available by phone between Thursday 3
+  August to Friday 4 August as we will be undergoing scheduled maintenance. If
+  you have any urgent enquiries, please let us know via email at
+  info@futuresuper.com.au.   We will be available to talk at 1300 658 422  from
+  10am on Monday 7 Augus
 mediaEmail: media@futuresuper.com.au
 postLine1: PO Box 1282
 postLine2: Albury, NSW 2640
