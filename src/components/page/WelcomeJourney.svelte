@@ -1695,9 +1695,9 @@
         transform: translateY(-52px);
 
         &:global(.count){
-          transition: transform 0.2s ease-in-out;
+          transition: transform 0.25s ease-in-out;
           transform: translateY(-104px);
-          transition-delay: 5s;
+          transition-delay: 1.7s;
         }
       }
 
@@ -1705,7 +1705,7 @@
         //animation: fullCount 0s;
 
         &:global(.count){
-          animation: fullCount 5s 1;
+          animation: fullCount 2s 1;
         }
       }
 
@@ -1715,7 +1715,7 @@
 
 
         &:global(.count){
-          animation: fullCountSmooth 0.5s 10;
+          animation: fullCountSmooth 0.2s 10;
         }
       }
     }
