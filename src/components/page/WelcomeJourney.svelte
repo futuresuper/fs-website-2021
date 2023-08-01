@@ -53,11 +53,11 @@
             timer = null;
           }
           timer = setTimeout(() =>{
-            entry.target.parentElement.classList.add('show-arrow')
+            entry.target.classList.add('show-arrow')
           }, isModal ? 8000 : 1500);
 
         }else{
-          entry.target.parentElement.classList.remove('show-arrow')
+          entry.target.classList.remove('show-arrow')
         }
       })
     })
@@ -143,29 +143,29 @@
         counterHundreds.classList.add('count');
 
 
-        if(timer){
-          clearTimeout(timer);
-          timer = null;
-        }
-        timer = setTimeout(() =>{
-          balanceSection.classList.add('show-arrow')
-          // counterSingles.classList.remove('count');
-          // counterTens.classList.remove('count');
-
-          // counterSingles.style.transform = 'translateY(-520px)';
-          // counterSingles.style.transition = 'transform 0s ease-in-out';
-          // counterSingles.style.transitionDelay = '';
-          //
-          // counterTens.style.transform = 'translateY(-520px)';
-          // counterTens.style.transition = 'transform 0s ease-in-out';
-          // counterTens.style.transitionDelay = '';
-          //
-          // counterHundreds.style.transform = 'translateY(-104px)';
-          // counterHundreds.style.transition= 'transform 0.5s ease-in-out';
-          // counterHundreds.style.transitionDelay = '';
-        }, 8000);
+        // if(timer){
+        //   clearTimeout(timer);
+        //   timer = null;
+        // }
+        // timer = setTimeout(() =>{
+        //   balanceSection.classList.add('show-arrow')
+        //   // counterSingles.classList.remove('count');
+        //   // counterTens.classList.remove('count');
+        //
+        //   // counterSingles.style.transform = 'translateY(-520px)';
+        //   // counterSingles.style.transition = 'transform 0s ease-in-out';
+        //   // counterSingles.style.transitionDelay = '';
+        //   //
+        //   // counterTens.style.transform = 'translateY(-520px)';
+        //   // counterTens.style.transition = 'transform 0s ease-in-out';
+        //   // counterTens.style.transitionDelay = '';
+        //   //
+        //   // counterHundreds.style.transform = 'translateY(-104px)';
+        //   // counterHundreds.style.transition= 'transform 0.5s ease-in-out';
+        //   // counterHundreds.style.transitionDelay = '';
+        // }, 8000);
       }else{
-        timer = null;
+        // timer = null;
         // counterSingles.style.transform = 'translateY(0)';
         // counterSingles.style.transition = 'transform 0s ease-in-out';
         // counterSingles.style.transitionDelay = '';
@@ -177,7 +177,7 @@
         // counterHundreds.style.transform = 'translateY(-52px)';
         // counterHundreds.style.transition= 'transform 0s ease-in-out';
         // counterHundreds.style.transitionDelay = '0s';
-        balanceSection.classList.remove('show-arrow')
+        // balanceSection.classList.remove('show-arrow')
       }
 
 
@@ -268,7 +268,16 @@
       if(top <= 1){
         firstBigCircle.style.transform = `translateX(-50%) scale(1)  translateZ(0)`;
 
+      }else{
+
       }
+
+      if(top >= 1.4){
+        firstBigCircle.classList.add('animate-smallest');
+      }else{
+        firstBigCircle.classList.remove('animate-smallest');
+      }
+
       if((e.target.scrollTop >= (amountSection.offsetTop + 10)) && top < 14.5){
         //Ramp up the zoom speed for the last circle as there is quite a bit of scrolling required to get to the end
         firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne <= 16 ? scaleOne : scaleTwo})  translateZ(0)`;
@@ -284,8 +293,8 @@
 
       }
 
-      console.log(e.target.scrollTop)
-      console.log((dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight))
+      // console.log(e.target.scrollTop)
+      // console.log((dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight))
 
       let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight);
       let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
@@ -335,13 +344,13 @@
               <p class="explain-section__content--heading">$1.3 million</p>
               <p class="explain-section__content--text">It’s the median house price in Sydney</p>
             </div>
-          </div>
 
-          <svg on:click="{() => scrollToNextSection('#explainSection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+            <svg on:click="{() => scrollToNextSection('#explainSection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
+          </div>
         </div>
 
         <div id="explainSection2" class="explain-section explain-section--second">
@@ -361,14 +370,14 @@
               <p class="explain-section__content--heading">$1.3 million</p>
               <p class="explain-section__content--text">It’s about the same amount that subsidies to fossil fuel companies cost Australia <strong>every hour.</strong></p>
             </div>
+
+            <svg on:click="{() => scrollToNextSection('#explainSection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </div>
 
-
-          <svg on:click="{() => scrollToNextSection('#explainSection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
         </div>
 
         <div id="explainSection3" class="explain-section explain-section--last">
@@ -392,13 +401,15 @@
               <p class="explain-section__content--heading">$1.3 million</p>
               <p class="explain-section__content--text">It’s paid 24 hours a day, 7 days a week. A total of...</p>
             </div>
+
+            <svg on:click="{() => scrollToNextSection('#bigCircle')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </div>
 
-          <svg on:click="{() => scrollToNextSection('#bigCircle')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
       </div>
 
@@ -477,28 +488,28 @@
         <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top hasArrow">
           <p>
-            That's a lot of money right? But Australian's have more in their super, way more. <span class="highlighted--white"><strong>$3.4 trillion</strong> <span class="reference text-muted">3</span></span> to be precise. We can use that super to fight back against climate change.
-            <br><br>That makes <span class="highlighted">$1.3 million</span> look like just a tiny dot.
-        </div>
+            That's a lot of money, right? But compared to the <span class="highlighted--white"><strong>$3.4 trillion</strong></span> Australians have in their super,  <span class="highlighted">$200 million</span> looks tiny. And we can use that super to fight back climate change.</p>
+          <svg on:click="{() => scrollToNextSection('#journeySection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection2')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+        </div>
       </div>
 
       <div id="journeySection2" class="journey-section__content">
         <div class="journey-section__block journey-section__block--all hasArrow">
           <p>
             First up, let’s have a think about what <span class="highlighted--white"><strong>$3.4 trillion</strong></span> could do!</p>
+          <svg on:click="{() => scrollToNextSection('#journeySection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </div>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection3')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
 
 
@@ -532,14 +543,13 @@
                 </div>
               {/if}
             </div>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection3-5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </div>
-
-
-        <svg on:click="{() => scrollToNextSection('#journeySection3-5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
 
       </div>
 
@@ -556,6 +566,11 @@
               </p>
             {/if}
 
+            <svg on:click="{() => scrollToNextSection('#journeySection4')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
           <div class="active-dot-set">
             {#each Array(firstActiveSet) as _, index (index)}
@@ -563,11 +578,7 @@
             {/each}
           </div>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection4')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
 
 
@@ -577,13 +588,15 @@
           <p>
             If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be bigger, but maybe not by as much as you think. <span class="reference text-muted">6</span>
           </p>
+
+          <svg on:click="{() => scrollToNextSection('#journeySection5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
 
         <div id="journeySection5" class="journey-section__content">
@@ -591,18 +604,18 @@
             <p>
               It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more. <span class="reference text-muted">7</span>
             </p>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection6')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
           <div class="active-dot-set">
             {#each Array(secondActiveSet) as _, index (index)}
               <div style="transition-delay: {index * 100}ms" class="active-dot hidden"></div>
             {/each}
           </div>
-
-          <svg on:click="{() => scrollToNextSection('#journeySection6')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
         </div>
 
         <div id="journeySection6" class="journey-section__content">
@@ -610,13 +623,15 @@
             <p>
               For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest. <span class="reference text-muted">8</span>
             </p>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection7')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection7')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
 
         <div id="journeySection7" class="journey-section__content">
@@ -624,83 +639,94 @@
             <p>
               What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change. <span class="reference text-muted">9</span>
             </p>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection8')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection8')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
         <div id="journeySection8" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               In Australia, some super funds invest in fossil fuel companies but say they’ll pressure them to behave responsibly. <span class="reference text-muted">10</span> But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”. <span class="reference text-muted">11</span>
             </p>
-          </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection9')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+            <svg on:click="{() => scrollToNextSection('#journeySection9')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
+          </section>
         </div>
         <div id="journeySection9" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               Future Super is just a tiny drop in the global divestment movement.
             </p>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection10')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection10')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
         <div id="journeySection10" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
               After so much scrolling, you might have forgotten - all these tiny dots are still representing that <span class="highlighted--white"><strong>$3.4 trillion</strong></span> pool of super. And yep, that’s a lot of dots!
             </p>
+
+            <svg on:click="{() => scrollToNextSection('#journeySection11')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow Down">
+                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+              </g>
+            </svg>
           </section>
 
-          <svg on:click="{() => scrollToNextSection('#journeySection11')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Arrow Down">
-              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-            </g>
-          </svg>
+
         </div>
 
-    </div>
-
-    <div class="journey-section-2 smaller-dots-bg">
       <div id="journeySection11" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
             But <span class="highlighted--white"><strong>$3.4 trillion</strong></span> is about to look like nothing. Wait until you see how big the divestment movement is....
           </p>
+
+          <svg on:click="{() => scrollToNextSection('#journeySection12')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection12')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
+
+    </div>
+
+    <div class="journey-section-2 smaller-dots-bg">
 
       <div id="journeySection12" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
             The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels. <span class="reference text-muted">12</span>
           </p>
+
+          <svg on:click="{() => scrollToNextSection('#journeySection13')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection13')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
 
       <div id="journeySection13" class="journey-section__content">
@@ -708,6 +734,12 @@
           <p>
             To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
           </p>
+
+          <svg on:click="{() => scrollToNextSection('#journeySection14')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
         <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
           {#each Array(thirdActiveSet) as _, index (index)}
@@ -715,11 +747,7 @@
           {/each}
         </div>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection14')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
 
 
@@ -728,6 +756,11 @@
           <p>
             What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
           </p>
+          <svg on:click="{() => scrollToNextSection('#journeySection15')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
         <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
           {#each Array(fourthActiveSet) as _, index (index)}
@@ -735,11 +768,7 @@
           {/each}
         </div>
 
-        <svg on:click="{() => scrollToNextSection('#journeySection15')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
 
       <div id="journeySection15" class="journey-section__content">
@@ -747,12 +776,14 @@
           <p>
             You’re probably starting to wonder... what do all those tiny dots add up to?
           </p>
+
+          <svg on:click="{() => scrollToNextSection('#journeySectionEnd')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow Down">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+            </g>
+          </svg>
         </section>
-        <svg on:click="{() => scrollToNextSection('#journeySectionEnd')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Arrow Down">
-            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-          </g>
-        </svg>
+
       </div>
     </div>
     <div id="journeySectionEnd" class="journey-section__content">
@@ -760,7 +791,7 @@
     <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
       <div class="amount-section__circle amount-section__circle--1">
         <div class="amount-section__amount center">
-          <p class="amount-section__amount--heading">$60 trillion</p>
+          <p class="amount-section__amount--heading">$60<br> trillion</p>
           <p class="amount-section__amount--description">That's how big the divestment movement is <span class="reference text-muted">17</span>.</p>
         </div>
 
@@ -1073,6 +1104,7 @@
   #journeySectionEnd{
     //margin-top: auto;
     //padding-bottom: 100%;
+    padding-top: 0;
   }
 
   .journey-section, .journey-section-2{
@@ -1105,6 +1137,7 @@
       scroll-snap-align: start;
       position: relative;
       //margin-top: auto;
+      padding-top: 60%;
 
       &--top{
         justify-content: start;
@@ -1279,6 +1312,13 @@
           animation: smallest 1s ease-in-out;
           background-image: radial-gradient(#424242 0.5px, transparent 0);
           background-size: 2px 2px;
+          //transition: all 1.5s ease-in-out;
+        }
+
+        &:global(.animate-smallest) {
+          //Smaller dots
+          background-image: radial-gradient(#424242 1.3px, transparent 2px);
+          background-size: 1px 1px;
           //transition: all 1.5s ease-in-out;
         }
         //opacity: 0;
@@ -1613,7 +1653,7 @@
 
   .down-arrow{
     position: absolute;
-    top: 70%;
+    bottom: -200px;
     right: 0;
     animation: bounce 1s infinite;
     z-index: 100;
@@ -1783,6 +1823,10 @@
     100%{
       transform: translateY(-104px);
     }
+  }
+
+  .hasArrow{
+    position: relative;
   }
 
 
