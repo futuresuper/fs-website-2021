@@ -219,8 +219,7 @@
         dotGrid2.classList.remove('animate');
       }
 
-
-      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 1000)){
+      if(e.target.scrollTop >= (smallestDotsSection.offsetTop - 999)){
         dotGrid2.classList.add('animate-small');
         firstBigCircle.classList.add('animate-small');
       }else{
@@ -249,7 +248,7 @@
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
 
-      // console.log(scaleOne)
+      console.log(top)
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -278,7 +277,10 @@
         firstBigCircle.classList.remove('animate-smallest');
       }
 
-      if((e.target.scrollTop >= (amountSection.offsetTop + 10)) && top < 14.5){
+      console.log(e.target.scrollTop)
+      console.log((amountSection.offsetTop + 10))
+      console.log(top)
+      if((e.target.scrollTop >= (amountSection.offsetTop + 10)) && top < 20){
         //Ramp up the zoom speed for the last circle as there is quite a bit of scrolling required to get to the end
         firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne <= 16 ? scaleOne : scaleTwo})  translateZ(0)`;
         firstBigCircle.style.position = `fixed`;
@@ -286,7 +288,7 @@
       }else{
         firstBigCircle.style.position = `absolute`;
         firstBigCircle.style.top = '0.5px';
-        if(top > 14.5){
+        if(top > 20){
           firstBigCircle.style.bottom = '0';
           firstBigCircle.style.top = '';
         }
@@ -553,7 +555,7 @@
 
       </div>
 
-        <div id="journeySection3-5" class="journey-section__content">
+        <div id="journeySection3-5" class="journey-section__content { guess && guess === 1 ? 'journey-section__content--right' : 'journey-section__content--wrong'}">
           <section class="journey-section__block journey-section__block--all hasArrow">
 
             {#if guess && guess === 1}
@@ -599,7 +601,7 @@
 
       </div>
 
-        <div id="journeySection5" class="journey-section__content">
+        <div id="journeySection5" class="journey-section__content journey-section__content--amount-more">
           <section class="journey-section__block journey-section__block--2 hasArrow">
             <p>
               It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more. <span class="reference text-muted">7</span>
@@ -1102,9 +1104,8 @@
   }
 
   #journeySectionEnd{
-    //margin-top: auto;
-    //padding-bottom: 100%;
     padding-top: 0;
+    height: 0;
   }
 
   .journey-section, .journey-section-2{
@@ -1138,6 +1139,7 @@
       position: relative;
       //margin-top: auto;
       padding-top: 60%;
+      height: 360px;
 
       &--top{
         justify-content: start;
@@ -1150,6 +1152,30 @@
         justify-content: start;
         padding-top: 5%;
         padding-bottom: 20%;
+      }
+
+      &--wrong{
+        & > .journey-section__block{
+          margin-bottom: -30px;
+        }
+      }
+
+      &--right{
+        & > .journey-section__block{
+          margin-bottom: -13px;
+        }
+
+        & > .active-dot-set{
+          margin-top: 31px;
+        }
+      }
+
+      &--amount-more{
+
+        & > .active-dot-set{
+          margin-left: -50px;
+          margin-top: 25px;
+        }
       }
     }
       &__block{
@@ -1175,6 +1201,10 @@
         &--2{
           //margin-top: 499px;
         }
+
+        &--wrong{
+          margin-bottom: -30px;
+        }
       }
 
     &:global(.animate) {
@@ -1186,9 +1216,9 @@
     }
     &:global(.animate-small) {
       //Smaller dots
-      animation: smallest 1s ease-in-out;
+      animation: smallest 0.4s ease-in-out;
       background-image:  radial-gradient(#424242 0.5px, transparent 0);
-      background-size: 2px 2px;
+      background-size: 3px 3px;
       //transition: all 1.5s ease-in-out;
     }
     }
@@ -1217,9 +1247,9 @@
   }
 
   .top-dot{
-    top: 3.5px;
-    left: 50%;
-    transform: translateX(-50%) scale(1.04);
+    top: 2.7px;
+    left: 49.9%;
+    transform: translateX(-50%) scale(1.06);
     position: absolute;
     background-color: #161616;
 
@@ -1236,7 +1266,7 @@
     left: 50%;
     //transform: translateX(-50%);
     z-index: 2;
-    margin-top: 26px;
+    margin-top: 54px;
     max-width: 311px;
 
     &__smaller{
@@ -1276,7 +1306,7 @@
   .amount-section{
     pointer-events: none;
     overflow: clip;
-    height: 2000px;
+    height: 2600px;
     position: relative;
     &__circle{
       display: flex;
@@ -1286,8 +1316,8 @@
       &--1, &--2, &--3{
         position: absolute;
         left: 50%;
-        width: 630px;
-        height: 630px;
+        height: 100vh;
+        aspect-ratio: 1 /1;
         border-radius: 500px;
         transform-origin: bottom;
         transition: all ease-in-out;
@@ -1309,9 +1339,10 @@
 
         &:global(.animate-small) {
           //Smaller dots
-          animation: smallest 1s ease-in-out;
+          animation: smallest 0.4s ease-in-out;
           background-image: radial-gradient(#424242 0.5px, transparent 0);
-          background-size: 2px 2px;
+          background-size: 3px 3px;
+
           //transition: all 1.5s ease-in-out;
         }
 
@@ -1595,17 +1626,20 @@
     100% {
       background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
       background-size: 6px 6px;
+
     }
   }
 
   @keyframes smallest {
     0% {
-      background-size: 24.5px 23.5px;
+      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-size: 6px 6px;
     }
 
     100% {
       background-image: radial-gradient(#424242 0.5px, transparent 0);
-      background-size: 2px 2px;
+      background-size: 3px 3px;
+
     }
   }
 
