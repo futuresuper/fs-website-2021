@@ -971,6 +971,7 @@
     align-items: center;
     min-height: 100vh;
     position: relative;
+    justify-content: stretch;
 
     scroll-snap-align: center;
 
@@ -1021,6 +1022,7 @@
       display: flex;
       align-items: start;
       gap: 0.5rem;
+      width: 100%;
 
       &--heading{
         cursor: pointer;
@@ -1201,6 +1203,12 @@
         background-color: rgba(21,21,21, 0.85);
         font-size: 1.25rem;
         z-index: 3;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          text-align: center;
+        }
+
         p{
           margin: 0;
         }
