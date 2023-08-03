@@ -95,7 +95,13 @@
       //then multiply by the amount of rows in 65px
       //then divide the amount of dots by the amount in a 65px window
       //then multiple that to get how many times to show 65px to get the height
-      dotGrid.style.height = (17000 / ((window.innerWidth / 25) * 3) * 75) + 'px';
+      let dotGridHeight = 375;
+
+      if(window.innerWidth >= 500 && window.innerWidth <= 768){
+        dotGridHeight = 600;
+      }
+
+      dotGrid.style.height = (17000 / ((dotGridHeight / 25) * 3) * 75) + 'px';
       dotGrid2.style.height = (300000 / ((window.innerWidth / 6) * 11) * 75) + 'px';
 
       // const test = document.getElementById('journeySection11');
@@ -248,7 +254,6 @@
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
 
-      console.log(top)
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -277,9 +282,6 @@
         firstBigCircle.classList.remove('animate-smallest');
       }
 
-      console.log(e.target.scrollTop)
-      console.log((amountSection.offsetTop + 10))
-      console.log(top)
       if((e.target.scrollTop >= (amountSection.offsetTop + 10)) && top < 20){
         //Ramp up the zoom speed for the last circle as there is quite a bit of scrolling required to get to the end
         firstBigCircle.style.transform = `translateX(-50%) scale(${scaleOne <= 16 ? scaleOne : scaleTwo})  translateZ(0)`;
@@ -1138,8 +1140,8 @@
       scroll-snap-align: start;
       position: relative;
       //margin-top: auto;
-      padding-top: 60%;
-      height: 360px;
+      //padding-top: 60%;
+      height: 460px;
 
       &--top{
         justify-content: start;
@@ -1158,6 +1160,13 @@
         & > .journey-section__block{
           margin-bottom: -30px;
         }
+
+        & > .active-dot-set{
+          @media (max-width: 411px) {
+            margin-top: 44px;
+          }
+          margin-top: 69px;
+        }
       }
 
       &--right{
@@ -1166,7 +1175,10 @@
         }
 
         & > .active-dot-set{
-          margin-top: 31px;
+          @media (max-width: 388px) {
+            margin-top: 24px;
+          }
+          margin-top: 45px;
         }
       }
 
@@ -1174,7 +1186,11 @@
 
         & > .active-dot-set{
           margin-left: -50px;
-          margin-top: 25px;
+
+          @media (max-width: 352px) {
+            margin-top: 25px;
+          }
+          margin-top: 49px;
         }
       }
     }
@@ -1272,16 +1288,77 @@
     &__smaller{
       gap: 2px;
       margin-top: 12px;
-      width: 341px;
+      max-width: 320px;
 
       &--1{
-        margin-top: 18px;
-        margin-left: -4px;
+        @media (min-width: 320px) {
+          margin-top: 15px;
+          margin-left: 2px;
+        }
+
+        @media (min-width: 330px) {
+          margin-top: 9px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 340px) {
+          margin-top: 10px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 350px) {
+          margin-top: 8px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 351px) {
+          margin-top: 14px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 432px) {
+          margin-top: 17px;
+          margin-left: 4px;
+        }
+        @media (min-width: 491px) {
+          margin-top: 13px;
+          margin-left: 4px;
+        }
+
+
+
       }
 
       &--2{
-        margin-top: 20px;
-        margin-left: -4px;
+        @media (min-width: 320px) {
+          margin-top: 15px;
+          margin-left: 2px;
+        }
+
+
+        @media (min-width: 350px) {
+          margin-top: 8px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 351px) {
+          margin-top: 14px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 432px) {
+          margin-top: 10px;
+          margin-left: 4px;
+        }
+        @media (min-width: 450px) {
+          margin-top: 13px;
+          margin-left: 4px;
+        }
+
+        @media (min-width: 493px) {
+          margin-top: 10px;
+          margin-left: 4px;
+        }
       }
     }
   }
