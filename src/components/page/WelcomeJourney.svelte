@@ -53,7 +53,7 @@
     const observerArrow = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
-          let isModal = entry.target.classList.contains('question-modal');
+          let isModal = entry.target.classList.contains('journey-section__content--form');
           if(timer){
             clearTimeout(timer);
             timer = null;
@@ -527,8 +527,8 @@
       </div>
 
 
-      <div  id="journeySection3" class="journey-section__content  journey-section__content--form">
-          <div class="question-modal hasArrow">
+      <div  id="journeySection3" class="journey-section__content  journey-section__content--form hasArrow">
+          <div class="question-modal">
             <div class="question-modal__info">
               <div class="question-modal__badge">Let's guess</div>
               <p class="question-modal__label {!guess ? 'question-modal__label--green' : ''}">Select Your Answer </p>
@@ -558,12 +558,13 @@
               {/if}
             </div>
 
-            <svg on:click="{() => scrollToNextSection('#journeySection3-5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="Arrow Down">
-                <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
-              </g>
-            </svg>
+
           </div>
+        <svg on:click="{() => scrollToNextSection('#journeySection3-5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow Down">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M21.0831 32.6992L16.2743 27.1759L14.8916 28.3798L21.3083 35.7498L22.691 35.7498L29.1076 28.3798L27.7249 27.1759L22.9165 32.6988L22.9165 8.25269L21.0831 8.25269L21.0831 32.6992Z" fill="#3DFA52"/>
+          </g>
+        </svg>
 
       </div>
 
