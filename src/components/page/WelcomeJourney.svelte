@@ -941,6 +941,7 @@
 
   .hero-section{
     position: relative;
+    z-index: 2;
     overflow-x: clip;
 
     &::after, &::before{
@@ -957,12 +958,25 @@
     &::after{
       bottom: -5%;
       left: 0;
+
+      @media (min-width: 864px) {
+        bottom: 0;
+        right: -20%;
+        left: auto;
+        opacity: 20%;
+      }
     }
 
     &::before{
       top: -5%;
       right: -35%;
       transform: rotate(18deg);
+
+      @media (min-width: 864px) {
+        top: 0;
+        right: -20%;
+        opacity: 20%;
+      }
     }
 
     &__heading{
@@ -1000,6 +1014,11 @@
         bottom: 5%;
         left: -35%;
         transform: rotate(-18deg);
+
+        @media (min-width: 864px) {
+          left: -20%;
+          opacity: 20%;
+        }
       }
 
     }
@@ -1031,6 +1050,11 @@
         bottom: -5%;
         right: -75%;
         transform: rotate(18deg);
+
+        @media (min-width: 600px) {
+          right: -20%;
+          opacity: 20%;
+        }
       }
     }
 
@@ -1051,6 +1075,11 @@
         bottom: -5%;
         left: -75%;
         transform: rotate(-18deg);
+
+        @media (min-width: 864px) {
+          left: -20%;
+          opacity: 20%;
+        }
       }
     }
 
@@ -1224,7 +1253,7 @@
           }
 
           @media (min-width: 1024px) {
-            margin-top: 86px;
+            margin-top: 92px;
           }
 
           margin-top: 69px;
@@ -1365,6 +1394,10 @@
 
     &:global(.show){
       background-color: $green;
+    }
+
+    @media (min-width: 864px) {
+      left: 50%;
     }
   }
 
@@ -1607,6 +1640,10 @@
       opacity: 10%;
       top: 15%;
       right: -55%;
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
   }
 
