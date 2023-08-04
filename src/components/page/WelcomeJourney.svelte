@@ -18,6 +18,8 @@
 
   let explainSectionLast;
 
+  let appleDevice = true;
+
   function scrollToNextSection(section){
     scrollSection.classList.add('snap');
     let el = document.querySelector(section);
@@ -30,6 +32,10 @@
   }
 
   onMount(() => {
+
+    if (window.screen.width <= 864) {
+      appleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    }
 
     const observer = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
@@ -319,10 +325,10 @@
   });
 </script>
 
-<div class="bg">
+<div class="bg-main">
   <div class="scroll-section">
 
-    <section class="hero-section container container--width">
+    <section class="hero-section container container--width bg">
       <h1 class="hero-section__heading center">Welcome <br>to the<br> movement</h1>
 
       <div class="hero-section__content">
@@ -424,7 +430,7 @@
       <span id="bigCircle"></span>
     </section>
 
-    <section  class="balance-section">
+    <section  class="balance-section  container container--width bg">
       <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
@@ -491,7 +497,7 @@
       </svg>
     </section>
 
-    <div class="journey-section">
+    <div class="journey-section bg">
       <div  id="journeySection1" class="journey-section__content journey-section__content--top">
         <div class="active-dot top-dot"></div>
         <div class="journey-section__block journey-section__block--top hasArrow">
@@ -719,7 +725,7 @@
 
     </div>
 
-    <div class="journey-section-2 smaller-dots-bg">
+    <div class="journey-section-2 smaller-dots-bg bg">
 
       <div id="journeySection12" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
@@ -819,7 +825,7 @@
       </div>
     </section>
 
-    <section class="amount-section-info container--width">
+    <section class="amount-section-info container--width bg">
       <div class="container">
         <p>That’s a lot of money.</p>
         <div class="block-quote">
@@ -837,25 +843,50 @@
 
     <section class="download-section container--width">
       <div class="download-section__action">
-        <div class="container  container--width">
-          <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> for more content like this! </p>
+        <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> to learn more about the impact your money is having! </p>
+
+        <div class="download-section__images">
+          <div class="download-section__action--phones">
+            <img
+                    class="download-section__action--phones-mobile"
+                    src="/images/download-phones.svg"
+                    alt="Download Phones"
+            />
+
+            <img
+                    class="download-section__action--phones-desktop"
+                    src="/images/download-phones-desktop.svg"
+                    alt="Download Phones"
+            />
+          </div>
+
+          <div class="download-section__actions">
+            <div class="download-section__actions--buttons">
+              <a href="https://apps.apple.com/au/app/future-super/id1620110464" class="download-section__action--button {appleDevice ? '' : 'download-section__action--button-hide'}" target="_blank">
+                <img
+                        src="/images/download-button.svg"
+                        alt="Download Button"
+                />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app&pli=1" class="download-section__action--button  {appleDevice ? 'download-section__action--button-hide' : ''}" target="_blank">
+                <img
+                        src="/images/download-button-android.svg"
+                        alt="Download Button"
+                />
+              </a>
+            </div>
+
+            <div class="download-section__actions--qr">
+              <img
+                      src="/images/app-download-qr.svg"
+                      alt="QR code"
+              />
+            </div>
+
+          </div>
         </div>
 
-        <div class="download-section__action--phones">
-          <img
 
-                  src="/images/download-phones.svg"
-                  alt="Download Phones"
-          />
-        </div>
-
-
-        <a class="download-section__action--button" href="">
-          <img
-                  src="/images/download-button.svg"
-                  alt="Download Button"
-          />
-        </a>
 
       </div>
 
@@ -902,6 +933,10 @@
     width: 100%;
     background-color: #161616;
     color: #E0E0E0;
+
+    &-main{
+      background-color: #212121;
+    }
   }
 
   .hero-section{
@@ -1448,6 +1483,9 @@
         left: 50%;
         height: 100vh;
         aspect-ratio: 1 /1;
+        @media (min-width: 900px) {
+          aspect-ratio: 1.156 /1;
+        }
         border-radius: 500px;
         transform-origin: bottom;
         transition: all ease-in-out;
@@ -1455,7 +1493,7 @@
       }
 
       &--1{
-        //background-color: #424242;
+        background-color: #161616;
         z-index: 1;
         transform: translateX(-50%) scale(1) translateZ(0);
         border-radius: 0 0 50% 50%;
@@ -1487,6 +1525,10 @@
       }
 
       &--2{
+        @media (min-width: 900px) {
+          aspect-ratio: 1 /1;
+          left: 6.7%;
+        }
         background-color: #303030;
         transform: scale(0.0567) translateZ(0);
         bottom: 4px;
@@ -1499,6 +1541,10 @@
       }
 
       &--3{
+        @media (min-width: 900px) {
+          aspect-ratio: 1 /1;
+          left: 6.7%;
+        }
         background-color: $green;
         color: #212121;
         transform: scale(0.0126) translateZ(0);
@@ -1565,15 +1611,67 @@
   }
 
   .download-section{
-    background-color: #212121;
+    border-radius: 40px 40px 0 0;
+    background-color: #161616;
     &__heading{
       font-size: 1.875rem;
-      padding-top: 40px;
+      color: #E0E0E0;
+      padding: 40px 40px 0 40px;
+
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 864px) {
+        font-size: 3.375rem;
+        max-width: 615px;
+        margin-left: 40px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    }
+
+    &__images{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 4rem;
+
+      @media (min-width: 864px) {
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 9rem;
+        padding: 0 40px 0 40px;
+      }
+    }
+
+    &__actions{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      z-index: 10;
+      &--buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      &--qr{
+        @media (max-width: 864px) {
+          display: none;
+        }
+      }
+
     }
 
     &__action{
       background-color: #161616;
-      border-radius: 40px 40px 0 0;
+      border-radius: 40px;
+      overflow-y: clip;
+      overflow-x: clip;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1584,6 +1682,9 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        @media (min-width: 864px) {
+          width: fit-content;
+        }
 
         img{
           max-width: 277px;
@@ -1605,11 +1706,38 @@
           border-radius: 375px;
           filter: blur(90px);
           opacity: 65%;
+
+          @media (min-width: 864px) {
+            width: 200%;
+            height: 100%;
+            top: 40%;
+            left: -50%;
+            opacity: 70%;
+          }
+
+        }
+
+        &-mobile{
+          @media (min-width: 864px) {
+            display: none;
+          }
+        }
+        &-desktop{
+          @media (max-width: 864px) {
+            display: none;
+          }
         }
       }
 
       &--button{
         max-width: 230px;
+
+        &-hide{
+          @media (max-width: 864px) {
+            display: none;
+          }
+
+        }
       }
     }
 
