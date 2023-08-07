@@ -2,10 +2,10 @@
   import { onMount } from "svelte";
 
   //Green dots
-  const firstActiveSet = 37;
-  const secondActiveSet = 11;
-  const thirdActiveSet = 273;
-  const fourthActiveSet = 99;
+  const firstActiveSet = 1224;
+  const secondActiveSet = 391;
+  const thirdActiveSet = 3000;
+  const fourthActiveSet = 1580;
   let formModal;
 
   let guess = null;
@@ -40,13 +40,14 @@
     const observer = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
         if(entry.isIntersecting){
-          entry.target.classList.add('show')
-        }else{
-          entry.target.classList.remove('show')
+          for(let i = 0; i < entry.target.children.length; i++){
+            entry.target.children[i].classList.add('show');
+          }
+
         }
       })
     })
-    const animateElements = document.querySelectorAll('.hidden');
+    const animateElements = document.querySelectorAll('.active-dot-set');
     animateElements.forEach((el) => observer.observe(el));
     let timer = null;
 
@@ -346,7 +347,7 @@
       <div class="">
         <div class="explain-section explain-section--first">
           <div class="explain-section__content hasArrow">
-            <div>
+            <div class="explain-section__content--icon">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 12L12 5L21 12V23C21 23.5304 20.7893 24.0391 20.4142 24.4142C20.0391 24.7893 19.5304 25 19 25H5C4.46957 25 3.96086 24.7893 3.58579 24.4142C3.21071 24.0391 3 23.5304 3 23V12Z" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9 25V17H15V25" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -369,7 +370,7 @@
 
         <div id="explainSection2" class="explain-section explain-section--second">
           <div class="explain-section__content hasArrow">
-            <div>
+            <div class="explain-section__content--icon">
               <svg  viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="dollar-sign">
                   <path id="Vector" d="M12 2V22" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -396,7 +397,7 @@
 
         <div id="explainSection3" class="explain-section explain-section--last">
           <div class="explain-section__content hasArrow">
-            <div>
+            <div class="explain-section__content--icon">
               <svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="calendar-clock">
                   <path id="Vector" d="M21 7.5V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H8.5" stroke="#3DFA52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -589,7 +590,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(firstActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 100}ms" class="active-dot hidden"></div>
+              <div style="transition-delay: {index * 1.5}ms" class="active-dot hidden"></div>
             {/each}
           </div>
 
@@ -628,7 +629,7 @@
           </section>
           <div class="active-dot-set">
             {#each Array(secondActiveSet) as _, index (index)}
-              <div style="transition-delay: {index * 100}ms" class="active-dot hidden"></div>
+              <div style="transition-delay: {index * 1}ms" class="active-dot hidden"></div>
             {/each}
           </div>
         </div>
@@ -758,7 +759,7 @@
         </section>
         <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--1">
           {#each Array(thirdActiveSet) as _, index (index)}
-            <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
+            <div style="transition-delay: {index * 1}ms" class="active-dot hidden active-dot__smaller"></div>
           {/each}
         </div>
 
@@ -779,7 +780,7 @@
         </section>
         <div class="active-dot-set active-dot-set__smaller active-dot-set__smaller--2">
           {#each Array(fourthActiveSet) as _, index (index)}
-            <div style="transition-delay: {index * 15}ms" class="active-dot hidden active-dot__smaller"></div>
+            <div style="transition-delay: {index * 1}ms" class="active-dot hidden active-dot__smaller"></div>
           {/each}
         </div>
 
@@ -803,28 +804,31 @@
     </div>
     <div id="journeySectionEnd" class="journey-section__content">
     </div>
-    <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
-      <div class="amount-section__circle amount-section__circle--1">
-        <div class="amount-section__amount center">
-          <p class="amount-section__amount--heading">$60<br> trillion</p>
-          <p class="amount-section__amount--description">That's how big the divestment movement is <span class="reference text-muted">17</span>.</p>
-        </div>
-
-        <div class="amount-section__circle amount-section__circle--2">
+    <div class="container container--width p-0 overflow-x-clip">
+      <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
+        <div class="amount-section__circle amount-section__circle--1">
           <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading">$3.4 trillion</p>
-            <p class="amount-section__amount--description">Australia’s collective super savings.</p>
+            <p class="amount-section__amount--heading">$60<br> trillion</p>
+            <p class="amount-section__amount--description">That's how big the divestment movement is <span class="reference text-muted">17</span>.</p>
+          </div>
+
+          <div class="amount-section__circle amount-section__circle--2">
+            <div class="amount-section__amount center">
+              <p class="amount-section__amount--heading">$3.4 trillion</p>
+              <p class="amount-section__amount--description">Australia’s collective super savings.</p>
+            </div>
+          </div>
+
+          <div class="amount-section__circle amount-section__circle--3">
+            <div class="amount-section__amount center">
+              <p class="amount-section__amount--heading">$754 billon</p>
+              <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry.</p>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="amount-section__circle amount-section__circle--3">
-          <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading">$754 billon</p>
-            <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="amount-section-info container--width bg">
       <div class="container">
@@ -1107,14 +1111,18 @@
       gap: 0.5rem;
       width: 100%;
 
-      svg{
-        width: 24px;
-        height: 28px;
+      position: relative;
 
-        @media (min-width: 864px) {
-          width: 30px;
-          height: 36px;
+      &--icon{
+        svg{
+          width: 24px;
+          height: 28px;
 
+          @media (min-width: 864px) {
+            width: 30px;
+            height: 36px;
+
+          }
         }
       }
 
@@ -1217,6 +1225,21 @@
 
   .journey-section, .journey-section-2{
     position: relative;
+
+    @media (max-width: 1024px) {
+      margin-top: -10px;
+    }
+    @media (max-width: 768px) {
+      margin-top: -13px;
+    }
+    @media (max-width: 500px) {
+      margin-top: -17px;
+    }
+
+
+    @media (min-width: 1024px) {
+      margin-top: -16px;
+    }
     width: 100%;
 
     max-width: 1024px;
@@ -1262,103 +1285,86 @@
 
       &--wrong{
         & > .journey-section__block{
-          margin-bottom: -30px;
         }
 
         & > .active-dot-set{
-          @media (max-width: 411px) {
-            margin-top: 44px;
-          }
+          top: 243px;
+
+
           @media (min-width: 500px) {
-            margin-top: 81px;
+            top: 250px;
           }
 
-          @media (min-width: 592px) {
-            margin-top: 83px;
 
-          }
-
-          @media (min-width: 707px) {
-            margin-top: 62px;
-
-          }
 
           @media (min-width: 769px) {
-            margin-top: 88px;
-          }
-
-          @media (min-width: 958px) {
-            margin-top: 73px;
+            top: 238px;
           }
 
           @media (min-width: 1024px) {
-            margin-top: 82px;
+            top: 243px;
           }
 
-          margin-top: 69px;
         }
       }
 
       &--right{
         & > .journey-section__block{
-          margin-bottom: -13px;
+          //margin-bottom: -13px;
         }
 
         & > .active-dot-set{
-          @media (max-width: 388px) {
-            margin-top: 24px;
-          }
-
-          @media (min-width: 500px) {
-            margin-top: 60px;
-          }
-
-          @media (min-width: 700px) {
-            margin-top: 86px;
-          }
-
-          @media (min-width: 769px) {
-            margin-top: 108px;
-          }
-
-          @media (min-width: 864px) {
-            margin-top: 113px;
-          }
-
-          @media (min-width: 949px) {
-            margin-top: 99px;
-          }
-
-          @media (min-width: 1024px) {
-            margin-top: 107px;
-          }
-
-          margin-top: 45px;
+          //@media (max-width: 388px) {
+          //  margin-top: 24px;
+          //}
+          //
+          //@media (min-width: 500px) {
+          //  margin-top: 60px;
+          //}
+          //
+          //@media (min-width: 700px) {
+          //  margin-top: 86px;
+          //}
+          //
+          //@media (min-width: 769px) {
+          //  margin-top: 108px;
+          //}
+          //
+          //@media (min-width: 864px) {
+          //  margin-top: 113px;
+          //}
+          //
+          //@media (min-width: 949px) {
+          //  margin-top: 99px;
+          //}
+          //
+          //@media (min-width: 1024px) {
+          //  margin-top: 107px;
+          //}
+          //
+          //margin-top: 45px;
         }
       }
 
       &--amount-more{
 
         & > .active-dot-set{
-          margin-left: -50px;
+          top: 251px;
 
-          @media (max-width: 352px) {
-            margin-top: 25px;
+
+          @media (min-width: 500px) {
+            top: 263px;
           }
+
+
 
           @media (min-width: 769px) {
-            margin-top: 61px;
-          }
-
-          @media (min-width: 864px) {
-            margin-top: 50px;
+            top: 244px;
           }
 
           @media (min-width: 1024px) {
-            margin-top: 62px;
+            top: 252px;
           }
-
-          margin-top: 49px;
         }
       }
     }
@@ -1420,6 +1426,7 @@
 
   .journey-section{
     justify-content: space-between;
+    z-index: 2;
   }
 
   .journey-section-2{
@@ -1459,97 +1466,296 @@
 
   .active-dot-set{
     display: flex;
-    gap: 8px;
+    column-gap: 8px;
+    row-gap: 7px;
     flex-wrap: wrap;
-    //position: absolute;
-    left: 50%;
-    //transform: translateX(-50%);
     z-index: 2;
     margin-top: 54px;
     max-width: 311px;
+    width: 100%;
+
+    @media (min-width: 417px) {
+      max-width: 360px;
+    }
+
+    @media (min-width: 465px) {
+      max-width: 409px;
+    }
+
+    @media (min-width: 520px) {
+      max-width: 458px;
+    }
+
+    @media (min-width: 570px) {
+      max-width: 507px;
+    }
+
+    @media (min-width: 620px) {
+      max-width: 556px;
+    }
+
+    @media (min-width: 660px) {
+      max-width: 605px;
+    }
+
+    @media (min-width: 710px) {
+      max-width: 654px;
+    }
+
+    @media (min-width: 760px) {
+      max-width: 703px;
+    }
+    @media (min-width: 805px) {
+      max-width: 752px;
+    }
+
+    @media (min-width: 900px) {
+      max-width: 850px;
+    }
+
+    @media (min-width: 950px) {
+      max-width: 899px;
+    }
+
+    @media (min-width: 1000px) {
+      max-width: 948px;
+    }
+
+    position: absolute;
+    top: 227px;
+    left: 50%;
+    transform: translateX(-50%);
 
     &__smaller{
       gap: 2px;
       margin-top: 12px;
-      max-width: 320px;
+      max-width: 340px;
+
+      @media (min-width: 380px) {
+        max-width: 352px;
+      }
+
+      @media (min-width: 400px) {
+        max-width: 365px;
+      }
+
+      @media (min-width: 414px) {
+        max-width: 376px;
+      }
+
+      @media (min-width: 430px) {
+        max-width: 399px;
+      }
+
+      @media (min-width: 450px) {
+        max-width: 412px;
+      }
+
+      @media (min-width: 465px) {
+        max-width: 424px;
+      }
+
+      @media (min-width: 475px) {
+        max-width: 436px;
+      }
+
+      @media (min-width: 485px) {
+        max-width: 448px;
+      }
+
+      @media (min-width: 500px) {
+        max-width: 460px;
+      }
+
+      @media (min-width: 510px) {
+        max-width: 472px;
+      }
+
+      @media (min-width: 520px) {
+        max-width: 484px;
+      }
+
+      @media (min-width: 535px) {
+        max-width: 496px;
+      }
+
+      @media (min-width: 550px) {
+        max-width: 508px;
+      }
+
+      @media (min-width: 560px) {
+        max-width: 520px;
+      }
+
+      @media (min-width: 570px) {
+        max-width: 532px;
+      }
+
+      @media (min-width: 585px) {
+        max-width: 544px;
+      }
+
+      @media (min-width: 595px) {
+        max-width: 556px;
+      }
+
+
+      @media (min-width: 605px) {
+        max-width: 568px;
+      }
+
+      @media (min-width: 620px) {
+        max-width: 580px;
+      }
+
+      @media (min-width: 630px) {
+        max-width: 592px;
+      }
+
+      @media (min-width: 640px) {
+        max-width: 604px;
+      }
+
+      @media (min-width: 650px) {
+        max-width: 616px;
+      }
+
+      @media (min-width: 660px) {
+        max-width: 628px;
+      }
+
+      @media (min-width: 670px) {
+        max-width: 640px;
+      }
+
+      @media (min-width: 690px) {
+        max-width: 664px;
+      }
+
+      @media (min-width: 710px) {
+        max-width: 688px;
+      }
+
+      @media (min-width: 740px) {
+        max-width: 700px;
+      }
+
+      @media (min-width: 760px) {
+        max-width: 724px;
+      }
+
+      @media (min-width: 790px) {
+        max-width: 748px;
+      }
+
+      @media (min-width: 810px) {
+        max-width: 772px;
+      }
+
+      @media (min-width: 835px) {
+        max-width: 796px;
+      }
+
+      @media (min-width: 870px) {
+        max-width: 832px;
+      }
+
+      @media (min-width: 895px) {
+        max-width: 856px;
+      }
+
+      @media (min-width: 920px) {
+        max-width: 880px;
+      }
+
+      @media (min-width: 940px) {
+        max-width: 904px;
+      }
+
+      @media (min-width: 965px) {
+        max-width: 928px;
+      }
+
+      @media (min-width: 990px) {
+        max-width: 952px;
+      }
+
+      @media (min-width: 1015px) {
+        max-width: 977px;
+      }
+
+      @media (min-width: 1024px) {
+        max-width: 988px;
+      }
 
       &--1{
-        @media (min-width: 320px) {
-          margin-top: 8px;
-          margin-left: 2px;
+        top: 300px;
+
+        @media (min-width: 393px) {
+          top: 288px;
         }
 
-        @media (min-width: 432px) {
-          margin-top: 20px;
-          margin-left: 4px;
+        @media (min-width: 480px) {
+          top: 282px;
         }
+
+        @media (min-width: 670px) {
+          top: 270px;
+        }
+
+
 
         @media (min-width: 769px) {
-          margin-top: 22px;
-          margin-left: 4px;
+          top: 271px;
         }
 
         @media (min-width: 864px) {
-          margin-top: 17px;
-          margin-left: 4px;
+          top: 295px;
         }
 
         @media (min-width: 906px) {
-          margin-top: 14px;
-          margin-left: 4px;
+          top: 283px;
         }
 
+
         @media (min-width: 1024px) {
-          margin-top: 22px;
-          margin-left: 4px;
+          top: 282px;
         }
 
       }
 
       &--2{
-        @media (min-width: 320px) {
-          margin-top: 14px;
-          margin-left: 2px;
+        top: 290px;
+
+        @media (min-width: 395px) {
+          top: 278px;
         }
 
-
-        @media (min-width: 350px) {
-          margin-top: 8px;
-          margin-left: 4px;
+        @media (min-width: 500px) {
+          top: 280px;
         }
 
-        @media (min-width: 351px) {
-          margin-top: 14px;
-          margin-left: 4px;
+        @media (min-width: 505px) {
+          top: 268px;
         }
 
-        @media (min-width: 432px) {
-          margin-top: 13px;
-          margin-left: 4px;
-        }
-        @media (min-width: 450px) {
-          margin-top: 13px;
-          margin-left: 4px;
-        }
+        //@media (min-width: 670px) {
+        //  top: 270px;
+        //}
 
-        @media (min-width: 493px) {
-          margin-top: 6px;
-          margin-left: 4px;
-        }
+
 
         @media (min-width: 769px) {
-          margin-top: 8px;
-          margin-left: 4px;
+          top: 271px;
         }
 
         @media (min-width: 864px) {
-          margin-top: 13px;
-          margin-left: 4px;
+          top: 282px;
         }
 
+
         @media (min-width: 1024px) {
-          margin-top: 13px;
-          margin-left: 4px;
+          top: 278px;
         }
       }
     }
@@ -2064,6 +2270,12 @@
     padding: 5px;
     display: none;
 
+    @media (min-width: 864px) {
+      width: 78px;
+      height: 78px;
+
+    }
+
     //&:global(.hide){
     //  opacity: 0;
     //  transition: opacity 0.1s;
@@ -2144,7 +2356,7 @@
         &:global(.count){
           transition: transform 0.25s ease-in-out;
           transform: translateY(-104px);
-          transition-delay: 1.7s;
+          transition-delay: 1.3s;
         }
       }
 
@@ -2152,7 +2364,7 @@
         //animation: fullCount 0s;
 
         &:global(.count){
-          animation: fullCount 2s 1;
+          animation: fullCount 1.5s 1;
         }
       }
 
@@ -2162,7 +2374,7 @@
 
 
         &:global(.count){
-          animation: fullCountSmooth 0.2s 10;
+          animation: fullCountSmooth 0.15s 10;
         }
       }
     }
@@ -2233,8 +2445,14 @@
   }
 
   .hasArrow{
-    position: relative;
+    //position: relative;
   }
 
+.p-0{
+  padding: 0;
+}
 
+.overflow-x-clip{
+  overflow-x:clip;
+}
 </style>
