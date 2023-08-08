@@ -327,6 +327,7 @@
 </script>
 
 <div class="bg-main">
+  <meta name="theme-color" content="#161616">
   <div class="scroll-section">
 
     <section class="hero-section container container--width bg">
@@ -1226,20 +1227,6 @@
   .journey-section, .journey-section-2{
     position: relative;
 
-    @media (max-width: 1024px) {
-      margin-top: -10px;
-    }
-    @media (max-width: 768px) {
-      margin-top: -13px;
-    }
-    @media (max-width: 500px) {
-      margin-top: -17px;
-    }
-
-
-    @media (min-width: 1024px) {
-      margin-top: -16px;
-    }
     width: 100%;
 
     max-width: 1024px;
@@ -1279,8 +1266,7 @@
 
       &--form{
         justify-content: start;
-        padding-top: 5%;
-        padding-bottom: 20%;
+        padding-top: 20px;
       }
 
       &--wrong{
@@ -1288,21 +1274,21 @@
         }
 
         & > .active-dot-set{
-          top: 243px;
+          top: 297px;
 
 
           @media (min-width: 500px) {
-            top: 250px;
+            top: 304px;
           }
 
 
 
           @media (min-width: 769px) {
-            top: 238px;
+            top: 292px;
           }
 
           @media (min-width: 1024px) {
-            top: 243px;
+            top: 297px;
           }
 
         }
@@ -1314,56 +1300,43 @@
         }
 
         & > .active-dot-set{
-          //@media (max-width: 388px) {
-          //  margin-top: 24px;
-          //}
-          //
-          //@media (min-width: 500px) {
-          //  margin-top: 60px;
-          //}
-          //
-          //@media (min-width: 700px) {
-          //  margin-top: 86px;
-          //}
-          //
-          //@media (min-width: 769px) {
-          //  margin-top: 108px;
-          //}
-          //
-          //@media (min-width: 864px) {
-          //  margin-top: 113px;
-          //}
-          //
-          //@media (min-width: 949px) {
-          //  margin-top: 99px;
-          //}
-          //
-          //@media (min-width: 1024px) {
-          //  margin-top: 107px;
-          //}
-          //
-          //margin-top: 45px;
+          top: 297px;
+
+
+          @media (min-width: 500px) {
+            top: 304px;
+          }
+
+
+
+          @media (min-width: 769px) {
+            top: 292px;
+          }
+
+          @media (min-width: 1024px) {
+            top: 297px;
+          }
         }
       }
 
       &--amount-more{
 
         & > .active-dot-set{
-          top: 251px;
+          top: 305px;
 
 
           @media (min-width: 500px) {
-            top: 263px;
+            top: 317px;
           }
 
 
 
           @media (min-width: 769px) {
-            top: 244px;
+            top: 298px;
           }
 
           @media (min-width: 1024px) {
-            top: 252px;
+            top: 306px;
           }
         }
       }
@@ -1418,7 +1391,7 @@
     &:global(.animate-small) {
       //Smaller dots
       animation: smallest 0.4s ease-in-out;
-      background-image:  radial-gradient(#424242 0.5px, transparent 0);
+      background-image: radial-gradient(#424242 1px, transparent 2px);
       background-size: 3px 3px;
       //transition: all 1.5s ease-in-out;
     }
@@ -1431,6 +1404,20 @@
 
   .journey-section-2{
     justify-content: space-around;
+    @media (max-width: 1024px) {
+      margin-top: -10px;
+    }
+    @media (max-width: 768px) {
+      margin-top: -13px;
+    }
+    @media (max-width: 500px) {
+      margin-top: -15px;
+    }
+
+
+    @media (min-width: 1024px) {
+      margin-top: -16px;
+    }
   }
 
 
@@ -1470,7 +1457,6 @@
     row-gap: 7px;
     flex-wrap: wrap;
     z-index: 2;
-    margin-top: 54px;
     max-width: 311px;
     width: 100%;
 
@@ -1783,6 +1769,7 @@
     overflow: clip;
     height: 2600px;
     position: relative;
+    margin-top: -1px;
     &__circle{
       display: flex;
       justify-content: center;
@@ -1809,6 +1796,7 @@
         border-radius: 0 0 50% 50%;
 
         @media (min-width: 600px) {
+          width: 100%;
           transform: translateX(-50%) scale(1.65) translateZ(0);
         }
 
@@ -1818,7 +1806,7 @@
         &:global(.animate-small) {
           //Smaller dots
           animation: smallest 0.4s ease-in-out;
-          background-image: radial-gradient(#424242 0.5px, transparent 0);
+          background-image: radial-gradient(#424242 1px, transparent 2px);
           background-size: 3px 3px;
 
           //transition: all 1.5s ease-in-out;
@@ -1837,12 +1825,10 @@
       &--2{
         @media (min-width: 900px) {
           aspect-ratio: 1 /1;
-          left: 9.2%;
         }
         background-color: #303030;
-        transform: scale(0.0567) translateZ(0);
+        transform: translateX(-50%) scale(0.0567) translateZ(0);
         bottom: 4px;
-        left: 0;
         z-index: 2;
        & > div {
           transition: opacity 1s ease-in-out;
@@ -1853,13 +1839,11 @@
       &--3{
         @media (min-width: 900px) {
           aspect-ratio: 1 /1;
-          left: 9.2%;
         }
         background-color: $green;
         color: #212121;
-        transform: scale(0.0126) translateZ(0);
+        transform: translateX(-50%) scale(0.0126) translateZ(0);
         bottom: 5px;
-        left: 0;
         z-index: 3;
 
         & > div {
@@ -2207,12 +2191,12 @@
 
   @keyframes smallest {
     0% {
-      background-image: radial-gradient(#424242 1.3px, transparent 1px), radial-gradient(#424242 1.3px, transparent 2px);
+      background-image: radial-gradient(#424242 1.3px, transparent 1px);
       background-size: 6px 6px;
     }
 
     100% {
-      background-image: radial-gradient(#424242 0.5px, transparent 0);
+      background-image: radial-gradient(#424242 1px, transparent 2px);
       background-size: 3px 3px;
 
     }
