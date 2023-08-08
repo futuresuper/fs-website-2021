@@ -27,6 +27,7 @@
         pages.EMPLOYERS,
         pages.INSURANCE,
         pages.UNIT_PRICES,
+        pages.APP,
       ],
     },
     {
@@ -38,13 +39,15 @@
       subPages: [pages.LOGIN, pages.JOIN],
     },
   ];
+
+  export let noTopMargin = true;
 </script>
 
-<footer>
+<footer class={noTopMargin ? "noTopMargin" : ""}>
   <div class="footer-container">
     <div class="container">
       <div class="logo-and-socials">
-        <Logo colour="white" size="54" />
+        <Logo colour="white" size={54} />
         <div class="social-icons">
           <a href="https://www.instagram.com/future_super/">
             <img
@@ -234,6 +237,11 @@
     border-radius: 32px 32px 0 0;
     background-color: $black;
     color: $white;
+  }
+
+  .noTopMargin {
+    margin: 0;
+    border-radius: 0 0 0 0;
   }
 
   .footer-container {
