@@ -31,9 +31,7 @@
         With the structural phase of the building now complete, they were even
         able to check out the views from the rooftop.
       </p>
-      <div>
-        <NightingaleCarousel />
-      </div>
+      <NightingaleCarousel />
     </div>
 
     <div class="arrow">
@@ -301,27 +299,6 @@
   $font-size-l: max(38px, 4vw);
   $font-size-xl: max(44px, 5vw);
 
-  .update-container {
-    background-color: $black850;
-    border-radius: 80px;
-  }
-
-  .update-title {
-    color: $green;
-    font-family: $regular;
-    font-size: 22px;
-    padding: 40px;
-    margin: 0;
-  }
-
-  .update-text {
-    padding: 0 60px 20px 60px;
-    font-family: Helvetica;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 30px;
-  }
-
   .bg {
     width: 100%;
     background-color: $black;
@@ -577,5 +554,26 @@
     .mobile-hide {
       display: none;
     }
+  }
+
+  .update-container {
+    background-color: $black850;
+    border-radius: 80px;
+  }
+
+  .update-title {
+    color: $green;
+    font-family: $regular;
+    font-size: 22px;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .update-text {
+    padding: 0 60px 20px 60px;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
   }
 </style>
