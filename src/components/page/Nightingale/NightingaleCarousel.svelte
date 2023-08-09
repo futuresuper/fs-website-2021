@@ -1,5 +1,5 @@
 <script>
-  let scrollPosition = 360;
+  let scrollPosition = 0;
   const cards = [
     "https://res.cloudinary.com/future-super/image/upload/v1691493175/nightingale-update-card1.png",
     "https://res.cloudinary.com/future-super/image/upload/v1691493175/nightingale-update-card2.png",
@@ -9,7 +9,7 @@
   ];
 
   const handleSlide = (index) => {
-    scrollPosition = -400 * index + 360;
+    scrollPosition = -400 * index;
   };
 </script>
 
@@ -32,7 +32,7 @@
     {#each cards as card, index}
       <a on:click={() => handleSlide(index)}>
         <div
-          class:pill-selected={scrollPosition === -400 * index + 360}
+          class:pill-selected={scrollPosition === -400 * index}
           class="pill"
         />
       </a>
@@ -47,9 +47,13 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
+    // min-width: 1120px;
+    position: relative;
   }
 
   .sliding-container {
+    position: absolute;
+    left: calc(50% - 200px);
     display: grid;
     grid-template-columns: repeat(5, 400px);
     width: 725px;
