@@ -47,7 +47,6 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
-    // min-width: 1120px;
     position: relative;
   }
 
