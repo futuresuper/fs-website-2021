@@ -1,5 +1,5 @@
 ---
-title: Application for Early Release Due to Permanent Incapacity Form
+title: Application for Early Release of Super due to Permanent Incapacity Form
 docurl: https://www.futuresuper.com.au/permanentincapacity
 type: PDF
 category: Super Forms
