@@ -1,10 +1,11 @@
 <script>
-  import Arrow from "../images/Arrow.svelte";
-  import Tree from "../images/Tree.svelte";
-  import World2 from "../images/World.svelte";
-  import World from "../images/WorldNoArrows.svelte";
-  import Shield from "../images/Shield.svelte";
-  import PerformanceArrow from "../images/PerformanceArrow.svelte";
+  import Arrow from "../../images/Arrow.svelte";
+  import Tree from "../../images/Tree.svelte";
+  import World2 from "../../images/World.svelte";
+  import World from "../../images/WorldNoArrows.svelte";
+  import Shield from "../../images/Shield.svelte";
+  import PerformanceArrow from "../../images/PerformanceArrow.svelte";
+  import NightingaleCarousel from "./NightingaleCarousel.svelte";
 
   let circle1 = false;
   let circle2 = false;
@@ -19,12 +20,21 @@
       <h2>YOUR SUPER IS DISRUPTING THE PROPERTY MARKET</h2>
     </div>
 
-    <p>
-      A more sustainable model of living is essential for a future free from
-      climate change. Nightingale Wurru Wurru Biik, due for completion by 2023,
-      uses the power of your super to reinvent the environmental and social
-      upsides to building new&nbsp;homes.
-    </p>
+    <div class="update-container">
+      <h4 class="update-title">JULY 2023 UPDATE</h4>
+      <p class="update-text">
+        Construction of Nightingale Wurru wurru biik in Brunswick, Melbourne is
+        underway! Future residents of the sustainable and affordable housing
+        development recently got together to celebrate the progress.
+      </p>
+      <p class="update-text">
+        With the structural phase of the building now complete, they were even
+        able to check out the views from the rooftop.
+      </p>
+      <div>
+        <NightingaleCarousel />
+      </div>
+    </div>
 
     <div class="arrow">
       <Arrow direction="down" colour="#3dfa52" />
@@ -283,13 +293,34 @@
 </div>
 
 <style lang="scss">
-  @use "../../styles/" as *;
+  @use "../../../styles/" as *;
 
   $font-size-xs: max(10px, 0.9vw);
   $font-size-s: max(13px, 1.2vw);
   $font-size-m: max(16px, 1.8vw);
   $font-size-l: max(38px, 4vw);
   $font-size-xl: max(44px, 5vw);
+
+  .update-container {
+    background-color: $black850;
+    border-radius: 80px;
+  }
+
+  .update-title {
+    color: $green;
+    font-family: $regular;
+    font-size: 22px;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .update-text {
+    padding: 0 60px 20px 60px;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+  }
 
   .bg {
     width: 100%;
