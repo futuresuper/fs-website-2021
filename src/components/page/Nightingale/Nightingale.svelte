@@ -330,6 +330,7 @@
     color: $green;
     font-size: $font-size-xl;
     line-height: 100%;
+    padding: 0 40px;
   }
 
   h3 {
