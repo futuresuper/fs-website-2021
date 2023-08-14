@@ -124,14 +124,12 @@
   }
 
   .marquee-container {
-    width: calc(100% + 80px);
+    width: 100%;
     position: absolute;
     overflow: hidden;
-    margin: 0 -40px;
   }
 
   .marquee {
-    margin: 0 -40px;
     font-family: $regular;
     color: white;
     font-size: min(6vw, 80px);
