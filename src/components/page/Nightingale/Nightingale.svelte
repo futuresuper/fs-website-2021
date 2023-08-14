@@ -487,7 +487,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://res.cloudinary.com/future-super/image/upload/c_scale,q_auto,w_400/v1639299184/bricks-and-coins.gif");
+    background: url("https://res.cloudinary.com/future-super/image/upload/v1691973706/bricks-and-coins-higher-res.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -534,8 +534,12 @@
   }
 
   @media (max-width: 900px) {
+    .hero {
+      background-size: cover;
+      margin: 0 -40px;
+    }
     .cards {
-      margin: 80px -40px;
+      margin: 80px 0px;
       grid-template-columns: 100%;
       grid-gap: 0;
       .card {

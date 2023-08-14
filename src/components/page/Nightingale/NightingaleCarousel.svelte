@@ -1,4 +1,6 @@
 <script>
+  import { swipe } from "svelte-gestures";
+
   let scrollPosition = 0;
   const cards = [
     "https://res.cloudinary.com/future-super/image/upload/v1691493175/nightingale-update-card1.png",
@@ -8,20 +10,36 @@
     "https://res.cloudinary.com/future-super/image/upload/v1691493176/nightingale-update-card5.png",
   ];
 
-  const handleSlide = (index) => {
+  const handleMove = (index) => {
     scrollPosition = -400 * index;
+  };
+
+  const swipeHandler = (event) => {
+    if (event.detail.direction === "right" && scrollPosition != 0) {
+      scrollPosition += 400;
+    } else if (event.detail.direction === "left" && scrollPosition != -1600) {
+      scrollPosition -= 400;
+    }
   };
 </script>
 
 <div>
-  <div class="visible-container">
+  <div
+    class="visible-container"
+    use:swipe={{
+      timeframe: 300,
+      minSwipeDistance: 100,
+      touchAction: "pan-y",
+    }}
+    on:swipe={swipeHandler}
+  >
     <div
       class="sliding-container"
       style="transform: translateX({scrollPosition}px)"
     >
       {#each cards as card, index}
         <div class="card">
-          <a on:click={() => handleSlide(index)}>
+          <a on:click={() => handleMove(index)}>
             <img src={card} alt="Nightingale construction site" />
           </a>
         </div>
@@ -30,7 +48,7 @@
   </div>
   <div class="slider-pills">
     {#each cards as card, index}
-      <a on:click={() => handleSlide(index)}>
+      <a on:click={() => handleMove(index)}>
         <div
           class:pill-selected={scrollPosition === -400 * index}
           class="pill"
