@@ -35,8 +35,9 @@
     },
   ];
 
+  let innerWidth;
   let scrollPosition = 0;
-  let cardWidth = 500;
+  let cardWidth = innerWidth > 900 ? 500 : 400;
 
   const handleMoveLeft = () => {
     scrollPosition = Math.min(scrollPosition + cardWidth, 0);
@@ -57,8 +58,21 @@
       handleMoveRight();
     }
   };
+
+  const resetCarousel = () => {
+    scrollPosition = 0;
+  };
+
+  $: if (innerWidth > 900) {
+    cardWidth = 500;
+    resetCarousel();
+  } else {
+    cardWidth = 400;
+    resetCarousel();
+  }
 </script>
 
+<svelte:window bind:innerWidth />
 <div style="padding: 60px 0 60px 60px">
   <div class="button-container">
     <h1>What you get in the app</h1>
