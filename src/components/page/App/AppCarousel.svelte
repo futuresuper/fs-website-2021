@@ -213,6 +213,9 @@
         height: 300px;
       }
     }
+    .carousel-container {
+      height: 550px;
+    }
     .moving-container {
       grid-template-columns: repeat(6, 400px);
     }
