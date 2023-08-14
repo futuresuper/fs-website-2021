@@ -106,11 +106,6 @@
         <p class="small">Repaid in full over 2 years.</p>
 
         <p class="small">
-          Accounts for 1.4% of money invested from Balanced Impact and
-          Renewables Plus Growth (combined stat as at 31st October 2021).
-        </p>
-
-        <p class="small">
           Creates opportunity for similar investments in the future.
         </p>
       </div>
@@ -250,12 +245,10 @@
       </p>
 
       <p class="small">
-        Future Super’s investment is in the Nightingale Fund, which distributes
-        capital to finance the construction of Nightingale Albion. The
-        Nightingale Fund will make a fixed interest repayment on Future Super’s
-        investment at the conclusion of the project, which will then be
-        reflected in the overall unit price of the Balanced Impact and
-        Renewables Plus Growth investment options.
+        This is a direct investment into the Nightingale Fund, which finances
+        the construction of the Nightingale property in Brunswick. The
+        investment agreement will see Future Super members receive fixed
+        interest repayments on their investment in the fund.
       </p>
     </div>
 
@@ -286,6 +279,16 @@
       on an investment option. You can find more info on the <a
         href="/performance-and-returns">overall returns here</a
       >. Please note past performance does not guarantee future performance.
+    </p>
+
+    <p class="disclaimer">
+      You should read the PDS, TMD and Financial Services Guide before making
+      any financial decisions regarding Future Super. Information provided is of
+      a general nature only and we have not taken your personal financial
+      objectives, situation or needs into account. We recommend you seek
+      financial advice when considering if Future Super is right for your
+      objectives and needs. When considering returns, past performance is not
+      indicative of future performance.
     </p>
   </div>
 </div>
@@ -445,7 +448,10 @@
     width: 100%;
     max-width: 600px;
     &.apartment {
-      background: url("https://res.cloudinary.com/future-super/image/upload/f_auto,q_auto/v1639300170/nightingale-apartment.png");
+      background: url("https://res.cloudinary.com/future-super/image/upload/v1639300170/nightingale-kitchen.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -490,7 +496,7 @@
     align-items: center;
     background: url("https://res.cloudinary.com/future-super/image/upload/v1691973706/bricks-and-coins-higher-res.gif");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -525,6 +531,11 @@
       background-color: $green;
       border-radius: 10px;
     }
+    background-color: $black;
+    &::-moz-progress-bar {
+      background: $green;
+      border-radius: 10px;
+    }
   }
 
   @media (max-width: 1100px) {
@@ -536,8 +547,7 @@
 
   @media (max-width: 900px) {
     .hero {
-      background-size: cover;
-      margin: 0 -40px;
+      margin: 0 -20px;
     }
     .cards {
       margin: 80px 0px;
