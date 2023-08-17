@@ -1,10 +1,11 @@
 <script>
-  import Arrow from "../images/Arrow.svelte";
-  import Tree from "../images/Tree.svelte";
-  import World2 from "../images/World.svelte";
-  import World from "../images/WorldNoArrows.svelte";
-  import Shield from "../images/Shield.svelte";
-  import PerformanceArrow from "../images/PerformanceArrow.svelte";
+  import Arrow from "../../images/Arrow.svelte";
+  import Tree from "../../images/Tree.svelte";
+  import World2 from "../../images/World.svelte";
+  import World from "../../images/WorldNoArrows.svelte";
+  import Shield from "../../images/Shield.svelte";
+  import PerformanceArrow from "../../images/PerformanceArrow.svelte";
+  import NightingaleCarousel from "./NightingaleCarousel.svelte";
 
   let circle1 = false;
   let circle2 = false;
@@ -19,12 +20,19 @@
       <h2>YOUR SUPER IS DISRUPTING THE PROPERTY MARKET</h2>
     </div>
 
-    <p>
-      A more sustainable model of living is essential for a future free from
-      climate change. Nightingale Wurru Wurru Biik, due for completion by 2023,
-      uses the power of your super to reinvent the environmental and social
-      upsides to building new&nbsp;homes.
-    </p>
+    <div class="update-container">
+      <h4 class="update-title">JULY 2023 UPDATE</h4>
+      <p class="update-text">
+        Construction of Nightingale Wurru wurru biik in Brunswick, Melbourne is
+        underway! Future residents of the sustainable and affordable housing
+        development recently got together to celebrate the progress.
+      </p>
+      <p class="update-text">
+        With the structural phase of the building now complete, they were even
+        able to check out the views from the rooftop.
+      </p>
+      <NightingaleCarousel />
+    </div>
 
     <div class="arrow">
       <Arrow direction="down" colour="#3dfa52" />
@@ -96,11 +104,6 @@
         <p class="small">Investment returns fixed interest.</p>
 
         <p class="small">Repaid in full over 2 years.</p>
-
-        <p class="small">
-          Accounts for 1.4% of money invested from Balanced Impact and
-          Renewables Plus Growth (combined stat as at 31st October 2021).
-        </p>
 
         <p class="small">
           Creates opportunity for similar investments in the future.
@@ -242,12 +245,10 @@
       </p>
 
       <p class="small">
-        Future Super’s investment is in the Nightingale Fund, which distributes
-        capital to finance the construction of Nightingale Albion. The
-        Nightingale Fund will make a fixed interest repayment on Future Super’s
-        investment at the conclusion of the project, which will then be
-        reflected in the overall unit price of the Balanced Impact and
-        Renewables Plus Growth investment options.
+        This is a direct investment into the Nightingale Fund, which finances
+        the construction of the Nightingale property in Brunswick. The
+        investment agreement will see Future Super members receive fixed
+        interest repayments on their investment in the fund.
       </p>
     </div>
 
@@ -279,11 +280,21 @@
         href="/performance-and-returns">overall returns here</a
       >. Please note past performance does not guarantee future performance.
     </p>
+
+    <p class="disclaimer">
+      You should read the PDS, TMD and Financial Services Guide before making
+      any financial decisions regarding Future Super. Information provided is of
+      a general nature only and we have not taken your personal financial
+      objectives, situation or needs into account. We recommend you seek
+      financial advice when considering if Future Super is right for your
+      objectives and needs. When considering returns, past performance is not
+      indicative of future performance.
+    </p>
   </div>
 </div>
 
 <style lang="scss">
-  @use "../../styles/" as *;
+  @use "../../../styles/" as *;
 
   $font-size-xs: max(10px, 0.9vw);
   $font-size-s: max(13px, 1.2vw);
@@ -322,6 +333,7 @@
     color: $green;
     font-size: $font-size-xl;
     line-height: 100%;
+    padding: 0 40px;
   }
 
   h3 {
@@ -436,7 +448,10 @@
     width: 100%;
     max-width: 600px;
     &.apartment {
-      background: url("https://res.cloudinary.com/future-super/image/upload/f_auto,q_auto/v1639300170/nightingale-apartment.png");
+      background: url("https://res.cloudinary.com/future-super/image/upload/v1639300170/nightingale-kitchen.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -479,9 +494,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://res.cloudinary.com/future-super/image/upload/c_scale,q_auto,w_400/v1639299184/bricks-and-coins.gif");
+    background: url("https://res.cloudinary.com/future-super/image/upload/v1691973706/bricks-and-coins-higher-res.gif");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -516,6 +531,11 @@
       background-color: $green;
       border-radius: 10px;
     }
+    background-color: $black;
+    &::-moz-progress-bar {
+      background: $green;
+      border-radius: 10px;
+    }
   }
 
   @media (max-width: 1100px) {
@@ -526,8 +546,11 @@
   }
 
   @media (max-width: 900px) {
+    .hero {
+      margin: 0 -20px;
+    }
     .cards {
-      margin: 80px -40px;
+      margin: 80px 0px;
       grid-template-columns: 100%;
       grid-gap: 0;
       .card {
@@ -546,5 +569,26 @@
     .mobile-hide {
       display: none;
     }
+  }
+
+  .update-container {
+    background-color: $black850;
+    border-radius: 80px;
+  }
+
+  .update-title {
+    color: $green;
+    font-family: $regular;
+    font-size: 22px;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .update-text {
+    padding: 0 60px 20px 60px;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
   }
 </style>
