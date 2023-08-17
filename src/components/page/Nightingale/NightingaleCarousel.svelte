@@ -1,7 +1,11 @@
 <script>
   import { swipe } from "svelte-gestures";
 
+  let innerWidth;
   let scrollPosition = 0;
+  const scalePoint = 550;
+  let cardWidth = innerWidth > scalePoint ? 400 : 300;
+
   const cards = [
     "https://res.cloudinary.com/future-super/image/upload/v1691493175/nightingale-update-card1.png",
     "https://res.cloudinary.com/future-super/image/upload/v1691493175/nightingale-update-card2.png",
@@ -11,18 +15,33 @@
   ];
 
   const handleMove = (index) => {
-    scrollPosition = -400 * index;
+    scrollPosition = -cardWidth * index;
   };
 
   const swipeHandler = (event) => {
     if (event.detail.direction === "right" && scrollPosition != 0) {
-      scrollPosition += 400;
-    } else if (event.detail.direction === "left" && scrollPosition != -1600) {
-      scrollPosition -= 400;
+      scrollPosition += cardWidth;
+    } else if (
+      event.detail.direction === "left" &&
+      scrollPosition != -cardWidth * 4
+    ) {
+      scrollPosition -= cardWidth;
     }
   };
+
+  const resetCarousel = () => {
+    scrollPosition = 0;
+  };
+  $: if (innerWidth > scalePoint) {
+    cardWidth = 400;
+    resetCarousel();
+  } else {
+    cardWidth = 300;
+    resetCarousel();
+  }
 </script>
 
+<svelte:window bind:innerWidth />
 <div>
   <div
     class="visible-container"
@@ -50,7 +69,7 @@
     {#each cards as card, index}
       <a on:click={() => handleMove(index)}>
         <div
-          class:pill-selected={scrollPosition === -400 * index}
+          class:pill-selected={scrollPosition === -cardWidth * index}
           class="pill"
         />
       </a>
@@ -77,11 +96,11 @@
   }
 
   .card {
-    padding-right: 10px;
+    padding: 0 5px 0 5px;
     img {
       align-self: center;
-      height: 400px;
-      width: 400px;
+      height: calc(var(--cardWidth) * 1px);
+      width: calc(var(--cardWidth) * 1px);
       border-radius: 60px;
     }
   }
@@ -103,5 +122,15 @@
 
   .pill-selected {
     background-color: $green;
+  }
+
+  @media (max-width: 550px) {
+    .visible-container {
+      height: 300px;
+    }
+    .sliding-container {
+      left: calc(50% - 150px);
+      grid-template-columns: repeat(5, 300px);
+    }
   }
 </style>
