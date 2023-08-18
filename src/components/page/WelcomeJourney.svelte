@@ -76,7 +76,6 @@
 
     scrollSection = document.querySelector('.scroll-section');
 
-    const heroSectionHeight = (document.querySelector('.hero-section').clientHeight);
     const balanceSection = document.querySelector('.balance-section');
     const balanceSectionHeight = (document.querySelector('.balance-section').clientHeight);
     const amountSection = (document.querySelector('.amount-section'));
@@ -115,11 +114,6 @@
       dotGrid.style.height = (17000 / ((dotGridHeight / 25) * 3) * 75) + 'px';
       dotGrid2.style.height = (300000 / ((dotGridHeight / 6) * 11) * 75) + 'px';
 
-      // const test = document.getElementById('journeySection11');
-      //
-      // console.log(test.offsetTop);
-
-
       const firstBigCircle = document.querySelector('.amount-section__circle--1');
       const secondBigCircle = document.querySelector('.amount-section__circle--2 > div');
       const thirdBigCircle = document.querySelector('.amount-section__circle--3 > div');
@@ -142,69 +136,15 @@
       // e.target.scrollTop >= (heroSectionHeight - (balanceSectionHeight - circle.clientHeight - 200))
 
       if(e.target.scrollTop >= balanceSection.offsetTop - (window.innerHeight * 0.90)){
-        //Start the counter
-        // counterSingles.style.transform = 'translateY(-520px)';
-        // counterSingles.style.transition = 'transform 2s ease-in-out';
-        // counterSingles.style.transitionDelay = '';
-        //
-        // counterTens.style.transform = 'translateY(-520px)';
-        // counterTens.style.transition = 'transform 2s ease-in-out';
-        // counterTens.style.transitionDelay = '1s';
-        //
-        // counterHundreds.style.transform = 'translateY(-104px)';
-        // counterHundreds.style.transition= 'transform 1s ease-in-out';
-        // counterHundreds.style.transitionDelay = '2s';
-
         counterSingles.classList.add('count');
         counterTens.classList.add('count');
         counterHundreds.classList.add('count');
-
-
-        // if(timer){
-        //   clearTimeout(timer);
-        //   timer = null;
-        // }
-        // timer = setTimeout(() =>{
-        //   balanceSection.classList.add('show-arrow')
-        //   // counterSingles.classList.remove('count');
-        //   // counterTens.classList.remove('count');
-        //
-        //   // counterSingles.style.transform = 'translateY(-520px)';
-        //   // counterSingles.style.transition = 'transform 0s ease-in-out';
-        //   // counterSingles.style.transitionDelay = '';
-        //   //
-        //   // counterTens.style.transform = 'translateY(-520px)';
-        //   // counterTens.style.transition = 'transform 0s ease-in-out';
-        //   // counterTens.style.transitionDelay = '';
-        //   //
-        //   // counterHundreds.style.transform = 'translateY(-104px)';
-        //   // counterHundreds.style.transition= 'transform 0.5s ease-in-out';
-        //   // counterHundreds.style.transitionDelay = '';
-        // }, 8000);
-      }else{
-        // timer = null;
-        // counterSingles.style.transform = 'translateY(0)';
-        // counterSingles.style.transition = 'transform 0s ease-in-out';
-        // counterSingles.style.transitionDelay = '';
-        //
-        // counterTens.style.transform = 'translateY(0)';
-        // counterTens.style.transition = 'transform 0s ease-in-out';
-        // counterTens.style.transitionDelay = '0s';
-        //
-        // counterHundreds.style.transform = 'translateY(-52px)';
-        // counterHundreds.style.transition= 'transform 0s ease-in-out';
-        // counterHundreds.style.transitionDelay = '0s';
-        // balanceSection.classList.remove('show-arrow')
       }
 
-
-
       if(e.target.scrollTop >= balanceSection.offsetTop + 10){
-
         circle.style.transform = `translateX(-50%) scale(${scale})`;
         circle.style.position = `fixed`;
         circle.style.top = `${balanceSectionHeight - circle.clientHeight - 200}px`;
-
         if(scale <= 0.30){
           circleText.classList.add('hidden');
         }else{
@@ -215,18 +155,14 @@
         circle.style.top = '0';
       }
 
-
       //Hide big dot and show small single dot in dots background
       if(circleTop >= dotGridTop){
         circle.style.opacity = '0';
         singleCircle.classList.add('show');
-
       }else{
         circle.style.opacity = '1';
         singleCircle.classList.remove('show');
-
       }
-
 
       if(e.target.scrollTop >= smallerDotsSection.offsetTop){
         dotGrid.classList.add('animate');
@@ -244,27 +180,12 @@
         firstBigCircle.classList.remove('animate-small');
       }
 
-
-      // let circlePosition = amountSection.offsetTop + amountSection.clientHeight + heroSectionHeight;
       let scrollTopOffset = e.target.scrollTop - (amountSection.offsetTop + 10);
-
       let startingScale = 1;
-
-      // if(window.innerWidth > 600 ){
-      //   startingScale = 1.2;
-      // }else if(window.innerWidth > 768){
-      //   startingScale = 1.3;
-      // }else if(window.innerWidth > 1000){
-      //   startingScale = 1.65;
-      // }
-
-
-
 
       let scaleOne = Math.max(1, startingScale + (scrollTopOffset / 50));
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
       let top = Math.max(1, 1 +(scrollTopOffset / 100));
-
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -278,13 +199,9 @@
         thirdBigCircle.classList.add('hidden');
       }
 
-      // console.log(top);
       //Scale and move big dot as the user scrolls
       if(top <= 1){
         firstBigCircle.style.transform = `translateX(-50%) scale(1)  translateZ(0)`;
-
-      }else{
-
       }
 
       if(top >= 1.4){
@@ -305,15 +222,10 @@
           firstBigCircle.style.bottom = '0';
           firstBigCircle.style.top = '';
         }
-
       }
-
-      // console.log(e.target.scrollTop)
-      // console.log((dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight))
 
       let snapSectionWithDots = e.target.scrollTop > dotGrid.offsetTop && e.target.scrollTop <= (dotGrid.clientHeight + dotGrid.offsetTop + dotGrid2.clientHeight);
       let snapSectionBalance = e.target.scrollTop > (balanceSection.offsetTop - balanceSectionHeight) && e.target.scrollTop <= (balanceSection.offsetTop + 5);
-
       let snapSectionExplainIcons = (e.target.scrollTop >= explainSectionFirst.offsetTop) && (e.target.scrollTop <= (balanceSection.offsetTop - balanceSectionHeight) );
 
       // Blocks with dots to snap to center when scrolling
@@ -763,10 +675,7 @@
             <div style="transition-delay: {index * 1}ms" class="active-dot hidden active-dot__smaller"></div>
           {/each}
         </div>
-
-
       </div>
-
 
       <div id="journeySection14" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
@@ -1236,8 +1145,8 @@
     flex-direction: column;
 
     animation: bigger 1s ease-in-out;
-    background-image: radial-gradient(#424242 8px, transparent 9px);
-    background-size: 24.5px 23.5px;
+    background-image: radial-gradient(#424242 8px, transparent 8px);
+    background-size: 24px 24px;
 
     background-position: 50% 0;
     padding-top: 1px;
@@ -1278,7 +1187,7 @@
 
 
           @media (min-width: 500px) {
-            top: 304px;
+            top: 290px;
           }
 
 
@@ -1286,6 +1195,7 @@
           @media (min-width: 769px) {
             top: 292px;
           }
+
 
           @media (min-width: 1024px) {
             top: 297px;
@@ -1304,14 +1214,9 @@
 
 
           @media (min-width: 500px) {
-            top: 304px;
-          }
-
-
-
-          @media (min-width: 769px) {
             top: 292px;
           }
+
 
           @media (min-width: 1024px) {
             top: 297px;
@@ -1322,22 +1227,19 @@
       &--amount-more{
 
         & > .active-dot-set{
-          top: 305px;
+          top: 294px;
 
 
           @media (min-width: 500px) {
-            top: 317px;
+            top: 300px;
           }
 
 
 
           @media (min-width: 769px) {
-            top: 298px;
+            top: 294px;
           }
 
-          @media (min-width: 1024px) {
-            top: 306px;
-          }
         }
       }
     }
@@ -1453,58 +1355,58 @@
 
   .active-dot-set{
     display: flex;
-    column-gap: 8px;
-    row-gap: 7px;
+    column-gap: 7.5px;
+    row-gap: 7.5px;
     flex-wrap: wrap;
     z-index: 2;
-    max-width: 311px;
+    max-width: 306px;
     width: 100%;
 
     @media (min-width: 417px) {
-      max-width: 360px;
+      max-width: 354px;
     }
 
     @media (min-width: 465px) {
-      max-width: 409px;
+      max-width: 401px;
     }
 
     @media (min-width: 520px) {
-      max-width: 458px;
+      max-width: 449px;
     }
 
     @media (min-width: 570px) {
-      max-width: 507px;
+      max-width: 497px;
     }
 
     @media (min-width: 620px) {
-      max-width: 556px;
+      max-width: 545px;
     }
 
     @media (min-width: 660px) {
-      max-width: 605px;
+      max-width: 593px;
     }
 
     @media (min-width: 710px) {
-      max-width: 654px;
+      max-width: 641px;
     }
 
     @media (min-width: 760px) {
-      max-width: 703px;
+      max-width: 689px;
     }
     @media (min-width: 805px) {
-      max-width: 752px;
+      max-width: 737px;
     }
 
     @media (min-width: 900px) {
-      max-width: 850px;
+      max-width: 833px;
     }
 
     @media (min-width: 950px) {
-      max-width: 899px;
+      max-width: 881px;
     }
 
     @media (min-width: 1000px) {
-      max-width: 948px;
+      max-width: 929px;
     }
 
     position: absolute;
@@ -2179,7 +2081,7 @@
 
   @keyframes smaller {
     0% {
-      background-size: 24.5px 23.5px;
+      background-size: 24px 24px;
     }
 
     100% {
@@ -2210,7 +2112,7 @@
     }
 
     100% {
-      background-size: 24.5px 23.5px;
+      background-size: 24px 24px;
     }
   }
 
