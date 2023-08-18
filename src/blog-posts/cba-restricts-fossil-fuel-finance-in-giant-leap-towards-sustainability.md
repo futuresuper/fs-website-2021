@@ -17,7 +17,7 @@ Future Group’s Chief Impact Officer Emily Flood said the landmark move is a ma
 
 “The intricate engagement process, which involved comprehensive analysis, drafts, signatories, feedback loops, and direct interactions with the banks, reflects a holistic approach to advocacy,” she said. 
 
-Led by Future Group’s Ethical Impact Analyst Sarah Chow, a coalition of 13 United Nations Principles for Responsible Investment (UNPRI) signatories orchestrated a resounding call for Australia’s banks to change their gas and lending policies to meet the Paris Agreement’s ambition to limit global warming to well below 2C. \
+Led by Future Group’s Ethical Investment Analyst Sarah Chow, a coalition of 13 United Nations Principles for Responsible Investment (UNPRI) signatories orchestrated a resounding call for Australia’s banks to change their gas and lending policies to meet the Paris Agreement’s ambition to limit global warming to well below 2C.\
 In a concise, yet momentous open letter, the banks were asked to:
 
 * Stop new fossil fuel lending.
