@@ -856,7 +856,6 @@
 
   .hero-section{
     position: relative;
-    z-index: 2;
     overflow-x: clip;
 
     &::after, &::before{
@@ -868,6 +867,8 @@
 
       filter: blur(50px);
       opacity: 10%;
+
+      z-index: 10;
     }
 
     &::after{
@@ -1121,6 +1122,8 @@
     overflow-y: scroll;
     overflow-x: hidden;
     max-height: 100vh;
+    max-width: 1024px;
+    margin: 0 auto;
 
     &:global(.snap){
 
