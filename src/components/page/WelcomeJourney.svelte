@@ -487,7 +487,7 @@
 
             {#if guess && guess === 1}
               <p>
-                Yep, that’s right! Here’s what <span class="highlighted">7.2%</span>  of Australia’s pool of super looks like. <span class="reference text-muted">5</span>
+                Yep, that’s right! Here’s what <span class="highlighted">7.2%</span>  of Australia’s pool of super looks like.
               </p>
             {:else}
               <p>
@@ -515,7 +515,7 @@
       <div id="journeySection4" class="journey-section__content">
         <section class="journey-section__block hasArrow">
           <p>
-            If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be bigger, but maybe not by as much as you think. <span class="reference text-muted">6</span>
+            If we wanted to do even better than 100% renewable energy, and decarbonise the entire Australian economy - including transitioning transport and industry away from fossil fuels - the bill would be bigger, but maybe not by as much as you think.
           </p>
 
           <svg on:click="{() => scrollToNextSection('#journeySection5')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -531,7 +531,7 @@
         <div id="journeySection5" class="journey-section__content journey-section__content--amount-more">
           <section class="journey-section__block journey-section__block--2 hasArrow">
             <p>
-              It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more. <span class="reference text-muted">7</span>
+              It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more.
             </p>
 
             <svg on:click="{() => scrollToNextSection('#journeySection6')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -550,7 +550,7 @@
         <div id="journeySection6" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
-              For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest. <span class="reference text-muted">8</span>
+              For decades now, climate activists have been fighting to get institutions all over the world - including super funds - to divest.
             </p>
 
             <svg on:click="{() => scrollToNextSection('#journeySection7')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,7 +566,7 @@
         <div id="journeySection7" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
-              What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change. <span class="reference text-muted">9</span>
+              What is divestment? It’s refusing to invest in the fossil fuel companies that are causing catastrophic climate change.
             </p>
 
             <svg on:click="{() => scrollToNextSection('#journeySection8')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -581,7 +581,7 @@
         <div id="journeySection8" class="journey-section__content">
           <section class="journey-section__block journey-section__block--all hasArrow">
             <p>
-              In Australia, some super funds invest in fossil fuel companies but say they’ll pressure them to behave responsibly. <span class="reference text-muted">10</span> But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”. <span class="reference text-muted">11</span>
+              In Australia, some super funds invest in fossil fuel companies but say they’ll pressure them to behave responsibly. But at Future Super, we screen out fossil fuel companies from what we call our “investable universe”.
             </p>
 
             <svg on:click="{() => scrollToNextSection('#journeySection9')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -645,7 +645,7 @@
       <div id="journeySection12" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
-            The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels. <span class="reference text-muted">12</span>
+            The Divestment Database keeps track of all the institutions - like universities, charities and international pension funds - that have committed to divesting fossil fuels.
           </p>
 
           <svg on:click="{() => scrollToNextSection('#journeySection13')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -661,7 +661,7 @@
       <div id="journeySection13" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
-            To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots. <span class="reference text-muted">13</span>
+            To offer some perspective - the wealth of Elon Musk, Jeff Bezos and Bill Gates combined is about <span class="highlighted">$600 billion</span>, that’s those green dots.
           </p>
 
           <svg on:click="{() => scrollToNextSection('#journeySection14')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -680,7 +680,7 @@
       <div id="journeySection14" class="journey-section__content">
         <section class="journey-section__block journey-section__block--all hasArrow">
           <p>
-            What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span> <span class="reference text-muted">14</span>
+            What does the fortune of the world’s richest man look like? Here’s Bernard Arnault’s <span class="highlighted">$316 billion.</span>
           </p>
           <svg on:click="{() => scrollToNextSection('#journeySection15')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Arrow Down">
@@ -719,7 +719,7 @@
         <div class="amount-section__circle amount-section__circle--1">
           <div class="amount-section__amount center">
             <p class="amount-section__amount--heading">$60<br> trillion</p>
-            <p class="amount-section__amount--description">That's how big the divestment movement is <span class="reference text-muted">17</span>.</p>
+            <p class="amount-section__amount--description">That's how big the divestment movement is!</p>
           </div>
 
           <div class="amount-section__circle amount-section__circle--2">
@@ -731,8 +731,8 @@
 
           <div class="amount-section__circle amount-section__circle--3">
             <div class="amount-section__amount center">
-              <p class="amount-section__amount--heading">$754 billon</p>
-              <p class="amount-section__amount--description">Could 100% fund Australia’s transition to renewable energy AND decarbonise transport and industry.</p>
+              <p class="amount-section__amount--heading">7.2%</p>
+              <p class="amount-section__amount--description">Could 100% fund Australia’s transition to <strong>renewable energy AND decarbonise transport</strong> and industry.</p>
             </div>
           </div>
         </div>
@@ -1699,9 +1699,9 @@
         z-index: 1;
         transform: translateX(-50%) scale(1) translateZ(0);
         border-radius: 0 0 50% 50%;
+        max-width: 1024px;
 
         @media (min-width: 600px) {
-          width: 100%;
           transform: translateX(-50%) scale(1.65) translateZ(0);
         }
 
