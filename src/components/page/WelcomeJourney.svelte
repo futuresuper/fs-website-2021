@@ -344,7 +344,7 @@
       <span id="bigCircle"></span>
     </section>
 
-    <section  class="balance-section  container container--width bg">
+    <section  class="balance-section hasArrow  container container--width bg">
       <div class="balance-section__circle">
 
         <div class="balance-section__balance center">
@@ -402,6 +402,8 @@
           <p class="balance-section__balance--description">
             <span class="circle-text">Spent on subsidies to fossil fuel companies <strong>every week.</strong></span>
           </p>
+
+
         </div>
       </div>
       <svg on:click="{() => scrollToNextSection('#journeySection1')}" class="down-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1068,6 +1070,10 @@
     overflow-x: clip;
 
     scroll-snap-align: start;
+
+    & .down-arrow{
+      bottom: 200px;
+    }
 
     &__circle{
       pointer-events: none;
