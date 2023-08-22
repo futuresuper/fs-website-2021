@@ -1187,7 +1187,7 @@
 
       &--form{
         justify-content: start;
-        padding-top: 20px;
+        padding-top: 60px;
       }
 
       &--wrong{
