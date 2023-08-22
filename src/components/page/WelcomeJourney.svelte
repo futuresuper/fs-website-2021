@@ -720,8 +720,8 @@
       <section id="amountSection" class="amount-section journey-section__block--all smallest-dots-bg">
         <div class="amount-section__circle amount-section__circle--1">
           <div class="amount-section__amount center">
-            <p class="amount-section__amount--heading">$60<br> trillion</p>
-            <p class="amount-section__amount--description">That's how big the divestment movement is!</p>
+            <p class="amount-section__amount--heading amount-section__amount--heading-1">$60<br> trillion</p>
+            <p class="amount-section__amount--description amount-section__amount--description-1">That's how big the divestment movement is!</p>
           </div>
 
           <div class="amount-section__circle amount-section__circle--2">
@@ -759,49 +759,52 @@
 
 
     <section class="download-section container--width">
-      <div class="download-section__action">
-        <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> to learn more about the impact your money is having! </p>
+      <div class="download-section__action--wrapper">
+        <div class="download-section__action">
+          <p class="download-section__heading">Download the <span class="highlighted">Future Super App</span> to learn more about the impact your money is having! </p>
 
-        <div class="download-section__images">
-          <div class="download-section__action--phones">
-            <img
-                    class="download-section__action--phones-mobile"
-                    src="/images/download-phones.svg"
-                    alt="Download Phones"
-            />
-
-            <img
-                    class="download-section__action--phones-desktop"
-                    src="/images/download-phones-desktop.svg"
-                    alt="Download Phones"
-            />
-          </div>
-
-          <div class="download-section__actions">
-            <div class="download-section__actions--buttons">
-              <a href="https://apps.apple.com/au/app/future-super/id1620110464" class="download-section__action--button {appleDevice ? '' : 'download-section__action--button-hide'}" target="_blank">
-                <img
-                        src="/images/download-button.svg"
-                        alt="Download Button"
-                />
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app&pli=1" class="download-section__action--button  {appleDevice ? 'download-section__action--button-hide' : ''}" target="_blank">
-                <img
-                        src="/images/download-button-android.svg"
-                        alt="Download Button"
-                />
-              </a>
-            </div>
-
-            <div class="download-section__actions--qr">
+          <div class="download-section__images">
+            <div class="download-section__action--phones">
               <img
-                      src="/images/app-download-qr.svg"
-                      alt="QR code"
+                      class="download-section__action--phones-mobile"
+                      src="/images/download-phones.svg"
+                      alt="Download Phones"
+              />
+
+              <img
+                      class="download-section__action--phones-desktop"
+                      src="/images/download-phones-desktop.svg"
+                      alt="Download Phones"
               />
             </div>
 
+            <div class="download-section__actions">
+              <div class="download-section__actions--buttons">
+                <a href="https://apps.apple.com/au/app/future-super/id1620110464" class="download-section__action--button {appleDevice ? '' : 'download-section__action--button-hide'}" target="_blank">
+                  <img
+                          src="/images/download-button.svg"
+                          alt="Download Button"
+                  />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=au.com.futuresuper.app&pli=1" class="download-section__action--button  {appleDevice ? 'download-section__action--button-hide' : ''}" target="_blank">
+                  <img
+                          src="/images/download-button-android.svg"
+                          alt="Download Button"
+                  />
+                </a>
+              </div>
+
+              <div class="download-section__actions--qr">
+                <img
+                        src="/images/app-download-qr.svg"
+                        alt="QR code"
+                />
+              </div>
+
+            </div>
           </div>
-        </div>
+      </div>
+
 
 
 
@@ -852,7 +855,7 @@
     color: #E0E0E0;
 
     &-main{
-      background-color: #212121;
+      background-color: #161616;
     }
   }
 
@@ -1777,27 +1780,53 @@
     }
 
     &__amount {
-      max-width: 22rem;
       z-index: 1;
 
 
       &--heading{
         color: $green;
-        font-size: 3.25rem;
+        font-size: 6rem;
         font-weight: 900;
         font-family: 'FutureSuperFeature';
+
+        @media (min-width: 900px) {
+          font-size: 6.5rem;
+        }
+
+        br{
+          display: block;
+
+          @media (min-width: 900px) {
+            display: none;
+          }
+        }
+
+        &-1{
+          font-size: 4.5rem;
+        }
       }
 
       &--description{
-        font-size: 1.75rem;
+        max-width: 35rem;
+        margin: 0 auto;
+        font-size: 2rem;
         color: #E0E0E0;
         font-weight: 400;
+
+        &-1{
+          max-width: 22rem;
+          @media (min-width: 900px) {
+            max-width: 35rem;
+          }
+        }
+
+
       }
     }
   }
 
   .amount-section-info{
-    padding: 8rem 0;
+    padding: 10.125rem 0;
     font-size: 1.25rem;
     background-color: #212121;
     position: relative;
@@ -1950,6 +1979,11 @@
           }
 
         }
+      }
+
+      &--wrapper{
+        border-radius: 0 0 40px 40px;
+        background-color: #212121;
       }
     }
 
@@ -2203,7 +2237,7 @@
 
   .block-quote{
     position: relative;
-    margin: 48px 0;
+    margin: 68px 0;
     &::before{
       position: absolute;
       content: "";
