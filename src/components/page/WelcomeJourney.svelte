@@ -714,6 +714,7 @@
 
       </div>
     </div>
+
     <div id="journeySectionEnd" class="journey-section__content">
     </div>
     <div class="container container--width p-0 overflow-x-clip">
@@ -1142,7 +1143,8 @@
 
   #journeySectionEnd{
     padding-top: 0;
-    height: 0;
+    height: 10px;
+    margin-top: -10px;
   }
 
   .journey-section, .journey-section-2{
@@ -1187,7 +1189,7 @@
 
       &--form{
         justify-content: start;
-        padding-top: 60px;
+        padding-top: 100px;
       }
 
       &--wrong{
