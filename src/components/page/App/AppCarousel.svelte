@@ -37,7 +37,7 @@
 
   let innerWidth;
   let scrollPosition = 0;
-  let cardWidth = innerWidth > 900 ? 500 : 400;
+  let cardWidth = 300;
 
   const handleMoveLeft = () => {
     scrollPosition = Math.min(scrollPosition + cardWidth, 0);
@@ -66,14 +66,17 @@
   $: if (innerWidth > 900) {
     cardWidth = 500;
     resetCarousel();
-  } else {
+  } else if (innerWidth > 500) {
     cardWidth = 400;
+    resetCarousel();
+  } else {
+    cardWidth = 300;
     resetCarousel();
   }
 </script>
 
 <svelte:window bind:innerWidth />
-<div style="padding: 60px 0 60px 60px">
+<div class="carousel-container">
   <div class="button-container">
     <h1>What you get in the app</h1>
     <div>
@@ -86,7 +89,7 @@
     </div>
   </div>
   <div
-    class="carousel-container"
+    class="visible-container"
     use:swipe={{
       timeframe: 300,
       minSwipeDistance: 100,
@@ -95,7 +98,7 @@
     on:swipe={swipeHandler}
   >
     <div
-      class="moving-container"
+      class="sliding-container"
       style="transform: translateX({scrollPosition}px)"
     >
       {#each cards as card, index}
@@ -148,27 +151,21 @@
     }
   }
 
-  @media (max-width: 1000px) {
-    button {
-      display: none;
-    }
-    h1 {
-      max-width: fit-content;
-    }
-    .carousel-container {
-      overflow: visible;
-    }
+  .carousel-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px 80px 40px;
   }
 
   .button-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 60px;
-    padding-right: 50px;
+    padding-bottom: 50px;
   }
 
-  .carousel-container {
+  .visible-container {
     position: relative;
     background-color: $black;
     height: 700px;
@@ -176,7 +173,7 @@
     overflow: hidden;
   }
 
-  .moving-container {
+  .sliding-container {
     display: grid;
     grid-template-columns: repeat(6, 500px);
   }
@@ -207,24 +204,69 @@
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), $black);
   }
 
+  @media (max-width: 1000px) {
+    button {
+      display: none;
+    }
+    h1 {
+      max-width: fit-content;
+    }
+  }
+
   @media (max-width: 900px) {
-    .card {
-      img {
-        height: 300px;
-      }
-    }
-    .carousel-container {
-      height: 550px;
-    }
-    .moving-container {
-      grid-template-columns: repeat(6, 400px);
-    }
     h2 {
       font-size: 30px;
       width: 45px;
     }
+    .carousel-container {
+      padding-right: 0;
+    }
     .fade-overlay {
-      width: 200px;
+      display: none;
+    }
+    .card {
+      padding: 35px;
+      img {
+        height: 320px;
+        padding: 20px;
+      }
+    }
+    .visible-container {
+      height: 550px;
+    }
+    .sliding-container {
+      grid-template-columns: repeat(6, 400px);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .carousel-container {
+      padding: 20px 0 40px 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      padding: 8px;
+      font-size: 20px;
+      width: 30px;
+    }
+    .card {
+      margin: 20px 20px 20px 0;
+      padding: 25px;
+      img {
+        height: 250px;
+        padding: 10px 20px 20px 20px;
+      }
+    }
+    .button-container {
+      padding-bottom: 30px;
+    }
+    .visible-container {
+      height: 420px;
+    }
+    .sliding-container {
+      grid-template-columns: repeat(6, 300px);
     }
   }
 </style>

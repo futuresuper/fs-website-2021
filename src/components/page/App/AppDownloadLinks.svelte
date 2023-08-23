@@ -47,13 +47,15 @@
     width: 180px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     .qr-code {
       display: none;
     }
-
+    .links-container {
+      padding: 0;
+    }
     .store-button {
-      padding: 12px;
+      padding: 12px 0;
     }
   }
 </style>

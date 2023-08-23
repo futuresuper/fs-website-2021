@@ -6,13 +6,16 @@
     "IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND IMPACT IN THE PALM OF YOUR HAND";
 </script>
 
-<div class="page-container">
-  <div class="header">
-    <h1>Get the Future<br />Super App</h1>
-    <div class="header-download-links">
-      <AppDownloadLinks />
+<div class="background">
+  <div class="container">
+    <div class="header">
+      <h1>Get the Future<br />Super App</h1>
+      <div class="header-download-links">
+        <AppDownloadLinks />
+      </div>
     </div>
   </div>
+
   <div class="hero-container">
     <img
       class="hero-picture"
@@ -31,10 +34,10 @@
       </div>
     </div>
   </div>
-  <div>
-    <AppCarousel />
-  </div>
-  <div class="projects">
+
+  <AppCarousel />
+
+  <div class="projects-container">
     <img
       class="projects-picture"
       src="https://res.cloudinary.com/future-super/image/upload/v1690527127/app-projects.png"
@@ -45,39 +48,40 @@
       in Infradebt. Exposure to Infradebt is in the Renewables Plus, Balanced
       Impact, and Balanced Growth Pension investment options only.
     </p>
-    <div class="fade-overlay" />
   </div>
-  <div class="footer">
-    <h2>Impact in the palm of your hand.<br />Download the app today.</h2>
-    <AppDownloadLinks />
+
+  <div class="container">
+    <div class="footer">
+      <h2>Impact in the palm of your hand.<br />Download the app today.</h2>
+      <AppDownloadLinks />
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   @use "../../../styles/" as *;
-
   h1 {
     color: white;
     font-size: calc(48px + 1.5vw);
-    margin-right: 50px;
+    margin-right: 80px;
   }
 
   h2 {
     color: white;
     text-align: center;
-    font-size: calc(40px + 1.2vw);
+    font-size: calc(40px + 0.9vw);
     padding-bottom: 40px;
   }
 
   p {
     color: $black500;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     margin: 0;
     padding: 30px;
   }
 
-  .page-container {
+  .background {
     background-color: $black;
   }
 
@@ -89,7 +93,6 @@
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 50px;
   }
 
   @media (max-width: 800px) {
@@ -131,9 +134,9 @@
 
   .marquee {
     font-family: $regular;
-    color: white;
-    font-size: min(6vw, 80px);
-    height: min(7vw, 90px);
+    color: rgba($color: white, $alpha: 0.7);
+    font-size: 80px;
+    line-height: 80px;
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 20s linear infinite;
@@ -150,7 +153,7 @@
     }
   }
 
-  .projects {
+  .projects-container {
     position: relative;
     background: radial-gradient(ellipse 60% 60%, $green900, $black 60%);
     background-repeat: no-repeat;
@@ -169,23 +172,6 @@
     z-index: 1;
   }
 
-  @media (max-width: 900px) {
-    .hero-container {
-      position: relative;
-      height: 800px;
-    }
-    .hero-picture {
-      position: absolute;
-      top: 15%;
-    }
-    .marquee-container {
-      top: 10%;
-    }
-    .projects {
-      background: radial-gradient(ellipse 40% 50%, $green900, $black);
-    }
-  }
-
   .disclaimer {
     max-width: 500px;
     z-index: 1;
@@ -195,6 +181,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 50px 15vh 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 900px) {
+    .hero-container {
+      position: relative;
+      height: 900px;
+      padding: 0;
+    }
+    .hero-picture {
+      position: absolute;
+      top: 15%;
+    }
+    .marquee-container {
+      top: 10%;
+    }
+    .marquee {
+      font-size: 40px;
+      line-height: 42px;
+      animation: marquee 25s linear infinite;
+    }
+    .projects-container {
+      background: radial-gradient(ellipse 50% 40%, $green900, $black);
+    }
+  }
+
+  @media (max-width: 550px) {
+    .hero-container {
+      height: 650px;
+    }
+    .hero-picture {
+      min-width: 500px;
+      max-width: 600px;
+      top: 20%;
+    }
+    .projects-container {
+      padding: 0;
+    }
+    .projects-picture {
+      min-width: 500px;
+      max-width: 600px;
+    }
   }
 </style>
