@@ -530,7 +530,7 @@
 
       </div>
 
-        <div id="journeySection5" class="journey-section__content journey-section__content--amount-more">
+        <div id="journeySection5" class="journey-section__content { guess && guess === 1 ? 'journey-section__content--amount-more' : 'journey-section__content--amount-more-wrong'}">
           <section class="journey-section__block journey-section__block--2 hasArrow">
             <p>
               It would take about 9.5% of that $3.4 trillion. Just <span class="highlighted">2.3%</span> more.
@@ -1188,8 +1188,9 @@
       }
 
       &--form{
+        height: fit-content;
         justify-content: start;
-        padding-top: 100px;
+        padding: 50px 0;
       }
 
       &--wrong{
@@ -1197,22 +1198,22 @@
         }
 
         & > .active-dot-set{
-          top: 297px;
+          top: 299px;
 
 
           @media (min-width: 500px) {
-            top: 290px;
+            top: 293px;
           }
 
 
 
           @media (min-width: 769px) {
-            top: 292px;
+            top: 295px;
           }
 
 
           @media (min-width: 1024px) {
-            top: 297px;
+            top: 299px;
           }
 
         }
@@ -1224,11 +1225,11 @@
         }
 
         & > .active-dot-set{
-          top: 297px;
+          top: 296px;
 
 
           @media (min-width: 500px) {
-            top: 292px;
+            top: 290px;
           }
 
 
@@ -1239,19 +1240,36 @@
       }
 
       &--amount-more{
+        &-wrong{
+          & > .active-dot-set{
+            top: 283px;
+
+
+            @media (min-width: 500px) {
+              top: 289px;
+            }
+
+
+
+            @media (min-width: 769px) {
+              top: 284px;
+            }
+
+          }
+        }
 
         & > .active-dot-set{
-          top: 294px;
+          top: 293px;
 
 
           @media (min-width: 500px) {
-            top: 300px;
+            top: 297px;
           }
 
 
 
           @media (min-width: 769px) {
-            top: 294px;
+            top: 293px;
           }
 
         }
