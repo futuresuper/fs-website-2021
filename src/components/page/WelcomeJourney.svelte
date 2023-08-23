@@ -185,7 +185,7 @@
 
       let scaleOne = Math.max(1, startingScale + (scrollTopOffset / 50));
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
-      let top = Math.max(1, 1 +(scrollTopOffset / 100));
+      let top = Math.max(-3, -3 +(scrollTopOffset / 100));
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -199,12 +199,14 @@
         thirdBigCircle.classList.add('hidden');
       }
 
+      console.log(top);
+
       //Scale and move big dot as the user scrolls
       if(top <= 1){
         firstBigCircle.style.transform = `translateX(-50%) scale(1)  translateZ(0)`;
       }
 
-      if(top >= 1.4){
+      if(top >= -2.75){
         firstBigCircle.classList.add('animate-smallest');
       }else{
         firstBigCircle.classList.remove('animate-smallest');
@@ -217,9 +219,9 @@
         firstBigCircle.style.top = top + '%';
       }else{
         firstBigCircle.style.position = `absolute`;
-        firstBigCircle.style.top = '0.5px';
+        firstBigCircle.style.top = '-3%';
         if(top > 20){
-          firstBigCircle.style.bottom = '0';
+          firstBigCircle.style.bottom = '-8%';
           firstBigCircle.style.top = '';
         }
       }
