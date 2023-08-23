@@ -255,7 +255,7 @@
           It’s easy to feel powerless when we think about the big issues facing the world, but the truth is - money has power.
         </p>
         <p>
-          What does the power of money look like? Well...
+          What does the power of money look like? Well, let's think about some numbers...
         </p>
       </div>
 
@@ -840,6 +840,8 @@
 
         <p>The Founder, Promoter and Investment Manager of the Fund is Future Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684). The Trustee does not in any way endorse, warrant or accept responsibility for any services provided by the Promoter in its own right or directly to members or prospective members.</p>
 
+        <p>The dots in this article represent the scale of super and money in the divestment movement. They have been designed to be an accurate representation but on some devices there may be a small margin of error.</p>
+
       </div>
 
 
@@ -932,9 +934,7 @@
 
       @media (min-width: 864px) {
         font-size: 1.75rem;
-        p{
-          margin: 0;
-        }
+
       }
 
       &::after{
