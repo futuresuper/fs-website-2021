@@ -1138,8 +1138,9 @@
     margin: 0 auto;
 
     &:global(.snap){
-
-      scroll-snap-type: y mandatory;
+      @media (max-width: 768px) {
+        scroll-snap-type: y mandatory;
+      }
     }
   }
 
