@@ -1,5 +1,5 @@
 ---
-title: "What's the difference between binding and non-binding nominations of
+title: "What is the difference between binding and non-binding nominations of
   beneficiaries? "
 slug: difference-between-binding-and-non-binding-nominations
 date: 2020-08-19T06:29:32.000Z
