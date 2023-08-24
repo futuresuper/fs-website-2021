@@ -185,7 +185,7 @@
 
       let scaleOne = Math.max(1, startingScale + (scrollTopOffset / 50));
       let scaleTwo = Math.max(1, -14 + (scrollTopOffset / 25));
-      let top = Math.max(-3, -3 +(scrollTopOffset / 100));
+      let top = Math.max(-4, -4 +(scrollTopOffset / 100));
 
       if(scaleOne >= 2.4){
         secondBigCircle.classList.remove('hidden');
@@ -206,7 +206,7 @@
         firstBigCircle.style.transform = `translateX(-50%) scale(1)  translateZ(0)`;
       }
 
-      if(top >= -2.75){
+      if(top >= -3.75){
         firstBigCircle.classList.add('animate-smallest');
       }else{
         firstBigCircle.classList.remove('animate-smallest');
@@ -219,7 +219,7 @@
         firstBigCircle.style.top = top + '%';
       }else{
         firstBigCircle.style.position = `absolute`;
-        firstBigCircle.style.top = '-3%';
+        firstBigCircle.style.top = '-4%';
         if(top > 20){
           firstBigCircle.style.bottom = '-8%';
           firstBigCircle.style.top = '';
