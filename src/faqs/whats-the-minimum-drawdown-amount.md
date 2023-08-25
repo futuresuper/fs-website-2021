@@ -7,7 +7,7 @@ Pension account holders receiving an income stream have to withdraw at least the
 
 The [annual minimum drawdown amount](<https://www.ato.gov.au/Rates/Key-superannuation-rates-and-thresholds/?page=9#:~:text=As%20the%20pension%20commenced%20on,a%20leap%20year)%20%3D%20%246%2C215.>) is set by the government and changes depending on your age.
 
-To see more details on the minimum drawdown amount that applies to you, please see Table 11 at the bottom of [this ATO page](<https://www.ato.gov.au/Rates/Key-superannuation-rates-and-thresholds/?page=9#:~:text=As%20the%20pension%20commenced%20on,a%20leap%20year)%20%3D%20%246%2C215.>). You can also find this information on page 8 of our [Pension PDS](https://content.myfuturesuper.com.au/forms-docs/FS_PPPDS_20122022.pdf).
+To see more details on the minimum drawdown amount that applies to you, please see Table 11 at the bottom of [this ATO page](https://www.ato.gov.au/Rates/Key-superannuation-rates-and-thresholds/?anchor=Minimumannualpaymentsforsuperincomestrea#Minimumannualpaymentsforsuperincomestrea). You can also find this information on page 8 of our [Pension PDS](https://content.myfuturesuper.com.au/forms-docs/FS_PPPDS_01072023.pdf).
 
 To assist pensioners through the pandemic, the Government has reduced the minimum drawdown amount by 50% until the end of the 2022-23 financial year.
 
