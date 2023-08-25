@@ -14,6 +14,6 @@ If you wish to claim your personal contributions for tax purposes, you will need
 
 **_Note - An annual contribution cap applies to personal contributions, and if you breach this cap, you may be required to pay additional tax._**
 
-For the 2022/23 financial year, the contribution caps are $110,000 for non-concessional contributions (contributions made from after-tax income which you do not claim a tax deduction for), and $27,500 for concessional contributions (taxed contributions), per financial year.
+For the 2023/24 financial year, the contribution caps are $110,000 for non-concessional contributions (contributions made from after-tax income which you do not claim a tax deduction for), and $27,500 for concessional contributions (taxed contributions), per financial year.
 
 For more information on contribution caps, please refer to this ATO [webpage](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/).
