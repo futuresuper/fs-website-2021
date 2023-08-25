@@ -39,7 +39,7 @@ There's two steps:
 
 The Australian Taxation Office sets an annual contribution cap (per financial year), and if you go over this cap you may be required to pay additional tax - you can [see more information here](https://www.ato.gov.au/Rates/Key-superannuation-rates-and-thresholds/?page=1#Contributions_caps). 
 
-For the 2022/2023 financial year,  the  contribution caps are $110,000 for non-concessional contributions (contributions made from after-tax income which you do not claim a tax deduction for), and  $27,500 for concessional contributions (contributions made from pre-tax income which are taxed on entry to the fund) per financial year.
+For the 2023/2024 financial year, the contribution caps are $110,000 for non-concessional contributions (contributions made from after-tax income which you do not claim a tax deduction for), and $27,500 for concessional contributions (contributions made from pre-tax income which are taxed on entry to the fund) per financial year.
 
 If you wish to claim your personal contributions as a tax deduction, you need to complete a [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/uploadedFiles/Content/SPR/downloads/n71121-11-2014_js33406_w.pdf). You can do this once per financial year for all the contributions during that financial year.
 
