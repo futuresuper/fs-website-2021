@@ -11,4 +11,4 @@ The **work test** requires you to be gainfully employed for at least 40 hours du
 
 **Please note that the work test is your responsibility and is not administered by your superannuation fund.**
 
-If you do not satisfy the work test you are still be able to make additional contributions to your super. However, you will not be able to claim a tax deduction on these contributions.
+If you do not satisfy the work test, you may still able to make additional contributions to your super. However, you will not be able to claim a tax deduction on these contributions unless you meet the ‘work test exemption’.
