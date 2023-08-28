@@ -125,10 +125,14 @@
           <p class="disclaimer">
             Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE
             Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund
-            (ABN 45 960 194 277; RSE Registration R1072914). The Fund is
-            administered by OneVue Super Services Pty Limited (ABN 74 006 877
-            872; AFSL 246883). Insurance cover is provided to eligible members
-            by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
+            (ABN 45 960 194 277; RSE Registration R1072914). Learn more about
+            our Trustee including their Privacy Statement <a
+              href="https://www.eqt.com.au/superannuation/board-and-governance"
+              >here</a
+            >. The Fund is administered by OneVue Super Services Pty Limited
+            (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to
+            eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL
+            230043).
           </p>
           <p class="disclaimer">
             The Founder, Promoter and Investment Manager of the Fund is Future
