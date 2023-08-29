@@ -108,9 +108,9 @@
             Information provided is of a general nature only and we have not
             taken your personal financial objectives, situation or needs into
             account. You should consider whether Future Super’s products are
-            right for your individual objectives and needs and seek personal
-            financial advice. Before making a decision to acquire, hold or
-            continue to hold an interest in Future Super, please read the
+            right for your individual objectives and needs and consider seeking
+            personal financial advice. Before making a decision to acquire, hold
+            or continue to hold an interest in Future Super, please read the
             Product Disclosure Statement (PDS), Financial Services Guide (FSG)
             and check our Target Market Determination (TMD) available at
             <a href="https://www.futuresuper.com.au/documents-and-forms/"
@@ -123,25 +123,26 @@
             supplied.
           </p>
           <p class="disclaimer">
+            The issuer of this website and the Founder, Promoter and Investment
+            Manager of the Fund is Future Super Investment Services Pty Ltd (ABN
+            55 621 040 702; AFS Representative No. 001271441), which is a
+            Corporate Authorised Representative of Future Promoter Holdings Pty
+            Ltd (ABN 90 167 800 580; AFSL 482684).
+          </p>
+          <p class="disclaimer">
             Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE
             Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund
-            (ABN 45 960 194 277; RSE Registration R1072914). Learn more about
-            our Trustee including their Privacy Statement <a
+            (ABN 45 960 194 277; RSE Registration R1072914). The Trustee does
+            not in any way endorse, warrant or accept responsibility for any
+            services provided by the Promoter in its own right or directly to
+            members or prospective members. Learn more about our Trustee
+            including their Privacy Statement <a
               href="https://www.eqt.com.au/superannuation/board-and-governance"
               >here</a
             >. The Fund is administered by OneVue Super Services Pty Limited
             (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to
             eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL
             230043).
-          </p>
-          <p class="disclaimer">
-            The Founder, Promoter and Investment Manager of the Fund is Future
-            Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS
-            Representative No. 001271441), which is a Corporate Authorised
-            Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800
-            580; AFSL 482684). The Trustee does not in any way endorse, warrant
-            or accept responsibility for any services provided by the Promoter
-            in its own right or directly to members or prospective members.
           </p>
           <p class="disclaimer">
             When considering a new fund, you should consider checking the costs
