@@ -139,7 +139,7 @@
     line-height: 80px;
     white-space: nowrap;
     overflow: hidden;
-    animation: marquee 20s linear infinite;
+    animation: marquee 40s linear infinite;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
   }

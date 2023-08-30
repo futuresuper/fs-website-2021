@@ -176,6 +176,7 @@
   .sliding-container {
     display: grid;
     grid-template-columns: repeat(6, 500px);
+    transition: 0.5s ease-in-out;
   }
 
   .card {
