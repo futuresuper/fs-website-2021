@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import AppPage from "@components/page/App.svelte";
+import AppLanding from "@components/page/App/AppLanding.svelte";
 ---
 
 <style lang="scss">
@@ -10,6 +10,10 @@ import AppPage from "@components/page/App.svelte";
 <BaseLayout
   title="Get the Future Super app"
   description="Future Super has a mobile app for Apple and Android devices"
+  image="https://res.cloudinary.com/future-super/image/upload/v1666674820/app-preview.png"
+  hidePageHeader
+  noContainer
+  noFooterMargin
 >
-  <AppPage />
+  <AppLanding client:load />
 </BaseLayout>

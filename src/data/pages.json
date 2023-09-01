@@ -33,5 +33,6 @@
   "DAILY_AUS": ["Daily Aus", "/daily-aus/"],
   "LOGIN": ["Login", "https://my.futuresuper.com.au/"],
   "JOIN": ["Join Now", "/join-now"],
-  "INSURANCE": ["Insurance", "/insurance/"]
+  "INSURANCE": ["Insurance", "/insurance/"],
+  "APP": ["Future Super App", "/app/"]
 }

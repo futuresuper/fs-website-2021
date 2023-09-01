@@ -28,6 +28,7 @@
         pages.DOCUMENTS_AND_FORMS,
         pages.EMPLOYERS,
         pages.INSURANCE,
+        pages.APP,
       ],
     },
   ];
