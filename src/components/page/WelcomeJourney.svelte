@@ -770,7 +770,7 @@
             <div class="download-section__action--phones">
               <img
                       class="download-section__action--phones-mobile"
-                      src="/images/download-phones.svg"
+                      src="/images/download-phones.png"
                       alt="Download Phones"
               />
 
