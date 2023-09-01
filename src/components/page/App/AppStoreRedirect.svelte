@@ -25,7 +25,7 @@
     emailFooter: "Email Footer",
     tbl: "The Bottom Line",
     websiteCaseStudy: "Website - Case Study",
-    futureversaryEmail: "Futureversary Email"
+    futureversaryEmail: "Futureversary Email",
   };
 
   const href = {
@@ -65,7 +65,7 @@
 </div>
 
 <style lang="scss">
-  @use "../../styles/" as *;
+  @use "../../../styles/" as *;
 
   .container {
     max-width: none;
