@@ -200,7 +200,7 @@
     .marquee {
       font-size: 40px;
       line-height: 42px;
-      animation: marquee 25s linear infinite;
+      animation: marquee 45s linear infinite;
     }
     .projects-container {
       background: radial-gradient(ellipse 50% 40%, $green900, $black);
