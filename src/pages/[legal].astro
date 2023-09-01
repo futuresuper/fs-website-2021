@@ -16,7 +16,13 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const page = Astro.props;
-const { title, description, image, intro } = page.frontmatter;
+const {
+  title,
+  description,
+  image,
+  intro,
+  hideDescription = true,
+} = page.frontmatter;
 const { Content } = page;
 ---
 
@@ -27,7 +33,7 @@ const { Content } = page;
 <BaseLayout
   title={title}
   description={description}
-  hideDescription={true}
+  hideDescription={hideDescription}
   intro={intro}
   skinnyContainer
   image={image}
