@@ -9,18 +9,46 @@
     IMPACT: "2023Sep Impact",  // Join form with image/impact
   };
 
+  function scrollToNextSection(){
+    let el = document.querySelector('#join-form');
+
+    window.scrollTo({
+      top: el.offsetTop - 100,
+      behavior: 'smooth'
+    })
+  }
+
+  function toggleInput(focus){
+    let input = document.querySelector('#first_name');
+    focus ? input.focus() : input.blur();
+  }
+
 
   onMount(async () => {
     // Track the details text display
     analytics.track("JoinNow ViewedByABTestParticipant", {
       infoBlockGroup,
     });
+
+
+    const observer = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) =>{
+
+        if(entry.isIntersecting){
+          scrollToNextSection()
+          toggleInput(true)
+        }
+      })
+    })
+    const animateElements = document.querySelectorAll('.impact__form--container');
+    animateElements.forEach((el) => observer.observe(el));
+
   });
 </script>
 {#if infoBlockGroup === infoBlockGroups.IMPACT}
 <div class="impact">
   <div class="impact__image">
-    <a class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span><span class="back-button--text">Back</span></a>
+    <a href="/" class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span><span class="back-button--text">Back</span></a>
     <div class="impact__image--content">
       <p>Join more</p>
       <p>than 40,000</p>
@@ -32,7 +60,7 @@
   </div>
 
   <form class="impact__form" method="GET" action="https://join.futuresuper.com.au/">
-    <div class="impact__form--container">
+    <div  id="join-form" class="impact__form--container">
       <h2 class="impact__form--heading">Join Future Super</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
