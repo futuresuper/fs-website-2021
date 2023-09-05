@@ -1,17 +1,32 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import JoinNow from "@components/page/JoinNow.svelte";
+
+const infoBlockGroups = {
+    CONTROL: "2023Sep Control",        // Standard join form
+    IMPACT: "2023Sep Impact",  // Join form with image/impact
+};
+
+// Set its default to the orginal text
+let infoBlockGroup = infoBlockGroups.CONTROL;
+
+const rand = Math.random();
+
+infoBlockGroup =
+rand > 0.5 ? infoBlockGroups.CONTROL : infoBlockGroups.IMPACT;
+
 ---
 
 <BaseLayout
   title="Join Now"
   description="Joining Future Super usually takes about 5 minutes"
   hidePageHeader
-  hideHeader
+  hideHeader={infoBlockGroup === infoBlockGroups.IMPACT}
   headerBackgroundColour="#FFFFFF"
-  noContainer
+  skinnyContainer={infoBlockGroup === infoBlockGroups.CONTROL}
+  noContainer={infoBlockGroup === infoBlockGroups.IMPACT}
   joinPage
-  noFooterMargin
+  noFooterMargin={infoBlockGroup === infoBlockGroups.IMPACT}
 >
-  <JoinNow client:load />
+  <JoinNow client:load infoBlockGroup={infoBlockGroup}/>
 </BaseLayout>
