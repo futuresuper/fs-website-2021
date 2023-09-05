@@ -1,27 +1,3 @@
-<script>
-  import { onMount } from "svelte";
-
-  const infoBlockGroups = {
-    CONTROL: "2023Jul Control",        // Standard join information
-    SUPERMATCH: "2023Jul SuperMatch",  // Join information tailored for Supermatch
-  };
-
-  // Set its default to the orginal text
-  let infoBlockGroup = infoBlockGroups.CONTROL;
-
-  onMount(async () => {
-    const rand = Math.random();
-
-    infoBlockGroup =
-      rand > 0.5 ? infoBlockGroups.CONTROL : infoBlockGroups.SUPERMATCH;
-
-    // Track the details text display
-    analytics.track("JoinNow ViewedByABTestParticipant", {
-      infoBlockGroup,
-    });
-  });
-</script>
-
 <form method="GET" action="https://join.futuresuper.com.au/">
   <h1>Join Future Super</h1>
   <div class="time-row">
@@ -32,11 +8,7 @@
     <p class="info-block__heading">What you'll need</p>
     <ul class="info-block__list">
       <li>Your Tax File Number</li>
-      {#if infoBlockGroup === infoBlockGroups.CONTROL}
-        <li>Current super details for any funds you plan to transfer*</li>
-      {:else}
-        <li>An Australian ID or Medicare card to find your super and complete a transfer*</li>
-      {/if}
+      <li>An Australian ID or Medicare card to find your super and complete a transfer*</li>
     </ul>
   </div>
   <p>
