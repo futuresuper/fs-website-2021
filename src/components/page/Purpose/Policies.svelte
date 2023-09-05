@@ -20,7 +20,7 @@ To address the gender pay gap and improve diversity, Future Super Group has a[ d
       title: "Flexible working",
       description: `Future Super Group has a distributed-first workforce, with employees in several states and territories in Australia and some overseas. Most of our team work from home. We have[ Hub Australia](https://www.hubaustralia.com/) memberships in Melbourne, Canberra, Brisbane and Sydney, so teams have the option of working from those offices when it works for them. Future Super Group decided on this policy by surveying the team during and after the pandemic to find out what works best for our employees. Employees are also free to work overseas for up to three weeks a year. 
 
-To set people up for success working from home, we offer a $750 budget to set up a comfortable work space and an ergonomics assessment with a professional. We also wanted to create a more equitable experience for people working from home and so offer a $100 fortnightly work from home allowance to permanent, full-time employees who earn a base annual salary of $120,000 or less.`,
+To set people up for success working from home, we offer up to $1,000 budget to set up a comfortable work space and an ergonomics assessment with a professional. We also wanted to create a more equitable experience for people working from home and so offer a $100 fortnightly work from home allowance to permanent, full-time employees who earn a base annual salary of $120,000 or less.`,
     },
     {
       title: "Menstrual and menopausal leave",

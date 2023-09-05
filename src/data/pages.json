@@ -31,8 +31,8 @@
   "RECONCILIATION": ["Reconciliation", "/reconciliation/"],
   "BILLBOARD": ["Billboard", "/billboard/"],
   "DAILY_AUS": ["Daily Aus", "/daily-aus/"],
-  "MEMBER_PRIVACY_POLICY": ["Member Privacy Policy", "/member-privacy-policy/"],
   "LOGIN": ["Login", "https://my.futuresuper.com.au/"],
   "JOIN": ["Join Now", "/join-now"],
-  "INSURANCE": ["Insurance", "/insurance/"]
+  "INSURANCE": ["Insurance", "/insurance/"],
+  "APP": ["Future Super App", "/app/"]
 }

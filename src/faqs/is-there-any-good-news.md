@@ -1,5 +1,5 @@
 ---
-title: Is there any good news?
+title: Is there good news?
 category: Market volatility
 order: 5
 ---

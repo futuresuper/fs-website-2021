@@ -17,7 +17,7 @@
           </div>
         </div>
         <h3>Balanced Growth <br /><span class="pink">Pension</span></h3>
-        <p>Zero fossil fuels.</p>
+        <p>Screens out fossil fuel companies.</p>
       </div>
       <a
         href="/pensionpaperapplicationform"

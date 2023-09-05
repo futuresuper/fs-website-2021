@@ -23,6 +23,7 @@ const {
   skinnyContainer,
   customHeader,
   joinPage = false,
+  noFooterMargin=false,
 } = Astro.props;
 const pageTitle = title
   ? title + " | Future Super"
@@ -86,6 +87,7 @@ const seoDescription = description
 
   main {
     width: 100%;
+    height: 100%;
   }
 
   p.intro {
@@ -242,7 +244,7 @@ const seoDescription = description
   </main>
   {
       !hideFooter && (
-         <Footer client:visible />
+         <Footer client:visible noTopMargin={noFooterMargin}/>
       )
     }
 

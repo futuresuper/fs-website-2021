@@ -1,15 +1,22 @@
 ---
-title: Why are returns down this year?
+title: What has impacted returns?
 category: Market volatility
 order: 1
 ---
+Financial markets have been volatile over the last few years. Russia’s invasion of Ukraine, fossil fuel prices temporarily surging and inflation have all been important issues for our investment team to navigate on your behalf. We’re proud to let you know that despite these headwinds, we’ve delivered strong results for you over the last financial year. 
 
-While super is a long-term investment and it’s important not to get too caught up in short term returns, it’s natural to be concerned about seeing negative returns - especially if you haven’t noticed this happening before.
+Future Super’s Balanced Index option ranks among the top Balanced Options in the country for the last Financial Year, based on the SuperRatings SR50 Balanced Survey. 
 
-Share markets have been volatile in 2022 and as a fund that excludes fossil fuels Future Super has faced some additional headwinds. Russia’s invasion of Ukraine sparked fossil fuel supply restrictions which have in turn caused fossil fuel stocks to do well. Since Future Super doesn’t invest in fossil fuels, we haven’t benefited from those companies’ performance.
+All of our options performed well over the last year.
 
-Periods where markets are volatile are normal, and they are something Future Super plans for. You’ll see information in the Product Disclosure Statement, which outlines the goals and expectations of each investment option. The risk tolerance for Future Super products estimates at least 6 negative annual returns over any 20-year period. Those periods of negative performance are factored into our investment strategy for your super.
+* Balanced Index returned 10.5% for FY23 and 4.1% for the June quarter. That puts it among Australia’s [top 5 sustainable balanced options over 1 year](https://www.afr.com/policy/tax-and-super/top-10-super-funds-for-2022-revealed-20230717-p5dorc), as measured by SuperRatings, significantly outperforming the SuperRatings median Balanced investment option return of 8.5% for the year.
 
-To give you some context about how Future Super has performed historically, our Balanced Impact option returned 5.11% since inception in 2014, Renewables Plus Growth delivered 4.06% since inception in 2018 and Balanced Index delivered 3.99% since inception in 2018.\*
 
-\* _Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance._
+* Renewables Plus was also a top performing option, delivering 9.7% for FY23, also significantly outperforming the median option in its category.
+
+
+* Members in Balanced Impact saw strong returns of 8.5% over the financial year and 2.5% for the last quarter alone. 
+
+*See [Performance & Returns](https://www.futuresuper.com.au/performance-and-returns/) for the latest performance of each of our investment options.*
+
+*Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.*

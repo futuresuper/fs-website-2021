@@ -36,3 +36,5 @@ A huge thank you to Victorian Women’s Trust for tirelessly advocating for mens
 \* SuperWomen has recently changed its name to SuperGenders. SuperGenders is a Future Super group that provides a safe, supportive space for cis women, trans women, trans men, non-binary people, and those who are otherwise marginalized. SuperGenders aim to share experiences and ideas to improve Future Super, as well as support and celebrate gender diversity and inclusion both personally and professionally.
 
 _This was originally published [on LinkedIn](https://www.linkedin.com/pulse/bloody-good-policy-why-we-introduced-menstrual-leave-khaila-prasser/)._
+
+_Please obtain appropriate advice and consider the specifics when determining suitability for your organisation._

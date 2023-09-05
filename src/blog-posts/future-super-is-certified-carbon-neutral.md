@@ -32,3 +32,7 @@ This partnership is the epitome of what Future Super aspires to achieve, creatin
 **Make it real-time**. Connect your transactional accounting systems to your emissions tracking tools to keep watch on emissions every month.
 
 So the team at Future Super will quietly pop a bottle to celebrate this achievement, but just one, and we’ll diligently add it to the ledger of emissions to account for next year.
+
+--
+
+_Source: [Climate Active Website](https://www.climateactive.org.au/buy-climate-active/certified-members/future-super)_

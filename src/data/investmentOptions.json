@@ -1,11 +1,11 @@
 [
   {
     "label": "Balanced Index",
-    "description": "Zero fossil fuels but no impact targets.",
+    "description": "Screens out fossil fuel companies but no impact targets.",
     "impact": 1.2,
     "highlightInvestments": [],
     "fee": {
-      "perAnnumPercentage": 0.788,
+      "perAnnumPercentage": 0.785,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -16,7 +16,7 @@
   },
   {
     "label": "Balanced Impact",
-    "description": "Zero fossil fuels. Targets investment in social impact and renewable energy projects.",
+    "description": "Screens out fossil fuel companies. Targets investment in social impact and renewable energy projects.",
     "impact": -1.72,
     "highlightInvestments": [
       {
@@ -29,7 +29,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.511,
+      "perAnnumPercentage": 1.5,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -40,7 +40,7 @@
   },
   {
     "label": "Renewables Plus Growth",
-    "description": "Zero fossil fuels. Targets 20% allocation to climate change solutions.",
+    "description": "Screens out fossil fuel companies. Targets 20% allocation to climate change solutions.",
     "impact": -1.65,
     "highlightInvestments": [
       {
@@ -57,7 +57,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.379,
+      "perAnnumPercentage": 1.385,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -69,7 +69,7 @@
   {
     "label": "Balanced Growth Pension",
     "fee": {
-      "perAnnumPercentage": 0.785,
+      "perAnnumPercentage": 0.791,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,

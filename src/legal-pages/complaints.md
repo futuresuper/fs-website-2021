@@ -1,11 +1,9 @@
 ---
 title: Complaints
 intro: This page is designed to give you information about how complaints are
-  managed for Future Super, a product issued by Diversa Trustees Limited (ABN 49
-  006 421 638; AFSL 235153; RSE Licence L0000635).
+  managed for Future Super, a product issued by Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE Licence L0001458, AFSL 229757).
 description: This page is designed to give you information about how complaints
-  are managed for Future Super, a product issued by Diversa Trustees Limited
-  (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635).
+  are managed for Future Super, a product issued by Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE Licence L0001458, AFSL 229757).
 ---
 
 ## How do I complain?
@@ -40,13 +38,13 @@ At Future Super, we have access to the Translating and Interpreting Service (TIS
 
 ## Is your complaint about the Trustee or one of our Partners (or both)?
 
-Diversa Trustees Limited (Diversa) is the Trustee of the Future Super superannuation fund and oversees the work of different partners that help run Future Super. This means that when you make a complaint about Future Super, it may relate to a product or service provided by one of our partners or to products or services provided by both us and our partners.
+Equity Trustees Superannuation Limited (Equity Trustees) is the Trustee of the Future Super superannuation fund and oversees the work of different partners that help run Future Super. This means that when you make a complaint about Future Super, it may relate to a product or service provided by one of our partners or to products or services provided by both us and our partners.
 
 Our partners assist in providing services to you in several ways. They may help us offer insurance coverage to our members, provide administrative services, or provide claims management services to help us pay benefits. For more information about how our partners assist us with Future Super please refer to the Product Disclosure Statement, Additional Information Booklet, Target Market Determination and Insurance guide available from [the Fund's website](https://www.futuresuper.com.au/).
 
-If your complaint relates to a product or service wholly provided by one of our partners, their complaints policy will apply to the complaint and not Diversa’s policy. However, if you are a member or beneficiary of Future Super, we will still work with the relevant partner to ensure your complaint is managed appropriately.
+If your complaint relates to a product or service wholly provided by one of our partners, their complaints policy will apply to the complaint and not Equity Trustees policy. However, if you are a member or beneficiary of Future Super, we will still work with the relevant partner to ensure your complaint is managed appropriately.
 
-If your complaint relates to products or services that both we and our partners provide, then Diversa’s policy will apply, and we will work with the relevant service provider to ensure all of the issues you have raised in your complaint are managed appropriately.
+If your complaint relates to products or services that both we and our partners provide, then Equity Trustees policy will apply, and we will work with the relevant service provider to ensure all of the issues you have raised in your complaint are managed appropriately.
 
 ## Australian Financial Complaints Authority (AFCA)
 
@@ -84,7 +82,7 @@ For more detailed information about how we and our partners manage complaints, p
 
 The complaints handling policies for us, and our partners, are available here:
 
-**Diversa Trustees Limited** – Trustee of Future Super – <https://diversa.com.au/complaints/>
+**Equity Trustees Superannuation Limited** – Trustee of Future Super – <https://www.eqt.com.au/complaints-and-resolution-information>
 
 **Future Super Investment Services Pty Ltd** – Promoter of Future Super – [Complaints Handling Policy](https://www.futuresuper.com.au/complaints-handling-policy)
 

@@ -27,6 +27,7 @@
         pages.EMPLOYERS,
         pages.INSURANCE,
         pages.UNIT_PRICES,
+        pages.APP,
       ],
     },
     {
@@ -38,13 +39,15 @@
       subPages: [pages.LOGIN, pages.JOIN],
     },
   ];
+
+  export let noTopMargin = true;
 </script>
 
-<footer>
+<footer class={noTopMargin ? "noTopMargin" : ""}>
   <div class="footer-container">
     <div class="container">
       <div class="logo-and-socials">
-        <Logo colour="white" size="54" />
+        <Logo colour="white" size={54} />
         <div class="social-icons">
           <a href="https://www.instagram.com/future_super/">
             <img
@@ -108,9 +111,10 @@
             Information provided is of a general nature only and we have not
             taken your personal financial objectives, situation or needs into
             account. You should consider whether Future Super’s products are
-            right for your individual objectives and needs and seek personal
-            financial advice. Before making a decision to acquire, hold or
-            continue to hold an interest in Future Super, please read the PDS
+            right for your individual objectives and needs and consider seeking
+            personal financial advice. Before making a decision to acquire, hold
+            or continue to hold an interest in Future Super, please read the
+            Product Disclosure Statement (PDS), Financial Services Guide (FSG)
             and check our Target Market Determination (TMD) available at
             <a href="https://www.futuresuper.com.au/documents-and-forms/"
               >https://www.futuresuper.com.au/documents-and-forms/</a
@@ -122,23 +126,32 @@
             supplied.
           </p>
           <p class="disclaimer">
-            Interests in Future Super are issued by Diversa Trustees Limited
-            (ABN 49 006 421 638; AFSL 235153; RSE Licence L0000635) (“the
-            Trustee”) as trustee of the Future Super Fund (ABN 45 960 194 277;
-            RSE Registration R1072914) (“the Fund” or “Future Super”). The Fund
-            is administered by OneVue Super Services Pty Limited (ABN 74 006 877
-            872; AFSL 246883). Insurance cover is provided to eligible members
-            by AIA Australia Limited (ABN 79 004 837 861; AFSL 230043).
+            The issuer of this website and the Founder, Promoter and Investment
+            Manager of the Fund is Future Super Investment Services Pty Ltd (ABN
+            55 621 040 702; AFS Representative No. 001271441), which is a
+            Corporate Authorised Representative of Future Promoter Holdings Pty
+            Ltd (ABN 90 167 800 580; AFSL 482684).
           </p>
           <p class="disclaimer">
-            The Founder, Promoter and Investment Manager of the Fund is Future
-            Super Investment Services Pty Ltd (ABN 55 621 040 702; AFS
-            Representative No. 001271441), which is a Corporate Authorised
-            Representative of Future Superannuation Holdings Pty Ltd (ABN 90 167
-            800 580; AFSL 482684). The Trustee does not in any way endorse,
-            warrant or accept responsibility for any services provided by the
-            Promoter in its own right or directly to members or prospective
-            members.
+            Equity Trustees Superannuation Limited (ABN 50 055 641 757, RSE
+            Licence L0001458, AFSL 229757) is Trustee of the Future Super Fund
+            (ABN 45 960 194 277; RSE Registration R1072914). The Trustee does
+            not in any way endorse, warrant or accept responsibility for any
+            services provided by the Promoter in its own right or directly to
+            members or prospective members. Learn more about our Trustee
+            including their Privacy Statement <a
+              href="https://www.eqt.com.au/superannuation/board-and-governance"
+              >here</a
+            >. The Fund is administered by OneVue Super Services Pty Limited
+            (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to
+            eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL
+            230043).
+          </p>
+          <p class="disclaimer">
+            When considering a new fund, you should consider checking the costs
+            and amount of any cover offered and any relevant information before
+            you make a decision to transfer your super, such as differences in
+            insurance cover and fees.
           </p>
         </div>
         <div class="bcorp">
@@ -229,6 +242,11 @@
     border-radius: 32px 32px 0 0;
     background-color: $black;
     color: $white;
+  }
+
+  .noTopMargin {
+    margin: 0;
+    border-radius: 0 0 0 0;
   }
 
   .footer-container {

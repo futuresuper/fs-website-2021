@@ -9,11 +9,12 @@
     "Super Forms",
     "Pension Documents and Forms",
     "Annual Reports",
+    "Financial Statements",
     "Impact Reports",
     "Employer Forms",
-    "Significant Event Notices",
     "Member Outcomes Assessments",
     "Disclosure Requirements",
+    "Trust Deed",
     "Other Documents",
   ];
 </script>

@@ -1,24 +1,24 @@
 ---
-title: "Why Coal is a Dying Investment"
+author: Future Super
 slug: why-coal-is-a-dying-investment
 date: 2019-02-06T08:54:36.923Z
+canonical: null
+title: Why Coal is a Dying Investment
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340154b0cd3d29_Blog%20-%20main%20images%20_2.0.png
 tags:
   - Environment
   - Renewable Energy
-author: Future Super
-canonical:
-description: >-
-  Coal is a dying investment and we've got the proof. Future Super gives the full story on why Australians are steering clear from fossil fuel investments.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340154b0cd3d29_Blog%20-%20main%20images%20_2.0.png
+description: Coal is a dying investment and we've got the proof. Future Super
+  gives the full story on why Australians are steering clear from fossil fuel
+  investments.
 ---
-
 Coal is dying. Around the globe, investment in renewables has surpassed investment in coal. Last year, renewable energy sources accounted for [two-thirds of new electricity](http://www.theaustralian.com.au/news/nation/solar-exceeds-new-investment-in-coal/news-story/cdde93d6c7e6a5645f9a69d25c0485d2) generating capacity around the world, with solar power alone exceeding new coal investments.
 
 > In 2016, [global investment in clean and renewable energy accounted for $227 billion](https://www.ft.com/content/702822b6-46f0-11e7-8d27-59b4dd6296b8), almost double the $114 billion invested in fossil fuels.
 
 The verdict is in. Yet in Australia, the push for coal investment continues from certain quarters. Find out why this push is doomed to fail, and how you can play a part in a cleaner future through ethical investment and superannuation, and why Australia can no longer ride the wave [of one of the world's dirtiest energy sources](http://www.iea.org/bookshop/735-Medium-Term_Coal_Market_Report_2016).
 
-[_Steer clear of dirty fossil fuels and make the switch to Future Super. It only takes 2 minutes._](https://join.myfuturesuper.com.au/)
+*[Steer clear of dirty fossil fuels and make the switch to Future Super. It only takes 2 minutes.](https://join.myfuturesuper.com.au/)*
 
 ## The price of carbon is more than zero
 
@@ -30,9 +30,9 @@ This was the case with CO2CRC, a company that is developing technology to store 
 
 Carbon emissions have a cost. Think:
 
-- Pollution of the environment
-- Social costs
-- Economic factors in dealing with oil spills and damaged environments.
+* Pollution of the environment
+* Social costs
+* Economic factors in dealing with oil spills and damaged environments.
 
 To be fair, CO2CRC does try to account for it in their future predicting that coal prices will go up based on the introduction of an Emissions Trading Scheme. But this skirting of facts does highlight the importance of casting a critical eye over reporting on renewables vs fossil fuels.
 
@@ -52,9 +52,9 @@ We should keep in mind that coal has been around for a long time. Not only have 
 
 In any industry, new technologies require research and development. This means an upfront investment in time and resources for a future gain. Simply put, 'pro-coal’ arguments rely on the obfuscating view that coal is, right now, cheaper to produce. As we now know, that's only because:
 
-- There's existing infrastructure to extract coal
-- Extraction processes have been refined over hundreds of years
-- Reporting often ignores the costs of carbon emissions on the planet and people who are impacted by climate change.
+* There's existing infrastructure to extract coal
+* Extraction processes have been refined over hundreds of years
+* Reporting often ignores the costs of carbon emissions on the planet and people who are impacted by climate change.
 
 ![A quote by Christiana Figueres the former UN Climate Chief](https://lh6.googleusercontent.com/PFK9vb5pC8HEtyafRUUADMXITK9PVNSMxiUqw_eylOx1lazTMVIHM97FmfmEvFT61Dn9b4tg9rxVDc9DUJM1CGjucr2C0wy9BT1iC3JaW7mck-vPmOygILEukyLT1w_wEgFuY3qR)
 
@@ -72,7 +72,7 @@ China is the last big market for coal, and coal exporters around the world are a
 
 Goldman Sachs analysts believe the [demand for coal will drop considerably](http://d35brb9zkkbdsd.cloudfront.net/wp-content/uploads/2013/08/GS_Rocks__Ores_-_Thermal_Coal_July_2013.pdf) over the coming years, declaring:
 
-_The prospect of weaker demand growth (we believe seaborne demand could peak in 2020) and seaborne prices near marginal production costs suggest that most thermal coal growth projects will struggle to earn a positive return for their owners._
+*The prospect of weaker demand growth (we believe seaborne demand could peak in 2020) and seaborne prices near marginal production costs suggest that most thermal coal growth projects will struggle to earn a positive return for their owners.*
 
 Investing in new coal projects is just plain irresponsible. Coal is dying, and Australia needs to look at better options if we want to see a return on investment.
 
@@ -82,9 +82,9 @@ In Australia, [87% of our electricity comes from fossil fuels](https://www.envir
 
 Many coal advocates position themselves as champions of GDP, jobs and productivity. However a clean Australia is better for productivity than a dirty one. As reported by the [Sydney Morning Herald](http://www.smh.com.au/comment/neglecting-the-environment-is-a-bad-investment-that-will-burden-future-generations-20170307-gushpu.html), a reduction in dirty energy means:
 
-- Cleaner water systems mean less salinity and erosion
-- Good soil for better retention of water and nutrient cycling
-- More biodiversity improves pollinators and increases yield.
+* Cleaner water systems mean less salinity and erosion
+* Good soil for better retention of water and nutrient cycling
+* More biodiversity improves pollinators and increases yield.
 
 ![closeup image of a kangaroo](https://lh4.googleusercontent.com/8xfa7Ca296JaO0_n6Flj0Yjn0rJbUt43k7m-0XUFdiETxRnHP2kTq0w6btTj7EI26psI94CNbjzj4R34pqnGu1KI9jSymD0j5z-DQXgUmJU0kAAktSH_FubGzCGlBItAxXWH0pHQ)
 
@@ -106,6 +106,6 @@ Australian culture shares a strong relationship with the natural beauty and wond
 
 An ongoing commitment to goal is made when you consider the problems it causes. We have the opportunity to embrace renewable energies and secure a world we actually want to live in.
 
-While governments and big coal might think only in the short term, the rest of us can make decisions that benefit our future. Invest your superannuation in an fossil fuel free super fund like Future Super, and watch as your contribution helps change the world for the better. [Find more about our ethical investments](https://www.myfuturesuper.com.au/choosing/investments) and make a commitment to move away from big coal today.
+While governments and big coal might think only in the short term, the rest of us can make decisions that benefit our future. Invest your superannuation in a super fund invested for a fossil fuel free future, and watch as your contribution helps change the world for the better. [Find more about our ethical investments](https://www.myfuturesuper.com.au/choosing/investments) and make a commitment to move away from big coal today.
 
 ![image of woman holding a world globe in her hand](https://lh3.googleusercontent.com/UCAvyP3v6R-YHVxcyv3BB33MC6oowUMwewPb9MBn3UdOIDN2wGDHAL5pZ9lE792BLr158Z1oxYd_Ura1itWzfV5xRjCUlihSrnwBhVyxJzQqoOB2q8fVopalv2h8BFNM4vYIqIDS)

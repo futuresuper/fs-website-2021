@@ -31,7 +31,7 @@
         </div>
         <h5>Indexed Investments</h5>
         <h3>Balanced<br />Index</h3>
-        <p>Zero fossil fuels but no impact targets.</p>
+        <p>Screens out fossil fuel companies but no impact targets.</p>
       </div>
     </div>
 
@@ -52,8 +52,8 @@
         <h5 class="blue">Social Impact Investments</h5>
         <h3>Balanced<br /><span class="blue">Impact</span></h3>
         <p>
-          Zero fossil fuels. Targets investment in social impact and renewable
-          energy projects.
+          Screens out fossil fuel companies. Targets investment in social impact
+          and renewable energy projects.
         </p>
       </div>
     </div>
@@ -82,7 +82,8 @@
         <h5 class="green">Most Renewables Investments</h5>
         <h3>Renewables<br /><span class="green">Plus Growth</span></h3>
         <p>
-          Zero fossil fuels. Targets 20% allocation to climate change solutions.
+          Screens out fossil fuel companies. Targets 20% allocation to climate
+          change solutions.
         </p>
       </div>
     </div>

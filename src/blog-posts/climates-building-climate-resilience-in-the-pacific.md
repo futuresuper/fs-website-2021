@@ -1,20 +1,22 @@
 ---
-title: "Impact Spotlight: How Climates Is Building Climate Resilience In The Pacific"
+author: Farah Muharam
 slug: climates-building-climate-resilience-in-the-pacific
 date: 2019-02-06T10:24:31.229Z
+canonical: null
+title: "Impact Spotlight: How Climates Is Building Climate Resilience In The Pacific"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834019e5ccd3de9_5c1443dba808388aa40d2240_Climates-Spotlight-Main%20(1).png
 tags:
   - Activism
   - Divestment
   - Member stories
   - Renewable Energy
-author: Farah Muharam
-canonical:
-description: >-
-  Future Super are proud to work with and support organisations leading the way to address climate action. Climates is a not-for-profit organisation empowering our neighbours in the Pacific to build climate resilience. They’ve just come back from COP23 in Bonn, check out our interview with them.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834019e5ccd3de9_5c1443dba808388aa40d2240_Climates-Spotlight-Main%20(1).png
+description: Future Super are proud to work with and support organisations
+  leading the way to address climate action. Climates is a not-for-profit
+  organisation empowering our neighbours in the Pacific to build climate
+  resilience. They’ve just come back from COP23 in Bonn, check out our interview
+  with them.
 ---
-
-> **_Climates are on the front lines fighting climate change with Pacific Island nations._**
+> ***Climates are on the front lines fighting climate change with Pacific Island nations.***
 
 ![Image of our climates team on the ground working with our neighbours in the pacific ](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401134fcd3e38_climate%20resiliance%20(1).jpg>)
 
@@ -26,7 +28,7 @@ We were lucky to interview the Climates team on their amazing work.
 
 Jarrod Troutbeck, Co-Founder of Climates
 
-### 1\. Tell us a bit about yourself. Where did you grow up, where are you based now and what do you do for a living?
+### 1. Tell us a bit about yourself. Where did you grow up, where are you based now and what do you do for a living?
 
 **Jarrod:** I grew up on a working farm in coastal Victoria where I got to enjoy an outdoor lifestyle and became well-acquainted with nature as a kid. I did what many people do in their early twenties and went backpacking overseas where I began to appreciate the urgency and severity of climate change risks. I studied economics to help me understand the ways to combat the problem from a public policy perspective, but I felt like something was missing.
 
@@ -36,7 +38,7 @@ I wanted to understand how this impacted decisions on the ground and what grassr
 
 photo credit: (c) Jeff Tan
 
-### 2\. How has the fossil fuel industry impacted your life?
+### 2. How has the fossil fuel industry impacted your life?
 
 I have always had an appreciation for some of the benefits we enjoy due to the discovery of fossil fuels - transport to see family, friends and new places; heating and cooling for Melbourne’s sporadic weather. This makes it difficult to accept that we either need to significantly reduce our demand for these benefits, or we need to discover alternative energy sources to resource them. What is less challenging is to see the writing on the wall that this is a predicament the global north need to come to terms with very quickly. I feel very energised by the challenge of spreading this message beyond my friends and family, that this is not a drill but the real deal.
 
@@ -48,7 +50,7 @@ In the words of late Marshallese politician, Tony deBrum,
 
 > "If these islands go, it's going to be almost too late to stop the effects of climate change. We need to do it while we can still talk to each other in the same way, without panic, and with the assurance that the science is out there."
 
-### 3\. What got you interested in working with Pacific Island nations to build climate resilience?
+### 3. What got you interested in working with Pacific Island nations to build climate resilience?
 
 I have always been fascinated by the notion of living within the bounds of what one’s own land can produce. I wanted to learn about this from the experts on Australia’s neighbouring island nations who seem to have mastered living in relative harmony with each other and with nature. This passion sent me on several jaunts out to experience the natural beauty of our part of the world, and the incalculable depth of Indigenous and local knowledge necessary to survive the conditions and navigate the seas.
 
@@ -58,7 +60,7 @@ Their concern about global issues are too easy for larger, distant countries to 
 
 ![Image of 2 men involved with Climates sitting down and laughing](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014b79cd3d8c_image%20of%202%20men%20(1).png>)
 
-### 4\. How did you get started with Climates?
+### 4. How did you get started with Climates?
 
 In 2014, I volunteered as an Australian Youth Ambassador for Development with the National Reserve Bank of Tonga. By sharing times of hardship and celebration, the Tongan people showed me how they build resilient communities that have a fighting chance to tackle even the most colossal of environmental threats.
 
@@ -76,13 +78,13 @@ photo credit: (c) Geoff Bartlett
 
 Kate Donnelly
 
-### 5\. What did it feel like attending COP23?
+### 5. What did it feel like attending COP23?
 
 **Kate:** This was my first COP, and to be honest, it still feels a little unreal. The scale of climate action really hits you in the face when you’re surrounded by representatives of the cities and companies, universities and grassroots organisations worldwide that are picking up the political slack on a range of mitigation and adaptation measures. It’s incredible, and a great tonic for the feelings of frustration and disappointment that the actual negotiations can inspire!
 
 ![Image of COP23 Fiji](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012af5cd3d7e_5c1443dba808383bf90d220f_COP23(1)%20(1).png>)
 
-### 6\. What were the key learnings you took away from the conference?
+### 6. What were the key learnings you took away from the conference?
 
 While the science is telling us that we have to act urgently, it seems apparent from the COP that patience is key. The negotiations involve a complex range of interests, incentives and cultural values which really make the process time consuming if it is to be done properly. Smaller, more at-risk countries - like many of Australia’s neighbours - are inherently disadvantaged by these international institutions. The cost and location of these forums are often prohibitive, limiting the size of delegations from less wealthy, isolated countries.
 
@@ -90,7 +92,7 @@ The Pacific civil society are a force to be reckoned with. If large countries at
 
 ![Image from COP23](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401bfd2cd3c43_COP23(2).png>)
 
-### 7\. If you could give advice to those who are just starting to fight against climate change, what would it be?
+### 7. If you could give advice to those who are just starting to fight against climate change, what would it be?
 
 > Eventually, in our own time we will all come to terms with the awful reality of climate change.
 
@@ -104,9 +106,9 @@ Help others follow your footsteps so that you can learn from them too.
 
 ![Quote by Kate Donnelly "there is a better future, and we can get there if we keep working together to keep the pressure on. ](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018077cd3c47_Jarrod%20Troutbeck%20_%20FSH%20(2).png>)
 
-### 8\. How do you sustain yourself to keep fighting for climate resilience, do you have any tips?
+### 8. How do you sustain yourself to keep fighting for climate resilience, do you have any tips?
 
-I’ve only been doing this for a couple of years, and I just think about those people who have been fighting for climate justice, for social justice, for decades, about the communities who don’t have any choice _but_ to fight with all they’ve got.
+I’ve only been doing this for a couple of years, and I just think about those people who have been fighting for climate justice, for social justice, for decades, about the communities who don’t have any choice *but* to fight with all they’ve got.
 
 Being surrounded by incredible Pacific advocates and seeking out stories of inspiring climate action - from the governments of small island developing states to the fearless advocacy of community groups across the world - have been the two ways that I keep myself fired up.
 
@@ -120,7 +122,7 @@ There is a better future, and we can get there if we keep working together to ke
 
 Oli Moraes
 
-### 9\. What sort of future do you hope for?
+### 9. What sort of future do you hope for?
 
 **Oli:** I hope for a future where fossil fuels no longer play a part in our society and all Australians show true support and respect to our friends in the region by acting responsibly and fairly so that a safe and habitable climate is achievable for current and future generations.
 
@@ -132,7 +134,7 @@ That’s what [Climates](http://www.climates.org.au/) hopes to achieve.
 
 photo credit: (c) Jeff Tan
 
-### 10\. What can Future Super members do to help you in the fight for climate resilience in the Pacific?
+### 10. What can Future Super members do to help you in the fight for climate resilience in the Pacific?
 
 We’re currently crowdfunding so that we can continue to support communities in the region and raise awareness about climate change here in Australia.
 
@@ -140,7 +142,7 @@ You can support us by donating to our campaign and help us reach our target of $
 
 ![Quote bu Oli Moraes "We need to send the message to companies that fossil fuels are incompatible with a safe climate and a resilient and habitable pacific. ](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401466ecd3ba0_Jarrod%20Troutbeck%20_%20FSH%20(5).png>)
 
-### 11\. Why did you decide to make the switch to Future Super?
+### 11. Why did you decide to make the switch to Future Super?
 
 I decided to divest my superannuation from fossil fuels by switching to Future Super because I try to take as much action on climate change as I can through my work at Climates, volunteer commitments, and my individual life.
 
@@ -149,3 +151,5 @@ However, if your money (in your bank and super fund) is investing in fossil fuel
 So if we’re serious about taking action on climate change and supporting our mates in the Pacific then we also need to send the message to companies that the continual use of fossil fuels is incompatible with a safe climate and resilient and habitable Pacific.
 
 > So if you haven't already divested, do it now! In fact, Future Super will also donate $150 to Climates if you [switch to fossil free super through our page](https://www.myfuturesuper.com.au/support/climates?utm_campaign=Climates&utm_medium=Website&utm_source=FS-Blog&utm_content=Member-Spotlight-Article&utm_safe=). So go fossil free today and join us in the movement!
+
+Note that the views and opinions expressed by the interviewee are solely their own.

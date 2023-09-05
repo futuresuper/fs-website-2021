@@ -48,7 +48,7 @@
     </div>
     <HeaderRow title="Impact talk" pensionOnly={pension} />
     <div class="table-row {pension ? 'pension' : ''}">
-      <h4>Zero fossil fuels</h4>
+      <h4>Screens out fossil fuel companies</h4>
       <div class="tick"><Tick /></div>
       {#if !pension}
         <div class="tick"><Tick /></div>
@@ -131,7 +131,8 @@
       {#each options as option}
         <div>
           <p class="number">
-            {option.fee.perAnnumPercentage}% + ${option.fee.perYearPrice}
+            {option.fee.perAnnumPercentage.toFixed(3)}% + ${option.fee
+              .perYearPrice}
           </p>
           <!-- <p class="number-desc">
             ${(
