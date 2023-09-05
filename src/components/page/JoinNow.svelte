@@ -22,19 +22,24 @@
     });
   });
 </script>
-<div class="background">
-  <a class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span>Back</a>
-  <div class="heading">
-    <p>Join more</p>
-    <p>than 40,000</p>
-    <p>people</p>
-    <p>investing in</p>
-    <p class="heading--green">climate</p>
-    <p class="heading--green">solutions.</p>
+
+<div class="join-form ">
+
+  <div class="join-form__image">
+    <a class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span><span class="back-button--text">Back</span></a>
+    <div class="join-form__image--content">
+      <p>Join more</p>
+      <p>than 40,000</p>
+      <p>people</p>
+      <p>investing in</p>
+      <p class="heading--green">climate</p>
+      <p class="heading--green">solutions.</p>
+    </div>
   </div>
-  <form method="GET" action="https://join.futuresuper.com.au/">
-    <div class="form-container">
-      <h2 class="form-heading">Join Future Super</h2>
+
+  <form class="join-form__form" method="GET" action="https://join.futuresuper.com.au/">
+    <div class="join-form__form--container">
+      <h2 class="join-form__form--heading">Join Future Super</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
         <h4>Takes about 4 minutes.</h4>
@@ -87,46 +92,87 @@
 <style lang="scss">
   @use "../../styles/" as *;
 
-  .background {
-    background-image: url('/images/join-form-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: -10% 15%;
-    min-height: 1320px;
-
+  .join-form{
     display: flex;
-    align-items: stretch;
-    justify-content: end;
-
-    column-gap: 120px;
-
-    position: relative;
-  }
-
-  form {
-    border-radius: 32px 0 0 32px;
-
-    background-color: white;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .form{
-    &-container{
-      padding: 40px;
-      max-width: 550px;
+    @media (max-width: 800px) {
+      flex-direction: column;
     }
 
-    &-heading{
-      margin-bottom: 8px;
+    &__image{
+      background-image: url('/images/join-form-background.png');
+      background-size: cover;
+      background-position: 0;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      width: 52%;
 
-      font-size: 48px;
+      display: flex;
+      align-items: stretch;
+      justify-content: end;
 
+
+
+      position: relative;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        border-radius: 0 0 40px 40px;
+        background-position: 35%;
+      }
+
+      &--content{
+        @media (max-width: 800px) {
+          font-size: 32px;
+        }
+        padding-right: 15%;
+        padding-top: 15%;
+        font-size: 64px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        p{
+          background-color: $black;
+          padding: 0 5px;
+          &.heading--green{
+            color: $black;
+            background-color: #77FD79;
+          }
+        }
+
+      }
     }
 
+    &__form{
+      border-radius: 32px 0 0 32px;
+
+      margin-left: -2%;
+      z-index: 10;
+      background-color: white;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 800px) {
+        width: 100%;
+        border-radius: 0;
+        padding: 240px 0;
+      }
+
+      &--container{
+        padding: 40px;
+        max-width: 550px;
+      }
+
+      &--heading{
+        margin-bottom: 8px;
+
+        font-size: calc(30px + 1vw);
+      }
+    }
   }
+
 
   input {
     display: block;
@@ -143,30 +189,21 @@
     margin-top: 40px;
   }
 
-  .heading {
-    font-size: 64px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    p{
-      background-color: $black;
-      padding: 0 5px;
-      &.heading--green{
-        color: $black;
-        background-color: #77FD79;
-      }
-    }
-
-
-  }
-
   .button{
     &.secondary{
       background-color: transparent;
       border-color: white;
-
+      @media (max-width: 800px) {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background-color: #A5A5A5;
+        border-color: $green;
+        border-width: 1px;
+      }
 
     }
   }
@@ -175,10 +212,28 @@
     position: absolute;
     top: 65px;
     left: 58px;
+    @media (max-width: 800px) {
+      top: 12px;
+      left: 25px;
+      position: fixed;
+      z-index: 20;
+    }
+
     &--icon{
       width: 20px;
       height: 20px;
       margin-right: 15px;
+      @media (max-width: 800px) {
+        margin-right: 0;
+        filter: invert(1);
+
+      }
+    }
+
+    &--text{
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
   }
 
@@ -218,14 +273,4 @@
     }
   }
 
-  @media (min-width: 1300px) {
-    form {
-
-    }
-  }
-
-  @media (max-width: 800px) {
-    form {
-    }
-  }
 </style>
