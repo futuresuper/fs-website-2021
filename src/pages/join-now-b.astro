@@ -1,15 +1,17 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import JoinNow from "@components/page/JoinNow.svelte";
+import JoinNowB from "@components/page/JoinNowB.svelte";
 ---
 
 <BaseLayout
   title="Join Now"
   description="Joining Future Super usually takes about 5 minutes"
   hidePageHeader
+  hideHeader
   headerBackgroundColour="#FFFFFF"
-  skinnyContainer
+  noContainer
   joinPage
+  noFooterMargin
 >
-  <JoinNow client:load />
+  <JoinNowB client:load />
 </BaseLayout>
