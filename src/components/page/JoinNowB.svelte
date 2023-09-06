@@ -86,9 +86,11 @@
   @use "../../styles/" as *;
 
   :global(html){
-    max-height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    @media (max-width: 800px) {
+      max-height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
   }
 
   :global(footer){
