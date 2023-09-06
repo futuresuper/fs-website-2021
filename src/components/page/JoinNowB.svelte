@@ -4,7 +4,9 @@
 
   function toggleInput(){
     let input = document.querySelector('#first_name');
-    input.focus()
+    setTimeout(() =>{
+      input.focus()
+    })
   }
 
 
