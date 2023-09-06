@@ -119,7 +119,7 @@
       width: 60%;
 
       display: flex;
-      align-items: stretch;
+      align-items: end;
       justify-content: end;
 
 
@@ -140,16 +140,14 @@
         @media (max-width: 800px) {
           font-size: 32px;
           padding-right: 40px;
-          padding-top: 381px;
+          height: 95vh;
         }
-        height: fit-content;
+        height: 75vh;
 
         @media (min-width: 1440px) {
           padding-right: 20%;
-          padding-top: 25rem;
         }
         padding-right: 23%;
-        padding-top: 18rem;
         font-size: 64px;
         color: white;
         display: flex;
