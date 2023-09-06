@@ -2,18 +2,9 @@
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
 
-  function scrollToNextSection(){
-    let el = document.querySelector('#join-form');
-
-    window.scrollTo({
-      top: el.offsetTop - 100,
-      behavior: 'smooth'
-    })
-  }
-
-  function toggleInput(focus){
+  function toggleInput(){
     let input = document.querySelector('#first_name');
-    focus ? input.focus() : input.blur();
+    input.focus()
   }
 
 
@@ -22,8 +13,7 @@
       entries.forEach((entry) =>{
 
         if(entry.isIntersecting){
-          scrollToNextSection()
-          toggleInput(true)
+          toggleInput()
         }
       })
     })
@@ -95,13 +85,28 @@
 <style lang="scss">
   @use "../../styles/" as *;
 
+  :global(html){
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  :global(footer){
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-bottom: 5rem;
+  }
+
   .impact{
     display: flex;
+
+
     @media (max-width: 800px) {
       flex-direction: column;
     }
 
     &__image{
+      scroll-snap-align: start;
       background-image: url('/images/join-form-background.png');
       background-size: cover;
       background-position: top right;
@@ -120,12 +125,18 @@
       @media (max-width: 800px) {
         width: 100%;
         border-radius: 0 0 40px 40px;
-        background-position: 35%;
+        background-position: center;
       }
 
       &--content{
+        @media (max-width: 375px) {
+          padding-top: 341px;
+        }
+
         @media (max-width: 800px) {
           font-size: 32px;
+          padding-right: 40px;
+          padding-top: 381px;
         }
         height: fit-content;
 
@@ -145,6 +156,9 @@
           background-color: $black;
           padding: 0 5px;
           margin-bottom: 0.375rem;
+          @media (max-width: 800px) {
+            margin-bottom: 0.25rem;
+          }
           &.heading--green{
             color: $black;
             background-color: #77FD79;
@@ -155,7 +169,9 @@
     }
 
     &__form{
+
       border-radius: 80px 0 0 80px;
+      min-height: 100vh;
 
       padding: 46px  40px 46px 84px;
 
@@ -171,12 +187,18 @@
       align-items: center;
       justify-content: center;
       @media (max-width: 800px) {
+        margin-left: 0;
         width: 100%;
         border-radius: 0;
-        padding: 240px 0;
+        padding: 120px 40px;
       }
 
       &--container{
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        @media (max-width: 800px) {
+          padding: 120px 0;
+        }
         max-width: 632px;
       }
 
@@ -230,7 +252,7 @@
     top: 65px;
     left: 58px;
     @media (max-width: 800px) {
-      top: 12px;
+      top: 24px;
       left: 25px;
       position: fixed;
       z-index: 20;
