@@ -14,7 +14,7 @@
     setTimeout(() =>{
       form.scrollIntoView({behavior: 'smooth'});
       toggleInput();
-    }, 600)
+    }, 2500)
   });
 </script>
 <div class="impact">
