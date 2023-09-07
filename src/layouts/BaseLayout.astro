@@ -23,7 +23,7 @@ const {
   skinnyContainer,
   customHeader,
   joinPage = false,
-  noFooterMargin=false,
+  noFooterMargin = false,
 } = Astro.props;
 const pageTitle = title
   ? title + " | Future Super"
@@ -125,128 +125,141 @@ const seoDescription = description
   }
 </style>
 
-<title>{pageTitle}</title>
-<meta charset="UTF-8" />
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0 viewport-fit=cover"
-  shrink-to-fit="no"
-/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<meta name="description" content={seoDescription} />
-<meta property="og:title" content={pageTitle} />
-<meta property="og:description" content={seoDescription} />
-<meta property="og:image" content={pageImage} />
-<meta property="og:type" content="website" />
-<meta property="twitter:title" content={pageTitle} />
-<meta property="twitter:description" content={seoDescription} />
-<meta property="twitter:image" content={pageImage} />
-<meta name="twitter:card" content="summary_large_image" />
+<html lang="en">
+  <head>
+    <title>{pageTitle}</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 viewport-fit=cover"
+      shrink-to-fit="no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content={seoDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:image" content={pageImage} />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content={pageTitle} />
+    <meta property="twitter:description" content={seoDescription} />
+    <meta property="twitter:image" content={pageImage} />
+    <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
-<link rel="icon" href="/images/FS_Favicon_32.png" sizes="32x32" />
-<link rel="icon" href="/images/FS_Favicon_128.png" sizes="128x128" />
-<link rel="icon" href="/images/FS_Favicon_192.png" sizes="192x192" />
+    <link rel="icon" href="/images/FS_Favicon_32.png" sizes="32x32" />
+    <link rel="icon" href="/images/FS_Favicon_128.png" sizes="128x128" />
+    <link rel="icon" href="/images/FS_Favicon_192.png" sizes="192x192" />
 
-<!-- Favicon: Android -->
-<link rel="shortcut icon" sizes="196x196" href="/images/FS_Favicon_196.png" />
+    <!-- Favicon: Android -->
+    <link
+      rel="shortcut icon"
+      sizes="196x196"
+      href="/images/FS_Favicon_196.png"
+    />
 
-<!-- Favicon: iOS -->
-<link
-  rel="apple-touch-icon"
-  href="/images/FS_Favicon_152.png"
-  sizes="152x152"
-/>
-<link
-  rel="apple-touch-icon"
-  href="/images/FS_Favicon_120.png"
-  sizes="167x167"
-/>
-<link
-  rel="apple-touch-icon"
-  href="/images/FS_Favicon_180.png"
-  sizes="180x180"
-/>
+    <!-- Favicon: iOS -->
+    <link
+      rel="apple-touch-icon"
+      href="/images/FS_Favicon_152.png"
+      sizes="152x152"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/images/FS_Favicon_120.png"
+      sizes="167x167"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/images/FS_Favicon_180.png"
+      sizes="180x180"
+    />
 
-<script is:inline>
-  // prettier-ignore
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ";;analytics.SNIPPET_VERSION="4.15.3";
+    <script is:inline>
+      // prettier-ignore
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ";;analytics.SNIPPET_VERSION="4.15.3";
       analytics.load("eQR3natt50TEUlf2gEcCSbBn4fhmXjZQ");
       analytics.page();
       }}();
-</script>
+    </script>
 
-<body>
-  {
-    !hideHeader && (
-      <div class="header-container">
-        <Header client:load {joinPage} />
-      </div>
-    )
-  }
-  <main>
+    <!-- VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script is:inline type="text/javascript" id="vwoCode">
+      // prettier-ignore
+      window._vwo_code || (function() { var account_id=757342,version=2.0,settings_tolerance=2000,hide_element='body',hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();
+    </script>
+  </head>
+
+  <body>
     {
       !hideHeader && (
-        <div
-          class={!noBehindHeader ? "behind-header" : "no-behind-header"}
-          style={
-            headerBackgroundColour
-              ? "background-color:" + headerBackgroundColour
-              : ""
-          }
-        />
-      )
-    }
-
-    {
-      !hidePageHeader && (
-        <div
-          style={
-            pageHeadBackgroundColour
-              ? "background-color:" + pageHeadBackgroundColour
-              : ""
-          }
-        >
-          <div
-            class={"page-header " + (noBehindHeader ? "no-behind-header" : "")}
-          >
-            {!customHeader && (
-              <div class="container">
-                <div class="page-title-and-description">
-                  {!hideTitle && <h1>{title ? title : "Future Super"}</h1>}
-                  {!hideDescription && (
-                    <h3>
-                      {pageDescription ? pageDescription : seoDescription}
-                    </h3>
-                  )}
-                </div>
-                {intro && (
-                  <p class="intro">
-                    <Fragment set:html={intro} />
-                  </p>
-                )}
-              </div>
-            )}
-            <slot name="customHeader" />
-          </div>
+        <div class="header-container">
+          <Header client:load {joinPage} />
         </div>
       )
     }
+    <main>
+      {
+        !hideHeader && (
+          <div
+            class={!noBehindHeader ? "behind-header" : "no-behind-header"}
+            style={
+              headerBackgroundColour
+                ? "background-color:" + headerBackgroundColour
+                : ""
+            }
+          />
+        )
+      }
 
-    <div class={!noContainer ? "container" : ""}>
-      <div class={skinnyContainer ? "skinny-container" : ""}>
-        <slot />
+      {
+        !hidePageHeader && (
+          <div
+            style={
+              pageHeadBackgroundColour
+                ? "background-color:" + pageHeadBackgroundColour
+                : ""
+            }
+          >
+            <div
+              class={
+                "page-header " + (noBehindHeader ? "no-behind-header" : "")
+              }
+            >
+              {!customHeader && (
+                <div class="container">
+                  <div class="page-title-and-description">
+                    {!hideTitle && <h1>{title ? title : "Future Super"}</h1>}
+                    {!hideDescription && (
+                      <h3>
+                        {pageDescription ? pageDescription : seoDescription}
+                      </h3>
+                    )}
+                  </div>
+                  {intro && (
+                    <p class="intro">
+                      <Fragment set:html={intro} />
+                    </p>
+                  )}
+                </div>
+              )}
+              <slot name="customHeader" />
+            </div>
+          </div>
+        )
+      }
+
+      <div class={!noContainer ? "container" : ""}>
+        <div class={skinnyContainer ? "skinny-container" : ""}>
+          <slot />
+        </div>
       </div>
-    </div>
 
-    {relatedPages && <RelatedPages relatedPages={relatedPages} />}
-  </main>
-  {
-      !hideFooter && (
-         <Footer client:visible noTopMargin={noFooterMargin}/>
-      )
-    }
+      {relatedPages && <RelatedPages relatedPages={relatedPages} />}
+    </main>
+    {!hideFooter && <Footer client:visible noTopMargin={noFooterMargin} />}
 
-  <script is:inline src="/scripts/tracking.js"></script>
-</body>
+    <script is:inline src="/scripts/tracking.js"></script>
+  </body>
+</html>

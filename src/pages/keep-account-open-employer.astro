@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import ResendEmployerComms from "@components/common/ResendEmployerComms.svelte";
 ---
 
 <BaseLayout
@@ -19,6 +20,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
   >
   </div>
   <script is:inline src="//embed.typeform.com/next/embed.js"></script>
+  <ResendEmployerComms client:load />
   <div style="padding: 80px">
     <p>
       By providing your personal information in this form you consent to Future
@@ -31,6 +33,13 @@ import BaseLayout from "@layouts/BaseLayout.astro";
       bodies and the trustee of any other fund to which you transfer. To access
       your personal information or for a copy of our Privacy Policy, visit
       www.myfuturesuper.com.au or phone 1300 658 422.
+    </p>
+    <p>
+      The issuer of this website and the Founder, Promoter and Investment
+      Manager of the Fund is Future Super Investment Services Pty Ltd (ABN 55
+      621 040 702; AFS Representative No. 001271441), which is a Corporate
+      Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167
+      800 580; AFSL 482684)
     </p>
     <p>
       Interests in Future Super are issued by Equity Trustees Superannuation

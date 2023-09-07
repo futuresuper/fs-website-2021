@@ -3,31 +3,30 @@
 
   const clientSide = !import.meta.env.SSR;
 
-  let apList = "";
-  let email = "";
   let message = "";
+  let title = "";
 
   if (clientSide) {
-    apList = getQueryParam("aplist") ? getQueryParam("aplist") : "";
-    email = getQueryParam("email") ? getQueryParam("email") : "";
-    message = getQueryParam("message")
-      ? getQueryParam("message")
-      : "Message received";
-    if (apList && email) {
+    let listId = getQueryParam("list");
+    let userId = getQueryParam("id");
+    message = getQueryParam("message") ?? "Message received";
+    title = getQueryParam("title") ?? "Thanks";
+    if (listId && userId) {
       const url =
-        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/addtoaplist";
+        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/addtociolist";
       fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          apList,
-          email,
+          listId,
+          userId,
         }),
       });
     }
   }
 </script>
 
+<h1>{title ?? "Thanks"}</h1>
 <h3>{message}</h3>
