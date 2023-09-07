@@ -2,37 +2,46 @@
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
 
-  function toggleInput(){
-    let input = document.querySelector('#first_name');
-      input.focus()
-  }
-
 
   onMount(async () => {
+    const input = document.querySelector('#first_name');
     const form = document.querySelector('#join-form');
 
-    setTimeout(() =>{
-      window.scrollTo({
-        top: form.offsetTop,
-        behavior: 'smooth'
-      });
+    input.focus()
 
-      toggleInput();
-    }, 2500)
+    if (window.innerWidth <= 800) {
+      setTimeout(() =>{
+        window.scrollTo({
+          top: form.offsetTop,
+          behavior: 'smooth'
+        });
+      }, 2500)
+    }
+
   });
 </script>
 <div class="impact">
   <meta name="theme-color" content="transparent">
   <div class="impact__image">
     <a href="/" class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span><span class="back-button--text">Back</span></a>
-    <div class="impact__image--content">
-      <p>Join more</p>
-      <p>than 40,000</p>
-      <p>people</p>
-      <p>investing in</p>
-      <p class="heading--green">climate</p>
-      <p class="heading--green">solutions.</p>
+
+    <div class="impact__content">
+      <div class="impact__content--message">
+        <p>Join more</p>
+        <p>than 40,000</p>
+        <p>people</p>
+        <p>investing in</p>
+        <p class="heading--green">climate</p>
+        <p class="heading--green">solutions.</p>
+      </div>
+
+      <div class="impact__content--text">
+        <p>Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed Fund (MF).<br>
+          Future Super has more than 40,000 members as of 1/9/2023</p>
+      </div>
     </div>
+
+
   </div>
 
   <form class="impact__form" method="GET" action="https://join.futuresuper.com.au/">
@@ -76,6 +85,12 @@
         receive communications by post at any time by contacting Future Super on
         1300 658 422 or via email at info@myfuturesuper.com.au or in writing at PO
         Box 1282, Albury, NSW 2640.
+
+        <br>
+        <br>
+        Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed Fund (MF).
+        <br>
+        <br>Future Super has more than 40,000 members as of 1/9/2023
       </p>
     </div>
 
@@ -115,22 +130,36 @@
         background-position: center;
       }
 
-      &--content{
-        @media (max-width: 375px) {
-          padding-top: 341px;
-        }
+    }
+
+    &__content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      @media (max-width: 375px) {
+        padding-top: 341px;
+      }
+      @media (max-width: 800px) {
+        font-size: 32px;
+        padding-right: 40px;
+        height: 95vh;
+      }
+      height: 75vh;
+
+      @media (min-width: 1440px) {
+        padding-right: 20%;
+      }
+      padding-right: 23%;
+
+      &--message{
+
 
         @media (max-width: 800px) {
           font-size: 32px;
-          padding-right: 40px;
-          height: 95vh;
         }
-        height: 75vh;
 
-        @media (min-width: 1440px) {
-          padding-right: 20%;
-        }
-        padding-right: 23%;
+
         font-size: 64px;
         color: white;
         display: flex;
@@ -150,6 +179,28 @@
           }
         }
 
+      }
+
+      &--text{
+        padding-top: 10%;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        width: 100%;
+
+        p{
+          @media (max-width: 800px) {
+            display: none;
+          }
+          @media (max-width: 1280px) {
+            font-size: 12px;
+          }
+          font-size: 14px;
+          color: white;
+          -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 0.5px;
+          -webkit-text-stroke-color: rgba(black, 0.1);
+        }
       }
     }
 
