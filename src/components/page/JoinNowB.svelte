@@ -9,10 +9,14 @@
 
 
   onMount(async () => {
-    const form = document.querySelector('.impact__form');
+    const form = document.querySelector('#join-form');
 
     setTimeout(() =>{
-      form.scrollIntoView({behavior: 'smooth'});
+      window.scrollTo({
+        top: form.offsetTop,
+        behavior: 'smooth'
+      });
+
       toggleInput();
     }, 2500)
   });
