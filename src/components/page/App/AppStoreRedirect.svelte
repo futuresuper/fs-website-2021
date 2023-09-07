@@ -26,6 +26,7 @@
     tbl: "The Bottom Line",
     websiteCaseStudy: "Website - Case Study",
     futureversaryEmail: "Futureversary Email",
+    rolloverEmail: "Rollover Email"
   };
 
   const href = {
