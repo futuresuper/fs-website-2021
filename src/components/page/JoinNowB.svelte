@@ -4,27 +4,21 @@
 
   function toggleInput(){
     let input = document.querySelector('#first_name');
-    setTimeout(() =>{
       input.focus()
-    })
   }
 
 
   onMount(async () => {
-    const observer = new IntersectionObserver((entries) =>{
-      entries.forEach((entry) =>{
+    const form = document.querySelector('.impact__form');
 
-        if(entry.isIntersecting){
-          toggleInput()
-        }
-      })
-    })
-    const animateElements = document.querySelectorAll('.impact__form--container');
-    animateElements.forEach((el) => observer.observe(el));
-
+    setTimeout(() =>{
+      form.scrollIntoView({behavior: 'smooth'});
+      toggleInput();
+    }, 600)
   });
 </script>
 <div class="impact">
+  <meta name="theme-color" content="transparent">
   <div class="impact__image">
     <a href="/" class="button secondary back-button"><span class="back-button--icon"><Arrow direction="left" colour="white" /></span><span class="back-button--text">Back</span></a>
     <div class="impact__image--content">
@@ -87,20 +81,6 @@
 <style lang="scss">
   @use "../../styles/" as *;
 
-  :global(html){
-    @media (max-width: 800px) {
-      max-height: 100vh;
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-    }
-  }
-
-  :global(footer){
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    padding-bottom: 5rem;
-  }
-
   .impact{
     display: flex;
 
@@ -110,7 +90,6 @@
     }
 
     &__image{
-      scroll-snap-align: start;
       background-image: url('/images/join-form-background.png');
       background-size: cover;
       background-position: top right;
@@ -173,7 +152,6 @@
     &__form{
 
       border-radius: 80px 0 0 80px;
-      min-height: 100vh;
 
       padding: 46px  40px 46px 84px;
 
@@ -196,8 +174,6 @@
       }
 
       &--container{
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
         @media (max-width: 800px) {
           padding: 120px 0;
         }
