@@ -115,7 +115,7 @@
       background-position: top right;
       background-repeat: no-repeat;
       min-height: 100vh;
-      width: 60%;
+      width: 55%;
 
       display: flex;
       align-items: end;
