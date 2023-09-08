@@ -7,7 +7,8 @@
     const input = document.querySelector('#first_name');
     const form = document.querySelector('#join-form');
 
-    input.focus()
+    input.setAttribute('autofocus', 'autofocus');
+    input.focus();
 
     if (window.innerWidth <= 800) {
       setTimeout(() =>{
@@ -261,7 +262,7 @@
   }
 
   .button{
-    &.secondary{
+    &.secondary {
       background-color: rgba($black950, 0.5);
       border-width: 1.25px;
       border-color: white;
@@ -277,6 +278,13 @@
         border-width: 1px;
       }
 
+    }
+
+  }
+
+  .primary{
+    @media (max-width: 800px) {
+      width: 100%;
     }
   }
 
