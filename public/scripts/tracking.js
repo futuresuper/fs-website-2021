@@ -1,9 +1,19 @@
 window.onload = function () {
   const referer = getQueryParam("r");
+  const utmSource = getQueryParam("utm_source");
+  const utmCampaign = getQueryParam("utm_campaign");
+  const utmMedium = getQueryParam("utm_medium");
   const refererCookie = getCookie("fsreferer");
-  if (referer) {
-    setCookie("fsreferer", referer, 365);
-  }
+  const utmSourceCookie = getCookie("utm_source");
+  const utmCampaignCookie = getCookie("utm_campaign");
+  const utmMediumCookie = getCookie("utm_medium");
+  referer && setCookie("fsreferer", referer, 365);
+  utmSource && !utmSourceCookie && setCookie("utm_source", utmSource, 365);
+  utmCampaign &&
+    !utmCampaignCookie &&
+    setCookie("utm_campaign", utmCampaign, 365);
+  utmMedium && !utmMediumCookie && setCookie("utm_medium", utmMedium, 365);
+
   const referCode = referer || refererCookie;
 
   // Reddit pixel script
@@ -52,6 +62,9 @@ window.onload = function () {
 
   // If Join Page
   const refererField = document.getElementById("referer");
+  const utmSourceField = document.getElementById("utm_source");
+  const utmCampaignField = document.getElementById("utm_campaign");
+  const utmMediumField = document.getElementById("utm_medium");
   const isJoinPage = Boolean(refererField);
   if (isJoinPage) {
     if (referCode) {
@@ -70,6 +83,15 @@ window.onload = function () {
       t.src = "https://customerioforms.com/assets/forms.js";
       s.parentNode.insertBefore(t, s);
     }
+
+    const utmSourceData = utmSourceCookie || utmSource;
+    utmSourceData && (utmSourceField.value = utmSourceData);
+
+    const utmCampaignData = utmCampaignCookie || utmCampaign;
+    utmCampaignData && (utmCampaignField.value = utmCampaignData);
+
+    const utmMediumData = utmMediumCookie || utmMedium;
+    utmMediumData && (utmMediumField.value = utmMediumData);
 
     // Reddit pixel - track lead
     rdt("track", "Lead");

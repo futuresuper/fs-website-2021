@@ -8,7 +8,10 @@
     <p class="info-block__heading">What you'll need</p>
     <ul class="info-block__list">
       <li>Your Tax File Number</li>
-      <li>An Australian ID or Medicare card to find your super and complete a transfer*</li>
+      <li>
+        An Australian ID or Medicare card to find your super and complete a
+        transfer*
+      </li>
     </ul>
   </div>
   <p>
@@ -25,6 +28,14 @@
     <label>Email ^<input type="email" name="email" required /></label>
   </p>
   <input type="text" id="referer" name="ReferCode" style="display:none" />
+  <input type="text" id="utm_source" name="utm_source" style="display:none" />
+  <input
+    type="text"
+    id="utm_campaign"
+    name="utm_campaign"
+    style="display:none"
+  />
+  <input type="text" id="utm_medium" name="utm_medium" style="display:none" />
   <p>
     <button type="submit" class="primary">Next →</button>
   </p>
