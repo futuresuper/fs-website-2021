@@ -37,8 +37,10 @@
       </div>
 
       <div class="impact__content--text">
-        <p>Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed Fund (MF).<br>
-          Future Super has more than 40,000 members as of 1/9/2023</p>
+          <p>Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed Fund (MF).
+          </p>
+          <p>Future Super has more than 40,000 members as of 1/9/2023</p>
+
       </div>
     </div>
 
@@ -188,6 +190,9 @@
         justify-content: end;
         text-align: center;
         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.125rem;
 
         p{
           @media (max-width: 800px) {
@@ -198,9 +203,8 @@
           }
           font-size: 14px;
           color: white;
-          -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-          -webkit-text-stroke-width: 0.5px;
-          -webkit-text-stroke-color: rgba(black, 0.1);
+          background-color: rgba(#000000, 0.2);
+          margin: 0;
         }
       }
     }
