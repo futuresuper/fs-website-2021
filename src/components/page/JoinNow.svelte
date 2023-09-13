@@ -1,4 +1,4 @@
-<form method="GET" action="https://join.futuresuper.com.au/">
+<form class="join-form" method="GET" action="https://join.futuresuper.com.au/">
   <h1>Join Future Super</h1>
   <div class="time-row">
     <img src="/images/clock2.gif" alt="clock" class="clock" />
@@ -16,12 +16,12 @@
   </div>
   <p>
     <label
-      >First Name<input
-        type="text"
-        id="first_name"
-        name="first_name"
-        required
-      /></label
+    >First Name<input
+            type="text"
+            id="first_name"
+            name="first_name"
+            required
+    /></label
     >
   </p>
   <p>
@@ -54,13 +54,27 @@
 
 <style lang="scss">
   @use "../../styles/" as *;
-
-  form {
+  .join-form{
     margin: 20px 0 100px 0;
     border: 1px solid $black;
     border-radius: 32px;
     padding: 40px;
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 1300px) {
+      margin: 20px 50px 100px 50px;
+
+    }
+
+    @media (max-width: 800px) {
+      margin-top: -40px;
+
+    }
   }
+
 
   input {
     display: block;
@@ -75,10 +89,6 @@
 
   p.disclaimer {
     margin-top: 40px;
-  }
-
-  h1 {
-    margin-bottom: 8px;
   }
 
   h4 {
@@ -115,15 +125,4 @@
     }
   }
 
-  @media (min-width: 1300px) {
-    form {
-      margin: 20px 50px 100px 50px;
-    }
-  }
-
-  @media (max-width: 800px) {
-    form {
-      margin-top: -40px;
-    }
-  }
 </style>
