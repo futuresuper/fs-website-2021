@@ -1,7 +1,7 @@
 ---
 title: "What is your ESA or electronic service address? "
 category: General
-order: 10
+order: 5
 ---
 Electronic Service Addresses (ESAs) are used primarily by self-managed super funds (SMSFs).
 
