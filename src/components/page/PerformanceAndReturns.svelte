@@ -10,7 +10,7 @@
     {
       rowHeading: "1 Year to 30 June 2023",
       balancedIndex: "10.50%",
-      balancedImpact: "8.54%",
+      balancedImpact: "8.98%",
       renewablesPlusGrowth: "9.72%",
       balancedGrowthPension: "13.12%",
     },
