@@ -21,6 +21,8 @@ In acknowledging that the sovereignty of First Nations people was never ceded, w
 
 Paying the Rent is a step towards justice, truth and equality for First Nations people. Future Super Group pays rent through the [Pay The Rent Collective](https://paytherent.net.au/about-us/), which disburses payments to a range of Aboriginal and Torres Strait Islander organisations they partner with across the country.
 
+[View our policy](https://docs.google.com/document/d/1la0VZhGWGBTRIud4qYXJfbvnDhnAD_m0/edit)
+
 ## Our Reconciliation Action Plan
 
 Our Reconciliation Action Plan allows us to embark on a journey of reconciliation with a focus on listening and learning; helping us to build relationships and collaborate with Aboriginal and Torres Strait Islander communities. We will strengthen our knowledge and understanding of Aboriginal and Torres Strait Islander cultures, histories, and how we can support reconciliation in our company and within our industry and circle of influence. We will explore how we can work with Aboriginal and Torres Strait Islander communities through our business operations, partnerships, employment and investment activities.
