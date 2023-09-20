@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import ContactUs from "@components/page/ContactUs.svelte";
+import ContactUsPage from "@components/page/ContactUs.svelte";
+import ZendeskChatWidget from "@components/common/ZendeskChatWidget.svelte";
 
 let contactPage = await Astro.glob("../contact/contact-us.md");
 const content = contactPage[0];
@@ -11,5 +12,6 @@ const content = contactPage[0];
   description={content.frontmatter.description}
   pageDescription={content.frontmatter.intro}
 >
-  <ContactUs contact={content} />
+  <ContactUsPage contact={content} />
+  <ZendeskChatWidget />
 </BaseLayout>

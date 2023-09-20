@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Faqs from "@components/page/SupportAndFaqs/SupportAndFaqs.svelte";
+import ZendeskChatWidget from "@components/common/ZendeskChatWidget.svelte";
 let faqs = await Astro.glob("../faqs/*.md");
 faqs = faqs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 
@@ -39,4 +40,5 @@ const relatedPages = [
   relatedPages={relatedPages}
 >
   <Faqs client:load faqs={faqsFlat} />
+  <ZendeskChatWidget />
 </BaseLayout>
