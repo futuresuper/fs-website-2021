@@ -116,7 +116,7 @@
         <a class="button outline" href="/life_insurance_application"
           >Download Application Form
           <div class="download-icon">
-            <Download />
+            <Download size="24" />
           </div>
         </a>
       </div>

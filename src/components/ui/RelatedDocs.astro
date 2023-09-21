@@ -1,6 +1,6 @@
 ---
 import Document from "../page/DocumentsAndForms/Document.svelte";
-const { heading, category } = Astro.props;
+const { heading, category, document } = Astro.props;
 let allDocs = await Astro.glob("../../docs-and-forms/*.md");
 let sortedDocs = allDocs.sort(
   (a, b) => b.frontmatter.order - a.frontmatter.order
@@ -8,6 +8,9 @@ let sortedDocs = allDocs.sort(
 let docs = [];
 sortedDocs.map((d) => {
   if (d.frontmatter.category === category) {
+    docs.push(d);
+  }
+  if (d.frontmatter.title === document) {
     docs.push(d);
   }
 });

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import InsuranceHeader from "@components/page/Insurance/InsuranceHeader.svelte";
-import Insurance from "@components/page/Insurance/Insurance.svelte";
+import InsurancePage from "@components/page/Insurance/Insurance.svelte";
+import RelatedDocs from "@components/ui/RelatedDocs.astro";
 ---
 
 <BaseLayout
@@ -10,5 +11,6 @@ import Insurance from "@components/page/Insurance/Insurance.svelte";
   customHeader={true}
 >
   <InsuranceHeader slot="customHeader" />
-  <Insurance />
+  <InsurancePage />
+  <RelatedDocs document="Insurance Guide" />
 </BaseLayout>
