@@ -8,8 +8,6 @@ At Future Super we take the security of your account very seriously.
 
 We always encourage you to never enter your personal and account details anywhere other than in direct communication with us at Future Super. The only way we’ll contact you is via our phone number or email address listed on our [](https://www.futuresuper.com.au/contact-us/) [Contact Us](https://www.futuresuper.com.au/contact-us/) page. You may also receive text notifications via SMS for authentication purposes or app notifications if you use the Future Super app.
 
- 
-
 **We will never call you from a standard mobile number.**\
 If you think you’ve been targeted by someone who is trying to access your super, or your identity details have been leaked, report it straight away.
 
@@ -18,8 +16,6 @@ If you think you’ve been targeted by someone who is trying to access your supe
 3. Seek further support from dedicated scam and cyber security organisations if needed, such as IDCare ([IDcare.org](http://idcare.org)) for identity theft, or the Australian Cyber Security Hotline ([Cyber.gov.au](http://cyber.gov.au)) for cyber security assistance.
 
 You can see lists of known scams online and guides to avoiding them, including [](https://www.ato.gov.au/General/Online-services/Identity-security-and-scams/Scam-alerts/) [Scam Alerts](https://www.ato.gov.au/General/Online-services/Identity-security-and-scams/Scam-alerts/) ([ATO.gov.au](http://ato.gov.au)), [](https://www.scamwatch.gov.au/types-of-scams) [Types of scams](https://www.scamwatch.gov.au/types-of-scams) ([ScamWatch.gov.au](http://scamwatch.gov.au)), and [](https://moneysmart.gov.au/how-super-works/superannuation-scams) [Superannuation Scams](https://moneysmart.gov.au/how-super-works/superannuation-scams) ([Moneysmart.gov.au](http://moneysmart.gov.au)).
-
- 
 
 **What should I look out for?** 
 
@@ -45,19 +41,15 @@ Scam or phishing emails may look legitimate but they’re designed ~~to~~ to ste
 
 *Don't click on any links. Report and delete the email or message straight away.*
 
-
-
 **KNOWN SCAM ALERTS**
 
 **August 2023 - Cold callers impersonating Future Super**\
 We have received alerts by members of the public who have received cold calls from individuals claiming to be from Future Super. These callers may request personal information or become verbally abusive: 
 
-* Make sure the email or phone number used to contact you matches the ones we have publicly provided on our official website and app, under ‘Contact Us’.
+* Make sure the email or phone number used to contact you matches the ones we have publicly provided on our official website and app, under ‘[Contact Us](https://www.futuresuper.com.au/contact-us/)’.
 * Watch out for incoming calls posing as Future Super that are made from a regular mobile number beginning with **04-.**
 * Immediately cut contact with anyone intimidating or threatening you.
 
 *If you have received contact from someone claiming to represent Future Super that seemed inappropriate or suspicious, please reach out and report it to us.*
-
-
 
 You can let us know by emailing **info@futuresuper.com.au** or calling **1300 658 422**. You can also report the details of the contact you received to [](http://scamwatch.gov.au) [ScamWatch.gov.au](http://scamwatch.gov.au).
