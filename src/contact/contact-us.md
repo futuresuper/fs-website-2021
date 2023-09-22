@@ -23,3 +23,17 @@ You can find information about your account [online](https://my.futuresuper.com
 **Future Super** welcomes calls through the National Relay Service if you are deaf, hard of hearing and/or have a speech impairment. Choose your access option ([information here)](https://www.infrastructure.gov.au/media-communications-arts/phone/services-people-disability/accesshub/national-relay-service) and provide our phone number **1300 658 422** when asked by the relay officer.
 
 **Future Super** can provide access to an interpreter at your request. We work with an interpreter from Translating and Interpreting Services (TIS). To ask for an interpreter, call us on **1300 658 422**. To find out more about Translating and Interpreting Services, visit [tisnational.gov.au](https://www.australianethical.com.au/EPiServer/CMS/tisnational.gov.au).
+
+
+
+**KNOWN SCAM ALERT** 
+
+**August 2023 - Cold callers impersonating Future Super**
+
+We have received alerts by members of the public who have received cold calls from individuals claiming to be from Future Super. These callers may request personal information or become verbally abusive.
+
+**Please be aware that we will only call you from our direct phone number shown on this page and never call you from a standard mobile number.**
+
+If you have received contact from someone claiming to represent Future Super that seemed inappropriate or suspicious, please reach out and report it to us. You can also report the details of the contact you received to [ScamWatch.gov.au](http://ScamWatch.gov.au).
+
+Learn more about scams and security alerts [here](https://www.futuresuper.com.au/faqs/scams-and-security-alerts-how-can-i-keep-my-account-safe-from-potential-scammers).
