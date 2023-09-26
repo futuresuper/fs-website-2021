@@ -1,6 +1,6 @@
 ---
-title: Portfolio Holdings Disclosure Statement as at 31 December 2022
-docurl: https://content.myfuturesuper.com.au/forms-docs/FS_PHD_31122022.xlsx
+title: Portfolio Holdings Disclosure Statement as at 30 June 2023
+docurl: https://content.myfuturesuper.com.au/forms-docs/FS_PHD_30062023.xlsx
 type: PDF
 category: Disclosure Requirements
 order: 7
