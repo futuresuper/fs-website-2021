@@ -1,9 +1,10 @@
 ---
-title: "Non-Binding Nomination of Beneficiaries Form"
-docurl: "https://www.futuresuper.com.au/nonbindingnomination"
-type: "PDF"
+title: Non-Binding Nomination of Beneficiaries Form
+docurl: https://www.futuresuper.com.au/nonbindingnomination
+type: PDF
+category: Super Forms
 order: 8
-category: "Super Forms"
 ---
+Complete this form to nominate who you would like to receive the funds in your Future Super account in the case of your passing.
 
-Complete this form to inform the trustee about who you would like to receive the money in your Future Super account in the case of your death.
+The Trustee will consider your non-binding nomination but may use their discretion to decide which dependent or dependents will receive your funds or how funds will be distributed between beneficiaries.
