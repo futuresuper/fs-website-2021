@@ -5,5 +5,8 @@ type: PDF
 category: Super Forms
 order: 10
 ---
+Complete this form if you would like to withdraw funds from your account.
 
-Complete this form if you would like to withdraw from your super account. If the form is not completed correctly, or information is missing, this may delay your withdrawal - so we ask that you read the requirements in the form and fill it out carefully to help us process your request as quickly as possible.
+If the form is not completed correctly, or information is missing, this may delay your withdrawal - so we ask that you read the requirements in the form and fill it out carefully to help us process your request as quickly as possible.
+
+Please note that withdrawing funds may affect the amount of personal contributions available to claim as a tax deduction. If you withdraw or roll out your entire balance, your Future Super account will automatically be closed, and any insurance attached to your account will be cancelled. You will no longer be able to file a Notice of intent to claim or vary a deduction for personal super contributions form for contributions made to your Future Super account once it is exited, and/or contributions that have been transferred to another account or fund.
