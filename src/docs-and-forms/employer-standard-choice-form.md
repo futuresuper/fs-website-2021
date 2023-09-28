@@ -1,9 +1,8 @@
 ---
-title: "Standard Choice Form"
-docurl: "https://www.futuresuper.com.au/standardchoiceform"
-type: "PDF"
+title: Standard Choice Form
+docurl: https://www.futuresuper.com.au/standardchoiceform
+type: PDF
+category: Employer Forms
 order: 2
-category: "Employer Forms"
 ---
-
-Employers may require this form to be completed when an employee chooses to join Future Super.
+Use this form to ask your employer to pay your super contributions into your Future Super account. We’ve pre-filled this version with Future Super’s details to make things faster for you.
