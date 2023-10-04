@@ -7,14 +7,14 @@ order: 4
 ---
 Superannuation is designed to help you save for retirement, however, there are some limited circumstances where you may be able to access your super early, including:
 
-* [Severe financial hardship](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Access_due_to_severe_financial_hardship)
-* [Compassionate grounds](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/)
-* [Permanent incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Accessduetopermanentincapacity)
-* [Temporary incapacity](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Temporaryincapacity)
-* [Terminal medical condition](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Terminalmedicalcondition)
+* [Severe financial hardship](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Accessduetoseverefinancialhardship)
+* [Compassionate grounds](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Accessoncompassionategrounds)
+* [Permanent incapacity](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Accessduetopermanentincapacity)
+* [Temporary incapacity](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Accessduetotemporaryincapacity)
+* [Terminal medical condition](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Accessduetoaterminalmedicalcondition)
 * [First Home Super Saver (FHSS) scheme](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/)
-* [Departing Australia Superannuation Payment (DASP)](https://www.ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/)
-* [Balances less than $200](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/#Superlessthan200), where employment has been terminated.
+* [Departing Australia Superannuation Payment (DASP)](https://www.ato.gov.au/Individuals/Super/Temporary-residents-and-superannuation/Departing-Australia-superannuation-payment-DASP/)
+* [Balances less than $200](https://www.ato.gov.au/Individuals/Super/Withdrawing-and-using-your-super/Early-access-to-super/When-you-can-access-your-super-early/#Superbalancelessthan200), where employment has been terminated.
 
 #### Severe financial hardship
 
@@ -26,7 +26,7 @@ You may be eligible for early release of super if all of the following apply to 
 * you have outstanding debts (such as bills, credit card debt, personal debts, electricity, gas, phone, car repayment, medical expenses, school fees, rent); and
 * you are able to demonstrate that you are in arrears on a weekly basis.
 
-Read more about how to apply for an early release of super on the grounds of severe financial hardship in our [information sheet](https://content.myfuturesuper.com.au/forms-docs/FS-FinancialHardshipInfoSheet.pdf).
+Read more about how to apply for an early release of super on the grounds of severe financial hardship in our [information sheet](https://futuresuper.com/financialhardshipinformation*).
 
 #### Compassionate grounds
 
@@ -40,7 +40,7 @@ Compassionate grounds include needing money to pay for:
 * palliative care for you or your dependant
 * expenses associated with the death, funeral or burial of your dependant.
 
-**Note, applications for early release of super on compassionate grounds must be completed through the [ATO](https://www.ato.gov.au/Individuals/Super/In-detail/Withdrawing-and-using-your-super/Early-access-on-compassionate-grounds/?anchor=Howtoapply#Howtoapply).**
+**Note, applications for early release of super on compassionate grounds must be completed through the [ATO](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-super/access-on-compassionate-grounds/).**
 
 If successful, we’ll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
@@ -48,9 +48,13 @@ If successful, we’ll need you to submit our [withdrawal form](https://www.fut
 
 You may be eligible to access your super if you have a permanent physical or mental medical condition that is likely to stop you from ever working again in a job you were qualified to do by education, training or experience.
 
+T﻿o learn more and apply for a withdrawal, please see our [Application for Early Release of Super due to Permanent Incapacity form](https://www.futuresuper.com.au/permanentincapacity). 
+
 #### Temporary incapacity
 
 This condition of release is generally used to access insurance benefits linked to your super account and may be applicable if you are temporarily unable to work, or need to work less hours, because of a physical or mental medical condition.
+
+P﻿lease see our [Insurance Guide](https://www.futuresuper.com.au/insuranceguide) for more information about insurance options with Future Super or contact us for more information about an early release of super due to temporary incapacity.
 
 #### Terminal medical condition
 
@@ -60,11 +64,13 @@ You may be able to access your super if you have a terminal medical condition. Y
 * At least one of the registered medical practitioners is a specialist practising in an area related to your illness or injury; AND
 * The 24-month certification period has not ended.[](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/)
 
+T﻿o learn more and apply for a withdrawal, please see our [Application for Early Release of Super due to a Terminal Illness form](https://futuresuper.com/terminalillnessform).
+
 #### First Home Super Saver (FHSS) scheme
 
 The First Home Super Saver (FHSS) scheme was introduced by the Australian Government to reduce pressure on housing affordability for first home buyers.
 
-From 1 July 2018, you can apply to release your voluntary contributions, along with associated earnings, to help you purchase your first home. You must meet the [eligibility requirements](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/#WhoiseligibletorequestaFHSSdetermination) to apply for the release of these amounts.
+From 1 July 2018, you can apply to release your voluntary contributions, along with associated earnings, to help you purchase your first home. You must meet the [eligibility requirements](https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/first-home-super-saver-scheme/#Eligibilityandconditions) to apply for the release of these amounts.
 
 You can currently apply to have a maximum of $15,000 of your voluntary contributions from any one financial year included in your eligible contributions to be released under the FHSS scheme, up to a total of $50,000 contributions across all years. You will also receive an amount of earnings that relate to those contributions.
 
@@ -72,9 +78,9 @@ Read more about the FHSS scheme and related processes on the ATO's website [here
 
 #### Departing Australia Superannuation Payment (DASP)
 
-If you have worked and earned super while visiting Australia on a temporary visa, you can apply to have this super paid to you as a Departing Australia Superannuation Payment (DASP) once you leave Australia. [Eligibility conditions](https://www.ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/?anchor=EligibilityforDASP#EligibilityforDASP) apply.
+If you have worked and earned super while visiting Australia on a temporary visa, you can apply to have this super paid to you as a Departing Australia Superannuation Payment (DASP) once you leave Australia. [Eligibility conditions](https://www.ato.gov.au/Individuals/Super/Temporary-residents-and-superannuation/Departing-Australia-superannuation-payment-DASP/#EligibilityforDASP) apply.
 
-You can apply for DASP through the [ATO](ato.gov.au/Individuals/Super/In-detail/Temporary-residents-and-super/Super-information-for-temporary-residents-departing-Australia/?anchor=Howtoclaimyoursuper#Howtoclaimyoursuper).
+You can apply for DASP through the [ATO](https://www.ato.gov.au/Individuals/Super/Temporary-residents-and-superannuation/Departing-Australia-superannuation-payment-DASP/#Howtoclaimyoursuper).
 
 Note, If successful, we'll need you to submit our [withdrawal form](https://www.futuresuper.com.au/withdrawal) along with a [certified copy](https://www.futuresuper.com.au/faqs/how-can-i-certify-my-id) of your photo ID to be able to pay your benefits to you.
 
