@@ -1,0 +1,30 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import HomeHeader from "@components/page/Home/HomeHeader.svelte";
+import DollarsCelcius from "@components/page/Home/DollarsCelcius.svelte";
+import SwitchShake from "@components/page/Home/SwitchShake.svelte";
+import BCorp from "@components/page/Home/BCorp.svelte";
+import InvestmentOptionsIntro from "@components/page/Home/InvestmentOptionsIntro.svelte";
+import InvestmentOptions from "@components/page/Home/InvestmentOptions.svelte";
+import ClearTransparent from "@components/page/Home/ClearTransparent.svelte";
+import Reviews from "@components/page/Home/Reviews.svelte";
+import JoinNow from "@components/ui/JoinNow.svelte";
+import AppDownload from "@components/page/Home/AppDownload.svelte";
+---
+
+<BaseLayout noContainer customHeader={true} noBehindHeader={true}>
+  <HomeHeader slot="customHeader" client:load />
+  <DollarsCelcius />
+
+  <!-- This section about carbon abatement is being removed for now as it has been deemed too risky -->
+  <!-- <SwitchShake /> -->
+
+  <AppDownload client:visible />
+  <BCorp />
+  <InvestmentOptionsIntro />
+  <InvestmentOptions />
+  <ClearTransparent />
+  <Reviews client:visible />
+  <JoinNow />
+  <script is:inline src="/admin/netlifyCmsScript.js"></script>
+</BaseLayout>
