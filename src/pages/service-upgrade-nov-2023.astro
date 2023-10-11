@@ -1,0 +1,19 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ServiceUpgradePage from "@components/page/ServiceUpgrade.svelte";
+import pages from "@data/pages.json";
+
+import ContactUsPage from "@components/page/ContactUs.svelte";
+let contactPage = await Astro.glob("../contact/contact-us.md");
+const content = contactPage[0];
+---
+
+<BaseLayout
+  title="Service upgrade November 2023"
+  description="This is part of an essential upgrade to improve system efficiency and enhance customer experience"
+  hideDescription
+  relatedPages={[pages.CONTACT_US, pages.LOGIN]}
+  skinnyContainer
+>
+  <ServiceUpgradePage />
+</BaseLayout>
