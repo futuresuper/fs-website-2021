@@ -82,30 +82,6 @@
     {#if !pension}
       <div class="table-row {pension ? 'pension' : ''}">
         <div class="row-head">
-          <h4 class="tooltip">
-            Emissions
-            <span class="tooltip-text">
-              How much greenhouse gas is emitted by investing in this option. If
-              negative, it means it abates more carbon than it emits
-            </span>
-          </h4>
-          <p class="head-desc">
-            Based on a balance of $30,000 as at 31st of December, 2020.
-          </p>
-          <p class="head-desc">
-            <a href="/carbon-transparency">See how we measure emissions</a>
-          </p>
-        </div>
-        {#each options as option}
-          <div>
-            <p class="number">{option.impact}</p>
-            <p class="number-desc">tonnes of CO<sub>2</sub> equivalent</p>
-          </div>
-        {/each}
-      </div>
-
-      <div class="table-row {pension ? 'pension' : ''}">
-        <div class="row-head">
           <h4>Highlight investments</h4>
           <p class="head-desc">
             <a href="/everything-we-invest-in">See all investments</a>
