@@ -18,7 +18,7 @@ Santos is an oil and gas company that’s listed on the ASX. 
 
 Santos has been in the news recently, because First Nations people say two of the company’s new projects breach their human rights. 
 
-Tiwi Islander, Larrakia and Gomeroi/Gamilaraay Traditional Owners have sent letters to super funds that invest in Santos. They argue that the super funds, as shareholders, must do something to stop these projects going ahead.
+Tiwi Islander, Larrakia and Gomeroi/Gamilaraay Traditional Owners have sent letters to super funds that invest in Santos. They argue that the super funds, as shareholders, must do something to stop these projects going ahead. 
 
 The two projects in question are:
 
