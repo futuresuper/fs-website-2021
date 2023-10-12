@@ -50,7 +50,7 @@ But, if you’re an average person, you probably don’t want the hassle that co
 
 The good news is, in just 5 minutes, you can join thousands of Australians who are already investing their super in a safe climate future.
 
-## **Future Super, Australia’s first 100% fossil-free super fund**
+## **Future Super doesn't invest in the fossil fuel industry**
 
 Since 2014, Future Super has been helping thousands of Australians invest their super sustainably.
 
