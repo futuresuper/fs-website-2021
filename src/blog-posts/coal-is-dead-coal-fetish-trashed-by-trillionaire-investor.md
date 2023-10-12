@@ -1,18 +1,18 @@
 ---
-title: "“Coal Is Dead”: Political Fetish with Little Black Rock Trashed By Trillionaire Investor"
+author: Michael Bones
 slug: coal-is-dead-coal-fetish-trashed-by-trillionaire-investor
 date: 2020-01-17T02:58:33.598Z
+canonical: null
+title: "“Coal Is Dead”: Political Fetish with Little Black Rock Trashed By
+  Trillionaire Investor"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340105a4cd3e3b_Bye_Coal_Blog_960x400%20(1).png
 tags:
   - Renewable Energy
   - Divestment
   - Disruption
-author: Michael Bones
-canonical:
-description: >-
-  The Australian government has been ridiculed by a trillion dollar global fund manager for “denying gravity” on coal investment.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340105a4cd3e3b_Bye_Coal_Blog_960x400%20(1).png
+description: The Australian government has been ridiculed by a trillion dollar
+  global fund manager for “denying gravity” on coal investment.
 ---
-
 > "Anyone who’s looking to take beyond a 10-year view on coal is gambling very significantly.”
 
 The Australian government has been ridiculed by a global fund manager for “denying gravity” on coal investment, according to [a report](http://www.afr.com/business/mining/coal/blackrock-says-coal-is-dead-as-it-eyes-renewable-power-splurge-20170524-gwbuu6) in the AFR today.
@@ -35,7 +35,7 @@ We don’t need a head of investment at BlackRock to tell us this. It’s happe
 
 As well as being a solution to climate pollution, renewable energy is already competing “head to head” with coal on price. Further, many of the world’s major economies are taking action by moving their energy production away from polluting coal.
 
-_So why are super funds still investing their members' money in coal?_
+*So why are super funds still investing their members' money in coal?*
 
 Super funds invest over long time horizons. They have to think in 10, 20 and 30 year periods to maximise returns for members when they retire.
 
@@ -47,7 +47,7 @@ Here at Future Super HQ, we worry that super funds are gambling their member’
 
 The Future Super investment philosophy reflects both the climate and investment reality that “coal is dead”.
 
-For years, Future Super has been helping Australians invest their super free from coal, oil, gas and the banks that fund fossil fuels. We’re still Australia’s first and only [independently recognised](http://superswitch.org.au/funds/future-super-balanced-growth/) 100% fossil fuel free super fund.
+For years, Future Super has been helping Australians invest their super free from coal, oil, gas and the banks that fund fossil fuels. We’re still Australia’s first and only [independently recognised](http://superswitch.org.au/funds/future-super-balanced-growth/) super fund to say no to investing in the fossil fuel industry. 
 
 But that's not all.
 
