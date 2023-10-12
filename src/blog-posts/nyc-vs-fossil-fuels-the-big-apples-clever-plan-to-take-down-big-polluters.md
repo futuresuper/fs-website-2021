@@ -74,9 +74,9 @@ The Australian stock market has been described as “[a carbon bomb waiting to 
 
 The good news is that through super we have a lot of financial muscle to flex, and almost everyone can [easily divest from fossil fuels!](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)
 
-### Switch to Future Super = Divesting from Fossil Fuels
+### Future Super does not invest in the fossil fuel industry 
 
-In 2014, an experienced team of ethical investment experts and climate activists created **[Future Super](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=), Australia’s first 100% fossil fuel free super fund.**
+In 2014, an experienced team of ethical investment experts and climate activists created **[Future Super](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=), a super fund that says no to fossil fuel investments.**
 
 Since launch, Future Super has empowered thousands of Australians to easily switch to fossil free super.
 
