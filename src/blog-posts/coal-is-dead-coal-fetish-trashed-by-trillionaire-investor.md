@@ -47,7 +47,7 @@ Here at Future Super HQ, we worry that super funds are gambling their member’
 
 The Future Super investment philosophy reflects both the climate and investment reality that “coal is dead”.
 
-For years, Future Super has been helping Australians invest their super free from coal, oil, gas and the banks that fund fossil fuels. We’re still Australia’s first and only [independently recognised](http://superswitch.org.au/funds/future-super-balanced-growth/) super fund to say no to investing in the fossil fuel industry. 
+We do not invest in companies that mine for coal, frack or drill. 
 
 But that's not all.
 
