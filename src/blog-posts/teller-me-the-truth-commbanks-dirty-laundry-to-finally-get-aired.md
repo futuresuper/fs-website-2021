@@ -1,16 +1,17 @@
 ---
-title: "Teller me the Truth: CommBank’s dirty laundry to finally get aired"
+author: Michael Bones
 slug: teller-me-the-truth-commbanks-dirty-laundry-to-finally-get-aired
 date: 2020-01-17T03:00:38.415Z
+canonical: null
+title: "Teller me the Truth: CommBank’s dirty laundry to finally get aired"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015709cd3df5_teller-me-the-truth-main%20(1).png
 tags:
   - Disruption
   - Activism
   - Ethical Investing
-author: Michael Bones
-canonical:
-description: >-
-  Commonwealth Bank has been in hot water lately over a number of issues. But the really interesting story is at risk of getting lost in all the noise. Find out about the Aussie legends who are taking on the banking giant.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015709cd3df5_teller-me-the-truth-main%20(1).png
+description: Commonwealth Bank has been in hot water lately over a number of
+  issues. But the really interesting story is at risk of getting lost in all the
+  noise. Find out about the Aussie legends who are taking on the banking giant.
 ---
 
 > Lately the Commonwealth Bank has been getting smashed more than avocado on toast.
@@ -127,7 +128,8 @@ What happens when the market realises thermal coal, oil and gas are too expensiv
 
 We’re not waiting around to find out.
 
-Future Super is Australia’s first 100% fossil fuel free super fund. Our approach to climate risk is to make sure our portfolio has no exposure to coal, oil, gas, and the banks that finance fossil fuels.
+Future Super does not invest in fossil fuel companies. 
+Our approach to climate risk is to make sure our portfolio screens out companies that frack, drill, or mine for coal. 
 
 Super funds are designed to invest over long time horizons. When we look forward 10, 20 or 30 years, we see a world that’s increasingly powered by clean, renewable energy. So we’re investing in a renewably powered future, and that starts by being fossil fuel free.
 
