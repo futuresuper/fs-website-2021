@@ -1,16 +1,15 @@
 ---
-title: "Follow The Money: The fight to #StopAdani brings banks and super funds into focus"
+author: Michael Bones
 slug: stop-adani-follow-the-money-to-super-funds-and-banks
 date: 2019-02-06T10:31:25.462Z
+canonical: null
+title: "Follow The Money: The fight to #StopAdani brings banks and super funds
+  into focus"
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340176e9cd3d80_follow_the_money%20(1).jpg
 tags:
   - Activism
-author: Michael Bones
-canonical:
-description: >-
-  The fight to #StopAdani brings banks and super funds into focus.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340176e9cd3d80_follow_the_money%20(1).jpg
+description: "The fight to #StopAdani brings banks and super funds into focus."
 ---
-
 The #StopAdani campaign ramped up last weekend with protesters crashing Westpac’s 200th birthday party in Redfern on Saturday night.
 
 ![Image of people protesting: Westpac it's time to #STOPADANI](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015e7bcd3e09_da_stopadaniwestpac1%20(1).jpg>)
@@ -63,7 +62,7 @@ Australian super funds invest in fossil fuels and the banks that fund them. [The
 
 Even super funds with an 'ethical' label invest in banks that fund fossil fuels (Market Forces' [SuperSwitch](http://www.superswitch.org.au) tool is a useful way to discover a super fund's exposure to fossil fuels). Future Super stands alone as the only super fund to take a strong stance and exclude banks on the basis of their lending to the harmful fossil fuel industry.
 
-In response, thousands of Australians have been wielding their consumer power by switching to fossil free banks and Australia's first 100% fossil fuel free super fund, Future Super.
+In response, thousands of Australians have been wielding their consumer power by switching to fossil free banks and Australia's first super fund that says no to fossil fuel investments. 
 
 ### **Banking on a Better Future**
 
