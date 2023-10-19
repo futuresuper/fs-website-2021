@@ -6,15 +6,14 @@
   let input;
 
   onMount(async () => {
-    input.setAttribute("autofocus", "autofocus");
-    input.focus();
-
     if (window.innerWidth <= 800) {
       setTimeout(() => {
         window.scrollTo({
           top: form.offsetTop,
           behavior: "smooth",
         });
+        input.setAttribute("autofocus", "autofocus");
+        input.focus();
       }, 2500);
     }
   });
