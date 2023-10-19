@@ -34,5 +34,9 @@
   "LOGIN": ["Login", "https://my.futuresuper.com.au/"],
   "JOIN": ["Join Now", "/join-now"],
   "INSURANCE": ["Insurance", "/insurance/"],
-  "APP": ["Future Super App", "/app/"]
+  "APP": ["Future Super App", "/app/"],
+  "SERVICE_UPGRADE_NOTICE": [
+    "Service Upgrade Notice",
+    "/service-upgrade-nov-2023/"
+  ]
 }

@@ -9,11 +9,16 @@
       ],
     },
     {
+      date: "November 1 2023",
+      points: [
+        "Future Super members will have access to a refreshed member online account.",
+      ],
+    },
+    {
       date: "November 15 2023 09:00 am",
       points: [
         "Blackout period ends, account services to resume.",
         "Contributions and account changes made during the blackout period will be processed.",
-        "Future Super members will have access to a refreshed member online account.",
         "Pension pay date (no change)",
       ],
     },
@@ -31,7 +36,7 @@
     <div class="pill">TL;DR</div>
     <p>
       Future Super will undergo a transaction blackout period from <strong
-        >October 31, 2023, to November 14, 2023</strong
+        >October 31, 2023, to November 15, 2023</strong
       >, during which some services will be temporarily unavailable. This is
       part of an essential upgrade to improve system efficiency and enhance
       customer experience. Account services will be limited during this time.
@@ -41,11 +46,11 @@
       >
     </p>
   </div>
-  <h2>Blackout period:<br />October 31 until November 14, 2023</h2>
+  <h2>Blackout period:<br />October 31 until November 15, 2023</h2>
   <section>
     <p>
       We are excited to share some important updates regarding our services. 
-      Beginning close of business on October 31, 2023, until November 14, 2023,
+      Beginning close of business on October 31, 2023, until November 15, 2023,
       Future Super will be undergoing a brief transaction blackout period.
       During this time, some of our services will be temporarily
       unavailable. This change is essential to improve our system’s efficiency
@@ -78,9 +83,9 @@
   <section>
     <p>
       To facilitate this upgrade, account services will be limited from 14:00 pm
-      AEST on October 31, 2023, until November 14, 2023 (inclusive). To make any
-      changes or contributions to your Future Super account, we recommend doing
-      so before the blackout period starts.
+      AEST on October 31, 2023, until November 15, 2023. To make any changes or
+      contributions to your Future Super account, we recommend doing so before
+      the blackout period starts.
     </p>
     <h3>Affected services:</h3>
     <ul>
@@ -100,7 +105,7 @@
     </p>
     <p>
       During the blackout period, you will only be able to view your account
-      details as of October 31, 2023. Starting November 15, 2023 you’ll have
+      details as of October 31, 2023. Starting November 1, 2023 you’ll have
       access to a refreshed member online account. Your login details and other
       account information will remain the same.
     </p>

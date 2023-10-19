@@ -32,7 +32,12 @@
     },
     {
       heading: "Company",
-      subPages: [pages.CONTACT_US, pages.ABOUT_US, pages.WORK_WITH_US],
+      subPages: [
+        pages.CONTACT_US,
+        pages.ABOUT_US,
+        pages.WORK_WITH_US,
+        pages.SERVICE_UPGRADE_NOTICE,
+      ],
     },
     {
       heading: "Members",
