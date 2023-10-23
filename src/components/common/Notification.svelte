@@ -10,7 +10,7 @@
     <strong>
       Service upgrade October 31 - November 15, 2023:  
     </strong>
-    Some account services will be unavailable during this time. <a href="https://www.futuresuper.com.au/service-upgrade-nov-2023/">Read more</a>
+    Some account services will be unavailable during this time. <a href="/service-upgrade-nov-2023/">Read more</a>
   </div>
 </div>
 
