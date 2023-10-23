@@ -1,4 +1,5 @@
 <script>
+  import Notification from "@components/common/Notification.svelte";
   export let contact;
 </script>
 
@@ -11,6 +12,7 @@
     </div>
   </div>
   <address>
+    <Notification />
     <!-- <EndOfYearInfo /> -->
     <hr />
     <h5>Email</h5>
