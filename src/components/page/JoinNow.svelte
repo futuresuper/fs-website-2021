@@ -125,7 +125,7 @@
       background-size: cover;
       background-position: top right;
       background-repeat: no-repeat;
-      min-height: 100vh;
+      height: 100svh;
       width: 55%;
 
       display: flex;
@@ -146,9 +146,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: end;
-      @media (max-width: 375px) {
-        padding-top: 341px;
-      }
+
       @media (max-width: 800px) {
         font-size: 32px;
         padding-right: 40px;
@@ -164,6 +162,9 @@
       &--message {
         @media (max-width: 800px) {
           font-size: 32px;
+          position: absolute;
+          bottom: 1.5rem;
+          right: 1.5rem;
         }
 
         font-size: 64px;
@@ -231,7 +232,7 @@
         margin-left: 0;
         width: 100%;
         border-radius: 0;
-        padding: 120px 40px;
+        padding: 1rem;
       }
 
       &--container {
@@ -242,7 +243,8 @@
       }
 
       &--heading {
-        margin-bottom: 8px;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
 
         font-size: calc(30px + 1vw);
       }
@@ -300,6 +302,10 @@
       position: fixed;
       z-index: 20;
     }
+    @media (max-width: 375px) {
+      top: 8px;
+      left: 8px;
+    }
 
     &--icon {
       width: 20px;
@@ -333,12 +339,12 @@
     flex-direction: row;
     align-items: center;
     color: #00a900;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
   }
 
   .info-block {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
     &__heading {
       font-size: 1.125rem;
       font-family: $heading;
