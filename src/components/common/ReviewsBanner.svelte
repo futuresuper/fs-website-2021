@@ -12,7 +12,10 @@
 
     <p class="review__text">4.9 stars from 750+ reviews</p>
 
-    <a class="review__text review__text--link" target="_blank" href="https://www.productreview.com.au/c/retail-funds">ProductReview.com.au</a>
+    <div>
+        <a class="review__text review__text--link" target="_blank" href="https://www.productreview.com.au/c/retail-funds">ProductReview.com.au</a>
+    </div>
+
 </div>
 
 <style lang="scss">
@@ -31,11 +34,12 @@
     }
 
     &__text{
-      font-size: 16px;
+      font-size: 1rem;
       color: white;
       font-family: "FutureSuperMono",serif;
       letter-spacing: -0.56px;
       margin: 0;
+      display: inline;
       &--link{
 
       }

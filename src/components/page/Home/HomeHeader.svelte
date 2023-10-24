@@ -8,6 +8,7 @@
   import { onMount } from "svelte";
   import Logo from "@components/images/Logo.svelte";
   import ReviewsBanner from "@components/common/ReviewsBanner.svelte";
+  import AwardsBanner from "@components/common/AwardsBanner.svelte";
 
   let showLoginButton = true;
 
@@ -35,7 +36,8 @@
       <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
 
-    <ReviewsBanner client:load />
+    <ReviewsBanner />
+<!--    <AwardsBanner/>-->
   </div>
   {#if showLoginButton}
     <div class="logo-login-container">
