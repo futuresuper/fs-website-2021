@@ -16,7 +16,7 @@
 </div>
 
 <style lang="scss">
-  @use "../styles" as *;
+  @use "../../styles/index" as *;
 
   .review{
     display: flex;

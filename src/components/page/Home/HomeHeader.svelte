@@ -7,7 +7,7 @@
 
   import { onMount } from "svelte";
   import Logo from "@components/images/Logo.svelte";
-  import ReviewsBanner from "@components/ReviewsBanner.svelte";
+  import ReviewsBanner from "@components/common/ReviewsBanner.svelte";
 
   let showLoginButton = true;
 
