@@ -57,7 +57,7 @@
       <h2 class="impact__form--heading">Join Future Super</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
-        <h4>Takes about 4 minutes.</h4>
+        <h4>It only takes 5 minutes</h4>
       </div>
       <div class="info-block">
         <p class="info-block__heading">What you'll need</p>
@@ -188,8 +188,8 @@
       }
 
       &--text {
+        display: none;
         padding-top: 10%;
-        display: flex;
         justify-content: end;
         text-align: center;
         width: 100%;
