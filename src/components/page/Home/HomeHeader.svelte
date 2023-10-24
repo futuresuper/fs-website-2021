@@ -7,6 +7,7 @@
 
   import { onMount } from "svelte";
   import Logo from "@components/images/Logo.svelte";
+  import ReviewsBanner from "@components/ReviewsBanner.svelte";
 
   let showLoginButton = true;
 
@@ -33,6 +34,8 @@
     <div class="button-container">
       <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
+
+    <ReviewsBanner client:load />
   </div>
   {#if showLoginButton}
     <div class="logo-login-container">
@@ -151,8 +154,11 @@
     text-align: center;
     color: $white;
     background-color: $blackVideo;
-    min-height: 500px;
+    min-height: 812px;
     height: 80vh;
+    @media (max-width: 740px) {
+      min-height: 750px;
+    }
 
     a.login {
       position: absolute;
@@ -190,10 +196,13 @@
 
     .text-container {
       position: absolute;
-      top: 50%;
+      bottom: 85px;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
       width: 90%;
+      @media (max-width: 740px) {
+        bottom: 47px;
+      }
       h1 {
         font-size: 85px;
         max-width: none;
