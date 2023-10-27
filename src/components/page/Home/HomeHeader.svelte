@@ -153,10 +153,10 @@
     background-color: $blackVideo;
     min-height: 500px;
     height: 80vh;
+    margin-top: 75px;
 
     a.login {
       position: absolute;
-      top: 20px;
       right: 30px;
       width: 120px;
       height: 44px;

@@ -11,6 +11,7 @@
     headerMenuShowing,
     showHeaderMenuOnLoad,
   } from "../../store/stores.js";
+  import Banner from "@components/common/Banner.svelte";
 
   const menu = [
     {
@@ -38,6 +39,15 @@
   let showEmergencyNotice = false;
 
   export let joinPage = false;
+  let header;
+
+  let showBanner = true;
+
+  function hideBanner(){
+    showBanner = false;
+    header.classList.remove('header-postion');
+  }
+
 
   // Hide menu on downward scroll and show on upward
   let showMenu = false;
@@ -55,12 +65,23 @@
     // Determine whether the menu should be shown when page is loaded
     showMenu = get(showHeaderMenuOnLoad);
     headerMenuShowing.update((value) => showMenu);
+
   });
 </script>
 
 <svelte:window bind:scrollY={y} />
+{#if showBanner}
+  <div class="banner-container">
+    <Banner />
 
-<header class="container {showMenu ? 'show' : ''}">
+    <div on:click={ () =>hideBanner() } class="close-icon">
+      <Cross />
+    </div>
+  </div>
+
+
+{/if}
+<header class="container {showMenu ? showBanner ? 'show header-postion' : 'show'  : ''}">
   <div class="sticky-header">
     <div class="left">
       <a href="/">
@@ -108,6 +129,28 @@
 
 <style lang="scss">
   @use "../../../styles/" as *;
+  .header-postion.show{
+      top: 50px!important;
+    @media (max-width: 600px) {
+      top: 75px!important;
+    }
+  }
+
+  .banner-container{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .close-icon{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 99999;
+  }
 
   .notice {
     width: 100%;
