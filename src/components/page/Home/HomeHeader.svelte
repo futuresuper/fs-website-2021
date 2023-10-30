@@ -222,13 +222,11 @@
 
     .text-container {
       position: absolute;
-      bottom: 85px;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, 0);
+      transform: translate(-50%, -50%);
       width: 90%;
-      @media (max-width: 740px) {
-        bottom: 47px;
-      }
+
       h1 {
         font-size: 85px;
         max-width: none;
