@@ -16,6 +16,7 @@
     },
     ...returns.table.slice(7),
   ];
+  returnsWith30June[8].highGrowth = "1 Nov 2023";
 </script>
 
 <div class="tables">
@@ -32,6 +33,7 @@
         <div class="number">{r.balancedIndex}</div>
         <div class="number">{r.balancedImpact}</div>
         <div class="number">{r.renewablesPlusGrowth}</div>
+        <div class="number">{r.highGrowth || "-"}</div>
         <div class="number">{r.balancedGrowthPension}</div>
       </div>
     {/each}
@@ -60,7 +62,7 @@
   .table-row {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 20px;
     background-color: $white;
     border-radius: 16px;
@@ -92,12 +94,12 @@
 
   @media (max-width: 760px) {
     .table-row {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       text-align: center;
 
       h4,
       .row-head {
-        grid-column: span 4;
+        grid-column: span 5;
       }
     }
 

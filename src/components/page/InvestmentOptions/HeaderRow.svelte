@@ -115,7 +115,7 @@
 
   @media (max-width: 760px) {
     .header-row {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       justify-content: center;
       text-align: center;
       h3 {
@@ -130,7 +130,7 @@
     }
 
     .header-row.pension {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
 
     h3.pension {
