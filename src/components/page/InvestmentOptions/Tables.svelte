@@ -216,8 +216,7 @@
         for full details about how fees and costs may impact your investment. Refer
         to section 5 of the
         <a href="/aib">Additional Information Booklet</a>
-        for more information. There is no dollar-based admin fee when your balance
-        is below $6,000.
+        for more information.
       {/if}
       <br /><br />
       ^ Returns provided are after investment fees, percentage-based administration
