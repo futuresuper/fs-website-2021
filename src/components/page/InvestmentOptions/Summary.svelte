@@ -3,12 +3,26 @@
   import NoFossilFuels from "../../images/NoFossilFuels.svelte";
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
-  import Plus from "../../images/Plus.svelte";
-  import pages from "@data/pages.json";
+  import Plant from "@components/images/Plant.svelte";
+  import investmentOptions from "@data/investmentOptions.json";
 
-  const green = "#3dfa52";
-  const blue = "#0A5AFF";
+  const balancedIndexItem = investmentOptions.find(
+    (item) => item.label === "Balanced Index"
+  );
+  const balancedImpactItem = investmentOptions.find(
+    (item) => item.label === "Balanced Impact"
+  );
+  const renewablesPlusGrowthItem = investmentOptions.find(
+    (item) => item.label === "Renewables Plus Growth"
+  );
+  const highGrowthItem = investmentOptions.find(
+    (item) => item.label === "High Growth"
+  );
+
+  const green = "#00BE00";
+  const blue = "#073CAA";
   const black = "#212121";
+  const teal = "#1281A4";
 </script>
 
 <div class="io-container">
@@ -18,8 +32,9 @@
     <div />
     <div class="renewables-call-out">
       <Thermometer colour={green} />
-      <h5>Highest climate solutions target allocation</h5>
+      <h5>Our most eco-friendly super option!</h5>
     </div>
+    <div />
 
     <!-- Balanced Index -->
     <div class="option">
@@ -29,9 +44,14 @@
             <NoFossilFuels colour={black} />
           </div>
         </div>
-        <h5>Indexed Investments</h5>
         <h3>Balanced<br />Index</h3>
-        <p>Screens out fossil fuel companies but no impact targets.</p>
+        <p>{balancedIndexItem.description}</p>
+        <div class="bar" />
+        <ul>
+          {#each balancedIndexItem.descriptionPoints as point}
+            <li>{point}</li>
+          {/each}
+        </ul>
       </div>
     </div>
 
@@ -42,19 +62,15 @@
           <div class="icon">
             <Leaf colour={blue} />
           </div>
-          <div class="plus">
-            <Plus colour={blue} />
-          </div>
-          <div class="icon">
-            <NoFossilFuels colour={blue} />
-          </div>
         </div>
-        <h5 class="blue">Social Impact Investments</h5>
-        <h3>Balanced<br /><span class="blue">Impact</span></h3>
-        <p>
-          Screens out fossil fuel companies. Targets investment in social impact
-          and renewable energy projects.
-        </p>
+        <h3>Balanced<br />Impact</h3>
+        <p>{balancedImpactItem.description}</p>
+        <div class="bar blue" />
+        <ul>
+          {#each balancedImpactItem.descriptionPoints as point}
+            <li>{point}</li>
+          {/each}
+        </ul>
       </div>
     </div>
 
@@ -66,25 +82,35 @@
           <div class="icon">
             <World colour={green} />
           </div>
-          <div class="plus">
-            <Plus colour={green} />
-          </div>
+        </div>
+        <h3>Renewables<br />Plus Growth</h3>
+        <p>{renewablesPlusGrowthItem.description}</p>
+        <div class="bar green" />
+        <ul>
+          {#each renewablesPlusGrowthItem.descriptionPoints as point}
+            <li>{point}</li>
+          {/each}
+        </ul>
+      </div>
+    </div>
+
+    <!-- High Growth -->
+
+    <div class="option">
+      <div>
+        <div class="icons">
           <div class="icon">
-            <Leaf colour={green} />
-          </div>
-          <div class="plus">
-            <Plus colour={green} />
-          </div>
-          <div class="icon">
-            <NoFossilFuels colour={green} />
+            <Plant colour={teal} />
           </div>
         </div>
-        <h5 class="green">Most Renewables Investments</h5>
-        <h3>Renewables<br /><span class="green">Plus Growth</span></h3>
-        <p>
-          Screens out fossil fuel companies. Targets 20% allocation to climate
-          change solutions.
-        </p>
+        <h3>Renewables<br />Plus Growth</h3>
+        <p>{highGrowthItem.description}</p>
+        <div class="bar teal" />
+        <ul>
+          {#each highGrowthItem.descriptionPoints as point}
+            <li>{point}</li>
+          {/each}
+        </ul>
       </div>
     </div>
   </div>
@@ -133,7 +159,7 @@
 
   .investment-options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     margin-top: -300px;
 
@@ -156,6 +182,29 @@
 
       p {
         color: $black600;
+      }
+
+      .bar {
+        width: 100%;
+        height: 4px;
+        background-color: $black;
+
+        &.blue {
+          background-color: $blue600;
+        }
+
+        &.green {
+          background-color: $green600;
+        }
+
+        &.teal {
+          background-color: $teal;
+        }
+      }
+
+      ul {
+        color: $black700;
+        padding-left: 20px;
       }
     }
   }

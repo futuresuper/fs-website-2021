@@ -1,11 +1,14 @@
 [
   {
     "label": "Balanced Index",
-    "description": "Screens out fossil fuel companies but no impact targets.",
-    "impact": 1.2,
+    "description": "INVEST IN EVERYTHING",
+    "descriptionPoints": [
+      "Screens out fossil fuel companies.",
+      "Offers exposure to a diverse range of investments."
+    ],
     "highlightInvestments": [],
     "fee": {
-      "perAnnumPercentage": 0.785,
+      "perAnnumPercentage": 0.761,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -16,8 +19,11 @@
   },
   {
     "label": "Balanced Impact",
-    "description": "Screens out fossil fuel companies. Targets investment in social impact and renewable energy projects.",
-    "impact": -1.72,
+    "description": "INVEST IN SOCIAL IMPACT",
+    "descriptionPoints": [
+      "Screens out fossil fuel companies.",
+      "Focuses on investments that drive social impact."
+    ],
     "highlightInvestments": [
       {
         "label": "Vision Fund International",
@@ -29,7 +35,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.5,
+      "perAnnumPercentage": 1.476,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -40,8 +46,11 @@
   },
   {
     "label": "Renewables Plus Growth",
-    "description": "Screens out fossil fuel companies. Targets 20% allocation to climate change solutions.",
-    "impact": -1.65,
+    "description": "INVEST IN CLIMATE SOLUTIONS",
+    "descriptionPoints": [
+      "Screens out fossil fuel companies.",
+      "Focuses on investments that advance renewable energy projects."
+    ],
     "highlightInvestments": [
       {
         "label": "Juice Capital Energy",
@@ -57,7 +66,7 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.385,
+      "perAnnumPercentage": 1.361,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
@@ -67,9 +76,40 @@
     }
   },
   {
+    "label": "High Growth",
+    "description": "INVEST IN YOUR FUTURE",
+    "descriptionPoints": [
+      "Screens out fossil fuel companies.",
+      "Focuses on high-growth investments, such as Australian Shares, International Shares, and Alternative assets."
+    ],
+    "highlightInvestments": [
+      {
+        "label": "Plenti",
+        "definition": "A lending platform that helps people finance home solar systems and batteries."
+      },
+      {
+        "label": "The Nightingale Fund",
+        "definition": "Helps create affordable housing and housing for essential workers in a sustainably designed apartment complex."
+      },
+      {
+        "label": "CIM The Impact Fund",
+        "definition": "Invests in specialist disability accommodation, affordable housing and clean energy."
+      }
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.323,
+      "perYearPrice": 60
+    },
+    "investmentObjective": 3.5,
+    "assetAllocation": {
+      "growth": 90,
+      "defensive": 10
+    }
+  },
+  {
     "label": "Balanced Growth Pension",
     "fee": {
-      "perAnnumPercentage": 0.791,
+      "perAnnumPercentage": 0.767,
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
