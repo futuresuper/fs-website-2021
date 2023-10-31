@@ -27,7 +27,7 @@
     <h4>Fund Phone Number</h4>
     <p>1300 658 422</p>
     <h4>Fund Address</h4>
-    <p>PO Box 1282, Albury, NSW 2640</p>
+    <p>GPO Box 2754, Brisbane QLD 4001</p>
   </div>
 </section>
 

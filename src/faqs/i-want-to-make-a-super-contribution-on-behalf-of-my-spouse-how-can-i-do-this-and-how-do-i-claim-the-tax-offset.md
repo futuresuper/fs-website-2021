@@ -11,7 +11,7 @@ If your spouse is earning a low income or not working, you can choose to pay sup
 
 If you would like to pay a super contribution to your spouse's Future Super account, simply:
 
-1. **Submit the [Personal and Spouse Contribution form](https://www.futuresuper.com.au/personalcontributionsform).** You can provide the form either via email or post (send to Po Box 1282, Albury NSW 2640). This allows our administrators to allocate your payment into your spouse's Future Super account, as all payments go into the one bank account.
+1. **Submit the [Personal and Spouse Contribution form](https://www.futuresuper.com.au/personalcontributionsform).** You can provide the form either via email or post (send to GPO Box 2754, Brisbane QLD 4001). This allows our administrators to allocate your payment into your spouse's Future Super account, as all payments go into the one bank account.
 2. **Transfer the money** to us using the bank account details provided on the form. Note, we can only accept funds via direct deposit for spouse contributions.
 
 _Pro tip: The personal details in section 1 of the **[Personal and Spouse Contribution form](https://www.futuresuper.com.au/personalcontributionsform)** should be for the person making the contribution. The member's details (receiving spouse) should be provided in section 3._

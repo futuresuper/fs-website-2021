@@ -17,7 +17,7 @@ If you have made an error and require a refund for overpaid contributions, we wi
 Please post your completed statutory declaration to:
 
 Future Super
-PO Box 1282
-Albury NSW 2640
+GPO Box 2754
+Brisbane QLD 4001
 
 Please note that we cannot refund these payments without receiving a valid statutory declaration.

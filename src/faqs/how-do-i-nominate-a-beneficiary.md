@@ -11,15 +11,15 @@ order: 81
 To nominate a binding beneficiary you must complete the [Binding Nomination of Beneficiaries Form](https://www.futuresuper.com.au/bindingnomination) and send it to us at:
 
 _Future Super_
-_PO Box 1282_
-_Albury NSW 2640_
+GPO Box 2754
+Brisbane QLD 4001
 
 ### Non-binding beneficiary
 
 To nominate a non-binding beneficiary you need to complete the [Non-Binding Nomination of Beneficiaries Form](https://www.futuresuper.com.au/nonbindingnomination). You can return it by email to info@futuresuper.com.au, or send it in hard copy to:
 
 _Future Super_
-_PO Box 1282_
-_Albury NSW 2640_
+GPO Box 2754
+Brisbane QLD 4001
 
 Once it is processed it will appear in the 'view beneficiaries' section of your [Member Portal](https://portal.myfuturesuper.com.au/member/login_1).

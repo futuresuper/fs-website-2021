@@ -19,8 +19,8 @@ You can access money from your pension account at any time via either requesting
    A withdrawal payment does not count towards your annual minimum drawdown amount but your transfer balance cap will be reduced by the amount of the withdrawal.
 
    To request a withdrawal, you need to submit a withdrawal form either via email (to info@myfuturesuper.com.au) or post at:
-   PO Box 1282
-   Albury NSW 2640
+   GPO Box 2754
+   Brisbane QLD 4001
 
    If you are under 60, the amount specified in your withdrawal request will be considered the gross amount. Withdrawals may be subject to a different tax treatment as your pension payments.
 
