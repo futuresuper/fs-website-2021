@@ -7,12 +7,35 @@
 
   import { onMount } from "svelte";
   import Logo from "@components/images/Logo.svelte";
+  import ReviewsBanner from "@components/common/ReviewsBanner.svelte";
+  import AwardsBanner from "@components/common/AwardsBanner.svelte";
 
   let showLoginButton = true;
+
+
+
+  const experimentBlocks = {
+    CONTROL: "control",
+    REVIEW_AWARDS: "product-review-awards",
+    REVIEW_RATING: "product-review-rating",
+  };
+
+  let experimentBlockGroup = experimentBlocks.CONTROL;
 
   onMount(async () => {
     // Don't show the header menu on load for the video design
     showHeaderMenuOnLoad.update((value) => false);
+
+    const rand = Math.random();
+
+    experimentBlockGroup = rand < 0.33 ? experimentBlocks.CONTROL : rand > 0.66 ? experimentBlocks.REVIEW_AWARDS : experimentBlocks.REVIEW_RATING;
+
+    // Track the details text display
+    analytics.track("Experiment Viewed", {
+      experimentId: 'FUM-117',
+      variationName: experimentBlockGroup,
+      property: 'website',
+    });
   });
 
   headerMenuShowing.subscribe((value) => {
@@ -33,6 +56,12 @@
     <div class="button-container">
       <a class="button large-login" href={pages.JOIN[1]}>Join now</a>
     </div>
+
+    {#if experimentBlockGroup === experimentBlocks.REVIEW_RATING}
+      <ReviewsBanner />
+    {:else if experimentBlockGroup === experimentBlocks.REVIEW_AWARDS}
+      <AwardsBanner/>
+    {/if}
   </div>
   {#if showLoginButton}
     <div class="logo-login-container">
@@ -151,8 +180,11 @@
     text-align: center;
     color: $white;
     background-color: $blackVideo;
-    min-height: 500px;
+    min-height: 812px;
     height: 80vh;
+    @media (max-width: 740px) {
+      min-height: 750px;
+    }
 
     a.login {
       position: absolute;
@@ -194,6 +226,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 90%;
+
       h1 {
         font-size: 85px;
         max-width: none;
