@@ -37,7 +37,7 @@
         <div class="number">{r.balancedGrowthPension}</div>
       </div>
     {/each}
-    <JoinRow includePension={true} />
+    <!-- <JoinRow includePension={true} /> -->
     <p class="disclaimer">
       Returns provided are after investment fees, percentage-based
       administration fees and taxes but before dollar-based administration fees
