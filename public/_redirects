@@ -50,7 +50,6 @@
 /options/pension /pension-fund
 /choosing/performanceandreturns /performance-and-returns
 /performance-returns /performance-and-returns
-/personalcontributionsform /personalcontributionform
 /privacy /privacy-policy
 /privacy_policy /privacy-policy
 /choosing/questions /support-and-faqs
@@ -91,7 +90,7 @@
 /non_binding_nomination /nonbindingnomination
 /nonbindingnomination https://content.myfuturesuper.com.au/forms-docs/FS_Non-BindingNominationofBeneficiariesForm_01112023.pdf
 /pensionpaperapplicationform https://content.myfuturesuper.com.au/forms-docs/FS_PensionApplicationForm_01112023.pdf
-/personalcontributionform https://content.myfuturesuper.com.au/forms-docs/FS_AlternativeContributionForm_01112023.pdf
+/alternativecontributionform https://content.myfuturesuper.com.au/forms-docs/FS_AlternativeContributionForm_01112023.pdf
 /rollover_form /rolloverform
 /rolloverform https://content.myfuturesuper.com.au/forms-docs/FS_RolloverForm_01112023.pdf
 /fs_standard_choice_form /standardchoiceform
@@ -101,7 +100,6 @@
 /life_insurance_transfer_application_form* https://content.myfuturesuper.com.au/forms-docs/FS_InsuranceTransferForm_01112023.pdf
 /life_insurance_application* https://content.myfuturesuper.com.au/forms-docs/FS-InsuranceApplicationForm.pdf
 /rap https://content.myfuturesuper.com.au/forms-docs/FutureSuper_InnovateRAP.pdf
-/the-bottom-line-q3 https://uploads-ssl.webflow.com/5ec37dbb4834011cb8cd3469/5fa4d1abcc155e61d648870f_TBL.pdf
 /impact-screening-strategy https://content.myfuturesuper.com.au/forms-docs/FS_ScreeningandProductMatrix_01112023.pdf
 /carbon-transparency-report https://content.myfuturesuper.com.au/forms-docs/FS-Carbon-Transparency-Report-2020.pdf
 /whistleblower-policy https://content.myfuturesuper.com.au/forms-docs/FS-Whistleblower-Policy-june23.pdf
