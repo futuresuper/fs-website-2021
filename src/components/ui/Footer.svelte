@@ -149,10 +149,10 @@
             including their Privacy Statement <a
               href="https://www.eqt.com.au/superannuation/board-and-governance"
               >here</a
-            >. The Fund is administered by OneVue Super Services Pty Limited
-            (ABN 74 006 877 872; AFSL 246883). Insurance cover is provided to
-            eligible members by AIA Australia Limited (ABN 79 004 837 861; AFSL
-            230043).
+            >. The Fund is administered by APEX Superannuation (Australia) Pty
+            Ltd (ABN 28 081 966 243; AFSL 238507). Insurance cover is provided
+            to eligible members by AIA Australia Limited (ABN 79 004 837 861;
+            AFSL 230043).
           </p>
           <p class="disclaimer">
             When considering a new fund, you should consider checking the costs

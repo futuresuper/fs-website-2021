@@ -2,13 +2,14 @@
   import NoFossilFuels from "../../images/NoFossilFuels.svelte";
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
-  import Plus from "../../images/Plus.svelte";
   import Scales from "../../images/Scales.svelte";
+  import Plant from "@components/images/Plant.svelte";
 
-  const green = "#3dfa52";
-  const blue = "#0A5AFF";
-  const black = "#212121";
   const pink = "#FF27C3";
+  const green = "#00BE00";
+  const blue = "#073CAA";
+  const black = "#212121";
+  const teal = "#1281A4";
 
   export let title = "";
   export let includePension = false;
@@ -44,12 +45,6 @@
         <div class="icon">
           <Leaf colour={blue} />
         </div>
-        <div class="plus">
-          <Plus colour={blue} />
-        </div>
-        <div class="icon">
-          <NoFossilFuels colour={blue} />
-        </div>
       </div>
       <h4>Balanced Impact</h4>
     </div>
@@ -59,20 +54,17 @@
         <div class="icon">
           <World colour={green} />
         </div>
-        <div class="plus">
-          <Plus colour={green} />
-        </div>
-        <div class="icon">
-          <Leaf colour={green} />
-        </div>
-        <div class="plus">
-          <Plus colour={green} />
-        </div>
-        <div class="icon">
-          <NoFossilFuels colour={green} />
-        </div>
       </div>
       <h4>Renewables Plus Growth</h4>
+    </div>
+
+    <div class="option-label">
+      <div class="icons">
+        <div class="icon">
+          <Plant colour={teal} />
+        </div>
+      </div>
+      <h4>High Growth</h4>
     </div>
   {/if}
 
@@ -94,7 +86,7 @@
   .header-row {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 20px;
     align-items: flex-start;
     margin-top: 60px;
@@ -123,7 +115,7 @@
 
   @media (max-width: 760px) {
     .header-row {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       justify-content: center;
       text-align: center;
       h3 {
@@ -138,7 +130,7 @@
     }
 
     .header-row.pension {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
 
     h3.pension {

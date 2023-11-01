@@ -3,7 +3,8 @@
   import Leaf from "../../images/Leaf.svelte";
   import World from "../../images/World.svelte";
   import investmentOptions from "@data/investmentOptions.json";
-  const options = investmentOptions.slice(0, 3); // exclude Pension
+  import Plant from "@components/images/Plant.svelte";
+  const options = investmentOptions.slice(0, 4); // exclude Pension
   const green = "#3dfa52";
 </script>
 
@@ -12,7 +13,9 @@
     <div
       class="marquee {option.label === 'Balanced Index'
         ? 'bal-index'
-        : ''} {option.label === 'Balanced Impact' ? 'bal-impact' : ''}"
+        : ''} {option.label === 'Balanced Impact'
+        ? 'bal-impact'
+        : ''} {option.label === 'High Growth' ? 'high-growth' : ''}"
     >
       <div class="text">{option.label}</div>
       <div class="icon">
@@ -20,8 +23,10 @@
           <NoFossilFuels colour={green} />
         {:else if option.label === "Balanced Impact"}
           <Leaf colour={green} />
-        {:else}
+        {:else if option.label === "Renewables Plus Growth"}
           <World colour={green} />
+        {:else}
+          <Plant colour={green} />
         {/if}
       </div>
       <div class="text">{option.label}</div>
@@ -30,8 +35,10 @@
           <NoFossilFuels colour={green} />
         {:else if option.label === "Balanced Impact"}
           <Leaf colour={green} />
-        {:else}
+        {:else if option.label === "Renewables Plus Growth"}
           <World colour={green} />
+        {:else}
+          <Plant colour={green} />
         {/if}
       </div>
     </div>
@@ -115,6 +122,9 @@
     }
     &.bal-impact {
       animation: marquee-bal-impact 50s linear infinite;
+    }
+    &.high-growth {
+      animation: marquee 80s linear infinite;
     }
   }
 

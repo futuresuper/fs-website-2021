@@ -9,9 +9,10 @@ phone: 1300 658 422
 phoneOpeningTime: 10am
 phoneClosingTime: 4pm
 mediaEmail: media@futuresuper.com.au
-postLine1: PO Box 1282
-postLine2: Albury, NSW 2640
+postLine1: GPO Box 2754
+postLine2: Brisbane QLD 4001
 ---
+
 Please note, our team will not be available on National and NSW public holidays.
 
 If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
@@ -24,9 +25,7 @@ You can find information about your account [online](https://my.futuresuper.com
 
 **Future Super** can provide access to an interpreter at your request. We work with an interpreter from Translating and Interpreting Services (TIS). To ask for an interpreter, call us on **1300 658 422**. To find out more about Translating and Interpreting Services, visit [tisnational.gov.au](https://www.australianethical.com.au/EPiServer/CMS/tisnational.gov.au).
 
-
-
-**KNOWN SCAM ALERT** 
+**KNOWN SCAM ALERT**
 
 **August 2023 - Cold callers impersonating Future Super**
 

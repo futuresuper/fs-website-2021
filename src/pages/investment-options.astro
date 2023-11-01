@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import InvestmentOptions from "@components/page/InvestmentOptions/InvestmentOptions.svelte";
+import InvestmentOptionsPage from "@components/page/InvestmentOptions/InvestmentOptions.svelte";
 
 import pages from "@data/pages.json";
 import JoinNow from "@components/ui/JoinNow.svelte";
@@ -17,6 +17,6 @@ const black = "#212121";
   relatedPages={relatedPages}
   pageHeadBackgroundColour={black}
 >
-  <InvestmentOptions />
+  <InvestmentOptionsPage />
   <JoinNow />
 </BaseLayout>

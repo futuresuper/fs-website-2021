@@ -45,8 +45,7 @@
         <p>
           Let’s talk about fees! There are two main types of fees for super -
           investment and administration. The administration fee is a fixed $60
-          per year for all our options. If your balance is less than $6000, you
-          won’t have to pay this one.
+          per year for all our options.
         </p>
         <p>
           Our investment fees vary depending on the option you choose. The

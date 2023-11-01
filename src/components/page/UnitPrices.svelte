@@ -3,6 +3,18 @@
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinNow from "../ui/JoinNow.svelte";
 
+  const unitPricesFormatted = [
+    ...unitPrices.slice(0, 3),
+    {
+      investment_option_id: "13",
+      investment_option_label: "High Growth",
+      account_type_label: "Accumulation",
+      buy_price: "NEW",
+      sell_price: "NEW",
+    },
+    ...unitPrices.slice(3, unitPrices.length),
+  ];
+
   const rows = [
     {
       rowHeading: "Buy price",
@@ -27,7 +39,7 @@
         <div class="row-head">
           <h4>{r.rowHeading}</h4>
         </div>
-        {#each unitPrices as investmentOption}
+        {#each unitPricesFormatted as investmentOption}
           <div class="number">
             {#if r.code === "investment_option_id"}
               <a
@@ -65,7 +77,7 @@
   .table-row {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 20px;
     background-color: $white;
     border-radius: 16px;
@@ -96,12 +108,12 @@
 
   @media (max-width: 760px) {
     .table-row {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       text-align: center;
 
       h4,
       .row-head {
-        grid-column: span 4;
+        grid-column: span 5;
       }
     }
 

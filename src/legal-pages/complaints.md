@@ -23,8 +23,8 @@ info@futuresuper.com.au
 **Write to:** \
 Complaints & Compliance Officer\
 Future Super\
-PO Box 1282\
-Albury NSW 2640
+GPO Box 2754
+Brisbane QLD 4001
 
 ## What does a complaint cost?
 

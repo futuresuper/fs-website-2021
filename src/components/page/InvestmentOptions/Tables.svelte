@@ -12,25 +12,28 @@
       investmentOptions[0].returnOneYear = r.balancedIndex;
       investmentOptions[1].returnOneYear = r.balancedImpact;
       investmentOptions[2].returnOneYear = r.renewablesPlusGrowth;
-      investmentOptions[3].returnOneYear = r.balancedGrowthPension;
+      investmentOptions[3].returnOneYear = "NEW";
+      investmentOptions[4].returnOneYear = r.balancedGrowthPension;
     }
     if (r.rowHeading === "Since inception") {
       investmentOptions[0].returnSinceInception = r.balancedIndex;
       investmentOptions[1].returnSinceInception = r.balancedImpact;
       investmentOptions[2].returnSinceInception = r.renewablesPlusGrowth;
-      investmentOptions[3].returnSinceInception = r.balancedGrowthPension;
+      investmentOptions[3].returnSinceInception = "NEW";
+      investmentOptions[4].returnSinceInception = r.balancedGrowthPension;
     }
     if (r.rowHeading === "Launch date") {
       investmentOptions[0].launchDate = r.balancedIndex;
       investmentOptions[1].launchDate = r.balancedImpact;
       investmentOptions[2].launchDate = r.renewablesPlusGrowth;
-      investmentOptions[3].launchDate = r.balancedGrowthPension;
+      investmentOptions[3].launchDate = "1 Nov 2023";
+      investmentOptions[4].launchDate = r.balancedGrowthPension;
     }
   });
 
   const options = pension
-    ? investmentOptions.slice(3, 4)
-    : investmentOptions.slice(0, 3); // exclude Pension
+    ? investmentOptions.slice(4, 5)
+    : investmentOptions.slice(0, 4); // exclude Pension
 </script>
 
 <div class="tables">
@@ -53,6 +56,7 @@
       {#if !pension}
         <div class="tick"><Tick /></div>
         <div class="tick"><Tick /></div>
+        <div class="tick"><Tick /></div>
       {/if}
     </div>
     <div class="table-row {pension ? 'pension' : ''}">
@@ -61,12 +65,14 @@
       {#if !pension}
         <div class="tick"><Tick /></div>
         <div class="tick"><Tick /></div>
+        <div class="tick"><Tick /></div>
       {/if}
     </div>
     <div class="table-row {pension ? 'pension' : ''}">
       <h4>Invests for impact</h4>
       {#if !pension}
         <div />
+        <div class="tick"><Tick /></div>
         <div class="tick"><Tick /></div>
       {/if}
       <div class="tick"><Tick /></div>
@@ -138,7 +144,9 @@
             </span>
           </p>
           <p class="number-desc">
-            Per annum over rolling ten-year periods (after fees and taxes)
+            Per annum over rolling {option.investmentObjectiveYears === 12
+              ? "twelve"
+              : "ten"}-year periods (after fees and taxes)
           </p>
         </div>
       {/each}
@@ -210,8 +218,7 @@
         for full details about how fees and costs may impact your investment. Refer
         to section 5 of the
         <a href="/aib">Additional Information Booklet</a>
-        for more information. There is no dollar-based admin fee when your balance
-        is below $6,000.
+        for more information.
       {/if}
       <br /><br />
       ^ Returns provided are after investment fees, percentage-based administration
@@ -238,7 +245,7 @@
   .table-row {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 20px;
   }
 
@@ -276,6 +283,8 @@
     }
 
     .highlight-investments {
+      display: flex;
+      flex-direction: column;
       align-self: flex-start;
       p {
         font-size: 13px;
