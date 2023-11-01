@@ -103,7 +103,7 @@
             <Plant colour={teal} />
           </div>
         </div>
-        <h3>Renewables<br />Plus Growth</h3>
+        <h3>High<br />Growth</h3>
         <p>{highGrowthItem.description}</p>
         <div class="bar teal" />
         <ul>
