@@ -144,7 +144,9 @@
             </span>
           </p>
           <p class="number-desc">
-            Per annum over rolling ten-year periods (after fees and taxes)
+            Per annum over rolling {option.investmentObjectiveYears === 12
+              ? "twelve"
+              : "ten"}-year periods (after fees and taxes)
           </p>
         </div>
       {/each}

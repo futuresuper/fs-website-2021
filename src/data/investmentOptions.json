@@ -101,6 +101,7 @@
       "perYearPrice": 60
     },
     "investmentObjective": 3.5,
+    "investmentObjectiveYears": 12,
     "assetAllocation": {
       "growth": 90,
       "defensive": 10
