@@ -14,8 +14,6 @@
   export let title = "";
   export let includePension = false;
   export let pensionOnly = false;
-
-  const firstColSpan = includePension ? 2 : 3;
 </script>
 
 <div
@@ -23,10 +21,7 @@
     ? 'pensionOnly'
     : ''}"
 >
-  <h3
-    class={includePension ? "pension" : ""}
-    style="grid-column: span {firstColSpan};"
-  >
+  <h3 class={includePension ? "pension" : ""}>
     {title}
   </h3>
 
@@ -92,6 +87,10 @@
     margin-top: 60px;
     h3 {
       margin: 0 0 0 -20px;
+      grid-column: span 3;
+    }
+    &.pension h3 {
+      grid-column: span 2;
     }
     h4 {
       margin: 0;
@@ -109,10 +108,6 @@
     width: 48px;
   }
 
-  .plus {
-    width: 14px;
-  }
-
   @media (max-width: 760px) {
     .header-row {
       grid-template-columns: repeat(4, 1fr);
@@ -120,6 +115,7 @@
       text-align: center;
       h3 {
         margin-left: 0;
+        grid-column: span 4;
       }
       &.pensionOnly {
         grid-template-columns: 100%;
