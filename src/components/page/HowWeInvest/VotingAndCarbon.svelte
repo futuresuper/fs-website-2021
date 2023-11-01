@@ -21,7 +21,7 @@
       </p>
     </div>
   </div>
-  <div class="col">
+  <!-- <div class="col">
     <div>
       <div class="icon">
         <Carbon />
@@ -36,7 +36,7 @@
     <a href="/carbon-transparency-report" class="button"
       >Download carbon transparency report</a
     >
-  </div>
+  </div> -->
 </div>
 
 <style lang="scss">
