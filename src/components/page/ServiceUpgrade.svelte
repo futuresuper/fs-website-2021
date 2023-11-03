@@ -40,10 +40,6 @@
       >, during which some services will be temporarily unavailable. This is
       part of an essential upgrade to improve system efficiency and enhance
       customer experience. Account services will be limited during this time.
-      <strong
-        >We recommend you make any account changes or personal contributions
-        before October 31, 2023.</strong
-      >
     </p>
   </div>
   <h2>Blackout period:<br />October 31 until November 15, 2023</h2>
