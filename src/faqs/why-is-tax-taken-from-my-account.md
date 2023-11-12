@@ -13,4 +13,4 @@ Note - If you exceed the concessional contributions cap of $27,500 in a financia
 
 The super contributions you make from your after-tax income (non-concessional) are not subject to tax unless you exceed the cap of $110,000 in a financial year. If you exceed the cap the excess will be taxed at the top marginal tax rate.
 
-For more information on how super contributions are taxed and annual contribution limits see [ATO's website](https://www.ato.gov.au/Individuals/Super/Growing-and-keeping-track-of-your-super/Caps-limits-and-tax-on-super-contributions/).[](https://www.ato.gov.au/Individuals/Super/Growing-and-keeping-track-of-your-super/Caps-limits-and-tax-on-super-contributions/)
+For more information on how super contributions are taxed and annual contribution limits see [ATO's website](https://www.ato.gov.au/Individuals/Super/Growing-and-keeping-track-of-your-super/Caps-limits-and-tax-on-super-contributions/).
