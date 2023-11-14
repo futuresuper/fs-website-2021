@@ -4,7 +4,7 @@
 
 <div class="container">
   <section>
-    <p>Choose from three impactful investment options for your&nbsp;super</p>
+    <p>Choose from four impactful investment options for your&nbsp;super</p>
     <div class="arrow">
       <Arrow direction="down" />
     </div>
