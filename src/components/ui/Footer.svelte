@@ -37,7 +37,6 @@
         pages.CONTACT_US,
         pages.ABOUT_US,
         pages.WORK_WITH_US,
-        pages.SERVICE_UPGRADE_NOTICE,
       ],
     },
     {
