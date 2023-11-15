@@ -103,7 +103,7 @@
             <h5>{page.heading}</h5>
             <hr />
             {#if page.heading === "Company"}
-              <Notification />
+              <!-- <Notification /> -->
               <!-- <EndOfYearInfo /> -->
             {/if}
             {#each page.subPages as subPage}
