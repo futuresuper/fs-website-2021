@@ -37,7 +37,6 @@
         pages.CONTACT_US,
         pages.ABOUT_US,
         pages.WORK_WITH_US,
-        pages.SERVICE_UPGRADE_NOTICE,
       ],
     },
     {
@@ -103,7 +102,7 @@
             <h5>{page.heading}</h5>
             <hr />
             {#if page.heading === "Company"}
-              <Notification />
+              <!-- <Notification /> -->
               <!-- <EndOfYearInfo /> -->
             {/if}
             {#each page.subPages as subPage}

@@ -12,9 +12,9 @@
     </div>
   </div>
   <address>
-    <Notification />
+    <!-- <Notification /> -->
     <!-- <EndOfYearInfo /> -->
-    <hr />
+    <!-- <hr /> -->
     <h5>Email</h5>
     <a href="mailto:{contact.frontmatter.emailAddress}"
       >{contact.frontmatter.emailAddress}</a
