@@ -6,13 +6,13 @@ author: Future Super
 description: At Future Super we have a set of negative screens in place - if
   companies fail these, we rule out investing with them.
 ---
-## How we screen companies operating in Occupied Territories
+### How we screen companies operating in Occupied Territories
 
 At Future Super we have a set of negative screens in place - if companies fail these, we rule out investing with them. Some of our screens that are relevant to this issue include screens that prevent us from investing in weapons companies and companies that have documented contracts with military forces that make up a significant portion of their revenues. 
 
 There are four companies that we invest in that have been flagged by campaigners as having current or historical activities in the Occupied Palestinian Territory (OPT). We are actively reviewing all four. 
 
-## Here's an update on our assessment of these companies
+### Here's an update on our assessment of these companies
 
 **HP Inc. and HP Enterprises**
 
