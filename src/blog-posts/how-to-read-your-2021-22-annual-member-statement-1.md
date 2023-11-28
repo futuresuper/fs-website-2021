@@ -59,13 +59,13 @@ Your** *Preserved benefit*** means you can only withdraw this money if you meet 
 
 ![](https://i.postimg.cc/wBxC6wQM/RPG-Investment-Performance.png)
 
-### How returns are calculated
-
-Your investment performance is displayed after the ***fees and costs deducted from your investment***. This includes the asset-based administration fee (% fee), investment fee and taxes are deducted (more on this below).
+Your investment performance is displayed after a deduction of fees and costs from your investment. This includes the asset-based administration fee (% fee), investment fee and taxes are deducted (more on this below).  
 
 This also means our[](https://www.myfuturesuper.com.au/choosing/performanceandreturns)[published fund returns](https://www.myfuturesuper.com.au/performance-and-returns/) are shown after those fees and taxes are deducted.
 
 Your personal investment performance may differ to the fund performance depending on when you rolled in, and when and how much you contributed during the financial year.
+
+
 
 ### Y﻿our Insurance Details
 
@@ -76,6 +76,8 @@ If you have cover with us, it will appear in the Insurance Cover section and sta
 The Withdrawal Benefit  indicates the balance in your account that is available to withdraw in the event of your death or disablement. The Insured Amount is the amount your policy covers you for, this may either be the standard amount (if you applied via our easy opt-in method) or a customised amount chosen by you (if you applied via our voluntary method).  
 
 Please visit the [Insurance section](https://www.futuresuper.com.au/insurance/) on our website to read more about the type of cover we offer. You can also see more information about your policy in our [Insurance Guide](https://content.myfuturesuper.com.au/forms-docs/FS_InsuranceGuide_01112023.pdf).
+
+
 
 ### Y﻿our Beneficiaries
 
