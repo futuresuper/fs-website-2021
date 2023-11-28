@@ -1,6 +1,6 @@
 ---
 title: "How to read your 2022-23 Annual Member Statement "
-date: 2023-11-28T00:04:44.711Z
+date: 2023-11-28T00:21:15.280Z
 image: https://i.postimg.cc/nLgMnm5z/Member-Statement.png
 tags:
   - superannuation
