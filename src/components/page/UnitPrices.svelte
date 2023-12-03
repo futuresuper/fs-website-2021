@@ -3,17 +3,7 @@
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinNow from "../ui/JoinNow.svelte";
 
-  const unitPricesFormatted = [
-    ...unitPrices.slice(0, 3),
-    {
-      investment_option_id: "13",
-      investment_option_label: "High Growth",
-      account_type_label: "Accumulation",
-      buy_price: "NEW",
-      sell_price: "NEW",
-    },
-    ...unitPrices.slice(3, unitPrices.length),
-  ];
+  const unitPricesFormatted = unitPrices;
 
   const rows = [
     {
