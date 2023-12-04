@@ -1,11 +1,7 @@
 [
   {
     "label": "Balanced Index",
-    "description": "INVEST IN EVERYTHING",
-    "descriptionPoints": [
-      "Screens out fossil fuel companies.",
-      "Offers exposure to a diverse range of investments."
-    ],
+    "description": "This low-cost option leverages indexes to deliver a diverse and values-aligned investment portfolio.",
     "highlightInvestments": [],
     "fee": {
       "perAnnumPercentage": 0.761,
@@ -19,11 +15,7 @@
   },
   {
     "label": "Balanced Impact",
-    "description": "INVEST IN SOCIAL IMPACT",
-    "descriptionPoints": [
-      "Screens out fossil fuel companies.",
-      "Focuses on investments that drive social impact."
-    ],
+    "description": "This option offers a well-rounded exposure to renewable energy and social impact investments.",
     "highlightInvestments": [
       {
         "label": "Vision Fund International",
@@ -46,11 +38,7 @@
   },
   {
     "label": "Renewables Plus Growth",
-    "description": "INVEST IN CLIMATE SOLUTIONS",
-    "descriptionPoints": [
-      "Screens out fossil fuel companies.",
-      "Focuses on investments that advance renewable energy projects."
-    ],
+    "description": "This option targets a 20% allocation to renewable energy and climate solutions, for a forward-thinking and environmentally conscious portfolio.",
     "highlightInvestments": [
       {
         "label": "Juice Capital Energy",
@@ -77,11 +65,7 @@
   },
   {
     "label": "High Growth",
-    "description": "INVEST IN YOUR FUTURE",
-    "descriptionPoints": [
-      "Screens out fossil fuel companies.",
-      "Focuses on high-growth investments, such as Australian Shares, International Shares, and Alternative assets."
-    ],
+    "description": "This option targets high allocation in growth investments such as Australian shares, international shares, and alternative assets.",
     "highlightInvestments": [
       {
         "label": "Plenti",

@@ -45,13 +45,8 @@
           </div>
         </div>
         <h3>Balanced<br />Index</h3>
-        <p>{balancedIndexItem.description}</p>
         <div class="bar" />
-        <ul>
-          {#each balancedIndexItem.descriptionPoints as point}
-            <li>{point}</li>
-          {/each}
-        </ul>
+        <p>{balancedIndexItem.description}</p>
       </div>
     </div>
 
@@ -64,13 +59,8 @@
           </div>
         </div>
         <h3>Balanced<br />Impact</h3>
-        <p>{balancedImpactItem.description}</p>
         <div class="bar blue" />
-        <ul>
-          {#each balancedImpactItem.descriptionPoints as point}
-            <li>{point}</li>
-          {/each}
-        </ul>
+        <p>{balancedImpactItem.description}</p>
       </div>
     </div>
 
@@ -84,13 +74,8 @@
           </div>
         </div>
         <h3>Renewables<br />Plus Growth</h3>
-        <p>{renewablesPlusGrowthItem.description}</p>
         <div class="bar green" />
-        <ul>
-          {#each renewablesPlusGrowthItem.descriptionPoints as point}
-            <li>{point}</li>
-          {/each}
-        </ul>
+        <p>{renewablesPlusGrowthItem.description}</p>
       </div>
     </div>
 
@@ -104,13 +89,8 @@
           </div>
         </div>
         <h3>High<br />Growth</h3>
-        <p>{highGrowthItem.description}</p>
         <div class="bar teal" />
-        <ul>
-          {#each highGrowthItem.descriptionPoints as point}
-            <li>{point}</li>
-          {/each}
-        </ul>
+        <p>{highGrowthItem.description}</p>
       </div>
     </div>
   </div>
@@ -188,6 +168,7 @@
         width: 100%;
         height: 4px;
         background-color: $black;
+        margin-bottom: 20px;
 
         &.blue {
           background-color: $blue600;
