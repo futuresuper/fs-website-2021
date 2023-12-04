@@ -3,7 +3,15 @@
   import HeaderRow from "./InvestmentOptions/HeaderRow.svelte";
   import JoinNow from "../ui/JoinNow.svelte";
 
-  const unitPricesFormatted = unitPrices;
+  const unitPricesFormatted = [
+    unitPrices.find((u) => u.investment_option_label === "Balanced Index"),
+    unitPrices.find((u) => u.investment_option_label === "Balanced Impact"),
+    unitPrices.find((u) => u.investment_option_label === "Renewables Plus"),
+    unitPrices.find((u) => u.investment_option_label === "High Growth"),
+    unitPrices.find(
+      (u) => u.investment_option_label === "Pension Balanced Growth"
+    ),
+  ];
 
   const rows = [
     {
