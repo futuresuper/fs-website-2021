@@ -8,7 +8,8 @@ emailClosingTime: 5pm
 phone: 1300 658 422
 phoneOpeningTime: 10am
 phoneClosingTime: "4pm. As we are undergoing maintenance, our team will not be
-  available by phone from 12pm- 4pm on Thursday 7 December. "
+  available by phone from 12pm- 4pm on Thurs 7 Dec. Our regular phone times will
+  resume 8 Dec. "
 mediaEmail: media@futuresuper.com.au
 postLine1: GPO Box 2754
 postLine2: Brisbane QLD 4001
