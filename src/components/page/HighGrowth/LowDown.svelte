@@ -86,4 +86,10 @@
       }
     }
   }
+
+  @media (max-width: 1000px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
