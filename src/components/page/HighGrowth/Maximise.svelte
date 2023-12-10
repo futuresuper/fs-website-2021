@@ -27,7 +27,7 @@
   <div class="container">
     <div class="intro">
       <div>
-        <h2>Maximise your superwhile investing responsibly</h2>
+        <h2>Maximise your super while investing responsibly</h2>
         <p>
           When you invest in High Growth, you’re investing in changing the world
           for the better. Here’s some of the impressive climate and social
