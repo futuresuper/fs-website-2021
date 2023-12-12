@@ -6,7 +6,6 @@ order: 1
 If you’d like to grow your super balance, you can make [personal contributions](https://www.ato.gov.au/individuals/super/growing-and-keeping-track-of-your-super/how-to-save-more-in-your-super/personal-super-contributions/) to your super directly from your bank account.
 
 
-
 **How to make a personal contribution to your Future Super account**
 
 You can use BPAY to make a payment (or recurring payments) from your bank account.
