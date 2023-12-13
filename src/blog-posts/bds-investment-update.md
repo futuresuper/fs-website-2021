@@ -39,3 +39,8 @@ As shareholders, we have the ability to reach out for information and to apply p
 We also have the ability to escalate our response, such as by divesting, if we believe they are no longer an appropriate investment. Engaging is how we make sure we have a full picture of a company’s activities so we can make those decisions.
 
 When our members reach out to us on issues like this, we take it seriously. We’re providing this information about our investments to be transparent, and to clear up some misinformation that we understand has been shared on social media.
+
+**UPDATE 14/12/2023:**\
+*Future Super’s team has reviewed any investments that have operations in the OPT. We have contacted HP Inc, Expedia, Booking Holdings (which owns Booking.com) and Alstom SA and have begun the process of engaging with them.* 
+
+*Engagement is a process that takes time, we understand that this can be frustrating. Why the process? As a responsible investor for all of our members' retirement savings, we have to follow a thorough process and engage and liaise with multiple stakeholders. This takes time to ensure we are acting in the best interest of members.*
