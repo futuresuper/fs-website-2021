@@ -1,5 +1,5 @@
 <script>
-  import HighGrowthIcon from "@components/images/LeafRotating.svelte";
+  import HighGrowthIcon from "@components/images/PlantRotating.svelte";
 </script>
 
 <div class="bg">
