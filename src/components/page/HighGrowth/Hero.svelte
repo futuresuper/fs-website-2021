@@ -8,7 +8,7 @@
       <div class="icon"><HighGrowthIcon colour="#1281A4" /></div>
       <h1>Future Super High Growth</h1>
       <h2>
-        A new <span>high growth</span>, long-term investment option that doesn’t
+        A <span>high growth</span>, long-term investment option that doesn’t
         harm the planet.
       </h2>
       <a href="/join-now" class="button">Join High Growth</a>
