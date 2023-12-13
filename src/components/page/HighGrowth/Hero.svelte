@@ -11,10 +11,10 @@
         A <span>high growth</span>, long-term investment option that doesn’t
         harm the planet.
       </h2>
-      <a href="/join-now" class="button">Join High Growth</a>
+      <a href="/join-now" class="button">Discover High Growth</a>
       <div class="already-member">
         <p>Already a member?</p>
-        <a href="https://my.futuresuper.com.au/">Log in and make the switch</a>
+        <a href="https://my.futuresuper.com.au/">Log in</a>
       </div>
     </div>
   </div>

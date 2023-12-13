@@ -7,10 +7,11 @@
     <div>
       <h2>I’m already a member, what about me?</h2>
       <p>
-        No worries! You can switch to High Growth anytime. Many of our members
-        have been eagerly awaiting this option; in fact, 60% told us they wanted
-        a higher growth investment**. The wait is over.
+        No worries! You can switch investment options anytime. Many of our
+        members have been eagerly awaiting this option; in fact, 60% told us
+        they wanted a higher growth investment**
       </p>
+      <p class="bold">The wait is over.</p>
       <a href="https://my.futuresuper.com.au" class="button"
         >Switch Investment Options</a
       >
