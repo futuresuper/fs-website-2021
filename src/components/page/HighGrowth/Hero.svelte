@@ -1,5 +1,5 @@
 <script>
-  import HighGrowthIcon from "@components/images/Leaf.svelte";
+  import HighGrowthIcon from "@components/images/LeafRotating.svelte";
 </script>
 
 <div class="bg">
@@ -65,6 +65,12 @@
     background-color: $teal;
     border-color: $teal;
     color: $white;
+
+    &:hover {
+      background-color: $green;
+      border-color: $green;
+      color: $black;
+    }
   }
 
   p,
