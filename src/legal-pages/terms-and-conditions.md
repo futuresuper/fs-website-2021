@@ -6,15 +6,16 @@ alsoSee:
   - Privacy Policy
   - Fund Information
 ---
-By accessing or viewing our online channels (including this website), you agree to the following terms and conditions.  
 
-The website [www.futuresuper.com.au](http://www.futuresuper.com.au/) (‘this website’) is owned and operated by Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. The information on our online channels are issued by Future Super Investment Services Pty Ltd (ABN 55 621 040 702, AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580, AFSL 482684), as the Promote/r of the Fund Super Fund (ABN 45 960 194 277). 
+By accessing or viewing our online channels (including this website), you agree to the following terms and conditions.
 
-By accessing this website or by viewing our online channels, you agree to the following terms and conditions. 
+The website [www.futuresuper.com.au](http://www.futuresuper.com.au/) (‘this website’) is owned and operated by Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. The information on our online channels are issued by Future Super Investment Services Pty Ltd (ABN 55 621 040 702, AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580, AFSL 482684), as the Promote/r of the Fund Super Fund (ABN 45 960 194 277).
+
+By accessing this website or by viewing our online channels, you agree to the following terms and conditions.
 
 ## General information only
 
-All information provided is general in nature only and does not take into consideration your objectives, financial situation or needs. Please read the relevant [Product Disclosure Statement](https://www.futuresuper.com.au/pds), [Target Market Determination](https://content.myfuturesuper.com.au/forms-docs/FS_AccumTMD_05102021.pdf) and [Financial Services Guide](https://www.futuresuper.com.au/fsg) available at http://futuresuper.com.au and consider whether Future Super is appropriate for your needs. We recommend you consider seeking independent personal financial advice before deciding whether to acquire, or continue to hold, interests in the Fund.
+All information provided is general in nature only and does not take into consideration your objectives, financial situation or needs. Please read the relevant [Product Disclosure Statement](https://www.futuresuper.com.au/pds), [Target Market Determination](https://www.futuresuper.com.au/tmd) and [Financial Services Guide](https://www.futuresuper.com.au/fsg) available at http://futuresuper.com.au and consider whether Future Super is appropriate for your needs. We recommend you consider seeking independent personal financial advice before deciding whether to acquire, or continue to hold, interests in the Fund.
 
 ## Liability
 
@@ -56,7 +57,7 @@ Return of capital and the performance of your investment in the Fund is not guar
 
 ## Calculating returns for superannuation
 
-Net investment returns are calculated using prescribed standard methods and assumptions, and take into account administration and investment fees, taxes and other costs. The standard calculations are based on a member with an account balance of $50,000, which will not be relevant to all members. The standard calculations do not allow for the effect of contributions to your account, insurance fees or various other matters. 
+Net investment returns are calculated using prescribed standard methods and assumptions, and take into account administration and investment fees, taxes and other costs. The standard calculations are based on a member with an account balance of $50,000, which will not be relevant to all members. The standard calculations do not allow for the effect of contributions to your account, insurance fees or various other matters.
 
 ## Transacting
 
