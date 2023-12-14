@@ -7,12 +7,13 @@
     <div>
       <h2>I’m already a member, what about me?</h2>
       <p>
-        No worries! You can switch to High Growth anytime. Many of our members
-        have been eagerly awaiting this option; in fact, 60% told us they wanted
-        a higher growth investment**. The wait is over.
+        No worries! You can switch investment options anytime. Many of our
+        members have been eagerly awaiting this option; in fact, 60% told us
+        they wanted a higher growth investment**
       </p>
+      <p class="bold">The wait is over.</p>
       <a href="https://my.futuresuper.com.au" class="button"
-        >Switch to High Growth</a
+        >Switch Investment Options</a
       >
     </div>
     <div class="list">
@@ -20,9 +21,10 @@
         <Arrow direction="top-right" />
       </div>
       <div class="item"><span>1.</span>Log into your Future Super account</div>
-      <div class="item"><span>2.</span>Click ‘Investment Options’</div>
-      <div class="item"><span>3.</span>Select ‘Switch My Options’</div>
-      <div class="item"><span>4.</span>Choose ‘High Growth’</div>
+      <div class="item"><span>2.</span>Click ‘Manage Investments’</div>
+      <div class="item"><span>3.</span>Choose your investment option</div>
+      <div class="item"><span>4.</span>Read and agree to the T&Cs</div>
+      <div class="item"><span>5.</span>Click 'Submit'</div>
     </div>
   </div>
 </section>

@@ -1,5 +1,6 @@
 <script>
   import AlreadyMember from "./AlreadyMember.svelte";
+  import Definitions from "./Definitions.svelte";
   import Disclaimers from "./Disclaimers.svelte";
   import FinalCTA from "./FinalCTA.svelte";
   import Hero from "./Hero.svelte";
@@ -12,4 +13,5 @@
 <Maximise />
 <AlreadyMember />
 <FinalCTA />
+<Definitions />
 <Disclaimers />

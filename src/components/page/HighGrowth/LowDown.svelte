@@ -16,7 +16,7 @@
     },
     {
       icon: Bars,
-      text: "Competitive + transparent annual fees of 1.323%, plus $60 admin fee",
+      text: "Transparent annual fees of 1.323%, plus $60 admin fee",
     },
     {
       icon: AusWorld,

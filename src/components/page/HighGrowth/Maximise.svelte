@@ -4,14 +4,15 @@
       image:
         "https://res.cloudinary.com/future-super/image/upload/v1702023452/Brick.png",
       title: "The Nightingale Fund",
-      description: "Help to create affordable and sustainable housing.",
+      description:
+        "Help to create affordable and sustainable housing, including housing for essential workers in a sustainably designed apartment complex.",
     },
     {
       image:
         "https://res.cloudinary.com/future-super/image/upload/v1702023452/panel_1.png",
       title: "Infradebt Ethical Fund",
       description:
-        "Provide loans to renewable energy and social infrastructure projects in Australia, making renewable energy projects possible, and reducing Australia’s reliance on fossil fuels.",
+        "Provide loans to renewable energy and social infrastructure projects in Australia, making renewable energy projects possible, and reducing Australia’s reliance on fossil fuels. ",
     },
     {
       image:
@@ -34,9 +35,21 @@
           impact causes you’ll be supporting.
         </p>
       </div>
-      <a href="/investment-options" class="button secondary"
-        >Compare investment options</a
-      >
+      <div>
+        <p class="large">
+          Our high growth option comes with a higher risk. This option is
+          designed for members who are prepared to accept an aggressive asset
+          allocation which has the potential to provide higher returns, but also
+          increases the risk of a negative return. Find out more in the
+          <a href="https://www.futuresuper.com.au/aib">
+            Additional Information Booklet
+          </a>
+          or explore our other investment options.
+        </p>
+        <a href="/investment-options" class="button secondary"
+          >Compare Investment Options</a
+        >
+      </div>
     </div>
     <div class="box">
       {#each rows as row}
@@ -99,6 +112,10 @@
         rotate: 20deg;
       }
     }
+  }
+
+  p.large {
+    font-size: 18px;
   }
 
   @media (max-width: 700px) {

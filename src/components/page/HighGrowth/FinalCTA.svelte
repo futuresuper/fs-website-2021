@@ -1,10 +1,10 @@
 <div class="container">
   <section>
     <h3>
-      Rise above the ordinary with Future Super High Growth.<br />A new
-      investment option that takes ethical super to new heights.
+      Rise above the ordinary with Future Super High Growth.<br />
+      A new investment option that takes ethical super to new heights.
     </h3>
-    <a href="/join-now" class="button">Join High Growth</a>
+    <a href="/join-now" class="button">Discover High Growth</a>
   </section>
 </div>
 
