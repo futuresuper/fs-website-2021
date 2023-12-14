@@ -36,7 +36,7 @@
         </p>
       </div>
       <div>
-        <p>
+        <p class="large">
           Our high growth option comes with a higher risk. This option is
           designed for members who are prepared to accept an aggressive asset
           allocation which has the potential to provide higher returns, but also
@@ -112,6 +112,10 @@
         rotate: 20deg;
       }
     }
+  }
+
+  p.large {
+    font-size: 18px;
   }
 
   @media (max-width: 700px) {
