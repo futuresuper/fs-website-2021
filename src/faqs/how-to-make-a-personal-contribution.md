@@ -1,5 +1,5 @@
 ---
-title: "How to Make a Personal Contribution "
+title: How do I make a personal super contribution?
 category: Contributions and payments to your super
 order: 1
 ---
