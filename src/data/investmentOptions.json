@@ -8,6 +8,8 @@
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
+    "negativeYearsIn20": "4 to less than 6",
+    "minTimeframe": 10,
     "assetAllocation": {
       "growth": 70,
       "defensive": 30
@@ -31,6 +33,8 @@
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
+    "negativeYearsIn20": "4 to less than 6",
+    "minTimeframe": 10,
     "assetAllocation": {
       "growth": 65,
       "defensive": 35
@@ -58,6 +62,8 @@
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
+    "negativeYearsIn20": "4 to less than 6",
+    "minTimeframe": 10,
     "assetAllocation": {
       "growth": 75,
       "defensive": 25
@@ -85,6 +91,8 @@
       "perYearPrice": 60
     },
     "investmentObjective": 3.5,
+    "negativeYearsIn20": "6 or more",
+    "minTimeframe": 12,
     "investmentObjectiveYears": 12,
     "assetAllocation": {
       "growth": 90,
@@ -98,6 +106,8 @@
       "perYearPrice": 60
     },
     "investmentObjective": 2.5,
+    "negativeYearsIn20": "4 to less than 6",
+    "minTimeframe": 10,
     "assetAllocation": {
       "growth": 70,
       "defensive": 30

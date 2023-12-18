@@ -269,7 +269,3 @@ You may be able to access external websites by clicking on links provided on Fut
 While we may use social networking platforms for communications, we won’t ask you to supply personal information publicly over these platforms. Sometimes, we’ll invite you to send your details to us via private messaging, for example, to answer a question you have raised about your superannuation account.
 
 Any personal information that you contribute to the publicly accessible sections of social media applications can be read, collected, and used by other users of the application. We have no control over these other users and cannot guarantee that any information that you contribute to any social media applications will be handled in accordance with our privacy standards.
-
-```
-
-```

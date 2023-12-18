@@ -153,6 +153,30 @@
     </div>
     <div class="table-row {pension ? 'pension' : ''}">
       <div class="row-head">
+        <h4>Recommended Minimum Investment Timeframe</h4>
+      </div>
+      {#each options as option}
+        <div>
+          <p class="number">
+            {option.minTimeframe} years
+          </p>
+        </div>
+      {/each}
+    </div>
+    <div class="table-row {pension ? 'pension' : ''}">
+      <div class="row-head">
+        <h4>Estimated negative returns over any 20-year period</h4>
+      </div>
+      {#each options as option}
+        <div>
+          <p class="number">
+            {option.negativeYearsIn20}
+          </p>
+        </div>
+      {/each}
+    </div>
+    <div class="table-row {pension ? 'pension' : ''}">
+      <div class="row-head">
         <h4 class="tooltip">
           Asset allocation
           <span class="tooltip-text">
