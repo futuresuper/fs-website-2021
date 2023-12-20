@@ -12,6 +12,10 @@ mediaEmail: media@futuresuper.com.au
 postLine1: GPO Box 2754
 postLine2: Brisbane QLD 4001
 ---
+***Our contact centre will be closed from 4 pm December 22nd 2023 and will reopen with normal hours from 10 am January 2nd 2024.***
+
+***While we recharge during this period, our dedicated Member Advocacy team will be available to address any urgent enquiries via [info@futuresuper.com.au](mailto:info@futuresuper.com.au).***
+
 Please note, our team will not be available on National and NSW public holidays.
 
 If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
