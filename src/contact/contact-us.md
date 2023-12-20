@@ -16,7 +16,7 @@ postLine2: Brisbane QLD 4001
 
 ***While we recharge during this period, our dedicated Member Advocacy team will be available to address any urgent enquiries via [info@futuresuper.com.au](mailto:info@futuresuper.com.au).***
 
-Please note, our team will not be available on National and NSW public holidays.
+Please note, our team will not be available on National and NSW [public holidays](https://www.fairwork.gov.au/employment-conditions/public-holidays). 
 
 If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
 
