@@ -123,8 +123,8 @@
   <div class="container">
     <h2>Filter and search</h2>
     <p>
-      We update this information every 3 months. It is current as of {investments.asAtDate}.
-      You can also download our
+      This information is current as of {investments.asAtDate}. You can also
+      download our
       <a
         href="https://www.futuresuper.com.au/documents-and-forms/#disclosure-requirements"
         >Portfolio Holdings Disclosure</a
