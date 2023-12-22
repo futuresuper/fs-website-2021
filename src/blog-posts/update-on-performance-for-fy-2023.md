@@ -17,8 +17,6 @@ We finished the 2023 financial year with positive returns across all Future Supe
 | Balanced Impact        | 8.54%                              |
 | Renewables Plus Growth | 9.72%                              |
 
-
-
 **The big picture: what impacted returns in FY23**
 
 As a Future Super member, your super is invested all over the world. It’s invested in shares, bonds, property, infrastructure and more. That means there are a lot of factors that influence the performance of your super. 
@@ -45,7 +43,7 @@ Here’s some more 2023 news about Future Super’s investments…
 * Cosgrove Solar Farm, which Future Super invests in through Green Squares Energy, has been built and management expects the solar farm to start generating energy in late November 2023. The Future Super Renewables Plus Growth option is invested in Green Squares Energy. 
 * The Macquarie GIG Renewable Energy Fund 2, which Future Super invests in across Renewables Plus Growth and Balanced Impact, recently signed an agreement to acquire a 50% stake in European renewable energy developer Enel Green Power Hellas. Enel is one of the world’s top 5 largest developers in the field of renewable energy, in terms of installed capacity, with 59 plants totalling 482 MW of installed capacity powered by wind, solar and hydro as well as six solar projects under construction for an overall capacity of 84 MW.
 * Conscious Investment Management (CIM)’s The Impact Fund helped Traditional Owners buy back Country in south-west Queensland. The Kullilli people are returning to Country after acquiring the pastoral lease to Thargomindah Station at auction. The purchase was facilitated by The Impact Fund and the land will be managed by Kullilli Traditional Owners with a carbon farming project already approved by the Clean Energy Regulator for the site. Members in Renewables Plus Growth and Balanced Impact have exposure to The Impact Fund. 
-* All Future Super’s accumulation products - Balanced Index, Balanced Impact and Renewables Plus Growth - were certified by the Responsible Investment Association of Australasia (RIAA). The certification confirms a product has implemented an investment style and process that systematically takes into account environmental, social, governance or ethical considerations, and this investment process reliability has been verified by an external party. 
+* The Balanced Index, Renewables Plus Growth and Balanced Growth Pension investment options were certified by the Responsible Investment Association of Australasia (RIAA). The certification confirms a product has implemented an investment style and process that systematically takes into account environmental, social, governance or ethical considerations, and this investment process reliability has been verified by an external party. 
 
 *Disclaimer:*
 
