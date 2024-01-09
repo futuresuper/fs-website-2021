@@ -8,8 +8,8 @@
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
-    NEW: "New Join Form", // join-now.futuresuper.com.au
-    OLD: "Old Join Form", // join.futuresuper.com.au
+    NEW: "New Join Form", // Redirects to https://join-now.futuresuper.com.au/
+    OLD: "Old Join Form", // Redirects to https://join.futuresuper.com.au/
   };
 
   onMount(async () => {
@@ -27,9 +27,11 @@
         firstName.focus();
       }, 2500);
     }
-
-    analytics.track("JoinNow ViewedByABTestParticipant", {
-      joinFormTestGroup,
+    
+    analytics.track("Experiment Viewed", {
+      experimentId: 'FUM-188',
+      variationName: joinFormTestGroup,
+      property: 'website',
     });
   });
 
