@@ -3,21 +3,50 @@
   import Arrow from "@components/images/Arrow.svelte";
 
   let form;
-  let input;
+  let firstName;
+  let mobileNumber;
+
+  let joinFormTestGroup;
+  const joinFormTestGroups = {
+    NEW: "New Join Form", // join-now.futuresuper.com.au
+    OLD: "Old Join Form", // join.futuresuper.com.au
+  };
 
   onMount(async () => {
+    const rand = Math.random();
+    joinFormTestGroup =
+      rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+
     if (window.innerWidth <= 800) {
       setTimeout(() => {
         window.scrollTo({
           top: form.offsetTop,
           behavior: "smooth",
         });
-        input.setAttribute("autofocus", "autofocus");
-        input.focus();
+        firstName.setAttribute("autofocus", "autofocus");
+        firstName.focus();
       }, 2500);
     }
+
+    analytics.track("JoinNow ViewedByABTestParticipant", {
+      joinFormTestGroup,
+    });
   });
-</script>
+
+  let joinFormUrl = "https://join.futuresuper.com.au/";
+  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join-now.futuresuper.com.au/" : "https://join.futuresuper.com.au/";
+
+  function validateMobileNumber() {
+    // Regular expression for Australian mobile numbers
+    const mobileRegex = /^(?:\+?61|0)4[0-9]{8}$/;
+
+    if (!mobileRegex.test(mobileNumber)) {
+      event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+    } else {
+      event.target.setCustomValidity("");
+    }
+  }
+  </script>
 
 <div class="impact">
   <meta name="theme-color" content="transparent" />
@@ -51,7 +80,7 @@
   <form
     class="impact__form"
     method="GET"
-    action="https://join.futuresuper.com.au/"
+    action={joinFormUrl}
   >
     <div bind:this={form} class="impact__form--container">
       <h2 class="impact__form--heading">Join Future Super</h2>
@@ -72,7 +101,7 @@
       <p>
         <label
           >First Name<input
-            bind:this={input}
+            bind:this={firstName}
             type="text"
             id="first_name"
             name="first_name"
@@ -80,31 +109,51 @@
           /></label
         >
       </p>
+      {#if joinFormTestGroup == joinFormTestGroups.OLD}
       <p>
-        <label>Email ^<input type="email" name="email" required /></label>
+        <label>Email ¹<input type="email" name="email" required /></label>
       </p>
+      {/if}
+      {#if joinFormTestGroup == joinFormTestGroups.NEW}
+      <p>
+        <label>Mobile number ¹<input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/></label>
+      </p>
+      {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
       <p>
         <button type="submit" class="primary">Next →</button>
       </p>
       <p class="disclaimer">
         * Please note that you don't need to transfer funds to create an account
-        with Future Super.<br /><br />
-        ^ By providing your email address, you consent and authorise us to send you
-        communications or information, including information required by law, via
-        email or similar technologies. Your details will never be passed onto a third
-        party other than in accordance with our
-        <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
-        communications by post at any time by contacting Future Super on 1300
-        658 422 or via email at info@myfuturesuper.com.au or in writing at GPO
-        Box 2754, Brisbane QLD 4001.
-
+        with Future Super.
         <br />
         <br />
         Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed
         Fund (MF).
         <br />
-        <br />Future Super has more than 40,000 members as of 1/9/2023
+        <br />
+        Future Super has more than 40,000 members as of 1/9/2023
+        <br />
+        <br />
+        ¹ By providing your
+        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+          mobile number,
+        {:else}
+          email address,
+        {/if}
+        you consent and authorise us to send you 
+        communications or information, including information required by law, via
+        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+          SMS
+        {:else}
+          email
+        {/if}
+        or similar technologies. Your details will never be passed onto a third
+        party other than in accordance with our
+        <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
+        communications by post at any time by contacting Future Super on 1300
+        658 422 or via email at info@futuresuper.com.au or in writing at GPO
+        Box 2754, Brisbane QLD 4001.
       </p>
     </div>
   </form>
@@ -265,6 +314,7 @@
 
   p.disclaimer {
     margin-top: 40px;
+    font-family: $mono;
   }
 
   .button {
