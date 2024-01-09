@@ -109,14 +109,13 @@
           /></label
         >
       </p>
-      {#if joinFormTestGroup == joinFormTestGroups.OLD}
-      <p>
-        <label>Email ¹<input type="email" name="email" required /></label>
-      </p>
-      {/if}
       {#if joinFormTestGroup == joinFormTestGroups.NEW}
       <p>
         <label>Mobile number ¹<input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/></label>
+      </p>
+      {:else}
+      <p>
+        <label>Email ¹<input type="email" name="email" required /></label>
       </p>
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
