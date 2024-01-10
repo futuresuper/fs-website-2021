@@ -8,8 +8,8 @@
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
-    NEW: "New Join Form", // Redirects to https://join-now.futuresuper.com.au/
-    OLD: "Old Join Form", // Redirects to https://join.futuresuper.com.au/
+    NEW: "New Join Form", // Redirects to https://join.futuresuper.com.au/
+    OLD: "Old Join Form", // Redirects to https://join-now.futuresuper.com.au/
   };
 
   onMount(async () => {
@@ -27,7 +27,7 @@
         firstName.focus();
       }, 2500);
     }
-    
+
     analytics.track("Experiment Viewed", {
       experimentId: 'FUM-188',
       variationName: joinFormTestGroup,
@@ -36,12 +36,12 @@
   });
 
   let joinFormUrl = "https://join.futuresuper.com.au/";
-  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join-now.futuresuper.com.au/" : "https://join.futuresuper.com.au/";
+  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join.futuresuper.com.au/" : "https://join-now.futuresuper.com.au/";
 
   function validateMobileNumber() {
     // Regular expression for Australian mobile numbers
-    const mobileRegex = /^(?:\+?61|0)4[0-9]{8}$/;
-
+    const mobileRegex = /^(?:0|4)[0-9]{8}$/
+    
     if (!mobileRegex.test(mobileNumber)) {
       event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
     } else {
