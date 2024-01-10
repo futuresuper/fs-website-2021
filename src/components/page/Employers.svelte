@@ -12,6 +12,24 @@
       Small Business Superannuation Clearing House
     </a> is free for small businesses with less than 20 employees.
   </p>
+  <h3>Important Information - Rejected Contributions</h3>
+  <p>
+    In order to accept an employer contribution, our superstream system checks
+    your employees full names, date of birth, member number and TFNs with what
+    we have on file.
+  </p>
+  <p>
+    If any of your employee details do not match what we have on file for them,
+    your contribution will be rejected. This is due to an update on our systems
+    from 1 November. If you have previously been able to make contributions and
+    are now having them rejected, please check all the aforementioned details of
+    your employees are correct.
+  </p>
+  <p>
+    Please get in touch with your employee to make sure your details with them
+    are matching the details we have on file.
+  </p>
+
   <h3>Our clearing house details</h3>
   <div class="grid">
     <h4>Fund name</h4>
