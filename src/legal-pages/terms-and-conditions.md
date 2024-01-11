@@ -7,7 +7,7 @@ alsoSee:
   - Fund Information
 ---
 
-The website [www.futuresuper.com.au](http://www.futuresuper.com.au/) (‘this website’) is owned and operated by Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. The information on our online channels are issued by Future Super Investment Services Pty Ltd (ABN 55 621 040 702, AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580, AFSL 482684), as the Promote/r of the Fund Super Fund (ABN 45 960 194 277).
+The website [www.futuresuper.com.au](http://www.futuresuper.com.au/) (‘this website’) is owned and operated by Future Promoter Holdings Pty Ltd (ABN 90 167 800 580; AFSL 482684), which is part of the Future Super Group. The information on our online channels are issued by Future Super Investment Services Pty Ltd (ABN 55 621 040 702, AFS Representative No. 001271441), which is a Corporate Authorised Representative of Future Promoter Holdings Pty Ltd (ABN 90 167 800 580, AFSL 482684), as the Promoter of the Future Super Fund (‘the Fund’ ABN 45 960 194 277, RSE Registration R1072914).
 
 By accessing this website or by viewing our online channels, you agree to the following terms and conditions.
 
