@@ -7,6 +7,10 @@
   import assetClasses from "@data/assetClasses.json";
   import { flag } from "country-emoji";
 
+  const investmentOptionsExHighGrowth = investmentOptions.filter(
+    (option) => option.label !== "High Growth"
+  );
+
   let sortedInvestments = investments.list.sort(
     (a, b) => b.totalSize - a.totalSize
   );
@@ -141,7 +145,7 @@
     <div class="dropdowns">
       <select bind:value={selectedOption}>
         <option value=""> Investment Option </option>
-        {#each investmentOptions as option}
+        {#each investmentOptionsExHighGrowth as option}
           <option
             value={option.label === "Balanced Growth Pension"
               ? "Pension Fund"
