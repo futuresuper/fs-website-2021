@@ -13,40 +13,41 @@
   };
 
   onMount(async () => {
-    const rand = Math.random();
-    joinFormTestGroup =
-      rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+    joinFormTestGroup = joinFormTestGroups.NEW;
+    // const rand = Math.random();
+    // joinFormTestGroup =
+    //   rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
 
-    if (window.innerWidth <= 800) {
-      setTimeout(() => {
-        window.scrollTo({
-          top: form.offsetTop,
-          behavior: "smooth",
-        });
-        firstName.setAttribute("autofocus", "autofocus");
-        firstName.focus();
-      }, 2500);
-    }
+    // if (window.innerWidth <= 800) {
+    //   setTimeout(() => {
+    //     window.scrollTo({
+    //       top: form.offsetTop,
+    //       behavior: "smooth",
+    //     });
+    //     firstName.setAttribute("autofocus", "autofocus");
+    //     firstName.focus();
+    //   }, 2500);
+    // }
 
-    analytics.track("Experiment Viewed", {
-      experimentId: 'FUM-188',
-      variationName: joinFormTestGroup,
-      property: 'website',
-    });
+    // analytics.track("Experiment Viewed", {
+    //   experimentId: 'FUM-188',
+    //   variationName: joinFormTestGroup,
+    //   property: 'website',
+    // });
   });
 
   let joinFormUrl = "https://join.futuresuper.com.au/";
-  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join.futuresuper.com.au/" : "https://join-now.futuresuper.com.au/";
+  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://portal-aws-staging.fsstaging.com.au/?preview=true" : "https://join-now.futuresuper.com.au/";
 
   function validateMobileNumber() {
     // Regular expression for Australian mobile numbers
-    const mobileRegex = /^(?:0|4)[0-9]{8}$/
+    // const mobileRegex = /^(?:0|4)[0-9]{8}$/
     
-    if (!mobileRegex.test(mobileNumber)) {
-      event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
-    } else {
-      event.target.setCustomValidity("");
-    }
+    // if (!mobileRegex.test(mobileNumber)) {
+    //   event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+    // } else {
+    //   event.target.setCustomValidity("");
+    // }
   }
   </script>
 
