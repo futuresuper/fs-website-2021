@@ -122,6 +122,7 @@
       </p>
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
+      <input type="hidden" id="preview" name="preview" value="true">
       <p>
         <button type="submit" class="primary">Next →</button>
       </p>
