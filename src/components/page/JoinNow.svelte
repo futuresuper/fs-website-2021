@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
+  import MaskInput from 'svelte-input-mask/MaskInput.svelte';
 
   let form;
   let firstName;
@@ -38,21 +39,22 @@
   let joinFormUrl = "https://join.futuresuper.com.au/";
   $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join.futuresuper.com.au/" : "https://join-now.futuresuper.com.au/";
 
-  function validateMobileNumber() {
+  function validateMobileNumber(event) {
     // Regular expression for Australian mobile numbers
     const mobileRegex = /^(?:04|4)[0-9]{8}$/
 
-    // Remove spaces and dashes from mobile number
-    mobileNumber = mobileNumber.replace(/[\s-]/g, '');
-
-    if (!mobileRegex.test(mobileNumber)) {
-      event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+    console.log(event.detail.inputState.unmaskedValue);
+    
+    const input = document.getElementById("mobile");
+    if (!mobileRegex.test(event.detail.inputState.unmaskedValue)) {
+      input.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
     } else {
-      event.target.setCustomValidity("");
+      input.setCustomValidity("");
     }
 
     // Restore the original mobileNumber value after validation
-    mobileNumber = event.target.value;
+    mobileNumber = event.detail.inputState.unmaskedValue;
+    
   }
 
   function handleSubmit() {
@@ -124,7 +126,21 @@
       </p>
       {#if joinFormTestGroup == joinFormTestGroups.NEW}
       <p>
-        <label>Mobile number ¹<input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/></label>
+        <!-- svelte-ignore a11y-label-has-associated-control -->
+        <label>Mobile number ¹
+          <MaskInput
+            { mobileNumber}
+            on:change={validateMobileNumber}
+            mask="0000 000 000"
+            name="mobile"
+            maskChar="#"   
+            type="text"   
+            class="input"
+            id="mobile"
+            required
+          />          
+        </label>
+        <!-- <input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/> -->
       </p>
       {:else}
       <p>
@@ -313,7 +329,7 @@
     }
   }
 
-  input {
+  input, :global(.input) {
     display: block;
     padding: 8px;
     border-radius: 8px;
