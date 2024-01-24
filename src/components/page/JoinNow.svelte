@@ -40,13 +40,24 @@
 
   function validateMobileNumber() {
     // Regular expression for Australian mobile numbers
-    const mobileRegex = /^(?:0|4)[0-9]{8}$/
-    
+    const mobileRegex = /^(?:04|4)[0-9]{8}$/
+
+    // Remove spaces and dashes from mobile number
+    mobileNumber = mobileNumber.replace(/[\s-]/g, '');
+
     if (!mobileRegex.test(mobileNumber)) {
       event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
     } else {
       event.target.setCustomValidity("");
     }
+
+    // Restore the original mobileNumber value after validation
+    mobileNumber = event.target.value;
+  }
+
+  function handleSubmit() {
+    // Remove spaces and dashes from mobile number
+    mobileNumber = mobileNumber.replace(/[\s-]/g, '');
   }
   </script>
 
@@ -122,7 +133,8 @@
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
       <p>
-        <button type="submit" class="primary">Next →</button>
+        <button type="submit" class="primary" on:click={handleSubmit}>Next →</button>
+        
       </p>
       <p class="disclaimer">
         * Please note that you don't need to transfer funds to create an account
