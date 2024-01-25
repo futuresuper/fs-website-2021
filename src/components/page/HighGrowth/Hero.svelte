@@ -7,10 +7,7 @@
     <div class="container">
       <div class="icon"><HighGrowthIcon colour="#1281A4" /></div>
       <h1>Future Super High Growth</h1>
-      <h2>
-        A <span>high growth</span>, long-term investment option that doesn’t
-        harm the planet.
-      </h2>
+      <h2>An investment option that takes sustainable super to new heights.</h2>
       <a href="/join-now" class="button">Discover High Growth</a>
       <div class="already-member">
         <p>Already a member?</p>
@@ -48,13 +45,14 @@
   }
 
   h2 {
-    max-width: 1100px;
+    text-wrap: balance;
+    // max-width: 1100px;
 
-    span {
-      text-decoration: underline;
-      text-decoration-color: $green;
-      text-decoration-skip-ink: none;
-    }
+    // span {
+    //   text-decoration: underline;
+    //   text-decoration-color: $green;
+    //   text-decoration-skip-ink: none;
+    // }
   }
 
   .icon {
