@@ -33,11 +33,7 @@
     },
     {
       heading: "Company",
-      subPages: [
-        pages.CONTACT_US,
-        pages.ABOUT_US,
-        pages.WORK_WITH_US,
-      ],
+      subPages: [pages.CONTACT_US, pages.ABOUT_US, pages.WORK_WITH_US],
     },
     {
       heading: "Members",
@@ -313,7 +309,9 @@
   }
 
   .bcorp {
-    width: 80px;
+    width: 60px;
+    max-width: 60px;
+    justify-self: flex-end;
   }
 
   .acknowledgement {
@@ -335,10 +333,8 @@
 
   .horizontal-space-between {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
   }
 
   .legal-stuff {
@@ -346,7 +342,6 @@
   }
 
   .disclaimer {
-    width: 70%;
     color: $black500;
     a {
       &:hover {
@@ -363,6 +358,7 @@
     }
     &.abn {
       text-align: right;
+      justify-self: flex-end;
     }
     &.fs-acknowledgement {
       margin: 40px 0;
@@ -404,6 +400,12 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .horizontal-space-between.legal-stuff {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 760px) {
     .footer-container {
       padding-top: 20px;
@@ -413,8 +415,8 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .disclaimer {
-      width: calc(50% - 10px);
+    .bcorp {
+      max-width: 40px;
     }
 
     .disc {
