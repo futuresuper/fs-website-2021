@@ -22,8 +22,8 @@
     form.addEventListener('submit', handleFormSubmit);
 
     const rand = Math.random();
-    joinFormTestGroup = joinFormTestGroups.NEW;
-      // rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+    joinFormTestGroup =
+      rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
 
     if (window.innerWidth <= 800) {
       setTimeout(() => {
@@ -57,11 +57,11 @@
       // Regular expression for Australian mobile numbers
       const mobileRegex = /^(?:04|4|\+614|\+6104)[0-9]{8}$/;
 
-      // if (!mobileRegex.test(mask.unmaskedValue)) {
-      //   mobileInput.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
-      // } else {
-      //   mobileInput.setCustomValidity("");
-      // }
+      if (!mobileRegex.test(mask.unmaskedValue)) {
+        mobileInput.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+      } else {
+        mobileInput.setCustomValidity("");
+      }
     });
   }
 
@@ -72,12 +72,11 @@
 
     // Regular expression for the mobile number format the join form accepts
     const mobileRegex = /^(?:04)[0-9]{8}$/;
-
     if (mobileRegex.test(hiddenMobileInput.value)) {
-      console.log("submit");
-      // form.submit();
+      form.submit();
     } else {
       // We shouldn't hit this case if the input mask and input listener worked as expected
+      alert('Invalid phone number. Please enter a valid Australian phone number.');
     }
   };
 
