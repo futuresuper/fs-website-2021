@@ -1,11 +1,10 @@
 <script>
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
-  import MaskInput from 'svelte-input-mask/MaskInput.svelte';
+  import IMask from 'imask';
 
-  let form;
+  let form, formTop;
   let firstName;
-  let mobileNumber;
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
@@ -13,10 +12,18 @@
     OLD: "Old Join Form", // Redirects to https://join-now.futuresuper.com.au/
   };
 
+  let joinFormUrl = "https://join.futuresuper.com.au/";
+  $: joinFormUrl = 
+    joinFormTestGroup == joinFormTestGroups.NEW
+      ? "https://join.futuresuper.com.au/"
+      : "https://join-now.futuresuper.com.au/";
+
   onMount(async () => {
+    form.addEventListener('submit', handleFormSubmit);
+
     const rand = Math.random();
-    joinFormTestGroup =
-      rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+    joinFormTestGroup = joinFormTestGroups.NEW;
+      // rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
 
     if (window.innerWidth <= 800) {
       setTimeout(() => {
@@ -36,32 +43,55 @@
     });
   });
 
-  let joinFormUrl = "https://join.futuresuper.com.au/";
-  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://join.futuresuper.com.au/" : "https://join-now.futuresuper.com.au/";
+  // Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits
+  let mobileInput, hiddenMobileInput;
+  let mask;
 
-  function validateMobileNumber(event) {
-    // Regular expression for Australian mobile numbers
-    const mobileRegex = /^(?:04|4)[0-9]{8}$/
+  // Reactive because mobileInput is conditionally rendered
+  $: if (joinFormTestGroup == joinFormTestGroups.NEW && mobileInput) {
+    mask = IMask(mobileInput, {
+      mask: ['0000 000 000', '+61 000 000 000'],
+    });
 
-    console.log(event.detail.inputState.unmaskedValue);
-    
-    const input = document.getElementById("mobile");
-    if (!mobileRegex.test(event.detail.inputState.unmaskedValue)) {
-      input.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+    mobileInput.addEventListener('input', () => {
+      // Regular expression for Australian mobile numbers
+      const mobileRegex = /^(?:04|4|\+614|\+6104)[0-9]{8}$/;
+
+      // if (!mobileRegex.test(mask.unmaskedValue)) {
+      //   mobileInput.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+      // } else {
+      //   mobileInput.setCustomValidity("");
+      // }
+    });
+  }
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    hiddenMobileInput.value = formattedMobileNumber();
+
+    // Regular expression for the mobile number format the join form accepts
+    const mobileRegex = /^(?:04)[0-9]{8}$/;
+
+    if (mobileRegex.test(hiddenMobileInput.value)) {
+      console.log("submit");
+      // form.submit();
     } else {
-      input.setCustomValidity("");
+      // We shouldn't hit this case if the input mask and input listener worked as expected
     }
+  };
 
-    // Restore the original mobileNumber value after validation
-    mobileNumber = event.detail.inputState.unmaskedValue;
-    
+  const formattedMobileNumber = () => {
+    const formatted = mobileInput.value
+      .replace(/\s/g, '') // Remove spaces
+      .replace(/^(\+61)/, '') // Remove country code
+      .replace(/^4/, '0$&'); // Add leading zero if mobile number starts with 4
+
+    console.log(formatted);
+    return formatted;
   }
 
-  function handleSubmit() {
-    // Remove spaces and dashes from mobile number
-    mobileNumber = mobileNumber.replace(/[\s-]/g, '');
-  }
-  </script>
+</script>
 
 <div class="impact">
   <meta name="theme-color" content="transparent" />
@@ -93,11 +123,12 @@
   </div>
 
   <form
+    bind:this={form}
     class="impact__form"
     method="GET"
     action={joinFormUrl}
   >
-    <div bind:this={form} class="impact__form--container">
+    <div bind:this={formTop} class="impact__form--container">
       <h2 class="impact__form--heading">Join Future Super</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
@@ -114,33 +145,30 @@
         </ul>
       </div>
       <p>
-        <label
-          >First Name<input
+        <label>First Name
+          <input
             bind:this={firstName}
             type="text"
             id="first_name"
             name="first_name"
             required
-          /></label
-        >
+          />
+        </label>
       </p>
       {#if joinFormTestGroup == joinFormTestGroups.NEW}
       <p>
-        <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Mobile number ¹
-          <MaskInput
-            { mobileNumber}
-            on:change={validateMobileNumber}
-            mask="0000 000 000"
+          <input
+            type="text"
+            bind:this={mobileInput}
+          />
+          <!-- Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits -->
+          <input
+            type="hidden"
             name="mobile"
-            maskChar="#"   
-            type="text"   
-            class="input"
-            id="mobile"
-            required
-          />          
+            bind:this={hiddenMobileInput}
+          />
         </label>
-        <!-- <input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/> -->
       </p>
       {:else}
       <p>
@@ -149,8 +177,7 @@
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
       <p>
-        <button type="submit" class="primary" on:click={handleSubmit}>Next →</button>
-        
+        <button type="submit" class="primary">Next →</button>
       </p>
       <p class="disclaimer">
         * Please note that you don't need to transfer funds to create an account
