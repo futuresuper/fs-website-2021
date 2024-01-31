@@ -1,9 +1,5 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import BlogList from "@components/page/Blog/BlogList.svelte";
-import slug from "@components/scripts/slug.js";
-import BlogPost from "@components/page/Blog/BlogPost.svelte";
-import JoinNow from "@components/ui/JoinNow.svelte";
 
 export async function getStaticPaths({ paginate }) {
   function getSlug(str) {

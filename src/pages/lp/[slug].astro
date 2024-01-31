@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { buildClient } from "@datocms/cma-client-node";
+import Sections from "@components/landingPage/Sections.astro";
+
+export async function getStaticPaths() {
+  const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
+
+  const allPages = await client.items.list({
+    nested: true,
+    filter: {
+      type: "page",
+    },
+  });
+
+  return allPages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout description={page.description}>
+  <Sections sections={page.sections} />
+</BaseLayout>

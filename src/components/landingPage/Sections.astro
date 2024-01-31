@@ -1,0 +1,18 @@
+---
+import SellingPoints from "./SellingPointsData.astro";
+
+const { sections } = Astro.props;
+---
+
+{
+  sections.map((section) => {
+    const sectionId = section.relationships.item_type.data.id;
+
+    switch (sectionId) {
+      case "O-VZ3hlbRXSACDfJWfnLgw":
+        return <SellingPoints section={section.attributes} />;
+      default:
+        return null;
+    }
+  })
+}

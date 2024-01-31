@@ -1,0 +1,40 @@
+---
+import { buildClient } from "@datocms/cma-client-node";
+import SellingPointsSection from "./SellingPointsSection.svelte";
+
+const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
+
+const getImageHref = async (uploadId) => {
+  const upload = await client.uploads.find(uploadId);
+  return {
+    url: upload.url,
+    alt: upload.default_field_metadata.en.alt,
+  };
+};
+
+const { section } = Astro.props;
+
+async function getPoints() {
+  const points = section.points.map(async (point) => {
+    const image = await getImageHref(point.attributes.image.upload_id);
+    return {
+      id: point.id,
+      image,
+      title: point.attributes.title,
+      subtitle: point.attributes.subtitle,
+    };
+  });
+
+  return Promise.all(points).then((points) => points);
+}
+
+const points = await getPoints();
+---
+
+<SellingPointsSection
+  title={section.title}
+  subtitle={section.subtitle}
+  buttons={section.buttons}
+  darkTheme={section.dark_theme}
+  {points}
+/>
