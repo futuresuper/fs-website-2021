@@ -86,7 +86,6 @@
       .replace(/^(\+61)/, '') // Remove country code
       .replace(/^4/, '0$&'); // Add leading zero if mobile number starts with 4
 
-    console.log(formatted);
     return formatted;
   }
 
