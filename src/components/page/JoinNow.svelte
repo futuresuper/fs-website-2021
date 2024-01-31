@@ -8,8 +8,8 @@
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
-    NEW: "New Join Form", // Redirects to https://join.futuresuper.com.au/
-    OLD: "Old Join Form", // Redirects to https://join-now.futuresuper.com.au/
+    NEW: "New Join Form", // Redirects to https://join-now.futuresuper.com.au/
+    OLD: "Old Join Form", // Redirects to https://join.futuresuper.com.au/
   };
 
   let joinFormUrl = "https://join.futuresuper.com.au/";
