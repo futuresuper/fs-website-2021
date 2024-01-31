@@ -15,8 +15,8 @@
   let joinFormUrl = "https://join.futuresuper.com.au/";
   $: joinFormUrl = 
     joinFormTestGroup == joinFormTestGroups.NEW
-      ? "https://join.futuresuper.com.au/"
-      : "https://join-now.futuresuper.com.au/";
+      ? "https://join-now.futuresuper.com.au/"
+      : "https://join.futuresuper.com.au/";
 
   onMount(async () => {
     form.addEventListener('submit', handleFormSubmit);
