@@ -50,7 +50,7 @@
   // Reactive because mobileInput is conditionally rendered
   $: if (joinFormTestGroup == joinFormTestGroups.NEW && mobileInput) {
     mask = IMask(mobileInput, {
-      mask: ['0000 000 000', '+61 000 000 000'],
+      mask: ['0000 000 000', '+61 000 000 000', '+61 0000 000 000'],
     });
 
     mobileInput.addEventListener('input', () => {
@@ -159,6 +159,7 @@
         <label>Mobile number ¹
           <input
             type="text"
+            inputmode="numeric"
             bind:this={mobileInput}
           />
           <!-- Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits -->
