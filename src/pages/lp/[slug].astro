@@ -2,6 +2,8 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { buildClient } from "@datocms/cma-client-node";
 import Sections from "@components/landingPage/Sections.astro";
+import LandingPageHeader from "@components/landingPage/LandingPageHeader.svelte";
+import { getImageFromUploadId } from "@components/landingPage/utils";
 
 export async function getStaticPaths() {
   const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
@@ -20,8 +22,23 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const heroHeader = page.sections[0].attributes;
+const image = await getImageFromUploadId(heroHeader.image.upload_id);
+const heroHeaderProps = {
+  headline: heroHeader.headline,
+  image,
+  button: heroHeader.button,
+};
+
+// console.dir(page, { depth: null });
 ---
 
-<BaseLayout description={page.description}>
+<BaseLayout description={page.description} customHeader noBehindHeader>
+  <LandingPageHeader
+    slot="customHeader"
+    headline={heroHeaderProps.headline}
+    image={heroHeaderProps.image}
+    button={heroHeaderProps.button}
+  />
   <Sections sections={page.sections} />
 </BaseLayout>
