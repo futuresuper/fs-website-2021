@@ -8,13 +8,13 @@
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
-    NEW: "New Join Form", // Redirects to https://join-now.futuresuper.com.au/
-    OLD: "Old Join Form", // Redirects to https://join.futuresuper.com.au/
+    V1: "v1 checklist redesign", // Redirects to https://join-now.futuresuper.com.au/
+    CONTROL: "control", // Redirects to https://join.futuresuper.com.au/
   };
 
   let joinFormUrl = "https://join.futuresuper.com.au/";
   $: joinFormUrl = 
-    joinFormTestGroup == joinFormTestGroups.NEW
+    joinFormTestGroup == joinFormTestGroups.V1
       ? "https://join-now.futuresuper.com.au/"
       : "https://join.futuresuper.com.au/";
 
@@ -23,7 +23,7 @@
 
     const rand = Math.random();
     joinFormTestGroup =
-      rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+      rand > 0.5 ? joinFormTestGroups.V1 : joinFormTestGroups.CONTROL;
 
     if (window.innerWidth <= 800) {
       setTimeout(() => {
@@ -37,7 +37,7 @@
     }
 
     analytics.track("Experiment Viewed", {
-      experimentId: 'FUM-188',
+      experimentId: 'FUM-186',
       variationName: joinFormTestGroup,
       property: 'website',
     });
@@ -48,7 +48,7 @@
   let mask;
 
   // Reactive because mobileInput is conditionally rendered
-  $: if (joinFormTestGroup == joinFormTestGroups.NEW && mobileInput) {
+  $: if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
     mask = IMask(mobileInput, {
       mask: ['0000 000 000', '+61 000 000 000', '+61 0000 000 000'],
     });
@@ -66,17 +66,19 @@
   }
 
   const handleFormSubmit = (event) => {
-    event.preventDefault();
+    if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
+      event.preventDefault();
 
-    hiddenMobileInput.value = formattedMobileNumber();
+        hiddenMobileInput.value = formattedMobileNumber();
 
-    // Regular expression for the mobile number format the join form accepts
-    const mobileRegex = /^(?:04)[0-9]{8}$/;
-    if (mobileRegex.test(hiddenMobileInput.value)) {
-      form.submit();
-    } else {
-      // We shouldn't hit this case if the input mask and input listener worked as expected
-      alert('Invalid phone number. Please enter a valid Australian phone number.');
+      // Regular expression for the mobile number format the join form accepts
+      const mobileRegex = /^(?:04)[0-9]{8}$/;
+      if (mobileRegex.test(hiddenMobileInput.value)) {
+        form.submit();
+      } else {
+        // We shouldn't hit this case if the input mask and input listener worked as expected
+        alert('Invalid phone number. Please enter a valid Australian phone number.');
+      }
     }
   };
 
@@ -153,7 +155,7 @@
           />
         </label>
       </p>
-      {#if joinFormTestGroup == joinFormTestGroups.NEW}
+      {#if joinFormTestGroup == joinFormTestGroups.V1}
       <p>
         <label>Mobile number ¹
           <input
@@ -191,14 +193,14 @@
         <br />
         <br />
         ¹ By providing your
-        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+        {#if joinFormTestGroup == joinFormTestGroups.V1} 
           mobile number,
         {:else}
           email address,
         {/if}
         you consent and authorise us to send you 
         communications or information, including information required by law, via
-        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+        {#if joinFormTestGroup == joinFormTestGroups.V1} 
           SMS
         {:else}
           email
