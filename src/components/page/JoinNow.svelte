@@ -65,7 +65,7 @@
     });
   }
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
       event.preventDefault();
 
@@ -74,11 +74,21 @@
       // Regular expression for the mobile number format the join form accepts
       const mobileRegex = /^(?:04)[0-9]{8}$/;
       if (mobileRegex.test(hiddenMobileInput.value)) {
+        analytics.track("Join Popup Submission", {
+          firstName: firstName,
+          mobile: hiddenMobileInput.value,
+        });
+
         form.submit();
       } else {
         // We shouldn't hit this case if the input mask and input listener worked as expected
         alert('Invalid phone number. Please enter a valid Australian phone number.');
       }
+    } else {
+      analytics.track("Join Popup Submission", {
+        firstName: firstName,
+        email: email,
+      });
     }
   };
 
