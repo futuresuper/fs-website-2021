@@ -45,6 +45,7 @@
 
   // Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits
   let mobileInput, hiddenMobileInput;
+  let emailInput;
   let mask;
 
   // Reactive because mobileInput is conditionally rendered
@@ -66,16 +67,15 @@
   }
 
   const handleFormSubmit = async (event) => {
-    if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
+    if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {     
       event.preventDefault();
-
-        hiddenMobileInput.value = formattedMobileNumber();
+      hiddenMobileInput.value = formattedMobileNumber();
 
       // Regular expression for the mobile number format the join form accepts
       const mobileRegex = /^(?:04)[0-9]{8}$/;
       if (mobileRegex.test(hiddenMobileInput.value)) {
         analytics.track("Join Popup Submission", {
-          firstName: firstName,
+          firstName: firstName.value,
           mobile: hiddenMobileInput.value,
         });
 
@@ -86,8 +86,8 @@
       }
     } else {
       analytics.track("Join Popup Submission", {
-        firstName: firstName,
-        email: email,
+        firstName: firstName.value,
+        email: emailInput.value,
       });
     }
   };
@@ -183,7 +183,7 @@
       </p>
       {:else}
       <p>
-        <label>Email ¹<input type="email" name="email" required /></label>
+        <label>Email ¹<input type="email" name="email" required bind:this={emailInput}/></label>
       </p>
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
