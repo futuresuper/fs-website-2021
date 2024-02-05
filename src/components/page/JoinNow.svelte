@@ -1,55 +1,108 @@
 <script>
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
+  import IMask from 'imask';
 
-  let form;
+  let form, formTop;
   let firstName;
-  let mobileNumber;
 
   let joinFormTestGroup;
   const joinFormTestGroups = {
-    NEW: "New Join Form", // Redirects to https://join.futuresuper.com.au/
-    OLD: "Old Join Form", // Redirects to https://join-now.futuresuper.com.au/
+    V1: "v1 checklist redesign", // Redirects to https://join-now.futuresuper.com.au/
+    CONTROL: "control", // Redirects to https://join.futuresuper.com.au/
   };
 
+  let joinFormUrl = "https://join.futuresuper.com.au/";
+  $: joinFormUrl = 
+    joinFormTestGroup == joinFormTestGroups.V1
+      ? "https://portal-b-aws-staging.fsstaging.com.au/" //" "https://join-now.futuresuper.com.au/"
+      : "https://portal-aws-staging.fsstaging.com.au/" //  "https://join.futuresuper.com.au/";
+
+
   onMount(async () => {
-    joinFormTestGroup = joinFormTestGroups.NEW;
-    // const rand = Math.random();
-    // joinFormTestGroup =
-    //   rand > 0.5 ? joinFormTestGroups.NEW : joinFormTestGroups.OLD;
+    form.addEventListener('submit', handleFormSubmit);
 
-    // if (window.innerWidth <= 800) {
-    //   setTimeout(() => {
-    //     window.scrollTo({
-    //       top: form.offsetTop,
-    //       behavior: "smooth",
-    //     });
-    //     firstName.setAttribute("autofocus", "autofocus");
-    //     firstName.focus();
-    //   }, 2500);
-    // }
+    const rand = Math.random();
+    joinFormTestGroup =
+      rand > 0.5 ? joinFormTestGroups.V1 : joinFormTestGroups.CONTROL;
 
-    // analytics.track("Experiment Viewed", {
-    //   experimentId: 'FUM-188',
-    //   variationName: joinFormTestGroup,
-    //   property: 'website',
-    // });
+    if (window.innerWidth <= 800) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: form.offsetTop,
+          behavior: "smooth",
+        });
+        firstName.setAttribute("autofocus", "autofocus");
+        firstName.focus();
+      }, 2500);
+    }
+
+    analytics.track("Experiment Viewed", {
+      experimentId: 'FUM-186',
+      variationName: joinFormTestGroup,
+      property: 'website',
+    });
   });
 
-  let joinFormUrl = "https://join.futuresuper.com.au/";
-  $: joinFormUrl = joinFormTestGroup == joinFormTestGroups.NEW ? "https://portal-aws-staging.fsstaging.com.au/?preview=true" : "https://join-now.futuresuper.com.au/";
+  // Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits
+  let mobileInput, hiddenMobileInput;
+  let emailInput;
+  let mask;
 
-  function validateMobileNumber() {
-    // Regular expression for Australian mobile numbers
-    // const mobileRegex = /^(?:0|4)[0-9]{8}$/
-    
-    // if (!mobileRegex.test(mobileNumber)) {
-    //   event.target.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
-    // } else {
-    //   event.target.setCustomValidity("");
-    // }
+  // Reactive because mobileInput is conditionally rendered
+  $: if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
+    mask = IMask(mobileInput, {
+      mask: ['0000 000 000', '+61 000 000 000', '+61 0000 000 000'],
+    });
+
+    mobileInput.addEventListener('input', () => {
+      // Regular expression for Australian mobile numbers
+      const mobileRegex = /^(?:04|4|\+614|\+6104)[0-9]{8}$/;
+
+      if (!mobileRegex.test(mask.unmaskedValue)) {
+        mobileInput.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+      } else {
+        mobileInput.setCustomValidity("");
+      }
+    });
   }
-  </script>
+
+  const handleFormSubmit = async (event) => {
+    if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {     
+      event.preventDefault();
+      hiddenMobileInput.value = formattedMobileNumber();
+
+      // Regular expression for the mobile number format the join form accepts
+      const mobileRegex = /^(?:04)[0-9]{8}$/;
+      if (mobileRegex.test(hiddenMobileInput.value)) {
+        analytics.track("Join Popup Submission", {
+          firstName: firstName.value,
+          mobile: hiddenMobileInput.value,
+        });
+
+        form.submit();
+      } else {
+        // We shouldn't hit this case if the input mask and input listener worked as expected
+        alert('Invalid phone number. Please enter a valid Australian phone number.');
+      }
+    } else {
+      analytics.track("Join Popup Submission", {
+        firstName: firstName.value,
+        email: emailInput.value,
+      });
+    }
+  };
+
+  const formattedMobileNumber = () => {
+    const formatted = mobileInput.value
+      .replace(/\s/g, '') // Remove spaces
+      .replace(/^(\+61)/, '') // Remove country code
+      .replace(/^4/, '0$&'); // Add leading zero if mobile number starts with 4
+
+    return formatted;
+  }
+
+</script>
 
 <div class="impact">
   <meta name="theme-color" content="transparent" />
@@ -81,11 +134,12 @@
   </div>
 
   <form
+    bind:this={form}
     class="impact__form"
     method="GET"
     action={joinFormUrl}
   >
-    <div bind:this={form} class="impact__form--container">
+    <div bind:this={formTop} class="impact__form--container">
       <h2 class="impact__form--heading">Join Future Super</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
@@ -102,27 +156,39 @@
         </ul>
       </div>
       <p>
-        <label
-          >First Name<input
+        <label>First Name
+          <input
             bind:this={firstName}
             type="text"
             id="first_name"
             name="first_name"
             required
-          /></label
-        >
+          />
+        </label>
       </p>
-      {#if joinFormTestGroup == joinFormTestGroups.NEW}
+      {#if joinFormTestGroup == joinFormTestGroups.V1}
       <p>
-        <label>Mobile number ¹<input type="text" name="mobile" required bind:value={mobileNumber} on:input={validateMobileNumber}/></label>
+        <label>Mobile number ¹
+          <input
+            type="text"
+            inputmode="numeric"
+            bind:this={mobileInput}
+          />
+          <!-- Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits -->
+          <input
+            type="hidden"
+            name="mobile"
+            bind:this={hiddenMobileInput}
+          />
+        </label>
       </p>
       {:else}
       <p>
-        <label>Email ¹<input type="email" name="email" required /></label>
+        <label>Email ¹<input type="email" name="email" required bind:this={emailInput}/></label>
       </p>
       {/if}
       <input type="text" id="referer" name="ReferCode" style="display:none" />
-      <input type="hidden" id="preview" name="preview" value="true">
+      <input type="text" id="preview" name="preview" value="true" style="display:none" />
       <p>
         <button type="submit" class="primary">Next →</button>
       </p>
@@ -139,14 +205,14 @@
         <br />
         <br />
         ¹ By providing your
-        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+        {#if joinFormTestGroup == joinFormTestGroups.V1} 
           mobile number,
         {:else}
           email address,
         {/if}
         you consent and authorise us to send you 
         communications or information, including information required by law, via
-        {#if joinFormTestGroup == joinFormTestGroups.NEW} 
+        {#if joinFormTestGroup == joinFormTestGroups.V1} 
           SMS
         {:else}
           email
@@ -303,7 +369,7 @@
     }
   }
 
-  input {
+  input, :global(.input) {
     display: block;
     padding: 8px;
     border-radius: 8px;
