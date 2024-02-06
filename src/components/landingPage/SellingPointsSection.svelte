@@ -9,40 +9,42 @@
   export let theme = "light";
 </script>
 
-<section class={theme + "-theme"}>
-  {#if title}
-    <h2>{title}</h2>
-  {/if}
-  {#if subtitle}
-    <h3>{@html md.render(subtitle)}</h3>
-  {/if}
-  <div class="grid {theme}-theme">
-    {#each points as point, index (point.id)}
-      <div class="point {theme}-theme {index % 2 ? 'even' : 'odd'}">
-        <img
-          src={point.image.url}
-          alt={point.image.alt}
-          class="{theme}-theme"
-        />
-        <div>
-          <h4>{point.title}</h4>
-          {@html md.render(point.subtitle)}
-          {#if point.button}
-            <a
-              href={point.button.attributes.points_to}
-              class="button {theme}-theme">{point.button.attributes.label}</a
-            >
-          {/if}
+<div class="container">
+  <section class={theme + "-theme"}>
+    {#if title}
+      <h2>{title}</h2>
+    {/if}
+    {#if subtitle}
+      <h3>{@html md.render(subtitle)}</h3>
+    {/if}
+    <div class="grid {theme}-theme">
+      {#each points as point, index (point.id)}
+        <div class="point {theme}-theme {index % 2 ? 'even' : 'odd'}">
+          <img
+            src={point.image.url}
+            alt={point.image.alt}
+            class="{theme}-theme"
+          />
+          <div>
+            <h4>{point.title}</h4>
+            {@html md.render(point.subtitle)}
+            {#if point.button}
+              <a
+                href={point.button.attributes.points_to}
+                class="button {theme}-theme">{point.button.attributes.label}</a
+              >
+            {/if}
+          </div>
         </div>
-      </div>
+      {/each}
+    </div>
+    {#each buttons as button (button.id)}
+      <a href={button.attributes.points_to} class="button {theme}-theme"
+        >{button.attributes.label}</a
+      >
     {/each}
-  </div>
-  {#each buttons as button (button.id)}
-    <a href={button.attributes.points_to} class="button {theme}-theme"
-      >{button.attributes.label}</a
-    >
-  {/each}
-</section>
+  </section>
+</div>
 
 <style lang="scss">
   @use "../../styles/index" as *;

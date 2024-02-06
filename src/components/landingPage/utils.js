@@ -9,3 +9,13 @@ export const getImageFromUploadId = async (uploadId) => {
     alt: upload.default_field_metadata.en.alt,
   };
 };
+
+export const getTestimonialFromId = async (testimonialId) => {
+  const testimonial = await client.items.find(testimonialId);
+  // console.log(testimonial);
+  return {
+    quote: testimonial.quote,
+    name: testimonial.name,
+    place: testimonial.place,
+  };
+};

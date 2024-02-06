@@ -1,0 +1,22 @@
+---
+import TestimonialsSection from "./TestimonialsSection.svelte";
+import { getTestimonialFromId } from "./utils";
+
+const { section } = Astro.props;
+
+async function getTestimonials() {
+  const testimonials = section.testimonials.map(async (id) => {
+    return await getTestimonialFromId(id);
+  });
+
+  return Promise.all(testimonials).then((t) => t);
+}
+
+const testimonials = await getTestimonials();
+---
+
+<TestimonialsSection
+  title={section.title}
+  testimonials={testimonials}
+  client:load
+/>

@@ -33,7 +33,12 @@ const heroHeaderProps = {
 // console.dir(page, { depth: null });
 ---
 
-<BaseLayout description={page.description} customHeader noBehindHeader>
+<BaseLayout
+  description={page.description}
+  customHeader
+  noBehindHeader
+  noContainer
+>
   <LandingPageHeader
     slot="customHeader"
     headline={heroHeaderProps.headline}

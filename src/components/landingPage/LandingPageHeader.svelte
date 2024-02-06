@@ -3,7 +3,7 @@
   export let image;
   export let button;
 
-  console.log({ headline, image, button });
+  // console.log({ headline, image, button });
 </script>
 
 <div class="container">

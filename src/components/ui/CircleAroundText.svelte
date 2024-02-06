@@ -23,9 +23,13 @@
 <style lang="scss">
   @use "../../styles/" as *;
 
+  h2 {
+    text-wrap: balance;
+  }
+
   .circle-container {
     max-width: 600px;
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
