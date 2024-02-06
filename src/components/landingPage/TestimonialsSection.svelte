@@ -138,7 +138,14 @@
 
     p.title,
     .item {
-      font-size: clamp(16px, 4vw, 48px);
+      font-size: clamp(22px, 4vw, 48px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .carousel {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
   }
 </style>

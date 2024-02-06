@@ -38,6 +38,8 @@
     background-color: transparent;
     min-width: 200px;
     margin-top: 30px;
+    border-width: 1px;
+    font-family: $regular;
 
     &:hover {
       border-color: $black;
@@ -53,7 +55,7 @@
 
     p,
     .item {
-      font-size: clamp(16px, 4vw, 48px);
+      font-size: clamp(22px, 4vw, 48px);
     }
   }
 </style>

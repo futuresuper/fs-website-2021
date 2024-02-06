@@ -54,8 +54,12 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 120px;
-    margin: 40px 0;
+    margin: 20px 0;
     text-align: center;
+
+    &.light-theme {
+      padding: 40px 120px 0;
+    }
 
     &.dark-theme {
       background: $black;
@@ -138,6 +142,8 @@
     color: $black;
     background-color: transparent;
     min-width: 200px;
+    border-width: 1px;
+    font-family: $regular;
 
     &:hover {
       border-color: $black;
@@ -161,6 +167,10 @@
   @media (max-width: 1000px) {
     section {
       padding: 40px;
+
+      &.light-theme {
+        padding: 40px;
+      }
     }
   }
 
