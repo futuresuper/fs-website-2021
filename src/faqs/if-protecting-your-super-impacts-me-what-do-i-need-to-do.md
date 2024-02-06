@@ -19,9 +19,7 @@ If you have any issues with the online form, you can also reach out to us via em
 
 #### *Fee limit on low-balance accounts*
 
-From 1 July 2019, Future Super will not charge the dollar based fee on accounts with balances of less than $6,000.
-
-This is due to the new changes whereby administration and investment fees charged cannot exceed 3% of the balances of accounts with less than $6,000.
+Administration and investment fees charged cannot exceed 3% of the balances of accounts with less than $6,000.
 
 If your account balance is less than $6,000 at the end of the financial year, any amount charged in excess of the 3% cap will be refunded. 
 
