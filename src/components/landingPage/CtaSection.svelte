@@ -26,14 +26,18 @@
     border-top: 1px solid #212121;
 
     .container {
-      margin: -80px 0;
+      margin-top: -80px;
+      margin-bottom: -80px;
+      display: grid;
+      place-content: center;
     }
   }
 
   @media (max-width: 800px) {
     section {
       .container {
-        margin: -180px 0;
+        margin-top: -180px;
+        margin-bottom: -180px;
       }
     }
   }
