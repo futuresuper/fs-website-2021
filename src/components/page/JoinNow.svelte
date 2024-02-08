@@ -362,7 +362,7 @@
 
       &--heading {
         padding-top: 1rem;
-        font-size: calc(20px + 1vw);
+        font-size: calc(30px + 1vw);
         height: 8%;
       }
     }
