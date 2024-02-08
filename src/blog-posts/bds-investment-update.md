@@ -46,4 +46,4 @@ When our members reach out to us on issues like this, we take it seriously. Weâ€
 *Engagement is a process that takes time, we understand that this can be frustrating. Why the process? As a responsible investor for all of our members' retirement savings, we have to follow a thorough process and engage and liaise with multiple stakeholders. This takes time to ensure we are acting in the best interest of members.*
 
 **UPDATE 08/02/2024:**\
-*Future Super has made some updates to our investment mix. This involved selling out of some investments, including Alstom SA. Future Super no longer has any exposure to Alstom SA. You can find information about everything we invest in here. *
+*Future Super has made some updates to our investment mix. This involved selling out of some investments, including Alstom SA. Future Super no longer has any exposure to Alstom SA. You can find information about [everything we invest in here](https://www.futuresuper.com.au/everything-we-invest-in/).*
