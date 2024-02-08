@@ -12,8 +12,6 @@
 
   let showLoginButton = true;
 
-
-
   const experimentBlocks = {
     CONTROL: "control",
     REVIEW_AWARDS: "product-review-awards",
@@ -28,13 +26,18 @@
 
     const rand = Math.random();
 
-    experimentBlockGroup = rand < 0.33 ? experimentBlocks.CONTROL : rand > 0.66 ? experimentBlocks.REVIEW_AWARDS : experimentBlocks.REVIEW_RATING;
+    experimentBlockGroup =
+      rand < 0.33
+        ? experimentBlocks.CONTROL
+        : rand > 0.66
+          ? experimentBlocks.REVIEW_AWARDS
+          : experimentBlocks.REVIEW_RATING;
 
     // Track the details text display
     analytics.track("Experiment Viewed", {
-      experimentId: 'FUM-117',
+      experimentId: "FUM-117",
       variationName: experimentBlockGroup,
-      property: 'website',
+      property: "website",
     });
   });
 
@@ -60,7 +63,7 @@
     {#if experimentBlockGroup === experimentBlocks.REVIEW_RATING}
       <ReviewsBanner />
     {:else if experimentBlockGroup === experimentBlocks.REVIEW_AWARDS}
-      <AwardsBanner/>
+      <AwardsBanner />
     {/if}
   </div>
   {#if showLoginButton}
@@ -124,6 +127,13 @@
     display: flex;
     justify-content: center;
     padding: 20px 30px;
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
   }
 
   @keyframes marquee {

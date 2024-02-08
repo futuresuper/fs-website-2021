@@ -1,22 +1,106 @@
 <script>
   import { onMount } from "svelte";
   import Arrow from "@components/images/Arrow.svelte";
+  import IMask from 'imask';
 
-  let form;
-  let input;
+  let form, formTop;
+  let firstName;
+
+  let joinFormTestGroup;
+  const joinFormTestGroups = {
+    V1: "v1 checklist redesign", // Redirects to https://join-now.futuresuper.com.au/
+    CONTROL: "control", // Redirects to https://join.futuresuper.com.au/
+  };
+
+  let joinFormUrl = "https://join.futuresuper.com.au/";
+  $: joinFormUrl =
+    joinFormTestGroup == joinFormTestGroups.V1
+      ? "https://join-now.futuresuper.com.au/"
+      : "https://join.futuresuper.com.au/";
 
   onMount(async () => {
+    form.addEventListener('submit', handleFormSubmit);
+
+    const rand = Math.random();
+    joinFormTestGroup =
+      rand > 0.5 ? joinFormTestGroups.V1 : joinFormTestGroups.CONTROL;
+
     if (window.innerWidth <= 800) {
       setTimeout(() => {
         window.scrollTo({
           top: form.offsetTop,
           behavior: "smooth",
         });
-        input.setAttribute("autofocus", "autofocus");
-        input.focus();
+        firstName.setAttribute("autofocus", "autofocus");
+        firstName.focus();
       }, 2500);
     }
+
+    analytics.track("Experiment Viewed", {
+      experimentId: 'FUM-186',
+      variationName: joinFormTestGroup,
+      property: 'website',
+    });
   });
+
+  // Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits
+  let mobileInput, hiddenMobileInput;
+  let emailInput;
+  let mask;
+
+  // Reactive because mobileInput is conditionally rendered
+  $: if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
+    mask = IMask(mobileInput, {
+      mask: ['0000 000 000', '+61 000 000 000', '+61 0000 000 000'],
+    });
+
+    mobileInput.addEventListener('input', () => {
+      // Regular expression for Australian mobile numbers
+      const mobileRegex = /^(?:04|4|\+614|\+6104)[0-9]{8}$/;
+
+      if (!mobileRegex.test(mask.unmaskedValue)) {
+        mobileInput.setCustomValidity("Invalid phone number. Please enter a valid Australian phone number.");
+      } else {
+        mobileInput.setCustomValidity("");
+      }
+    });
+  }
+
+  const handleFormSubmit = async (event) => {
+    if (joinFormTestGroup == joinFormTestGroups.V1 && mobileInput) {
+      event.preventDefault();
+      hiddenMobileInput.value = formattedMobileNumber();
+
+      // Regular expression for the mobile number format the join form accepts
+      const mobileRegex = /^(?:04)[0-9]{8}$/;
+      if (mobileRegex.test(hiddenMobileInput.value)) {
+        analytics.track("Join Popup Submission", {
+          firstName: firstName.value,
+          mobile: hiddenMobileInput.value,
+        });
+
+        form.submit();
+      } else {
+        // We shouldn't hit this case if the input mask and input listener worked as expected
+        alert('Invalid phone number. Please enter a valid Australian phone number.');
+      }
+    } else {
+      analytics.track("Join Popup Submission", {
+        firstName: firstName.value,
+        email: emailInput.value,
+      });
+    }
+  };
+
+  const formattedMobileNumber = () => {
+    const formatted = mobileInput.value
+      .replace(/\s/g, '') // Remove spaces
+      .replace(/^(\+61)/, '') // Remove country code
+      .replace(/^4/, '0$&'); // Add leading zero if mobile number starts with 4
+
+    return formatted;
+  }
+
 </script>
 
 <div class="impact">
@@ -49,11 +133,12 @@
   </div>
 
   <form
+    bind:this={form}
     class="impact__form"
     method="GET"
-    action="https://join.futuresuper.com.au/"
+    action={joinFormUrl}
   >
-    <div bind:this={form} class="impact__form--container">
+    <div bind:this={formTop} class="impact__form--container">
       <h2 class="impact__form--heading">JOIN FUTURE SUPER</h2>
       <div class="time-row">
         <img src="/images/clock2.gif" alt="clock" class="clock" />
@@ -70,43 +155,73 @@
         </ul>
       </div>
       <p class="input-block">
-        <label
-          >First Name<input
-            bind:this={input}
+        <label>First Name
+          <input
+            bind:this={firstName}
             type="text"
             id="first_name"
             name="first_name"
             required
-          /></label
-          >
-        </p>
-        <p class="input-block">
-          <label>Email ^<input type="email" name="email" required /></label>
-        </p>
-        <input type="text" id="referer" name="ReferCode" style="display:none" />
-        <button type="submit" class="primary">NEXT →</button>
-      </div>
-    </form>
+          />
+        </label>
+      </p>
+      {#if joinFormTestGroup == joinFormTestGroups.V1}
+      <p class="input-block">
+        <label>Mobile number ¹
+          <input
+            type="text"
+            inputmode="numeric"
+            bind:this={mobileInput}
+          />
+          <!-- Hidden input field necessary to make sure the value in mobileInput doesn't change as the form submits -->
+          <input
+            type="hidden"
+            name="mobile"
+            bind:this={hiddenMobileInput}
+          />
+        </label>
+      </p>
+      {:else}
+      <p class="input-block">
+        <label>Email ¹<input type="email" name="email" required bind:this={emailInput}/></label>
+      </p>
+      {/if}
+      <input type="text" id="referer" name="ReferCode" style="display:none" />
+      <button type="submit" class="primary">NEXT →</button>
+  </form>
 </div>
 <div class="disclaimer-block">
   <p class="disclaimer">
     * Please note that you don't need to transfer funds to create an account
-    with Future Super.<br /><br />
-    ^ By providing your email address, you consent and authorise us to send you
-    communications or information, including information required by law, via
-    email or similar technologies. Your details will never be passed onto a third
-    party other than in accordance with our
-    <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
-    communications by post at any time by contacting Future Super on 1300
-    658 422 or via email at info@myfuturesuper.com.au or in writing at GPO
-    Box 2754, Brisbane QLD 4001.
-
+    with Future Super.
     <br />
     <br />
     Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed
     Fund (MF).
     <br />
-    <br />Future Super has more than 40,000 members as of 1/9/2023
+    <br />
+    Future Super has more than 40,000 members as of 1/9/2023
+    <br />
+    <br />
+    ¹ By providing your
+    {#if joinFormTestGroup == joinFormTestGroups.V1}
+      mobile number,
+    {:else}
+      email address,
+    {/if}
+    you consent and authorise us to send you
+    communications or information, including information required by law, via
+    {#if joinFormTestGroup == joinFormTestGroups.V1}
+      SMS
+    {:else}
+      email
+    {/if}
+    or similar technologies. Your details will never be passed onto a third
+    party other than in accordance with our
+    <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
+    communications by post at any time by contacting Future Super on 1300
+    658 422 or via email at info@futuresuper.com.au or in writing at GPO
+    Box 2754, Brisbane QLD 4001.
   </p>
 </div>
 
@@ -237,15 +352,15 @@
       }
 
       &--container {
-        @media (max-width: 800px) {
-          padding: 80px 0;
-        }
         max-width: 632px;
         width: 60%;
+        @media (max-width: 800px) {
+          padding: 80px 0;
+          width: 100%;
+        }
       }
 
       &--heading {
-        //margin-bottom: 1rem;
         padding-top: 1rem;
         font-size: calc(20px + 1vw);
         height: 8%;
@@ -253,7 +368,7 @@
     }
   }
 
-  input {
+  input, :global(.input) {
     display: block;
     padding: 8px;
     border-radius: 8px;
@@ -262,7 +377,7 @@
     margin-top: 4px;
     margin-bottom: 16px;
     width: 100%;
-    //height: 50px;
+    height: 45px;
   }
 
   input:focus {
@@ -286,6 +401,9 @@
     @media (max-width: 800px) {
       padding: 24px;
     }
+  }
+  p.disclaimer {
+    font-family: $mono;
   }
 
   .button {
@@ -367,7 +485,6 @@
     border-top: 2px solid var(--Neutrals-black-900, #212121);
     padding-top: 1.5rem;
     &__heading {
-      //font-size: 1rem;
       font-family: $heading;
       color: #303030;
       margin-bottom: 0;

@@ -148,6 +148,8 @@
     height: 54px;
     margin: -7px;
     margin-right: 7px;
+    display: flex;
+    align-items: center;
   }
 
   .left {

@@ -1,7 +1,12 @@
 ---
 import SellingPoints from "./SellingPointsData.astro";
+import FeaturedList from "./FeaturedList.svelte";
+import TestimonialsData from "./TestimonialsData.astro";
+import CtaSection from "./CtaSection.svelte";
 
 const { sections } = Astro.props;
+
+// console.dir(sections, { depth: null });
 ---
 
 {
@@ -11,6 +16,20 @@ const { sections } = Astro.props;
     switch (sectionId) {
       case "O-VZ3hlbRXSACDfJWfnLgw":
         return <SellingPoints section={section.attributes} />;
+      case "XlAu7t0VSqW6S9AYiEGRgA":
+        return (
+          <FeaturedList
+            headline={section.attributes.headline}
+            items={section.attributes.list_items.map(
+              (item) => item.attributes.text
+            )}
+            button={section.attributes.button.attributes}
+          />
+        );
+      case "F4YIIzbQTT6_J0DtYJK7Uw":
+        return <TestimonialsData section={section.attributes} />;
+      case "ek1SXDG-SB-wtVU4-cT5PA":
+        return <CtaSection section={section.attributes} />;
       default:
         return null;
     }
