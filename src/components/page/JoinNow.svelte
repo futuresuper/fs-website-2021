@@ -5,7 +5,32 @@
   let form, formTop;
   let firstName;
 
-  onMount(async () => {
+  $: ready = false;
+
+  onMount(() => {
+    const joinFormTestGroups = {
+      INV_OPTIONS_FIRST: "investment-options-first",
+      CONTROL: "control",
+    };
+
+    const rand = Math.random();
+    const joinFormTestGroup =
+      rand > 0.5
+        ? joinFormTestGroups.INV_OPTIONS_FIRST
+        : joinFormTestGroups.CONTROL;
+
+    analytics.track("Experiment Viewed", {
+      experimentId: "FUM-212",
+      variationName: joinFormTestGroup,
+      property: "website",
+    });
+
+    if (joinFormTestGroup === joinFormTestGroups.INV_OPTIONS_FIRST) {
+      window.location.href = "https://join-now.futuresuper.com.au";
+    } else {
+      ready = true;
+    }
+
     form.addEventListener("submit", handleFormSubmit);
 
     if (window.innerWidth <= 800) {
@@ -32,105 +57,121 @@
   };
 </script>
 
-<div class="impact">
-  <meta name="theme-color" content="transparent" />
-  <div class="impact__image">
-    <a href="/" class="button secondary back-button"
-      ><span class="back-button--icon"
-        ><Arrow direction="left" colour="white" /></span
-      ><span class="back-button--text">Back</span></a
+<div class="screen" class:ready>
+  <div class="impact">
+    <meta name="theme-color" content="transparent" />
+    <div class="impact__image">
+      <a href="/" class="button secondary back-button"
+        ><span class="back-button--icon"
+          ><Arrow direction="left" colour="white" /></span
+        ><span class="back-button--text">Back</span></a
+      >
+
+      <div class="impact__content">
+        <div class="impact__content--message">
+          <p>Join more</p>
+          <p>than 40,000</p>
+          <p>people</p>
+          <p>investing in</p>
+          <p class="heading--green">climate</p>
+          <p class="heading--green">solutions.</p>
+        </div>
+
+        <div class="impact__content--text">
+          <p>
+            Investments may be held indirectly via an Exchange Traded Fund (ETF)
+            or Managed Fund (MF).
+          </p>
+          <p>Future Super has more than 40,000 members as of 1/9/2023</p>
+        </div>
+      </div>
+    </div>
+
+    <form
+      bind:this={form}
+      class="impact__form"
+      method="GET"
+      action={joinFormUrl}
     >
-
-    <div class="impact__content">
-      <div class="impact__content--message">
-        <p>Join more</p>
-        <p>than 40,000</p>
-        <p>people</p>
-        <p>investing in</p>
-        <p class="heading--green">climate</p>
-        <p class="heading--green">solutions.</p>
-      </div>
-
-      <div class="impact__content--text">
+      <div bind:this={formTop} class="impact__form--container">
+        <h2 class="impact__form--heading">Join Future Super</h2>
+        <div class="time-row">
+          <img src="/images/clock2.gif" alt="clock" class="clock" />
+          <h4>It only takes 5 minutes</h4>
+        </div>
+        <div class="info-block">
+          <p class="info-block__heading">What you'll need</p>
+          <ul class="info-block__list">
+            <li>Your Tax File Number</li>
+            <li>
+              An Australian ID or Medicare card to find your super and complete
+              a transfer*
+            </li>
+          </ul>
+        </div>
         <p>
-          Investments may be held indirectly via an Exchange Traded Fund (ETF)
-          or Managed Fund (MF).
+          <label
+            >First Name
+            <input
+              bind:this={firstName}
+              type="text"
+              id="first_name"
+              name="first_name"
+              required
+            />
+          </label>
         </p>
-        <p>Future Super has more than 40,000 members as of 1/9/2023</p>
+        <p>
+          <label
+            >Email ¹<input
+              type="email"
+              name="email"
+              required
+              bind:this={emailInput}
+            /></label
+          >
+        </p>
+        <input type="text" id="referer" name="ReferCode" style="display:none" />
+        <p>
+          <button type="submit" class="primary">Next →</button>
+        </p>
+        <p class="disclaimer">
+          * Please note that you don't need to transfer funds to create an
+          account with Future Super.
+          <br />
+          <br />
+          Investments may be held indirectly via an Exchange Traded Fund (ETF) or
+          Managed Fund (MF).
+          <br />
+          <br />
+          Future Super has more than 40,000 members as of 1/9/2023
+          <br />
+          <br />
+          ¹ By providing your email address, you consent and authorise us to send
+          you communications or information, including information required by law,
+          via email or similar technologies. Your details will never be passed onto
+          a third party other than in accordance with our
+          <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
+          communications by post at any time by contacting Future Super on 1300
+          658 422 or via email at info@futuresuper.com.au or in writing at GPO
+          Box 2754, Brisbane QLD 4001.
+        </p>
       </div>
-    </div>
+    </form>
   </div>
-
-  <form bind:this={form} class="impact__form" method="GET" action={joinFormUrl}>
-    <div bind:this={formTop} class="impact__form--container">
-      <h2 class="impact__form--heading">Join Future Super</h2>
-      <div class="time-row">
-        <img src="/images/clock2.gif" alt="clock" class="clock" />
-        <h4>It only takes 5 minutes</h4>
-      </div>
-      <div class="info-block">
-        <p class="info-block__heading">What you'll need</p>
-        <ul class="info-block__list">
-          <li>Your Tax File Number</li>
-          <li>
-            An Australian ID or Medicare card to find your super and complete a
-            transfer*
-          </li>
-        </ul>
-      </div>
-      <p>
-        <label
-          >First Name
-          <input
-            bind:this={firstName}
-            type="text"
-            id="first_name"
-            name="first_name"
-            required
-          />
-        </label>
-      </p>
-      <p>
-        <label
-          >Email ¹<input
-            type="email"
-            name="email"
-            required
-            bind:this={emailInput}
-          /></label
-        >
-      </p>
-      <input type="text" id="referer" name="ReferCode" style="display:none" />
-      <p>
-        <button type="submit" class="primary">Next →</button>
-      </p>
-      <p class="disclaimer">
-        * Please note that you don't need to transfer funds to create an account
-        with Future Super.
-        <br />
-        <br />
-        Investments may be held indirectly via an Exchange Traded Fund (ETF) or Managed
-        Fund (MF).
-        <br />
-        <br />
-        Future Super has more than 40,000 members as of 1/9/2023
-        <br />
-        <br />
-        ¹ By providing your email address, you consent and authorise us to send you
-        communications or information, including information required by law, via
-        email or similar technologies. Your details will never be passed onto a third
-        party other than in accordance with our
-        <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
-        communications by post at any time by contacting Future Super on 1300
-        658 422 or via email at info@futuresuper.com.au or in writing at GPO Box
-        2754, Brisbane QLD 4001.
-      </p>
-    </div>
-  </form>
 </div>
 
 <style lang="scss">
   @use "../../styles/" as *;
+
+  .screen {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+    &.ready {
+      opacity: 1;
+    }
+  }
 
   .impact {
     display: flex;
