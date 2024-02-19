@@ -12,9 +12,10 @@ mediaEmail: media@futuresuper.com.au
 postLine1: GPO Box 2754
 postLine2: Brisbane QLD 4001
 ---
+
 Please note, our team will not be available on National and NSW [public holidays](https://www.fairwork.gov.au/employment-conditions/public-holidays).
 
-If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
+If you are overseas and need to call us, you can reach us on  **+61 2 5501 7777**.
 
 You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
