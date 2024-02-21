@@ -7,25 +7,35 @@
 
   $: ready = false;
 
+  function assignExperimentGroup(experimentId, variationNames) {
+    const numberVariations = Object.keys(variationNames).length;
+    const random = Math.floor(Math.random() * numberVariations);
+    const variationName = Object.values(variationNames)[random];
+    setCookie(experimentId, variationName, 30);
+    return variationName;
+  }
+
   onMount(() => {
-    const joinFormTestGroups = {
+    const experimentId = "FUM-212";
+
+    const variationNames = {
       INV_OPTIONS_FIRST: "investment-options-first",
       CONTROL: "control",
     };
 
-    const rand = Math.random();
-    const joinFormTestGroup =
-      rand > 0.5
-        ? joinFormTestGroups.INV_OPTIONS_FIRST
-        : joinFormTestGroups.CONTROL;
+    const experimentGroup =
+      getCookie(experimentId) ||
+      assignExperimentGroup(experimentId, variationNames);
+
+    console.log("Experiment Group", experimentGroup);
 
     analytics.track("Experiment Viewed", {
-      experimentId: "FUM-212",
-      variationName: joinFormTestGroup,
+      experimentId,
+      variationName: experimentGroup,
       property: "website",
     });
 
-    if (joinFormTestGroup === joinFormTestGroups.INV_OPTIONS_FIRST) {
+    if (experimentGroup === variationNames.INV_OPTIONS_FIRST) {
       window.location.href = "https://join-now.futuresuper.com.au";
     } else {
       ready = true;
