@@ -27,7 +27,7 @@
       getCookie(experimentId) ||
       assignExperimentGroup(experimentId, variationNames);
 
-    console.log("Experiment Group", experimentGroup);
+    // console.log("Experiment Group", experimentGroup);
 
     analytics.track("Experiment Viewed", {
       experimentId,
