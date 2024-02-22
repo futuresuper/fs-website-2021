@@ -16,10 +16,10 @@
   }
 
   onMount(() => {
-    const experimentId = "FUM-212";
+    const experimentId = "FUM-225";
 
     const variationNames = {
-      INV_OPTIONS_FIRST: "investment-options-first",
+      JOIN_CHECKLIST: "join-checklist",
       CONTROL: "control",
     };
 
@@ -35,11 +35,13 @@
       property: "website",
     });
 
-    if (experimentGroup === variationNames.INV_OPTIONS_FIRST) {
-      window.location.href = "https://join-now.futuresuper.com.au";
+    if (experimentGroup === variationNames.JOIN_CHECKLIST) {
+      joinFormUrl = 'https://join-now.futuresuper.com.au';
     } else {
-      ready = true;
+      joinFormUrl = "https://join.futuresuper.com.au/";
     }
+
+    ready = true;
 
     form.addEventListener("submit", handleFormSubmit);
 
@@ -57,7 +59,7 @@
 
   let emailInput;
 
-  const joinFormUrl = "https://join.futuresuper.com.au/";
+  let joinFormUrl;
 
   const handleFormSubmit = async (event) => {
     analytics.track("Join Popup Submission", {
