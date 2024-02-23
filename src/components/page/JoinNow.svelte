@@ -121,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <p class="input-block">
+        <div class="input-block">
           <label
             >First Name
             <input
@@ -132,8 +132,8 @@
               required
             />
           </label>
-        </p>
-        <p class="input-block">
+        </div>
+        <div class="input-block">
           <label
             >Email ¹<input
               type="email"
@@ -142,7 +142,7 @@
               bind:this={emailInput}
             /></label
           >
-        </p>
+        </div>
         <input type="text" id="referer" name="ReferCode" style="display:none" />
         <button type="submit" class="primary">NEXT →</button>
       </div>
@@ -385,7 +385,7 @@
 
   .primary {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .back-button {
