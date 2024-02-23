@@ -12,9 +12,10 @@ mediaEmail: media@futuresuper.com.au
 postLine1: GPO Box 2754
 postLine2: Brisbane QLD 4001
 ---
+
 Please note, our team will not be available on National and NSW [public holidays](https://www.fairwork.gov.au/employment-conditions/public-holidays).
 
-If you are overseas and need to call us, you can reach us on  **+61 2 7252 5371**.
+If you are overseas and need to call us, you can reach us on  **+61 2 5501 7777**.
 
 You may be able to find answers to your questions on our [Support & FAQs page](https://www.futuresuper.com.au/support-and-faqs).
 
@@ -30,7 +31,7 @@ You can find information about your account [online](https://my.futuresuper.com
 
 We have received alerts by members of the public who have received cold calls from individuals claiming to be from Future Super. These callers may request personal information or become verbally abusive.
 
-**Please be aware that we will only call you from our direct phone number (+61 2 7252 5371) and never call you from a standard mobile number.**
+**Please be aware that we will only call you from our direct phone number (+61 2 5501 7777) and never call you from a standard mobile number.**
 
 If you have received contact from someone claiming to represent Future Super that seemed inappropriate or suspicious, please reach out and report it to us. You can also report the details of the contact you received to [ScamWatch.gov.au](http://ScamWatch.gov.au).
 
