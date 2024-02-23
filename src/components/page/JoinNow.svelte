@@ -82,7 +82,7 @@
       <div class="impact__content">
         <div class="impact__content--message">
           <p>Join more</p>
-          <p>than 40,000</p>
+          <p>than 45,000</p>
           <p>people</p>
           <p>investing in</p>
           <p class="heading--green">climate</p>
@@ -94,7 +94,7 @@
             Investments may be held indirectly via an Exchange Traded Fund (ETF)
             or Managed Fund (MF).
           </p>
-          <p>Future Super has more than 40,000 members as of 1/9/2023</p>
+          <p>Future Super has more than 45,000 members as of 1/1/2024</p>
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@
       action={joinFormUrl}
     >
       <div bind:this={formTop} class="impact__form--container">
-        <h2 class="impact__form--heading">Join Future Super</h2>
+        <h2 class="impact__form--heading">JOIN FUTURE SUPER</h2>
         <div class="time-row">
           <img src="/images/clock2.gif" alt="clock" class="clock" />
           <h4>It only takes 5 minutes</h4>
@@ -121,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <p>
+        <div class="input-block">
           <label
             >First Name
             <input
@@ -132,8 +132,8 @@
               required
             />
           </label>
-        </p>
-        <p>
+        </div>
+        <div class="input-block">
           <label
             >Email ¹<input
               type="email"
@@ -142,35 +142,35 @@
               bind:this={emailInput}
             /></label
           >
-        </p>
+        </div>
         <input type="text" id="referer" name="ReferCode" style="display:none" />
-        <p>
-          <button type="submit" class="primary">Next →</button>
-        </p>
-        <p class="disclaimer">
-          * Please note that you don't need to transfer funds to create an
-          account with Future Super.
-          <br />
-          <br />
-          Investments may be held indirectly via an Exchange Traded Fund (ETF) or
-          Managed Fund (MF).
-          <br />
-          <br />
-          Future Super has more than 40,000 members as of 1/9/2023
-          <br />
-          <br />
-          ¹ By providing your email address, you consent and authorise us to send
-          you communications or information, including information required by law,
-          via email or similar technologies. Your details will never be passed onto
-          a third party other than in accordance with our
-          <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
-          communications by post at any time by contacting Future Super on 1300
-          658 422 or via email at info@futuresuper.com.au or in writing at GPO
-          Box 2754, Brisbane QLD 4001.
-        </p>
+        <button type="submit" class="primary">NEXT →</button>
       </div>
     </form>
   </div>
+</div>
+<div class="disclaimer-block">
+    <p class="disclaimer">
+      * Please note that you don't need to transfer funds to create an
+      account with Future Super.
+      <br />
+      <br />
+      ¹ By providing your email address, you consent and authorise us to send
+      you communications or information, including information required by law,
+      via email or similar technologies. Your details will never be passed onto
+      a third party other than in accordance with our
+      <a href="/privacy-policy">Privacy Policy</a>. You can elect to receive
+      communications by post at any time by contacting Future Super on 1300
+      658 422 or via email at info@futuresuper.com.au or in writing at GPO
+      Box 2754, Brisbane QLD 4001.
+      <br />
+      <br />
+      Investments may be held indirectly via an Exchange Traded Fund (ETF) or
+      Managed Fund (MF).
+      <br />
+      <br />
+      Future Super has more than 45,000 members as of 1/1/2024
+    </p>
 </div>
 
 <style lang="scss">
@@ -233,13 +233,13 @@
 
       &--message {
         @media (max-width: 800px) {
-          font-size: 32px;
+          font-size: 25px;
           position: absolute;
-          bottom: 1.5rem;
+          bottom: 4rem;
           right: 1.5rem;
         }
 
-        font-size: 64px;
+        font-size: 50px;
         color: white;
         display: flex;
         flex-direction: column;
@@ -286,20 +286,21 @@
 
     &__form {
       border-radius: 80px 0 0 80px;
-
       padding: 46px 40px 46px 84px;
-
       margin-left: -8%;
       z-index: 10;
       background-color: white;
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       @media (min-width: 1440px) {
         margin-left: -5%;
         width: 45%;
       }
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
       @media (max-width: 800px) {
         margin-left: 0;
         width: 100%;
@@ -308,17 +309,18 @@
       }
 
       &--container {
-        @media (max-width: 800px) {
-          padding: 120px 0;
-        }
         max-width: 632px;
+        width: 60%;
+        @media (max-width: 800px) {
+          padding: 80px 0;
+          width: 100%;
+        }
       }
 
       &--heading {
-        margin-bottom: 1rem;
         padding-top: 1rem;
-
         font-size: calc(30px + 1vw);
+        height: 8%;
       }
     }
   }
@@ -328,16 +330,37 @@
     display: block;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid $black;
+    border: 1px solid $black500;
     outline: none;
-    margin-top: 8px;
-    margin-bottom: 30px;
+    margin-top: 4px;
+    margin-bottom: 16px;
     width: 100%;
-    height: 50px;
+    height: 45px;
   }
 
+  input:focus {
+    border: 1px solid $black950;
+  }
+
+  .input-block {
+    padding-top: 8px;
+    height: 10%;
+  }
+
+  .disclaimer-block {
+    display: flex;
+    padding: 120px 40px;
+    align-items: flex-start;
+    gap: 64px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 800px) {
+      padding: 24px;
+    }
+  }
   p.disclaimer {
-    margin-top: 40px;
     font-family: $mono;
   }
 
@@ -361,9 +384,8 @@
   }
 
   .primary {
-    @media (max-width: 800px) {
-      width: 100%;
-    }
+    width: 100%;
+    margin-top: 24px;
   }
 
   .back-button {
@@ -413,20 +435,24 @@
     flex-direction: row;
     align-items: center;
     color: #00a900;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .info-block {
-    margin-bottom: 1rem;
+    border-top: 2px solid var(--Neutrals-black-900, #212121);
+    padding-top: 1.5rem;
     &__heading {
-      font-size: 1.125rem;
       font-family: $heading;
-      margin-bottom: 0.5rem;
+      color: #303030;
+      margin-bottom: 0;
     }
     &__list {
-      font-size: 1rem;
+      font-size: 0.875rem;
+      color: $black800;
       list-style: circle;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
       margin-left: 1.187rem;
       padding-left: 0;
     }
