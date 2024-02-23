@@ -155,13 +155,6 @@
       account with Future Super.
       <br />
       <br />
-      Investments may be held indirectly via an Exchange Traded Fund (ETF) or
-      Managed Fund (MF).
-      <br />
-      <br />
-      Future Super has more than 45,000 members as of 1/1/2024
-      <br />
-      <br />
       ¹ By providing your email address, you consent and authorise us to send
       you communications or information, including information required by law,
       via email or similar technologies. Your details will never be passed onto
@@ -170,6 +163,13 @@
       communications by post at any time by contacting Future Super on 1300
       658 422 or via email at info@futuresuper.com.au or in writing at GPO
       Box 2754, Brisbane QLD 4001.
+      <br />
+      <br />
+      Investments may be held indirectly via an Exchange Traded Fund (ETF) or
+      Managed Fund (MF).
+      <br />
+      <br />
+      Future Super has more than 45,000 members as of 1/1/2024
     </p>
 </div>
 
@@ -330,7 +330,7 @@
     display: block;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #9e9e9e; // black-500
+    border: 1px solid $black500;
     outline: none;
     margin-top: 4px;
     margin-bottom: 16px;
@@ -339,7 +339,7 @@
   }
 
   input:focus {
-    border: 1px solid #161616; // black-950
+    border: 1px solid $black950;
   }
 
   .input-block {
@@ -449,7 +449,7 @@
     }
     &__list {
       font-size: 0.875rem;
-      color: #424242;
+      color: $black800;
       list-style: circle;
       margin-top: 0.5rem;
       margin-left: 1.187rem;
