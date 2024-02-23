@@ -197,7 +197,7 @@
       background-size: cover;
       background-position: top right;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 100svh;
       width: 55%;
 
       display: flex;
@@ -235,7 +235,7 @@
         @media (max-width: 800px) {
           font-size: 25px;
           position: absolute;
-          bottom: 1.5rem;
+          bottom: 4rem;
           right: 1.5rem;
         }
 
