@@ -452,6 +452,7 @@
       color: $black800;
       list-style: circle;
       margin-top: 0.5rem;
+      margin-bottom: 2rem;
       margin-left: 1.187rem;
       padding-left: 0;
     }
