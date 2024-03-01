@@ -3,11 +3,11 @@ title: Contact Future Super
 intro: We're here to help
 description: We'd love to hear from you. Contact us by phone, email or post.
 emailAddress: info@futuresuper.com.au
-emailOpeningTime: 9am
+emailOpeningTime: 8:30am
 emailClosingTime: 5pm
 phone: 1300 658 422
-phoneOpeningTime: 10am
-phoneClosingTime: "4pm "
+phoneOpeningTime: 8:30am
+phoneClosingTime: 5pm
 mediaEmail: media@futuresuper.com.au
 postLine1: GPO Box 2754
 postLine2: Brisbane QLD 4001
