@@ -59,6 +59,8 @@
 
   let emailInput;
 
+  let showEmailDropdown = false;
+
   let joinFormUrl;
 
   const handleFormSubmit = async (event) => {
@@ -66,6 +68,16 @@
       firstName: firstName.value,
       email: emailInput.value,
     });
+  };
+
+  const watchEmailInput = () => {
+    showEmailDropdown = !!emailInput.value.includes('@');
+  };
+
+  const appendEmail = (domain) => {
+    let first = emailInput.value.split('@')[0];
+    emailInput.value = first + domain;
+    showEmailDropdown = false;
   };
 </script>
 
@@ -133,16 +145,32 @@
             />
           </label>
         </div>
-        <div class="input-block">
+        <div class="input-block" on:blur={() => showEmailDropdown = false}>
           <label
             >Email ¹<input
               type="email"
               name="email"
               required
+              autocomplete="off"
+              on:input={watchEmailInput}
+              on:focus={watchEmailInput}
               bind:this={emailInput}
             /></label
           >
+
+          {#if showEmailDropdown}
+            <div class="email-selector">
+              <div on:click={() => appendEmail('@gmail.com')} class="email-selector__item">@gmail.com</div>
+              <div on:click={() => appendEmail('@hotmail.com')} class="email-selector__item">@hotmail.com</div>
+              <div on:click={() => appendEmail('@yahoo.com')} class="email-selector__item">@yahoo.com</div>
+              <div on:click={() => appendEmail('@outlook.com')} class="email-selector__item">@outlook.com</div>
+            </div>
+          {/if}
         </div>
+        <!-- Area to allow user to blur input when dropdown is open to close on blur -->
+        {#if showEmailDropdown}
+          <div on:click={() => showEmailDropdown = false} class="email-selector-blur"></div>
+        {/if}
         <input type="text" id="referer" name="ReferCode" style="display:none" />
         <button type="submit" class="primary">NEXT →</button>
       </div>
@@ -291,7 +319,7 @@
       z-index: 10;
       background-color: white;
       width: 50%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -345,6 +373,8 @@
   .input-block {
     padding-top: 8px;
     height: 10%;
+    position: relative;
+    z-index: 2;
   }
 
   .disclaimer-block {
@@ -456,5 +486,23 @@
       margin-left: 1.187rem;
       padding-left: 0;
     }
+  }
+
+  .email-selector{
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid $black400;
+    margin-top: -0.875rem;
+
+    &__item{
+      padding: 0.625rem 1rem;
+      color: $black800;
+      cursor: pointer;
+    }
+  }
+
+  .email-selector-blur{
+    position: fixed;
+    inset: 0;
   }
 </style>
