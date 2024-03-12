@@ -489,15 +489,23 @@
   }
 
   .email-selector{
+    position: absolute;
+    left: 0;
+    right: 0;
     background-color: white;
     border-radius: 0.5rem;
     border: 1px solid $black400;
     margin-top: -0.875rem;
+    padding: 2px;
 
     &__item{
       padding: 0.625rem 1rem;
       color: $black800;
       cursor: pointer;
+      border-radius: 0.5rem;
+      &:hover{
+        background-color: $black200;
+      }
     }
   }
 
