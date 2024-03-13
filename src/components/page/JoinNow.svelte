@@ -5,6 +5,13 @@
   let form, formTop;
   let firstName;
 
+  const domains = [
+    '@gmail.com',
+    '@hotmail.com',
+    '@yahoo.com',
+    '@outlook.com',
+  ];
+
   $: ready = false;
 
   function assignExperimentGroup(experimentId, variationNames) {
@@ -160,10 +167,9 @@
 
           {#if showEmailDropdown}
             <div class="email-selector">
-              <div on:click={() => appendEmail('@gmail.com')} class="email-selector__item">@gmail.com</div>
-              <div on:click={() => appendEmail('@hotmail.com')} class="email-selector__item">@hotmail.com</div>
-              <div on:click={() => appendEmail('@yahoo.com')} class="email-selector__item">@yahoo.com</div>
-              <div on:click={() => appendEmail('@outlook.com')} class="email-selector__item">@outlook.com</div>
+              {#each domains as domain}
+                <div on:click={() => appendEmail(domain)} class="email-selector__item">{domain}</div>
+              {/each}
             </div>
           {/if}
         </div>
