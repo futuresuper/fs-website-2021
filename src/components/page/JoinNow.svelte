@@ -5,6 +5,13 @@
   let form, formTop;
   let firstName;
 
+  const domains = [
+    '@gmail.com',
+    '@hotmail.com',
+    '@yahoo.com',
+    '@outlook.com',
+  ];
+
   $: ready = false;
 
   function assignExperimentGroup(experimentId, variationNames) {
@@ -59,6 +66,8 @@
 
   let emailInput;
 
+  let showEmailDropdown = false;
+
   let joinFormUrl;
 
   const handleFormSubmit = async (event) => {
@@ -66,6 +75,16 @@
       firstName: firstName.value,
       email: emailInput.value,
     });
+  };
+
+  const watchEmailInput = () => {
+    showEmailDropdown = !!emailInput.value.includes('@');
+  };
+
+  const appendEmail = (domain) => {
+    let first = emailInput.value.split('@')[0];
+    emailInput.value = first + domain;
+    showEmailDropdown = false;
   };
 </script>
 
@@ -133,16 +152,31 @@
             />
           </label>
         </div>
-        <div class="input-block">
+        <div class="input-block" on:blur={() => showEmailDropdown = false}>
           <label
             >Email ¹<input
               type="email"
               name="email"
               required
+              autocomplete="off"
+              on:input={watchEmailInput}
+              on:focus={watchEmailInput}
               bind:this={emailInput}
             /></label
           >
+
+          {#if showEmailDropdown}
+            <div class="email-selector">
+              {#each domains as domain}
+                <div on:click={() => appendEmail(domain)} class="email-selector__item">{domain}</div>
+              {/each}
+            </div>
+          {/if}
         </div>
+        <!-- Area to allow user to blur input when dropdown is open to close on blur -->
+        {#if showEmailDropdown}
+          <div on:click={() => showEmailDropdown = false} class="email-selector-blur"></div>
+        {/if}
         <input type="text" id="referer" name="ReferCode" style="display:none" />
         <button type="submit" class="primary">NEXT →</button>
       </div>
@@ -291,7 +325,7 @@
       z-index: 10;
       background-color: white;
       width: 50%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -345,6 +379,8 @@
   .input-block {
     padding-top: 8px;
     height: 10%;
+    position: relative;
+    z-index: 2;
   }
 
   .disclaimer-block {
@@ -456,5 +492,31 @@
       margin-left: 1.187rem;
       padding-left: 0;
     }
+  }
+
+  .email-selector{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid $black400;
+    margin-top: -0.875rem;
+    padding: 2px;
+
+    &__item{
+      padding: 0.625rem 1rem;
+      color: $black800;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      &:hover{
+        background-color: $black200;
+      }
+    }
+  }
+
+  .email-selector-blur{
+    position: fixed;
+    inset: 0;
   }
 </style>
