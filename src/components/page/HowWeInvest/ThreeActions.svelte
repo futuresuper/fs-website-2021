@@ -22,9 +22,9 @@
     <h2>1. Divestment</h2>
     <h4>
       We use a negative screening process (divestment) to protect you from
-      exposure to unsustainable assets. Our screening removes harmful
-      investments that pose risks to your super and your future from our
-      investment universe, and directs the flow of capital elsewhere.
+      exposure to unsustainable assets. Our screening removes what we believe to
+      be harmful investments that pose risks to your super and your future from
+      our investment universe, and directs the flow of capital elsewhere.
     </h4>
     <p>
       Divestment is one of our greatest tools to change systems, challenging the

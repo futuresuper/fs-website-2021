@@ -22,7 +22,7 @@
       </h4>
       <h4>
         <span class="red">We Exclude</span><br />
-        investments with harmful impacts on people or the planet.
+        investments we believe to have harmful impacts on people or the planet.
       </h4>
     </div>
   </div>

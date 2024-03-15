@@ -10,7 +10,7 @@ When we launched in 2014, Future Super was the first super fund to not invest in
 
 At Future Super we use a three-step process to ensure your money is invested in companies that can both grow your super savings and build a better world. You can see our [full screening strategy here](https://www.futuresuper.com.au/impact-screening-strategy).
 
-First, out with the bad: our negative screen rules out harmful and destructive industries like fossil fuels, detention centres, live animal export, nuclear, tobacco and more.
+First, out with the bad: our negative screen rules out what we believe to be harmful and destructive industries like fossil fuels, detention centres, live animal export, nuclear, tobacco and more.
 
 Second, in with the good: our positive screen ensures we actively seek out companies that are doing social and environmental good, such as renewable energy, healthcare, education and IT. You can view a full list of the companies we invest in [here](https://www.futuresuper.com.au/how-we-invest).
 

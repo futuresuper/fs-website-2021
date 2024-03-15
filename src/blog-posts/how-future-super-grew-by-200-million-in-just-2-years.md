@@ -13,6 +13,7 @@ description: Imagine the power of all of us moving our super money out of fossil
   investing in fossil fuels shouldn’t be. Australians deserve a choice. This is
   the story of how two guys decided to do something about it.
 ---
+
 **Future Super was born in 2014 to solve a big problem.**
 
 At that time, every superannuation fund in Australia put its members’ life savings in the hands of the fossil fuel industry.
@@ -27,12 +28,12 @@ Future Super’s co-founders, Simon Sheikh and Adam Verwey, decided to do someth
 
 The guiding principle was simple. Fossil fuel companies pose too many risks from an environmental, social and financial perspective, and the transition to a clean energy future presents an unprecedented opportunity to benefit members, people and the planet.
 
-Future Super’s team got busy designing an ethical, diversified portfolio that completely excludes fossil fuels. No coal, oil, gas or coal seam gas. No banks that finance fossil fuels. No companies that provide polluters with essential services. The portfolio had to screen out fossil fuel companies, because we can't prevent climate change if we continue to invest in it. 
+Future Super’s team got busy designing an ethical, diversified portfolio that completely excludes fossil fuels. No coal, oil, gas or coal seam gas. No banks that finance fossil fuels. No companies that provide polluters with essential services. The portfolio had to screen out fossil fuel companies, because we can't prevent climate change if we continue to invest in it.
 
-By cutting out the climate polluters and other harmful industries (like tobacco, gambling, detention centres and live animal export, to name just a few) more could be invested in exceptional companies whose activities are making the world a better place.
+By cutting out the climate polluters and what we believe to be other harmful industries (like tobacco, gambling, detention centres and live animal export, to name just a few) more could be invested in exceptional companies whose activities are making the world a better place.
 
-In September 2014, Future Super officially launched. By the start of 2017 over 6,000 Australians had switched to Future Super, moving hundreds of millions of dollars away from super funds that are funding the fossil fuel industry. As more and more people make the switch, the pressure on other super funds to divest from fossil fuels and other harmful industries keeps on increasing.
+In September 2014, Future Super officially launched. By the start of 2017 over 6,000 Australians had switched to Future Super, moving hundreds of millions of dollars away from super funds that are funding the fossil fuel industry. As more and more people make the switch, the pressure on other super funds to divest from fossil fuels and what we believe to be other harmful industries keeps on increasing.
 
-Future Super’s returns have regularly outperformed,* showing that you don’t have to destroy the planet to make a dollar. Our diversified, fossil free portfolio is investing millions in new renewable projects across Australia and around the world. We’re continually developing new ways to track the financial impact of fossil fuels in local and global markets. And, most importantly, we’re connecting everyday Australians to their super power (pun intended) with the knowledge that your retirement savings can make a real difference in the real world, right now.
+Future Super’s returns have regularly outperformed,\* showing that you don’t have to destroy the planet to make a dollar. Our diversified, fossil free portfolio is investing millions in new renewable projects across Australia and around the world. We’re continually developing new ways to track the financial impact of fossil fuels in local and global markets. And, most importantly, we’re connecting everyday Australians to their super power (pun intended) with the knowledge that your retirement savings can make a real difference in the real world, right now.
 
 By working together, we can use super to build a better, fossil free future.

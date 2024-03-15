@@ -32,9 +32,9 @@
         <p>
           We care about what kind of future your super investments deliver, so
           we choose renewables over fossil fuels, responsibility over a quick
-          buck, and the future over now. Our investment strategy avoids harmful
-          investments and uses the power of your money to invest in climate
-          solutions and act on the issues of today.
+          buck, and the future over now. Our investment strategy avoids what we
+          believe to be harmful investments and uses the power of your money to
+          invest in climate solutions and act on the issues of today.
         </p>
         <a class="button full-width" href={pages.HOW_WE_INVEST[1]}
           >See how we invest</a

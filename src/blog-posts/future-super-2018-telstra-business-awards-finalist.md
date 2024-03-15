@@ -18,6 +18,7 @@ tags:
 description: "Future Super has been listed as a 2018 Telstra Business Awards:
   Social Change Maker Finalist in the ACT."
 ---
+
 ## Future Super has been recognised as one of Australia’s most innovative social change businesses - and we couldn’t have done it without you!
 
 ![Future Super members at Mount Majura Solar Farm, ACT (Renewable Energy Day, 2016)](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg>)
@@ -32,7 +33,7 @@ Every year the Telstra Business Awards recognises and celebrates the small and m
 
 We’re proud to announce that Future Super has been selected as 2018 Social Change Maker finalist in the ACT!
 
-We’ve empowered more than ten thousand everyday Australians to divest from coal, oil and gas, as well as other harmful industries.
+We’ve empowered more than ten thousand everyday Australians to divest from coal, oil and gas, as well as what we believe to be other harmful industries.
 
 But we don’t like to linger on the stuff we don’t do.
 
@@ -40,12 +41,12 @@ We know super is powerful, and that it’s yours. That’s why we aim provide ou
 
 Here’s just a few of the things we’re proud to have delivered on behalf of our community of values-driven investors:
 
-* [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
-* Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
-* [Baby Bump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
-* Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
-* Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
-* Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
+- [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
+- Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
+- [Baby Bump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
+- Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
+- Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
+- Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
 
 And, of course, [competitive returns](https://www.myfuturesuper.com.au/choosing/performanceandreturns).
 
@@ -69,7 +70,7 @@ We are so proud to be on this journey with our members who are standing up for (
 
 At Future Super, not only do we passionately believe that divesting from fossil fuels and reinvesting in renewables will deliver for our members in retirement, we know that without this, there may not be much of a planet left to retire onto.
 
-Our core purpose is to empower all Australians to make a choice for themselves: to invest their superannuation in a way that is aligned to their values. Our members have chosen to divest from fossil fuels (and other harmful industries like animal cruelty, old growth logging, tobacco, gambling and more), and together, are reinvesting that money into renewable energy.
+Our core purpose is to empower all Australians to make a choice for themselves: to invest their superannuation in a way that is aligned to their values. Our members have chosen to divest from fossil fuels (and other industries like animal cruelty, old growth logging, tobacco, gambling and more), and together, are reinvesting that money into renewable energy.
 
 We are proud to be a finalist in the Telstra Business Awards. We truly could not have achieved this milestone without our thousands of members and supporters who have already divested over $300 million away from fossil fuels.
 

@@ -25,7 +25,7 @@ From an investment point of view, it offers superior risk-adjusted potential ret
 
 ## What makes it unique or impactful?
 
-Infradebt Ethical Fund is Australia’s first ethically screened private debt infrastructure fund. In simple terms, that means it’s a fund made up of private investors, which lends money to private companies in order to finance projects approved by the fund. The nature of the fund means that the recipients of the loans are ethically screened for harmful activity and evaluated for the positive impact they can have on society.
+Infradebt Ethical Fund is Australia’s first ethically screened private debt infrastructure fund. In simple terms, that means it’s a fund made up of private investors, which lends money to private companies in order to finance projects approved by the fund. The nature of the fund means that the recipients of the loans are ethically screened and evaluated for the positive impact they can have on society.
 
 ![](https://lh4.googleusercontent.com/3OnxYMSHDHF01ZIF1ZViq3tB2XDGveL7zOchyVkYJvlDP2NFCcxghsOAn7hmpdlKkHjAmHnkra_u2ziT_tCut93vzOAFj2rECNHBYvA0jVaGT1cJXE8Ex1wjK4pEU-myB4a0urNa)
 
