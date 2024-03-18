@@ -5,11 +5,10 @@ endDate: 2025-04-07T10:48:50.898Z
 location: We are remote first and open to candidates from all over Australia.
 salary: $120,000 - $125,000 + Super + 1% additional Super
 applicationUrl: https://app.beapplied.com/apply/ybs91ajsub?utm_source=Future-Careers-Page
-summary: We're on the lookout for a Content Producer to join our vibrant,
-  purpose-driven scaleup. Come be a part of an awesome team of proactive
-  storytellers with diverse backgrounds. Your role? Craft content strategies and
-  create engaging material for our range of Future Group brands and LinkedIn
-  thought leadership.
+summary: Shape content strategy, create engaging material for Future Group
+  brands, and drive thought leadership on LinkedIn. Connect members with
+  financial empowerment. Work alongside a diverse team of storytellers with
+  varied backgrounds.
 ---
 **About Future Group**
 
