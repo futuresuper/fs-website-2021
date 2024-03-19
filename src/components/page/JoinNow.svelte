@@ -23,10 +23,10 @@
   }
 
   onMount(() => {
-    const experimentId = "FUM-225";
+    const experimentId = "FUM-187 - Invest Option";
 
     const variationNames = {
-      JOIN_CHECKLIST: "join-checklist",
+      TEST: "investment-v1",
       CONTROL: "control",
     };
 
@@ -42,7 +42,7 @@
       property: "website",
     });
 
-    if (experimentGroup === variationNames.JOIN_CHECKLIST) {
+    if (experimentGroup === variationNames.TEST) {
       joinFormUrl = 'https://join-now.futuresuper.com.au';
     } else {
       joinFormUrl = "https://join.futuresuper.com.au/";
