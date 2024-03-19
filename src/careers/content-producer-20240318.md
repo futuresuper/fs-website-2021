@@ -14,31 +14,17 @@ summary: Shape content strategy, create engaging material for Future Group
 
 Future Group is not your traditional financial services company – we're a collective of super funds and services committed to changing our planet now for a better tomorrow. When you join us, you’ll become part of a team united by a clear and important mission: to lead the investment movement by advocating and campaigning for a future worth retiring into.
 
-
-
 We are looking for someone to join our purpose-led high-growth scaleup. The Content Producer will play a key role in the communications team setting the content strategy and executing content relevant for the stable of Future Group brands (Future Super, Verve Super, smartMonday, Guild and Child Care Super and Future Group thought leadership content for LinkedIn). 
-
-
 
 The role is also critical in providing engaging content that connects our members with the power of their money. 
 
-
-
 And the best bit is you’ll get to work with some fantastic workmates. Our team are self-starters, creative, proactive storytellers, and they're a mixed bag of experience, from an ex-journo to a people & culture advisor who once moonlit as a lawyer to celebrity PR wrangler who then transitioned to sustainability comms and launched some of your favourite purpose-driven brands.
-
-
 
 We strongly encourage applications from people with diverse lived experiences and identities, as the problems we face are complex, and the more diverse our team is, the better our solutions become. We are a team that is all about building a strong workplace culture, that's not only diverse but competent. We are always learning and doing better together, and holding ourselves to account for our values.
 
-
-
 Future Group values lived experience and we encourage applications from people with Aboriginal and/or Torres Strait Islander backgrounds, who have caring responsibilities, from culturally and racially marginalised groups, people with disability, people who experience ageism, LGBTQIA+ people, and people who experience social exclusion because of their social class.
 
-
-
 If you require any adjustments throughout the recruitment process, please reach out to our talent team at [careers@futuregroup.com.au](mailto:careers@futuresuper.com.au). We want to ensure our recruitment process is equitable for all, and we’ll happily make any reasonable adjustments where required.
-
-
 
 **You’ll love this job if:**
 
@@ -47,8 +33,6 @@ If you require any adjustments throughout the recruitment process, please reach 
 * Y﻿ou can sniff out an angle or story idea and know how to take it from idea to engaging informative content for the right audience
 * You are described by others as being curious, collaborative, and take the work seriously but not yourself
 * You exhibit a high degree of empathy and emotional intelligence allowing for the understanding and appreciation of diverse perspectives
-
-
 
 **We’re looking for someone who:**
 
@@ -62,16 +46,12 @@ If you require any adjustments throughout the recruitment process, please reach 
 * Ear to the ground, you’re not afraid of information overload and you get a buzz from connecting the dots with multiple story angles that can be unearthed within the business.
 * Details oriented - attention to detail is a must, but we also get it’s hard to have an eye for detail when you’re producing content on the reg. Detailed orientation is also more than just typos (although it is about typos), it is also about asking the right questions, not being afraid to challenge and being firm when something needs to end up on the cutting room floor or pushing an angle that can change the industry.  
 
-
-
 **Some nice-to-haves but are not essential are:** 
 
 * Some superannuation or financial services experience
 * Experience at a scale-up
 * Writing for lifestyle and an interest in equality, climate and social issues
 * Self-aware and thrives being part of a fast-paced team
-
-
 
 **A day in the life of a Content Producer could look like:**
 
@@ -80,11 +60,7 @@ If you require any adjustments throughout the recruitment process, please reach 
 * Using insights from teams to set advocacy narratives to drive industry change
 * Crafting thought leadership pieces for LinkedIn that talk about our Group’s mission and the impact we are having within the industry as a responsible investor to a progressive employer
 
-
-
 Don’t tick all the boxes?- that’s okay, we like thinking outside the box anyway. We value skills, passion and who you are over what you’ve done or where you’ve studied. So if this job strikes a chord, we want to hear from you!
-
-
 
 **Why would you enjoy working at Future Group?**
 
@@ -108,6 +84,4 @@ Don’t tick all the boxes?- that’s okay, we like thinking outside the box any
 * You’ll hear from us about a week or two after the closing date. If your application is successful, you’ll be invited to a 20 minute phone chat with someone from our People team. If your application missed out this time, we won’t ghost you, we’ll let you know and we’ll provide you with some feedback which you can check-out if you want
 * Following the good old telephone call, should your application be successful again, you will be invited to a couple of interviews by Zoom
 
-
-
-Questions? Please reach out to our awesome C team at careers@futuresuper.com.au.
+Questions? Please reach out to our awesome Careers team at careers@futuresuper.com.au.
