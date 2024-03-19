@@ -23,7 +23,7 @@
   }
 
   onMount(() => {
-    const experimentId = "FUM-187";
+    const experimentId = "FUM-187 - Invest Option";
 
     const variationNames = {
       TEST: "investment-v1",
