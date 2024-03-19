@@ -1,7 +1,7 @@
 ---
 title: Content Producer
-startDate: 2024-04-07T10:48:50.893Z
-endDate: 2025-04-07T10:48:50.898Z
+startDate: 2024-03-19T09:48:50.893Z
+endDate: 2025-04-18T10:48:50.898Z
 location: We are remote first and open to candidates from all over Australia.
 salary: $120,000 - $125,000 + Super + 1% additional Super
 applicationUrl: https://app.beapplied.com/apply/ybs91ajsub?utm_source=Future-Careers-Page
