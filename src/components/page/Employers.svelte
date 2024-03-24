@@ -95,7 +95,7 @@
     account.
   </p>
   <p>
-    Future Super’s bank account details were changed in in 2023. If your
+    Future Super’s bank account details were changed in 2023. If your
     employee’s details are correct, please confirm that your clearing house or
     payroll system are using our correct and
     <strong> up-to-date fund details </strong>
