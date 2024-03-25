@@ -5,6 +5,16 @@
   import RelatedFaqs from "../ui/RelatedFaqs.svelte";
   export let faqs = [];
 
+  // replace "NaN%" with "-" for returns
+  returns.table = returns.table.map((r) => {
+    for (const key in r) {
+      if (r[key] === "NaN%") {
+        r[key] = "-";
+      }
+    }
+    return r;
+  });
+
   const returnsWith30June = [
     ...returns.table.slice(0, 7),
     {
