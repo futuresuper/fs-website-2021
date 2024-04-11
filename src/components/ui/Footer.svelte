@@ -205,7 +205,7 @@
         </div>
         <div class="footer-text">
           <p class="disc fs-acknowledgement">
-            Future Super Group acknowledges that we operate on sovereign First
+            Future Group acknowledges that we operate on sovereign First
             Nations land. We recognise the ongoing connection Aboriginal and
             Torres Strait Islander people have with Country throughout this
             continent since time immemorial. We stand for a future where First
