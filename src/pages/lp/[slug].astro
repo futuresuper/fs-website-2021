@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const client = buildClient({
     apiToken: import.meta.env.DATOCMS_API_KEY,
     logLevel: LogLevel.BODY_AND_HEADERS,
-    extraHeaders: { "X-Include-Drafts": "true" },
+    extraHeaders: { "X-Include-Drafts": "true", version: "latest" },
   });
 
   // TODO: Figure out how to get draft content
