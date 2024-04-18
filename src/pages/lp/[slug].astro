@@ -8,6 +8,8 @@ import { getImageFromUploadId } from "@components/landingPage/utils";
 export async function getStaticPaths() {
   const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
 
+  // TODO: Figure out how to get draft content
+
   const allPages = await client.items.list({
     nested: true,
     filter: {
