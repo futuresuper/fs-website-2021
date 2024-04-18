@@ -16,9 +16,9 @@ export async function getStaticPaths() {
 
   const allPages = await client.items.list({
     nested: true,
+    version: "latest",
     filter: {
       type: "page",
-      version: "latest",
     },
   });
 
