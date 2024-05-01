@@ -1,18 +1,20 @@
 ---
-title: "California Dreamin’ (of board diversity)"
+author: Emily Flood
 slug: california-dreamin-of-board-diversity
 date: 2019-02-05T18:54:59.912Z
+canonical: null
+title: California Dreamin’ (of board diversity)
+image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013312cd3da9_California%20Dreamin%E2%80%99%20(of%20board%20diversity)%20(1).png
 tags:
   - Politics
   - Activism
   - Opinion
-author: Emily Flood
-canonical:
-description: >-
-  Having women in the boardroom produces better results for businesses as well as women. It takes a company determined to thumb their nose at women to choose to maintain an all-male board even at a proven cost to their business performance. California has joined voices with ethics-led investors like Future Super in calling for a smarter and fairer boardroom.
-image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013312cd3da9_California%20Dreamin%E2%80%99%20(of%20board%20diversity)%20(1).png
+description: Having women in the boardroom produces better results for
+  businesses as well as women. It takes a company determined to thumb their nose
+  at women to choose to maintain an all-male board even at a proven cost to
+  their business performance. California has joined voices with ethics-led
+  investors like Future Super in calling for a smarter and fairer boardroom.
 ---
-
 Some of the changes Governor Jerry Brown has recently signed into legislation on his way out the door after his fourth term as Californian Governor could give you whiplash (or worse, hope) when compared to some of what’s going on in Washington at the moment.
 
 Mr. Brown has been in the spotlight over recent years (even if his name doesn’t ring a bell) pushing for ‘[sanctuary state](http://www.latimes.com/politics/la-pol-ca-sanctuary-law-ruling-20180705-story.html)’ status, directing state law enforcement to refuse assistance to federal immigration agents and inspect immigration detention centres. Over the past few months he’s been building up a solid portfolio of justice reform and has been a beacon of hope for climate change activists frustrated by the Federal Government’s stance on the fossil fuel industry, [signing a number of bills](https://www.nytimes.com/2018/10/01/us/governor-jerry-brown-california-last-bill-signing.html) to incentivise clean energy and electric car usage, as well as requiring all electricity in [California to be carbon-free by 2045](https://qz.com/1409065/californias-2018-legislative-blitzkrieg-delivered-its-most-ambitious-climate-policies-ever/).
@@ -21,11 +23,11 @@ On his last day in office he also signed a [bill](https://www.telegraph.co.uk/bu
 
 While Mr. Brown acknowledged that the law may not survive legal challenges, despite attracting [80% approval from women in California](https://www.fastcompany.com/90245893/survey-80-of-women-support-californias-board-diversity-law), he noted in his signing statement that “recent events in Washington, DC – and beyond – make it crystal clear that many are not getting the message.”
 
-The fact he sent that same statement to the Committee that voted to recommend the now confirmed Brett Kavanaugh’s nomination to the Supreme Court despite allegations of sexual assault last week gives us insight into what “the message” is._‍_
+The fact he sent that same statement to the Committee that voted to recommend the now confirmed Brett Kavanaugh’s nomination to the Supreme Court despite allegations of sexual assault last week gives us insight into what “the message” is.*‍*
 
-![Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401237dcd3cfc_c855f854efc40437ce2a36021d49ecd5.jpg)
+![Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018]()
 
-_Source: Jim Bourg, Reuters (Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018)_
+*Source: Jim Bourg, Reuters (Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018)*
 
 ## Women’s voices need to be heard
 
