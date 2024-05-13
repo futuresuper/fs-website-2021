@@ -12,7 +12,6 @@
             data-tf-medium="snippet"
             data-tf-height={section.height}
     />
-    <script src="//embed.typeform.com/next/embed.js"/>
   </section>
 </div>
 
