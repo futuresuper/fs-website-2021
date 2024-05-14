@@ -3,6 +3,7 @@ import SellingPoints from "./SellingPointsData.astro";
 import FeaturedList from "./FeaturedList.svelte";
 import TestimonialsData from "./TestimonialsData.astro";
 import CtaSection from "./CtaSection.svelte";
+import TypeForm from "./TypeForm.svelte";
 
 const { sections } = Astro.props;
 
@@ -26,6 +27,8 @@ const { sections } = Astro.props;
             button={section.attributes.button.attributes}
           />
         );
+      case "OcYH4GXMSMy6o5APJ9R6gg":
+        return <TypeForm section={section.attributes}/>;
       case "F4YIIzbQTT6_J0DtYJK7Uw":
         return <TestimonialsData section={section.attributes} />;
       case "ek1SXDG-SB-wtVU4-cT5PA":
