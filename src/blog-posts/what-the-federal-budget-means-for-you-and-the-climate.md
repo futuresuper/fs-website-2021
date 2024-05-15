@@ -3,8 +3,8 @@ title: What the federal budget means for you and the climate
 date: 2024-05-15T07:16:51.725Z
 image: https://content.myfuturesuper.com.au/OG-images/Guild_BlogImage_Budget.jpg
 tags: []
-author: "    "
-description: >+
+author: " Future Super"
+description: >
   Focus on keeping inflation in check while battling the cost of living crisis. 
 
 
