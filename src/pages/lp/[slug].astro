@@ -6,7 +6,10 @@ import LandingPageHeader from "@components/landingPage/LandingPageHeader.svelte"
 import { getImageFromUploadId } from "@components/landingPage/utils";
 
 export async function getStaticPaths() {
-  const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
+  const client = buildClient({
+    apiToken: import.meta.env.DATOCMS_API_KEY,
+    environment: "old-website",
+  });
 
   const allPages = await client.items.list({
     nested: true,
