@@ -1,6 +1,9 @@
 import { buildClient } from "@datocms/cma-client-node";
 
-const client = buildClient({ apiToken: import.meta.env.DATOCMS_API_KEY });
+const client = buildClient({
+  apiToken: import.meta.env.DATOCMS_API_KEY,
+  environment: "old-website",
+});
 
 export const getImageFromUploadId = async (uploadId) => {
   const upload = await client.uploads.find(uploadId);
