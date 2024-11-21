@@ -1,0 +1,16 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Footer from "@components/ui/Footer.svelte";
+import WelcomeJourney from "@components/page/WelcomeJourney.svelte";
+---
+
+<BaseLayout
+  title="Welcome Journey"
+  description=""
+  hideHeader
+  hidePageHeader
+  noContainer
+  hideFooter
+>
+  <WelcomeJourney client:load />
+</BaseLayout>
