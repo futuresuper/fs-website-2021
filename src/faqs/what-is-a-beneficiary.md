@@ -1,5 +1,5 @@
 ---
-title: What is a beneficiary?
+title: What is a beneficiary nomination?
 slug: what-is-a-beneficiary
 date: 2020-08-19T06:27:04.000Z
 category: Beneficiaries
